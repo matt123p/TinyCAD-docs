@@ -187,5 +187,32 @@
 
       {%- include footer.html -%}
     </div>
+
+    <script>
+      (function () {
+        var contentsMenu = document.querySelector('.manual-contents');
+        if (!contentsMenu) {
+          return;
+        }
+
+        var mobileQuery = window.matchMedia('(max-width: 900px)');
+
+        function syncContentsMenuState() {
+          if (mobileQuery.matches) {
+            contentsMenu.removeAttribute('open');
+          } else {
+            contentsMenu.setAttribute('open', 'open');
+          }
+        }
+
+        syncContentsMenuState();
+
+        if (typeof mobileQuery.addEventListener === 'function') {
+          mobileQuery.addEventListener('change', syncContentsMenuState);
+        } else if (typeof mobileQuery.addListener === 'function') {
+          mobileQuery.addListener(syncContentsMenuState);
+        }
+      })();
+    </script>
   </body>
 </html>
