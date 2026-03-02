@@ -19,8 +19,40 @@
         grid-template-rows: auto minmax(0, 1fr) auto;
       }
 
-      .manual-shell.no-header {
-        grid-template-rows: minmax(0, 1fr) auto;
+      .manual-navbar {
+        border-bottom: 1px solid #e8e8e8;
+        background: #fff;
+      }
+
+      .manual-navbar-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0.85rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .manual-brand {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .manual-navbar-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .manual-navbar-links a {
+        text-decoration: none;
+      }
+
+      .manual-navbar-links a:hover {
+        text-decoration: underline;
       }
 
       .manual-content-scroll {
@@ -89,16 +121,19 @@
         min-width: 0;
       }
 
-      .manual-title {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 1rem 1rem 0;
-      }
-
       @media (max-width: 900px) {
         .manual-layout {
           grid-template-columns: 1fr;
           gap: 1rem;
+        }
+
+        .manual-navbar-inner {
+          flex-wrap: wrap;
+        }
+
+        .manual-navbar-links {
+          width: 100%;
+          justify-content: flex-start;
         }
 
         .manual-sidebar {
@@ -153,12 +188,16 @@
       {%- assign show_sidebar = false -%}
     {%- endif -%}
 
-    <div class="manual-shell{% unless show_sidebar %} no-header{% endunless %}">
-      {%- if show_sidebar -%}
-        <div class="manual-title">
-          <h1 style="margin-bottom:0;">{{ site.title }}</h1>
+    <div class="manual-shell">
+      <header class="manual-navbar" aria-label="Primary">
+        <div class="manual-navbar-inner">
+          <a class="manual-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <nav class="manual-navbar-links" aria-label="Site links">
+            <a href="{{ '/v4/' | relative_url }}">TinyCAD v4</a>
+            <a href="{{ '/v3/' | relative_url }}">TinyCAD v3</a>
+          </nav>
         </div>
-      {%- endif -%}
+      </header>
 
       <div class="manual-content-scroll">
         <div class="manual-layout{% unless show_sidebar %} single-column{% endunless %}">

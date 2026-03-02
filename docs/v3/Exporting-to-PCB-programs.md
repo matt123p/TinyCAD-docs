@@ -20,7 +20,7 @@ You must connect a wire to a symbol pin at the tip of the pin. This is normally 
 
 When the netlist is exported this attribute is written out with the netlist so that the PCB program will know which footprint to use with the symbol. Remember the footprint can often be different for the same symbol in different places. For example a capacitor symbol in one part of your circuit may have a different footprint to a capacitor in a different part of the circuit.
 
-![Image](images/image15.png)
+![Image](/v3/images/image15.png)
 
 You can edit the symbol libraries so that each symbol has a default “Package” attribute.
 
@@ -30,7 +30,7 @@ Export the netlist in a format compatible with your PCB layout program
 
 From the Special menu select the “Create netlist for PCB program” option.
 
-![Image](images/image16.png)
+![Image](/v3/images/image16.png)
 
 Use this dialogue to select the netlist output type and the filename you wish to use for the export. Currently TinyCAD has a limited select of file formats, however, you may well find that this format is recognized by your PCB program.
 

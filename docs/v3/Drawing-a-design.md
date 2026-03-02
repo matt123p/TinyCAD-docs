@@ -55,7 +55,7 @@ It is a common mistake to use polygon lines instead of wires to wire up componen
 
 ## Editing your drawing
 
-![Image](images/image4.png)
+![Image](/v3/images/image4.png)
 
 Once a symbol has been placed you may want to change its properties. The edit tool in the drawing toolbar is use for editing already placed objects. Normally you don’t have to select the edit tool as it is the default tool after you have finished with a different tool. To select it manually click on the white mouse arrow toolbar button.
 
@@ -77,7 +77,7 @@ Whilst you are editing your drawing it is saved automatically for you so you don
 
 ## Symbol attributes
 
-![Image](images/image5.png)
+![Image](/v3/images/image5.png)
 
 Each symbol has at least two text attributes associated with it.
 
@@ -127,7 +127,7 @@ Any unconnected pins can be found by using the the Design Rules Checker in the S
 
 ## Adding power
 
-![Image](images/image6.png)
+![Image](/v3/images/image6.png)
 
 Power objects in your design show where power is connected into your circuit. Various shapes of power symbols are defined.
 
@@ -139,7 +139,7 @@ Some component symbols, such as the 74 TTL library symbols, are automatically co
 
 ## Using labels
 
-![Image](images/image7.png)
+![Image](/v3/images/image7.png)
 
 You may use the rotate left or right or flip shortcut keys while placing labels.
 
@@ -149,7 +149,7 @@ Use labels to connect wires between sheets in the same files or to connect wires
 
 ## Adding buses
 
-![Image](images/image8.png)
+![Image](/v3/images/image8.png)
 
 Buses can be used to indicate a large number of connections. To help you draw a bus the repeat options are present.
 
@@ -171,7 +171,7 @@ You may add the following annotations: text, lines, rectangles, ellipses and arc
 
 Annotations may cross wires, symbols and junctions without affecting them. How these objects are used is completely up to you.
 
-![Image](images/image9.png)
+![Image](/v3/images/image9.png)
 
 ## Drawing rectangles and ellipses
 

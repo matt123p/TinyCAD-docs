@@ -26,7 +26,7 @@ This option is similar to the Save menu option; however, you will always be prom
 
 ## Design Details 
 
-![Image](images/image17.png)
+![Image](/v3/images/image17.png)
 
 Each design has details of its full title, the author, ''etc''. This option allows you to change these details. When the design is next saved, these details are saved with the design.
 
@@ -54,7 +54,7 @@ This option is to show you how the design would be printed on your printer. You 
 
 ## Page Setup 
 
-![Image](images/image18.png)
+![Image](/v3/images/image18.png)
 
 This option allows you to select the total size of the design.
 
@@ -148,7 +148,7 @@ Increase the size of the drawing to show more of the drawing. You can also zoom 
 
 This option brings up the dialogue box which allows the setting up and editing of libraries.
 
-![Image](images/image10.png)
+![Image](/v3/images/image10.png)
 
 The list in the dialogue box is a list of libraries searched when the Get option (in the Library menu) is used. You may add or remove these libraries from this list using the buttons at the side of the list.
 
@@ -321,7 +321,7 @@ This option removes errors than can creep in during editing which are difficult 
 
 # Show Grid 
 
-![Image](images/image19.png)
+![Image](/v3/images/image19.png)
 
 This causes the grid to be displayed. If the grid is too fine to show at the current zoom then it will not be displayed. To see the grid zoom in. If the fine grid is enabled then the points which lie on the normal grid as well are shown as crosses.
 

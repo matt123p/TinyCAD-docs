@@ -10,7 +10,7 @@ It is unlikely that the symbol libraries provided could possibly cover all the s
 
 Before any symbols can be used from a library, the library must be selected as in use. This is done by using the Libraries option in the Library menu.
 
-![Image](images/image10.png)
+![Image](/v3/images/image10.png)
 
 This dialogue displays a list of libraries in use. Before a library can be edited or before a symbol can be extracted from a library it must be listed here. Once the library is listed then you can extract symbols from it using the Get option on the Toolbar.
 
@@ -30,7 +30,7 @@ As of TinyCAD 1.90.00, the “Tidy” option is no longer required for the new l
 
 Use the library dialogue to select the library to edit. Once selected you will see a new window with a thumbnail view of the library. If the library is a brand new library then the window will be blank.
 
-![Image](images/image11.png)
+![Image](/v3/images/image11.png)
 
 Use the library editing window to:
 
@@ -83,7 +83,7 @@ Then use the “Set part per package” option in the Library menu or right clic
 
 For a homogeneous symbol, any edits to the outline will be for all parts. For a heterogeneous symbol you may have a different outline for each part.
 
-![Image](images/image12.png)
+![Image](/v3/images/image12.png)
 
 For example, the 7402 has 4 parts per package. These parts are label A, B, C and D. This is a homogeneous symbol and so the only difference between each part is the pin numbers.
 
@@ -95,7 +95,7 @@ Double click on the library to edit it. You may now add your first new symbol.
 
 ## Symbol Properties
 
-![Image](images/image13.png)
+![Image](/v3/images/image13.png)
 
 This dialogue is used to edit the symbol's names and default attributes. As of version 2.00.00 of TinyCAD you can now give the symbol more than one name. Associated with each name of the symbol can be as many different default attributes as required. There is no restriction on the symbol name, you may use upper or lower case and the name may include spaces.
 
