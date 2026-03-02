@@ -5,6 +5,6 @@ manual, including requirements, feature differences, and keyboard shortcuts.
 
 ## Pages
 
-- [Web and desktop FAQ](web-and-desktop-faq.md)
+- [Web and desktop FAQ](Web-and-desktop-FAQ.md)
 
-- Back to [v4 contents](../CONTENTS.md)
+- Back to [v4 contents](CONTENTS.md)

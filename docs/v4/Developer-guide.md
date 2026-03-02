@@ -2,4 +2,4 @@
 
 This section will contain build prerequisites, build steps, and release notes for developers working on TinyCAD v4.
 
-- Back to [v4 contents](../CONTENTS.md)
+- Back to [v4 contents](CONTENTS.md)

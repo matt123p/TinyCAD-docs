@@ -12,11 +12,11 @@ including getting started, first drawing, libraries, and FAQ/reference data.
 ## Core links
 
 - [v4 contents](CONTENTS.md)
-- [Getting started](getting-started/index.md)
-- [User guide](user-guide/index.md)
-- [Reference](reference/index.md)
-- [Advanced](advanced/index.md)
-- [Developer](developer/index.md)
-- [FAQ](faq/index.md)
+- [Getting started](Getting-started.md)
+- [User guide](User-guide.md)
+- [Reference](Reference.md)
+- [Advanced](Advanced.md)
+- [Developer](Developer-guide.md)
+- [FAQ](FAQ.md)
 - [Back to version selector](../index.md)
 - [Open TinyCAD v3 manual](../v3/index.md)

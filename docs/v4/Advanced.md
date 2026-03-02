@@ -5,6 +5,6 @@ editing.
 
 ## Pages
 
-- [Custom symbol libraries](custom-symbol-libraries.md)
+- [Custom symbol libraries](Custom-symbol-libraries.md)
 
-- Back to [v4 contents](../CONTENTS.md)
+- Back to [v4 contents](CONTENTS.md)

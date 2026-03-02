@@ -5,6 +5,6 @@ wiring, annotation, export/print, loading/saving, and setup options.
 
 ## Pages
 
-- [Your first drawing](your-first-drawing.md)
+- [Your first drawing](Your-first-drawing.md)
 
-- Back to [v4 contents](../CONTENTS.md)
+- Back to [v4 contents](CONTENTS.md)
