@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Using Multiple Sheet Schematics
 
 There are two ways that you can spread a complex schematic over more than one sheet in TinyCAD:

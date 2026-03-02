@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Symbols form a very important part of laying out designs. Symbols are collected together in symbol libraries. You may edit and create your own new symbols and libraries.
 
 It is unlikely that the symbol libraries provided could possibly cover all the symbols you might ever want. This program has been designed to allow you to create your own symbols very easily.

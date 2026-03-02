@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 - Advanced
 
 This section covers advanced workflows such as custom libraries and symbol

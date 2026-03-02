@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Custom symbol libraries
 
 TinyCAD for the web supports custom symbols stored in symbol libraries.

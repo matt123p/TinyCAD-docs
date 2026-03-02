@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 - Reference
 
 This section is the entry point for reference material currently migrated from

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Printing a design
 
 Once your design is drawn it can be printed to any Windows-supported printer.

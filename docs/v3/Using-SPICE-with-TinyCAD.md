@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Using SPICE with TinyCAD
 
 TinyCAD now has built-in SPICE file generation system. Currently there are *no* libraries supplied with TinyCAD for use with SPICE.  However, you will find SPICE symbols on [tinycad.net](https://www.tinycad.net/Search?key=%23spice)

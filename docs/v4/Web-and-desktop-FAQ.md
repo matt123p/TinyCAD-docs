@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Web and desktop FAQ
 
 ## Is it still free to use?

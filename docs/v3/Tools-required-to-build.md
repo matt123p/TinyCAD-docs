@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Tools required to build TinyCAD
 
 ## Microsoft Visual Studio

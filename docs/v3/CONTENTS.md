@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Contents
 
 ## 1. User guide

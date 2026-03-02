@@ -1,14 +1,22 @@
-# TinyCAD Manual
+---
+layout: default
+---
 
-Select the TinyCAD version to view the matching manual.
+# TinyCAD
+
+TinyCAD is a schematic capture application.  There are 2 distinct versions that you need to choose between.
 
 ## Versions
 
+- [TinyCAD v4 manual](v4/index.md)
+
+This is the manual for the latest version of TinyCAD, including the online browser based application,
+and versions which you may have downloaded from either the Windows App Store or the Mac App Store.
+
+
 - [TinyCAD v3 manual](v3/index.md)
-- [TinyCAD v4 manual (stub)](v4/index.md)
 
-## Notes
+This is the manual for the legacy version of TinyCAD for Windows Version 3.00.  Choose this manual
+if you have the older Windows only application.
 
-- The v3 manual is the migrated legacy manual.
-- The v4 manual is currently a starter structure and can be expanded page by page.
-- Version metadata is tracked in [versions.yml](versions.yml).
+

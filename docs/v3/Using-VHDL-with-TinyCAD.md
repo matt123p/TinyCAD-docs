@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Making the Design
 
 In order to make the schematic you should use the symbols in the VHDL library. You can also find these symbol on [tinycad.net](https://www.tinycad.net/Search?key=%23vhdl).

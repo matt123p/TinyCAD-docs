@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Exporting to PCB programs
 
 TinyCAD has the ability to create a netlist for import into a PCB layout program. However, for this to work to it's best potential you have to use TinyCAD in the correct way:

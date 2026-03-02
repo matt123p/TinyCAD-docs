@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 - User Guide
 
 This section covers the core drawing workflow, including symbol placement,

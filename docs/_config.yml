@@ -4,6 +4,14 @@ theme: minima
 markdown: kramdown
 permalink: pretty
 
+plugins:
+  - jekyll-feed
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
 defaults:
   - scope:
       path: ""

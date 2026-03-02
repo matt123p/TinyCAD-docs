@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 - FAQ
 
 This section contains migrated FAQ material from the previous TinyCAD online

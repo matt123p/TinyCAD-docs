@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v3 Manual
 
 This is the documentation set for TinyCAD version 3.

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # FAQ
 
 ### 1. I have created my drawing and tried to create a Net List, but I did not know about Package Attributes. The manual does not explain how to add these attributes to the symbols on the drawing I have made. It says click ADD, but in what? The package attributes would be different for each component you place on the drawing but I can't see how you add these attributes.

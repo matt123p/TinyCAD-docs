@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 Manual
 
 TinyCAD v4 is available both as a desktop app (Electron) and as an online app.

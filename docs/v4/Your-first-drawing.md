@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Your first drawing
 
 At its simplest level, a TinyCAD drawing is a collection of symbols linked

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Drawing a design
 
 Designs are created from built-in objects such as wires, junctions, etc., and from imported component symbols, such as diodes, transistors, etc.

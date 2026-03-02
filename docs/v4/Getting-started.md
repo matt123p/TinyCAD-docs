@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 - Getting Started
 
 TinyCAD v4 supports two usage modes:

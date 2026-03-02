@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TinyCAD v4 Contents
 
 ## 1. Getting started
