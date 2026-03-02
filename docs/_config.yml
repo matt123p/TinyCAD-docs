@@ -1,0 +1,12 @@
+title: TinyCAD Manual
+description: User and developer documentation for TinyCAD
+theme: minima
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
