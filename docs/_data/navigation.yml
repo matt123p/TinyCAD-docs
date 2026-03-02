@@ -1,0 +1,55 @@
+v3:
+  - title: Contents
+    url: /v3/CONTENTS/
+  - title: Overview of TinyCAD Features
+    url: /v3/Overview-of-TinyCAD-Features/
+  - title: Drawing a Design
+    url: /v3/Drawing-a-design/
+  - title: An Introduction to Libraries
+    url: /v3/An-introduction-to-libraries/
+  - title: Printing a Design
+    url: /v3/Printing-a-design/
+  - title: Exporting to PCB Programs
+    url: /v3/Exporting-to-PCB-programs/
+  - title: Using Multiple Sheet Schematics
+    url: /v3/Using-multiple-sheet-schematics/
+  - title: Menu Reference
+    url: /v3/Menu-reference/
+  - title: Toolbar Reference
+    url: /v3/Toolbar-reference/
+  - title: Using SPICE with TinyCAD
+    url: /v3/Using-SPICE-with-TinyCAD/
+  - title: Using VHDL with TinyCAD
+    url: /v3/Using-VHDL-with-TinyCAD/
+  - title: Tools Required to Build
+    url: /v3/Tools-required-to-build/
+  - title: How to Build TinyCAD
+    url: /v3/How-to-build-TinyCAD/
+  - title: FAQ
+    url: /v3/FAQ/
+  - title: Remaining Work
+    url: /v3/REMAINING-WORK/
+
+v4:
+  - title: Contents
+    url: /v4/CONTENTS/
+  - title: Getting Started
+    url: /v4/Getting-started/
+  - title: TinyCAD Web Overview and Quick Start
+    url: /v4/TinyCAD-Web-overview-and-quick-start/
+  - title: User Guide
+    url: /v4/User-guide/
+  - title: Your First Drawing
+    url: /v4/Your-first-drawing/
+  - title: Reference
+    url: /v4/Reference/
+  - title: Advanced
+    url: /v4/Advanced/
+  - title: Custom Symbol Libraries
+    url: /v4/Custom-symbol-libraries/
+  - title: Developer Guide
+    url: /v4/Developer-guide/
+  - title: FAQ
+    url: /v4/FAQ/
+  - title: Web and Desktop FAQ
+    url: /v4/Web-and-desktop-FAQ/
