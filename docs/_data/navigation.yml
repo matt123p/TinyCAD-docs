@@ -45,6 +45,10 @@ v4:
         url: /v4/Your-first-drawing/
       - title: Snap to Grid
         url: /v4/Snap-to-Grid/
+      - title: Wires
+        url: /v4/Wires/
+      - title: Power Symbols
+        url: /v4/Power-symbols/
       - title: Labels
         url: /v4/Labels/
       - title: Buses

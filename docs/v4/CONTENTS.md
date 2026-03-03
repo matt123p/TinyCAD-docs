@@ -20,6 +20,8 @@ layout: default
 	- [Design Details box](../Design-Details-box/)
 	- [Design Rulers](../Design-Rulers/)
 	- [Snap to Grid](../Snap-to-Grid/)
+	- [Wires](../Wires/)
+	- [Power Symbols](../Power-symbols/)
 	- [Labels](../Labels/)
 	- [Buses](../Buses/)
 	- [No Connects](../No-Connects/)
