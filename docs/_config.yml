@@ -3,6 +3,7 @@ description: User and developer documentation for TinyCAD
 theme: minima
 markdown: kramdown
 permalink: pretty
+github_edit_base_url: https://github.com/matt123p/TinyCAD-docs/blob/main
 
 plugins:
   - jekyll-feed

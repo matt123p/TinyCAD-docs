@@ -68,6 +68,7 @@
         margin: 0 auto;
         padding: 1.5rem 1rem 2rem;
         height: 100%;
+        box-sizing: border-box;
       }
 
       .manual-layout.single-column {
@@ -124,6 +125,53 @@
         overflow: auto;
       }
 
+      .manual-edit-link {
+        margin: 2rem 0 0;
+        padding-top: 0.75rem;
+        border-top: 1px solid #e8e8e8;
+        font-size: 0.9rem;
+      }
+
+      .manual-edit-link a {
+        text-decoration: none;
+      }
+
+      .manual-edit-link a:hover {
+        text-decoration: underline;
+      }
+
+      .manual-footer {
+        border-top: 1px solid #e8e8e8;
+        background: #fff;
+      }
+
+      .manual-footer-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0.35rem 1rem;
+        font-size: 0.85rem;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        color: #555;
+        white-space: nowrap;
+      }
+
+      .manual-footer-inner a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .manual-footer-inner a:hover {
+        text-decoration: underline;
+      }
+
+      .manual-footer-sep {
+        color: #999;
+      }
+
       @media (max-width: 900px) {
         .manual-layout {
           grid-template-columns: 1fr;
@@ -155,6 +203,12 @@
 
         .manual-contents[open] > summary {
           margin-bottom: 0.75rem;
+        }
+
+        .manual-footer-inner {
+          flex-wrap: wrap;
+          white-space: normal;
+          row-gap: 0.2rem;
         }
       }
 
@@ -243,6 +297,11 @@
 
           <main class="manual-main" aria-label="Content">
             {{ content }}
+            {%- if site.github_edit_base_url and page.path -%}
+              <p class="manual-edit-link">
+                <a href="{{ site.github_edit_base_url }}/docs/{{ page.path }}">Edit this page on GitHub</a>
+              </p>
+            {%- endif -%}
           </main>
         </div>
       </div>

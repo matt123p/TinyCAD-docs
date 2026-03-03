@@ -43,12 +43,6 @@ v4:
     children:
       - title: Your First Drawing
         url: /v4/Your-first-drawing/
-      - title: Searching your Drawing
-        url: /v4/Searching-your-Drawing/
-      - title: Design Details box
-        url: /v4/Design-Details-box/
-      - title: Design Rulers
-        url: /v4/Design-Rulers/
       - title: Snap to Grid
         url: /v4/Snap-to-Grid/
       - title: Labels
@@ -61,6 +55,16 @@ v4:
         url: /v4/Text-and-Annotations/
       - title: Printing
         url: /v4/Printing/
+      - title: Multiple Sheet Drawings
+        url: /v4/Multiple-Sheet-Drawings/
+      - title: Searching your Drawing
+        url: /v4/Searching-your-Drawing/
+      - title: Design Details box
+        url: /v4/Design-Details-box/
+      - title: Design Rulers
+        url: /v4/Design-Rulers/
+      - title: Bill Of Materials
+        url: /v4/Bill-Of-Materials/
   - title: Symbols & Libraries
     url: /v4/Symbols-and-Libraries/
     children:
@@ -92,9 +96,9 @@ v4:
         url: /v4/Feature-Differences/
       - title: Shortcuts
         url: /v4/Shortcuts/
+  - title: Licence
+    url: /v4/Licence/
   - title: Developer Guide
     url: /v4/Developer-guide/
   - title: FAQ
     url: /v4/FAQ/
-  - title: Web and Desktop FAQ
-    url: /v4/Web-and-desktop-FAQ/

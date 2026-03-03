@@ -15,6 +15,7 @@ layout: default
 
 - [Drawing](../User-guide/)
 	- [Your first drawing](../Your-first-drawing/)
+	- [Mutliple Sheet Drawings](../Mutliple-Sheet-Drawings/)
 	- [Searching your Drawing](../Searching-your-Drawing/)
 	- [Design Details box](../Design-Details-box/)
 	- [Design Rulers](../Design-Rulers/)
@@ -24,6 +25,7 @@ layout: default
 	- [No Connects](../No-Connects/)
 	- [Text & Annotations](../Text-and-Annotations/)
 	- [Printing](../Printing/)
+	- [Bill Of Materials](../Bill-Of-Materials/)
 
 ## 3. Symbols & Libraries
 
@@ -50,9 +52,12 @@ layout: default
 	- [Feature Differences](../Feature-Differences/)
 	- [Shortcuts](../Shortcuts/)
 
-## 6. Help
+## 6. Licence
+
+- [Licence](../Licence/)
+
+## 7. Help
 
 - [FAQ](../FAQ/)
-- [Web and desktop FAQ](../Web-and-desktop-FAQ/)
 
 Back to [v4 home](../).

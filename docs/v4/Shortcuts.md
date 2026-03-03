@@ -4,11 +4,37 @@ layout: default
 
 # Shortcuts
 
-This page is the reference entry for TinyCAD web keyboard shortcuts.
+Using keyboard shortcuts instead of toolbar clicks speeds up drawing.
 
-The current shortcut list is maintained in:
+**Note:** These differ from desktop shortcuts because browser applications do
+not expose F-keys in the same way.
 
-- [Web and desktop FAQ](../Web-and-desktop-FAQ/#keyboard-shortcuts)
+| Key | Action |
+|---|---|
+| `W` | Wire tool |
+| `N` | No Connect |
+| `P` | Power |
+| `L` | Label |
+| `T` | Text |
+| `B` | Bus |
+| `S` | Shape (rectangle/ellipse/line) |
+| `+` | Zoom in |
+| `=` | Zoom in |
+| `-` | Zoom out |
+| `_` | Zoom out |
+| Left Arrow | Rotate clockwise (left) |
+| Right Arrow | Rotate counter-clockwise (right) |
+| `Ctrl-F` | Find |
+| `Ctrl-P` | Print |
+| `Ctrl-C` | Copy |
+| `Ctrl-X` | Cut |
+| `Ctrl-V` | Paste |
+| `Del` | Delete |
+| `Ctrl-Z` | Undo |
+| `Ctrl-Y` | Redo |
+
+Some shortcuts can be intercepted by the browser and trigger browser actions
+instead.
 
 - Back to [Reference](../Reference/)
 - Back to [v4 contents](../CONTENTS/)

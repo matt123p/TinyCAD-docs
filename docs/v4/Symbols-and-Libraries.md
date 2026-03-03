@@ -9,11 +9,18 @@ editing, and custom library management.
 
 ## Pages
 
-- [Symbols](../Symbols/)
-- [Symbol References](../Symbol-References/)
-- [Using Symbol Libraries](../Using-Symbol-Libraries/)
-- [Custom Libraries](../Custom-symbol-libraries/)
-- [Importing Symbols from KiCAD](../Importing-Symbols-from-KiCAD/)
-- [Editing a Symbol](../Editing-a-Symbol/)
+{% assign current_version = page.url | split: '/' | slice: 1, 1 | first -%}
+{% assign section = nil -%}
+{% for entry in site.data.navigation[current_version] -%}
+	{% if entry.url == page.url -%}
+		{% assign section = entry -%}
+		{% break -%}
+	{% endif -%}
+{% endfor -%}
+{% if section and section.children %}
+{% for child in section.children -%}
+- [{{ child.title }}]({{ child.url | relative_url }})
+{% endfor %}
+{% endif %}
 
 - Back to [v4 contents](../CONTENTS/)

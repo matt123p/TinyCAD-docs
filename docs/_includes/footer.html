@@ -1,23 +1,9 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ '/' | relative_url }}"></data>
-
-  <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">{{ site.title | escape }}</li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
+<footer class="manual-footer" aria-label="Site footer">
+  <div class="manual-footer-inner">
+    <span>© {{ site.time | date: '%Y' }} TinyCAD</span>
+    <span class="manual-footer-sep" aria-hidden="true">•</span>
+    <a href="https://github.com/matt123p/TinyCAD-docs" target="_blank" rel="noopener">GitHub</a>
+    <span class="manual-footer-sep" aria-hidden="true">•</span>
+    <a href="https://www.tinycad.net/" target="_blank" rel="noopener">tinycad.net</a>
   </div>
 </footer>

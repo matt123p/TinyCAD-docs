@@ -21,6 +21,7 @@ including getting started, first drawing, libraries, and FAQ/reference data.
 - [Symbols & Libraries](Symbols-and-Libraries/)
 - [Advanced](Advanced/)
 - [Reference](Reference/)
+- [Licence](Licence/)
 - [Developer](Developer-guide/)
 - [FAQ](FAQ/)
 - [Back to version selector](../)
