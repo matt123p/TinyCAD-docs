@@ -43,6 +43,8 @@ v4:
     children:
       - title: Your First Drawing
         url: /v4/Your-first-drawing/
+      - title: Symbols
+        url: /v4/Symbols/
       - title: Snap to Grid
         url: /v4/Snap-to-Grid/
       - title: Wires
@@ -72,10 +74,6 @@ v4:
   - title: Symbols & Libraries
     url: /v4/Symbols-and-Libraries/
     children:
-      - title: Symbols
-        url: /v4/Symbols/
-      - title: Symbol References
-        url: /v4/Symbol-References/
       - title: Using Symbol Libraries
         url: /v4/Using-Symbol-Libraries/
       - title: Custom Libraries

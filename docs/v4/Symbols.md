@@ -4,13 +4,61 @@ layout: default
 
 # Symbols
 
-This page is a stub for symbol placement and symbol-edit workflow.
+Symbols are the core building blocks of a TinyCAD schematic. You place symbols from libraries, set their attributes, then wire their pins to build an electrically valid design.
 
-Topics to cover:
+You can use your own Symbols or download symbols directly from the TinyCAD.net web-site.
 
-- Finding and placing symbols
-- Rotating/flipping symbols
-- Replacing symbols in existing designs
+See also:
 
-- Back to [Symbols & Libraries](../Symbols-and-Libraries/)
+- [Using Symbol Libraries](../Using-Symbol-Libraries/)
+- [Custom symbol libraries](../Custom-symbol-libraries/)
+
+## Find and place symbols
+
+1. Open the symbol picker.
+2. Browse libraries or search by name/description text.
+3. Select the symbol to make it the current placement tool.
+4. Click in the drawing to place instances.
+5. Right-click to end placement for that symbol.
+
+If search does not find a part, verify the correct libraries are loaded first.
+
+## Orientation while placing
+
+When placing a symbol, set orientation in the tool options (for example Up/Down/Left/Right) before placing the next instance.
+
+Use a consistent orientation style in each sheet to improve readability.
+
+## Move symbols and symbol text
+
+After placement, select a symbol with the edit tool and drag it to reposition.
+
+You can also move symbol text fields (for example value/name/reference) independently by selecting the symbol and dragging each field to a better location.
+
+## Symbol attributes in a schematic
+
+Placed symbols usually include these key attributes:
+
+- **Name/Value**: what the part is (for example `10k`, `100nF`, device type)
+- **Reference**: unique designator in the sheet/project (for example `R1`, `U3`)
+- **Package** (optional): footprint/package identifier used in downstream export flows
+
+Reference fields must remain unique. TinyCAD tools can help auto-generate or re-annotate references when needed.
+
+You can add extra attributes for project metadata, PCB flow, or simulation metadata as required.
+
+## Common mistakes to avoid
+
+- Using annotation polylines instead of wire objects for electrical connections
+- Leaving duplicate references uncorrected
+- Assuming non-pin graphics create connectivity (only pins/wires/nets do)
+
+## Related pages
+
+- [Wires](../Wires/)
+- [Labels](../Labels/)
+- [No Connects](../No-Connects/)
+- [Editing a Symbol](../Editing-a-Symbol/)
+
+- Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)

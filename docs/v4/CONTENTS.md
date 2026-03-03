@@ -15,6 +15,7 @@ layout: default
 
 - [Drawing](../User-guide/)
 	- [Your first drawing](../Your-first-drawing/)
+	- [Symbols](../Symbols/)
 	- [Mutliple Sheet Drawings](../Mutliple-Sheet-Drawings/)
 	- [Searching your Drawing](../Searching-your-Drawing/)
 	- [Design Details box](../Design-Details-box/)
@@ -32,8 +33,6 @@ layout: default
 ## 3. Symbols & Libraries
 
 - [Symbols & Libraries](../Symbols-and-Libraries/)
-	- [Symbols](../Symbols/)
-	- [Symbol References](../Symbol-References/)
 	- [Using Symbol Libraries](../Using-Symbol-Libraries/)
 	- [Custom Libraries](../Custom-symbol-libraries/)
 	- [Importing Symbols from KiCAD](../Importing-Symbols-from-KiCAD/)

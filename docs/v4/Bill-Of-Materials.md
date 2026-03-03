@@ -4,13 +4,33 @@ layout: default
 
 # Bill Of Materials
 
-This page is a stub for bill of materials (BOM) workflows.
+In v4, Bill Of Materials generation follows the same behavior as v3’s
+**Create Parts List** tool.
 
-Topics to cover:
+The tool creates a list of all parts used in the current design. The output is
+sorted by symbol reference, with like parts grouped together.
 
-- Generating a BOM from the drawing
-- Included fields (reference, value, part, quantity)
-- Export formats and usage tips
+## Generate a BOM (parts list)
+
+1. Open the completed schematic.
+2. Run **Create Parts List** from the Special tools/menu.
+3. Save the generated list.
+
+## What the output is for
+
+- It is effectively a purchasing/build list for the design.
+- It helps review references and grouped component types before build.
+
+## Output format
+
+The parts list is written as a simple text file. You can open, edit, and print
+it with standard text editors.
+
+## Tips
+
+- Run Design Rules Check before generating a BOM to catch connectivity errors
+	early.
+- Re-generate the BOM after changing symbols, references, or values.
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)
