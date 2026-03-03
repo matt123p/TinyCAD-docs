@@ -56,7 +56,7 @@
       }
 
       .manual-content-scroll {
-        overflow: auto;
+        overflow: hidden;
         min-height: 0;
       }
 
@@ -67,6 +67,7 @@
         max-width: 1280px;
         margin: 0 auto;
         padding: 1.5rem 1rem 2rem;
+        height: 100%;
       }
 
       .manual-layout.single-column {
@@ -77,7 +78,7 @@
         position: sticky;
         top: 1.5rem;
         align-self: start;
-        max-height: calc(100vh - 8rem);
+        max-height: calc(100% - 1.5rem);
         overflow: auto;
         border-right: 1px solid #e8e8e8;
         padding-right: 1rem;
@@ -119,6 +120,8 @@
 
       .manual-main {
         min-width: 0;
+        min-height: 0;
+        overflow: auto;
       }
 
       @media (max-width: 900px) {
@@ -143,6 +146,7 @@
           padding-right: 0;
           padding-bottom: 1rem;
           max-height: none;
+          overflow: visible;
         }
 
         .manual-contents > summary {
@@ -249,14 +253,14 @@
     <script>
       (function () {
         var sidebar = document.querySelector('.manual-sidebar');
-        var contentScroll = document.querySelector('.manual-content-scroll');
+        var mainScroll = document.querySelector('.manual-main');
         var contentsMenu = document.querySelector('.manual-contents');
         if (!contentsMenu || !sidebar) {
           return;
         }
 
         var sidebarScrollKey = 'manual-sidebar-scroll-{{ current_version | default: "default" }}';
-        var contentScrollKey = 'manual-content-scroll-{{ current_version | default: "default" }}';
+        var mainScrollKey = 'manual-main-scroll-{{ current_version | default: "default" }}';
 
         function saveSidebarScrollPosition() {
           try {
@@ -265,13 +269,13 @@
           }
         }
 
-        function saveContentScrollPosition() {
-          if (!contentScroll) {
+        function saveMainScrollPosition() {
+          if (!mainScroll) {
             return;
           }
 
           try {
-            window.sessionStorage.setItem(contentScrollKey, String(contentScroll.scrollTop));
+            window.sessionStorage.setItem(mainScrollKey, String(mainScroll.scrollTop));
           } catch (e) {
           }
         }
@@ -286,36 +290,36 @@
           }
         }
 
-        function restoreContentScrollPosition() {
-          if (!contentScroll) {
+        function restoreMainScrollPosition() {
+          if (!mainScroll) {
             return;
           }
 
           try {
-            var stored = window.sessionStorage.getItem(contentScrollKey);
+            var stored = window.sessionStorage.getItem(mainScrollKey);
             if (stored !== null) {
-              contentScroll.scrollTop = parseInt(stored, 10) || 0;
+              mainScroll.scrollTop = parseInt(stored, 10) || 0;
             }
           } catch (e) {
           }
         }
 
         sidebar.addEventListener('scroll', saveSidebarScrollPosition, { passive: true });
-        if (contentScroll) {
-          contentScroll.addEventListener('scroll', saveContentScrollPosition, { passive: true });
+        if (mainScroll) {
+          mainScroll.addEventListener('scroll', saveMainScrollPosition, { passive: true });
         }
 
         var navLinks = sidebar.querySelectorAll('a');
         for (var index = 0; index < navLinks.length; index += 1) {
           navLinks[index].addEventListener('click', function () {
             saveSidebarScrollPosition();
-            saveContentScrollPosition();
+            saveMainScrollPosition();
           });
         }
 
         window.addEventListener('beforeunload', function () {
           saveSidebarScrollPosition();
-          saveContentScrollPosition();
+          saveMainScrollPosition();
         });
 
         var mobileQuery = window.matchMedia('(max-width: 900px)');
@@ -332,7 +336,7 @@
 
         function restoreAllScrollPositions() {
           restoreSidebarScrollPosition();
-          restoreContentScrollPosition();
+          restoreMainScrollPosition();
         }
 
         restoreAllScrollPositions();
