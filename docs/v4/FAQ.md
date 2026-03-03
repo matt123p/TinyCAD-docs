@@ -9,6 +9,6 @@ manual, including requirements, feature differences, and keyboard shortcuts.
 
 ## Pages
 
-- [Web and desktop FAQ](Web-and-desktop-FAQ.md)
+- [Web and desktop FAQ](../Web-and-desktop-FAQ/)
 
-- Back to [v4 contents](CONTENTS.md)
+- Back to [v4 contents](../CONTENTS/)

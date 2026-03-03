@@ -6,7 +6,7 @@ layout: default
 
 There are a number of steps required to build TinyCAD.  It should be a fairly streamlined process, you will require at least [Visual Studio 2019](https://visualstudio.microsoft.com), which is a free download from Microsoft.
 
-Please read [Tools required to build](Tools-required-to-build.md) for more information on what tools are required.
+Please read [Tools required to build](../Tools-required-to-build/) for more information on what tools are required.
 
 ## Get the source code
 

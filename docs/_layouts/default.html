@@ -75,7 +75,7 @@
 
       .manual-sidebar {
         position: sticky;
-        top: 1rem;
+        top: 1.5rem;
         align-self: start;
         max-height: calc(100vh - 8rem);
         overflow: auto;
@@ -165,6 +165,15 @@
           display: block !important;
         }
       }
+
+      .manual-contents ul ul {
+        margin-top: 0.35rem;
+        padding-left: 1rem;
+      }
+
+      .manual-contents .section-link {
+        font-weight: 600;
+      }
     </style>
 
     {%- assign current_version = nil -%}
@@ -210,7 +219,17 @@
                     {%- assign entry_url = entry.url | relative_url -%}
                     {%- assign page_url = page.url | relative_url -%}
                     <li>
-                      <a href="{{ entry_url }}" {% if page_url == entry_url %}class="active"{% endif %}>{{ entry.title }}</a>
+                      <a href="{{ entry_url }}" class="section-link{% if page_url == entry_url %} active{% endif %}">{{ entry.title }}</a>
+                      {%- if entry.children -%}
+                        <ul>
+                          {%- for child in entry.children -%}
+                            {%- assign child_url = child.url | relative_url -%}
+                            <li>
+                              <a href="{{ child_url }}" {% if page_url == child_url %}class="active"{% endif %}>{{ child.title }}</a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
                     </li>
                   {%- endfor -%}
                 </ul>
@@ -229,10 +248,75 @@
 
     <script>
       (function () {
+        var sidebar = document.querySelector('.manual-sidebar');
+        var contentScroll = document.querySelector('.manual-content-scroll');
         var contentsMenu = document.querySelector('.manual-contents');
-        if (!contentsMenu) {
+        if (!contentsMenu || !sidebar) {
           return;
         }
+
+        var sidebarScrollKey = 'manual-sidebar-scroll-{{ current_version | default: "default" }}';
+        var contentScrollKey = 'manual-content-scroll-{{ current_version | default: "default" }}';
+
+        function saveSidebarScrollPosition() {
+          try {
+            window.sessionStorage.setItem(sidebarScrollKey, String(sidebar.scrollTop));
+          } catch (e) {
+          }
+        }
+
+        function saveContentScrollPosition() {
+          if (!contentScroll) {
+            return;
+          }
+
+          try {
+            window.sessionStorage.setItem(contentScrollKey, String(contentScroll.scrollTop));
+          } catch (e) {
+          }
+        }
+
+        function restoreSidebarScrollPosition() {
+          try {
+            var stored = window.sessionStorage.getItem(sidebarScrollKey);
+            if (stored !== null) {
+              sidebar.scrollTop = parseInt(stored, 10) || 0;
+            }
+          } catch (e) {
+          }
+        }
+
+        function restoreContentScrollPosition() {
+          if (!contentScroll) {
+            return;
+          }
+
+          try {
+            var stored = window.sessionStorage.getItem(contentScrollKey);
+            if (stored !== null) {
+              contentScroll.scrollTop = parseInt(stored, 10) || 0;
+            }
+          } catch (e) {
+          }
+        }
+
+        sidebar.addEventListener('scroll', saveSidebarScrollPosition, { passive: true });
+        if (contentScroll) {
+          contentScroll.addEventListener('scroll', saveContentScrollPosition, { passive: true });
+        }
+
+        var navLinks = sidebar.querySelectorAll('a');
+        for (var index = 0; index < navLinks.length; index += 1) {
+          navLinks[index].addEventListener('click', function () {
+            saveSidebarScrollPosition();
+            saveContentScrollPosition();
+          });
+        }
+
+        window.addEventListener('beforeunload', function () {
+          saveSidebarScrollPosition();
+          saveContentScrollPosition();
+        });
 
         var mobileQuery = window.matchMedia('(max-width: 900px)');
 
@@ -246,11 +330,22 @@
 
         syncContentsMenuState();
 
+        function restoreAllScrollPositions() {
+          restoreSidebarScrollPosition();
+          restoreContentScrollPosition();
+        }
+
+        restoreAllScrollPositions();
+        window.requestAnimationFrame(restoreAllScrollPositions);
+        window.setTimeout(restoreAllScrollPositions, 0);
+
         if (typeof mobileQuery.addEventListener === 'function') {
           mobileQuery.addEventListener('change', syncContentsMenuState);
         } else if (typeof mobileQuery.addListener === 'function') {
           mobileQuery.addListener(syncContentsMenuState);
         }
+
+        window.addEventListener('pageshow', restoreAllScrollPositions);
       })();
     </script>
   </body>

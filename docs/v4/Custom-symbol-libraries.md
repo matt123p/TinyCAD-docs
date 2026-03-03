@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Custom symbol libraries
+# Custom Libraries
 
 TinyCAD for the web supports custom symbols stored in symbol libraries.
 Libraries use the `.tclib` extension and are compatible with desktop TinyCAD.
@@ -90,5 +90,5 @@ Use the symbol menu button and choose **Duplicate**.
 
 Rename by editing symbol properties and changing the **Name** field.
 
-- Back to [Advanced](Advanced.md)
-- Back to [v4 contents](CONTENTS.md)
+- Back to [Symbols & Libraries](../Symbols-and-Libraries/)
+- Back to [v4 contents](../CONTENTS/)

@@ -8,7 +8,7 @@ At its simplest level, a TinyCAD drawing is a collection of symbols linked
 using wires.
 
 If TinyCAD is not running yet, start with the
-[quick start](TinyCAD-Web-overview-and-quick-start.md).
+[quick start](../TinyCAD-Web-overview-and-quick-start/).
 
 ## Example circuit
 
@@ -192,7 +192,7 @@ unconnected.
 ## Further reading
 
 For custom symbols and libraries, continue with
-[Custom symbol libraries](Custom-symbol-libraries.md).
+[Custom symbol libraries](../Custom-symbol-libraries/).
 
-- Back to [User guide](User-guide.md)
-- Back to [v4 contents](CONTENTS.md)
+- Back to [Drawing](../User-guide/)
+- Back to [v4 contents](../CONTENTS/)

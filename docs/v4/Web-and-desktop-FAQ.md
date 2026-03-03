@@ -47,7 +47,7 @@ Historically, GitHub was considered as a possible next service.
 | Feature | TinyCAD for the Web | Desktop TinyCAD | Notes |
 |---|---|---|---|
 | Load/Save TinyCAD `.dsn` files | Yes | Yes | TinyCAD web aims for full file-format compatibility with desktop |
-| Load/Edit TinyCAD library `.tclib` files | Yes | Yes | See [custom libraries](Custom-symbol-libraries.md) |
+| Load/Edit TinyCAD library `.tclib` files | Yes | Yes | See [custom libraries](../Custom-symbol-libraries/) |
 | Import symbols from TinyCAD.net | Search directly in web app (copy/paste also works) | Search online, then copy/paste into desktop | |
 | Multi-sheet drawings | Yes | Yes | |
 | Printing | Export to PDF for printing | Direct printing via OS printer driver | |
@@ -103,5 +103,5 @@ not expose F-keys in the same way.
 Some shortcuts can be intercepted by the browser and trigger browser actions
 instead.
 
-- Back to [FAQ](FAQ.md)
-- Back to [v4 contents](CONTENTS.md)
+- Back to [FAQ](../FAQ/)
+- Back to [v4 contents](../CONTENTS/)

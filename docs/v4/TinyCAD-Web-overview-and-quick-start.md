@@ -71,7 +71,7 @@ TinyCAD uses Google Analytics to track site usage volumes.
 
 ## Next step
 
-Continue with [Your first drawing](Your-first-drawing.md).
+Continue with [Your first drawing](../Your-first-drawing/).
 
-- Back to [Getting started](Getting-started.md)
-- Back to [v4 contents](CONTENTS.md)
+- Back to [Getting started](../Getting-started/)
+- Back to [v4 contents](../CONTENTS/)

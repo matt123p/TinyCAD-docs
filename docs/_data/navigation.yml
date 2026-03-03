@@ -33,18 +33,65 @@ v4:
     url: /v4/CONTENTS/
   - title: Getting Started
     url: /v4/Getting-started/
-  - title: TinyCAD Web Overview and Quick Start
-    url: /v4/TinyCAD-Web-overview-and-quick-start/
-  - title: User Guide
+    children:
+      - title: TinyCAD Web Overview and Quick Start
+        url: /v4/TinyCAD-Web-overview-and-quick-start/
+      - title: TinyCAD Desktop App
+        url: /v4/TinyCAD-Desktop-App/
+  - title: Drawing
     url: /v4/User-guide/
-  - title: Your First Drawing
-    url: /v4/Your-first-drawing/
-  - title: Reference
-    url: /v4/Reference/
+    children:
+      - title: Your First Drawing
+        url: /v4/Your-first-drawing/
+      - title: Searching your Drawing
+        url: /v4/Searching-your-Drawing/
+      - title: Design Details box
+        url: /v4/Design-Details-box/
+      - title: Design Rulers
+        url: /v4/Design-Rulers/
+      - title: Snap to Grid
+        url: /v4/Snap-to-Grid/
+      - title: Labels
+        url: /v4/Labels/
+      - title: Buses
+        url: /v4/Buses/
+      - title: No Connects
+        url: /v4/No-Connects/
+      - title: Text & Annotations
+        url: /v4/Text-and-Annotations/
+      - title: Printing
+        url: /v4/Printing/
+  - title: Symbols & Libraries
+    url: /v4/Symbols-and-Libraries/
+    children:
+      - title: Symbols
+        url: /v4/Symbols/
+      - title: Symbol References
+        url: /v4/Symbol-References/
+      - title: Using Symbol Libraries
+        url: /v4/Using-Symbol-Libraries/
+      - title: Custom Libraries
+        url: /v4/Custom-symbol-libraries/
+      - title: Importing Symbols from KiCAD
+        url: /v4/Importing-Symbols-from-KiCAD/
+      - title: Editing a Symbol
+        url: /v4/Editing-a-Symbol/
   - title: Advanced
     url: /v4/Advanced/
-  - title: Custom Symbol Libraries
-    url: /v4/Custom-symbol-libraries/
+    children:
+      - title: Design Rules Check
+        url: /v4/Design-Rules-Check/
+      - title: Netlist Editor
+        url: /v4/Netlist-Editor/
+      - title: SPICE output
+        url: /v4/SPICE-output/
+  - title: Reference
+    url: /v4/Reference/
+    children:
+      - title: Feature Differences
+        url: /v4/Feature-Differences/
+      - title: Shortcuts
+        url: /v4/Shortcuts/
   - title: Developer Guide
     url: /v4/Developer-guide/
   - title: FAQ

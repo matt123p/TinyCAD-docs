@@ -15,7 +15,7 @@ privacy notes, and first-use sign-in flow.
 
 ## Pages
 
-- [TinyCAD Web overview and quick start](TinyCAD-Web-overview-and-quick-start.md)
-- [Your first drawing](Your-first-drawing.md)
+- [TinyCAD Web overview and quick start](../TinyCAD-Web-overview-and-quick-start/)
+- [TinyCAD Desktop App](../TinyCAD-Desktop-App/)
 
-- Back to [v4 contents](CONTENTS.md)
+- Back to [v4 contents](../CONTENTS/)

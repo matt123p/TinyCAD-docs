@@ -4,11 +4,12 @@ layout: default
 
 # TinyCAD v4 - Advanced
 
-This section covers advanced workflows such as custom libraries and symbol
-editing.
+This section covers advanced editing, validation, and output workflows.
 
 ## Pages
 
-- [Custom symbol libraries](Custom-symbol-libraries.md)
+- [Design Rules Check](../Design-Rules-Check/)
+- [Netlist Editor](../Netlist-Editor/)
+- [SPICE output](../SPICE-output/)
 
-- Back to [v4 contents](CONTENTS.md)
+- Back to [v4 contents](../CONTENTS/)
