@@ -59,6 +59,7 @@ layout: default
 
 ## 7. Help
 
+- [Contributing to the Manual](../Contributing-to-the-Manual/)
 - [FAQ](../FAQ/)
 
 Back to [v4 home](../).

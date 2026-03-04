@@ -39,8 +39,6 @@ identity for tools.
 
 Buses do not require junction dots on the bus line itself.
 
-Junction rules still apply to wire-to-wire connections where appropriate.
-
 ## Buses and multi-sheet drawings
 
 Across sheets, reuse the same signal labels to connect corresponding nets.

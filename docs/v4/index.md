@@ -13,6 +13,14 @@ adapted into the v4 structure.
 The v4 manual has started with migrated content for web/online workflows,
 including getting started, first drawing, libraries, and FAQ/reference data.
 
+## Contribute to this manual
+
+The TinyCAD manual is open source and maintained on GitHub Pages.
+Community contributions are welcome, including typo fixes, clearer wording,
+new screenshots, and expanded examples.
+
+- [How to contribute to the manual](Contributing-to-the-Manual/)
+
 ## Core links
 
 - [v4 contents](CONTENTS/)
@@ -23,6 +31,7 @@ including getting started, first drawing, libraries, and FAQ/reference data.
 - [Reference](Reference/)
 - [Licence](Licence/)
 - [Developer](Developer-guide/)
+- [Contributing to the manual](Contributing-to-the-Manual/)
 - [FAQ](FAQ/)
 - [Back to version selector](../)
 - [Open TinyCAD v3 manual](../v3/)
