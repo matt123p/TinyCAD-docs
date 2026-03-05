@@ -1,0 +1,11 @@
+versions:
+  - id: v4
+    label: TinyCAD v4
+    path: /v4/
+    status: draft
+    default: true
+  - id: v3
+    label: TinyCAD v3
+    path: /v3/
+    status: stable
+    default: false

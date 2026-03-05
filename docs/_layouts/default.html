@@ -2,237 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
   <body>
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-
-      .manual-shell {
-        height: 100vh;
-        display: grid;
-        grid-template-rows: auto minmax(0, 1fr) auto;
-      }
-
-      .manual-navbar {
-        border-bottom: 1px solid #e8e8e8;
-        background: #fff;
-      }
-
-      .manual-navbar-inner {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0.85rem 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-      }
-
-      .manual-brand {
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .manual-navbar-links {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .manual-navbar-links a {
-        text-decoration: none;
-      }
-
-      .manual-navbar-links a:hover {
-        text-decoration: underline;
-      }
-
-      .manual-content-scroll {
-        overflow: hidden;
-        min-height: 0;
-      }
-
-      .manual-layout {
-        display: grid;
-        grid-template-columns: 280px minmax(0, 1fr);
-        gap: 2rem;
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 1.5rem 1rem 2rem;
-        height: 100%;
-        box-sizing: border-box;
-      }
-
-      .manual-layout.single-column {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .manual-sidebar {
-        position: sticky;
-        top: 1.5rem;
-        align-self: start;
-        max-height: calc(100% - 1.5rem);
-        overflow: auto;
-        border-right: 1px solid #e8e8e8;
-        padding-right: 1rem;
-      }
-
-      .manual-contents > summary {
-        margin: 0 0 0.75rem;
-        font-size: 1.1rem;
-        font-weight: 600;
-        cursor: pointer;
-      }
-
-      .manual-contents > summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .manual-sidebar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .manual-sidebar li {
-        margin: 0 0 0.35rem;
-      }
-
-      .manual-sidebar a {
-        display: block;
-        padding: 0.2rem 0.35rem;
-        border-radius: 4px;
-        text-decoration: none;
-      }
-
-      .manual-sidebar a:hover,
-      .manual-sidebar a.active {
-        background: #f2f2f2;
-        text-decoration: none;
-      }
-
-      .manual-main {
-        min-width: 0;
-        min-height: 0;
-        overflow: auto;
-      }
-
-      .manual-edit-link {
-        margin: 2rem 0 0;
-        padding-top: 0.75rem;
-        border-top: 1px solid #e8e8e8;
-        font-size: 0.9rem;
-      }
-
-      .manual-edit-link a {
-        text-decoration: none;
-      }
-
-      .manual-edit-link a:hover {
-        text-decoration: underline;
-      }
-
-      .manual-footer {
-        border-top: 1px solid #e8e8e8;
-        background: #fff;
-      }
-
-      .manual-footer-inner {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0.35rem 1rem;
-        font-size: 0.85rem;
-        line-height: 1.2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.45rem;
-        color: #555;
-        white-space: nowrap;
-      }
-
-      .manual-footer-inner a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .manual-footer-inner a:hover {
-        text-decoration: underline;
-      }
-
-      .manual-footer-sep {
-        color: #999;
-      }
-
-      @media (max-width: 900px) {
-        .manual-layout {
-          grid-template-columns: 1fr;
-          gap: 1rem;
-        }
-
-        .manual-navbar-inner {
-          flex-wrap: wrap;
-        }
-
-        .manual-navbar-links {
-          width: 100%;
-          justify-content: flex-start;
-        }
-
-        .manual-sidebar {
-          position: static;
-          border-right: 0;
-          border-bottom: 1px solid #e8e8e8;
-          padding-right: 0;
-          padding-bottom: 1rem;
-          max-height: none;
-          overflow: visible;
-        }
-
-        .manual-contents > summary {
-          margin-bottom: 0;
-        }
-
-        .manual-contents[open] > summary {
-          margin-bottom: 0.75rem;
-        }
-
-        .manual-footer-inner {
-          flex-wrap: wrap;
-          white-space: normal;
-          row-gap: 0.2rem;
-        }
-      }
-
-      @media (min-width: 901px) {
-        .manual-contents > summary {
-          list-style: none;
-          cursor: default;
-          pointer-events: none;
-        }
-
-        .manual-contents > ul {
-          display: block !important;
-        }
-      }
-
-      .manual-contents ul ul {
-        margin-top: 0.35rem;
-        padding-left: 1rem;
-      }
-
-      .manual-contents .section-link {
-        font-weight: 600;
-      }
-    </style>
 
     {%- assign current_version = nil -%}
     {%- if page.url contains '/v3/' -%}
@@ -256,22 +25,34 @@
     {%- endif -%}
 
     <div class="manual-shell">
+      <!-- ===== Navbar ===== -->
       <header class="manual-navbar" aria-label="Primary">
         <div class="manual-navbar-inner">
-          <a class="manual-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <a class="manual-brand" href="{{ '/' | relative_url }}">
+            Tiny<span class="brand-highlight">CAD</span> Manual
+          </a>
           <nav class="manual-navbar-links" aria-label="Site links">
-            <a href="{{ '/v4/' | relative_url }}">TinyCAD v4</a>
-            <a href="{{ '/v3/' | relative_url }}">TinyCAD v3</a>
+            {%- for ver in site.data.versions.versions -%}
+              {%- assign ver_path = ver.path | relative_url -%}
+              <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active"{% endif %}>
+                {{ ver.label }}
+              </a>
+            {%- endfor -%}
+            <span class="nav-divider"></span>
+            <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener">
+              <i class="bi bi-globe2 me-1"></i>tinycad.net
+            </a>
           </nav>
         </div>
       </header>
 
+      <!-- ===== Content ===== -->
       <div class="manual-content-scroll">
         <div class="manual-layout{% unless show_sidebar %} single-column{% endunless %}">
           {%- if show_sidebar -%}
             <aside class="manual-sidebar" aria-label="Manual contents">
               <details class="manual-contents">
-                <summary>Contents</summary>
+                <summary><i class="bi bi-list-ul me-1"></i>Contents</summary>
                 <ul>
                   {%- for entry in nav_items -%}
                     {%- assign entry_url = entry.url | relative_url -%}
@@ -299,116 +80,75 @@
             {{ content }}
             {%- if site.github_edit_base_url and page.path -%}
               <p class="manual-edit-link">
-                <a href="{{ site.github_edit_base_url }}/docs/{{ page.path }}">Edit this page on GitHub</a>
+                <a href="{{ site.github_edit_base_url }}/docs/{{ page.path }}">
+                  <i class="bi bi-pencil me-1"></i>Edit this page on GitHub
+                </a>
               </p>
             {%- endif -%}
           </main>
         </div>
       </div>
 
+      <!-- ===== Footer ===== -->
       {%- include footer.html -%}
     </div>
 
+    <!-- ===== Scripts ===== -->
     <script>
       (function () {
         var sidebar = document.querySelector('.manual-sidebar');
         var mainScroll = document.querySelector('.manual-main');
         var contentsMenu = document.querySelector('.manual-contents');
-        if (!contentsMenu || !sidebar) {
-          return;
-        }
+        if (!contentsMenu || !sidebar) return;
 
         var sidebarScrollKey = 'manual-sidebar-scroll-{{ current_version | default: "default" }}';
         var mainScrollKey = 'manual-main-scroll-{{ current_version | default: "default" }}';
 
-        function saveSidebarScrollPosition() {
+        function save(el, key) {
+          try { sessionStorage.setItem(key, String(el.scrollTop)); } catch (e) {}
+        }
+        function restore(el, key) {
           try {
-            window.sessionStorage.setItem(sidebarScrollKey, String(sidebar.scrollTop));
-          } catch (e) {
-          }
+            var v = sessionStorage.getItem(key);
+            if (v !== null) el.scrollTop = parseInt(v, 10) || 0;
+          } catch (e) {}
         }
 
-        function saveMainScrollPosition() {
-          if (!mainScroll) {
-            return;
-          }
-
-          try {
-            window.sessionStorage.setItem(mainScrollKey, String(mainScroll.scrollTop));
-          } catch (e) {
-          }
-        }
-
-        function restoreSidebarScrollPosition() {
-          try {
-            var stored = window.sessionStorage.getItem(sidebarScrollKey);
-            if (stored !== null) {
-              sidebar.scrollTop = parseInt(stored, 10) || 0;
-            }
-          } catch (e) {
-          }
-        }
-
-        function restoreMainScrollPosition() {
-          if (!mainScroll) {
-            return;
-          }
-
-          try {
-            var stored = window.sessionStorage.getItem(mainScrollKey);
-            if (stored !== null) {
-              mainScroll.scrollTop = parseInt(stored, 10) || 0;
-            }
-          } catch (e) {
-          }
-        }
-
-        sidebar.addEventListener('scroll', saveSidebarScrollPosition, { passive: true });
-        if (mainScroll) {
-          mainScroll.addEventListener('scroll', saveMainScrollPosition, { passive: true });
-        }
+        sidebar.addEventListener('scroll', function () { save(sidebar, sidebarScrollKey); }, { passive: true });
+        if (mainScroll) mainScroll.addEventListener('scroll', function () { save(mainScroll, mainScrollKey); }, { passive: true });
 
         var navLinks = sidebar.querySelectorAll('a');
-        for (var index = 0; index < navLinks.length; index += 1) {
-          navLinks[index].addEventListener('click', function () {
-            saveSidebarScrollPosition();
-            saveMainScrollPosition();
+        for (var i = 0; i < navLinks.length; i++) {
+          navLinks[i].addEventListener('click', function () {
+            save(sidebar, sidebarScrollKey);
+            if (mainScroll) save(mainScroll, mainScrollKey);
           });
         }
 
         window.addEventListener('beforeunload', function () {
-          saveSidebarScrollPosition();
-          saveMainScrollPosition();
+          save(sidebar, sidebarScrollKey);
+          if (mainScroll) save(mainScroll, mainScrollKey);
         });
 
-        var mobileQuery = window.matchMedia('(max-width: 900px)');
-
-        function syncContentsMenuState() {
-          if (mobileQuery.matches) {
-            contentsMenu.removeAttribute('open');
-          } else {
-            contentsMenu.setAttribute('open', 'open');
-          }
+        var mq = window.matchMedia('(max-width: 900px)');
+        function syncMenu() {
+          if (mq.matches) contentsMenu.removeAttribute('open');
+          else contentsMenu.setAttribute('open', 'open');
         }
+        syncMenu();
 
-        syncContentsMenuState();
-
-        function restoreAllScrollPositions() {
-          restoreSidebarScrollPosition();
-          restoreMainScrollPosition();
+        function restoreAll() {
+          restore(sidebar, sidebarScrollKey);
+          if (mainScroll) restore(mainScroll, mainScrollKey);
         }
+        restoreAll();
+        requestAnimationFrame(restoreAll);
+        setTimeout(restoreAll, 0);
 
-        restoreAllScrollPositions();
-        window.requestAnimationFrame(restoreAllScrollPositions);
-        window.setTimeout(restoreAllScrollPositions, 0);
+        if (typeof mq.addEventListener === 'function') mq.addEventListener('change', syncMenu);
+        else if (typeof mq.addListener === 'function') mq.addListener(syncMenu);
 
-        if (typeof mobileQuery.addEventListener === 'function') {
-          mobileQuery.addEventListener('change', syncContentsMenuState);
-        } else if (typeof mobileQuery.addListener === 'function') {
-          mobileQuery.addListener(syncContentsMenuState);
-        }
-
-        window.addEventListener('pageshow', restoreAllScrollPositions);
+        window.addEventListener('pageshow', restoreAll);
       })();
     </script>
   </body>
