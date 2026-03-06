@@ -6,8 +6,6 @@ layout: default
 
 ## TinyCAD for the Web
 
-**Note:** Historically this was published as a pre-release and supplied "as-is".
-
 TinyCAD for the web runs directly in your browser, does not need installing,
 and works on operating systems that support a compatible browser. The file
 formats are compatible with desktop TinyCAD (`.dsn` drawings and `.tclib`

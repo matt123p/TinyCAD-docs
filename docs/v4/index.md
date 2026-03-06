@@ -9,6 +9,12 @@ a small number of feature differences between the two versions.
 
 Go to the [Feature Differences](Feature-Differences/) page if you want to know the exact differences between versions of TinyCAD.
 
+## Warning
+
+**TinyCAD** is written and supplied free-of-charge as an open source, community driven project.  It is supplied "as-is" and may have bugs or incomplete features.  
+
+It is your responsibility to backup your work and prevent data loss. It is your responsibility to check carefully before building circuits or printing PCBs.
+
 ## Contribute to this manual
 
 The TinyCAD manual is open source and maintained on GitHub Pages.
@@ -27,6 +33,3 @@ new screenshots, and expanded examples.
 - [Licence](Licence/)
 - [Developer](Developer-guide/)
 - [Contributing to the manual](Contributing-to-the-Manual/)
-- [FAQ](FAQ/)
-- [Back to version selector](../)
-- [Open TinyCAD v3 manual](../v3/)
