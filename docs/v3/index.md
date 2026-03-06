@@ -6,7 +6,7 @@ layout: default
 
 This is the documentation for TinyCAD version 3.
 
-![Image](/v3/images/screenshot 1.png)
+![Screenshot of the TinyCAD v3 application interface](/v3/images/screenshot%201.png)
 
 ## Start here
 

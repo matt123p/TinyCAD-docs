@@ -4,6 +4,6 @@ layout: default
 
 # Overview of TinyCAD
 
-![Overview 1](/v3/images/Overview1.png)
+![TinyCAD main window showing the drawing area, symbol browser, and toolbars](/v3/images/Overview1.png)
 
-![Overview 2](/v3/images/Overview2.png)
+![TinyCAD interface with labelled controls and panels](/v3/images/Overview2.png)

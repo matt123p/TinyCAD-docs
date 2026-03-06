@@ -13,7 +13,7 @@ using wires.  In this example, you will place some symbols and then join them up
 
 Here is a simple circuit to draw:
 
-<img src="/v4/images/media/image1.png" alt="Simple circuit" style="width: 2.13542in; height: 1.13542in;" />
+<img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
 ## Symbol libraries
 
@@ -21,21 +21,21 @@ Here is a simple circuit to draw:
 2. Select **Multi Cell Battery**.
 3. Drag the symbol from the symbol panel onto the drawing.
 
-<img src="/v4/images/media/image4.png" alt="Placing a symbol" style="width: 4.436in; height: 6.89583in;" />
+<img src="/v4/images/media/image4.png" alt="Symbol browser with a battery symbol being dragged onto the drawing" style="width: 4.436in; height: 6.89583in;" />
 
 Now place a resistor and an LED.
 
 Use the toolbar rotate/flip controls to orient symbols:
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls" style="width: 1.98958in; height: 0.73958in;" />
+<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" style="width: 1.98958in; height: 0.73958in;" />
 
 If you make a mistake, use Undo/Redo:
 
-<img src="/v4/images/media/image6.png" alt="Undo and redo" style="width: 0.92708in; height: 0.82292in;" />
+<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" style="width: 0.92708in; height: 0.82292in;" />
 
 Your drawing should look similar to:
 
-<img src="/v4/images/media/image7.png" alt="Placed symbols" style="width: 3.76042in; height: 2.52083in;" />
+<img src="/v4/images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
 
 ## Wiring up a circuit
 
@@ -50,7 +50,7 @@ Tip: press `W` on the keyboard to re-enter wire mode quickly.
 
 After wiring, it should look similar to:
 
-<img src="/v4/images/media/image8.png" alt="Wired circuit" style="width: 3.40625in; height: 2.38542in;" />
+<img src="/v4/images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
 
 ## Annotating the drawing
 
@@ -60,12 +60,12 @@ the symbol **Name** and **Ref** fields.
 1. Click the battery.
 2. Open the **Symbol** panel in the side panel menu.
 
-<img src="/v4/images/media/image9.png" alt="Symbol side panel" style="width: 6.26806in; height: 5.46667in;" />
+<img src="/v4/images/media/image9.png" alt="Symbol properties side panel for the selected battery symbol" style="width: 6.26806in; height: 5.46667in;" />
 
 3. Change `BATTERY_2` to `9V`.
 4. Change reference `Z?` to `B1`.
 
-<img src="/v4/images/media/image10.png" alt="Editing name and reference" style="width: 6.26806in; height: 5.02639in;" />
+<img src="/v4/images/media/image10.png" alt="Symbol panel with the Name and Ref fields being edited" style="width: 6.26806in; height: 5.02639in;" />
 
 Repeat for the other parts:
 
@@ -83,7 +83,7 @@ Your first drawing is complete. To rename it:
 2. Rename it to `First Drawing.dsn`.
 3. Press Enter.
 
-<img src="/v4/images/media/image13.png" alt="Rename drawing" style="width: 4.15625in; height: 0.92708in;" />
+<img src="/v4/images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
 
 Save to Google Drive using the **Save** icon.
 
@@ -93,7 +93,7 @@ To load it again from Google Drive:
 2. Find the drawing.
 3. Right-click and choose **Open with -> TinyCAD**.
 
-<img src="/v4/images/media/image14.png" alt="Open with TinyCAD in Drive" style="width: 5.09138in; height: 3.90625in;" />
+<img src="/v4/images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
 
 You can also rename and delete TinyCAD designs in Google Drive.
 

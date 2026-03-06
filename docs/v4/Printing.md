@@ -6,7 +6,7 @@ layout: default
 
 Use the toolbar menu **Print** option:
 
-<img src="/v4/images/media/image12.png" alt="Print menu" style="width: 2.46875in; height: 2.95833in;" />
+<img src="/v4/images/media/image12.png" alt="Toolbar menu showing the Print command for the current drawing" style="width: 2.46875in; height: 2.95833in;" />
 
 Most browsers open a PDF in a new tab. You can print directly or save the PDF.
 

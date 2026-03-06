@@ -21,7 +21,7 @@ access to each one:
 1. In Google Drive, right-click the `.tclib` file.
 2. Choose **Open with -> TinyCAD**.
 
-<img src="/v4/images/media2/image1.png" alt="Open library with TinyCAD" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 Repeat this for **every** library you want available.
 
@@ -36,22 +36,22 @@ Back in your drawing session:
 1. Open **My Libraries**.
 2. Click **Refresh** next to **My Libraries**.
 
-<img src="/v4/images/media2/image2.png" alt="Refresh libraries" style="width: 3.09375in; height: 1.10417in;" />
+<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" style="width: 3.09375in; height: 1.10417in;" />
 
 After refresh, libraries are listed:
 
-<img src="/v4/images/media2/image3.png" alt="My libraries list" style="width: 3.26042in; height: 5.4375in;" />
+<img src="/v4/images/media2/image3.png" alt="My Libraries panel listing available custom symbol libraries" style="width: 3.26042in; height: 5.4375in;" />
 
 You can browse libraries by expanding them, search for symbols, or open symbol
 preview with the magnifying glass button:
 
-<img src="/v4/images/media2/image4.png" alt="Library symbol preview" style="width: 3.375in; height: 2.28125in;" />
+<img src="/v4/images/media2/image4.png" alt="Library browser showing symbol search results and a preview button" style="width: 3.375in; height: 2.28125in;" />
 
 ## Creating a new library
 
 Use the menu item **New Custom Library**:
 
-<img src="/v4/images/media2/image5.png" alt="New custom library menu" style="width: 2.44792in; height: 3.1875in;" />
+<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command selected" style="width: 2.44792in; height: 3.1875in;" />
 
 ## Editing a library
 
@@ -74,7 +74,7 @@ points. Correct pin usage is essential for expected behavior in schematics.
 
 Pin size, shape, and type are configured in the side panel:
 
-<img src="/v4/images/media2/image6.png" alt="Pin properties" style="width: 4.44792in; height: 5.32292in;" />
+<img src="/v4/images/media2/image6.png" alt="Pin properties panel showing pin type, shape, and size settings" style="width: 4.44792in; height: 5.32292in;" />
 
 ### Deleting a symbol
 

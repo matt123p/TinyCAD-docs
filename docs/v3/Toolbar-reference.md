@@ -2,9 +2,11 @@
 layout: default
 ---
 
-# Annotation toolbar 
+# Toolbar reference
 
-## Arc segment 
+## Annotation toolbar 
+
+### Arc segment 
 
 The only arcs which can be drawn are the arcs which represent one quarter of an ellipse. Arcs are for annotating your designs only, they are ignored by all the special tools.
 
@@ -16,7 +18,7 @@ You may change the width of the line the arc is drawn with or the color of the f
 
 Arcs can be edited as part of a polygon or polyline.
 
-## Ellipse 
+### Ellipse 
 
 Ellipses are only used to annotate designs. They are ignored by all the Special tools.
 
@@ -26,19 +28,19 @@ To draw an ellipse you must start by moving to one corner of the rectangle that 
 
 You may change the width of the line the arc is drawn with or the color of the fill of the arc by using the tool dialogue normally displayed in the top right hand corner of the drawing.
 
-## Polyline and polygons 
+### Polyline and polygons 
 
 Polylines and polygons are provided to annotate your diagrams only. For the most part, they are ignored by all the special tools.
 
 These tools are new to TinyCAD version 1.80.00, and are described fully in the “Adding Text and Annotations” section.
 
-## Rectangle 
+### Rectangle 
 
 Rectangles are only used to annotate designs. They are ignored by all the Special tools.
 
 To draw rectangles, select the tool on the Toolbar. Then go to the position for one of the corners of the rectangle. Click with the left mouse button. Now as you move or drag the mouse the rectangle will be shown. Once the Rectangle is in the correct position click again with the left mouse button. You may change the width of the line the arc is drawn with or the color of the fill of the arc by using the tool dialogue normally displayed in the top right hand corner of the drawing.
 
-## Text 
+### Text 
 
 Text is used only to annotate designs, it is ignored by the special tools.  Do not confuse the text tool with the label tool, which produces electrically active net names.
 
@@ -54,9 +56,9 @@ Text can be edited once placed. To do so select Edit Item on the Toolbar. Then c
 
 Text can be re-sized once placed by using the handles displayed around the item or by using the tool dialogue normally displayed in the top right hand corner of the drawing.
 
-# Drawing toolbar 
+## Drawing toolbar 
 
-## Bus 
+### Bus 
 
 Click with the left mouse button in the place you wish to start the line. Move to where you wish the line to end and click with the left hand button again. A bus segment will be placed and a new bus segment is now started from this point.
 
@@ -72,7 +74,7 @@ Buses cannot be edited, but they can be moved, dragged or deleted.
 
 Buses can be repeated.
 
-## Bus Entry 
+### Bus Entry 
 
 Bus entries are used to show the connection of a wire to a bus. There are two types of bus entry, allowing for connection into the bus from any possible direction.
 
@@ -84,7 +86,7 @@ Bus Entries cannot be edited, but they can be moved or deleted.
 
 Bus Entries can be repeated.
 
-## Bus Name 
+### Bus Name 
 
 A Bus Name placed across a Bus to indicate the nature of the Bus. This could be the number of conductors in the bus or the name of the Bus.
 
@@ -98,9 +100,9 @@ You can cancel entering text by clicking with the right mouse button.
 
 Bus Names can be edited once placed. To do so select Edit Item on the Toolbar. Then click with the left mouse button on the text to be edited. A window will appear with the original text in it. You can now alter it as necessary. When finished either click with the left mouse button on something else to edit, or click with the right mouse button.
 
-# Block toolbar 
+## Block toolbar 
 
-## Move Block 
+### Move Block 
 
 This option allows you to move parts of the design around. The connections by wires are not preserved when this option is used. If you wish to keep the connections use the drag block option.
 
@@ -110,7 +112,7 @@ The area selected will be highlighted. You can now move this area around the des
 
 You can cancel the move by clicking with the right mouse button.
 
-## Drag Block 
+### Drag Block 
 
 This option allows you to move parts of the design, keeping the connections made by wires. All wires and buses that pass into the selected area to be moved will keep their ends outside the selected area fixed in place. All connections to symbols by wires will also be preserved.
 
@@ -122,7 +124,7 @@ The area selected will be highlighted. You can now drag this area around the des
 
 You can cancel the drag by clicking with the right mouse button.
 
-## Duplicate Block 
+### Duplicate Block 
 
 This option allows you to make another copy of part of the design to be placed somewhere else in the design.
 
@@ -132,7 +134,7 @@ The area selected will be highlighted. When you move the mouse you will find tha
 
 You can cancel the duplication by clicking with the right mouse button.
 
-## Rotate Block 
+### Rotate Block 
 
 This option allows you to rotate and mirror (flip) a selected area of the design. This makes it very easy to correct the mistake of placing a component the wrong way round, as it and all its connections can be rotated.
 
@@ -144,9 +146,9 @@ A dialogue box will now give you options to rotate the block clockwise or anti-c
 
 Once you have finished rotating the block click with either the left hand or right mouse button.
 
-# Drawing toolbar 
+## Editing toolbar 
 
-## Delete Item 
+### Delete Item 
 
 This option allow you to delete objects in the design.
 
@@ -156,7 +158,7 @@ Now select this option on the toolbar menu to delete the item.
 
 You may undo the deletion by using the undo option in the edit menu.
 
-## Edit Item 
+### Edit Item 
 
 This option enables editing of objects already placed in the design. You may also use this tool to move objects in your design and to delete objects in your design.
 
@@ -176,7 +178,7 @@ You may copy any selected object to the clipboard by selecting the Copy or Cut o
 
 To select groups of objects you may drag a rectangle around the objects to be selected. Any object within the rectangle will be selected. Once it has been selected you may delete, move, copy or cut the object. To drag the rectangle, place the pointer in an area of the design where there is no object. Hold down the left mouse button and move the mouse. The rectangle will be created. Release the left mouse button to select the objects within the rectangle.
 
-## Junction 
+### Junction 
 
 Junctions are normally automatically placed for you. You do not need to use this tool.
 
@@ -186,7 +188,7 @@ To place a junction select this option, then move the junction to the location i
 
 Junctions cannot be edited, but they can be moved or deleted.
 
-## Label 
+### Label 
 
 Labels indicate a connection to the wire which runs beneath them. Any two wires with the same label name above them are considered to be connected.
 
@@ -206,7 +208,7 @@ Labels can be edited once placed. To do so select Edit Item on the Toolbar. Then
 
 Labels can be re-sized once placed by using the handles displayed around the item or by using the tool dialogue normally displayed in the top right hand corner of the drawing.
 
-## No Connect 
+### No Connect 
 
 No connects indicate that the symbol, wire or power item is not connected to anything else, and should not be connected to anything else. The electrical rules checker will indicate an error if an input is unconnected unless it has a no connect joined to it. Place no connects on any unused input or output to avoid this error and indicate that it is intentionally left unconnected.
 
@@ -214,7 +216,7 @@ To place a no connect select this option, then move the cross to the location in
 
 No connects cannot be edited, but they can be moved or deleted.
 
-## Power 
+### Power 
 
 Power objects are use to show where power is connected to the design. All power objects should have a value, which is the value of the power it provides (such as 5V, GND, 0V etc.). All power objects with the same value are considered connected to one another; even if they have different shapes.
 
@@ -232,7 +234,7 @@ Power items can be edited. To do so select Edit Item in the Edit menu. Click wit
 
 Power items can also be move and deleted.
 
-## Wire 
+### Wire 
 
 Wires are used to indicated connections on the circuit diagram. If you wish to use features such as the electrical rules checker or net list generation then you must use wires for this purpose. If you use lines instead of wires to join up points on a diagram then these tools will not work!
 
@@ -256,29 +258,29 @@ Wires cannot be edited, but they can be moved, dragged or deleted.
 
 Wires can be repeated.
 
-## Zoom 
+### Zoom 
 
 The zoom tool enables you to easily enlarge the view of the design. Once selected you may enlarge the view by clicking with the left mouse button, and reduce the view by clicking with the right mouse button.
 
 The position of the mouse pointer, when you zoom in, is moved to the center of the window.
 
-# You may also use the scroll-wheel to zoom.
+You may also use the scroll-wheel to zoom.
 
-# File toolbar 
+## File toolbar 
 
-## New 
+### New 
 
 This gets rid of the current design. All drawings in the current design are removed. If the current design has not been saved then you are asked to confirm before the design is lost.
 
-## Open 
+### Open 
 
 This option opens a previously saved design for editing or printing. If there is already a design being edited it will be lost. If the current design has not been saved then you will be asked to confirm before continuing.
 
-## Save 
+### Save 
 
 This option saves the current design, its page set up and the design details are all saved in a single file. If the design has already a file name associated with it then it will be saved using this file name without prompting. If the design has never been saved then you will be prompted for a new file name before it is saved.
 
-## Cut 
+### Cut 
 
 This option enables you to move parts of the design which have been selected to the clipboard. Once it has been moved to the clipboard you may use paste to re-insert them into a different part of the design, and may paste again and again to duplicate a part of the design.
 
@@ -286,13 +288,13 @@ To select objects in the design use the edit item option on the toolbar.
 
 You may also paste into other Windows applications such as Microsoft Word.
 
-## Paste 
+### Paste 
 
 This option takes a previously copied or cut part of a design and enable you to place it into the current design.
 
 Once this option has been selected the pasted design will be displayed at the mouse pointer. To paste it in click with the left mouse button, to cancel click with the right mouse button.
 
-## Copy 
+### Copy 
 
 This option enables you to copy parts of the design which have been selected to the clipboard. Once it has been copied to the clipboard you may use paste to re-insert them into a different part of the design, and may paste again and again to duplicate a part of the design.
 
@@ -300,7 +302,7 @@ To select objects in the design use the edit item option on the toolbar.
 
 You may also paste into other Windows applications such as Microsoft Word.
 
-## Print 
+### Print 
 
 Use this option print to any installed the windows printer.
 

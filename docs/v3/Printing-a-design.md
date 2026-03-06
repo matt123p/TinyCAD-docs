@@ -6,7 +6,7 @@ layout: default
 
 Once your design is drawn it can be printed to any Windows-supported printer.
 
-![Image](/v3/images/image14.png)
+![Print dialog showing TinyCAD printing options](/v3/images/image14.png)
 
 The printing options available are outlined in the Print option in the File Menu, detailed in the Menu Reference guide.
 

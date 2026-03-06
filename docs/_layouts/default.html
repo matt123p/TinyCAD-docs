@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     {%- assign current_version = nil -%}
     {%- if page.url contains '/v3/' -%}
@@ -26,15 +27,15 @@
 
     <div class="manual-shell">
       <!-- ===== Navbar ===== -->
-      <header class="manual-navbar" aria-label="Primary">
+      <header class="manual-navbar">
         <div class="manual-navbar-inner">
           <a class="manual-brand" href="{{ '/' | relative_url }}">
             Tiny<span class="brand-highlight">CAD</span> Manual
           </a>
-          <nav class="manual-navbar-links" aria-label="Site links">
+          <nav class="manual-navbar-links" aria-label="Primary">
             {%- for ver in site.data.versions.versions -%}
               {%- assign ver_path = ver.path | relative_url -%}
-              <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active"{% endif %}>
+              <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active" aria-current="page"{% endif %}>
                 {{ ver.label }}
               </a>
             {%- endfor -%}
@@ -58,13 +59,13 @@
                     {%- assign entry_url = entry.url | relative_url -%}
                     {%- assign page_url = page.url | relative_url -%}
                     <li>
-                      <a href="{{ entry_url }}" class="section-link{% if page_url == entry_url %} active{% endif %}">{{ entry.title }}</a>
+                        <a href="{{ entry_url }}" class="section-link{% if page_url == entry_url %} active{% endif %}"{% if page_url == entry_url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
                       {%- if entry.children -%}
                         <ul>
                           {%- for child in entry.children -%}
                             {%- assign child_url = child.url | relative_url -%}
                             <li>
-                              <a href="{{ child_url }}" {% if page_url == child_url %}class="active"{% endif %}>{{ child.title }}</a>
+                                <a href="{{ child_url }}" {% if page_url == child_url %}class="active" aria-current="page"{% endif %}>{{ child.title }}</a>
                             </li>
                           {%- endfor -%}
                         </ul>
@@ -76,7 +77,7 @@
             </aside>
           {%- endif -%}
 
-          <main class="manual-main" aria-label="Content">
+          <main id="main-content" class="manual-main" tabindex="-1">
             {{ content }}
             {%- if site.github_edit_base_url and page.path -%}
               <p class="manual-edit-link">

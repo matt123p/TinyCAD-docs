@@ -2,59 +2,61 @@
 layout: default
 ---
 
-# File menu 
+# Menu reference
 
-## New 
+## File menu 
+
+### New 
 
 This gets rid of the current design. All drawings in the current design are removed. If the current design has not been saved then you are asked to confirm before the design is lost.
 
-## Open 
+### Open 
 
 This option opens a previously saved design for editing or printing. If there is already a design being edited it will be lost. If the current design has not been saved then you will be asked to confirm before continuing.
 
-## Close 
+### Close 
 
 Close the current window. This option will prompt you save any changes if you have made any.
 
-## Save 
+### Save 
 
 This option saves the current design, its page set up and the design details are all saved in a single file. If the design has already a file name associated with it then it will be saved using this file name without prompting. If the design has never been saved then you will be prompted for a new file name before it is saved.
 
-## Save As 
+### Save As 
 
 This option is similar to the Save menu option; however, you will always be prompted for a file name. Using this option you can save the current design using a new file name or place it into a different directory.
 
-## Design Details 
+### Design Details 
 
-![Image](/v3/images/image17.png)
+![Design details dialog for title, author, and page information](/v3/images/image17.png)
 
 Each design has details of its full title, the author, ''etc''. This option allows you to change these details. When the design is next saved, these details are saved with the design.
 
 If the Display Details box is checked then these details will be displayed and printed in the bottom right hand corner of your design.
 
-## Import 
+### Import 
 
 Using this option you can place into the current design another previously saved or exported design.
 
 When selected you will be prompted to enter the file name of a saved design. This design will be loaded and displayed. You can move the positioning of the imported design with the mouse. Place the design using the left mouse button or cancel the operation using the right mouse button.
 
-## Save as bitmap 
+### Save as bitmap 
 
 Using this option you can save a copy of the design as a PNG file for sharing with people who do not have TinyCAD installed on their computers. If you have an area of the design selected then just that area will be saved into the PNG file. If nothing is selected on the design then the entire design, including the design details and design rulers will be written into the bitmap.
 
-## Print 
+### Print 
 
 Use this option print to any installed the windows printer.
 
 If the drawing is larger than the paper size of the printer, then it is split up over as many pages as it takes to print the design in tiles.
 
-## Print Preview 
+### Print Preview 
 
 This option is to show you how the design would be printed on your printer. You can use this option to see if it will be printed the way you want before you actually print on paper.
 
-## Page Setup 
+### Page Setup 
 
-![Image](/v3/images/image18.png)
+![Page setup dialog for paper size and orientation](/v3/images/image18.png)
 
 This option allows you to select the total size of the design.
 
@@ -64,13 +66,13 @@ The printer setup option is used with the printer setup button. Click on the pri
 
 The page size is saved with the current design when it is saved. The last page size entered here will be remembered for the next new design you start.
 
-## Exit 
+### Exit 
 
 This option will exit the program and remove it from memory.
 
-# Edit menu 
+## Edit menu 
 
-## Undo 
+### Undo 
 
 This option undoes the last action or sequence of actions performed on the design. For example, you can Undo the last drawing operation or undo the last deletion.
 
@@ -78,11 +80,11 @@ You may select this option repeatedly. This will cause the design to return to e
 
 The opposite of this option is Redo.
 
-## Redo 
+### Redo 
 
 This option is the opposite of the Undo option. If you select Undo then the last operation of the design will be undone. If you then change you mind about the Undo, selecting Redo will reverse the action of Undo.
 
-## Repeat 
+### Repeat 
 
 If the last object placed in the design was repeatable, this option creates another copy of it in a new location (depending on the repeat direction).
 
@@ -90,7 +92,7 @@ Only wires, line, dashed lines, buses and bus entries can be repeated.
 
 They are repeated above, below, to the left of, or to the right of, the last placed object. This can be selected by the Up, Down, Left, Right option in the repeat directions menu.
 
-## Cut 
+### Cut 
 
 This option enables you to move parts of the design which have been selected to the clipboard. Once it has been moved to the clipboard you may use paste to re-insert them into a different part of the design, and may paste again and again to duplicate a part of the design.
 
@@ -98,13 +100,13 @@ To select objects in the design use the edit item option on the toolbar.
 
 You may also paste into other Windows applications such as Microsoft Word.
 
-## Paste 
+### Paste 
 
 This option takes a previously copied or cut part of a design and enable you to place it into the current design.
 
 Once this option has been selected the pasted design will be displayed at the mouse pointer. To paste it in click with the left mouse button, to cancel click with the right mouse button.
 
-## Copy 
+### Copy 
 
 This option enables you to copy parts of the design which have been selected to the clipboard. Once it has been copied to the clipboard you may use paste to re-insert them into a different part of the design, and may paste again and again to duplicate a part of the design.
 
@@ -112,43 +114,43 @@ To select objects in the design use the edit item option on the toolbar.
 
 You may also paste into other Windows applications such as Microsoft Word.
 
-## Copy to... 
+### Copy to... 
 
 Using this option you can save just part of the current design. This part can be loaded as a design in its own right, or imported into another design.
 
 Only the current selection will be written into the output file. A dialogue box will prompt you to enter the file name to save the export design. Remember, this dialogue can be moved out of the way to see which parts of the design have been selected.
 
-## Find 
+### Find 
 
 This options can be used to find specific uses of text in the design. The user enters the text to be found. This text is then searched for in the design. Each occurrence of the string is has a marker placed on it and all the occurrences are placed in the design marker dialog.
 
 The markers are removed from the design when the dialog box is close. Clicking on the text in the dialog box moves the associated marker to the center of the design window.
 
-## Tag 
+### Tag 
 
 This option prompts you to name the selected area, and adds the tag to the design. When the tag is re-selected using the Tags option, this same area of the design is displayed in the design window.
 
-## Set Tag 
+### Set Tag 
 
 This option prompts you to name the selected area, and adds the tag to the design. When the tag is re-selected using the Tags option, this same area of the design is displayed in the design window.
 
 By naming different parts of the design, a large design can still be navigated using these tags.
 
-## Zoom In 
+### Zoom In 
 
 Increase the size of the drawing to show more detail. You can also zoom in using the mouse scroll-wheel or by using the zoom tool from the drawing toolbar.
 
-## Zoom Out 
+### Zoom Out 
 
 Increase the size of the drawing to show more of the drawing. You can also zoom out using the mouse scroll-wheel or by using the zoom tool from the drawing toolbar.
 
-# Library menu 
+## Library menu 
 
-## Libraries 
+### Libraries 
 
 This option brings up the dialogue box which allows the setting up and editing of libraries.
 
-![Image](/v3/images/image10.png)
+![Libraries dialog showing the library search list](/v3/images/image10.png)
 
 The list in the dialogue box is a list of libraries searched when the Get option (in the Library menu) is used. You may add or remove these libraries from this list using the buttons at the side of the list.
 
@@ -156,22 +158,23 @@ The Add button in the dialogue allows a library not currently being searched to 
 
 The Remove button removes a library from the search list. It does not delete it! Select the library you wish to remove by clicking on it in the list box, then click on the remove button.
 
-The Edit button allows you to:<br />
-- View &amp; Print thumbnails of the symbols<br />
-- Add new symbols to this library<br />
+The Edit button allows you to:
+
+- View and print thumbnails of the symbols
+- Add new symbols to this library
 - Edit existing symbols in the library
 
 The Tidy button causes a library to be tidied up. Select a library to tidy by clicking on it in the list, then click on the Tidy button. When the library has been tidied a message box will appear informing you of this.
 
 Libraries will need tidying after they have been extensively edited. Tidying the library will make it smaller by removing the unwanted old (now deleted) symbols in the library.
 
-## Refresh symbols from libraries 
+### Refresh symbols from libraries 
 
 Normally symbols are saved with the design, so any changes to the libraries do not effect your design straight away.
 
 This option causes all the libraries currently in use to be re-read, and any changes displayed in the current design. This only effects the design in the current window.
 
-## Part in Package 
+### Part in Package 
 
 This option can only be used when you are editing a library symbol.
 
@@ -181,7 +184,7 @@ Each part in the package must have the same symbol outline, but with different p
 
 When you select a new part per package, which has not yet been defined, you will be given the option to copy over the pins in the current part into the new part. Select Yes, if you wish to have the pins in the same layout for each part in the package. This is highly recommended. Once the pins have been copied, you can edit their pin numbers using the Edit Item option in the Edit menu.
 
-## Add Pin 
+### Add Pin 
 
 This option can only be selected when you are editing a library symbol.
 
@@ -215,11 +218,11 @@ Pins can be edited. To edit them select the Edit Item option in the Edit menu, t
 
 Pins can also be moved or deleted.
 
-# Symbol menu 
+## Symbol menu 
 
 _This menu is only visible when you are viewing symbol thumbnails in a library editing window._
 
-## New symbol 
+### New symbol 
 
 Add a new symbol to this library. A symbol editing window will open and you can start designing your symbol in it. Use the “file save” menu option to save the new symbol back to the library.
 
@@ -229,23 +232,23 @@ Use the “Add Pin” option in the library menu to place a pin into a symbol.
 
 The new symbol will not appear in the library until the symbol has been saved.
 
-## Edit Symbol 
+### Edit Symbol 
 
 Select a symbol thumbnail in the library edit window and then use this option to edit it. The symbol is loaded into a symbol edit window so that you may alter it. See the “New Symbol” option for more information about editing symbols.
 
 You can also use this option to copy symbols. Edit the symbol and then save it under a different name.
 
-## Rename symbol 
+### Rename symbol 
 
 Select a symbol thumbnail in the library edit window and then use this option to rename it. If you wish to make a copy of the symbol under a different name use the “Edit Symbol”.
 
-## Delete 
+### Delete 
 
 Select a symbol thumbnail in the library edit window and then use this option to delete it. Once it has been delete it is not immediately possible to undo the change, however, you have the option not to save the changes when you close the library editing window.
 
-# Special menu 
+## Special menu 
 
-## Create Net List for PCB Programs 
+### Create Net List for PCB Programs 
 
 A net list is a file which contains a list of all the connections made in a circuit diagram. All objects which are connected together are in a single list, called a net. For symbols each objects pin is considered a different object. Each net is given a different name.
 
@@ -255,7 +258,7 @@ As of version 1.95.15, there are multiple netlist formats supported. The origina
 
 PCB programs require the footprint to be specified. Do this by adding an attribute to the symbol that has a name “Package”, and the value is the value name of the footprint in the PCB program.
 
-## Check Design Rules 
+### Check Design Rules 
 
 This option will cause the current design to be checked against a list of rules it must obey.
 
@@ -273,7 +276,7 @@ If no errors are found then a list will appear stating so. This list can be remo
 
 Error circles can edited, moved or deleted. Error circles will not be saved with the design.
 
-## Generate Symbol References 
+### Generate Symbol References 
 
 This option changes the symbol references in your design. It relieves you of the task of ensuring each symbol has its own unique reference.
 
@@ -291,7 +294,7 @@ When you select the OK button the options will be applied to the design. Each sy
 
 You may select Cancel to not apply the reference generator.
 
-## Create Parts List 
+### Create Parts List 
 
 This option creates a list of all the parts used in the design. This list is sorted by symbol reference, and all parts of the same type are listed together.
 
@@ -299,7 +302,7 @@ Essentially this is a list of parts that need to be purchased to make the design
 
 The parts list is store in a simple text file, which can be edited and printed using notepad.
 
-Tidy Design
+### Tidy Design
 
 This option improves the way the design is stored without effecting the way it looks.
 
@@ -315,41 +318,41 @@ This includes:
 
 This option removes errors than can creep in during editing which are difficult to remove yourself because they are unseen.
 
-# Options menu 
+## Options menu 
 
-## Settings 
+### Settings 
 
-# Show Grid 
+#### Show Grid 
 
-![Image](/v3/images/image19.png)
+![Grid settings dialog showing display and spacing options](/v3/images/image19.png)
 
 This causes the grid to be displayed. If the grid is too fine to show at the current zoom then it will not be displayed. To see the grid zoom in. If the fine grid is enabled then the points which lie on the normal grid as well are shown as crosses.
 
-# Snap to Grid 
+#### Snap to Grid 
 
 This option should under normal conditions be selected. This option makes any mouse position snap to the nearest point on a grid. This allows the easy alignment of objects. It also ensures when you attempt to connect a wire to a symbol that the connection is made correctly. For this reason snap to grid should always be on.
 
 If the snap to grid feature is turned off then when you attempt to connect a wire to a symbol it is very difficult to ensure both the end of the wire and symbols connection point are on the same point. With snap to grid this is made easy. If they are not on the same point, not only does it look untidy when printed but it will also be considered unconnected by the special tools.
 
-# Normal, Fine, User grid spacing 
+#### Normal, Fine, User grid spacing 
 
 In most cases you will wish to use normal grid spacing. A fine grid has twice as many points to a normal grid and is especially useful for annotating a design and drawing symbols. If you wish you may specify your own grid spacing by entering the spacing in the dialog box. You may enter the units in inches or mm, depending on the Units setting (as described below).
 
-# Units in mm or units in inches 
+#### Units in mm or units in inches 
 
 This defines which units are used by the whole program inches or mm. The ruler and show position dialog will reflect the changes.
 
-# Scroll bar increments 
+#### Scroll bar increments 
 
 This determines by how much the design will be scrolled when the arrows at the side of each scroll bar is clicked.
 
-## Colors 
+### Colors 
 
 This option will cause a dialogue box to be displayed with the current colors in use by the current design. If you wish to change any of the colors for the objects shown, simply click on the color and then select a new one. This will change the color for that object in the entire design. Currently you may change the colors of: wires, junctions, no-connects, buses, pins and power elements.
 
 If you wish to return the colors to the TinyCAD default, select the “defaults” button in the dialogue.
 
-## Show Position 
+### Show Position 
 
 This option will cause a dialogue box to be displayed with the current co-ordinates of the mouse pointer in the design.
 
@@ -357,11 +360,11 @@ The position is displayed in either inches or mm depending which units are selec
 
 To remove the dialogue box select this option again.
 
-## Snap to Grid 
+### Snap to Grid 
 
 Turn the snap to grid on or off. This is a short-cut for the same option in the Grid Settings dialogue.
 
-## Repeat Directions 
+### Repeat Directions 
 
 This option is a sub-menu with options for the repeat command, and options for use when placing labels, text and placing pins.
 

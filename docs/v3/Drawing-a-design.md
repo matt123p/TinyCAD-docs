@@ -55,7 +55,7 @@ It is a common mistake to use polygon lines instead of wires to wire up componen
 
 ## Editing your drawing
 
-![Image](/v3/images/image4.png)
+![Placed schematic symbols ready for editing](/v3/images/image4.png)
 
 Once a symbol has been placed you may want to change its properties. The edit tool in the drawing toolbar is use for editing already placed objects. Normally you don’t have to select the edit tool as it is the default tool after you have finished with a different tool. To select it manually click on the white mouse arrow toolbar button.
 
@@ -77,7 +77,7 @@ Whilst you are editing your drawing it is saved automatically for you so you don
 
 ## Symbol attributes
 
-![Image](/v3/images/image5.png)
+![Symbol attributes dialog showing name, reference, and package fields](/v3/images/image5.png)
 
 Each symbol has at least two text attributes associated with it.
 
@@ -113,7 +113,7 @@ If you wish to place junctions manually, then switch automatic junction placemen
 
 When automatic junction placement is on, you cannot select junctions.
 
-# Advanced drawing techniques
+## Advanced drawing techniques
 
 For the more advanced schematics, TinyCAD has more advanced features.
 
@@ -127,7 +127,7 @@ Any unconnected pins can be found by using the the Design Rules Checker in the S
 
 ## Adding power
 
-![Image](/v3/images/image6.png)
+![Power symbols available in TinyCAD](/v3/images/image6.png)
 
 Power objects in your design show where power is connected into your circuit. Various shapes of power symbols are defined.
 
@@ -139,7 +139,7 @@ Some component symbols, such as the 74 TTL library symbols, are automatically co
 
 ## Using labels
 
-![Image](/v3/images/image7.png)
+![Labels placed on wires to connect named nets](/v3/images/image7.png)
 
 You may use the rotate left or right or flip shortcut keys while placing labels.
 
@@ -149,7 +149,7 @@ Use labels to connect wires between sheets in the same files or to connect wires
 
 ## Adding buses
 
-![Image](/v3/images/image8.png)
+![Bus entries and labels used to create a bus connection](/v3/images/image8.png)
 
 Buses can be used to indicate a large number of connections. To help you draw a bus the repeat options are present.
 
@@ -165,13 +165,13 @@ Use the same names for the bus entries on all connections to bus; however, the o
 
 Once a bus is in place, you may name the bus using the Bus Name tool. You may use this to place some text next to the bus. The name can indicate how many conductors the bus represents, by specifying just a single number, or it may qualify what the bus is for example by calling it &quot;Data Bus&quot; etc.
 
-# Adding text and annotations
+## Adding text and annotations
 
 You may add the following annotations: text, lines, rectangles, ellipses and arcs. All these objects will be ignored by the special tools.
 
 Annotations may cross wires, symbols and junctions without affecting them. How these objects are used is completely up to you.
 
-![Image](/v3/images/image9.png)
+![Annotation tools used for text and drawing shapes](/v3/images/image9.png)
 
 ## Drawing rectangles and ellipses
 
@@ -211,6 +211,6 @@ To remove a corner, right click on the handle of the corner you wish to remove a
 
 To change a line from straight to arc'ed or back again, right click on the line you wish to change and select one of the arc options from the menu.
 
-# Changing the drawing order
+## Changing the drawing order
 
 If one of your annotations is obscured by another then right-click on it and use the “Z-Order” menu to bring it the top of the drawing order or send it back behind all other annotations.

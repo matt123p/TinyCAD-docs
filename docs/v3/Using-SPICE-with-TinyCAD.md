@@ -89,13 +89,13 @@ This is done in TinyCAD by using the facility to name net. You can do this in on
 
 So to create the special “0” net, simply place a power symbol with a value of 0 on the ground connection.
 
-# Generation of the SPICE file
+## Generation of the SPICE file
 
 Once you have met all of the requirements for SPICE file generation, it is a simple matter to create the SPICE output. Go to the “Special” menu and select the “Create SPICE file” option.
 
 There are no options in the SPICE file creation dialogue, because you should use the special “Run” node to for this purpose. This gives you maximum flexibility for the SPICE file generation.
 
-# Advanced SPICE file generation with conditional statements
+## Advanced SPICE file generation with conditional statements
 
 For really sophisticated uses of TinyCAD’s SPICE engine, you may use conditional statements in your templates. There are three basic types of conditional statement, these are:
 

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Using VHDL with TinyCAD
+
 ## Making the Design
 
 In order to make the schematic you should use the symbols in the VHDL library. You can also find these symbol on [tinycad.net](https://www.tinycad.net/Search?key=%23vhdl).
@@ -22,5 +24,5 @@ To generate the VHDL just run the Create VHDL command, it will automatically run
 ## Examples
 You have the code of a small 4-bit processor (nibbles) as a design example. Looking at the files should help in learning out to use TinyCad with VHDL.
 
-The example is available [here](https://github.com/matt123p/TinyCAD/tree/master/examples/vhdl).
+The example is available in the [TinyCAD VHDL examples repository folder](https://github.com/matt123p/TinyCAD/tree/master/examples/vhdl).
 
