@@ -4,9 +4,6 @@ layout: default
 
 # Bill Of Materials
 
-In v4, Bill Of Materials generation follows the same behavior as v3’s
-**Create Parts List** tool.
-
 The tool creates a list of all parts used in the current design. The output is
 sorted by symbol reference, with like parts grouped together.
 

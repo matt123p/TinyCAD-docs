@@ -2,15 +2,21 @@
 layout: default
 ---
 
-# Printing
+# Printing and exporting
 
-This page is a stub for printing and print/export workflows.
+Use the toolbar menu **Print** option:
 
-Topics to cover:
+<img src="/v4/images/media/image12.png" alt="Print menu" style="width: 2.46875in; height: 2.95833in;" />
 
-- Print dialog workflow
-- PDF output options
-- Page layout and scaling
+Most browsers open a PDF in a new tab. You can print directly or save the PDF.
+
+## SVG export
+
+You can also export SVG. SVG is useful for embedding in documents/web pages.
+Notes:
+
+- SVG export contains the current sheet only (single page format)
+- Free SVG-to-DXF converters are available online
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)

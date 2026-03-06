@@ -4,13 +4,12 @@ layout: default
 
 # Searching your Drawing
 
-This page is a stub for finding symbols, labels, and text within a drawing.
+Use **Find** from the side panel to search for text in the drawing:
 
-Topics to cover:
+<img src="/v4/images/media/image11.png" alt="Find panel" style="width: 4.26042in; height: 3.94792in;" />
 
-- Find/search workflows
-- Navigating to matches
-- Typical search use-cases
+Enter text to get matching items. Selecting a result highlights that item in
+the drawing. This is useful for finding references quickly.
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)

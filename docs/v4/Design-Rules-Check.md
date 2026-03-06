@@ -13,6 +13,8 @@ It checks wiring and pin-type combinations for common electrical mistakes (for
 example, conflicting outputs connected together). It does **not** guarantee the
 circuit is functionally correct.
 
+Aim for zero design errors to increase confidence in schematic correctness.
+
 ## Run Design Rules Check
 
 1. Open your design.

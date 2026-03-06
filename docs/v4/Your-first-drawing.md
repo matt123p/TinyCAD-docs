@@ -75,29 +75,6 @@ Repeat for the other parts:
 If a name/reference is hidden, use the checkbox controls to show or hide text
 on the drawing.
 
-## Searching a drawing
-
-Use **Find** from the side panel to search for text in the drawing:
-
-<img src="/v4/images/media/image11.png" alt="Find panel" style="width: 4.26042in; height: 3.94792in;" />
-
-Enter text to get matching items. Selecting a result highlights that item in
-the drawing. This is useful for finding references quickly.
-
-## Exporting and printing
-
-Use the toolbar menu **Print** option:
-
-<img src="/v4/images/media/image12.png" alt="Print menu" style="width: 2.46875in; height: 2.95833in;" />
-
-Most browsers open a PDF in a new tab. You can print directly or save the PDF.
-
-You can also export SVG. SVG is useful for embedding in documents/web pages.
-Notes:
-
-- SVG export contains the current sheet only (single page format)
-- Free SVG-to-DXF converters are available online
-
 ## Loading and saving
 
 Your first drawing is complete. To rename it:
@@ -130,63 +107,6 @@ Likewise, upload existing drawings to Google Drive and use
 
 **Note:** Google Drive may sometimes treat extensions case-sensitively. If
 `TinyCAD` is missing in **Open with**, ensure `.dsn` is lowercase.
-
-## Design Rules Check (DRC)
-
-DRC reports potential design mistakes, such as unconnected pins.
-
-Aim for zero design errors to increase confidence in schematic correctness.
-
-If a pin is intentionally unconnected, place a **No Connect** marker on that
-pin to clear the error.
-
-## Setup drawing
-
-### Design Details box
-
-The Design Details box can appear at the bottom-left of the drawing:
-
-<img src="/v4/images/media/image15.png" alt="Design details box" style="width: 4.65625in; height: 2.20833in;" />
-
-Edit it from the settings menu using **Design Details**:
-
-<img src="/v4/images/media/image16.png" alt="Design details menu entry" style="width: 2.09375in; height: 2.65625in;" />
-
-You can toggle the box on/off and configure design guides (letters/numbers
-around the page edge):
-
-<img src="/v4/images/media/image17.png" alt="Design guides settings" style="width: 3.29167in; height: 4.21875in;" />
-
-Design guides appear as follows:
-
-<img src="/v4/images/media/image18.png" alt="Design guides on page" style="width: 6.26806in; height: 4.44028in;" />
-
-### Page size
-
-Configure drawing size with the **Page Size** option in settings.
-
-### Grid spacing
-
-Configure grid spacing and related behavior in **Settings**.
-
-Grid spacing matters: most components are drawn on **Small Grid**, and keeping
-that grid makes pin alignment and wiring easier.
-
-## Advanced drawing techniques
-
-### Labels
-
-Labels connect wires without drawing a physical wire between them. Labels with
-the same name are considered connected.
-
-Labels can also connect across sheets for multi-page designs.
-
-Label shape does not affect netlisting or DRC connectivity.
-
-### No-connects
-
-Use no-connect markers to indicate that a pin is intentionally left
-unconnected.
 
 ## Further reading
 

@@ -4,10 +4,12 @@ layout: default
 
 # Design Details box
 
-In v4, the **Design Details** feature works the same way as in v3.
-
 Each design stores document metadata such as title, author, and related
 details. You edit these values from the **Design Details** command.
+
+The Design Details box can appear at the bottom-left of the drawing:
+
+<img src="/v4/images/media/image15.png" alt="Design details box" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Edit design details
 
@@ -15,6 +17,10 @@ details. You edit these values from the **Design Details** command.
 2. Open **Design Details** from the File menu/tools.
 3. Update the fields you want (for example title and author).
 4. Save the design.
+
+Edit it from the settings menu using **Design Details**:
+
+<img src="/v4/images/media/image16.png" alt="Design details menu entry" style="width: 2.09375in; height: 2.65625in;" />
 
 When the design is saved, these details are saved with it.
 
@@ -26,6 +32,17 @@ on the drawing.
 - When enabled, the details are displayed on the schematic.
 - The details box is printed with the design.
 - The details box appears in the bottom-right area of the drawing.
+
+## Design guides
+
+You can toggle the box on/off and configure design guides (letters/numbers
+around the page edge):
+
+<img src="/v4/images/media/image17.png" alt="Design guides settings" style="width: 3.29167in; height: 4.21875in;" />
+
+Design guides appear as follows:
+
+<img src="/v4/images/media/image18.png" alt="Design guides on page" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Notes
 

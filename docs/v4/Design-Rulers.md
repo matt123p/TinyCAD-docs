@@ -4,8 +4,7 @@ layout: default
 
 # Design Rulers
 
-In v4, Design Rulers are used the same way as in v3: they provide positional
-reference around the drawing so placement and checking are easier.
+Design Rulers provide positional reference around the drawing so placement and checking are easier.
 
 ## What Design Rulers are for
 
