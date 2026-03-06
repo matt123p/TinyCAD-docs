@@ -31,5 +31,4 @@ new screenshots, and expanded examples.
 - [Advanced](Advanced/)
 - [Reference](Reference/)
 - [Licence](Licence/)
-- [Developer](Developer-guide/)
 - [Contributing to the manual](Contributing-to-the-Manual/)
