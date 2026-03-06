@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD Desktop App
+# Installation Instructions
 
 This page is a stub for desktop-app specific getting-started guidance.
 

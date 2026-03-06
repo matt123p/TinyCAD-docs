@@ -4,29 +4,16 @@ layout: default
 
 # TinyCAD v4 - Getting Started
 
-TinyCAD v4 supports two usage modes:
+TinyCAD v4 is available for use in two different ways:
 
-- Desktop app (Electron)
-- Online app (browser)
+## Desktop app
 
-This section starts with the migrated quick-start information from the previous
-online manual, including browser requirements, local vs Google Drive storage,
-privacy notes, and first-use sign-in flow.
+Go to the [Installation Instructions](../TinyCAD-Desktop-App/) for instructions on how to download, install and run this version of TinyCAD.
 
-## Pages
 
-{% assign current_version = page.url | split: '/' | slice: 1, 1 | first -%}
-{% assign section = nil -%}
-{% for entry in site.data.navigation[current_version] -%}
-	{% if entry.url == page.url -%}
-		{% assign section = entry -%}
-		{% break -%}
-	{% endif -%}
-{% endfor -%}
-{% if section and section.children %}
-{% for child in section.children -%}
-- [{{ child.title }}]({{ child.url | relative_url }})
-{% endfor %}
-{% endif %}
+## Online app
 
-- Back to [v4 contents](../CONTENTS/)
+Go to [TinyCAD Web quick start](../TinyCAD-Web-overview-and-quick-start/) for instructions on how to
+start using TinyCAD directly in your web browser without requiring an installation.
+
+

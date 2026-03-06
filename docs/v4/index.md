@@ -4,14 +4,10 @@ layout: default
 
 # TinyCAD v4 Manual
 
-TinyCAD v4 is available both as a desktop app (Electron) and as an online app.
-This manual now includes a first migrated draft of the previous online manual,
-adapted into the v4 structure.
+TinyCAD v4 is available both as a desktop app and as a browser-based online app.  There are only
+a small number of feature differences between the two versions.
 
-## Status
-
-The v4 manual has started with migrated content for web/online workflows,
-including getting started, first drawing, libraries, and FAQ/reference data.
+Go to the [Feature Differences](Feature-Differences/) page if you want to know the exact differences between versions of TinyCAD.
 
 ## Contribute to this manual
 
@@ -23,7 +19,6 @@ new screenshots, and expanded examples.
 
 ## Core links
 
-- [v4 contents](CONTENTS/)
 - [Getting started](Getting-started/)
 - [Drawing](User-guide/)
 - [Symbols & Libraries](Symbols-and-Libraries/)

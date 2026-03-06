@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD Web overview and quick start
+# TinyCAD Web quick start
 
 ## TinyCAD for the Web
 

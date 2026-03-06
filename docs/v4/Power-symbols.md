@@ -36,15 +36,8 @@ required) so automatic power connections work correctly.
 
 ## Editing and styles
 
-After placement, power symbols can be edited for:
-
-- name,
-- orientation,
-- shape,
-- position.
-
-Choose a consistent visual style for readability, but keep names standardized
-for electrical correctness.
+You can change the shape of a power symbol by selecting it and then selecting a new shape in
+the toolbar.
 
 ## Multi-sheet behavior
 

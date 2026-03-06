@@ -4,11 +4,10 @@ layout: default
 
 # Your first drawing
 
-At its simplest level, a TinyCAD drawing is a collection of symbols linked
-using wires.
+This page will take you through the steps of drawing your first circuit diagram with TinyCAD.
 
-If TinyCAD is not running yet, start with the
-[quick start](../TinyCAD-Web-overview-and-quick-start/).
+At its simplest level, a TinyCAD drawing is a collection of symbols linked
+using wires.  In this example, you will place some symbols and then join them up with wires.
 
 ## Example circuit
 

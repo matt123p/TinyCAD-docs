@@ -30,13 +30,13 @@ v3:
 
 v4:
   - title: Contents
-    url: /v4/CONTENTS/
+    url: /v4/
   - title: Getting Started
     url: /v4/Getting-started/
     children:
-      - title: TinyCAD Web Overview and Quick Start
+      - title: TinyCAD Web Quick Start
         url: /v4/TinyCAD-Web-overview-and-quick-start/
-      - title: TinyCAD Desktop App
+      - title: Installation Instructions
         url: /v4/TinyCAD-Desktop-App/
   - title: Drawing
     url: /v4/User-guide/

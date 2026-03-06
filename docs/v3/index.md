@@ -4,7 +4,9 @@ layout: default
 
 # TinyCAD v3 Manual
 
-This is the documentation set for TinyCAD version 3.
+This is the documentation for TinyCAD version 3.
+
+![Image](/v3/images/screenshot 1.png)
 
 ## Start here
 
@@ -14,7 +16,3 @@ This is the documentation set for TinyCAD version 3.
 - [An introduction to libraries](An-introduction-to-libraries/)
 - [FAQ](FAQ/)
 
-## Other versions
-
-- [Version selector](../)
-- [TinyCAD v4 manual (stub)](../v4/)
