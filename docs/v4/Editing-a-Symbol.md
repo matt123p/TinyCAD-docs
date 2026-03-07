@@ -4,26 +4,29 @@ layout: default
 
 # Editing a Symbol
 
-Editing symbols in TinyCAD is as follows:
+## How symbols work in TinyCAD
 
+Symbols are created from normal objects found on the Toolbar. They may contain
+any of these objects except other symbols.
+
+If the symbol does contain any objects with special functions (such as a power
+item or a wire) then these object will be treated as though they were
+annotation. 
+
+All their special functions are lost when used in a symbol, only **pins** define
+electrical connection points.
+
+Summary:
 - a symbol is a reusable graphic plus atributes
 - electrical connectivity is defined by **pins**
 - and symbols are stored in **libraries** (`.tclib`)
 
 ## Before you start
 
-You edit symbols by opening a library, then opening a symbol from that library.
+You must be editing a library in order to edit symbols.  So make sure you have opened a library
+for editing.  How you do this depends on which version of TinyCAD you are using.  See 
+[Custom symbol libraries](../Custom-symbol-libraries/) for more details.
 
-In TinyCAD you can open a library by:
-
-1. Open an existing `.tclib` file.
-2. Create a new custom library.
-3. Open a library from Google Drive using **Open with -> TinyCAD**.
-
-See also: [Custom symbol libraries](../Custom-symbol-libraries/).
-
-> **Screenshot needed 1:** Opening a `.tclib` library in TinyCAD.
->
 > **Screenshot needed 2:** Library loaded, showing symbol list in side panel.
 
 ## Open an existing symbol for editing
@@ -38,28 +41,10 @@ You can then modify graphics, pins, and symbol atributes.
 
 ## Create a new symbol
 
-1. Open your target library.
-2. Click the `+` in the symbol list.
-3. Enter symbol name and initial atributes.
-4. Draw the symbol body.
-5. Add and define the pins.
-5. Save changes to the library.
-
+Click the `+ (new)` in the symbol list.  You will then be presented with a blank drawing area
+to draw your new symbol.
 
 > **Screenshot needed 4:** Creating a new symbol from the symbol-list `+` button.
-
-## How symbols work in TinyCAD
-
-A symbol may contain normal drawing objects (lines, rectangles, arcs, text,
-etc.), but only **pins** define electrical connection points.
-
-Important behavior:
-
-- Non-pin graphics are visual/annotation only when the symbol is used.
-- Pins control net connectivity, netlist generation, and DRC checks.
-- Pin numbering is required for reliable downstream workflows.
-- Name/reference/default parameters are symbol metadata used when placing the
-	symbol into drawings.
 
 ## Drawing the symbol shape (graphics)
 
@@ -114,24 +99,6 @@ Pin panel sections:
 >
 > **Screenshot needed 9:** Live editing example (changing shape/electrical type and seeing immediate update).
 
-## Pin shapes
-
-Pin **shape** is the visual/connection marker style (`which`).
-
-Current values in TinyCAD v4 source:
-
-- `0` Normal
-- `1` Dot
-- `2` Clock
-- `3` Dot Clock
-- `4` Power
-- `5` Hidden
-- `6` Cross
-- `7` Input Low
-- `8` Clock Low
-- `9` Output Low
-- `10` Falling Edge Clock
-
 Notes:
 
 - Shape controls symbol appearance and some special visual behaviors.
@@ -173,8 +140,6 @@ General guidance:
 Practical DRC implications:
 
 - Incorrect pin typing can cause false DRC errors (or hide real ones).
-- Unused inputs should be intentionally handled (for example with
-	no-connect markers where appropriate in the schematic).
 - Power pin names must match intended supply names for automatic behavior.
 
 > **Screenshot needed 12:** Electrical dropdown expanded, showing all electrical types.
@@ -196,7 +161,7 @@ For **power pins** specifically:
 For **hidden pins**:
 
 - They are still electrically active.
-- Use them only where hidden connectivity is intentional and documented.
+- Use them where you wish to draw your own pin shape and pin labels.
 
 > **Screenshot needed 14:** Symbol editor view showing visible power/hidden pins before placement.
 >
@@ -223,13 +188,12 @@ has a distinct function.
 
 1. Decide homogeneous vs heterogeneous first.
 2. Set the number of parts per package.
-3. Edit each part tab/part view.
-4. For homogeneous symbols, keep outlines consistent and adjust pin numbering
-	 per part.
-5. Verify pin numbers are unique and valid for each part.
 
-When editing pin-heavy devices, copy/reuse layout where possible, then adjust
-pin numbers and names.
+For homogeneous parts:
+- The first part defines the shape of the symbol and the layout of the pins
+
+For heterogeneous parts:
+- You can draw a different shape per part
 
 > **Screenshot needed 16:** Setting number of parts per package.
 >

@@ -77,6 +77,10 @@ on the drawing.
 
 ## Loading and saving
 
+<div class="manual-tabset" data-tabset="product-mode" data-tabset-label="Choose your TinyCAD product" data-default-tab="Browser" markdown="1">
+
+### Browser
+
 Your first drawing is complete. To rename it:
 
 1. Click the drawing name at the top (for example `tCad1.dsn`).
@@ -97,16 +101,27 @@ To load it again from Google Drive:
 
 You can also rename and delete TinyCAD designs in Google Drive.
 
-## Desktop integration
+### Desktop App
 
-TinyCAD web file format is compatible with desktop TinyCAD. Download a drawing
-from Google Drive and open it in the desktop app.
+Your first drawing is complete. To save it from the desktop app:
 
-Likewise, upload existing drawings to Google Drive and use
-**Open with -> TinyCAD**.
+1. Open **File -> Save As**.
+2. Choose a folder on your computer.
+3. Save the drawing as `First Drawing.dsn`.
 
-**Note:** Google Drive may sometimes treat extensions case-sensitively. If
-`TinyCAD` is missing in **Open with**, ensure `.dsn` is lowercase.
+To load it again later:
+
+1. Open **File -> Open**.
+2. Browse to `First Drawing.dsn`.
+3. Select the file and open it.
+
+TinyCAD desktop uses the same `.dsn` format as TinyCAD in the browser. You can
+download a drawing from Google Drive and open it in the desktop app.
+
+Likewise, you can use drawings you have done on the Desktop version of TinyCAD with
+the Browser based version.
+
+</div>
 
 ## Further reading
 

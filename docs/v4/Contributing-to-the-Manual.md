@@ -168,6 +168,33 @@ Before opening a PR, quickly verify:
 - Page is linked from navigation when needed
 - Existing style and terminology are preserved
 
+## Reusable browser/desktop tabsets
+
+When a page needs different instructions for TinyCAD in the browser and the
+desktop app, use the shared tabset component instead of inventing page-specific
+markup.
+
+```md
+<div class="manual-tabset" data-tabset="product-mode" data-tabset-label="Choose your TinyCAD product" data-default-tab="Browser" markdown="1">
+
+### Browser
+
+Browser-specific content.
+
+### Desktop App
+
+Desktop-specific content.
+
+</div>
+```
+
+Notes:
+
+- `data-tabset` is the sync/storage key. Reuse the same value to keep multiple
+  tabsets on the same page in sync.
+- `data-default-tab` sets the tab selected on first visit.
+- Keep each tab heading at the same level (`###` in the example above).
+
 ## Suggested PR template
 
 Copy/paste this into your PR description:

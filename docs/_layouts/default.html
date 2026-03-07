@@ -97,6 +97,164 @@
     <!-- ===== Scripts ===== -->
     <script>
       (function () {
+        function slugify(value) {
+          return String(value || '')
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '') || 'tab';
+        }
+
+        function setupTabsets() {
+          var tabsets = document.querySelectorAll('.manual-tabset');
+
+          for (var tabsetIndex = 0; tabsetIndex < tabsets.length; tabsetIndex++) {
+            var tabset = tabsets[tabsetIndex];
+            var children = Array.prototype.slice.call(tabset.children);
+            var headings = [];
+
+            for (var childIndex = 0; childIndex < children.length; childIndex++) {
+              if (/^H[1-6]$/.test(children[childIndex].tagName)) {
+                headings.push(children[childIndex]);
+              }
+            }
+
+            if (headings.length < 2) continue;
+
+            var headingTag = headings[0].tagName;
+            var sectionHeadings = [];
+            for (var headingIndex = 0; headingIndex < headings.length; headingIndex++) {
+              if (headings[headingIndex].tagName === headingTag) {
+                sectionHeadings.push(headings[headingIndex]);
+              }
+            }
+
+            if (sectionHeadings.length < 2) continue;
+
+            var groupName = tabset.getAttribute('data-tabset') || ('tabset-' + tabsetIndex);
+            var storageKey = 'manual-tabset:' + location.pathname + ':' + groupName;
+            var nav = document.createElement('div');
+            var tabs = [];
+            var panels = [];
+            var defaultLabel = tabset.getAttribute('data-default-tab');
+            var selectedLabel = null;
+
+            nav.className = 'manual-tabset-nav';
+            nav.setAttribute('role', 'tablist');
+            nav.setAttribute('aria-label', tabset.getAttribute('data-tabset-label') || 'Choose view');
+
+            try {
+              selectedLabel = window.localStorage.getItem(storageKey);
+            } catch (e) {}
+
+            for (var sectionIndex = 0; sectionIndex < sectionHeadings.length; sectionIndex++) {
+              var heading = sectionHeadings[sectionIndex];
+              var label = heading.textContent.trim();
+              var slug = slugify(label);
+              var tabId = groupName + '-tab-' + slug + '-' + sectionIndex;
+              var panelId = groupName + '-panel-' + slug + '-' + sectionIndex;
+              var panel = document.createElement('section');
+              var button = document.createElement('button');
+              var node = heading.nextSibling;
+
+              panel.className = 'manual-tabset-panel';
+              panel.id = panelId;
+              panel.setAttribute('role', 'tabpanel');
+              panel.setAttribute('aria-labelledby', tabId);
+
+              button.type = 'button';
+              button.className = 'manual-tabset-tab';
+              button.id = tabId;
+              button.setAttribute('role', 'tab');
+              button.setAttribute('aria-controls', panelId);
+              button.setAttribute('aria-selected', 'false');
+              button.setAttribute('tabindex', '-1');
+              button.textContent = label;
+
+              while (node && !(node.nodeType === 1 && node.tagName === headingTag)) {
+                var nextNode = node.nextSibling;
+                panel.appendChild(node);
+                node = nextNode;
+              }
+
+              heading.remove();
+              tabset.insertBefore(panel, node);
+              nav.appendChild(button);
+
+              tabs.push(button);
+              panels.push(panel);
+            }
+
+            tabset.insertBefore(nav, tabset.firstChild);
+
+            var activeIndex = 0;
+            for (var tabIndex = 0; tabIndex < tabs.length; tabIndex++) {
+              var tabLabel = tabs[tabIndex].textContent.trim();
+              if ((selectedLabel && tabLabel === selectedLabel) || (!selectedLabel && defaultLabel && tabLabel === defaultLabel)) {
+                activeIndex = tabIndex;
+              }
+            }
+
+            var setActiveTab = function (nextIndex, shouldFocus) {
+              for (var i = 0; i < tabs.length; i++) {
+                var isActive = i === nextIndex;
+                tabs[i].setAttribute('aria-selected', isActive ? 'true' : 'false');
+                tabs[i].setAttribute('tabindex', isActive ? '0' : '-1');
+                panels[i].hidden = !isActive;
+              }
+
+              try {
+                window.localStorage.setItem(storageKey, tabs[nextIndex].textContent.trim());
+              } catch (e) {}
+
+              if (shouldFocus) tabs[nextIndex].focus();
+
+              var syncEvent;
+              if (typeof window.CustomEvent === 'function') {
+                syncEvent = new CustomEvent('manual-tabset-change', {
+                  detail: { groupName: groupName, label: tabs[nextIndex].textContent.trim(), source: tabset }
+                });
+                window.dispatchEvent(syncEvent);
+              }
+            };
+
+            for (var bindIndex = 0; bindIndex < tabs.length; bindIndex++) {
+              (function (currentIndex) {
+                tabs[currentIndex].addEventListener('click', function () {
+                  setActiveTab(currentIndex, false);
+                });
+
+                tabs[currentIndex].addEventListener('keydown', function (event) {
+                  var nextIndex = currentIndex;
+
+                  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (currentIndex + 1) % tabs.length;
+                  else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (currentIndex + tabs.length - 1) % tabs.length;
+                  else if (event.key === 'Home') nextIndex = 0;
+                  else if (event.key === 'End') nextIndex = tabs.length - 1;
+                  else return;
+
+                  event.preventDefault();
+                  setActiveTab(nextIndex, true);
+                });
+              })(bindIndex);
+            }
+
+            window.addEventListener('manual-tabset-change', function (event) {
+              if (!event.detail || event.detail.source === tabset || event.detail.groupName !== groupName) return;
+
+              for (var syncIndex = 0; syncIndex < tabs.length; syncIndex++) {
+                if (tabs[syncIndex].textContent.trim() === event.detail.label) {
+                  setActiveTab(syncIndex, false);
+                  break;
+                }
+              }
+            });
+
+            setActiveTab(activeIndex, false);
+          }
+        }
+
+        setupTabsets();
+
         var sidebar = document.querySelector('.manual-sidebar');
         var mainScroll = document.querySelector('.manual-main');
         var contentsMenu = document.querySelector('.manual-contents');
