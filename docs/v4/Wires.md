@@ -26,6 +26,15 @@ circuit will be electrically disconnected to tools.
 4. End on another valid connection point OR
 5. Right-click to finish wiring mode.
 
+
+{% include video-player.html
+	src="/v4/images/video/Video 4.mp4"
+	width=1602
+	height=696
+	caption="Video walkthrough showing how to place wires."
+%}
+
+
 ## Snapping and junctions
 
 - Wires are magnetic to pins and existing wires.
