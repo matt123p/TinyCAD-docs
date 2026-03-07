@@ -36,12 +36,15 @@
             {%- for ver in site.data.versions.versions -%}
               {%- assign ver_path = ver.path | relative_url -%}
               <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active" aria-current="page"{% endif %}>
-                {{ ver.label }}
+                <span class="nav-label-full">{{ ver.label }}</span>
+                <span class="nav-label-short" aria-hidden="true">{{ ver.id | upcase }}</span>
               </a>
             {%- endfor -%}
             <span class="nav-divider"></span>
-            <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener">
-              <i class="bi bi-globe2 me-1"></i>tinycad.net
+            <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener" aria-label="Visit tinycad.net">
+              <i class="bi bi-globe2 nav-site-icon" aria-hidden="true"></i>
+              <span class="nav-site-full">tinycad.net</span>
+              <span class="nav-site-short" aria-hidden="true">Site</span>
             </a>
           </nav>
         </div>
@@ -254,6 +257,108 @@
         }
 
         setupTabsets();
+
+        function formatVideoTime(seconds) {
+          var safeSeconds = Math.max(0, Math.floor(seconds || 0));
+          var minutes = Math.floor(safeSeconds / 60);
+          var remainder = safeSeconds % 60;
+          return minutes + ':' + String(remainder).padStart(2, '0');
+        }
+
+        function setupVideoPlayers() {
+          var players = document.querySelectorAll('.manual-video-player');
+
+          for (var playerIndex = 0; playerIndex < players.length; playerIndex++) {
+            var player = players[playerIndex];
+            var video = player.querySelector('video');
+            var controls = player.querySelector('.manual-video-controls');
+            if (!video || !controls) continue;
+
+            var toggleButton = controls.querySelector('[data-action="toggle"]');
+            var toggleIcon = controls.querySelector('[data-role="toggle-icon"]');
+            var toggleLabel = controls.querySelector('[data-role="toggle-label"]');
+            var restartButton = controls.querySelector('[data-action="restart"]');
+            var scrubber = controls.querySelector('[data-role="scrubber"]');
+            var time = controls.querySelector('[data-role="time"]');
+            var isScrubbing = false;
+
+            video.removeAttribute('controls');
+            player.classList.add('is-enhanced');
+
+            function updateButtons() {
+              var paused = video.paused || video.ended;
+              if (toggleButton) {
+                toggleButton.setAttribute('aria-label', paused ? 'Play video' : 'Pause video');
+                toggleButton.setAttribute('title', paused ? 'Play video' : 'Pause video');
+                toggleButton.classList.toggle('is-primary', paused);
+              }
+              if (toggleIcon) {
+                toggleIcon.className = paused ? 'bi bi-play-fill' : 'bi bi-pause-fill';
+              }
+              if (toggleLabel) {
+                toggleLabel.textContent = paused ? 'Play' : 'Pause';
+              }
+            }
+
+            function updateTimeline() {
+              var duration = Number.isFinite(video.duration) ? video.duration : 0;
+              var currentTime = Number.isFinite(video.currentTime) ? video.currentTime : 0;
+
+              if (scrubber && !isScrubbing) {
+                scrubber.value = duration > 0 ? String((currentTime / duration) * 100) : '0';
+              }
+
+              if (time) {
+                time.value = formatVideoTime(currentTime) + ' / ' + formatVideoTime(duration);
+                time.textContent = time.value;
+              }
+            }
+
+            if (toggleButton) {
+              toggleButton.addEventListener('click', function () {
+                if (video.paused || video.ended) video.play();
+                else video.pause();
+              });
+            }
+
+            if (restartButton) {
+              restartButton.addEventListener('click', function () {
+                video.currentTime = 0;
+                video.play();
+              });
+            }
+
+            if (scrubber) {
+              scrubber.addEventListener('input', function () {
+                var duration = Number.isFinite(video.duration) ? video.duration : 0;
+                isScrubbing = true;
+                if (duration > 0) {
+                  video.currentTime = (parseFloat(scrubber.value) / 100) * duration;
+                }
+                updateTimeline();
+              });
+
+              scrubber.addEventListener('change', function () {
+                isScrubbing = false;
+                updateTimeline();
+              });
+            }
+
+            video.addEventListener('loadedmetadata', updateTimeline);
+            video.addEventListener('timeupdate', updateTimeline);
+            video.addEventListener('play', updateButtons);
+            video.addEventListener('pause', updateButtons);
+            video.addEventListener('ended', function () {
+              updateButtons();
+              updateTimeline();
+            });
+
+            updateButtons();
+            updateTimeline();
+          }
+        }
+
+        setupVideoPlayers();
 
         var sidebar = document.querySelector('.manual-sidebar');
         var mainScroll = document.querySelector('.manual-main');

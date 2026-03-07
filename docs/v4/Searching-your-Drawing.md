@@ -4,9 +4,15 @@ layout: default
 
 # Searching your Drawing
 
-Use **Find** from the side panel to search for text in the drawing:
+Use **Search** from the bottom panel to search for text in the drawing:
 
-<img src="/v4/images/media/image11.png" alt="Find panel listing matching text results from the current drawing" style="width: 4.26042in; height: 3.94792in;" />
+{% include video-player.html
+	src="/v4/images/video/Video 3.mp4"
+	width=1330
+	height=888
+	caption="Video walkthrough showing how to search a drawing."
+%}
+
 
 Enter text to get matching items. Selecting a result highlights that item in
 the drawing. This is useful for finding references quickly.

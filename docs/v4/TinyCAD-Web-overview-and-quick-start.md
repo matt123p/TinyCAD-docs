@@ -17,7 +17,7 @@ Make sure you have the following:
 
 - Chrome or Edge (for local-file mode)
 - For Google Drive mode, Chrome is recommended; Firefox can also work
-- Read the Terms and Conditions: [Terms and Conditions](/TCs)
+- Read the Terms and Conditions: [Terms and Conditions](https://www.tinycad.net/TCs)
 
 It is intended to work with Windows, Mac, Chromebooks, and Linux.
 

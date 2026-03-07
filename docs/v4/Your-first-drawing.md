@@ -15,13 +15,22 @@ Here is a simple circuit to draw:
 
 <img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
+## Video Walkthrough
+
+{% include video-player.html
+	src="/v4/images/video/Video 2.mp4"
+	width=1618
+	height=922
+	caption="Video walkthrough showing how to edit and reposition symbol text."
+%}
+
+# Step by step guide
+
 ## Symbol libraries
 
 1. Type `battery` in the search box.
 2. Select **Multi Cell Battery**.
 3. Drag the symbol from the symbol panel onto the drawing.
-
-<img src="/v4/images/media/image4.png" alt="Symbol browser with a battery symbol being dragged onto the drawing" style="width: 4.436in; height: 6.89583in;" />
 
 Now place a resistor and an LED.
 
@@ -58,14 +67,9 @@ Symbols need component values and references. In TinyCAD these are typically
 the symbol **Name** and **Ref** fields.
 
 1. Click the battery.
-2. Open the **Symbol** panel in the side panel menu.
-
-<img src="/v4/images/media/image9.png" alt="Symbol properties side panel for the selected battery symbol" style="width: 6.26806in; height: 5.46667in;" />
-
+2. Go to the **Symbol** panel at the bottom.
 3. Change `BATTERY_2` to `9V`.
 4. Change reference `Z?` to `B1`.
-
-<img src="/v4/images/media/image10.png" alt="Symbol panel with the Name and Ref fields being edited" style="width: 6.26806in; height: 5.02639in;" />
 
 Repeat for the other parts:
 

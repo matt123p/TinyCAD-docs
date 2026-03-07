@@ -172,13 +172,6 @@ A shortcut to editing a symbol is to double-click on it.
 
 #### Editing and adding symbols
 
-Symbols are created from normal objects found on the Toolbar. They may contain
-any of these objects except other symbols.
-
-If the symbol does contain any objects with special functions (such as a power
-item or a wire) then these object will be treated as though they were
-annotation. All their special functions are lost when used in a symbol.
-
 To edit an existing symbol, first select the library you wish to edit in the
 Libraries option of the Library menu.
 

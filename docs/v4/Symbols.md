@@ -25,15 +25,27 @@ If search does not find a part, verify the correct libraries are loaded first.
 
 ## Orientation while placing
 
-When placing a symbol, set orientation in the tool options (for example Up/Down/Left/Right) before placing the next instance.
+When placing a symbol, set orientation by using the rotate and flip buttons on the toolbar.
 
-Use a consistent orientation style in each sheet to improve readability.
+<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" style="width: 1.98958in; height: 0.73958in;" />
 
-## Move symbols and symbol text
 
-After placement, select a symbol with the edit tool and drag it to reposition.
+## Editing and moving symbol text
+
+After placement, you can move the entire symbol by dragging it.
 
 You can also move symbol text fields (for example value/name/reference) independently by selecting the symbol and dragging each field to a better location.
+
+You can edit the text by clicking on it.
+
+{% include video-player.html
+	src="/v4/images/video/Video 1.mp4"
+	width=284
+	height=248
+	caption="Video walkthrough showing how to edit and reposition symbol text."
+%}
+
+
 
 ## Symbol attributes in a schematic
 

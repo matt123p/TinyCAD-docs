@@ -5,8 +5,9 @@
   "description": "Local build scripts for TinyCAD manual GitHub Pages site",
   "scripts": {
     "bundle:install": "bundle install",
-    "build": "npm run bundle:install && bundle exec jekyll build --source docs --destination _site",
-    "serve": "npm run bundle:install && bundle exec jekyll serve --source docs --destination _site --livereload --open-url",
+    "build": "npm run clean && npm run bundle:install && bundle exec jekyll build --source docs --destination _site",
+    "check:links": "node scripts/check-links.js",
+    "serve": "npm run clean && npm run bundle:install && bundle exec jekyll serve --source docs --destination _site --livereload --open-url",
     "clean": "bundle exec jekyll clean --source docs --destination _site"
   }
 }
