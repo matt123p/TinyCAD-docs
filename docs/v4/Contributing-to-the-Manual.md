@@ -4,9 +4,8 @@ layout: default
 
 # Contributing to the TinyCAD Manual
 
-This manual is published with GitHub Pages from the `matt123p/TinyCAD-docs` repository.
-If you find an error, missing step, unclear screenshot, or outdated information, you can
-propose a fix with a Pull Request (PR).
+This manual is published with GitHub Pages. If you find an error, missing step, unclear 
+screenshot, or outdated information, you can propose a fix with a Pull Request (PR).
 
 This guide covers two workflows:
 
@@ -89,14 +88,6 @@ npm install
 npm run bundle:install
 ```
 
-If you want to test translated builds locally, create a local env file (not checked in):
-
-```bash
-cp .env.local.example .env.local
-```
-
-Then set `OPENAI_API_KEY` in `.env.local`.
-
 ### 3) Create a branch for your change
 
 ```bash
@@ -121,16 +112,8 @@ If you add a new page, also update navigation so users can discover it.
 
 ### 5) Preview site locally
 
-Start a local server (no translation):
-
 ```bash
 npm run serve
-```
-
-Start a local server with translation enabled:
-
-```bash
-npm run serve:translate:local
 ```
 
 Then open the local URL shown in terminal (typically `http://127.0.0.1:4000`).
@@ -234,11 +217,6 @@ git push
 ```
 
 ## Common issues and fixes
-
-- **Translation build does not run in GitHub Actions**
-  - Translation only runs on `main`, and requires the `OPENAI_API_KEY` repository secret.
-- **Local translated build fails with API key error**
-  - Ensure `.env.local` exists and contains `OPENAI_API_KEY=...`, then use `npm run build:translate:local` or `npm run serve:translate:local`.
 
 - **PR shows unrelated file changes**
   - Create a fresh branch from updated `main` and cherry-pick only your commit(s).
