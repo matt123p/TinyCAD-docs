@@ -10,6 +10,11 @@ improve readability, especially when many similar wires run together.
 In TinyCAD, actual electrical connectivity is still made by **wires and net
 labels**. A bus by itself does not electrically connect signals.
 
+## Example drawing
+
+<img src="/v4/images/Image 1.svg" alt="A example of using Buses" />
+
+
 ## Bus workflow
 
 1. Draw the bus line where the grouped signals should run.
@@ -35,7 +40,7 @@ identity for tools.
 - Use repeat options to speed up entry placement and sequential labels.
 - The order of signal names can differ at each end as long as names match.
 
-## Junction behavior
+## Junctions
 
 Buses do not require junction dots on the bus line itself.
 
