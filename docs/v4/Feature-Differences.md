@@ -32,7 +32,7 @@ This page summarizes key differences between TinyCAD web and desktop.
 | Installation required | No | Yes (App Stores & Installer packages) | Yes (installer package) | |
 | Multi-file hierarchical drawings | No | No | Yes | |
 | SPICE simulation file output | Yes | Yes | Yes | |
-| VHDL file output | No | No | Yes | |
+| VHDL file output | No | Yes | Yes | Desktop app only. See [VHDL output](../VHDL-output/) |
 
 - Back to [Reference](../Reference/)
 - Back to [v4 contents](../CONTENTS/)

@@ -93,10 +93,14 @@ v4:
     children:
       - title: Design Rules Check
         url: /v4/Design-Rules-Check/
+      - title: Generate Netlist
+        url: /v4/Generate-Netlist/
       - title: Netlist Editor
         url: /v4/Netlist-Editor/
       - title: SPICE output
         url: /v4/SPICE-output/
+      - title: VHDL output
+        url: /v4/VHDL-output/
   - title: Reference
     url: /v4/Reference/
     children:

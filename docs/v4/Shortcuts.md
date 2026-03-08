@@ -6,7 +6,7 @@ layout: default
 
 Using keyboard shortcuts instead of toolbar clicks speeds up drawing.
 
-**Note:** These differ from desktop shortcuts because browser applications do
+**Note:** These differ from TinyCAD v3's shortcuts because browser applications do
 not expose F-keys in the same way.
 
 | Key | Action |
@@ -22,8 +22,7 @@ not expose F-keys in the same way.
 | `=` | Zoom in |
 | `-` | Zoom out |
 | `_` | Zoom out |
-| Left Arrow | Rotate clockwise (left) |
-| Right Arrow | Rotate counter-clockwise (right) |
+| Arrow Keys | Move item, hold CTRL to move in smaller steps |
 | `Ctrl-F` | Find |
 | `Ctrl-P` | Print |
 | `Ctrl-C` | Copy |
