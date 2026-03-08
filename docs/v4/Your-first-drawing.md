@@ -36,11 +36,11 @@ Now place a resistor and an LED.
 
 Use the toolbar rotate/flip controls to orient symbols:
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" style="width: 1.98958in; height: 0.73958in;" />
+<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 If you make a mistake, use Undo/Redo:
 
-<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" style="width: 0.92708in; height: 0.82292in;" />
+<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" />
 
 Your drawing should look similar to:
 

@@ -32,7 +32,7 @@ See also:
 
 When placing a symbol, set orientation by using the rotate and flip buttons on the toolbar.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" style="width: 1.98958in; height: 0.73958in;" />
+<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Editing and moving symbol text
