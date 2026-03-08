@@ -20,7 +20,7 @@ The Design Details box can appear at the bottom-left of the drawing:
 
 Edit it from the settings menu using **Design Details**:
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" style="width: 2.09375in; height: 2.65625in;" />
+<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 When the design is saved, these details are saved with it.
 
@@ -46,8 +46,7 @@ Design guides appear as follows:
 
 ## Notes
 
-- Design details are per design.
-- In multi-sheet drawings, each sheet can have its own design details.
+Design details are per sheet - in multi-sheet drawings, each sheet can have its own design details.
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)

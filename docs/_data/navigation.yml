@@ -63,6 +63,8 @@ v4:
         url: /v4/No-Connects/
       - title: Text & Annotations
         url: /v4/Text-and-Annotations/
+      - title: Rulers
+        url: /v4/Rulers/
       - title: Printing
         url: /v4/Printing/
       - title: Multiple Sheet Drawings
@@ -73,8 +75,6 @@ v4:
         url: /v4/Design-Details-box/
       - title: Page Size
         url: /v4/Page-Size/
-      - title: Design Rulers
-        url: /v4/Design-Rulers/
       - title: Bill Of Materials
         url: /v4/Bill-Of-Materials/
   - title: Symbols & Libraries

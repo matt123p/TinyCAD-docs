@@ -35,7 +35,7 @@ Use this method for typo fixes, short clarifications, or link updates.
 1. Go to the TinyCAD docs repository:
    `https://github.com/matt123p/TinyCAD-docs`
 2. Browse to the page you want to edit in `docs/v4/`.
-3. Open the Markdown file (for example `Design-Rulers.md`).
+3. Open the Markdown file (for example `Rulers.md`).
 
 ### 2) Start editing
 
@@ -47,7 +47,7 @@ Use this method for typo fixes, short clarifications, or link updates.
 
 1. Scroll to **Commit changes**.
 2. Use a clear commit message, for example:
-   `docs(v4): clarify ruler units in Design Rulers`
+  `docs(v4): clarify ruler units in Rulers`
 3. Choose **Create a new branch for this commit**.
 4. Click **Propose changes**.
 
@@ -91,7 +91,7 @@ npm run bundle:install
 ### 3) Create a branch for your change
 
 ```bash
-git checkout -b docs/v4-fix-design-rulers
+git checkout -b docs/v4-fix-rulers
 ```
 
 Branch naming ideas:
@@ -129,8 +129,8 @@ Check:
 
 ```bash
 git add .
-git commit -m "docs(v4): improve Design Rulers instructions"
-git push -u origin docs/v4-fix-design-rulers
+git commit -m "docs(v4): improve Rulers instructions"
+git push -u origin docs/v4-fix-rulers
 ```
 
 ### 7) Create the PR
@@ -211,7 +211,7 @@ git checkout main
 git merge upstream/main
 git push origin main
 
-git checkout docs/v4-fix-design-rulers
+git checkout docs/v4-fix-rulers
 git merge main
 git push
 ```

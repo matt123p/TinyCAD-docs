@@ -8,21 +8,24 @@ layout: default
 
 ### Browser
 
-Use the toolbar menu **Print** option:
+To Print from a browser, use the option to Export to PDF.  You can then print the PDF directly.
 
-<img src="/v4/images/media/image12.png" alt="Toolbar menu showing the Print command for the current drawing" style="width: 2.46875in; height: 2.95833in;" />
+<img src="/v4/images/media/image12.png" alt="The File menu"  />
 
-Most browsers open a PDF in a new tab. You can print directly or save the PDF.
 
 ### Desktop App
 
 Use the toolbar menu **Print** option.
 
-The desktop app opens the standard print dialog for your operating system.
+The desktop app opens a print dialog for your operating system.
 Select your printer, check the page settings, and then print the drawing.
 
-If you need a file instead of a paper printout, choose a PDF printer or other
-virtual printer provided by your system.
+{% include video-player.html
+	src="/v4/images/video/Video 10.mp4"
+	width=1532
+	height=978
+	caption="Video walkthrough showing how to print a drawing."
+%}
 
 </div>
 
