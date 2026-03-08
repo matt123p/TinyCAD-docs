@@ -11,17 +11,11 @@ want to separate functional blocks.
 
 - Keep complex schematics readable.
 - Organize related parts by function.
-- Reuse repeated blocks more easily.
 
 ## Basic workflow
 
 1. Create a new sheet in your drawing.
 2. Name each sheet clearly (for example: `Power`, `Control`, `I/O`).
 3. Place symbols and wires on each sheet as needed.
-4. Use labels and references consistently across sheets.
+4. Use labels and power symbols to make connections between sheets.
 
-## Tips
-
-- Use clear sheet names to make navigation easier.
-- Keep connector and net naming consistent.
-- Check references before exporting netlists or printing.

@@ -268,11 +268,10 @@
         function setupVideoPlayers() {
           var players = document.querySelectorAll('.manual-video-player');
 
-          for (var playerIndex = 0; playerIndex < players.length; playerIndex++) {
-            var player = players[playerIndex];
+          function initializeVideoPlayer(player) {
             var video = player.querySelector('video');
             var controls = player.querySelector('.manual-video-controls');
-            if (!video || !controls) continue;
+            if (!video || !controls) return;
 
             var toggleButton = controls.querySelector('[data-action="toggle"]');
             var toggleIcon = controls.querySelector('[data-role="toggle-icon"]');
@@ -355,6 +354,10 @@
 
             updateButtons();
             updateTimeline();
+          }
+
+          for (var playerIndex = 0; playerIndex < players.length; playerIndex++) {
+            initializeVideoPlayer(players[playerIndex]);
           }
         }
 

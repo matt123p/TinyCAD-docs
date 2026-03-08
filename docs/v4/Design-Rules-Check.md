@@ -18,31 +18,29 @@ Aim for zero design errors to increase confidence in schematic correctness.
 ## Run Design Rules Check
 
 1. Open your design.
-2. Run **Check Design Rules** from the Special tools/menu.
+2. Run **Check Design Rules** from the Special tools menu.
 3. In the rules dialog, enable or disable the rule checks you want.
 4. Select **OK** to run the check.
+
+{% include video-player.html
+	src="/v4/images/video/Video 8.mp4"
+	width=1622
+	height=952
+	caption="Video walkthrough showing how to run and use the design rules checker."
+%}
+
 
 ## Reading the results
 
 - Each detected error is marked on the schematic with a red circle.
 - An error list appears next to the design.
 - Selecting an error in the list centers that location in the drawing.
-- Using **Edit Item** and clicking an error marker highlights the matching entry
-	in the list.
 
 ## Clear and re-check
 
-- Select **Done** in the error list to remove all current error markers.
-- If no errors are found, TinyCAD reports that result in the same list area.
+- Select **Close** in the error list to remove all current error markers.
 - Error circles are temporary review markers: they are not saved with the
 	design.
-
-## Tips
-
-- Use no-connect markers for intentionally unused pins to avoid false DRC
-	issues.
-- Re-run Design Rules Check after edits that affect wiring, labels, buses, or
-	symbols.
 
 - Back to [Advanced](../Advanced/)
 - Back to [v4 contents](../CONTENTS/)

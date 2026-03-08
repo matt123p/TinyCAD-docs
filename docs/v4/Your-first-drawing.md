@@ -83,7 +83,14 @@ on the drawing.
 
 <div class="manual-tabset" data-tabset="product-mode" data-tabset-label="Choose your TinyCAD product" data-default-tab="Browser" markdown="1">
 
-### Browser
+### Browser Local Files
+
+To save your drawing use the "Save As" or "Save" buttons on the toolbar:
+
+<img src="/v4/images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
+
+
+### Browser Google
 
 Your first drawing is complete. To rename it:
 

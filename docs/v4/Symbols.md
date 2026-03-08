@@ -15,13 +15,18 @@ See also:
 
 ## Find and place symbols
 
-1. Open the symbol picker.
-2. Browse libraries or search by name/description text.
-3. Select the symbol to make it the current placement tool.
-4. Click in the drawing to place instances.
-5. Right-click to end placement for that symbol.
+1. Type the name of the symbol you want in the search box
+2. Select the symbols to see them, and pick the one you want
+3. Drag the symbol from the preview in to you drawing
 
-If search does not find a part, verify the correct libraries are loaded first.
+{% include video-player.html
+	src="/v4/images/video/Video 6.mp4"
+	width=1280
+	height=822
+	caption="Video walkthrough showing how to find and place a symbol."
+%}
+
+
 
 ## Orientation while placing
 
@@ -45,8 +50,6 @@ You can edit the text by clicking on it.
 	caption="Video walkthrough showing how to edit and reposition symbol text."
 %}
 
-
-
 ## Symbol attributes in a schematic
 
 Placed symbols usually include these key attributes:
@@ -58,12 +61,6 @@ Placed symbols usually include these key attributes:
 Reference fields must remain unique. TinyCAD tools can help auto-generate or re-annotate references when needed.
 
 You can add extra attributes for project metadata, PCB flow, or simulation metadata as required.
-
-## Common mistakes to avoid
-
-- Using annotation polylines instead of wire objects for electrical connections
-- Leaving duplicate references uncorrected
-- Assuming non-pin graphics create connectivity (only pins/wires/nets do)
 
 ## Related pages
 

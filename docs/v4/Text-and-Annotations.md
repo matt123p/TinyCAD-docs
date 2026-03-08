@@ -30,19 +30,21 @@ TinyCAD supports common annotation shapes, including:
 Use these to group blocks, highlight areas, and add explanatory notes without
 changing circuit connectivity.
 
-## Editing behavior
 
-- Text can be edited and resized after placement.
-- Shapes can be selected, moved, resized, and styled.
-- Polygon/polyline handles can be added, moved, or removed.
-- You can adjust drawing order (Z-order) for overlapping annotations.
+## Drawing lines & polygons
 
-## Style guidance
+You can draw a collection of lines.  To end drawing right-click.
 
-- Keep annotation style consistent across sheets.
-- Prefer concise notes near the relevant circuitry.
-- Use design details/title information for global metadata and text for local
-	guidance.
+You can convert this to a polygon by selecting "Close Polygon" in the context menu.  Once converted
+to a polygon you can change the fill.
+
+{% include video-player.html
+	src="/v4/images/video/Video 7.mp4"
+	width=1620
+	height=924
+	caption="Video walkthrough showing how to draw and edit a polygon."
+%}
+
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)
