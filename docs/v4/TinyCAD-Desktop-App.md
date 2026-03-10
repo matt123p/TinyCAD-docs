@@ -8,17 +8,15 @@ This page covers the desktop-specific context that differs from the browser
 version. Full installation notes are still brief, but the current guidance
 below should be enough to get started.
 
-## Desktop app basics
+## Install on Windows
 
-- Install the desktop app from the relevant app store or desktop package.
-- Open and save local `.dsn` and library files directly from the desktop app.
-- Use the desktop app when you need local file workflows or OS-level printing.
+For Windows, the preferred way to install TinyCAD v4 is from the
+[Microsoft Store](https://apps.microsoft.com/detail/9NZQ1M56NM3V).
 
-## When to prefer the desktop app
+If you are using Windows, use the Microsoft Store version unless you have a
+specific reason to install from another source.
 
-- You want direct access to local files without cloud storage.
-- You need native desktop file associations.
-- You are working in an environment where browser storage is not suitable.
+
 
 ## Related pages
 

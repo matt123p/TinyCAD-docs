@@ -24,7 +24,7 @@ This page summarizes key differences between TinyCAD web and desktop.
 | Set style across multiple items | Yes | Yes | No | Web app supports selecting multiple annotation items and applying shared style/fill |
 | Auto junction placement | Yes | Yes | Yes | |
 | Undo/Redo | Yes | Yes | Yes | |
-| Windows support | Full support in Chrome/Edge | Yes | Full support as installed app | It is recommended you use the Windows Store to download TinyCAD for desktop use |
+| Windows support | Full support in Chrome/Edge | Yes | Full support as installed app | Preferred install route on Windows: [Microsoft Store](https://apps.microsoft.com/detail/9NZQ1M56NM3V) |
 | Mac support | Full support in Chrome/Edge | Yes | Partial support via Wine compatibility | Download the latest desktop app from the App Store in MacOS |
 | Linux support | Full support in Chrome/Edge | Yes | Partial support via Wine compatibility | It is available in the Snap store or use the installer |
 | Chrome OS support | Yes | No | No | |
