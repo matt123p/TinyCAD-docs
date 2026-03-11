@@ -10,41 +10,41 @@ Symbols are created from normal objects found on the Toolbar. They may contain
 any of these objects except other symbols.
 
 If the symbol does contain any objects with special functions (such as a power
-item or a wire) then these object will be treated as though they were
-annotation. 
+item or a wire) then those objects will be treated as though they were
+annotation.
 
-All their special functions are lost when used in a symbol, only **pins** define
+All their special functions are lost when used in a symbol. Only **pins** define
 electrical connection points.
 
 Summary:
-- a symbol is a reusable graphic plus atributes
+- a symbol is a reusable graphic plus attributes
 - electrical connectivity is defined by **pins**
 - and symbols are stored in **libraries** (`.tclib`)
 
 ## Before you start
 
-You must be editing a library in order to edit symbols.  So make sure you have opened a library
-for editing.  How you do this depends on which version of TinyCAD you are using.  See 
-[Custom symbol libraries](../Custom-symbol-libraries/) for more details.
+This page assumes you already have a library open for editing. The steps for
+opening or creating a library depend on whether you are using TinyCAD Web or
+the desktop application, so start with [Custom Symbol Libraries](../Custom-symbol-libraries/).
 
-> **Screenshot needed 2:** Library loaded, showing symbol list in side panel.
+If you are looking for browsing and placement rather than editing, see [Using Symbol Libraries](../Using-Symbol-Libraries/).
 
-## Open an existing symbol for editing
+## Open or create the symbol
 
 1. Open the library.
-2. In the library symbol list, click the symbol you want to edit.
-3. The symbol loads into the editor canvas.
+2. To edit an existing symbol, click it in the library symbol list.
+3. To create a new symbol, click the `+` button in the symbol list.
+4. The selected or new symbol loads into the editor canvas.
 
-You can then modify graphics, pins, and symbol atributes.
+You can then modify the graphics, pins, and symbol attributes.
 
-> **Screenshot needed 3:** Selecting a symbol in the library panel and loading it in the editor.
+{% include video-player.html
+	src="/v4/images/video/Video 12.mp4"
+	width=1532
+	height=978
+	caption="Video walkthrough showing how to edit a library."
+%}
 
-## Create a new symbol
-
-Click the `+ (new)` in the symbol list.  You will then be presented with a blank drawing area
-to draw your new symbol.
-
-> **Screenshot needed 4:** Creating a new symbol from the symbol-list `+` button.
 
 ## Drawing the symbol shape (graphics)
 
@@ -54,7 +54,8 @@ Use standard drawing tools to create the symbol outline:
 - rectangles/ellipses/arcs for common package outlines,
 - text for optional internal markings.
 
-> **Screenshot needed 5:** Symbol body being drawn on-grid (without pins yet).
+Keep the symbol readable at normal schematic zoom. Simple shapes usually work
+better than highly decorative artwork.
 
 ## Adding pins
 
@@ -68,10 +69,15 @@ For each pin, set:
 - **Pin style/shape** (visual style),
 - **Visibility** for pin name/number text as needed.
 
+Place pins carefully on-grid so wiring in the schematic is straightforward.
 
-> **Screenshot needed 6:** Pin tool/pin properties panel with number, name, and electrical type fields.
->
-> **Screenshot needed 7:** Example symbol with visible pin names and numbers.
+{% include video-player.html
+	src="/v4/images/video/Video 13.mp4"
+	width=1532
+	height=978
+	caption="Video walkthrough showing how to add pins."
+%}
+
 
 ## Pin panel
 
@@ -95,19 +101,11 @@ Pin panel sections:
 	- Electrical dropdown (`elec`)
 	- Length numeric field (`length`, UI range 5..50)
 
-> **Screenshot needed 8:** Bottom Pin Properties panel visible with Name, Number, and Type sections.
->
-> **Screenshot needed 9:** Live editing example (changing shape/electrical type and seeing immediate update).
-
 Notes:
 
 - Shape controls symbol appearance and some special visual behaviors.
 - `Cross` shape and `Not Connected` electrical type both draw a cross marker.
 - `Power` and `Hidden` shape styles are rendered using hidden-pin coloring.
-
-> **Screenshot needed 10:** Shape dropdown expanded, showing all shape options.
->
-> **Screenshot needed 11:** Example canvas showing several different pin shapes side by side.
 
 ## Pin electrical types and DRC behavior
 
@@ -142,10 +140,6 @@ Practical DRC implications:
 - Incorrect pin typing can cause false DRC errors (or hide real ones).
 - Power pin names must match intended supply names for automatic behavior.
 
-> **Screenshot needed 12:** Electrical dropdown expanded, showing all electrical types.
->
-> **Screenshot needed 13:** DRC example showing an error caused by mismatched pin typing.
-
 ## Power and hidden pins
 
 Power and hidden pins are shown while editing the symbol, but are typically
@@ -162,10 +156,6 @@ For **hidden pins**:
 
 - They are still electrically active.
 - Use them where you wish to draw your own pin shape and pin labels.
-
-> **Screenshot needed 14:** Symbol editor view showing visible power/hidden pins before placement.
->
-> **Screenshot needed 15:** Same symbol placed in a schematic with those pins hidden.
 
 ## Multi-part symbols (parts per package)
 
@@ -195,27 +185,17 @@ For homogeneous parts:
 For heterogeneous parts:
 - You can draw a different shape per part
 
-> **Screenshot needed 16:** Setting number of parts per package.
->
-> **Screenshot needed 17:** Editing different parts of a multi-part symbol (tabbed part selector).
->
-> **Screenshot needed 18:** Homogeneous example (same shape, different pin numbers).
->
-> **Screenshot needed 19:** Heterogeneous example (different shape/function per part).
+## Symbol attributes and properties
 
-## Symbol atributes and properties
+You can edit the symbol's attributes in the **Symbol** panel in the **bottom panel**.
 
-You can edit the Symbol's attributes in the **Symbol** panel in the **bottom panel**.
-
-In addition to graphics/pins, define symbol atributes carefully:
+In addition to graphics and pins, define symbol attributes carefully:
 
 - Primary symbol name (and aliases if used),
 - Default **Ref** format (for example `U?`, `R?`, `C?`),
 - Default **Name/Value**,
 - Additional attributes/parameters (for example package/footprint, simulation
 	model fields, or project-specific metadata).
-
-> **Screenshot needed 20:** Symbol properties panel with Name, Ref, and extra attributes.
 
 ## Save, duplicate, rename, delete
 
@@ -229,8 +209,6 @@ Common symbol management actions in library editing:
 
 Use duplication for package/value variants that share graphics but differ in
 defaults.
-
-> **Screenshot needed 21:** Symbol context menu showing duplicate/rename/delete actions.
 
 ## Validation checklist before publishing a symbol
 
