@@ -15,6 +15,13 @@ Here is a simple circuit to draw:
 
 <img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
+<p>
+	<a href="/v4/examples/First%20Drawing.dsn" class="btn btn-primary" download>
+		<i class="bi bi-download me-1" aria-hidden="true"></i>&nbsp;Download
+	</a>
+</p>
+
+
 ## Video Walkthrough
 
 {% include video-player.html

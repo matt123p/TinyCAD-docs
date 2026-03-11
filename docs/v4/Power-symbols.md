@@ -16,6 +16,11 @@ All power symbols with the same name are considered electrically connected.
 	caption="Video walkthrough showing how to place power symbols."
 %}
 
+<p>
+	<a href="/v4/examples/Simple%20Drawing.dsn" class="btn btn-primary" download>
+		<i class="bi bi-download me-1" aria-hidden="true"></i>&nbsp;Download
+	</a>
+</p>
 
 ## How power symbols work
 
