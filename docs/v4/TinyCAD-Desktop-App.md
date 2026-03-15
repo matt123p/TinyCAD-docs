@@ -4,9 +4,7 @@ layout: default
 
 # Installation Instructions
 
-This page covers the desktop-specific context that differs from the browser
-version. Full installation notes are still brief, but the current guidance
-below should be enough to get started.
+This page covers the installation of TinyCAD.
 
 ## Install on Windows
 
