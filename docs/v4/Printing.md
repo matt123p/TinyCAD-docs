@@ -36,6 +36,9 @@ Notes:
 
 - SVG export contains the current sheet only (single page format)
 - Free SVG-to-DXF converters are available online
+- See [Page Size](../Page-Size/) if you need to adjust the sheet dimensions before printing or exporting.
+- See [Design Details box](../Design-Details-box/) if you want title block details included in the output.
+- See [Multiple Sheet Drawings](../Multiple-Sheet-Drawings/) if your design uses more than one sheet.
 
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)

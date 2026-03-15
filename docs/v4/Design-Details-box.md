@@ -48,5 +48,9 @@ Design guides appear as follows:
 
 Design details are per sheet - in multi-sheet drawings, each sheet can have its own design details.
 
+- See [Multiple Sheet Drawings](../Multiple-Sheet-Drawings/) if your design spans several pages.
+- See [Page Size](../Page-Size/) to control the sheet layout around the details box.
+- See [Printing](../Printing/) for how the details box appears in printed or PDF output.
+
 - Back to [Drawing](../User-guide/)
 - Back to [v4 contents](../CONTENTS/)
