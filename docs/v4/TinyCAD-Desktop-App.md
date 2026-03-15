@@ -41,6 +41,11 @@ links to distribution-specific setup instructions for each supported Linux distr
 The [GitHub releases](https://github.com/matt123p/TinyCADv4/releases) also
 includes Linux `.deb` packages.
 
+## Use on ChromeOS and Chromebooks
+
+On ChromeOS use [TinyCAD Web](../TinyCAD-Web-overview-and-quick-start/)
+instead of installing the desktop application.
+
 
 ## Related pages
 
