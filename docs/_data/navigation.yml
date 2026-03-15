@@ -106,5 +106,7 @@ v4:
     children:
       - title: Feature Differences
         url: /v4/Feature-Differences/
+      - title: Language Translation
+        url: /v4/Language-translation/
       - title: Shortcuts
         url: /v4/Shortcuts/
