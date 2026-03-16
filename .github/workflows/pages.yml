@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,8 +26,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Inject Google Analytics config
+        if: env.GOOGLE_ANALYTICS_ID != ''
+        run: |
+          cat <<EOF > docs/_data/analytics.yml
+          google_analytics_id: ${GOOGLE_ANALYTICS_ID}
+          EOF
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        env:
+          JEKYLL_ENV: production
         with:
           source: ./docs
           destination: ./_site
