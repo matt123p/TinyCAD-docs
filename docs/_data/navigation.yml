@@ -84,6 +84,8 @@ v4:
         url: /v4/Using-Symbol-Libraries/
       - title: Custom Libraries
         url: /v4/Custom-symbol-libraries/
+      - title: Library Folders
+        url: /v4/Library-Folders/
       - title: Importing Symbols from KiCAD
         url: /v4/Importing-Symbols-from-KiCAD/
       - title: Editing a Symbol
