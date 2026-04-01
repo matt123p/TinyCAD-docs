@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-  <body>
+  <body data-manual-search-version="{% if page.url contains '/v3/' %}v3{% elsif page.url contains '/v4/' %}v4{% endif %}">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     {%- assign current_version = nil -%}
@@ -98,6 +98,7 @@
     </div>
 
     <!-- ===== Scripts ===== -->
+    <script src="{{ '/assets/manual-search.js' | relative_url }}" data-manual-search></script>
     <script>
       (function () {
         function slugify(value) {

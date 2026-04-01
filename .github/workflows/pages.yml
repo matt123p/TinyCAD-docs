@@ -27,9 +27,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
+          cache: npm
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Install Node.js dependencies
+        run: npm ci
 
       - name: Inject Google Analytics config
         if: env.GOOGLE_ANALYTICS_ID != ''
@@ -38,13 +47,10 @@ jobs:
           google_analytics_id: ${GOOGLE_ANALYTICS_ID}
           EOF
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Build site
         env:
           JEKYLL_ENV: production
-        with:
-          source: ./docs
-          destination: ./_site
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

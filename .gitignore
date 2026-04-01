@@ -1,2 +1,5 @@
 docs/_data/analytics.yml
 /_site
+/node_modules/
+/docs/assets/lunr-index-v3.js
+/docs/assets/lunr-index-v4.js
