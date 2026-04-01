@@ -19,15 +19,34 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      # ... keep the rest the same
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
