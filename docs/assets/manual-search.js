@@ -3,8 +3,10 @@
   var SEARCH_BOX_ID = 'manual-search-box';
   var SEARCH_FORM_ID = 'manual-search-form';
   var SEARCH_INPUT_ID = 'manual-search-input';
+  var SEARCH_TOGGLE_ID = 'manual-search-toggle';
   var SEARCH_RESULTS_ID = 'manual-search-results';
   var SEARCH_RESULT_LIMIT = 10;
+  var MOBILE_SEARCH_MEDIA_QUERY = '(max-width: 600px)';
 
   function getSearchVersion() {
     var configuredVersion = document.body && document.body.getAttribute('data-manual-search-version');
@@ -88,6 +90,9 @@
     searchContainer.id = SEARCH_BOX_ID;
     searchContainer.className = 'manual-search-container';
     searchContainer.innerHTML = [
+      '<button id="' + SEARCH_TOGGLE_ID + '" class="manual-search-toggle" type="button" aria-label="Open search" aria-controls="' + SEARCH_FORM_ID + '" aria-expanded="false">',
+      '  <i class="bi bi-search" aria-hidden="true"></i>',
+      '</button>',
       '<form id="' + SEARCH_FORM_ID + '" autocomplete="off" role="search">',
       '  <input id="' + SEARCH_INPUT_ID + '" type="search" placeholder="Search this manual..." aria-label="Search this manual">',
       '  <button type="submit" aria-label="Search">',
@@ -101,6 +106,133 @@
     if (navbar) {
       navbar.appendChild(searchContainer);
     }
+  }
+
+  function setupResponsiveSearchUi() {
+    createSearchUi();
+
+    var container = document.getElementById(SEARCH_BOX_ID);
+    var form = document.getElementById(SEARCH_FORM_ID);
+    var input = document.getElementById(SEARCH_INPUT_ID);
+    var toggleButton = document.getElementById(SEARCH_TOGGLE_ID);
+    var resultsNode = document.getElementById(SEARCH_RESULTS_ID);
+
+    if (!container || !form || !input || !toggleButton || !resultsNode) {
+      return null;
+    }
+
+    if (container.getAttribute('data-manual-search-shell') === 'ready') {
+      return {
+        container: container,
+        form: form,
+        input: input,
+        toggleButton: toggleButton,
+        resultsNode: resultsNode
+      };
+    }
+
+    container.setAttribute('data-manual-search-shell', 'ready');
+
+    var mediaQuery = window.matchMedia ? window.matchMedia(MOBILE_SEARCH_MEDIA_QUERY) : null;
+    var mobileExpanded = false;
+    var wasMobile = usesMobileToggle();
+
+    function usesMobileToggle() {
+      return !!(mediaQuery && mediaQuery.matches);
+    }
+
+    function setExpanded(expanded) {
+      var isMobile = usesMobileToggle();
+      if (isMobile) {
+        mobileExpanded = !!expanded;
+      }
+
+      container.classList.toggle('is-expanded', isMobile && mobileExpanded);
+      form.hidden = isMobile ? !mobileExpanded : false;
+      toggleButton.setAttribute('aria-expanded', String(isMobile && mobileExpanded));
+      toggleButton.setAttribute('aria-label', isMobile && mobileExpanded ? 'Close search' : 'Open search');
+    }
+
+    function syncForViewport() {
+      var isMobile = usesMobileToggle();
+
+      if (isMobile && !wasMobile) {
+        mobileExpanded = false;
+        clearResults(resultsNode);
+      }
+
+      if (!isMobile) {
+        mobileExpanded = false;
+      }
+
+      wasMobile = isMobile;
+      setExpanded(mobileExpanded);
+    }
+
+    toggleButton.addEventListener('click', function () {
+      if (!usesMobileToggle()) {
+        input.focus();
+        return;
+      }
+
+      var shouldExpand = !container.classList.contains('is-expanded');
+      setExpanded(shouldExpand);
+
+      if (shouldExpand) {
+        input.focus();
+      } else {
+        clearResults(resultsNode);
+      }
+    });
+
+    input.addEventListener('focus', function () {
+      if (usesMobileToggle()) {
+        setExpanded(true);
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (container.contains(event.target)) {
+        return;
+      }
+
+      clearResults(resultsNode);
+
+      if (usesMobileToggle()) {
+        setExpanded(false);
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') {
+        return;
+      }
+
+      clearResults(resultsNode);
+
+      if (usesMobileToggle() && container.classList.contains('is-expanded')) {
+        setExpanded(false);
+        toggleButton.focus();
+      }
+    });
+
+    if (mediaQuery) {
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', syncForViewport);
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(syncForViewport);
+      }
+    }
+
+    syncForViewport();
+
+    return {
+      container: container,
+      form: form,
+      input: input,
+      toggleButton: toggleButton,
+      resultsNode: resultsNode
+    };
   }
 
   function setStatus(resultsNode, message, className) {
@@ -198,11 +330,14 @@
       return;
     }
 
-    createSearchUi();
+    var ui = setupResponsiveSearchUi();
+    if (!ui) {
+      return;
+    }
 
-    var form = document.getElementById(SEARCH_FORM_ID);
-    var input = document.getElementById(SEARCH_INPUT_ID);
-    var resultsNode = document.getElementById(SEARCH_RESULTS_ID);
+    var form = ui.form;
+    var input = ui.input;
+    var resultsNode = ui.resultsNode;
     var index = lunr.Index.load(indexPayload.indexData);
     var lastQuery = '';
 
@@ -245,19 +380,6 @@
       runSearch(input.value);
     });
 
-    document.addEventListener('click', function (event) {
-      var container = document.getElementById(SEARCH_BOX_ID);
-      if (container && !container.contains(event.target)) {
-        clearResults(resultsNode);
-      }
-    });
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') {
-        clearResults(resultsNode);
-      }
-    });
-
     input.setAttribute('data-manual-search-ready', version);
   }
 
@@ -271,10 +393,9 @@
       .then(function () { return loadIndex(version); })
       .then(function (indexPayload) { setupSearch(version, indexPayload); })
       .catch(function () {
-        createSearchUi();
-        var resultsNode = document.getElementById(SEARCH_RESULTS_ID);
-        if (resultsNode) {
-          setStatus(resultsNode, 'Search is temporarily unavailable.', 'manual-search-status');
+        var ui = setupResponsiveSearchUi();
+        if (ui && ui.resultsNode) {
+          setStatus(ui.resultsNode, 'Search is temporarily unavailable.', 'manual-search-status');
         }
       });
   }
