@@ -1,0 +1,87 @@
+name: translate
+
+on:
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: 'all, or comma-separated language codes: nl,fr,es,de,it,ja,pl,zh-CN'
+        required: true
+        default: all
+        type: string
+      pages:
+        description: 'Optional comma-separated v4 filenames, e.g. User-guide.md (blank = all pages)'
+        required: false
+        type: string
+      force:
+        description: 'Regenerate selected translations even when cached (overwrites manual edits)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: translate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run test:translations
+      - name: Translate missing or stale v4 content
+        id: translate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TRANSLATE_LANGUAGES: ${{ inputs.languages }}
+          TRANSLATE_PAGES: ${{ inputs.pages }}
+          TRANSLATE_FORCE: ${{ inputs.force }}
+        shell: bash
+        run: |
+          args=(--languages "$TRANSLATE_LANGUAGES")
+          if [[ -n "$TRANSLATE_PAGES" ]]; then args+=(--page "$TRANSLATE_PAGES"); fi
+          if [[ "$TRANSLATE_FORCE" == "true" ]]; then args+=(--force); fi
+          node scripts/translate.js "${args[@]}"
+      - name: Validate saved translations
+        id: validate
+        if: ${{ !cancelled() && steps.translate.outcome != 'skipped' }}
+        run: |
+          npm run prepare:translations
+          npm run build:search-index
+          npm run check:links
+      - name: Preserve completed translations as an artifact
+        if: ${{ always() && steps.translate.outcome != 'skipped' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-translations-${{ github.run_id }}
+          path: translations/v4/
+      - name: Commit completed translations
+        id: commit
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          git add -- translations/v4/
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'docs(v4): update cached manual translations'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      # Pushes made with GITHUB_TOKEN do not trigger another push workflow.
+      - name: Publish the updated main branch
+        if: ${{ success() && steps.commit.outputs.changed == 'true' && github.ref_name == 'main' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

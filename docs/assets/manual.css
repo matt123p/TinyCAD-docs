@@ -1269,3 +1269,11 @@ summary:focus-visible,
     box-shadow: none;
   }
 }
+
+.manual-language-control { display: inline-flex; align-items: center; gap: .35rem; margin: 0 .35rem; color: white; font-size: .85rem; }
+.manual-language-control select { max-width: 8rem; padding: .35rem; border-radius: .3rem; color: #222; background: white; }
+.manual-translation-notice { border-left: 3px solid #be8b00; padding: .8rem; background: #fff7dc; color: #493600; }
+@media (max-width: 600px) {
+  .manual-language-control > span { display: none; }
+  .manual-language-control select { max-width: 6rem; }
+}

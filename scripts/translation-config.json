@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6-luna",
+  "reasoningEffort": "low",
+  "promptVersion": 1,
+  "languages": {
+    "nl": "Nederlands",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ja": "日本語",
+    "pl": "Polski",
+    "zh-CN": "中文 (简体)"
+  },
+  "glossary": "Keep TinyCAD, KiCad, SPICE, VHDL, PCB, component references, file extensions, keyboard shortcuts and code unchanged. Use consistent established electrical engineering terminology. Translate interface command names consistently, retaining the English name in parentheses when needed to help users find the command."
+}

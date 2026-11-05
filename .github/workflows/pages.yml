@@ -42,17 +42,8 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      # ... keep the rest the same
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Install Node.js dependencies
-        run: npm ci
+      - name: Check translation tooling
+        run: npm run test:translations
 
       - name: Inject Google Analytics config
         if: env.GOOGLE_ANALYTICS_ID != ''

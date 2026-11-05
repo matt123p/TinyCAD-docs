@@ -116,7 +116,7 @@ function getUrl(version, filePath) {
 
 function buildDocuments(version) {
   const versionDir = path.join(DOCS_DIR, version);
-  return walkMarkdownFiles(versionDir).map((filePath, index) => {
+  return walkMarkdownFiles(versionDir).filter((file) => version !== 'v4' || path.dirname(file) === versionDir).map((filePath, index) => {
     const raw = fs.readFileSync(filePath, 'utf8');
     const { frontMatter, body } = stripFrontMatter(raw);
     const frontMatterValues = parseFrontMatter(frontMatter);
@@ -162,7 +162,27 @@ function writeIndex(version, payload) {
   fs.writeFileSync(outputPath, source, 'utf8');
 }
 
+function buildTranslatedIndexes() {
+  const { createProject } = require('./lib/translations');
+  const project = createProject(ROOT_DIR);
+  fs.readdirSync(ASSETS_DIR).filter((name) => /^manual-index-v4-.*\.js$/.test(name)).forEach((name) => fs.unlinkSync(path.join(ASSETS_DIR, name)));
+  Object.keys(project.config.languages).forEach((language) => {
+    const directory = path.join(DOCS_DIR, 'v4', language);
+    if (!fs.existsSync(directory)) return;
+    const documents = fs.readdirSync(directory).filter((file) => file.endsWith('.md')).sort().map((file, id) => {
+      const raw = fs.readFileSync(path.join(directory, file), 'utf8');
+      const { frontMatter, body } = stripFrontMatter(raw);
+      const content = stripMarkdown(body.replace(/^\{:[^\n]*\}\s*$/gm, ''));
+      return { id, url: file === 'index.md' ? '/v4/' + language + '/' : '/v4/' + language + '/' + file.replace(/\.md$/, '/'),
+        title: stripMarkdown(getTitle(file, parseFrontMatter(frontMatter), body)), content, snippet: content.slice(0, 220) };
+    });
+    fs.writeFileSync(path.join(ASSETS_DIR, 'manual-index-v4-' + language + '.js'), 'window.MANUAL_TRANSLATED_INDEX = ' + JSON.stringify({ language, docs: documents }) + ';\n');
+    console.log('Generated v4 search data for ' + language + ' (' + documents.length + ' documents)');
+  });
+}
+
 function main() {
+  buildTranslatedIndexes();
   VERSION_DIRS.forEach((version) => {
     const documents = buildDocuments(version);
     writeIndex(version, buildIndexPayload(documents));

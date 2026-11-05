@@ -5,13 +5,20 @@
   "description": "Local build scripts for TinyCAD manual GitHub Pages site",
   "scripts": {
     "bundle:install": "bundle install",
-    "build": "npm run clean && npm run build:search-index && npm run bundle:install && bundle exec jekyll build --source docs --destination _site",
+    "build": "npm run bundle:install && npm run clean && npm run prepare:translations && npm run build:search-index && bundle exec jekyll build --source docs --destination _site",
     "build:search-index": "node scripts/build-search-index.js",
     "check:links": "node scripts/check-links.js",
-    "serve": "npm run clean && npm run build:search-index && npm run bundle:install && bundle exec jekyll serve --source docs --destination _site --livereload --open-url",
-    "clean": "bundle exec jekyll clean --source docs --destination _site"
+    "serve": "npm run bundle:install && npm run clean && npm run prepare:translations && npm run build:search-index && bundle exec jekyll serve --source docs --destination _site --livereload --open-url",
+    "clean": "bundle exec jekyll clean --source docs --destination _site",
+    "translate": "node scripts/translate.js",
+    "translate:status": "node scripts/translate.js --dry-run",
+    "prepare:translations": "node scripts/prepare-translations.js",
+    "test:translations": "node --test scripts/tests/translations.test.js"
   },
   "devDependencies": {
-    "lunr": "^2.3.9"
+    "liquidjs": "^10.30.1",
+    "lunr": "^2.3.9",
+    "markdown-it": "^15.0.3",
+    "yaml": "^2.9.1"
   }
 }

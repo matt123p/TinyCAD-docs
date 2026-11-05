@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-  <body data-manual-search-version="{% if page.url contains '/v3/' %}v3{% elsif page.url contains '/v4/' %}v4{% endif %}">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+  <body data-manual-language="{{ page.manual_language | default: 'en' }}" data-manual-i18n="{{ page.manual_ui | jsonify | escape }}" data-manual-search-version="{% if page.url contains '/v3/' %}v3{% elsif page.url contains '/v4/' %}v4{% endif %}">
+    <a class="skip-link" href="#main-content">{{ page.manual_ui.skip | default: 'Skip to main content' }}</a>
 
     {%- assign current_version = nil -%}
     {%- if page.url contains '/v3/' -%}
@@ -20,6 +20,11 @@
     {%- endif -%}
 
     {%- assign nav_items = site.data.navigation[current_version] -%}
+    {%- assign manual_language = 'en' -%}
+    {%- if current_version == 'v4' -%}
+      {%- assign manual_language = page.manual_language | default: 'en' -%}
+      {%- assign nav_items = page.manual_navigation | default: nav_items -%}
+    {%- endif -%}
     {%- assign show_sidebar = true -%}
     {%- if page.url == '/' or page.url == '/index.html' -%}
       {%- assign show_sidebar = false -%}
@@ -30,18 +35,38 @@
       <header class="manual-navbar">
         <div class="manual-navbar-inner">
           <a class="manual-brand" href="{{ '/' | relative_url }}">
-            Tiny<span class="brand-highlight">CAD</span> Manual
+            {% if page.manual_ui %}{{ page.manual_ui.manualTitle | escape }}{% else %}Tiny<span class="brand-highlight">CAD</span> Manual{% endif %}
           </a>
-          <nav class="manual-navbar-links" aria-label="Primary">
+          <nav class="manual-navbar-links" aria-label="{{ page.manual_ui.primary | default: 'Primary' | escape }}">
             {%- for ver in site.data.versions.versions -%}
-              {%- assign ver_path = ver.path | relative_url -%}
+              {%- assign version_path = ver.path -%}
+              {%- if ver.id == 'v4' and current_version == 'v4' and manual_language != 'en' -%}
+                {%- assign version_path = '/v4/' | append: manual_language | append: '/' -%}
+              {%- endif -%}
+              {%- assign ver_path = version_path | relative_url -%}
               <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active" aria-current="page"{% endif %}>
                 <span class="nav-label-full">{{ ver.label }}</span>
                 <span class="nav-label-short" aria-hidden="true">{{ ver.id | upcase }}</span>
               </a>
             {%- endfor -%}
+            {% if current_version == 'v4' and site.data.manual_languages.size > 1 %}
+              <label class="manual-language-control">
+                <span>{{ page.manual_ui.language | default: 'Language' | escape }}</span>
+                <select data-manual-language-select aria-label="{{ page.manual_ui.language | default: 'Language' | escape }}">
+                  {% assign source_url = page.manual_source_url | default: page.url %}
+                  {% for language in site.data.manual_languages %}
+                    {% assign language_url = source_url %}
+                    {% if language.code != 'en' %}
+                      {% assign language_prefix = '/v4/' | append: language.code | append: '/' %}
+                      {% assign language_url = source_url | replace_first: '/v4/', language_prefix %}
+                    {% endif %}
+                    <option value="{{ language_url | relative_url }}" lang="{{ language.code }}"{% if language.code == manual_language %} selected{% endif %}>{{ language.label | escape }}</option>
+                  {% endfor %}
+                </select>
+              </label>
+            {% endif %}
             <span class="nav-divider"></span>
-            <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener" aria-label="Visit tinycad.net">
+            <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener" aria-label="{{ page.manual_ui.visitSite | default: 'Visit tinycad.net' | escape }}">
               <i class="bi bi-globe2 nav-site-icon" aria-hidden="true"></i>
               <span class="nav-site-full">tinycad.net</span>
               <span class="nav-site-short" aria-hidden="true">Site</span>
@@ -56,7 +81,7 @@
           {%- if show_sidebar -%}
             <aside class="manual-sidebar" aria-label="Manual contents">
               <details class="manual-contents">
-                <summary><i class="bi bi-list-ul me-1"></i>Contents</summary>
+                <summary><i class="bi bi-list-ul me-1"></i>{{ page.manual_ui.contents | default: 'Contents' | escape }}</summary>
                 <ul>
                   {%- for entry in nav_items -%}
                     {%- assign entry_url = entry.url | relative_url -%}
@@ -81,11 +106,14 @@
           {%- endif -%}
 
           <main id="main-content" class="manual-main" tabindex="-1">
+            {% if page.manual_fallback %}
+              <p class="manual-translation-notice" role="status" lang="{{ manual_language }}">{% if page.manual_stale %}{{ page.manual_ui.stale | escape }}{% else %}{{ page.manual_ui.fallback | escape }}{% endif %}</p>
+            {% endif %}
             {{ content }}
             {%- if site.github_edit_base_url and page.path -%}
               <p class="manual-edit-link">
-                <a href="{{ site.github_edit_base_url }}/docs/{{ page.path }}">
-                  <i class="bi bi-pencil me-1"></i> Edit this page on GitHub
+                <a href="{{ site.github_edit_base_url }}/docs/{{ page.manual_source | default: page.path }}">
+                  <i class="bi bi-pencil me-1"></i> {{ page.manual_ui.editPage | default: 'Edit this page on GitHub' | escape }}
                 </a>
               </p>
             {%- endif -%}
@@ -101,6 +129,12 @@
     <script src="{{ '/assets/manual-search.js' | relative_url }}" data-manual-search></script>
     <script>
       (function () {
+        var languageSelect = document.querySelector('[data-manual-language-select]');
+        if (languageSelect) languageSelect.addEventListener('change', function () {
+          window.location.assign(languageSelect.value);
+        });
+        var manualUi = {{ page.manual_ui | jsonify }} || {};
+        function manualText(key, fallback) { return manualUi[key] || fallback; }
         function slugify(value) {
           return String(value || '')
             .toLowerCase()
@@ -288,15 +322,15 @@
             function updateButtons() {
               var paused = video.paused || video.ended;
               if (toggleButton) {
-                toggleButton.setAttribute('aria-label', paused ? 'Play video' : 'Pause video');
-                toggleButton.setAttribute('title', paused ? 'Play video' : 'Pause video');
+                toggleButton.setAttribute('aria-label', paused ? manualText('playVideo', 'Play video') : manualText('pauseVideo', 'Pause video'));
+                toggleButton.setAttribute('title', paused ? manualText('playVideo', 'Play video') : manualText('pauseVideo', 'Pause video'));
                 toggleButton.classList.toggle('is-primary', paused);
               }
               if (toggleIcon) {
                 toggleIcon.className = paused ? 'bi bi-play-fill' : 'bi bi-pause-fill';
               }
               if (toggleLabel) {
-                toggleLabel.textContent = paused ? 'Play' : 'Pause';
+                toggleLabel.textContent = paused ? manualText('play', 'Play') : manualText('pause', 'Pause');
               }
             }
 
@@ -369,8 +403,8 @@
         var contentsMenu = document.querySelector('.manual-contents');
         if (!contentsMenu || !sidebar) return;
 
-        var sidebarScrollKey = 'manual-sidebar-scroll-{{ current_version | default: "default" }}';
-        var mainScrollKey = 'manual-main-scroll-{{ current_version | default: "default" }}';
+        var sidebarScrollKey = 'manual-sidebar-scroll-{{ current_version | default: "default" }}{% if current_version == "v4" %}-{{ manual_language }}{% endif %}';
+        var mainScrollKey = 'manual-main-scroll-{{ current_version | default: "default" }}{% if current_version == "v4" %}-{{ manual_language }}{% endif %}';
 
         function save(el, key) {
           try { sessionStorage.setItem(key, String(el.scrollTop)); } catch (e) {}

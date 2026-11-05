@@ -5,19 +5,19 @@
 <figure class="{{ figure_classes }}"{% if include.width %} style="width: {{ include.width }}px; max-width: 100%;"{% endif %}>
   <video class="manual-video" controls preload="{{ include.preload | default: 'metadata' }}" playsinline{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}>
     <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}" />
-    Your browser does not support the video tag. You can <a href="{{ include.src }}">open the video directly</a>.
+    {{ page.manual_ui.videoFallback | default: 'Your browser does not support the video tag.' | escape }} <a href="{{ include.src }}">{{ page.manual_ui.openVideo | default: 'You can open the video directly' | escape }}</a>.
   </video>
-  <div class="manual-video-controls" aria-label="{{ include.controls_label | default: 'Video playback controls' }}">
-    <button type="button" class="manual-video-button manual-video-button-toggle" data-action="toggle" aria-label="Play video" title="Play video">
+  <div class="manual-video-controls" aria-label="{{ include.controls_label | default: page.manual_ui.videoControls | default: 'Video playback controls' }}">
+    <button type="button" class="manual-video-button manual-video-button-toggle" data-action="toggle" aria-label="{{ page.manual_ui.playVideo | default: 'Play video' | escape }}" title="{{ page.manual_ui.playVideo | default: 'Play video' | escape }}">
       <i class="bi bi-play-fill" data-role="toggle-icon" aria-hidden="true"></i>
-      <span class="manual-video-sr-only" data-role="toggle-label">Play</span>
+      <span class="manual-video-sr-only" data-role="toggle-label">{{ page.manual_ui.play | default: 'Play' | escape }}</span>
     </button>
-    <button type="button" class="manual-video-button" data-action="restart" aria-label="Restart video" title="Restart video">
+    <button type="button" class="manual-video-button" data-action="restart" aria-label="{{ page.manual_ui.restartVideo | default: 'Restart video' | escape }}" title="{{ page.manual_ui.restartVideo | default: 'Restart video' | escape }}">
       <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
-      <span class="manual-video-sr-only">Restart</span>
+      <span class="manual-video-sr-only">{{ page.manual_ui.restart | default: 'Restart' | escape }}</span>
     </button>
     <label class="manual-video-scrubber-label">
-      <span class="manual-video-sr-only">Video position</span>
+      <span class="manual-video-sr-only">{{ page.manual_ui.videoPosition | default: 'Video position' | escape }}</span>
       <input class="manual-video-scrubber" type="range" min="0" max="100" value="0" step="0.1" data-role="scrubber" />
     </label>
     <output class="manual-video-time" data-role="time">0:00 / 0:00</output>

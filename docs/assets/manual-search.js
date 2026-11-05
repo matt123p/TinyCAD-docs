@@ -6,6 +6,10 @@
   var SEARCH_TOGGLE_ID = 'manual-search-toggle';
   var SEARCH_RESULTS_ID = 'manual-search-results';
   var SEARCH_RESULT_LIMIT = 10;
+  var translatedUi = {};
+  try { translatedUi = JSON.parse(document.body.getAttribute('data-manual-i18n')) || {}; } catch (error) {}
+  function t(key, fallback) { return translatedUi[key] || fallback; }
+  function getLanguage() { return document.body.getAttribute('data-manual-language') || 'en'; }
   var MOBILE_SEARCH_MEDIA_QUERY = '(max-width: 600px)';
 
   function getSearchVersion() {
@@ -62,6 +66,11 @@
   }
 
   function loadIndex(version) {
+    if (version === 'v4' && getLanguage() !== 'en') {
+      return loadScript(getAssetUrl('manual-index-v4-' + getLanguage() + '.js')).then(function () {
+        return window.MANUAL_TRANSLATED_INDEX || null;
+      });
+    }
     var globalName = version === 'v3' ? 'LUNR_INDEX_V3' : 'LUNR_INDEX_V4';
     if (window[globalName]) {
       return Promise.resolve(window[globalName]);
@@ -102,6 +111,12 @@
       '<div id="' + SEARCH_RESULTS_ID + '" hidden tabindex="-1" aria-live="polite"></div>'
     ].join('');
 
+    var toggle = searchContainer.querySelector('#' + SEARCH_TOGGLE_ID);
+    toggle.setAttribute('aria-label', t('openSearch', 'Open search'));
+    var input = searchContainer.querySelector('#' + SEARCH_INPUT_ID);
+    input.placeholder = t('searchPlaceholder', 'Search this manual...');
+    input.setAttribute('aria-label', t('searchLabel', 'Search this manual'));
+    searchContainer.querySelector('button[type="submit"]').setAttribute('aria-label', t('search', 'Search'));
     var navbar = document.querySelector('.manual-navbar-inner');
     if (navbar) {
       navbar.appendChild(searchContainer);
@@ -150,7 +165,7 @@
       container.classList.toggle('is-expanded', isMobile && mobileExpanded);
       form.hidden = isMobile ? !mobileExpanded : false;
       toggleButton.setAttribute('aria-expanded', String(isMobile && mobileExpanded));
-      toggleButton.setAttribute('aria-label', isMobile && mobileExpanded ? 'Close search' : 'Open search');
+      toggleButton.setAttribute('aria-label', isMobile && mobileExpanded ? t('closeSearch', 'Close search') : t('openSearch', 'Open search'));
     }
 
     function syncForViewport() {
@@ -300,7 +315,7 @@
 
   function renderResults(resultsNode, matches, indexPayload) {
     if (!matches.length) {
-      setStatus(resultsNode, 'No results found.', 'manual-search-no-results');
+      setStatus(resultsNode, t('noResults', 'No results found.'), 'manual-search-no-results');
       return;
     }
 
@@ -325,8 +340,18 @@
     resultsNode.hidden = false;
   }
 
+  function translatedMatches(query, payload) {
+    var normalized = query.normalize('NFKC').toLocaleLowerCase(payload.language).trim();
+    var terms = normalized.split(/\s+/).filter(Boolean);
+    return payload.docs.map(function (doc) {
+      var title = doc.title.normalize('NFKC').toLocaleLowerCase(payload.language);
+      var text = (doc.title + ' ' + doc.content).normalize('NFKC').toLocaleLowerCase(payload.language);
+      return { ref: doc.id, score: terms.every(function (term) { return text.indexOf(term) !== -1; }) ? (title.indexOf(normalized) !== -1 ? 2 : 1) : 0 };
+    }).filter(function (match) { return match.score > 0; }).sort(function (a, b) { return b.score - a.score; });
+  }
+
   function setupSearch(version, indexPayload) {
-    if (!window.lunr || !indexPayload || !indexPayload.indexData || !Array.isArray(indexPayload.docs)) {
+    if (!indexPayload || (!window.lunr && !indexPayload.language) || (!indexPayload.indexData && !indexPayload.language) || !Array.isArray(indexPayload.docs)) {
       return;
     }
 
@@ -338,7 +363,7 @@
     var form = ui.form;
     var input = ui.input;
     var resultsNode = ui.resultsNode;
-    var index = lunr.Index.load(indexPayload.indexData);
+    var index = indexPayload.language ? null : lunr.Index.load(indexPayload.indexData);
     var lastQuery = '';
 
     if (!form || !input || !resultsNode) {
@@ -359,9 +384,9 @@
       lastQuery = query;
 
       try {
-        renderResults(resultsNode, buildQuery(index, query), indexPayload);
+        renderResults(resultsNode, indexPayload.language ? translatedMatches(query, indexPayload) : buildQuery(index, query), indexPayload);
       } catch (error) {
-        setStatus(resultsNode, 'Search could not parse that query.', 'manual-search-status');
+        setStatus(resultsNode, t('searchError', 'Search could not parse that query.'), 'manual-search-status');
       }
     }
 
@@ -389,13 +414,13 @@
       return;
     }
 
-    loadLunr()
+    (version === 'v4' && getLanguage() !== 'en' ? Promise.resolve() : loadLunr())
       .then(function () { return loadIndex(version); })
       .then(function (indexPayload) { setupSearch(version, indexPayload); })
       .catch(function () {
         var ui = setupResponsiveSearchUi();
         if (ui && ui.resultsNode) {
-          setStatus(ui.resultsNode, 'Search is temporarily unavailable.', 'manual-search-status');
+          setStatus(ui.resultsNode, t('searchUnavailable', 'Search is temporarily unavailable.'), 'manual-search-status');
         }
       });
   }

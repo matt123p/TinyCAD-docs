@@ -3,3 +3,23 @@ docs/_data/analytics.yml
 /node_modules/
 /docs/assets/lunr-index-v3.js
 /docs/assets/lunr-index-v4.js
+
+# Local API credentials (never commit)
+.secrets
+.secrets.*
+.env
+.env.*
+# Build-only language pages and indexes; durable translations live in translations/v4/
+/docs/v4/nl/
+/docs/v4/fr/
+/docs/v4/es/
+/docs/v4/de/
+/docs/v4/it/
+/docs/v4/ja/
+/docs/v4/pl/
+/docs/v4/zh-CN/
+/docs/_data/manual_languages.json
+/docs/assets/manual-index-v4-*.js
+
+# Local Ruby dependencies
+/.bundle/
