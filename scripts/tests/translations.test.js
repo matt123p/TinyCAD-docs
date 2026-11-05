@@ -170,7 +170,7 @@ test('Liquid layouts render localized navigation and language links without chan
   engine.registerFilter('relative_url', (value) => value);
   const template = read(path.join(repo, 'docs/_layouts/default.html')).replace(/{%-?\s*include\s+\S+\s*-?%}/g, '');
   const navigation = YAML.parse(read(path.join(root, 'docs/_data/navigation.yml')));
-  const site = { data: { navigation, versions: { versions: [{ id: 'v4', label: 'TinyCAD v4', path: '/v4/' }, { id: 'v3', label: 'TinyCAD v3', path: '/v3/' }] }, manual_languages: [{ code: 'en', label: 'English' }, { code: 'fr', label: 'Français' }] }, github_edit_base_url: 'https://github.com/example/docs/blob/main' };
+  const site = { data: { navigation, versions: { versions: [{ id: 'v4', label: 'TinyCAD v4', path: '/v4/', default: true }, { id: 'v3', label: 'TinyCAD v3', path: '/v3/' }] }, manual_languages: [{ code: 'en', label: 'English' }, { code: 'fr', label: 'Français' }] }, github_edit_base_url: 'https://github.com/example/docs/blob/main' };
   const page = splitPage(read(path.join(root, 'docs/v4/fr/User-guide.md'))).frontMatter;
   page.url = page.permalink;
   page.path = 'v4/fr/User-guide.md';
@@ -186,6 +186,13 @@ test('Liquid layouts render localized navigation and language links without chan
   assert.doesNotMatch(v3, /manual-language-control/);
   assert.match(v3, /href="\/v3\/Drawing-a-design\/"/);
   assert.match(v3, /manual-sidebar-scroll-v3'/);
+  for (const url of ['/', '/index.html']) {
+    const home = await engine.parseAndRender(template, { page: { url }, site, content: '<h1>Manual</h1>' });
+    assert.match(home, /value="\/v4\/fr\/" lang="fr"/);
+    assert.match(home, /value="\/v4\/" lang="en"/);
+    assert.doesNotMatch(home, /value="\/" lang="fr"/);
+  }
+
 });
 
 

@@ -1,6 +1,6 @@
 title: TinyCAD Manual
 description: User and developer documentation for TinyCAD
-theme: minima
+# Layouts and styles are provided locally; no bundled theme assets are needed.
 markdown: kramdown
 permalink: pretty
 github_edit_base_url: https://github.com/matt123p/TinyCAD-docs/blob/main

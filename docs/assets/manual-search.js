@@ -117,7 +117,7 @@
     input.placeholder = t('searchPlaceholder', 'Search this manual...');
     input.setAttribute('aria-label', t('searchLabel', 'Search this manual'));
     searchContainer.querySelector('button[type="submit"]').setAttribute('aria-label', t('search', 'Search'));
-    var navbar = document.querySelector('.manual-navbar-inner');
+    var navbar = document.querySelector('.manual-navbar-actions') || document.querySelector('.manual-navbar-inner');
     if (navbar) {
       navbar.appendChild(searchContainer);
     }

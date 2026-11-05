@@ -37,6 +37,10 @@
           <a class="manual-brand" href="{{ '/' | relative_url }}">
             {% if page.manual_ui %}{{ page.manual_ui.manualTitle | escape }}{% else %}Tiny<span class="brand-highlight">CAD</span> Manual{% endif %}
           </a>
+          <button class="manual-navbar-toggle" type="button" aria-label="{{ page.manual_ui.primary | default: 'Primary' | escape }}" aria-expanded="false" aria-controls="manual-navbar-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+          </button>
+          <div class="manual-navbar-menu" id="manual-navbar-menu">
           <nav class="manual-navbar-links" aria-label="{{ page.manual_ui.primary | default: 'Primary' | escape }}">
             {%- for ver in site.data.versions.versions -%}
               {%- assign version_path = ver.path -%}
@@ -49,11 +53,16 @@
                 <span class="nav-label-short" aria-hidden="true">{{ ver.id | upcase }}</span>
               </a>
             {%- endfor -%}
+          </nav>
+          <div class="manual-navbar-actions">
             {% if current_version == 'v4' and site.data.manual_languages.size > 1 %}
               <label class="manual-language-control">
                 <span>{{ page.manual_ui.language | default: 'Language' | escape }}</span>
                 <select data-manual-language-select aria-label="{{ page.manual_ui.language | default: 'Language' | escape }}">
                   {% assign source_url = page.manual_source_url | default: page.url %}
+                  {% unless source_url contains '/v4/' %}
+                    {% assign source_url = '/v4/' %}
+                  {% endunless %}
                   {% for language in site.data.manual_languages %}
                     {% assign language_url = source_url %}
                     {% if language.code != 'en' %}
@@ -65,13 +74,13 @@
                 </select>
               </label>
             {% endif %}
-            <span class="nav-divider"></span>
             <a href="https://www.tinycad.net/" class="btn-site-link" target="_blank" rel="noopener" aria-label="{{ page.manual_ui.visitSite | default: 'Visit tinycad.net' | escape }}">
               <i class="bi bi-globe2 nav-site-icon" aria-hidden="true"></i>
               <span class="nav-site-full">tinycad.net</span>
               <span class="nav-site-short" aria-hidden="true">Site</span>
             </a>
-          </nav>
+          </div>
+          </div>
         </div>
       </header>
 
@@ -129,6 +138,26 @@
     <script src="{{ '/assets/manual-search.js' | relative_url }}" data-manual-search></script>
     <script>
       (function () {
+        var navbarToggle = document.querySelector('.manual-navbar-toggle');
+        var navbarMenu = document.getElementById('manual-navbar-menu');
+        if (navbarToggle && navbarMenu) {
+          function closeNavbar() {
+            navbarToggle.setAttribute('aria-expanded', 'false');
+            navbarMenu.classList.remove('is-open');
+          }
+          navbarToggle.addEventListener('click', function () {
+            var open = navbarToggle.getAttribute('aria-expanded') !== 'true';
+            navbarToggle.setAttribute('aria-expanded', String(open));
+            navbarMenu.classList.toggle('is-open', open);
+          });
+          navbarMenu.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+              closeNavbar();
+              navbarToggle.focus();
+            }
+          });
+          window.matchMedia('(min-width: 992px)').addEventListener('change', closeNavbar);
+        }
         var languageSelect = document.querySelector('[data-manual-language-select]');
         if (languageSelect) languageSelect.addEventListener('change', function () {
           window.location.assign(languageSelect.value);
