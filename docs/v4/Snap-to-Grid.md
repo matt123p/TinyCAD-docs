@@ -17,6 +17,23 @@ connections land exactly on valid connection points.
 
 For normal schematic work, Snap to Grid should stay enabled.
 
+## Showing the grid and enabling snapping
+
+Open the **Settings** toolbar menu, then choose **Settings** to change these
+independent options:
+
+- **Show the grid** controls the visible grid dots. Turning it off does not disable snapping.
+- **Snap to grid** controls alignment while placing and moving objects. Turning it off does not hide the grid.
+
+Grid dots may be suppressed when zoomed out too far to display them clearly.
+
+![Settings dialog with separate Show the grid and Snap to grid checkboxes.](../images/grid-settings.png)
+
+With objects selected, the arrow keys move them by the grid spacing when snapping
+is enabled. With snapping disabled, they move in small steps without being
+rounded back onto the grid. Hold **Ctrl** for small steps regardless of the snap
+setting. With no selection, the arrow keys pan the view.
+
 ## Grid spacing
 
 TinyCAD supports 3 grid spacing modes:

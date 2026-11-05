@@ -60,6 +60,23 @@ To use symbols from a library, the library must first be loaded in your TinyCAD 
 
 For more on placing and configuring symbols once selected, see [Symbols](../Symbols/).
 
+## Resizing the library panel
+
+Drag the right edge of the library panel to make it wider or narrower. A wider
+panel helps with long symbol names and descriptions. TinyCAD remembers the width
+on this device when local storage is available.
+
+## Sorting symbols
+
+In **My Libraries**, use the sort button beside the library controls to cycle
+through **library order**, **A to Z**, and **Z to A**. The button tooltip names the current mode.
+Sorting applies to symbols within libraries and to search results, including
+online results; it does not rearrange your library files or folders. TinyCAD
+remembers the sort mode on this device when local storage is available.
+
+The browser file-system version only displays online search and does not expose
+the **My Libraries** sort button.
+
 ## Placing symbols in a drawing
 
 Once a symbol is selected from the library browser, it becomes the active placement tool.

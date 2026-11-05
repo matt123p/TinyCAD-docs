@@ -31,6 +31,8 @@ v3:
 v4:
   - title: Contents
     url: /v4/
+  - title: Changelog
+    url: /v4/Changelog/
   - title: Licence
     url: /v4/Licence/
   - title: Contributing to the Manual
@@ -47,6 +49,8 @@ v4:
     children:
       - title: Your First Drawing
         url: /v4/Your-first-drawing/
+      - title: Touch Controls
+        url: /v4/Touch-controls/
       - title: Symbols
         url: /v4/Symbols/
       - title: Snap to Grid

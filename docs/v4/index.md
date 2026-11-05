@@ -30,5 +30,6 @@ new screenshots, and expanded examples.
 - [Symbols & Libraries](Symbols-and-Libraries/)
 - [Advanced](Advanced/)
 - [Reference](Reference/)
+- [Changelog](Changelog/)
 - [Licence](Licence/)
 - [Contributing to the manual](Contributing-to-the-Manual/)

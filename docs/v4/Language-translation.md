@@ -13,11 +13,13 @@ The current language options are:
 | Code | Language |
 |---|---|
 | `en` | English |
+| `nl` | Nederlands |
 | `fr` | Français |
 | `es` | Español |
 | `de` | Deutsch |
 | `it` | Italiano |
 | `ja` | 日本語 |
+| `pl` | Polski |
 | `zh-CN` | 中文 (简体) |
 
 ## Translation quality and feedback

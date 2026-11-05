@@ -11,6 +11,7 @@ not expose F-keys in the same way.
 
 | Key | Action |
 |---|---|
+| `Esc` | Cancel the current placement or drawing action; otherwise clear the selection |
 | `W` | Wire tool |
 | `N` | No Connect |
 | `P` | Power |
@@ -22,7 +23,8 @@ not expose F-keys in the same way.
 | `=` | Zoom in |
 | `-` | Zoom out |
 | `_` | Zoom out |
-| Arrow Keys | Move item, hold CTRL to move in smaller steps |
+| Arrow Keys | Move selected items by the grid spacing when snapping is enabled, or in small steps when disabled; pan when nothing is selected |
+| `Ctrl` + Arrow Keys | Move selected items in small steps, or pan in smaller steps |
 | `Ctrl-F` | Find |
 | `Ctrl-P` | Print |
 | `Ctrl-C` | Copy |
@@ -31,6 +33,9 @@ not expose F-keys in the same way.
 | `Del` | Delete |
 | `Ctrl-Z` | Undo |
 | `Ctrl-Y` | Redo |
+
+Escape also cancels creation when a toolbar button has focus. When typing in a
+text field or using a menu or dialog, finish or dismiss that control first.
 
 Some shortcuts can be intercepted by the browser and trigger browser actions
 instead.

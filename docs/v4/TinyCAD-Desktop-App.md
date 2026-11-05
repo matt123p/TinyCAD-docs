@@ -21,6 +21,7 @@ includes a Windows installer.
 
 For macOS, download TinyCAD v4 from the
 [GitHub releases](https://github.com/matt123p/TinyCADv4/releases).
+The macOS disk image (`.dmg`) is built for Apple Silicon (ARM64).
 
 ## Install on Linux
 
@@ -39,7 +40,9 @@ If this doesn't work then the TinyCAD page on the [Snap Store](https://snapcraft
 links to distribution-specific setup instructions for each supported Linux distribution.
 
 The [GitHub releases](https://github.com/matt123p/TinyCADv4/releases) also
-includes Linux `.deb` packages.
+includes Linux `.deb` packages for x64 and ARM64. The Snap package is built for
+x64. Linux ARMv7 (32-bit ARM) packages are no longer provided because the current
+Electron runtime does not support that architecture.
 
 ## Use on ChromeOS and Chromebooks
 
