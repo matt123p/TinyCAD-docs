@@ -5,6 +5,16 @@ layout: default
 # TinyCAD v4 Changelog
 
 
+## Unreleased
+
+- [Plugin management](../Plugins/) from **File > Plugins**, with searchable
+  Installed/Available lists, saved GitHub sources, versioned Markdown
+  documentation, release updates, disable/uninstall, and rollback.
+- [Plugin development](../Plugin-development/) from local folders, loopback
+  servers, or explicit GitHub tags/commits. Working examples live separately in
+  `examples/plugins` in the application source repository; they are not shipped
+  or registered by default.
+
 ## v4.0.9 — 4 November 2026
 
 ### Added

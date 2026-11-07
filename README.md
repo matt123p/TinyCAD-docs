@@ -111,6 +111,23 @@ which also covers reusable browser/desktop tabsets, a pull request template, and
 keeping your fork up to date. See the [translation guide](translations/README.md)
 for corrections to translated pages.
 
+## Plugin screenshots
+
+The plugin guide screenshots come from the running application and a fresh browser
+profile. Examples are imported explicitly from a temporary copy of the app
+repository's `examples/plugins` folder; they are not built into TinyCAD.
+
+To refresh them, install the TinyCADv4 checkout's npm dependencies and Playwright
+Chromium, then build it with `npm run build:fs`. From this repository, run:
+
+```bash
+node scripts/capture-plugin-screenshots.mjs ../TinyCADv4
+```
+
+The script saves images in `docs/v4/images/plugins/` and does not modify the
+application's example files or use a personal browser profile. Both repositories
+should be checked out on `feature/plugins` while documenting this feature.
+
 ## Translations
 
 The v4 manual supports Dutch, French, Spanish, German, Italian, Japanese, Polish,

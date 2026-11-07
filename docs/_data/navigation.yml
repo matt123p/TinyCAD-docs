@@ -107,6 +107,11 @@ v4:
         url: /v4/SPICE-output/
       - title: VHDL output
         url: /v4/VHDL-output/
+  - title: Plugins
+    url: /v4/Plugins/
+    children:
+      - title: Plugin development
+        url: /v4/Plugin-development/
   - title: Reference
     url: /v4/Reference/
     children:

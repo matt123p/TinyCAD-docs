@@ -29,6 +29,7 @@ new screenshots, and expanded examples.
 - [Drawing](User-guide/)
 - [Symbols & Libraries](Symbols-and-Libraries/)
 - [Advanced](Advanced/)
+- [Plugins](Plugins/)
 - [Reference](Reference/)
 - [Changelog](Changelog/)
 - [Licence](Licence/)
