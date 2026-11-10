@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Cette version ajoute des notes Markdown mises en forme, une sortie SVG vectorielle et des commandes de routage des fils.
+
+- [Zones de texte Markdown](../Text-and-Annotations/#markdown-text-boxes): notes mises en forme avec listes, listes de tâches et blocs de code ; même moteur de rendu vectoriel pour le dessin, l’exportation SVG et le PDF.
+- La mise en forme en direct de la source conserve les marqueurs modifiables et suit la police de base choisie, avec un curseur, une sélection et des retours à la ligne adaptés.
+- [Modes de routage des fils](../Wires/#wire-routing-modes): sélecteur compact pour les routages à 90°, à 45° et libre, conservant l’aperçu en cours.
+- Le bouton de loupe apparaît uniquement après une interaction tactile avec le canevas de dessin.
+
+## v4.0.10 — 6 novembre 2026
+{: #v4010}
+
+- Garder la barre d’outils de l’éditeur visible lorsque les panneaux de bibliothèque ou de schéma nécessitent davantage d’espace vertical.
+
 ## v4.0.9 — 4 novembre 2026
 {: #v409--4-november-2026}
 

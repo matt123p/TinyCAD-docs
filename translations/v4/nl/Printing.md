@@ -31,6 +31,15 @@ Selecteer uw printer, controleer de pagina-instellingen en druk de tekening af.
 
 </div>
 
+## Markdown bij afdrukken en exporteren
+{: #markdown-in-print-and-export}
+
+Koppen, lijsten en codeblokken in tekstvakken behouden hun opmaak bij SVG-export, afdrukken vanuit de browser en PDF-export. SVG bevat alleen het huidige blad.
+
+De tekening, SVG-export en PDF gebruiken dezelfde SVG-tekst en vormen. Markdown-notities blijven vectorafbeeldingen en behouden het gekozen basislettertype en de opmaak.
+
+[Markdown-tekstvakken](../Text-and-Annotations/#markdown-text-boxes).
+
 ## SVG-export
 {: #svg-export}
 

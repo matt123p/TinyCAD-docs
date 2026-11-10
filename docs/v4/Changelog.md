@@ -5,6 +5,21 @@ layout: default
 # TinyCAD v4 Changelog
 
 
+## v4.0.11
+{: #v4011}
+
+This release adds formatted Markdown notes, vector SVG output and wire routing controls.
+
+- [Markdown text boxes](../Text-and-Annotations/#markdown-text-boxes): formatted notes with lists, task lists and code blocks; the same vector renderer for the drawing, SVG export and PDF.
+- Live source formatting keeps editable markers visible and follows the chosen base font, with matching caret placement, selection and wrapping.
+- [Wire routing modes](../Wires/#wire-routing-modes): a compact selector for 90°, 45° and Free routing, preserving an active preview.
+- The loupe button appears only after touch input on the drawing canvas.
+
+## v4.0.10 — 6 November 2026
+{: #v4010}
+
+- Keep the editor toolbar visible when library or schematic panels need more vertical space.
+
 ## v4.0.9 — 4 November 2026
 
 ### Added

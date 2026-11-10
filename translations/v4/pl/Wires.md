@@ -19,6 +19,21 @@ Jeśli potrzebujesz połączeń na potrzeby DRC, tworzenia listy sieci, eksportu
 Użycie linii adnotacji zamiast przewodów może wyglądać poprawnie, ale dla narzędzi
 obwód będzie elektrycznie niepołączony.
 
+## Tryby prowadzenia przewodów
+{: #wire-routing-modes}
+
+W TinyCAD v4.0.11 użyj selektora obok narzędzia Przewód (Wire), aby wybrać sposób rysowania nowych odcinków.
+
+| Tryb | Działanie |
+|---|---|
+| **90°** | Prowadzenie poziome i pionowe. |
+| **45°** | Prowadzenie ograniczone do kierunków co 45° w TinyCAD. |
+| **Dowolny (Free)** | Proste odcinki pod dowolnym kątem. |
+
+Wybranie trybu włącza narzędzie Przewód i zachowuje aktywny podgląd przewodu. Tryb można zmienić przed umieszczeniem następnego odcinka. Przyciąganie do siatki pozostaje osobnym ustawieniem. Sąsiednie narzędzie łączenia punkt-punkt jest niezależne od tego selektora.
+
+![Selektor na pasku przewodów z opcjami 90°, 45° i Dowolny (Free).](../images/wire-routing-modes.png)
+
 ## Umieszczanie przewodów
 {: #placing-wires}
 

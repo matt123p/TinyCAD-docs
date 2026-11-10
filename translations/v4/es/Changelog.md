@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Esta versión añade notas Markdown con formato, salida SVG vectorial y controles de trazado de cables.
+
+- [Cuadros de texto Markdown](../Text-and-Annotations/#markdown-text-boxes): notas con formato, listas, listas de tareas y bloques de código; el mismo renderizador vectorial para el dibujo, la exportación SVG y el PDF.
+- El formato del código fuente en tiempo real mantiene visibles los marcadores editables y sigue la fuente base elegida, con cursor, selección y ajuste de línea correspondientes.
+- [Modos de trazado de cables](../Wires/#wire-routing-modes): selector compacto para trazado a 90°, 45° y libre que conserva la vista previa activa.
+- El botón de lupa solo aparece después de una entrada táctil en el lienzo de dibujo.
+
+## v4.0.10 — 6 de noviembre de 2026
+{: #v4010}
+
+- Mantener visible la barra de herramientas del editor cuando los paneles de biblioteca o esquema necesitan más espacio vertical.
+
 ## v4.0.9 — 4 de noviembre de 2026
 {: #v409--4-november-2026}
 

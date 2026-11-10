@@ -31,6 +31,15 @@ Seleccione la impresora, compruebe la configuración de página y, a continuaci�
 
 </div>
 
+## Markdown en la impresión y la exportación
+{: #markdown-in-print-and-export}
+
+Los encabezados, listas y bloques de código de los cuadros de texto conservan el formato en la exportación SVG, la impresión desde el navegador y la exportación PDF. El SVG solo incluye la hoja actual.
+
+El dibujo, la exportación SVG y el PDF utilizan los mismos textos y formas SVG. Las notas Markdown siguen siendo gráficos vectoriales y conservan la fuente base y el formato elegidos.
+
+[Cuadros de texto Markdown](../Text-and-Annotations/#markdown-text-boxes).
+
 ## Exportación a SVG
 {: #svg-export}
 

@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Diese Version ergänzt formatierte Markdown-Notizen, vektorbasierte SVG-Ausgabe und Bedienelemente zur Drahtführung.
+
+- [Markdown-Textfelder](../Text-and-Annotations/#markdown-text-boxes): formatierte Notizen mit Listen, Aufgabenlisten und Codeblöcken; derselbe Vektorrenderer für Zeichnung, SVG-Export und PDF.
+- Die Live-Formatierung des Quelltexts hält Markierungszeichen bearbeitbar und folgt der gewählten Grundschrift, mit passendem Textcursor, Auswahl und Zeilenumbruch.
+- [Drahtführungsmodi](../Wires/#wire-routing-modes): kompaktes Auswahlmenü für 90°-, 45°- und freie Drahtführung unter Beibehaltung einer laufenden Vorschau.
+- Die Lupenschaltfläche erscheint erst nach einer Berührung der Zeichenfläche.
+
+## v4.0.10 — 6. November 2026
+{: #v4010}
+
+- Die Editor-Werkzeugleiste sichtbar halten, wenn Bibliotheks- oder Schaltplanbereiche mehr vertikalen Platz benötigen.
+
 ## v4.0.9 — 4. November 2026
 {: #v409--4-november-2026}
 

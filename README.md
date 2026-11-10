@@ -150,10 +150,23 @@ restart the preview or rerun `npm run prepare:translations` and
 See the [translation guide](translations/README.md) for cache behavior, human
 corrections, model configuration, recovery, and language selection.
 
+## Multilingual search
+
+The build generates a separate v4 search index for English and each enabled
+language: `/assets/manual-index-v4-<language>.js` and the matching `.json` file.
+The page selects its own language index and validates its language/version.
+Result links remain in that language, including routes showing an English fallback.
+Translated indexes use Unicode-normalized substring matching, including Japanese
+and Chinese; English and v3 use the locally bundled Lunr engine without a CDN.
+The legacy `/assets/lunr-index-v3.json` and `/assets/lunr-index-v4.json` files are
+also regenerated for existing English integrations. Generated indexes are ignored
+by Git and recreated by the site build.
+
 ## Checks
 
 ```bash
 npm run test:translations
+npm run test:search
 npm run prepare:translations
 npm run build:search-index
 npm run check:links

@@ -31,6 +31,15 @@ Sélectionnez votre imprimante, vérifiez les paramètres de page, puis imprimez
 
 </div>
 
+## Markdown à l’impression et à l’exportation
+{: #markdown-in-print-and-export}
+
+Les titres, listes et blocs de code des zones de texte conservent leur mise en forme lors de l’exportation SVG, de l’impression depuis le navigateur et de l’exportation PDF. Le SVG contient uniquement la feuille courante.
+
+Le dessin, l’exportation SVG et le PDF utilisent les mêmes textes et formes SVG. Les notes Markdown restent vectorielles et conservent la police de base et la mise en forme choisies.
+
+[Zones de texte Markdown](../Text-and-Annotations/#markdown-text-boxes).
+
 ## Exportation SVG
 {: #svg-export}
 

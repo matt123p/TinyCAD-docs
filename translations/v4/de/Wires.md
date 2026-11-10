@@ -19,6 +19,21 @@ Verknüpfung benötigen, verwenden Sie Drahtobjekte (keine Annotationslinien).
 Annotationslinien anstelle von Drähten zu verwenden, kann optisch korrekt wirken, aber der
 Stromkreis ist für Werkzeuge elektrisch nicht verbunden.
 
+## Drahtführungsmodi
+{: #wire-routing-modes}
+
+In TinyCAD v4.0.11 wählen Sie mit dem Auswahlmenü neben Draht (Wire), wie neue Segmente gezeichnet werden.
+
+| Modus | Verhalten |
+|---|---|
+| **90°** | Horizontale und vertikale Drahtführung. |
+| **45°** | Drahtführung auf die 45°-Richtungen von TinyCAD beschränkt. |
+| **Frei (Free)** | Gerade Segmente in beliebigen Winkeln. |
+
+Die Moduswahl aktiviert Draht und erhält eine laufende Drahtvorschau. Sie können vor dem Platzieren des nächsten Segments den Modus wechseln. Das Einrasten am Raster bleibt eine separate Einstellung. Das benachbarte Werkzeug für Punkt-zu-Punkt-Verbindungen ist von diesem Auswahlmenü unabhängig.
+
+![Auswahlmenü in der Drahtwerkzeugleiste mit den Optionen 90°, 45° und Frei (Free).](../images/wire-routing-modes.png)
+
 ## Drähte platzieren
 {: #placing-wires}
 

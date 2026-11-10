@@ -13,7 +13,8 @@
     "translate": "node scripts/translate.js",
     "translate:status": "node scripts/translate.js --dry-run",
     "prepare:translations": "node scripts/prepare-translations.js",
-    "test:translations": "node --test scripts/tests/translations.test.js"
+    "test:translations": "node --test scripts/tests/translations.test.js",
+    "test:search": "node --test scripts/tests/search.test.js"
   },
   "devDependencies": {
     "liquidjs": "^10.30.1",

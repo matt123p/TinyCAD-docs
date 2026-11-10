@@ -29,6 +29,15 @@ Select your printer, check the page settings, and then print the drawing.
 
 </div>
 
+## Markdown in print and export
+{: #markdown-in-print-and-export}
+
+Text-box headings, lists and code blocks keep their formatting in SVG export, browser printing and PDF export. Only the current sheet is included in SVG output.
+
+The drawing, SVG export and PDF use the same SVG text and shapes. Markdown notes remain vector graphics, preserving the chosen base font and formatting.
+
+[Markdown text boxes](../Text-and-Annotations/#markdown-text-boxes).
+
 ## SVG export
 
 You can also export SVG. SVG is useful for embedding in documents/web pages.

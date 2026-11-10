@@ -160,12 +160,21 @@ function writeIndex(version, payload) {
   const outputPath = path.join(ASSETS_DIR, 'lunr-index-' + version + '.js');
   const source = 'window.' + globalName + ' = ' + JSON.stringify(payload) + ';\n';
   fs.writeFileSync(outputPath, source, 'utf8');
+  fs.writeFileSync(path.join(ASSETS_DIR, 'lunr-index-' + version + '.json'), JSON.stringify(payload), 'utf8');
+}
+
+function writeLanguageIndex(language, payload) {
+  const data = JSON.stringify({ version: 'v4', language, ...payload });
+  const basename = path.join(ASSETS_DIR, 'manual-index-v4-' + language);
+  fs.writeFileSync(basename + '.json', data, 'utf8');
+  fs.writeFileSync(basename + '.js', 'window.MANUAL_INDEXES_V4 = window.MANUAL_INDEXES_V4 || {};\n' +
+    'window.MANUAL_INDEXES_V4[' + JSON.stringify(language) + '] = ' + data + ';\n', 'utf8');
 }
 
 function buildTranslatedIndexes() {
   const { createProject } = require('./lib/translations');
   const project = createProject(ROOT_DIR);
-  fs.readdirSync(ASSETS_DIR).filter((name) => /^manual-index-v4-.*\.js$/.test(name)).forEach((name) => fs.unlinkSync(path.join(ASSETS_DIR, name)));
+  fs.readdirSync(ASSETS_DIR).filter((name) => /^manual-index-v4-.*\.(js|json)$/.test(name)).forEach((name) => fs.unlinkSync(path.join(ASSETS_DIR, name)));
   Object.keys(project.config.languages).forEach((language) => {
     const directory = path.join(DOCS_DIR, 'v4', language);
     if (!fs.existsSync(directory)) return;
@@ -176,16 +185,21 @@ function buildTranslatedIndexes() {
       return { id, url: file === 'index.md' ? '/v4/' + language + '/' : '/v4/' + language + '/' + file.replace(/\.md$/, '/'),
         title: stripMarkdown(getTitle(file, parseFrontMatter(frontMatter), body)), content, snippet: content.slice(0, 220) };
     });
-    fs.writeFileSync(path.join(ASSETS_DIR, 'manual-index-v4-' + language + '.js'), 'window.MANUAL_TRANSLATED_INDEX = ' + JSON.stringify({ language, docs: documents }) + ';\n');
+    writeLanguageIndex(language, { engine: 'unicode-substring', docs: documents });
     console.log('Generated v4 search data for ' + language + ' (' + documents.length + ' documents)');
   });
 }
 
 function main() {
+  // Search must index the same current translations/fallbacks that the site shows.
+  require('./prepare-translations').prepare(ROOT_DIR);
+  fs.copyFileSync(require.resolve('lunr/lunr.min.js'), path.join(ASSETS_DIR, 'lunr.min.js'));
   buildTranslatedIndexes();
   VERSION_DIRS.forEach((version) => {
     const documents = buildDocuments(version);
-    writeIndex(version, buildIndexPayload(documents));
+    const payload = buildIndexPayload(documents);
+    writeIndex(version, payload);
+    if (version === 'v4') writeLanguageIndex('en', { engine: 'lunr', ...payload });
     console.log('Generated Lunr index for ' + version + ' (' + documents.length + ' documents)');
   });
 }

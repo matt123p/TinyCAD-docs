@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Questa versione aggiunge note Markdown formattate, output SVG vettoriale e controlli per l’instradamento dei fili.
+
+- [Caselle di testo Markdown](../Text-and-Annotations/#markdown-text-boxes): note formattate con elenchi, elenchi di attività e blocchi di codice; lo stesso renderer vettoriale per il disegno, l’esportazione SVG e il PDF.
+- La formattazione dal vivo del sorgente mantiene visibili i marcatori modificabili e segue il carattere di base scelto, con cursore, selezione e ritorno a capo coerenti.
+- [Modalità di instradamento dei fili](../Wires/#wire-routing-modes): selettore compatto per instradamento a 90°, 45° e libero, mantenendo l’anteprima attiva.
+- Il pulsante della lente appare solo dopo un’interazione tattile sull’area di disegno.
+
+## v4.0.10 — 6 novembre 2026
+{: #v4010}
+
+- Mantenere visibile la barra degli strumenti dell’editor quando i pannelli della libreria o dello schema richiedono più spazio verticale.
+
 ## v4.0.9 — 4 novembre 2026
 {: #v409--4-november-2026}
 

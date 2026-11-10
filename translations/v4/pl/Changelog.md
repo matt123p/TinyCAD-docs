@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Ta wersja dodaje sformatowane notatki Markdown, wektorowy wynik SVG i kontrolki prowadzenia przewodów.
+
+- [Pola tekstowe Markdown](../Text-and-Annotations/#markdown-text-boxes): sformatowane notatki z listami, listami zadań i blokami kodu; ten sam renderer wektorowy dla rysunku, eksportu SVG i PDF.
+- Formatowanie źródła na bieżąco zachowuje widoczne i edytowalne znaczniki oraz uwzględnia wybraną czcionkę podstawową, położenie kursora, zaznaczenie i zawijanie wierszy.
+- [Tryby prowadzenia przewodów](../Wires/#wire-routing-modes): kompaktowy selektor prowadzenia pod kątem 90°, 45° i dowolnym, zachowujący aktywny podgląd.
+- Przycisk lupy pojawia się dopiero po użyciu dotyku na obszarze rysunku.
+
+## v4.0.10 — 6 listopada 2026
+{: #v4010}
+
+- Pasek narzędzi edytora pozostaje widoczny, gdy panele bibliotek lub schematu wymagają więcej miejsca w pionie.
+
 ## v4.0.9 — 4 listopada 2026
 {: #v409--4-november-2026}
 

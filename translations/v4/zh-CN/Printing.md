@@ -31,6 +31,15 @@ layout: default
 
 </div>
 
+## 打印和导出中的 Markdown
+{: #markdown-in-print-and-export}
+
+文本框中的标题、列表和代码块在 SVG 导出、浏览器打印和 PDF 导出时都会保留格式。SVG 仅包含当前图纸。
+
+图纸、SVG 导出和 PDF 使用相同的 SVG 文本和图形。Markdown 注释保持为矢量图形，并保留所选基础字体和格式。
+
+[Markdown 文本框](../Text-and-Annotations/#markdown-text-boxes).
+
 ## SVG 导出
 {: #svg-export}
 

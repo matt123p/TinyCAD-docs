@@ -31,6 +31,15 @@ layout: default
 
 </div>
 
+## 印刷とエクスポートでのMarkdown
+{: #markdown-in-print-and-export}
+
+テキストボックスの見出し、リスト、コードブロックは、SVGエクスポート、ブラウザーからの印刷、PDFエクスポートでも書式を維持します。SVGに含まれるのは現在のシートだけです。
+
+図面、SVGエクスポート、PDFは同じSVGのテキストと図形を使用します。Markdown注記はベクター画像のまま、選択した基本フォントと書式を保持します。
+
+[Markdownテキストボックス](../Text-and-Annotations/#markdown-text-boxes).
+
 ## SVGエクスポート
 {: #svg-export}
 

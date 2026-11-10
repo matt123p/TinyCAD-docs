@@ -31,6 +31,15 @@ Wybierz drukarkę, sprawdź ustawienia strony, a następnie wydrukuj rysunek.
 
 </div>
 
+## Markdown w wydrukach i eksporcie
+{: #markdown-in-print-and-export}
+
+Nagłówki, listy i bloki kodu w polach tekstowych zachowują formatowanie podczas eksportu SVG, drukowania z przeglądarki i eksportu PDF. SVG zawiera tylko bieżący arkusz.
+
+Rysunek, eksport SVG i PDF używają tych samych tekstów i kształtów SVG. Notatki Markdown pozostają grafiką wektorową i zachowują wybraną czcionkę podstawową oraz formatowanie.
+
+[Pola tekstowe Markdown](../Text-and-Annotations/#markdown-text-boxes).
+
 ## Eksport do SVG
 {: #svg-export}
 

@@ -17,6 +17,21 @@ Gebruik draadobjecten (geen annotatielijnen) als u verbindingen nodig hebt voor 
 
 Het gebruik van annotatielijnen in plaats van draden kan er visueel correct uitzien, maar voor de gereedschappen is de schakeling dan elektrisch niet verbonden.
 
+## Draadrouteringsmodi
+{: #wire-routing-modes}
+
+Gebruik in TinyCAD v4.0.11 de keuzeknop naast Draad (Wire) om te bepalen hoe nieuwe segmenten worden getekend.
+
+| Modus | Gedrag |
+|---|---|
+| **90°** | Horizontale en verticale routering. |
+| **45°** | Routering beperkt tot de 45°-richtingen van TinyCAD. |
+| **Vrij (Free)** | Rechte segmenten onder elke hoek. |
+
+Een modus kiezen activeert Draad en behoudt een actief draadvoorbeeld. U kunt van modus wisselen voordat u het volgende segment plaatst. Uitlijnen op het raster blijft een afzonderlijke instelling. Het aangrenzende gereedschap voor punt-naar-puntbedrading staat los van deze keuzeknop.
+
+![Keuzeknop op de draadwerkbalk met de opties 90°, 45° en Vrij (Free).](../images/wire-routing-modes.png)
+
 ## Draden plaatsen
 {: #placing-wires}
 

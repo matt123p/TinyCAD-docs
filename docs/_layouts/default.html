@@ -96,16 +96,30 @@
                     {%- assign entry_url = entry.url | relative_url -%}
                     {%- assign page_url = page.url | relative_url -%}
                     <li>
-                        <a href="{{ entry_url }}" class="section-link{% if page_url == entry_url %} active{% endif %}"{% if page_url == entry_url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
                       {%- if entry.children -%}
-                        <ul>
+                        {%- assign group_active = false -%}
+                        {%- if page_url == entry_url -%}{%- assign group_active = true -%}{%- endif -%}
+                        {%- for child in entry.children -%}
+                          {%- assign child_url = child.url | relative_url -%}
+                          {%- if page_url == child_url -%}{%- assign group_active = true -%}{%- endif -%}
+                        {%- endfor -%}
+                        <details class="manual-nav-group{% if group_active %} has-active-page{% endif %}"{% if group_active %} open{% endif %}>
+                          <summary>
+                            <span>{{ entry.title | escape }}</span>
+                            <svg class="manual-nav-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 3 5 5-5 5" /></svg>
+                          </summary>
+                          <ul>
+                            <li><a href="{{ entry_url }}" class="section-overview{% if page_url == entry_url %} active{% endif %}"{% if page_url == entry_url %} aria-current="page"{% endif %} aria-label="{{ entry.title | escape }}: {{ page.manual_ui.overview | default: 'Overview' | escape }}">{{ page.manual_ui.overview | default: 'Overview' | escape }}</a></li>
                           {%- for child in entry.children -%}
                             {%- assign child_url = child.url | relative_url -%}
                             <li>
                                 <a href="{{ child_url }}" {% if page_url == child_url %}class="active" aria-current="page"{% endif %}>{{ child.title }}</a>
                             </li>
                           {%- endfor -%}
-                        </ul>
+                          </ul>
+                        </details>
+                      {%- else -%}
+                        <a href="{{ entry_url }}" class="section-link{% if page_url == entry_url %} active{% endif %}"{% if page_url == entry_url %} aria-current="page"{% endif %}>{{ entry.title | escape }}</a>
                       {%- endif -%}
                     </li>
                   {%- endfor -%}

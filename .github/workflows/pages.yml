@@ -45,6 +45,9 @@ jobs:
       - name: Check translation tooling
         run: npm run test:translations
 
+      - name: Check multilingual search
+        run: npm run test:search
+
       - name: Inject Google Analytics config
         if: env.GOOGLE_ANALYTICS_ID != ''
         shell: bash

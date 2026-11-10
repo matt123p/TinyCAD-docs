@@ -18,6 +18,21 @@ vínculos entre hojas, utilice objetos de cable (no líneas de anotación).
 
 El uso de líneas de anotación en lugar de cables puede parecer correcto visualmente, pero las herramientas considerarán que el circuito está desconectado.
 
+## Modos de trazado de cables
+{: #wire-routing-modes}
+
+En TinyCAD v4.0.11, use el selector situado junto a Cable (Wire) para elegir cómo se dibujan los nuevos segmentos.
+
+| Modo | Comportamiento |
+|---|---|
+| **90°** | Trazado horizontal y vertical. |
+| **45°** | Trazado limitado a las direcciones de 45° de TinyCAD. |
+| **Libre (Free)** | Segmentos rectos con cualquier ángulo. |
+
+Elegir un modo activa Cable y conserva la vista previa del cable en curso. Puede cambiar de modo antes de colocar el siguiente segmento. El ajuste a la cuadrícula sigue siendo una opción independiente. La herramienta contigua de cableado punto a punto es independiente de este selector.
+
+![Selector de la barra de cables con las opciones 90°, 45° y Libre (Free).](../images/wire-routing-modes.png)
+
 ## Colocación de cables
 {: #placing-wires}
 

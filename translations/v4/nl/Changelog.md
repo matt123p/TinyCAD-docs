@@ -5,6 +5,21 @@ layout: default
 {: #tinycad-v4-changelog}
 
 
+## v4.0.11
+{: #v4011}
+
+Deze versie voegt opgemaakte Markdown-notities, vectoruitvoer met SVG en bediening voor draadroutering toe.
+
+- [Markdown-tekstvakken](../Text-and-Annotations/#markdown-text-boxes): opgemaakte notities met lijsten, takenlijsten en codeblokken; dezelfde vectorrenderer voor de tekening, SVG-export en PDF.
+- Live bronopmaak houdt bewerkbare markeringen zichtbaar en volgt het gekozen basislettertype, met passende tekstcursor, selectie en regelomloop.
+- [Draadrouteringsmodi](../Wires/#wire-routing-modes): een compacte keuzeknop voor routering onder 90°, 45° en vrije hoeken, met behoud van een actief voorbeeld.
+- De loepknop verschijnt pas na aanraakinvoer op het tekenvlak.
+
+## v4.0.10 — 6 november 2026
+{: #v4010}
+
+- Houd de werkbalk van de editor zichtbaar wanneer bibliotheek- of schemapanelen meer verticale ruimte nodig hebben.
+
 ## v4.0.9 — 4 november 2026
 {: #v409--4-november-2026}
 

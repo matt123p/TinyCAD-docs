@@ -18,6 +18,21 @@ linking, use wire objects (not annotation lines).
 Using annotation lines instead of wires may look correct visually, but the
 circuit will be electrically disconnected to tools.
 
+## Wire routing modes
+{: #wire-routing-modes}
+
+In TinyCAD v4.0.11, use the selector beside Wire to choose how new segments are drawn.
+
+| Mode | Behaviour |
+|---|---|
+| **90°** | Horizontal and vertical routing. |
+| **45°** | Routing constrained to TinyCAD's 45° directions. |
+| **Free** | Straight segments at any angle. |
+
+Choosing a mode activates Wire and keeps any active wire preview. You can change modes before placing the next segment. Grid snapping remains a separate setting. The neighbouring point-to-point wiring tool is separate from this selector.
+
+![Wire toolbar selector showing the 90°, 45° and Free choices.](../images/wire-routing-modes.png)
+
 ## Placing wires
 
 1. Select the Wire tool.

@@ -62,14 +62,23 @@
       return Promise.resolve();
     }
 
-    return loadScript('https://cdn.jsdelivr.net/npm/lunr/lunr.min.js');
+    return loadScript(getAssetUrl('lunr.min.js'));
   }
 
   function loadIndex(version) {
-    if (version === 'v4' && getLanguage() !== 'en') {
-      return loadScript(getAssetUrl('manual-index-v4-' + getLanguage() + '.js')).then(function () {
-        return window.MANUAL_TRANSLATED_INDEX || null;
-      });
+    if (version === 'v4') {
+      var language = getLanguage();
+      function selectedIndex() {
+        var payload = window.MANUAL_INDEXES_V4 && window.MANUAL_INDEXES_V4[language];
+        if (!payload || payload.language !== language || payload.version !== 'v4') {
+          throw new Error('Search index language/version mismatch');
+        }
+        return payload;
+      }
+      if (window.MANUAL_INDEXES_V4 && window.MANUAL_INDEXES_V4[language]) {
+        return Promise.resolve().then(selectedIndex);
+      }
+      return loadScript(getAssetUrl('manual-index-v4-' + language + '.js')).then(selectedIndex);
     }
     var globalName = version === 'v3' ? 'LUNR_INDEX_V3' : 'LUNR_INDEX_V4';
     if (window[globalName]) {
@@ -351,8 +360,9 @@
   }
 
   function setupSearch(version, indexPayload) {
-    if (!indexPayload || (!window.lunr && !indexPayload.language) || (!indexPayload.indexData && !indexPayload.language) || !Array.isArray(indexPayload.docs)) {
-      return;
+    if (!indexPayload || !Array.isArray(indexPayload.docs) ||
+        (indexPayload.indexData ? !window.lunr : indexPayload.engine !== 'unicode-substring')) {
+      throw new Error('Invalid search index');
     }
 
     var ui = setupResponsiveSearchUi();
@@ -363,7 +373,7 @@
     var form = ui.form;
     var input = ui.input;
     var resultsNode = ui.resultsNode;
-    var index = indexPayload.language ? null : lunr.Index.load(indexPayload.indexData);
+    var index = indexPayload.indexData ? lunr.Index.load(indexPayload.indexData) : null;
     var lastQuery = '';
 
     if (!form || !input || !resultsNode) {
@@ -377,14 +387,14 @@
         return;
       }
 
-      if (query === lastQuery) {
+      if (query === lastQuery && !resultsNode.hidden) {
         return;
       }
 
       lastQuery = query;
 
       try {
-        renderResults(resultsNode, indexPayload.language ? translatedMatches(query, indexPayload) : buildQuery(index, query), indexPayload);
+        renderResults(resultsNode, index ? buildQuery(index, query) : translatedMatches(query, indexPayload), indexPayload);
       } catch (error) {
         setStatus(resultsNode, t('searchError', 'Search could not parse that query.'), 'manual-search-status');
       }

@@ -23,3 +23,8 @@ docs/_data/analytics.yml
 
 # Local Ruby dependencies
 /.bundle/
+
+# Generated search JSON and local Lunr runtime
+/docs/assets/manual-index-v4-*.json
+/docs/assets/lunr-index-v*.json
+/docs/assets/lunr.min.js

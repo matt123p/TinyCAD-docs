@@ -19,6 +19,21 @@ utilizzare oggetti filo (non linee di annotazione).
 L’uso di linee di annotazione al posto dei fili può sembrare corretto a livello visivo, ma il
 circuito risulterà elettricamente scollegato per gli strumenti.
 
+## Modalità di instradamento dei fili
+{: #wire-routing-modes}
+
+In TinyCAD v4.0.11, usare il selettore accanto a Filo (Wire) per scegliere come tracciare i nuovi segmenti.
+
+| Modalità | Comportamento |
+|---|---|
+| **90°** | Instradamento orizzontale e verticale. |
+| **45°** | Instradamento limitato alle direzioni a 45° di TinyCAD. |
+| **Libero (Free)** | Segmenti rettilinei con qualsiasi angolo. |
+
+La scelta di una modalità attiva Filo e mantiene l’anteprima del filo in corso. È possibile cambiare modalità prima di posizionare il segmento successivo. L’aggancio alla griglia rimane un’impostazione separata. Lo strumento adiacente per il cablaggio punto a punto è indipendente da questo selettore.
+
+![Selettore della barra dei fili con le opzioni 90°, 45° e Libero (Free).](../images/wire-routing-modes.png)
+
 ## Posizionamento dei fili
 {: #placing-wires}
 

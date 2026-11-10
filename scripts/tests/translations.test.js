@@ -182,6 +182,16 @@ test('Liquid layouts render localized navigation and language links without chan
   assert.match(html, /data-manual-language="fr"/);
   assert.doesNotMatch(html, /var manualUi =\s*\|\|/);
   assert.match(html, /\/docs\/v4\/User-guide.md/);
+  const groupTags = html.match(/<details class="manual-nav-group[^\"]*"[^>]*>/g) || [];
+  assert.equal(groupTags.length, navigation.v4.filter(entry => entry.children).length);
+  assert.equal(groupTags.filter(tag => /\sopen(?:\s|=|>)/.test(tag)).length, 1, 'Only the current chapter opens on load');
+  for (const tag of groupTags) assert.equal(/\sopen(?:\s|=|>)/.test(tag), tag.includes('has-active-page'));
+  assert.match(html, /manual-nav-group has-active-page/);
+  assert.match(html, /aria-label="Drawing: Overview"/);
+  for (const entry of navigation.v4.filter(item => item.children)) {
+    assert.ok(html.includes('href="' + entry.url.replace('/v4/', '/v4/fr/') + '"'), 'Keep the overview link');
+    for (const child of entry.children) assert.ok(html.includes('href="' + child.url.replace('/v4/', '/v4/fr/') + '"'), 'Keep crawlable child links');
+  }
   const v3 = await engine.parseAndRender(template, { page: { url: '/v3/' }, site, content: '<h1>v3</h1>' });
   assert.doesNotMatch(v3, /manual-language-control/);
   assert.match(v3, /href="\/v3\/Drawing-a-design\/"/);

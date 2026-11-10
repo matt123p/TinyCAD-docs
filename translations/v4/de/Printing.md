@@ -31,6 +31,15 @@ Wählen Sie Ihren Drucker aus, überprüfen Sie die Seiteneinstellungen und druc
 
 </div>
 
+## Markdown beim Drucken und Exportieren
+{: #markdown-in-print-and-export}
+
+Überschriften, Listen und Codeblöcke in Textfeldern behalten ihre Formatierung beim SVG-Export, beim Drucken im Browser und beim PDF-Export. SVG enthält nur das aktuelle Blatt.
+
+Zeichnung, SVG-Export und PDF verwenden dieselben SVG-Texte und Formen. Markdown-Notizen bleiben Vektorgrafiken und behalten die gewählte Grundschrift und Formatierung bei.
+
+[Markdown-Textfelder](../Text-and-Annotations/#markdown-text-boxes).
+
 ## SVG-Export
 {: #svg-export}
 

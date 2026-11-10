@@ -31,6 +31,15 @@ Seleziona la stampante, controlla le impostazioni della pagina e stampa il diseg
 
 </div>
 
+## Markdown nella stampa e nell’esportazione
+{: #markdown-in-print-and-export}
+
+Titoli, elenchi e blocchi di codice nelle caselle di testo mantengono la formattazione nell’esportazione SVG, nella stampa dal browser e nell’esportazione PDF. Il formato SVG include solo il foglio corrente.
+
+Il disegno, l’esportazione SVG e il PDF utilizzano gli stessi testi e forme SVG. Le note Markdown rimangono grafica vettoriale e conservano il carattere di base e la formattazione scelti.
+
+[Caselle di testo Markdown](../Text-and-Annotations/#markdown-text-boxes).
+
 ## Esportazione SVG
 {: #svg-export}
 

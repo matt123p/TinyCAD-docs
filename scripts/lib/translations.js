@@ -8,7 +8,7 @@ const normalize = (text) => text.replace(/\r\n?/g, '\n');
 const hash = (text) => crypto.createHash('sha256').update(normalize(text)).digest('hex');
 const read = (file) => normalize(fs.readFileSync(file, 'utf8'));
 const UI = {
-  manualTitle: 'TinyCAD Manual', contents: 'Contents', skip: 'Skip to main content',
+  manualTitle: 'TinyCAD Manual', contents: 'Contents', overview: 'Overview', skip: 'Skip to main content',
   primary: 'Primary', editPage: 'Edit this page on GitHub', visitSite: 'Visit tinycad.net',
   language: 'Language', fallback: 'This page is not yet translated. The current English version is shown.',
   stale: 'The English source has changed. The current English version is shown until this translation is updated.',

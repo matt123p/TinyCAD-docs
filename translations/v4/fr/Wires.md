@@ -18,6 +18,21 @@ utilisez des objets fil (et non des lignes d’annotation).
 
 L’utilisation de lignes d’annotation à la place des fils peut sembler correcte à l’écran, mais le circuit sera électriquement déconnecté pour les outils.
 
+## Modes de routage des fils
+{: #wire-routing-modes}
+
+Dans TinyCAD v4.0.11, utilisez le sélecteur à côté de Fil (Wire) pour choisir comment tracer les nouveaux segments.
+
+| Mode | Comportement |
+|---|---|
+| **90°** | Routage horizontal et vertical. |
+| **45°** | Routage limité aux directions à 45° de TinyCAD. |
+| **Libre (Free)** | Segments droits suivant n’importe quel angle. |
+
+Choisir un mode active l’outil Fil et conserve l’aperçu de fil en cours. Vous pouvez changer de mode avant de placer le segment suivant. L’accrochage à la grille reste un réglage distinct. L’outil de câblage point à point voisin est indépendant de ce sélecteur.
+
+![Sélecteur de la barre d’outils des fils affichant les choix 90°, 45° et Libre (Free).](../images/wire-routing-modes.png)
+
 ## Placer des fils
 {: #placing-wires}
 
