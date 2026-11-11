@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 手册
+# TinyCAD 手册
 {: #tinycad-v4-manual}
 
 TinyCAD v4 既可作为桌面应用程序使用，也可作为基于浏览器的在线应用程序使用。两个版本之间只有

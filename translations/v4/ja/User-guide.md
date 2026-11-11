@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 作図
+# TinyCAD - 作図
 {: #tinycad-v4---drawing}
 
 このセクションでは、初回の作図設定、ラベル、バス、未接続マーク、注釈、印刷など、基本的な作図手順について説明します。

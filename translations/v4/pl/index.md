@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Podręcznik TinyCAD v4
+# Podręcznik TinyCAD
 {: #tinycad-v4-manual}
 
 TinyCAD v4 jest dostępny zarówno jako aplikacja desktopowa, jak i aplikacja online uruchamiana w przeglądarce. Między tymi dwiema wersjami występuje tylko

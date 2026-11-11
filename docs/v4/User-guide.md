@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD v4 - Drawing
+# TinyCAD - Drawing
 
 This section covers the core drawing workflow, including first-drawing setup,
 labels, buses, no-connects, annotations, and printing.

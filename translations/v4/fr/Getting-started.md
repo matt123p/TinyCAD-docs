@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Bien démarrer
+# TinyCAD - Bien démarrer
 {: #tinycad-v4---getting-started}
 
 TinyCAD v4 peut être utilisé de deux façons différentes :

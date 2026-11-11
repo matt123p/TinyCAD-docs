@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD v4 - Advanced
+# TinyCAD - Advanced
 
 This section covers advanced editing, validation, and output workflows.
 

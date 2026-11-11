@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD v4 - Symbols & Libraries
+# TinyCAD - Symbols & Libraries
 
 This section covers symbol usage and library workflows, including importing,
 editing, and custom library management.

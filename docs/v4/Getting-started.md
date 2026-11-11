@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD v4 - Getting Started
+# TinyCAD - Getting Started
 
 TinyCAD v4 is available for use in two different ways:
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 入门指南
+# TinyCAD - 入门指南
 {: #tinycad-v4---getting-started}
 
 TinyCAD v4 有两种使用方式：

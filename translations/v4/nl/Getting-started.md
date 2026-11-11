@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Aan de slag
+# TinyCAD - Aan de slag
 {: #tinycad-v4---getting-started}
 
 TinyCAD v4 is op twee verschillende manieren beschikbaar:

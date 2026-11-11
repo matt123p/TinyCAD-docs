@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Geavanceerd
+# TinyCAD - Geavanceerd
 {: #tinycad-v4---advanced}
 
 Dit gedeelte behandelt geavanceerde bewerkings-, validatie- en uitvoerworkflows.

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Simboli e librerie
+# TinyCAD - Simboli e librerie
 {: #tinycad-v4---symbols--libraries}
 
 Questa sezione illustra l’uso dei simboli e i flussi di lavoro delle librerie, inclusi l’importazione,

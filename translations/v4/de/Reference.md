@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 – Referenz
+# TinyCAD – Referenz
 {: #tinycad-v4---reference}
 
 Dieser Abschnitt ist der Einstiegspunkt für Referenzmaterial, das derzeit aus

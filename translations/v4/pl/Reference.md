@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 — dokumentacja
+# TinyCAD — dokumentacja
 {: #tinycad-v4---reference}
 
 Ta sekcja stanowi punkt wyjścia do materiałów referencyjnych przeniesionych

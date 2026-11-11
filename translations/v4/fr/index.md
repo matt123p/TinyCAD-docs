@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Manuel de TinyCAD v4
+# Manuel de TinyCAD
 {: #tinycad-v4-manual}
 
 TinyCAD v4 est disponible sous forme d’application de bureau et d’application en ligne accessible depuis un navigateur. Il n’existe que

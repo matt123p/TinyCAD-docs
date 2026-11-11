@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 符号与库
+# TinyCAD - 符号与库
 {: #tinycad-v4---symbols--libraries}
 
 本节介绍符号的使用和库工作流程，包括导入、

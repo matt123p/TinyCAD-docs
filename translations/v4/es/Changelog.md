@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Registro de cambios de TinyCAD v4
+# Registro de cambios de TinyCAD
 {: #tinycad-v4-changelog}
 
 

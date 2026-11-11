@@ -34,7 +34,7 @@
       <!-- ===== Navbar ===== -->
       <header class="manual-navbar">
         <div class="manual-navbar-inner">
-          <a class="manual-brand" href="{{ '/' | relative_url }}">
+          <a class="manual-brand" href="{{ '/v4/' | relative_url }}">
             {% if page.manual_ui %}{{ page.manual_ui.manualTitle | escape }}{% else %}Tiny<span class="brand-highlight">CAD</span> Manual{% endif %}
           </a>
           <button class="manual-navbar-toggle" type="button" aria-label="{{ page.manual_ui.primary | default: 'Primary' | escape }}" aria-expanded="false" aria-controls="manual-navbar-menu">
@@ -49,7 +49,7 @@
               {%- endif -%}
               {%- assign ver_path = version_path | relative_url -%}
               <a href="{{ ver_path }}"{% if current_version == ver.id %} class="active" aria-current="page"{% endif %}>
-                <span class="nav-label-full">{{ ver.label }}</span>
+                <span class="nav-label-full">{% if ver.id == 'v4' %}TinyCAD{% else %}{{ ver.label }}{% endif %}</span>
                 <span class="nav-label-short" aria-hidden="true">{{ ver.id | upcase }}</span>
               </a>
             {%- endfor -%}

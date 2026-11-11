@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - シンボルとライブラリ
+# TinyCAD - シンボルとライブラリ
 {: #tinycad-v4---symbols--libraries}
 
 このセクションでは、シンボルの使用方法とライブラリのワークフロー（インポート、

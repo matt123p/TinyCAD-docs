@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 — Rysowanie
+# TinyCAD — Rysowanie
 {: #tinycad-v4---drawing}
 
 Ta sekcja opisuje podstawowy tok pracy przy rysowaniu, w tym konfigurację

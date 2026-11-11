@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 绘图
+# TinyCAD - 绘图
 {: #tinycad-v4---drawing}
 
 本节介绍核心绘图工作流程，包括首次绘图设置、

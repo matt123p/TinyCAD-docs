@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Guida introduttiva
+# TinyCAD - Guida introduttiva
 {: #tinycad-v4---getting-started}
 
 TinyCAD v4 è disponibile in due modalità:

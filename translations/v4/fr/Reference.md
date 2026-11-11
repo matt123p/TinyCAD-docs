@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Référence
+# TinyCAD - Référence
 {: #tinycad-v4---reference}
 
 Cette section est le point d’entrée des documents de référence actuellement migrés

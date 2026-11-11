@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 – Fortgeschrittene Themen
+# TinyCAD – Fortgeschrittene Themen
 {: #tinycad-v4---advanced}
 
 Dieser Abschnitt behandelt fortgeschrittene Bearbeitungs-, Validierungs- und Ausgabeabläufe.

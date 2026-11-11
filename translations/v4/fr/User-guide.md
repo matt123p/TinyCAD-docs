@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Dessin
+# TinyCAD - Dessin
 {: #tinycad-v4---drawing}
 
 Cette section couvre le flux de travail essentiel du dessin, notamment la

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TinyCAD v4 - Reference
+# TinyCAD - Reference
 
 This section is the entry point for reference material currently migrated from
 the legacy online manual.

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Avanzate
+# TinyCAD - Avanzate
 {: #tinycad-v4---advanced}
 
 Questa sezione tratta i flussi di lavoro avanzati di modifica, convalida e generazione degli output.

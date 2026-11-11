@@ -65,8 +65,10 @@ v4:
         url: /v4/Buses/
       - title: No Connects
         url: /v4/No-Connects/
-      - title: Text & Annotations
-        url: /v4/Text-and-Annotations/
+      - title: Text
+        url: /v4/Text/
+      - title: Shapes
+        url: /v4/Shapes/
       - title: Rulers
         url: /v4/Rulers/
       - title: Printing

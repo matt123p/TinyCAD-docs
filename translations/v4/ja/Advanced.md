@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 高度な機能
+# TinyCAD - 高度な機能
 {: #tinycad-v4---advanced}
 
 このセクションでは、高度な編集、検証、出力のワークフローについて説明します。

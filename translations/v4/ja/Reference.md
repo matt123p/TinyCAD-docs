@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - リファレンス
+# TinyCAD - リファレンス
 {: #tinycad-v4---reference}
 
 このセクションは、従来のオンラインマニュアルから現在移行中の

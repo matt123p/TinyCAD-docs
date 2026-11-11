@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Tekenen
+# TinyCAD - Tekenen
 {: #tinycad-v4---drawing}
 
 Dit gedeelte behandelt de belangrijkste tekenbewerkingen, waaronder het instellen

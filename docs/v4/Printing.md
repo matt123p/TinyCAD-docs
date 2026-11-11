@@ -36,7 +36,7 @@ Text-box headings, lists and code blocks keep their formatting in SVG export, br
 
 The drawing, SVG export and PDF use the same SVG text and shapes. Markdown notes remain vector graphics, preserving the chosen base font and formatting.
 
-[Markdown text boxes](../Text-and-Annotations/#markdown-text-boxes).
+[Markdown text boxes](../Text/#markdown-text-boxes).
 
 ## SVG export
 

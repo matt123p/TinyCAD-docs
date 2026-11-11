@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Disegno
+# TinyCAD - Disegno
 {: #tinycad-v4---drawing}
 
 Questa sezione illustra il flusso di lavoro di disegno di base, inclusa la configurazione del primo disegno,

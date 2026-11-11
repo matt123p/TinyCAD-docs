@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 – Symbole & Bibliotheken
+# TinyCAD – Symbole & Bibliotheken
 {: #tinycad-v4---symbols--libraries}
 
 In diesem Abschnitt geht es um die Verwendung von Symbolen und um Bibliotheks-Workflows, einschließlich des Imports,

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - Zaawansowane
+# TinyCAD - Zaawansowane
 {: #tinycad-v4---advanced}
 
 Ta sekcja omawia zaawansowaną edycję, weryfikację i procedury tworzenia danych wyjściowych.

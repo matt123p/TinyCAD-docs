@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 - 参考手册
+# TinyCAD - 参考手册
 {: #tinycad-v4---reference}
 
 本节是当前从旧版在线手册迁移过来的参考资料的入口。

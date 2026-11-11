@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 — Pierwsze kroki
+# TinyCAD — Pierwsze kroki
 {: #tinycad-v4---getting-started}
 
 Z TinyCAD v4 można korzystać na dwa różne sposoby:

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# TinyCAD v4 – Zeichnen
+# TinyCAD – Zeichnen
 {: #tinycad-v4---drawing}
 
 Dieser Abschnitt behandelt den grundlegenden Zeichenablauf, einschließlich der
