@@ -54,6 +54,28 @@ npm run build
 The generated site is written to `_site/`, which is ignored by Git. Neither
 previewing nor building requests translations or requires an OpenAI API key.
 
+## Search engine metadata
+
+The Jekyll generator in `docs/_plugins/manual_seo.rb` derives page titles and
+descriptions from each page's heading and opening paragraph. Set `title` or
+`description` in front matter to override them. Titles distinguish v3 and v4.
+The production origin is configured in `docs/_config.yml`.
+
+The build publishes `/sitemap.xml` and `/robots.txt`. Current translations get
+self-referencing canonicals, reciprocal `hreflang` annotations, and ordinary
+language links. English fallback routes canonicalize to their English source
+and are excluded from the sitemap and language alternates.
+
+Run `npm run check:seo` after building to check metadata, sitemap coverage,
+fallback handling, and reciprocal links. Run
+`npm run check:seo -- https://docs.tinycad.net` to smoke-test a deployment.
+Both checks also run in the deployment workflow.
+
+After deployment, the site owner should submit
+`https://docs.tinycad.net/sitemap.xml` to Google Search Console and Bing Webmaster
+Tools, then inspect English, French, and Japanese pages for indexing and selected
+canonicals. These account actions are separate from the site build.
+
 ## Repository structure
 
 | Path | Purpose |

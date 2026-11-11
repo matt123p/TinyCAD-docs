@@ -235,7 +235,7 @@ test('a repeatedly rejected page does not stop later pages or languages', async 
   let rejected = 0;
   const result = await run(root, ['--languages', 'fr,de'], {
     translate: async (strings, language) => {
-      if (language === 'fr' && strings[0].includes('# TinyCAD v4 - Drawing')) {
+      if (language === 'fr' && strings[0].includes('# TinyCAD - Drawing')) {
         rejected++;
         return [strings[0] + '\n# Unexpected heading', ...strings.slice(1)];
       }

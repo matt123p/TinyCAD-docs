@@ -8,6 +8,7 @@
     "build": "npm run bundle:install && npm run clean && npm run prepare:translations && npm run build:search-index && bundle exec jekyll build --source docs --destination _site",
     "build:search-index": "node scripts/build-search-index.js",
     "check:links": "node scripts/check-links.js",
+    "check:seo": "node scripts/check-seo.js",
     "serve": "npm run bundle:install && npm run clean && npm run prepare:translations && npm run build:search-index && bundle exec jekyll serve --source docs --destination _site --livereload --open-url",
     "clean": "bundle exec jekyll clean --source docs --destination _site",
     "translate": "node scripts/translate.js",

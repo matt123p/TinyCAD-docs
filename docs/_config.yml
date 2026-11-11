@@ -1,4 +1,6 @@
 title: TinyCAD Manual
+url: https://docs.tinycad.net
+baseurl: ""
 description: User and developer documentation for TinyCAD
 # Layouts and styles are provided locally; no bundled theme assets are needed.
 markdown: kramdown

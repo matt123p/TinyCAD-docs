@@ -133,6 +133,13 @@
               <p class="manual-translation-notice" role="status" lang="{{ manual_language }}">{% if page.manual_stale %}{{ page.manual_ui.stale | escape }}{% else %}{{ page.manual_ui.fallback | escape }}{% endif %}</p>
             {% endif %}
             {{ content }}
+            {% if page.seo_alternates.size > 1 %}
+              <nav class="manual-edit-link" aria-label="{{ page.manual_ui.language | default: 'Language' | escape }}">
+                {% for alternate in page.seo_alternates %}
+                  <a href="{{ alternate.url | relative_url }}" hreflang="{{ alternate.language }}" lang="{{ alternate.language }}"{% if alternate.language == manual_language %} aria-current="page"{% endif %}>{{ alternate.label | escape }}</a>{% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </nav>
+            {% endif %}
             {%- if site.github_edit_base_url and page.path -%}
               <p class="manual-edit-link">
                 <a href="{{ site.github_edit_base_url }}/docs/{{ page.manual_source | default: page.path }}">

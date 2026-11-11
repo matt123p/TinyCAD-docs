@@ -1,0 +1,12 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign sorted_pages = site.pages | sort: 'url' -%}
+{%- for entry in sorted_pages -%}
+  {%- if entry.seo_indexable %}
+  <url><loc>{{ entry.seo_canonical | xml_escape }}</loc></url>
+  {%- endif -%}
+{%- endfor %}
+</urlset>
