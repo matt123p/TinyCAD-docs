@@ -2,9 +2,9 @@
 layout: default
 ---
 # TinyCAD - Avancé
-{: #tinycad-v4---advanced}
+{: #tinycad---advanced}
 
-Cette section couvre les flux de travail avancés de modification, de validation et de génération de sorties.
+Cette section traite des workflows avancés de modification, de validation et de génération de sorties.
 
 ## Pages
 {: #pages}
@@ -23,4 +23,4 @@ Cette section couvre les flux de travail avancés de modification, de validation
 {% endfor %}
 {% endif %}
 
-- Retour au [sommaire de la v4](../CONTENTS/)
+- Retour à [Sommaire v4](../CONTENTS/)

@@ -17,9 +17,9 @@ Per stampare da un browser, usa l'opzione Esporta in PDF. Potrai quindi stampare
 ### App desktop
 {: #desktop-app}
 
-Usa l'opzione **Stampa (Print)** nel menu della barra degli strumenti.
+Usa l'opzione **Stampa** nel menu della barra degli strumenti.
 
-L'app desktop apre una finestra di dialogo di stampa per il sistema operativo in uso.
+L'app desktop apre una finestra di dialogo di stampa per il tuo sistema operativo.
 Seleziona la stampante, controlla le impostazioni della pagina e stampa il disegno.
 
 {% include video-player.html
@@ -31,26 +31,27 @@ Seleziona la stampante, controlla le impostazioni della pagina e stampa il diseg
 
 </div>
 
-## Markdown nella stampa e nell’esportazione
+## Markdown in stampa ed esportazione
+{: #markdown-in-print-and-export}
 {: #markdown-in-print-and-export}
 
-Titoli, elenchi e blocchi di codice nelle caselle di testo mantengono la formattazione nell’esportazione SVG, nella stampa dal browser e nell’esportazione PDF. Il formato SVG include solo il foglio corrente.
+I titoli, gli elenchi e i blocchi di codice nelle caselle di testo mantengono la formattazione nell'esportazione SVG, nella stampa dal browser e nell'esportazione PDF. Nell'output SVG è incluso solo il foglio corrente.
 
-Il disegno, l’esportazione SVG e il PDF utilizzano gli stessi testi e forme SVG. Le note Markdown rimangono grafica vettoriale e conservano il carattere di base e la formattazione scelti.
+Il disegno, l'esportazione SVG e il PDF usano lo stesso testo e le stesse forme SVG. Le note Markdown restano elementi grafici vettoriali, conservando il carattere di base e la formattazione scelti.
 
-[Caselle di testo Markdown](../Text-and-Annotations/#markdown-text-boxes).
+[Caselle di testo Markdown](../Text/#markdown-text-boxes).
 
 ## Esportazione SVG
 {: #svg-export}
 
-Puoi anche esportare in SVG. SVG è utile per l'inserimento in documenti e pagine web.
+Puoi anche esportare in SVG. Il formato SVG è utile per l'inserimento in documenti e pagine web.
 Note:
 
 - L'esportazione SVG contiene solo il foglio corrente (formato a pagina singola)
 - Sono disponibili online convertitori gratuiti da SVG a DXF
 - Consulta [Dimensioni pagina](../Page-Size/) se devi modificare le dimensioni del foglio prima di stampare o esportare.
-- Consulta la [Casella Dettagli progetto](../Design-Details-box/) se vuoi includere i dettagli del cartiglio nell'output.
-- Consulta [Disegni con più fogli](../Multiple-Sheet-Drawings/) se il progetto utilizza più di un foglio.
+- Consulta la casella [Dettagli del progetto](../Design-Details-box/) se vuoi includere nell'output i dettagli del cartiglio.
+- Consulta [Disegni con più fogli](../Multiple-Sheet-Drawings/) se il tuo progetto usa più di un foglio.
 
 - Torna a [Disegno](../User-guide/)
-- Torna a [indice dei contenuti v4](../CONTENTS/)
+- Torna all'[Indice di v4](../CONTENTS/)

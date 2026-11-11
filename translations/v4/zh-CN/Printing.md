@@ -9,7 +9,7 @@ layout: default
 ### 浏览器
 {: #browser}
 
-要在浏览器中打印，请使用“导出为 PDF”选项。然后即可直接打印 PDF。
+要从浏览器打印，请使用“导出为 PDF”选项。然后即可直接打印 PDF。
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -19,7 +19,7 @@ layout: default
 
 使用工具栏菜单中的 **打印（Print）** 选项。
 
-桌面应用会打开适用于您操作系统的打印对话框。
+桌面应用会打开操作系统的打印对话框。
 选择打印机，检查页面设置，然后打印图纸。
 
 {% include video-player.html
@@ -33,24 +33,25 @@ layout: default
 
 ## 打印和导出中的 Markdown
 {: #markdown-in-print-and-export}
+{: #markdown-in-print-and-export}
 
-文本框中的标题、列表和代码块在 SVG 导出、浏览器打印和 PDF 导出时都会保留格式。SVG 仅包含当前图纸。
+文本框标题、列表和代码块在 SVG 导出、浏览器打印和 PDF 导出中都会保留其格式。SVG 输出仅包含当前工作表。
 
-图纸、SVG 导出和 PDF 使用相同的 SVG 文本和图形。Markdown 注释保持为矢量图形，并保留所选基础字体和格式。
+图纸、SVG 导出和 PDF 使用相同的 SVG 文本和图形。Markdown 注释保留为矢量图形，并保留所选的基础字体和格式。
 
-[Markdown 文本框](../Text-and-Annotations/#markdown-text-boxes).
+[Markdown 文本框](../Text/#markdown-text-boxes).
 
 ## SVG 导出
 {: #svg-export}
 
-您还可以导出 SVG。SVG 适用于嵌入文档/网页。
+你也可以导出 SVG。SVG 适合嵌入文档/网页中。
 注意：
 
-- SVG 导出仅包含当前图纸（单页格式）
-- 网上有免费的 SVG 转 DXF 转换器
+- SVG 导出仅包含当前工作表（单页格式）
+- 网上提供免费的 SVG 转 DXF 转换器
 - 如果需要在打印或导出前调整图纸尺寸，请参阅[页面尺寸](../Page-Size/)。
-- 如果希望在输出中包含标题栏详细信息，请参阅[设计详细信息框](../Design-Details-box/)。
-- 如果设计使用多张图纸，请参阅[多张图纸绘图](../Multiple-Sheet-Drawings/)。
+- 如果希望在输出中包含标题栏详细信息，请参阅[设计详情框](../Design-Details-box/)。
+- 如果设计使用多个工作表，请参阅[多工作表图纸](../Multiple-Sheet-Drawings/)。
 
-- 返回[绘图](../User-guide/)
+- 返回[图纸](../User-guide/)
 - 返回[v4 目录](../CONTENTS/)

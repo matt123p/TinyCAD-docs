@@ -2,7 +2,7 @@
 layout: default
 ---
 # TinyCAD - シンボルとライブラリ
-{: #tinycad-v4---symbols--libraries}
+{: #tinycad---symbols--libraries}
 
 このセクションでは、シンボルの使用方法とライブラリのワークフロー（インポート、
 編集、カスタムライブラリの管理など）について説明します。
@@ -24,4 +24,4 @@ layout: default
 {% endfor %}
 {% endif %}
 
-- [v4の目次](../CONTENTS/)
+- [v4 の目次に戻る](../CONTENTS/)

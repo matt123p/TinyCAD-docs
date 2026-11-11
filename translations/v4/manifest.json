@@ -2,15 +2,14 @@
   "version": 1,
   "entries": {
     "nl/interface.json": {
-      "fingerprint": "842c3586688a626ba292918d702931e09982d31275de32e42e3b1dad273f2737",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "af85389cbde082e4a81a466d2694857e58a2271884437c7cb3b891694f9494c8",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "nl/Advanced.md": {
-      "fingerprint": "1ece9a4b9cdb13a68c2b8f1283454b797c36508b4c91335aca904d321b00e249",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "490c08cb0119e929c0b661bea1cef3f37a1df2fe3f10d090a019044864915ab5",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -27,11 +26,10 @@
       "promptVersion": 1
     },
     "nl/Changelog.md": {
-      "fingerprint": "24c217a4afb09d8edccdaffb27c222ef6c8e101705f2b0e014127ebf453f6ad6",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "d2ddbc8c6907d48f5a5bc789d55f70c4e2c080b783a135501672cb99381a373c",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "nl/Contributing-to-the-Manual.md": {
       "fingerprint": "dc130c27106088dd6172d0e8f4b520da9aa06a5d3293e9901d9be96a6556f3c1",
@@ -76,8 +74,8 @@
       "promptVersion": 1
     },
     "nl/Getting-started.md": {
-      "fingerprint": "5bf081b55461bce1628d09e4a0cb6f4b0ca1cba52831ece87329228880d35e69",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "323060eb999ef854945986f48a7c61edb740dae4fb98676b1bd82deb06a9401d",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -142,15 +140,14 @@
       "promptVersion": 1
     },
     "nl/Printing.md": {
-      "fingerprint": "a2bf93f3e273ba722d6e8eed150c008616d62581c92b09e6f731101e3f6bd5c7",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "e6cf053f18c0aacd48b678394b6f5af3122b404ddf8e26a53c343227aee66660",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "nl/Reference.md": {
-      "fingerprint": "def52a88933e96fa085e809f946c274b48b96565188d59307623f2f8400ff79f",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "464ae3d3883e3fe3ba0819fd2fcc8a87b0452aa3c57754ee8fb022ce2f461027",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -185,8 +182,8 @@
       "promptVersion": 1
     },
     "nl/Symbols-and-Libraries.md": {
-      "fingerprint": "929dee7f5dc970d9f104067995984928a84485308f6f60fbef20ad5a7ff6d847",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "6822a421b4f93dc4fed55b942963ddad318fd1b03ced3815b4d2c91621a8dbfe",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -197,11 +194,10 @@
       "promptVersion": 1
     },
     "nl/Text-and-Annotations.md": {
-      "fingerprint": "e9870594a420ca67cf155fae0c9b4332ac6ebd201457210e5a598760d76e47a7",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "344b82bc80e8dd886ddf84f333521316b6dd4646bf025e9828ccfbf077d36aba",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "nl/TinyCAD-Desktop-App.md": {
       "fingerprint": "24f29c2ad5da4a0b8a5bea67f45097f06a37556ca74c2b823a3aac79af2619f0",
@@ -222,8 +218,8 @@
       "promptVersion": 1
     },
     "nl/User-guide.md": {
-      "fingerprint": "f5c6c9e939d61bf3891d2b359f41dd79ef0688bcff01406c6a226901d6e1aaf8",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "14ef05506c4685d9c5a53d7c839925a9950ffc0cd308dc838205bcb43ddb419a",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -253,21 +249,20 @@
       "promptVersion": 1
     },
     "nl/index.md": {
-      "fingerprint": "31346b2c4d669f00574af3b218ce11971415359b31a3d9ac751cb799ad96b157",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "f2e14d1a5c62ed35dfdadd8b0931f30697eaedd049f1bb2d782c5bb3a51d71c7",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "fr/interface.json": {
-      "fingerprint": "b8240fa35cffac4110487b3f26bd249251d8ee2137cee2ec00f4145b0516e944",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "138a7481123b82664c8a70711a1b76c7dbab86b09aa7db306b870539c56d2ea3",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "fr/Advanced.md": {
-      "fingerprint": "7eadb8dd2a67f489c25f720dc3c57d1b23901fae4b84aef8ff1a6f39a92332e6",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "5643fcf8b21182c177d34dd84b0aa9e8c07debc984a36c8ff6dcda7fd03c0ba6",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -284,11 +279,10 @@
       "promptVersion": 1
     },
     "fr/Changelog.md": {
-      "fingerprint": "a2844b2b06b2cec87379233233f88b1f40d3c2df5d5c6bcce994231f16072e78",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "dd17a01d10a45a182aee97a5c702ba634fd1340d025f04782a2904a8f1eeb4af",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "fr/Contributing-to-the-Manual.md": {
       "fingerprint": "01a24e9f41419334e586091894696d8b9e961848966b82f00492f3f7f329f3e5",
@@ -333,8 +327,8 @@
       "promptVersion": 1
     },
     "fr/Getting-started.md": {
-      "fingerprint": "6150f38118dafed0be19f1841cd3bad05421ad0965aedb723ba26ff2838f42d8",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "336521c26e1524501089d0ba9d10e9540261a7e16bc861e35c1bb4f8d97b5614",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -399,15 +393,14 @@
       "promptVersion": 1
     },
     "fr/Printing.md": {
-      "fingerprint": "8b1265a2dd78efd9d29cebe0fd9d88618c2cc24679cfd1b112d534d6a70d3c97",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "4d8145b60d58ca368dbe159e899657b6d942c3a0bc318e38c132daad7eaf52f3",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "fr/Reference.md": {
-      "fingerprint": "c23982d5e4855b7a38c2043b5fc96ddaed8a72d1b860b53fe9272f798f18636f",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "dd8dc236445d27bfb53cffef16c4595a7becfa0b6332eceb148329304689aff8",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -442,8 +435,8 @@
       "promptVersion": 1
     },
     "fr/Symbols-and-Libraries.md": {
-      "fingerprint": "bce943e404422a9716cbaec6206c03c8393c3a04307a7ae65a8f8a5871d68d41",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "66a23c0a75e602163d1f94d6c43bd2928e001b8bb15a84c6a7832f2d74d22b13",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -454,11 +447,10 @@
       "promptVersion": 1
     },
     "fr/Text-and-Annotations.md": {
-      "fingerprint": "b11cbf5fe705f4319e2e112b80d19aa726b828e4d13a40943c0b609983082ac9",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "88dd30667ebd2b2682a0638f53b84a1c36e2eab3bb9b28f31c5044953f22309d",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "fr/TinyCAD-Desktop-App.md": {
       "fingerprint": "9184fd633b276d59c05082f04eb681a98ec05e202571ff2c2c07a7e9cacb4326",
@@ -479,8 +471,8 @@
       "promptVersion": 1
     },
     "fr/User-guide.md": {
-      "fingerprint": "ba06867d1a673376f8c0542694a7c0d0aba766ffe04e93a56eda88d08bf41deb",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "a29a70769d3a6a39427b8d9a8b79b7a3482c328cbad4642437be43880dc09735",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -510,21 +502,20 @@
       "promptVersion": 1
     },
     "fr/index.md": {
-      "fingerprint": "9a33477b1090ae6268927d34c600633f1ae9adc92c1ddf868e2574b935aec3d3",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "3f5c52b97eb62de0de1a4d6ba364bd6df677af1b78fc91a53b94608278f97f46",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "es/interface.json": {
-      "fingerprint": "f40759cabfd370ec45fa7cdc4d00a6b2e854a9bfdbb3f064427ace536794f2dc",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "d21940095e73edb1006304344d1c508158daa2d7dc4dd30b53eedfa37e9c9e89",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "es/Advanced.md": {
-      "fingerprint": "59dd2c01a7fed3b22ca08d67ee23690500b66713be37649c0ec998c9969e42ad",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "e6f31b2ad06eef2ecaa86040416d4d929f75af52f107063867c255ea9d064b15",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -541,11 +532,10 @@
       "promptVersion": 1
     },
     "es/Changelog.md": {
-      "fingerprint": "a21beaa9885111b24dffd548f434c3ef0d1c125fcb3a073702b0b2bc3868cbbc",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "53aa2df7fb51d4c00cf71415c7868b761074a3cd0671b354c3219a0368d0e610",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "es/Contributing-to-the-Manual.md": {
       "fingerprint": "6e539f5f9b26d3d9d357bb43426bffa734ac29f5fcfd40e59ca762d6a4b524c8",
@@ -584,8 +574,8 @@
       "promptVersion": 1
     },
     "es/Getting-started.md": {
-      "fingerprint": "0ba7c80b571410e3e6c32569ed7dadfc32806e2b781334c58d67b16618f73eb1",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "0a887fb3231a75de1377cf6674c8d264da80a9a358da7b6a171495ca5591beaa",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -650,15 +640,14 @@
       "promptVersion": 1
     },
     "es/Printing.md": {
-      "fingerprint": "ccbc352004905af26e9f9e37d3bce3162fcced5c21cd7ba2ecb49b9e484100f6",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "4467420a319660b41d3cb1cbcf916bc3b2599abcffffbeb5e1bcf80b1d856961",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "es/Reference.md": {
-      "fingerprint": "2f55fc763c46d49517ef52419a0a062256d4e9b351c449c458b913dc00be438c",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "9a1cf0f23eb1c5b7ae061a2442fbc445af421fafaa3f27b1e7290477a23a2862",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -693,8 +682,8 @@
       "promptVersion": 1
     },
     "es/Symbols-and-Libraries.md": {
-      "fingerprint": "ceccd4c7a093fd081cad45cf7aa890702e3024e82e563a655598ca35a8af7cc2",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "a3d82d4b8dc7b0c5448e6dfbf3e2192f36fc0ac379ff8e1140b7c5704100eb98",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -705,11 +694,10 @@
       "promptVersion": 1
     },
     "es/Text-and-Annotations.md": {
-      "fingerprint": "9a8f5a2f7ced3545666ac38f9f45ab5601cd1bdd7580af55e2b9f6482ed4c847",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "2d8a7149573af2297740178c9888c651ababecc809b3cdd31014a37629e77216",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "es/TinyCAD-Desktop-App.md": {
       "fingerprint": "07593a03dd772b9e57a5cf5322424382bf831dbb019af63cd799c72b483f72ff",
@@ -730,8 +718,8 @@
       "promptVersion": 1
     },
     "es/User-guide.md": {
-      "fingerprint": "c89bb6c908be60cfc87db9ce2e956084503bde9af4a1eaddcb8529e33b060581",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "07c2e4982f675d56222526c8f9efdad51075ed7afd154e956fcd187c3d1460b0",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -761,21 +749,20 @@
       "promptVersion": 1
     },
     "es/index.md": {
-      "fingerprint": "7a158c2a071f7b0b4d7244a0fd65d7a891f9b7ef25a3a2aeda1065b874f284a2",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "e5457863d2ebda845e9c50db1e6de6dbc09d0c254492075ce45ea7a03cc8aa9c",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "de/interface.json": {
-      "fingerprint": "1e11fce9ef94b7e8d3f20f94d51ffb4d86839f63dd461a840d61843d9a2362f4",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "a57e1cd39e6167cb46430f58421bab345f536185ccb23662400764b1ac5f2733",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "de/Advanced.md": {
-      "fingerprint": "50691f6086489c0bc9e4d6ec6b752ce50b0fd40094888cbc2d10ab0e21974db6",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "03cde6a7697f0da9e1d6a1ad9b00165ebb8bf92aa90e9bd89a5f6ea323b607b6",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -792,11 +779,10 @@
       "promptVersion": 1
     },
     "de/Changelog.md": {
-      "fingerprint": "e915114913af694b1d4651afcc6149b47f8498be0e53f42f3a0cfc3866e39b14",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "e856d7e2da7b9786dabde00aec0d2ea6d7ab1b65968958e1a022e82ab40ad310",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "de/Contributing-to-the-Manual.md": {
       "fingerprint": "d6ed6b1a3be92b74be87b1a8968d9299992d378fae3745192e47d353416fc46d",
@@ -841,8 +827,8 @@
       "promptVersion": 1
     },
     "de/Getting-started.md": {
-      "fingerprint": "c05b856ccdb3fa4f4ca31d7654bb5b0fb99505e3c33d26e6d963de885db83132",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "d9d6410f02e5eb284ac23c0341ccd9f12fdb4c72db773d86c4a8fd0e721d7476",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -901,15 +887,14 @@
       "promptVersion": 1
     },
     "de/Printing.md": {
-      "fingerprint": "e33a5189b4e59fdfc1d9ea9b0cf691c9a359f8d644e0b3e0b244d8754dcdbb20",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "35ce3ef7956ce9f92b82c5bd8b24e1ec33c1ac50ac88593f931914dfc4732b3b",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "de/Reference.md": {
-      "fingerprint": "b5ee548c12a17124d44a933cffc870650c1995dc70c7fb814930747c5941d7a3",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "621b753ed9b3e5b506d17bd3895078d8f30f3bbdd1150a2f21117b4e2f776c7d",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -944,8 +929,8 @@
       "promptVersion": 1
     },
     "de/Symbols-and-Libraries.md": {
-      "fingerprint": "455b675b6cf57c262c16d826896a5e4e56bacc2a0516abbdea29f26862738dd3",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "2d3c0d24c7f59b4a3946b3c121afa3c295bba7024e41a3232e1c755ec704e540",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -956,11 +941,10 @@
       "promptVersion": 1
     },
     "de/Text-and-Annotations.md": {
-      "fingerprint": "8da6224ea38156811d9b9327daef786ed29d97db2962d5cb5f178671d87c76a5",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "08f38ae56c525a066e0fb338a1f82db5ecdcafb82edd2c847212bab966d1023d",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "de/TinyCAD-Desktop-App.md": {
       "fingerprint": "02dffd221a42bb648990f1b34af9ba70424d8d24919cb995aa73fc051aa6e21e",
@@ -981,8 +965,8 @@
       "promptVersion": 1
     },
     "de/User-guide.md": {
-      "fingerprint": "79a8a8e65993a5789f53801077d2d905cacd9355cf09bca00b10cbf06c4515b7",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "646d87bb97c4525b117a85951d5cb20ea14671682f0553c846d068cfe970fdb8",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1012,21 +996,20 @@
       "promptVersion": 1
     },
     "de/index.md": {
-      "fingerprint": "ec69845586863bd35c7c754a7f5fa970dbf8b05089f7cbb9213af9732f672a69",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "6acc35f88e57d9266a91882d4a791ad2968d5ac2a40b2bb87f5907b8d4fbecc5",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "it/interface.json": {
-      "fingerprint": "4fdc0d98562e22d7430a721e64cba22ea0014c87bec61333452cfd471baed95a",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "d0ce60f1924f7cd2e77a45ecaf39f4e35cfd65afbd9f151e1fe141dd9756e11a",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "it/Advanced.md": {
-      "fingerprint": "2b18af8918af4ac358bdaa062a4c6b558e6f7b40f12e71c5fc8e9c6840c3cc1c",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "83ed7e48e5237d76173f469d92320e6b9ea78793057ee7e3270b056e82eadca1",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1043,11 +1026,10 @@
       "promptVersion": 1
     },
     "it/Changelog.md": {
-      "fingerprint": "338d13f4dea7eec52fc10b5a832b85872b13054e9741cc6f0c79690af696b09f",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "37ebcb230cd8cfda151a63ede545779fc0ef0ab5d3c67c5cdbfdfe2a68cfe075",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "it/Contributing-to-the-Manual.md": {
       "fingerprint": "09dfd2fe403865ffabef0aafea9ea1c841705091399ee56951f6aa8abfc94190",
@@ -1086,8 +1068,8 @@
       "promptVersion": 1
     },
     "it/Getting-started.md": {
-      "fingerprint": "69600c0d7d18d3f62e6eb0221d6e436404f3b3e803d71d816db8d91d1dee114e",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "ad7e386ef9bc753d198558faeefc942e454e19b0455b6cf8fd98cb6a2c854562",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1152,15 +1134,14 @@
       "promptVersion": 1
     },
     "it/Printing.md": {
-      "fingerprint": "c32c11418327e1194a2f7583fe54d38f948e1589401e05181aef714e69fa8756",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "391712f42daf5ae6e73d5f0f89a4265d3bcb0e1a9bfa8351ed0a21ed32d728a4",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "it/Reference.md": {
-      "fingerprint": "0b394c18a620a922cd29f02840473f698fbb0e03f8827ed78108aa6ab8da377a",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "55ad3036e49225eb5375951759cd463b77f4f868770b2479f9b7fc7ec8183691",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1195,8 +1176,8 @@
       "promptVersion": 1
     },
     "it/Symbols-and-Libraries.md": {
-      "fingerprint": "6d736ac9c51b7132fe5b809ab93a7807b7296de533b44214d8b1b14c24c75fbc",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "47403c3973283f81ad99a62a42a12af511a57874a89d655635a98a60475ff7d7",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1207,11 +1188,10 @@
       "promptVersion": 1
     },
     "it/Text-and-Annotations.md": {
-      "fingerprint": "320347eaae382175e3a7718067e67eb6dfe4ab1340bdbcd7e51946a3fa3fa278",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "e93f6f894a484172ae7c6c2ce3631d2f289407d7b65ddac655c2536ff35d22b6",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "it/TinyCAD-Desktop-App.md": {
       "fingerprint": "535e45d4c18ae2da4194bd89001d28dcc21cb8221fdef52e68236c25a6a6bd0d",
@@ -1232,8 +1212,8 @@
       "promptVersion": 1
     },
     "it/User-guide.md": {
-      "fingerprint": "0413469291c16eaf5d79d7e71a68729801af59fe527fbc6a9600c57bffd66fdb",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "5a2ad6f7a117556457ab7b26e9dd3af59d07fad6b7902f3badcb0eaa17dfc04c",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1263,21 +1243,20 @@
       "promptVersion": 1
     },
     "it/index.md": {
-      "fingerprint": "97a036cbe9afa02a4bedc85bce8ba2960fe48b0b055d54affc382a8b191443ea",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "2e1dafc1753e0ffbed042315dc61e8366d84668bf3748103bf9a08066a74d00c",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "ja/interface.json": {
-      "fingerprint": "b3d5ad3def0f3187f4f4e9dedbd7a3514ad1cd38a42a99a274d6420bb7c6d10c",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "e59005ef6501846b28d165530b70356eceae0b234be154c938e2d78c988ab30d",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "ja/Advanced.md": {
-      "fingerprint": "94ae3882febae39e2b1cd35f18eee0bde717688eef80e488c608cd6fffb3032e",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "6ba0d508ca233ddd61f0a52d8f65bf5633bb9e3e6e0080106aeea6ac8868bef6",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1294,11 +1273,10 @@
       "promptVersion": 1
     },
     "ja/Changelog.md": {
-      "fingerprint": "969dd046130f4d50f6749932e4e7146770c52a2834c0941bda2d3eeb723738da",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "781cc6504282de711f418e69516e122701619a02c85f80228187b4d7d5a61225",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "ja/Design-Details-box.md": {
       "fingerprint": "079481c7c9f8f3efd820b4a55c199144faa2a1b96f6013c0c5f1ca20d6ab530a",
@@ -1331,8 +1309,8 @@
       "promptVersion": 1
     },
     "ja/Getting-started.md": {
-      "fingerprint": "bf21552f3dfd0c9c62c499db535135e1545ab50e9c59ed710e1aa2cc30744189",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "77fe7b2fe13b905c79c728726084306b85e3d4106de0d9e61347fdf5a10013af",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1385,15 +1363,14 @@
       "promptVersion": 1
     },
     "ja/Printing.md": {
-      "fingerprint": "ad45f3ab8bd205a39235ba0452a005c3c97e47cc56ad9b40a7a06cd75cea511a",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "4b542baccf55cca5bcba2a7d0ac626bc20b3e7fce28c9580c41cc407ed72f0f6",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "ja/Reference.md": {
-      "fingerprint": "28542d305af9b4694fe31b4f6c5ecbdbfd8a28ac6ffa1de464d99cfcbaba527e",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "763bac22ed2750fc2efc3380abf8aaeb73ed3c5bdb152eacf1a8a51fcbdb3d5a",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1428,8 +1405,8 @@
       "promptVersion": 1
     },
     "ja/Symbols-and-Libraries.md": {
-      "fingerprint": "84b89b17e9264933189a0b3172821a54bef120fba76d87c17da81555d3e13c93",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "4cb0e0737eca4213fa10c45ff9fb943901e47664373862073e3cdfcdc65f24a0",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1440,11 +1417,10 @@
       "promptVersion": 1
     },
     "ja/Text-and-Annotations.md": {
-      "fingerprint": "013ba9962aca8aabcdb62f377ce7442d553daee1eea28d208ae87ca6c83cd988",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "0a296a79e15aa0047cc63e673a18d84a16a85230b053fa172e8ed2c6ce9948ae",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "ja/TinyCAD-Desktop-App.md": {
       "fingerprint": "cb97de0e0c459def0ba6e80dd9e361a55fb7be3d7dcfebcc9c7522e8b485b016",
@@ -1465,8 +1441,8 @@
       "promptVersion": 1
     },
     "ja/User-guide.md": {
-      "fingerprint": "ed406e895ae8d99657fed078c23914a3fdbe3d9b656afa894dcc444069d37d36",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "50b5b1bfb90b3deb2e1237f5582396a159fe7a2a6acf87a7f0b2192834745849",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1490,21 +1466,20 @@
       "promptVersion": 1
     },
     "ja/index.md": {
-      "fingerprint": "db526a42da3a337400c562461a99efe426d84bac7aed58ba27173dd780547496",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "c1b35b043b709e24646edb181d544899230553c0c5e1290eb65c0566acd6cb2e",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "pl/interface.json": {
-      "fingerprint": "d41aa98d516cb6d38f94195d9dafe8ee5a5232daf3992e6650a16edfe75bdd93",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "73dacd10a5d537f7401ce73d48cd69a4acad4f7f1d5221dea2f396758481c383",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "pl/Advanced.md": {
-      "fingerprint": "373c4571ff288367e702adc6c735508494ff6d2c4c9afce1436391624cabc1c2",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "0370d597ef8e179c03c8d1c1db4810a7ccad4e3adc82a065a0cc2b3d9a56ac94",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1521,11 +1496,10 @@
       "promptVersion": 1
     },
     "pl/Changelog.md": {
-      "fingerprint": "e192e1f0d3adb002988f2551bb9fb6bb853eb1d83acdc15696a30f392a695799",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "8da2d54a42e04a75b0a69aaac7513616715facae1606a2e287538c91f6e8f280",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "pl/Contributing-to-the-Manual.md": {
       "fingerprint": "2aad0f2b934871e8a19c4442dd5c91ae655dcdc5f98e352762c32b11a6f88112",
@@ -1564,8 +1538,8 @@
       "promptVersion": 1
     },
     "pl/Getting-started.md": {
-      "fingerprint": "f76d5ce287d6f09e6331bfdb3e73b9894cce3110543ea5bcfe356f1027e94888",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "838b6b38cd99bc1a6aabafb6d8ead8fa95709efe457f32be58c706a6255ea0e3",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1630,15 +1604,14 @@
       "promptVersion": 1
     },
     "pl/Printing.md": {
-      "fingerprint": "f5bebb21db66795db822e1f5f5a94c1bd9cfb1449c142b6f86a65d95fee846a7",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "35066d0f32a8a5ada92bad836c07d61593d8a5a0a8d0db594e3a945d03380ff3",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "pl/Reference.md": {
-      "fingerprint": "a48bd2bd9e35d40624e9852254c5980183838a1fa482eea13c6c1afe60df7d19",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "5cece4e2aa29cd3c1cfdd4a9f42310888fed2117b989092e51f89f765519ee91",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1673,8 +1646,8 @@
       "promptVersion": 1
     },
     "pl/Symbols-and-Libraries.md": {
-      "fingerprint": "a416b4560ea584141fa44860cbf705a211d8acfa9b9ee408ed4577ff1b3794bf",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "30a3cef08ad246e6452c4186d26cbe57bf9261f1322b02a252589a1bb58481ed",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1685,11 +1658,10 @@
       "promptVersion": 1
     },
     "pl/Text-and-Annotations.md": {
-      "fingerprint": "c2a5493af99730a0b9be1f2155f04c559cdbb0a6c73958de906ca4509ffaf163",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "79f2267d7f095f41b342e0c18d396f8f8505459ded3aee0e64e61f908edbbdf7",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "pl/TinyCAD-Desktop-App.md": {
       "fingerprint": "66193df2bc541cc116dfe52d7592c8fe8b0a54474a60c08c99b5256ad2117762",
@@ -1710,8 +1682,8 @@
       "promptVersion": 1
     },
     "pl/User-guide.md": {
-      "fingerprint": "19ed076c2df3e7ca9ef912c78306faced001776658848ee3b20664338812b421",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "8269e17292b8cf25914e162e4f8d40f15b55e432bb8990603b44056a0fd2dcdb",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1741,21 +1713,20 @@
       "promptVersion": 1
     },
     "pl/index.md": {
-      "fingerprint": "eed11a017f0e93673c7225946732d59b992978c5da4bd9488405b0cc33426a00",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "48b8a427abb01a79cdd5ee4d21cb389a364742a9df25dd15e9cbc3470c8dd526",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
     "zh-CN/interface.json": {
-      "fingerprint": "c434956d6b36cf98cf6c8ebca9b4ae54fefebe1f33448af52f7acb4540100789",
-      "sourceHash": "b0aaf676e8f671203b5c87faba1b0d18909b81b2ec0097bf95a5d56bcf043ccf",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "a703ffd2cb4a94921df5d484adbb855f51a31908d27cf76eb02dd08c81d247ef",
+      "sourceHash": "3ddc59b827144e71cee3c784231d255f7eb757f5e2429e4edfc2af2e5025498c",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "zh-CN/Advanced.md": {
-      "fingerprint": "e1102d38d4223d308ba31f977f35f158f833063e6ffad3047bda01ce4354b776",
-      "sourceHash": "bccc3b4d475b98133755e8bf3c8378fe8436fe806da7656702ace515bfd09fc2",
+      "fingerprint": "0f44046d05f20968477f04f40c7964066a48751c62041bb229eee7a284d3fc0a",
+      "sourceHash": "2471ad7f2f4f955518aa8d7898b09eab122dd163589afd8e2e97ca6735f52775",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1772,11 +1743,10 @@
       "promptVersion": 1
     },
     "zh-CN/Changelog.md": {
-      "fingerprint": "94be47054b6311e7b45ad3385cb4967d137caf707f2eb23319d33ea55539791b",
-      "sourceHash": "55b7e92028afa1e564e4fa4ff842d03d43bcb0726e5dc7b4e24e36939420a55c",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "c203eee4d51a632742726a2ad1a997f0df338e9ce15788ef786d32ece916c6be",
+      "sourceHash": "72b19898904af2fb2ef636def028d80f4993715043a69c2aa29660c76ad06e5e",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "zh-CN/Contributing-to-the-Manual.md": {
       "fingerprint": "d1a6c60d6a83c97e96f3e72f1fa72517df989c6c3eb5efacd6d27b7c277ae1e4",
@@ -1809,8 +1779,8 @@
       "promptVersion": 1
     },
     "zh-CN/Getting-started.md": {
-      "fingerprint": "cbcd032b66a3cd8c4bad66cc70484988e871adbbd792bfc38beb641e63fd8b8f",
-      "sourceHash": "41e0d7ee71ac0b11cbdf06d399225423183ad58f4f18597356d3181b4a489cdb",
+      "fingerprint": "a32732e72293af359762ad008d18737bc115beb2b3c0801bc106f237fa1ab7c0",
+      "sourceHash": "ea9de38f0b0b99eac68dcdaab394886d225b1e7b0c9609b7cf3e5e50ad804d74",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1869,15 +1839,14 @@
       "promptVersion": 1
     },
     "zh-CN/Printing.md": {
-      "fingerprint": "4a2ad4383af8ccbbd203d29ddb58afb2159054e1712d21042f04f0da982bbf81",
-      "sourceHash": "ad80c5a19d86c883bdc0e9390420a6fd9733e7651cb7676f7fe0e018999c73fb",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "d6735a4bb9cd9407744b8e263387a3c04efbec2365cda7b60ab2ddd16d38e039",
+      "sourceHash": "b3e37af3bffaecbca0c607f6d51617bd1dd0c51f38a1ef58ef485ca33320424a",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "zh-CN/Reference.md": {
-      "fingerprint": "fb667cff6cbd334c74cf7d1a7bb50d88899a28e281b92d521a82788aa0428900",
-      "sourceHash": "8f8e5e86d12f4e7da9036b672650cc0cce0860bc06914e9a0d1af151a25c32f4",
+      "fingerprint": "3798365a572419e165d72cfd9343368d84bc978c948e9e23088986da8edd37e2",
+      "sourceHash": "e5557d3e87bb0abf2c06348217d3e458742944a50a62c834e33a470e38a969c3",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1906,8 +1875,8 @@
       "promptVersion": 1
     },
     "zh-CN/Symbols-and-Libraries.md": {
-      "fingerprint": "1f98a223f4090874e06d323ed25899544c28ae4c4cb510c6fbd85ba9178075ac",
-      "sourceHash": "cb337e1c2701ab21f5aae06b1c78f43b7f50fb5495caea3229c86b4f6ee37853",
+      "fingerprint": "c912340c3831b1daa49ccc215fdc866a4e2eeccfcee0b99697d2208ba2d7c91f",
+      "sourceHash": "48b4fa0439c913dd55346d97d854c4ac39b30202f7e1bd963c185b4a85b59879",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1918,11 +1887,10 @@
       "promptVersion": 1
     },
     "zh-CN/Text-and-Annotations.md": {
-      "fingerprint": "e69962c30b641b95ee0c151540c50f90a6602887631ea6f4c31d389b4f51c10a",
-      "sourceHash": "8fb57e6e518578c49bb615dfbc6a3fe4438786acadfc8c21603874dc446a227d",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "32bd3f0fe6156f2d5165517c289e94d9eba3d04635e087bda6c99eddd9207340",
+      "sourceHash": "fe92e3bdbfb47160bdca95493e660c7a6f21abf4b31914848a4681fc8ccda8af",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "zh-CN/TinyCAD-Desktop-App.md": {
       "fingerprint": "1e1d51d0d51bca12ae11d25c8b1d008e082a17e2343da1634440f84cb8da8c62",
@@ -1943,8 +1911,8 @@
       "promptVersion": 1
     },
     "zh-CN/User-guide.md": {
-      "fingerprint": "abf7468dacb9ded2b0d5d8d1b7f4f30b5eae93653d0a50dd29cabdf73f17b651",
-      "sourceHash": "6ebfef933cb8d724928776d63a55643de92e343687355dbef126e5280b7348cd",
+      "fingerprint": "9901139e2679e7f91ca8cf1b869d44ca803217e6d4bc4ee8c58054b9cacb00df",
+      "sourceHash": "c4c1458960d01c3b155e255a9ec8456629c50407f3f804657376bc3f3c0c7c00",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1974,8 +1942,230 @@
       "promptVersion": 1
     },
     "zh-CN/index.md": {
-      "fingerprint": "41fedab4a4e13ee7a0be4bfd9cc077f36055178976e7da5b50ddd11e2913bede",
-      "sourceHash": "6f911793d2240d3ce9d417fc2a10afeabb4d75c1a00d92dc5e0b2a714261332c",
+      "fingerprint": "ec992696b1ddee93c7556bd69b7afef3778bfbef84e4cab56aec507c497cf23e",
+      "sourceHash": "6aef0fca25c19fdebc0d6aa67375b074dea478986a473985c761a492acd27699",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "nl/Annotations.md": {
+      "fingerprint": "766afe2608cc8704323899391bf3252d89eac11adb48ed2cccdce4a50972fd89",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "nl/Shapes.md": {
+      "fingerprint": "7dc5457322ff81b35191bf3e2b7ce1eb3759c097c55e71d92227bd7a5c47a981",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "nl/Text.md": {
+      "fingerprint": "078247d7f5c7cca60c35bc47f3b63b501eca5a93e08d1790c9ceaac7267d42f6",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "fr/Annotations.md": {
+      "fingerprint": "5f2939902080f792ad302a1156cd2f25f540d47854c9bfa9625319e7d0b20925",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "fr/Shapes.md": {
+      "fingerprint": "d83b58ed8c1a2e86b5597401e53070a6f778228191ed0eeabfafe5c8d1ac24e5",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "fr/Text.md": {
+      "fingerprint": "0d70a8300de0baa043796e6ace47b6c28789a4e869a879989b2fd6443a0b3f03",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "es/Annotations.md": {
+      "fingerprint": "e9e0fea972b14ee87fc1912cca54362f85c3ab4d4cd8debf4c754ade85524c91",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "es/Shapes.md": {
+      "fingerprint": "a767c73ba3438e6d2b7ffe5306bb4a5fc98be28a146cd724b0067bcf47a6b3e5",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "es/Text.md": {
+      "fingerprint": "093601f09b95c37e9ae64d3aa8c62cae3d8c354dcfd005c2e0c0b3463c2bdb7e",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "de/Annotations.md": {
+      "fingerprint": "4924c16c638fb056d1666829eb8fd7a4d7d54a7dcf4129e0f76d9ecdcc466cc9",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "de/Shapes.md": {
+      "fingerprint": "faa4e37516972f1be984d66941d6ac13a49072a526ac2d3bafb1181bc2fc606d",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "de/Text.md": {
+      "fingerprint": "f2f36af4aeaec46fcb41b01d1c000d0ec66d442e284cdb99841c5c94d8249f4d",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "it/Annotations.md": {
+      "fingerprint": "2fcc2eccbb58522af0b8c68c8f0671e0b2280cca9850ca723fd389c8e36bdf5a",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "it/Shapes.md": {
+      "fingerprint": "ee8ecccbf2eae85dd3d52a4cc3cefd4049453c2b14f93bd2374e711eaf65f644",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "it/Text.md": {
+      "fingerprint": "3be5d2d90bbcf6b5bebfbcf2e90ff147a77eab96e1e7557cd7337f21fe9799ac",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Annotations.md": {
+      "fingerprint": "ab4ee2fac2996bc50a7fd4be53a6371d89b9c1da221f6dfd91d9eb272f6dede3",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Contributing-to-the-Manual.md": {
+      "fingerprint": "843fb94163b617f50c6cf3195d631fd0e44431c2f555aacd3c6e8a9057d3f21f",
+      "sourceHash": "8fef1d6c181a76b51369da973ae8dc819b980ac59d786eb87b15756b7b16f8f1",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Shapes.md": {
+      "fingerprint": "8d5bca1f94439fdac97a61acc3677ce317fbc3494b6942311197b0d7cb820af2",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Text.md": {
+      "fingerprint": "50609a0c269edf2afaf84ddafb2dc6357830fe6d8e8b39cae88d5ab601d6f84a",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "pl/Annotations.md": {
+      "fingerprint": "34e45277f5be0417f3f2a2743d2e448078bffabddfedebaa1f33f14efc278995",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "pl/Shapes.md": {
+      "fingerprint": "802416f6316bceadd2c9f6ed9ab2a94d16fe757be7e5319339b4ab60b9b4286a",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "pl/Text.md": {
+      "fingerprint": "e83e3ccf76aaa5934fb1d1e194036081b7cd4efc1e2e0824334287a622fc7196",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Annotations.md": {
+      "fingerprint": "b0d6ab4eb12db275202836fdf89cfb6e64bcc844e24f855fcf579762957c9d87",
+      "sourceHash": "4dc7fb0e2cd3d56616964acdef2493dd0c6391581470bda4c28deb45de103431",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Shapes.md": {
+      "fingerprint": "67e81be4da4b046f2889aece0a194807ee1033e84d54b10b13f4f11477f6d0fc",
+      "sourceHash": "7207d93802736953e0657fdaa74a03679399c839d2257e96d34958c63de1ccf3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Text.md": {
+      "fingerprint": "6e79682aae2f8777ca4341cbbbeb6d5e1821519921577287378d204a6191ea26",
+      "sourceHash": "e36b9c2c615ecfec1621efbfb42fbafb68083b9cfed047e4242507cbb7f7d42f",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "es/Feature-Differences.md": {
+      "fingerprint": "7d8076f461395eef1d7de5df2a647d85637c398c34776360a749bb79d2228e2f",
+      "sourceHash": "b083acfa481397991b1651ac9b079e8108eebfffb0b9ef9536b0c6970e3f6c13",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "de/Netlist-Editor.md": {
+      "fingerprint": "c4ce3611c00b288532af475740f19133c7f207ac24f719b1ef64e98ff64e9303",
+      "sourceHash": "a7a9e9b045f9aa1d90f2a108d1019e7a2a10f2eb526fdc13c7a9b782312f6826",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "it/Feature-Differences.md": {
+      "fingerprint": "812f025bead5594f84aac5fda5487e63c038ba6ca615eb28f3f4e4ad688ea4de",
+      "sourceHash": "b083acfa481397991b1651ac9b079e8108eebfffb0b9ef9536b0c6970e3f6c13",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Custom-symbol-libraries.md": {
+      "fingerprint": "a3764c46824694a8d012c02769e848c3f71158affd6505d7624278b41c0fcf47",
+      "sourceHash": "413dbbb1b27ef61770de124b360554298b0aa5762499c35a74401e04708141c3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Using-Symbol-Libraries.md": {
+      "fingerprint": "690cce8a18ba678d0ffcccf38dacde87974b5879b18da3aa5d0a8d8d2cad99e0",
+      "sourceHash": "e4227bf03c65f308b1c334cdc98a5cfb3c7f4423078587fd818fbc41832f2af1",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "pl/Feature-Differences.md": {
+      "fingerprint": "26aa624b05a8794bd09af88c800d3d8327c2a5acd1a57c2f38a2c113729f19da",
+      "sourceHash": "b083acfa481397991b1651ac9b079e8108eebfffb0b9ef9536b0c6970e3f6c13",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Importing-Symbols-from-KiCAD.md": {
+      "fingerprint": "8f92c6fa1458312db2ca2fe9e1de9ccadfda6e445fcd3f1fee5e0b154b9b2efa",
+      "sourceHash": "9759b5b0254fabb7bd5260ac21b29df294adc34145b48570ae8e1b6deb3622ad",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "ja/Netlist-Editor.md": {
+      "fingerprint": "a168e999ab193ca9a28282031cbfbafdc501229871990767c91feb57e8ebfe48",
+      "sourceHash": "a7a9e9b045f9aa1d90f2a108d1019e7a2a10f2eb526fdc13c7a9b782312f6826",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Custom-symbol-libraries.md": {
+      "fingerprint": "697664c2d68f5aa9ffe38e26b88f5c440cf885852f1974cacb351b7feb7b0dff",
+      "sourceHash": "413dbbb1b27ef61770de124b360554298b0aa5762499c35a74401e04708141c3",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Editing-a-Symbol.md": {
+      "fingerprint": "1a9879d31e9894272d582b479b66fd4cbd6e91e4ccdb3b17f8ca2b551c40cd9e",
+      "sourceHash": "defa51f09e91509da3b75ef4efbdda921e57c65f5c84d80b7c0f2f3d622b97bb",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Netlist-Editor.md": {
+      "fingerprint": "8c0f5623b54ce69a7e1b767d66710f877570de7041ae429a6dadc7d5bd2b6b9f",
+      "sourceHash": "a7a9e9b045f9aa1d90f2a108d1019e7a2a10f2eb526fdc13c7a9b782312f6826",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
+    },
+    "zh-CN/Shortcuts.md": {
+      "fingerprint": "0d24220fcebf5af653496ef94fafcfbdc4cc72517685036f4e76827ad06ef994",
+      "sourceHash": "75faad29eb291166c7ccd8ffdd25cf458d4a24ba138479b0187c3a5b367dbbf0",
       "model": "gpt-6-luna",
       "promptVersion": 1
     }

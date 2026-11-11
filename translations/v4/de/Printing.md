@@ -9,7 +9,7 @@ layout: default
 ### Browser
 {: #browser}
 
-Zum Drucken im Browser verwenden Sie die Option „Als PDF exportieren“. Anschließend können Sie das PDF direkt drucken.
+Zum Drucken in einem Browser verwenden Sie die Option „Als PDF exportieren“. Anschließend können Sie die PDF-Datei direkt drucken.
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -19,7 +19,7 @@ Zum Drucken im Browser verwenden Sie die Option „Als PDF exportieren“. Ansch
 
 Verwenden Sie im Symbolleistenmenü die Option **Drucken**.
 
-Die Desktop-App öffnet einen Druckdialog Ihres Betriebssystems.
+Die Desktop-App öffnet den Druckdialog Ihres Betriebssystems.
 Wählen Sie Ihren Drucker aus, überprüfen Sie die Seiteneinstellungen und drucken Sie anschließend die Zeichnung.
 
 {% include video-player.html
@@ -33,12 +33,13 @@ Wählen Sie Ihren Drucker aus, überprüfen Sie die Seiteneinstellungen und druc
 
 ## Markdown beim Drucken und Exportieren
 {: #markdown-in-print-and-export}
+{: #markdown-in-print-and-export}
 
-Überschriften, Listen und Codeblöcke in Textfeldern behalten ihre Formatierung beim SVG-Export, beim Drucken im Browser und beim PDF-Export. SVG enthält nur das aktuelle Blatt.
+Überschriften, Listen und Codeblöcke in Textfeldern behalten ihre Formatierung beim SVG-Export, beim Drucken über den Browser und beim PDF-Export bei. In der SVG-Ausgabe ist nur das aktuelle Blatt enthalten.
 
-Zeichnung, SVG-Export und PDF verwenden dieselben SVG-Texte und Formen. Markdown-Notizen bleiben Vektorgrafiken und behalten die gewählte Grundschrift und Formatierung bei.
+Für die Zeichnung, den SVG-Export und die PDF-Datei werden dieselben SVG-Texte und -Formen verwendet. Markdown-Notizen bleiben Vektorgrafiken und bewahren die gewählte Grundschriftart sowie die Formatierung.
 
-[Markdown-Textfelder](../Text-and-Annotations/#markdown-text-boxes).
+[Markdown-Textfelder](../Text/#markdown-text-boxes).
 
 ## SVG-Export
 {: #svg-export}
@@ -48,9 +49,9 @@ Hinweise:
 
 - Der SVG-Export enthält nur das aktuelle Blatt (einseitiges Format).
 - Kostenlose SVG-zu-DXF-Konverter sind online verfügbar.
-- Siehe [Seitengröße](../Page-Size/), wenn Sie die Blattabmessungen vor dem Drucken oder Exportieren anpassen müssen.
-- Siehe [Konstruktionsdetailsfeld](../Design-Details-box/), wenn die Angaben im Schriftfeld in die Ausgabe aufgenommen werden sollen.
-- Siehe [Zeichnungen mit mehreren Blättern](../Multiple-Sheet-Drawings/), wenn Ihr Entwurf mehr als ein Blatt umfasst.
+- Siehe [Seitengröße](../Page-Size/), wenn Sie vor dem Drucken oder Exportieren die Blattabmessungen anpassen müssen.
+- Siehe [Feld „Designdetails“](../Design-Details-box/), wenn die Details des Schriftfelds in die Ausgabe aufgenommen werden sollen.
+- Siehe [Zeichnungen mit mehreren Blättern](../Multiple-Sheet-Drawings/), wenn Ihr Design mehr als ein Blatt umfasst.
 
 - Zurück zu [Zeichnung](../User-guide/)
 - Zurück zu [Inhalt von v4](../CONTENTS/)

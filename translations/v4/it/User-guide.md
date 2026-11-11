@@ -2,27 +2,28 @@
 layout: default
 ---
 # TinyCAD - Disegno
-{: #tinycad-v4---drawing}
+{: #tinycad---drawing}
 
-Questa sezione illustra il flusso di lavoro di disegno di base, inclusa la configurazione del primo disegno,
-le etichette, i bus, i collegamenti non connessi, le annotazioni e la stampa.
+Questa sezione illustra il flusso di lavoro principale per il disegno, incluse la configurazione del primo disegno,
+le etichette, i bus, le connessioni non collegate, le annotazioni e la stampa.
 
 ## Nascondere temporaneamente gli oggetti
 {: #temporarily-hiding-objects}
 
-Per raggiungere gli oggetti che si trovano sotto una parte affollata del disegno:
+Per raggiungere gli oggetti sotto una parte affollata del disegno:
 
 1. Selezionare gli oggetti che si desidera spostare momentaneamente.
-2. Aprire il menu contestuale del disegno (fare clic con il pulsante destro oppure tenere premuto su uno schermo tattile)
-   e scegliere **Nascondi selezionati (Hide selected)**.
-3. Al termine, aprire il menu contestuale e scegliere **Mostra tutti gli oggetti nascosti (Show all hidden objects)**
+2. Aprire il menu contestuale del disegno (fare clic con il pulsante destro oppure tenere premuto su un touchscreen)
+   e scegliere **Nascondi selezionati**.
+3. Al termine, aprire il menu contestuale e scegliere **Mostra tutti gli oggetti nascosti**
    per ripristinare tutti gli oggetti nascosti nel foglio corrente.
 
 Gli oggetti nascosti non possono essere selezionati nell'area di disegno mentre sono nascosti. Nascondere gli oggetti è un'impostazione
-visiva temporanea: non elimina gli oggetti né salva nel file di disegno un flag di visibilità. Gli oggetti nascosti continuano a partecipare alla connettività elettrica e
-agli elenchi delle reti, e vengono comunque inclusi nell'output stampato e PDF.
+visiva temporanea: non elimina gli oggetti né salva un flag di visibilità nel file del
+Disegno. Gli oggetti nascosti continuano a partecipare alla connettività elettrica e agli
+elenchi di rete e compaiono comunque nell'output stampato e PDF.
 
-Per i gesti sul touchscreen e il posizionamento preciso, vedere [Controlli touch](../Touch-controls/).
+Per i gesti touchscreen e il posizionamento preciso, vedere [Controlli touch](../Touch-controls/).
 
 ## Pagine
 {: #pages}

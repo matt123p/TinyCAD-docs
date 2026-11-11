@@ -2,26 +2,30 @@
 layout: default
 ---
 # TinyCAD - Tekenen
-{: #tinycad-v4---drawing}
+{: #tinycad---drawing}
 
-Dit gedeelte behandelt de belangrijkste tekenbewerkingen, waaronder het instellen
-van de eerste tekening, labels, bussen, niet-verbonden aansluitingen, annotaties en afdrukken.
+In dit gedeelte wordt de basisworkflow voor tekenen behandeld, waaronder het
+instellen van de eerste tekening, labels, bussen, niet-verbindingen, annotaties
+en afdrukken.
 
 ## Objecten tijdelijk verbergen
 {: #temporarily-hiding-objects}
 
-Zo bereikt u objecten onder een druk gedeelte van een tekening:
+Zo bereikt u objecten die zich onder een druk deel van een tekening bevinden:
 
-1. Selecteer de objecten die u uit de weg wilt halen.
+1. Selecteer de objecten die u uit de weg wilt zetten.
 2. Open het contextmenu van de tekening (klik met de rechtermuisknop of houd
-   uw vinger op het scherm) en kies **Geselecteerde verbergen**.
-3. Open na afloop het contextmenu en kies **Alle verborgen objecten weergeven**
-   om alle verborgen objecten op het huidige blad weer zichtbaar te maken.
+   ingedrukt op een touchscreen) en kies **Geselecteerde verbergen (Hide selected)**.
+3. Open na afloop het contextmenu en kies **Alle verborgen objecten weergeven
+   (Show all hidden objects)** om alle verborgen objecten op het huidige blad
+   terug te zetten.
 
-Verborgen objecten kunnen niet op het tekenblad worden geselecteerd zolang ze verborgen zijn. Verbergen is een
-tijdelijke weergave-instelling: objecten worden niet verwijderd en er wordt geen verborgen-vlag in het
-tekeningbestand opgeslagen. Verborgen objecten blijven deelnemen aan de elektrische verbindingen en
-netlijsten, en worden nog steeds weergegeven in afgedrukte en PDF-uitvoer.
+Verborgen objecten kunnen niet op het tekengebied worden geselecteerd zolang ze
+verborgen zijn. Verbergen is een tijdelijke weergave-instelling: objecten worden
+hierdoor niet verwijderd en er wordt geen verborgen-vlag in het tekeningbestand
+opgeslagen. Verborgen objecten blijven deelnemen aan de elektrische
+connectiviteit en netlijsten, en worden nog steeds weergegeven in afdrukken en
+PDF-uitvoer.
 
 Zie [Aanraakbediening](../Touch-controls/) voor aanraakgebaren en nauwkeurige plaatsing.
 

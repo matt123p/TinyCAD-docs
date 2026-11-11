@@ -2,26 +2,26 @@
 layout: default
 ---
 # TinyCAD-Handbuch
-{: #tinycad-v4-manual}
+{: #tinycad-manual}
 
-TinyCAD v4 ist sowohl als Desktop-Anwendung als auch als browserbasierte Online-Anwendung verfügbar. Zwischen den beiden Versionen gibt es nur
-eine geringe Anzahl an Funktionsunterschieden.
+TinyCAD v4 ist sowohl als Desktop-App als auch als browserbasierte Online-App verfügbar. Zwischen den beiden Versionen gibt es nur
+eine kleine Anzahl von Funktionsunterschieden.
 
-Auf der Seite [Funktionsunterschiede](Feature-Differences/) finden Sie die genauen Unterschiede zwischen den TinyCAD-Versionen.
+Rufen Sie die Seite [Funktionsunterschiede](Feature-Differences/) auf, wenn Sie die genauen Unterschiede zwischen den TinyCAD-Versionen erfahren möchten.
 
 ## Warnung
 {: #warning}
 
-**TinyCAD** wird als Open-Source-Projekt von einer Community entwickelt und kostenlos bereitgestellt. Die Software wird „wie besehen“ bereitgestellt und kann Fehler oder unvollständige Funktionen enthalten.  
+**TinyCAD** wird als Open-Source-Projekt, getragen von der Community, kostenlos entwickelt und bereitgestellt. Die Software wird „wie besehen“ bereitgestellt und kann Fehler oder unvollständige Funktionen enthalten.  
 
-Sie sind dafür verantwortlich, Ihre Arbeit zu sichern und Datenverlust zu verhindern. Sie sind dafür verantwortlich, vor dem Aufbau von Schaltungen oder dem Drucken von PCBs sorgfältige Prüfungen vorzunehmen.
+Es liegt in Ihrer Verantwortung, Ihre Arbeit zu sichern und Datenverlust zu verhindern. Es liegt in Ihrer Verantwortung, Schaltungen und den Druck von PCBs sorgfältig zu überprüfen.
 
 ## Zu diesem Handbuch beitragen
 {: #contribute-to-this-manual}
 
 Das TinyCAD-Handbuch ist Open Source und wird auf GitHub Pages gepflegt.
 Beiträge aus der Community sind willkommen, darunter Korrekturen von Tippfehlern, klarere Formulierungen,
-neue Screenshots und erweiterte Beispiele.
+neue Screenshots und ausführlichere Beispiele.
 
 - [So können Sie zum Handbuch beitragen](Contributing-to-the-Manual/)
 
@@ -30,7 +30,7 @@ neue Screenshots und erweiterte Beispiele.
 
 - [Erste Schritte](Getting-started/)
 - [Zeichnen](User-guide/)
-- [Symbole und Bibliotheken](Symbols-and-Libraries/)
+- [Symbole & Bibliotheken](Symbols-and-Libraries/)
 - [Erweitert](Advanced/)
 - [Referenz](Reference/)
 - [Änderungsprotokoll](Changelog/)

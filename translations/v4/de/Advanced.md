@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-# TinyCAD – Fortgeschrittene Themen
-{: #tinycad-v4---advanced}
+# TinyCAD – Erweitert
+{: #tinycad---advanced}
 
-Dieser Abschnitt behandelt fortgeschrittene Bearbeitungs-, Validierungs- und Ausgabeabläufe.
+In diesem Abschnitt geht es um erweiterte Bearbeitungs-, Validierungs- und Ausgabeabläufe.
 
 ## Seiten
 {: #pages}
@@ -23,4 +23,4 @@ Dieser Abschnitt behandelt fortgeschrittene Bearbeitungs-, Validierungs- und Aus
 {% endfor %}
 {% endif %}
 
-- Zurück zu [Inhalt von v4](../CONTENTS/)
+- Zurück zum [Inhaltsverzeichnis von v4](../CONTENTS/)

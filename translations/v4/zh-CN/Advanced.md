@@ -2,7 +2,7 @@
 layout: default
 ---
 # TinyCAD - 高级
-{: #tinycad-v4---advanced}
+{: #tinycad---advanced}
 
 本节介绍高级编辑、验证和输出工作流程。
 

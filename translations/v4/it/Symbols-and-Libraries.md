@@ -2,10 +2,10 @@
 layout: default
 ---
 # TinyCAD - Simboli e librerie
-{: #tinycad-v4---symbols--libraries}
+{: #tinycad---symbols--libraries}
 
 Questa sezione illustra l’uso dei simboli e i flussi di lavoro delle librerie, inclusi l’importazione,
-la modifica e la gestione di librerie personalizzate.
+la modifica e la gestione delle librerie personalizzate.
 
 ## Pagine
 {: #pages}
@@ -24,4 +24,4 @@ la modifica e la gestione di librerie personalizzate.
 {% endfor %}
 {% endif %}
 
-- Torna a [contenuti di v4](../CONTENTS/)
+- Torna ai [contenuti v4](../CONTENTS/)

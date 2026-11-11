@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-# TinyCAD — dokumentacja
-{: #tinycad-v4---reference}
+# TinyCAD — Dokumentacja
+{: #tinycad---reference}
 
 Ta sekcja stanowi punkt wyjścia do materiałów referencyjnych przeniesionych
-z dawnego podręcznika online.
+obecnie ze starszej wersji podręcznika online.
 
 ## Strony
 {: #pages}

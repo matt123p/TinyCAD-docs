@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-# TinyCAD - リファレンス
-{: #tinycad-v4---reference}
+# TinyCAD - 参考資料
+{: #tinycad---reference}
 
-このセクションは、従来のオンラインマニュアルから現在移行中の
-リファレンス資料への入口です。
+このセクションは、旧オンラインマニュアルから現在移行されている
+参考資料の入口です。
 
 ## ページ
 {: #pages}
@@ -24,4 +24,4 @@ layout: default
 {% endfor %}
 {% endif %}
 
-- [v4の目次に戻る](../CONTENTS/)
+- [v4 の目次に戻る](../CONTENTS/)

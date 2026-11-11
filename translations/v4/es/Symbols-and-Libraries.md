@@ -2,9 +2,9 @@
 layout: default
 ---
 # TinyCAD - Símbolos y bibliotecas
-{: #tinycad-v4---symbols--libraries}
+{: #tinycad---symbols--libraries}
 
-Esta sección abarca el uso de símbolos y los flujos de trabajo de bibliotecas, incluida la importación,
+Esta sección abarca el uso de símbolos y los flujos de trabajo con bibliotecas, incluida la importación,
 la edición y la gestión de bibliotecas personalizadas.
 
 ## Páginas
@@ -24,4 +24,4 @@ la edición y la gestión de bibliotecas personalizadas.
 {% endfor %}
 {% endif %}
 
-- Volver al [contenido de v4](../CONTENTS/)
+- Volver a [contenido de v4](../CONTENTS/)

@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-# TinyCAD - Zaawansowane
-{: #tinycad-v4---advanced}
+# TinyCAD — zaawansowane
+{: #tinycad---advanced}
 
-Ta sekcja omawia zaawansowaną edycję, weryfikację i procedury tworzenia danych wyjściowych.
+Ta sekcja opisuje zaawansowane procesy edycji, weryfikacji i generowania danych wyjściowych.
 
 ## Strony
 {: #pages}
@@ -23,4 +23,4 @@ Ta sekcja omawia zaawansowaną edycję, weryfikację i procedury tworzenia danyc
 {% endfor %}
 {% endif %}
 
-- Wróć do [spisu treści v4](../CONTENTS/)
+- Powrót do [spisu treści v4](../CONTENTS/)

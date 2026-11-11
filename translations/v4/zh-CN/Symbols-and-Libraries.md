@@ -2,7 +2,7 @@
 layout: default
 ---
 # TinyCAD - 符号与库
-{: #tinycad-v4---symbols--libraries}
+{: #tinycad---symbols--libraries}
 
 本节介绍符号的使用和库工作流程，包括导入、
 编辑和自定义库管理。
@@ -24,4 +24,4 @@ layout: default
 {% endfor %}
 {% endif %}
 
-- 返回 [v4 目录](../CONTENTS/)
+- 返回 [v4 内容](../CONTENTS/)

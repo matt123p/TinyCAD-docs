@@ -73,9 +73,9 @@ test('localized terms find translated notes and return links in that language', 
   for (const language of languages) {
     const { context } = browser(language);
     const payload = await context.searchTest.loadIndex('v4');
-    const target = language === 'en' ? '/v4/Text/' : `/v4/${language}/Text-and-Annotations/`;
+    const target = language === 'en' ? '/v4/Text/' : `/v4/${language}/Text/`;
     const wanted = payload.docs.find(doc => doc.url === target);
-    const query = language === 'en' || project.current(language, 'Text-and-Annotations.md') ? queries[language] : wanted.title;
+    const query = language === 'en' || project.current(language, 'Text.md') ? queries[language] : wanted.title;
     let matches;
     if (payload.engine === 'lunr') {
       await context.searchTest.loadLunr();

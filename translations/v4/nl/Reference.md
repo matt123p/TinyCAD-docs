@@ -2,7 +2,7 @@
 layout: default
 ---
 # TinyCAD - Referentie
-{: #tinycad-v4---reference}
+{: #tinycad---reference}
 
 Dit gedeelte is het startpunt voor referentiemateriaal dat momenteel is overgezet uit
 de oude onlinehandleiding.
@@ -24,4 +24,4 @@ de oude onlinehandleiding.
 {% endfor %}
 {% endif %}
 
-- Terug naar [v4-inhoud](../CONTENTS/)
+- Terug naar [inhoudsopgave v4](../CONTENTS/)

@@ -2,30 +2,29 @@
 layout: default
 ---
 # TinyCAD - Dessin
-{: #tinycad-v4---drawing}
+{: #tinycad---drawing}
 
-Cette section couvre le flux de travail essentiel du dessin, notamment la
-configuration du premier dessin, les étiquettes, les bus, les non-connexions,
-les annotations et l’impression.
+Cette section présente les principales étapes du dessin, notamment la
+configuration du premier dessin, les étiquettes, les bus, les connexions
+absentes, les annotations et l’impression.
 
 ## Masquer temporairement des objets
 {: #temporarily-hiding-objects}
 
 Pour accéder aux objets situés sous une zone encombrée du dessin :
 
-1. Sélectionnez les objets que vous souhaitez mettre de côté.
-2. Ouvrez le menu contextuel du dessin (clic droit ou appui prolongé sur un écran tactile)
-   et choisissez **Masquer les objets sélectionnés (Hide selected)**.
-3. Une fois terminé, ouvrez le menu contextuel et choisissez **Afficher tous les objets masqués (Show all hidden objects)**
-   pour restaurer tous les objets masqués sur la feuille actuelle.
+1. Sélectionnez les objets que vous souhaitez écarter.
+2. Ouvrez le menu contextuel du dessin (clic droit ou appui long sur un écran tactile)
+   et choisissez **Masquer la sélection**.
+3. Une fois terminé, ouvrez le menu contextuel et choisissez **Afficher tous les objets masqués**
+   pour rétablir tous les objets masqués sur la feuille active.
 
-Les objets masqués ne peuvent pas être sélectionnés sur le canevas tant qu’ils sont
-masqués. Le masquage est un réglage d’affichage temporaire : il ne supprime pas les
-objets et n’enregistre pas d’indicateur de masquage dans le fichier de dessin. Les
-objets masqués participent toujours à la connectivité électrique et aux listes de
-réseaux, et apparaissent toujours dans les sorties imprimées et PDF.
+Les objets masqués ne peuvent pas être sélectionnés sur la zone de dessin tant qu’ils sont masqués. Le masquage est un
+paramètre d’affichage temporaire : il ne supprime pas les objets et n’enregistre pas d’indicateur de masquage dans le
+fichier de dessin. Les objets masqués participent toujours à la connectivité électrique et aux
+listes de connexions, et apparaissent toujours dans les sorties imprimées et PDF.
 
-Pour les gestes sur écran tactile et le placement précis, voir [Commandes tactiles](../Touch-controls/).
+Pour les gestes tactiles et le placement précis, consultez [Commandes tactiles](../Touch-controls/).
 
 ## Pages
 {: #pages}
@@ -44,4 +43,4 @@ Pour les gestes sur écran tactile et le placement précis, voir [Commandes tact
 {% endfor %}
 {% endif %}
 
-- Retour à la [table des matières v4](../CONTENTS/)
+- Retour au [sommaire v4](../CONTENTS/)
