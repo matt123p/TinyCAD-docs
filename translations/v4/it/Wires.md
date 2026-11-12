@@ -4,44 +4,46 @@ layout: default
 # Fili
 {: #wires}
 
-I fili sono le connessioni elettricamente attive in uno schema TinyCAD.
+I fili sono i collegamenti elettricamente attivi in uno schema TinyCAD.
 
-Se servono connessioni per il controllo DRC, la generazione di netlist, l’esportazione SPICE/PCB o il collegamento tra fogli,
-utilizzare oggetti filo (non linee di annotazione).
+Se ti serve la connettività per il DRC, la generazione di netlist, l'esportazione SPICE/PCB o il
+collegamento tra fogli, usa gli oggetti filo (non le linee di annotazione).
 
 ## Perché i fili sono importanti
 {: #why-wires-matter}
 
 - I fili definiscono le reti elettriche.
 - I fili si agganciano ai pin dei simboli e ad altri punti di connessione validi.
-- TinyCAD utilizza la connettività dei fili per il controllo delle regole e la generazione degli output.
+- TinyCAD usa la connettività dei fili per il controllo delle regole e per generare gli output.
 
-L’uso di linee di annotazione al posto dei fili può sembrare corretto a livello visivo, ma il
+L'uso di linee di annotazione al posto dei fili può sembrare corretto dal punto di vista visivo, ma il
 circuito risulterà elettricamente scollegato per gli strumenti.
 
 ## Modalità di instradamento dei fili
 {: #wire-routing-modes}
+{: #wire-routing-modes}
 
-In TinyCAD v4.0.11, usare il selettore accanto a Filo (Wire) per scegliere come tracciare i nuovi segmenti.
+In TinyCAD v4.0.11, usa il selettore accanto a Wire per scegliere come disegnare i nuovi segmenti.
 
 | Modalità | Comportamento |
 |---|---|
 | **90°** | Instradamento orizzontale e verticale. |
-| **45°** | Instradamento limitato alle direzioni a 45° di TinyCAD. |
-| **Libero (Free)** | Segmenti rettilinei con qualsiasi angolo. |
+| **45°** | Instradamento vincolato alle direzioni a 45° di TinyCAD. |
+| **Libera** | Segmenti rettilinei con qualsiasi angolazione. |
 
-La scelta di una modalità attiva Filo e mantiene l’anteprima del filo in corso. È possibile cambiare modalità prima di posizionare il segmento successivo. L’aggancio alla griglia rimane un’impostazione separata. Lo strumento adiacente per il cablaggio punto a punto è indipendente da questo selettore.
+La scelta di una modalità attiva Wire e mantiene l'eventuale anteprima del filo attiva. Puoi cambiare modalità prima di posizionare il segmento successivo. L'aggancio alla griglia resta un'impostazione separata. Per instradare automaticamente un collegamento tra due punti di connessione, usa lo [strumento Filo da punto a punto](#auto-routing).
 
-![Selettore della barra dei fili con le opzioni 90°, 45° e Libero (Free).](../images/wire-routing-modes.png)
+![Selettore della barra degli strumenti per i fili, con le opzioni 90°, 45° e Libera.](../images/wire-routing-modes.png)
 
 ## Posizionamento dei fili
 {: #placing-wires}
+{: #placing-wires}
 
-1. Selezionare lo strumento Filo.
-2. Fare clic per iniziare da un punto di connessione valido, anche se non è strettamente necessario.  È possibile posizionare un filo ovunque.  Si può capire se il punto di connessione è valido perché la connessione sarà indicata da un cerchio rosso.
-3. Fare clic per posizionare gli angoli/i segmenti necessari.
-4. Terminare su un altro punto di connessione valido OPPURE
-5. Fare clic con il pulsante destro per terminare la modalità di cablaggio.
+1. Seleziona lo strumento Wire.
+2. Fai clic per iniziare da un punto di connessione valido, anche se non è strettamente necessario. Puoi posizionare un filo ovunque. Puoi verificare se il punto di connessione è valido perché il collegamento è indicato da un cerchio rosso.
+3. Fai clic per posizionare gli angoli/segmenti necessari.
+4. Termina su un altro punto di connessione valido OPPURE
+5. Fai clic con il pulsante destro per terminare la modalità di cablaggio.
 
 
 {% include video-player.html
@@ -58,17 +60,56 @@ La scelta di una modalità attiva Filo e mantiene l’anteprima del filo in cors
 </p>
 
 
+## Instradamento automatico con Filo da punto a punto
+{: #auto-routing-with-point-to-point-wire}
+{: #auto-routing}
+
+**Filo da punto a punto** sceglie un percorso tra due punti di connessione e posiziona
+per te i segmenti del filo. È utile per il normale utilizzo con il mouse e, in particolare,
+su un touchscreen, dove toccare due estremi è più semplice che posizionare ogni angolo.
+
+1. Seleziona **Filo da punto a punto**, accanto al selettore della modalità Wire nella barra degli strumenti.
+2. Fai clic o tocca il pin di un simbolo iniziale o un filo esistente. Un cerchio rosso indica
+   un punto di connessione valido.
+3. Sposta il puntatore sul pin o sul filo di destinazione per visualizzare l'anteprima del percorso automatico.
+4. Fai clic o tocca la destinazione per posizionare il collegamento completo. TinyCAD seleziona
+   i nuovi segmenti del filo e disattiva lo strumento di instradamento. Seleziona di nuovo **Filo da punto a
+   punto** per creare un altro collegamento.
+
+A differenza dello strumento Wire normale, entrambi gli estremi devono essere punti di connessione validi;
+facendo clic in uno spazio vuoto non si posiziona un angolo. Fai clic con il pulsante destro per annullare un
+percorso non completato. Se vuoi scegliere tu gli angoli, usa [Wire](#placing-wires).
+
+Provare il [disegno di esempio di instradamento automatico](../examples/Auto-route%20example.dsn). La resistenza e il LED sono sulla griglia, ma il collegamento tra loro è ancora aperto.
+
+Per prima cosa, selezionare Point-to-Point Wire e scegliere il pin destro di R1.
+
+![1. Iniziare con R1 e D1 non collegati tra loro. Il cerchio rosso indica il pin iniziale su R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+
+Poi puntare al pin superiore di D1. L’anteprima mostra il percorso e la sua curva prima di confermare il collegamento.
+
+![2. Visualizzare l’anteprima del percorso automatico fino a D1. Il cerchio rosso indica il pin di destinazione.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+
+Infine, fare clic o toccare il pin di D1. TinyCAD posiziona tutti i segmenti in una sola operazione.
+
+![3. Confermare la destinazione per posizionare il collegamento completo, compresa la curva.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+
+Su un touchscreen, puoi toccare direttamente i due estremi. Per pin piccoli o ravvicinati,
+usa la [lente d'ingrandimento](../Touch-controls/#precise-placement-with-the-loupe): punta
+su ciascun estremo e premi **Fai clic**. Non è necessario trascinare lungo il percorso o
+toccarne gli angoli. Controlla il collegamento completato e, se necessario, modifica i segmenti.
+
 ## Aggancio e giunzioni
 {: #snapping-and-junctions}
 
 - I fili si agganciano magneticamente ai pin e ai fili esistenti.
-- Le giunzioni vengono aggiunte automaticamente quando necessario.
-- I fili che si incrociano non sono connessi, a meno che non sia presente una giunzione.
+- Le giunzioni vengono aggiunte automaticamente dove necessario.
+- I fili che si incrociano non sono collegati, a meno che non sia presente una giunzione.
 
 ## Modifica dei fili
 {: #editing-wires}
 
-Per modificare un filo, è sufficiente fare clic su di esso.  A questo punto è possibile trascinare l’intero segmento del filo trascinando il filo stesso, oppure spostarne le estremità trascinando i riquadri di spostamento.
+Per modificare un filo, è sufficiente fare clic su di esso. Ora puoi trascinare l'intero segmento del filo trascinandolo direttamente oppure spostarne le estremità trascinando le caselle di spostamento.
 
 - Torna a [Disegno](../User-guide/)
-- Torna a [contenuti della v4](../CONTENTS/)
+- Torna a [Contenuti v4](../CONTENTS/)

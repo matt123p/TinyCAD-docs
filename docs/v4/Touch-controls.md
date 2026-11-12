@@ -16,7 +16,21 @@ precise placement. These controls work in the browser and desktop editor.
   zoom the canvas around the gesture.
 - Drag a symbol preview from the library panel onto the drawing to place it.
 
+## Auto-route wires with two taps
+{: #auto-route-wires}
+
+Use **Point-to-Point Wire** in the toolbar to connect two pins, or a pin and an
+existing wire, without placing each corner. Tap the starting connection point,
+then tap the destination. TinyCAD chooses the route and places the wire segments.
+This is useful with a mouse too, but particularly helpful on a touchscreen because
+it reduces the number of precise placements.
+
+If the endpoints are small or crowded, use the loupe's **Click** control at each
+endpoint instead of tapping the pins directly. See [auto-routing wires](../Wires/#auto-routing)
+for the full procedure and an example.
+
 ## Precise placement with the loupe
+{: #precise-placement-with-the-loupe}
 
 The loupe magnifies the area around an aiming crosshair, so your finger does not
 cover the connection point you are trying to reach.

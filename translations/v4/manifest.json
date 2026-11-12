@@ -212,8 +212,8 @@
       "promptVersion": 1
     },
     "nl/Touch-controls.md": {
-      "fingerprint": "d427199e5b6b7a92b6feb20387efc1772596466b7bc4e44d64d304a93bd4c29e",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "286f1622a4fbc2454a0b4cb278436a086a62554b979107aba78156fc210512a9",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -236,11 +236,10 @@
       "promptVersion": 1
     },
     "nl/Wires.md": {
-      "fingerprint": "a2af19a8e8064e1400344cae2118dd4027ba02f58dcc10354bb15db898b49bf3",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "ce71580e01c18eed4fafa29866455a29d91b03470c4c679dbdc0c73d86df7e68",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "nl/Your-first-drawing.md": {
       "fingerprint": "ba88793c0a33733012c1c6928e79881d49739ba1f0ffc40a08d42ced278d031e",
@@ -465,8 +464,8 @@
       "promptVersion": 1
     },
     "fr/Touch-controls.md": {
-      "fingerprint": "e7c94d004e2ea8f7b07901f0fd3d5d619738d450dff0f4ef57e071a93d3ac1dc",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "09464bea0bc9f25135315c39084e4f0783cd42b1d562d2dc5a65273cc80d30ba",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -489,11 +488,10 @@
       "promptVersion": 1
     },
     "fr/Wires.md": {
-      "fingerprint": "8c5d5f2b497c341b491466e8b4a224e599d86ec4159ce366f30ec299b359c03f",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "a87927c803885968b4f410ce0c81fcb453552a949b7be3dde5626dee392b96db",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "fr/Your-first-drawing.md": {
       "fingerprint": "f57367e71ffb18fbdd584206d55ce0f06cb1587cbfd896dadaf30094f94ae53a",
@@ -712,8 +710,8 @@
       "promptVersion": 1
     },
     "es/Touch-controls.md": {
-      "fingerprint": "bdd45cc44dbc026571e144c78b4c2d99b0389965acd70f97fbae12925b10a2ec",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "7e3837129d5558273f1203c4fa603c799993794359574952e55d6d2bae785e7e",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -736,11 +734,10 @@
       "promptVersion": 1
     },
     "es/Wires.md": {
-      "fingerprint": "1f05d52d5437d20b8cbd8ac2636ea2e364c287217115a98683b8ea06c51e7988",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "67512ec072d110a9d88b648d1673773af84d7759664c6b7bd33b1f76ed7ac3d4",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "es/Your-first-drawing.md": {
       "fingerprint": "286bf68a79bd5a80553ce4472c3d2bd62063d0670cd8e3268697466572d26dad",
@@ -959,8 +956,8 @@
       "promptVersion": 1
     },
     "de/Touch-controls.md": {
-      "fingerprint": "8037fd2c163cd2740becc8e4a184764b9fb960747dd118f412f8d35171a579b4",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "f7e356b12b85cce66ad368292ac2ea545652fefb38a481ce15717fdc220f3a7c",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -983,11 +980,10 @@
       "promptVersion": 1
     },
     "de/Wires.md": {
-      "fingerprint": "dc80df87989b13bd2223cfc1d38b46bbbdcdca38ec3ab890206aaf80a98ae552",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "c83661720081ecaa08803b7649496da40afdb5afb4eebfd529317c73521ef0d3",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "de/Your-first-drawing.md": {
       "fingerprint": "4e2d1dabb55d0e9bcb7140911859592f7299c6b73d4c9789c057e7035cf57537",
@@ -1206,8 +1202,8 @@
       "promptVersion": 1
     },
     "it/Touch-controls.md": {
-      "fingerprint": "74be61e2d611486837e8dafee31a8b82664480e39e973c93e10e7b4335dbf9be",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "ed9227bc87a9d3b626b0618ab9781d65ced14e5b09eebdb2efff53a16ee3f416",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1230,11 +1226,10 @@
       "promptVersion": 1
     },
     "it/Wires.md": {
-      "fingerprint": "c3f133669be6b910493d502b5d8afddb3aae0330b1314a74402f75dc413be993",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "6d5cb933eccb781edeae8e82f4b6db9c56dd6faf17ab237fe8f444016af0c197",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "it/Your-first-drawing.md": {
       "fingerprint": "1f91c4bcab49312e6313d5366b0b62e7621d1f138361b7824f22fa8825df9aba",
@@ -1435,8 +1430,8 @@
       "promptVersion": 1
     },
     "ja/Touch-controls.md": {
-      "fingerprint": "9e6bae57620a102209a9145a54ef5147639694e0b7ad9d7e63165aafb626d133",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "b61c3fd78847fb537d9cc13ff340a7cf8c7ed2771430e1dc8ad2efd77a2a9758",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1453,11 +1448,10 @@
       "promptVersion": 1
     },
     "ja/Wires.md": {
-      "fingerprint": "e77f4c645f2b59f93106707e3370d491308fb2ba375e34d497b484f17b23a5fe",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "593591d7769d7c4f3b599d85f15871b785047355b41bd91864c72c4d4d5eed65",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "ja/Your-first-drawing.md": {
       "fingerprint": "93d4fee2e29f9184610f2875376ef13ea0f23bcec4b65e2456b66b88dbf756fa",
@@ -1676,8 +1670,8 @@
       "promptVersion": 1
     },
     "pl/Touch-controls.md": {
-      "fingerprint": "d76bcdf977bed7d3a547b919be0189f1045570a6aca3fb3a3f9df81021ef1bb0",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "5ee2446a5de6f6b89226bc5d375aa4bab4e773bf8c6abc268c61b9e2b1deb90e",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1700,11 +1694,10 @@
       "promptVersion": 1
     },
     "pl/Wires.md": {
-      "fingerprint": "d5f3754499409a33a1a954678d63d148700821951993d0d9404f874af4859260",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "13a3e27d6ded64c9488cf28ed87edd9a1da45fbc17088313ff6c9b8469f2951a",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "pl/Your-first-drawing.md": {
       "fingerprint": "dc6a9640deeac163943a85cd44766d85a3b7102aec08867fa6f1f2952baa8594",
@@ -1905,8 +1898,8 @@
       "promptVersion": 1
     },
     "zh-CN/Touch-controls.md": {
-      "fingerprint": "3861049abe474e3abc7f7c22ebd1e67d7f23738a9e425816d65659257cf580cf",
-      "sourceHash": "4e17b825a8817cabb5ff8e1355c3617ffdb5d24f6090b84be66f3dd662baecc4",
+      "fingerprint": "c11f14f476810923b4609f51a493226c48bfeac58e4bf8ce116144b7a76da1b3",
+      "sourceHash": "9a40adf2cc66aee3754ba2d3d12302f3b5116e13c8b3796e99d2065c9a7c08a6",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1929,11 +1922,10 @@
       "promptVersion": 1
     },
     "zh-CN/Wires.md": {
-      "fingerprint": "709992d262984e0db06da93fc686986155daff7a87a9de1aefaf9d9cc5947bac",
-      "sourceHash": "6f7176249020096953acc816d012c321538758b0e84c65ab0c1d7db4da776765",
-      "model": "codex",
-      "promptVersion": 1,
-      "translationMethod": "direct"
+      "fingerprint": "11ef9c56b61b9c039ad4a7dbb974b889a97bfcb4b371480a3806d6ff58bda81e",
+      "sourceHash": "85dadb8674f75814e19875fa9b33ab444cfe1b1639fb8f87a454ad9f9728d527",
+      "model": "gpt-6-luna",
+      "promptVersion": 1
     },
     "zh-CN/Your-first-drawing.md": {
       "fingerprint": "f6eff34cec37acec0d2267d23b46894b95c5110a67fc5f327f68f801171f1077",
