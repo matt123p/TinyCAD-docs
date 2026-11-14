@@ -58,7 +58,7 @@ can quickly scan the diagram.
 ## Labels with multi-sheet drawings
 
 In a multi-sheet drawing file, labels are the normal way to connect nets between
-sheets.
+sheets. See [Multiple Sheet Drawings](../Multiple-Sheet-Drawings/) for a worked example and a video covering sheet management and cross-sheet labels.
 
 - Same label name on different sheets means the same electrical net.
 - This cross-sheet linking is used when generating netlists.
@@ -72,4 +72,4 @@ Recommended workflow:
 3. Run DRC/netlist checks to catch naming mistakes early.
 
 - Back to [Drawing](../User-guide/)
-- Back to [v4 contents](../CONTENTS/)
+- Back to [v4 contents](../)

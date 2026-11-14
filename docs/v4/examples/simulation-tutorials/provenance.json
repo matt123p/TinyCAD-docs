@@ -1,0 +1,763 @@
+{
+  "source": "https://github.com/matt123p/TinyCADv4",
+  "commit": "b1fcc9bbb046adae3fdddd25f13e7a09aa822390",
+  "scope": "English tutorial import. Page links, companion download tables and current navigation wording adapted for this manual; circuit/plot bytes preserved. Videos are re-recorded by capture-spice-manual.mjs with per-action pacing and click markers. No translations generated.",
+  "pages": 19,
+  "files": [
+    {
+      "source": "tutorials/README.md",
+      "destination": "docs/v4/Simulation-Tutorials.md",
+      "sourceSha256": "fb05f1ebd417a9bca1e606e0b9b6bccb3179c48ac6996cdb620c7468da6e2660"
+    },
+    {
+      "source": "tutorials/00-how-to-use.md",
+      "destination": "docs/v4/Tutorial-Start-Here.md",
+      "sourceSha256": "15170d92ba0f4dad9e290dc5c5e9af67d29553ec308a30f17391a2c67b452ffc"
+    },
+    {
+      "source": "tutorials/spice/01-overview.md",
+      "destination": "docs/v4/SPICE-Tutorial-01.md",
+      "sourceSha256": "52a263b499331dc3763d8b64111562c84233145e10494615fed53274fbc80db8"
+    },
+    {
+      "source": "tutorials/spice/02-dc-measurements.md",
+      "destination": "docs/v4/SPICE-Tutorial-02.md",
+      "sourceSha256": "5a531f61d374ddb2ccf1110aaff4953954566e90a42c097b656997c5ae1bb1b5"
+    },
+    {
+      "source": "tutorials/spice/03-signal-generators.md",
+      "destination": "docs/v4/SPICE-Tutorial-03.md",
+      "sourceSha256": "50e0317300c3aa696e6434280247c84f1bb6427547e1f5cb2763f59a9d433999"
+    },
+    {
+      "source": "tutorials/spice/04-transients.md",
+      "destination": "docs/v4/SPICE-Tutorial-04.md",
+      "sourceSha256": "d5ae5f2be860ad145649d1ab5820cb9a8e5bafe1833f3ffa644b3721d9aade0f"
+    },
+    {
+      "source": "tutorials/spice/05-frequency-response.md",
+      "destination": "docs/v4/SPICE-Tutorial-05.md",
+      "sourceSha256": "9b5d26f676168cab0e2df582d5708a64dfd8e6fb541f13b6102ef28f7b7e827b"
+    },
+    {
+      "source": "tutorials/spice/06-nonlinear-circuits.md",
+      "destination": "docs/v4/SPICE-Tutorial-06.md",
+      "sourceSha256": "7ae577bd1f8c63262c3a19859f34f15f99f78a7c2a0af18317a2b7d8aabe2300"
+    },
+    {
+      "source": "tutorials/spice/07-amplifier-bias.md",
+      "destination": "docs/v4/SPICE-Tutorial-07.md",
+      "sourceSha256": "4258319715c9f104d1299d79429d0feb6b1f1cf47aeaa64e5039095d7b767b76"
+    },
+    {
+      "source": "tutorials/spice/08-amplifier-frequency-response.md",
+      "destination": "docs/v4/SPICE-Tutorial-08.md",
+      "sourceSha256": "07434dca3df2a4dbe41cb690a2b654424f70b257f44ee7ac76526796b64af0a7"
+    },
+    {
+      "source": "tutorials/spice/09-amplifier-power.md",
+      "destination": "docs/v4/SPICE-Tutorial-09.md",
+      "sourceSha256": "c343128d39d36e62e6dcb19ed592dbdd047c8f7db418989b4f8093bc1f161219"
+    },
+    {
+      "source": "tutorials/spice/10-design-investigations.md",
+      "destination": "docs/v4/SPICE-Tutorial-10.md",
+      "sourceSha256": "b35c0138d173df541109550570d3ce5c46b02e72efc2264c2d0b0acf75423203"
+    },
+    {
+      "source": "tutorials/spice/11-tinycad-spice.md",
+      "destination": "docs/v4/SPICE-Tutorial-11.md",
+      "sourceSha256": "f75804b8373548eb270287302be660f5662e4d342b4413c34c4d7d9f7b87c5f2"
+    },
+    {
+      "source": "tutorials/xspice/01-overview.md",
+      "destination": "docs/v4/XSPICE-Tutorial-01.md",
+      "sourceSha256": "15620a524ae8a4fabc30e505679ff45b20980d7552912b642c3b8e19d070640f"
+    },
+    {
+      "source": "tutorials/xspice/02-gates.md",
+      "destination": "docs/v4/XSPICE-Tutorial-02.md",
+      "sourceSha256": "0659449cbbbf3a098cee913b387fc2a93029850bdda90035324fd64a8882beea"
+    },
+    {
+      "source": "tutorials/xspice/03-timing.md",
+      "destination": "docs/v4/XSPICE-Tutorial-03.md",
+      "sourceSha256": "f32ae9d50ccce5805b45c1dfc24ed1bfaee1c0202916e7787ef8b42c6847d8fe"
+    },
+    {
+      "source": "tutorials/xspice/04-flip-flops.md",
+      "destination": "docs/v4/XSPICE-Tutorial-04.md",
+      "sourceSha256": "45548432f9d8400893b88be8d0d822476abf4b97e31639ae3761f225cdd59ecd"
+    },
+    {
+      "source": "tutorials/xspice/05-counters.md",
+      "destination": "docs/v4/XSPICE-Tutorial-05.md",
+      "sourceSha256": "12f5e32ebb8ca2eb422f129d863fb9084b5d76f84f211c93a87097f5e296f55f"
+    },
+    {
+      "source": "tutorials/xspice/06-mixed-signal.md",
+      "destination": "docs/v4/XSPICE-Tutorial-06.md",
+      "sourceSha256": "e10f63abf5a01e55d1b0430eb103259ec145b54d4a285f35a4264d0de6c17a53"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-ac.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-ac.cir",
+      "sourceSha256": "5e3f7c6f2353473aa603f9471439547ac37ef76f33645b0e97463b48f72aed1b"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-ac.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-ac.dzn",
+      "sourceSha256": "f24abb40dec85b8caa661a6ee996ac5e636795e3f892ef06815ad207174026c1"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-bias.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-bias.cir",
+      "sourceSha256": "a0b4dd9097dabfd83d3917a1b5e7292bc7bd95523eee10f22fbfaf15209207f1"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-bias.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-bias.dzn",
+      "sourceSha256": "2bd9c454cf5440313c05b01370236820d5651878d6c3f5ccd4a7534291488ee6"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-clipping.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-clipping.cir",
+      "sourceSha256": "6402db9ce6fa13169a8497247042c63c65c3d03b1d76f8297b10ee25e48a0de2"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-clipping.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-clipping.dzn",
+      "sourceSha256": "8c0a2d35ad848d55d89547e7021fb12c0253db7adf011295070990cd41941d99"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-small-signal.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-small-signal.cir",
+      "sourceSha256": "a34ee10471de06801c2548fd844b77d840678435be0814f1edc5c8c85801f23a"
+    },
+    {
+      "source": "tutorials/spice/circuits/amp-small-signal.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/amp-small-signal.dzn",
+      "sourceSha256": "4358f46fd4b36743dc0d9f303938b30632bce335e0699df8fe42530335ca865c"
+    },
+    {
+      "source": "tutorials/spice/circuits/controlled-source.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/controlled-source.cir",
+      "sourceSha256": "66e8af57a944add1f98e7a5f7db9166ecc6642e4b92ba2d7b7923654e8d2de52"
+    },
+    {
+      "source": "tutorials/spice/circuits/controlled-source.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/controlled-source.dzn",
+      "sourceSha256": "4100b26f2f3eaa23ba12b3d3b09e048c8d39a6f86f93b01cfc0965426dc9856b"
+    },
+    {
+      "source": "tutorials/spice/circuits/dc-sweep.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/dc-sweep.cir",
+      "sourceSha256": "65531129f1dbd3d2297b51d963a2944eaa1d457f832d51028c96ee98d895cc98"
+    },
+    {
+      "source": "tutorials/spice/circuits/dc-sweep.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/dc-sweep.dzn",
+      "sourceSha256": "287ff43b03df30f5e62668ef8648bdf0dc31a9e58d61e192d11ef5f8df85db5a"
+    },
+    {
+      "source": "tutorials/spice/circuits/divider.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/divider.cir",
+      "sourceSha256": "553f6c6fb535de2fc0a0367cf330d0c9103ea21fcadeaa17ea1e503e776d2838"
+    },
+    {
+      "source": "tutorials/spice/circuits/divider.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/divider.dzn",
+      "sourceSha256": "9742431f8d7e9a041db1a1ebf70917f99de41bc55851838b9334905920136cc5"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-ac.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-ac.cir",
+      "sourceSha256": "b2e09d7a7da7f2c189a89d63d2545512f7bf3a368b1bc6dd09bf0af5fb7db671"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-ac.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-ac.dzn",
+      "sourceSha256": "fcec28066a3b2f255a4a455ba36e82fdbc42fdbd954a7e31e700f6d152535219"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-noise.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-noise.cir",
+      "sourceSha256": "8d9b7a8e0036c1804cb6218285da20f796f2143e0f71612b7cd668677c828fdb"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-noise.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-noise.dzn",
+      "sourceSha256": "2e060005b8747bf7f405ab414dced4f3d25a5e0fba7ead617262dbb0b115afd3"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-pz.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-pz.cir",
+      "sourceSha256": "0777ec5dde7c8e92be3bd3b02d7a9779b24256aad7d30b163b218da99caa9b59"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-pz.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-pz.dzn",
+      "sourceSha256": "f25386e4670f2568161861999d46f756d2d710113927a642234e666e606f6c23"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-step.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-step.cir",
+      "sourceSha256": "6ede311eeb7d94ece964d604d32dda19b45c9102f39613afe1ad8acd84ff868d"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-step.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-step.dzn",
+      "sourceSha256": "557e24473c167d227d2de53f159db6f7275f6701f6b7c7286827fbecd8b405ad"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-tf.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-tf.cir",
+      "sourceSha256": "1c8edc5e80bd031acc345f744f2bbcdf6726c4023be30c6eff23dcdfa4ae45fe"
+    },
+    {
+      "source": "tutorials/spice/circuits/rc-tf.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rc-tf.dzn",
+      "sourceSha256": "d7030709c180f5fb6c50f0817c3c7d4835178c8f9008647c9641b53bf9f3dfe4"
+    },
+    {
+      "source": "tutorials/spice/circuits/rectifier.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rectifier.cir",
+      "sourceSha256": "58f9bd971109c10f1129922c1e6747df66a3be0ebf7eddb1619cf9f2ff25b2fe"
+    },
+    {
+      "source": "tutorials/spice/circuits/rectifier.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/rectifier.dzn",
+      "sourceSha256": "22cf625c932b2c0e8df74d62a69bb20cc2f1b3480f0f22a538fe81e6d8c9aaa3"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-current.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-current.cir",
+      "sourceSha256": "f3ca7873aa19b6a2c4e43a36fdeb874598d36f34985829d047869b35d65ef778"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-current.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-current.dzn",
+      "sourceSha256": "fd09c78e12c303e0cc2cd5a63867d25c66e601441496e7588100d3bd9411fc33"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-dc.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-dc.cir",
+      "sourceSha256": "afee4a481c2b1b6a763125f53f7e8d8f2456d6694c2f6dd403499fc7893be4d5"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-dc.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-dc.dzn",
+      "sourceSha256": "774496383af4bdaaf9488412ef852869a020111d495e6b4a3c0195f03d34c2b2"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-exponential.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-exponential.cir",
+      "sourceSha256": "716bd7a08802744aca22506924d316c3eb56269990635db1255cb48f1bc79bac"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-exponential.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-exponential.dzn",
+      "sourceSha256": "fd78ad559c08eeb4190ef6d4b488ac62f2a5e8627169b58bf1cb824076033da3"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-fm.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-fm.cir",
+      "sourceSha256": "d7f024283ce0eb987f9053f9ef9ebfcbf36406abef7fb30484521eca1d23a5e4"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-fm.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-fm.dzn",
+      "sourceSha256": "68303d07c4ba193527e140cca75ab86e104d9522be4404b24a37f7d76e09e877"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-pulse.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-pulse.cir",
+      "sourceSha256": "9f8806e03c6ca8c5fd7302f45b64af20279e2fcf9f68dc0621d3f909cef555e3"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-pulse.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-pulse.dzn",
+      "sourceSha256": "4ef23e3fc755fd9a2e2ab4d5cf0debc353bae22f5775ce6d3b048d481da9cebf"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-pwl.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-pwl.cir",
+      "sourceSha256": "cab57c9a0703415a75ce3ff90e68b8aae6464c8e0254ddf784899f45d4d24b16"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-pwl.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-pwl.dzn",
+      "sourceSha256": "797c55084691b625f6d01e642a290e4056e8a770ac1494f946f18312f6bf042f"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-sine.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-sine.cir",
+      "sourceSha256": "8def2287204a1f6eb18cb55881aa5fa0b899934303fa6d51b8b35ec942bcf4b2"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-sine.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-sine.dzn",
+      "sourceSha256": "f4118c804e607749acaee630a4008a2a8ad55f55acbf3b113ee40f2b77279dd0"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-triangle.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-triangle.cir",
+      "sourceSha256": "b18446e58031ac5b557ec07ac3a6ac4ac39a5b0d7d6a33a3e02cfd85b87f6fc2"
+    },
+    {
+      "source": "tutorials/spice/circuits/source-triangle.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/spice/source-triangle.dzn",
+      "sourceSha256": "a53d546e1acc125589bedf3f7ca6042c78e3a99bc61f367990668fa8d6779795"
+    },
+    {
+      "source": "tutorials/spice/images/amp-ac-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-ac-circuit.png",
+      "sourceSha256": "1a19810448ef919da1ec3a26006ca94542fc017c57a3b5057ce43d3e21eead8f"
+    },
+    {
+      "source": "tutorials/spice/images/amp-ac-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-ac-circuit.svg",
+      "sourceSha256": "32b543c38017b0087df056ecdd1f93a48763df219e442430b62adf9838babda8"
+    },
+    {
+      "source": "tutorials/spice/images/amp-ac-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-ac-results.png",
+      "sourceSha256": "90a183940d9e4b8646104d723d55f87fae20915bbee150d25e0fb5007a6f41c4"
+    },
+    {
+      "source": "tutorials/spice/images/amp-bias-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-bias-circuit.png",
+      "sourceSha256": "1a19810448ef919da1ec3a26006ca94542fc017c57a3b5057ce43d3e21eead8f"
+    },
+    {
+      "source": "tutorials/spice/images/amp-bias-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-bias-circuit.svg",
+      "sourceSha256": "32b543c38017b0087df056ecdd1f93a48763df219e442430b62adf9838babda8"
+    },
+    {
+      "source": "tutorials/spice/images/amp-clipping-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-clipping-circuit.png",
+      "sourceSha256": "1a19810448ef919da1ec3a26006ca94542fc017c57a3b5057ce43d3e21eead8f"
+    },
+    {
+      "source": "tutorials/spice/images/amp-clipping-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-clipping-circuit.svg",
+      "sourceSha256": "32b543c38017b0087df056ecdd1f93a48763df219e442430b62adf9838babda8"
+    },
+    {
+      "source": "tutorials/spice/images/amp-clipping-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-clipping-results.png",
+      "sourceSha256": "4c4be54b5b76cf630929f286ac4411ef6f3559aa6ba8b63796b47b418f3de7f1"
+    },
+    {
+      "source": "tutorials/spice/images/amp-small-signal-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-small-signal-circuit.png",
+      "sourceSha256": "1a19810448ef919da1ec3a26006ca94542fc017c57a3b5057ce43d3e21eead8f"
+    },
+    {
+      "source": "tutorials/spice/images/amp-small-signal-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-small-signal-circuit.svg",
+      "sourceSha256": "32b543c38017b0087df056ecdd1f93a48763df219e442430b62adf9838babda8"
+    },
+    {
+      "source": "tutorials/spice/images/amp-small-signal-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/amp-small-signal-results.png",
+      "sourceSha256": "9234a6fa86061aec9ee636d09d767e14d147e66fee71761678b44f7948e4c609"
+    },
+    {
+      "source": "tutorials/spice/images/controlled-source-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/controlled-source-circuit.png",
+      "sourceSha256": "f4997572e26c49c81dfc23401fce5aabbe4e134abf1a5943dbe8d20c9d05c733"
+    },
+    {
+      "source": "tutorials/spice/images/controlled-source-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/controlled-source-circuit.svg",
+      "sourceSha256": "472bd52b9628bc9d8164bd348c68d217dcf4ec0b2b267ce65024c5a83e791104"
+    },
+    {
+      "source": "tutorials/spice/images/dc-sweep-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/dc-sweep-circuit.png",
+      "sourceSha256": "3a1e61bdddb49ab19bca7da26034c16193488a6ac3281557f212d21f168d722b"
+    },
+    {
+      "source": "tutorials/spice/images/dc-sweep-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/dc-sweep-circuit.svg",
+      "sourceSha256": "f9834d94f38c4012b02639bc38df488d8134d75fa7f868aef5c24e8344a1ac67"
+    },
+    {
+      "source": "tutorials/spice/images/dc-sweep-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/dc-sweep-results.png",
+      "sourceSha256": "b6f06d1293fc7afd15f40cb55f37a2fbcda7c79a4bfcba350a38fe0f7c239d7b"
+    },
+    {
+      "source": "tutorials/spice/images/divider-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/divider-circuit.png",
+      "sourceSha256": "3a1e61bdddb49ab19bca7da26034c16193488a6ac3281557f212d21f168d722b"
+    },
+    {
+      "source": "tutorials/spice/images/divider-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/divider-circuit.svg",
+      "sourceSha256": "f9834d94f38c4012b02639bc38df488d8134d75fa7f868aef5c24e8344a1ac67"
+    },
+    {
+      "source": "tutorials/spice/images/divider-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/divider-results.png",
+      "sourceSha256": "27439c027bea4caea43a8120e4a8a32e7a01da0efb12413396c40f0e282d1607"
+    },
+    {
+      "source": "tutorials/spice/images/rc-ac-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-ac-circuit.png",
+      "sourceSha256": "5e52f54b228f3edd575d2fc3afd48de01ae75b825dbf6585745db8baeefe8aa6"
+    },
+    {
+      "source": "tutorials/spice/images/rc-ac-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-ac-circuit.svg",
+      "sourceSha256": "f5779bf99ab2d7bf8989fcb5e14091f090aa63cde7b28df40b42da4ffe183383"
+    },
+    {
+      "source": "tutorials/spice/images/rc-ac-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-ac-results.png",
+      "sourceSha256": "18ab343fabf419c3f8601005761e464660729b37705c06ed4c24cb1a7dce2e3e"
+    },
+    {
+      "source": "tutorials/spice/images/rc-noise-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-noise-circuit.png",
+      "sourceSha256": "5e52f54b228f3edd575d2fc3afd48de01ae75b825dbf6585745db8baeefe8aa6"
+    },
+    {
+      "source": "tutorials/spice/images/rc-noise-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-noise-circuit.svg",
+      "sourceSha256": "f5779bf99ab2d7bf8989fcb5e14091f090aa63cde7b28df40b42da4ffe183383"
+    },
+    {
+      "source": "tutorials/spice/images/rc-noise-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-noise-results.png",
+      "sourceSha256": "0851ee603cb824a1e801cca8dd11da7adcbbc07985ad61e73ad3ede3f94fb7ed"
+    },
+    {
+      "source": "tutorials/spice/images/rc-pz-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-pz-circuit.png",
+      "sourceSha256": "5e52f54b228f3edd575d2fc3afd48de01ae75b825dbf6585745db8baeefe8aa6"
+    },
+    {
+      "source": "tutorials/spice/images/rc-pz-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-pz-circuit.svg",
+      "sourceSha256": "f5779bf99ab2d7bf8989fcb5e14091f090aa63cde7b28df40b42da4ffe183383"
+    },
+    {
+      "source": "tutorials/spice/images/rc-step-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-step-circuit.png",
+      "sourceSha256": "ab7128b4ac8956edd27158d47f7c5fbb979915576037a09837f7e4e124c3a2ce"
+    },
+    {
+      "source": "tutorials/spice/images/rc-step-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-step-circuit.svg",
+      "sourceSha256": "29b7a43f70523f2e4739b85cb6d9738ac052182c7406ccbcd76d1768f6618d83"
+    },
+    {
+      "source": "tutorials/spice/images/rc-step-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-step-results.png",
+      "sourceSha256": "6067110f50d970b202317ad70e3ead52e5eb2eef508df1ee283fa69e11cb57bf"
+    },
+    {
+      "source": "tutorials/spice/images/rc-tf-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-tf-circuit.png",
+      "sourceSha256": "5e52f54b228f3edd575d2fc3afd48de01ae75b825dbf6585745db8baeefe8aa6"
+    },
+    {
+      "source": "tutorials/spice/images/rc-tf-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rc-tf-circuit.svg",
+      "sourceSha256": "f5779bf99ab2d7bf8989fcb5e14091f090aa63cde7b28df40b42da4ffe183383"
+    },
+    {
+      "source": "tutorials/spice/images/rectifier-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rectifier-circuit.png",
+      "sourceSha256": "e458797fac2ba0a09119b8e49f538709fc54e30655f0d1694246e2b329cd0ba4"
+    },
+    {
+      "source": "tutorials/spice/images/rectifier-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rectifier-circuit.svg",
+      "sourceSha256": "dc619a6cf37fc2345d321b25421bf0849d559ec273b636cb699be68dc4e63e19"
+    },
+    {
+      "source": "tutorials/spice/images/rectifier-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/rectifier-results.png",
+      "sourceSha256": "46e6df0b2872823aa6abfefb30d29f80d8ac977dc86133b1335fc36e906795dd"
+    },
+    {
+      "source": "tutorials/spice/images/source-current-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-current-circuit.png",
+      "sourceSha256": "405e928b8c6b5b81d2f0d4f8be56711b09cc17225de592afa9c1e2f4c3218d31"
+    },
+    {
+      "source": "tutorials/spice/images/source-current-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-current-circuit.svg",
+      "sourceSha256": "70a6c7a1c4b29e4086cef211e108c4f143261cfe72e2f1c97d795950d14d634f"
+    },
+    {
+      "source": "tutorials/spice/images/source-dc-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-dc-circuit.png",
+      "sourceSha256": "94c80a0fe28eee454d79a63a70b7cd5ecde0cbc58f8e79fb0188fc081516f9fb"
+    },
+    {
+      "source": "tutorials/spice/images/source-dc-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-dc-circuit.svg",
+      "sourceSha256": "b61668256955d2bd7118efe7536a9dd242135f09bb8b14247e1e3be8d1e2011b"
+    },
+    {
+      "source": "tutorials/spice/images/source-exponential-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-exponential-circuit.png",
+      "sourceSha256": "ec2b4bbc402a4a19eb19c8285fe333ca8d76be6470d7c761167615570e98a065"
+    },
+    {
+      "source": "tutorials/spice/images/source-exponential-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-exponential-circuit.svg",
+      "sourceSha256": "194bf178a1cb87a3b672f64266887edb2173eeaaac5d7f9ff13f0423cc258db8"
+    },
+    {
+      "source": "tutorials/spice/images/source-fm-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-fm-circuit.png",
+      "sourceSha256": "bd14fa111941027e866eee5fe267f92d8e35727434beba9518d5fd265ca0c82d"
+    },
+    {
+      "source": "tutorials/spice/images/source-fm-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-fm-circuit.svg",
+      "sourceSha256": "24f244f42e9e88cd301d741628ad3c577d8a41154fdd03831363a2ca43d9ddda"
+    },
+    {
+      "source": "tutorials/spice/images/source-pulse-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-pulse-circuit.png",
+      "sourceSha256": "1a00ed7eef98a292610de8c015904a1180e0040fad4fcdfb0151630701fd960e"
+    },
+    {
+      "source": "tutorials/spice/images/source-pulse-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-pulse-circuit.svg",
+      "sourceSha256": "9aa001774009799a56d52598a2382f1f3ec04b1ba5385386372acdba22195b65"
+    },
+    {
+      "source": "tutorials/spice/images/source-pwl-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-pwl-circuit.png",
+      "sourceSha256": "7a5042570439acfa6636b393c69537dd208c6de6b8f51cbe5ed3e9c6a51ddf44"
+    },
+    {
+      "source": "tutorials/spice/images/source-pwl-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-pwl-circuit.svg",
+      "sourceSha256": "a1e6c64cba1ad1552fdf4703535dc076945f79b30e0bfb91f4eebf99b12bf173"
+    },
+    {
+      "source": "tutorials/spice/images/source-sine-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-sine-circuit.png",
+      "sourceSha256": "40bf8e9638028f50650760f9d94ee028315e7350f2c21766f43abaeb3753a33c"
+    },
+    {
+      "source": "tutorials/spice/images/source-sine-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-sine-circuit.svg",
+      "sourceSha256": "090cc68eeab540c6261e1a47fe40f99e08635930f4ce6c5fcfc3da418b531193"
+    },
+    {
+      "source": "tutorials/spice/images/source-triangle-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-triangle-circuit.png",
+      "sourceSha256": "6239f357de18f4d8b8dcf504b05fef37d94b87c618d9016034d01cd5549865b6"
+    },
+    {
+      "source": "tutorials/spice/images/source-triangle-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-triangle-circuit.svg",
+      "sourceSha256": "57a6bd660f32e81270545650bfd065aee266c2e5ca50271966afd0329f14027a"
+    },
+    {
+      "source": "tutorials/spice/images/source-waveforms.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/source-waveforms.png",
+      "sourceSha256": "a87a34849e103914f0c77eac1c34b240fc67fcb5a30a787bf1987dfb32bffd59"
+    },
+    {
+      "source": "tutorials/spice/images/tinycad-ac-setup.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png",
+      "sourceSha256": "7bfdc944616a2af2293221174fd0bf0aa91ff5ff4d1cf05563886ea99ef29b40"
+    },
+    {
+      "source": "tutorials/spice/images/tinycad-first-run.png",
+      "destination": "docs/v4/images/simulation-tutorials/spice/tinycad-first-run.png",
+      "sourceSha256": "683afb20b97be11ecf62781fc32e7296fbbc435d5b2fba2be967d43cd889e553"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-buffer.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-buffer.cir",
+      "sourceSha256": "742aa5202b365ead79f3763117b94e47497b6ab088c0febc3c35ada2dbd249a5"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-buffer.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-buffer.dzn",
+      "sourceSha256": "1ca8aae0c3299f8200365f7dfedc5d2db3ae299ce8bbca4c7bc9f4872819bc0a"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-counter.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-counter.cir",
+      "sourceSha256": "8561a6ef9117b58489ab30c96fa7a8077ea88921708b5b76757f8f450f98a9df"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-counter.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-counter.dzn",
+      "sourceSha256": "58708a15f827fabe1014f6f43512375e9ff81f45a2598febf924454fb091a66f"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-dff.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-dff.cir",
+      "sourceSha256": "0ed91b858a8b5120a040d25056b6d46e10a6d4c82660211692fb9f299ba1122c"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-dff.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-dff.dzn",
+      "sourceSha256": "fa83a7e257fece222008833f77a19eef8f786e9c22c197a062aa2d8ac5aba479"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-filter.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-filter.cir",
+      "sourceSha256": "22b063b8095a76821eccd90dfc3f3b2feccab10de1915fc9a901b164e4e3fb70"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-filter.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-filter.dzn",
+      "sourceSha256": "33148375bc5c92c41c57c591e3b8a0f43307a40614b6682336a22071ec223b78"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-hazard.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-hazard.cir",
+      "sourceSha256": "56885080ccba5b04f00b839a21c80b0a9906d700fa335db81aca3d0e146c1854"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-hazard.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-hazard.dzn",
+      "sourceSha256": "6514bd059b09ca2d9a4419ac008f76db5501c872589208dc37d7c83e70d27cc5"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-nand.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-nand.cir",
+      "sourceSha256": "69463706fada1a1943fedb33c53a31897103026007562cf561523f0b50f36ef0"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-nand.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-nand.dzn",
+      "sourceSha256": "597bc750e6af7680ed20d5dc37c3b12b4617ba15274852cb6fd3c2aad8522bf7"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-unknown.cir",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-unknown.cir",
+      "sourceSha256": "59973686e4615748d18e50aedb284cb1cb8f37cbb9350a65b8ffdbe73a3d01cb"
+    },
+    {
+      "source": "tutorials/xspice/circuits/logic-unknown.dzn",
+      "destination": "docs/v4/examples/simulation-tutorials/xspice/logic-unknown.dzn",
+      "sourceSha256": "388e7e57d90472d8c33a8fbb1352ac2d2bbfa2f23cce99bf32eb3b6468d1af7d"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-buffer-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png",
+      "sourceSha256": "8abdd06c5283f70c413d9c804df7f37cd7f27cda7fbbf2df45eccfea41ef9fb8"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-buffer-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.svg",
+      "sourceSha256": "3bb9cb9d48828b1df99b6d1fe9d60c76b2f4ce278db74a052b04fb6e19e63abe"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-buffer-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-buffer-results.png",
+      "sourceSha256": "02e7800057443a4008078e65078276f12f121289b0dd890229fa2ff863580c52"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-counter-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png",
+      "sourceSha256": "b357e1050ccc7be323a740168c8e6286c33426359f92edb7e1787ede8ca96716"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-counter-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-counter-circuit.svg",
+      "sourceSha256": "04d9a866a6cabc16cfaaad2a81488e6664b9483866ef4422675ea53ff03688cd"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-counter-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-counter-results.png",
+      "sourceSha256": "a40ac514eaed0c2b722cd516f321b2c035a2db1840f578df8f0a09783436c121"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-dff-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png",
+      "sourceSha256": "ea15d6edbfd0c7531338fc1c0e264f69cdd332ab56e217d38510ce6cc6fa96ab"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-dff-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-dff-circuit.svg",
+      "sourceSha256": "eda44d283c66ed24940cb5f69edc3a16c128faa893bb926f15a195ebc0a9280a"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-dff-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-dff-results.png",
+      "sourceSha256": "7b23120544f6bc2257be25756cfa7d50d495333df2adb451b7e6e64266bcad11"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-filter-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png",
+      "sourceSha256": "228a0a95f8cf3c8cec95ba8929d9e78dcfb582c35c0d6c950e5b9584fe6e5c7c"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-filter-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-filter-circuit.svg",
+      "sourceSha256": "dc8bbd1c84affd86777a6a54ea76c0a28f0713d1930c0022252cde3b10afdb92"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-filter-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-filter-results.png",
+      "sourceSha256": "fabd42fcfc7151f77c0048e0ce90871b50d46d32114b1b27ebb1e1de30744781"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-hazard-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-hazard-circuit.png",
+      "sourceSha256": "8abdd06c5283f70c413d9c804df7f37cd7f27cda7fbbf2df45eccfea41ef9fb8"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-hazard-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-hazard-circuit.svg",
+      "sourceSha256": "3bb9cb9d48828b1df99b6d1fe9d60c76b2f4ce278db74a052b04fb6e19e63abe"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-hazard-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-hazard-results.png",
+      "sourceSha256": "bd7dfcdcfa6476800e32157fa37d8b60b46e1eff2d0a745620a0af0df69a52bf"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-nand-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png",
+      "sourceSha256": "9f95a9707b7bb8fb22349abd801cce4c0cef892294db5a2a6320fb3fb3e18614"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-nand-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-nand-circuit.svg",
+      "sourceSha256": "9907573e62cabb40cc783bf095a3ab77f95433bdf96f88599a6e37763ccd8dfd"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-nand-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-nand-results.png",
+      "sourceSha256": "46c1a541ead236678f9bdedb563ce29e9bbcf84b87ccef0c588c86777c7e8471"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-unknown-circuit.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-unknown-circuit.png",
+      "sourceSha256": "bbcc1494504398a7df01799b8a5727cbffbea5bf8e0560e6b73a8e21f693a82d"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-unknown-circuit.svg",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-unknown-circuit.svg",
+      "sourceSha256": "bb1f140a5e2238e55045196a701074cf07b5cc3eb8fd12960d6e56fd6600f774"
+    },
+    {
+      "source": "tutorials/xspice/images/logic-unknown-results.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/logic-unknown-results.png",
+      "sourceSha256": "38a29370ba5c60c06db3bcb22b807c8d6f204e53cda4d1999126ee9e5e826d13"
+    },
+    {
+      "source": "tutorials/xspice/images/tinycad-digital.png",
+      "destination": "docs/v4/images/simulation-tutorials/xspice/tinycad-digital.png",
+      "sourceSha256": "80168f95be88f6c6fe6f4397356a9f25683aa4d54c65ea2bf4c42f449c615b41"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "netlist-editor",
+  "recorded": false,
+  "engine": null,
+  "checks": {
+    "example": "divider",
+    "net": "9\nCircuit\n2\nOUT\nR1.2, R2.1",
+    "type": "control",
+    "wireThickness": 2,
+    "colourPreview": "#007f5f",
+    "attributePreview": {
+      "purpose": "Divider output signal",
+      "notes": "Between R1 and R2"
+    }
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [],
+  "steps": [],
+  "pageErrors": []
+}

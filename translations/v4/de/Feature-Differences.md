@@ -4,7 +4,7 @@ layout: default
 # Funktionsunterschiede
 {: #feature-differences}
 
-Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der Desktopversion zusammen.
+Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD Web und der Desktopversion zusammen.
 
 <div class="comparison-legend" aria-label="Feature status legend">
 	<span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Unterstützt</span>
@@ -36,28 +36,49 @@ Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der D
 				<th scope="rowgroup" colspan="5">Bearbeitung und Bibliotheken</th>
 			</tr>
 			<tr>
-				<th scope="row">TinyCAD-Dateien <code>.dsn</code> laden/speichern</th>
+				<th scope="row">Laden/Speichern von TinyCAD-<code>.dsn</code>-Dateien</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td>TinyCAD Web strebt vollständige Dateiformatkompatibilität mit der Desktopversion an.</td>
 			</tr>
 			<tr>
-				<th scope="row">Unterstützung von Oberflächensprachen</th>
+				<th scope="row">Laden/Speichern komprimierter TinyCAD-<code>.dzn</code>-Dateien</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td>ZIP-basierte Zeichnungsdateien mit Simulationskonfiguration und optionalen Ergebnissen. Siehe <a href="../Simulation/#dzn-simulation-drawings">Simulationsdateien</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Markdown-Formatierung in Textfeldern</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td>Frühere Versionen verwenden einfachen Text. Siehe <a href="../Text/#markdown-text-boxes">Markdown-Textfelder</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Unterstützung für Oberflächensprachen</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
 				<td>Siehe <a href="../Language-translation/">Sprachübersetzung</a>.</td>
 			</tr>
 			<tr>
-				<th scope="row">TinyCAD-Bibliotheksdateien <code>.tclib</code> laden/bearbeiten</th>
+				<th scope="row">Laden/Bearbeiten von TinyCAD-Bibliotheksdateien <code>.tclib</code></th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td>Siehe <a href="../Custom-symbol-libraries/">benutzerdefinierte Bibliotheken</a>.</td>
 			</tr>
 			<tr>
-				<th scope="row">Symbole von TinyCAD.net importieren</th>
+				<th scope="row">Enthaltene Geräte-/Modellbibliotheken und Beispielbrowser</th>
+				<td>Ja</td>
+				<td>Ja</td>
+				<td>Nein</td>
+				<td>Siehe <a href="../Bundled-Libraries/">enthaltene Bibliotheken</a> und <a href="../Bundled-Examples/">Beispiele</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Symbole aus TinyCAD.net importieren</th>
 				<td><div class="feature-detail"><span class="feature-detail-title">Integrierte Suche</span><span class="feature-detail-copy">Suche in der Web-App. Kopieren und Einfügen funktioniert ebenfalls.</span></div></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Integrierte Suche</span><span class="feature-detail-copy">Suche in der Desktop-App. Kopieren und Einfügen funktioniert ebenfalls.</span></div></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Onlinesuche</span><span class="feature-detail-copy">Suche auf TinyCAD.net und kopiere die Symbole anschließend in die Desktopversion.</span></div></td>
@@ -113,21 +134,21 @@ Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der D
 				<td></td>
 			</tr>
 			<tr>
-				<th scope="row">Netzliste erstellen</th>
+				<th scope="row">Netzliste erzeugen</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td></td>
 			</tr>
 			<tr>
-				<th scope="row">Stil auf mehrere Elemente anwenden</th>
+				<th scope="row">Stil für mehrere Elemente festlegen</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
-				<td>Die Web-App ermöglicht die Mehrfachauswahl von Anmerkungselementen und das gemeinsame Anwenden von Stil und Füllung.</td>
+				<td>Die Web-App unterstützt die Mehrfachauswahl von Anmerkungselementen und die Anwendung gemeinsamer Stile und Füllungen.</td>
 			</tr>
 			<tr>
-				<th scope="row">Automatische Platzierung von Verbindungsstellen</th>
+				<th scope="row">Automatische Verbindungspunktplatzierung</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
@@ -147,8 +168,8 @@ Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der D
 			<tr>
 				<th scope="row">Drucken</th>
 				<td><div class="feature-detail"><span class="feature-detail-title">PDF-Export</span><span class="feature-detail-copy">Drucken im Browser oder in einem beliebigen PDF-Viewer.</span></div></td>
-				<td><div class="feature-detail"><span class="feature-detail-title">Direktes Drucken</span><span class="feature-detail-copy">Verwendet den Druckertreiber des Betriebssystems.</span></div></td>
-				<td><div class="feature-detail"><span class="feature-detail-title">Direktes Drucken</span><span class="feature-detail-copy">Verwendet den Druckertreiber des Betriebssystems.</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Direktdruck</span><span class="feature-detail-copy">Verwendet den Druckertreiber des Betriebssystems.</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Direktdruck</span><span class="feature-detail-copy">Verwendet den Druckertreiber des Betriebssystems.</span></div></td>
 				<td></td>
 			</tr>
 			<tr>
@@ -163,14 +184,35 @@ Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der D
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--partial"><span aria-hidden="true">!</span> Teilweise</span></td>
-				<td>Verwende in TinyCAD v3 „Als PDF drucken“.</td>
-			</tr>
+				<td>In TinyCAD v3 über „Als PDF drucken“ ausgeben.</td>
+		</tr>
 
 			<tr class="comparison-table-section">
 				<th scope="rowgroup" colspan="5">Erweiterte Funktionen</th>
 			</tr>
 			<tr>
-				<th scope="row">SPICE-Simulationsdatei-Ausgabe</th>
+				<th scope="row">Integrierte analoge SPICE-Simulation</th>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></span><span class="feature-detail-copy">WebAssembly ngspice</span></div></td>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></span><span class="feature-detail-copy">Native ngspice</span></div></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td><a href="../Simulation/">Simulationsblätter, Diagramme, Messungen und Analyse</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Ereignisgesteuerte XSPICE-Simulation</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span><sup><a href="#xspice-browser-note">1</a></sup></td>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></span><span class="feature-detail-copy">Enthaltene Code-Modelle</span></div></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Pop-out-Fenster für virtuelle Instrumente</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">SPICE-Simulationsdateiausgabe</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
@@ -199,46 +241,48 @@ Diese Seite fasst die wichtigsten Unterschiede zwischen TinyCAD im Web und der D
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Vollständig</span></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Native App</span><span class="feature-detail-copy">Desktopinstallation unter Windows unterstützt.</span></div></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Vollständig</span></td>
-			<td>Bevorzugte Installationsmethode unter Windows: <a href="https://apps.microsoft.com/detail/9NZQ1M56NM3V">Microsoft Store</a>.</td>
+				<td>Bevorzugte Installationsmethode unter Windows: <a href="https://apps.microsoft.com/detail/9NZQ1M56NM3V">Microsoft Store</a>.</td>
 			</tr>
 			<tr>
 				<th scope="row">Mac-Unterstützung</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Vollständig</span></td>
-				<td><div class="feature-detail"><span class="feature-detail-title">Native App</span><span class="feature-detail-copy">Im App Store für macOS verfügbar.</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Native App</span><span class="feature-detail-copy">Unter macOS im App Store verfügbar.</span></div></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--partial"><span aria-hidden="true">!</span> Teilweise</span></td>
-				<td>TinyCAD v3 ist unter macOS auf die Wine-Kompatibilität angewiesen.</td>
+				<td>TinyCAD v3 benötigt unter macOS die Kompatibilitätsschicht Wine.</td>
 			</tr>
 			<tr>
 				<th scope="row">Linux-Unterstützung</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Vollständig</span></td>
-				<td><div class="feature-detail"><span class="feature-detail-title">Desktopinstallation</span><span class="feature-detail-copy">Im Snap Store oder als .dep-Paket verfügbar.</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Desktopinstallation</span><span class="feature-detail-copy">Verfügbar im Snap Store oder als .dep-Paket.</span></div></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--partial"><span aria-hidden="true">!</span> Teilweise</span></td>
-				<td>TinyCAD v3 ist unter Linux auf die Wine-Kompatibilität angewiesen.</td>
+				<td>TinyCAD v3 benötigt unter Linux die Kompatibilitätsschicht Wine.</td>
 			</tr>
 			<tr>
-				<th scope="row">Chrome OS-Unterstützung</th>
+				<th scope="row">Chrome-OS-Unterstützung</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Ja</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
 				<td></td>
 			</tr>
 			<tr>
-				<th scope="row">Unterstützung für Smartphones/Tablets</th>
+				<th scope="row">Unterstützung für Smartphone/Tablet</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--partial"><span aria-hidden="true">!</span> Teilweise</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
-				<td>Die Nutzung im Browser ist möglich, für einen reibungslosen Arbeitsablauf werden jedoch weiterhin Maus oder Stift benötigt.</td>
+				<td>Die Nutzung im Browser ist möglich, für einen reibungslosen Arbeitsablauf sind jedoch weiterhin eine Maus oder ein Stift erforderlich.</td>
 			</tr>
 			<tr>
 				<th scope="row">Installation erforderlich</th>
-				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nein</span></td>
-				<td><div class="feature-detail"><span class="feature-detail-title">Ja</span><span class="feature-detail-copy">App Stores und Installationspakete.</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Nein</span></div></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">Ja</span><span class="feature-detail-copy">App-Stores und Installationspakete.</span></div></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Ja</span><span class="feature-detail-copy">Installationspaket erforderlich.</span></div></td>
 				<td></td>
 			</tr>
 		</tbody>
 	</table>
 </div>
+
+<p id="xspice-browser-note"><sup>1</sup> Browser-Versionen können Zeichnungen mit zuvor gespeicherten XSPICE-Ergebnissen zur Ansicht öffnen. Zum Ausführen von XSPICE ist TinyCAD Desktop erforderlich.</p>
 
 - Zurück zu [Referenz](../Reference/)
 - Zurück zu [Inhalt von v4](../CONTENTS/)

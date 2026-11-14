@@ -1,0 +1,259 @@
+{
+  "id": "rectifier-ripple",
+  "recorded": true,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "lesson": "06 · Measure settled rectifier ripple",
+    "newRun": "complete / available"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2240,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2333
+    },
+    {
+      "kind": "click",
+      "startedMs": 7470,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7564
+    },
+    {
+      "kind": "click",
+      "startedMs": 12736,
+      "target": "getByRole('dialog').getByRole('button', { name: 'rectifier', exact: true })",
+      "point": {
+        "x": 1038.75,
+        "y": 504.375
+      },
+      "finishedMs": 12800
+    },
+    {
+      "kind": "click",
+      "startedMs": 17944,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17992
+    },
+    {
+      "kind": "click",
+      "startedMs": 30049,
+      "target": "getByText('◷ rectifier', { exact: true })",
+      "point": {
+        "x": 407.0546875,
+        "y": 786
+      },
+      "finishedMs": 30158
+    },
+    {
+      "kind": "click",
+      "startedMs": 36731,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add Measurements', exact: true })",
+      "point": {
+        "x": 1125,
+        "y": 681
+      },
+      "finishedMs": 36773
+    },
+    {
+      "kind": "click",
+      "startedMs": 42347,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+      "point": {
+        "x": 586.8203125,
+        "y": 691
+      },
+      "finishedMs": 42476
+    },
+    {
+      "kind": "click",
+      "startedMs": 47979,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+      "point": {
+        "x": 839.71875,
+        "y": 697
+      },
+      "finishedMs": 48021
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 53088,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+      "point": {
+        "x": 599.4375,
+        "y": 483.578125
+      },
+      "finishedMs": 53136
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 58115,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+      "point": {
+        "x": 839.71875,
+        "y": 591.578125
+      },
+      "finishedMs": 58146
+    },
+    {
+      "kind": "fill",
+      "startedMs": 63134,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('from (s or Hz; blank = full range)', { exact: true })",
+      "point": {
+        "x": 679.078125,
+        "y": 645.578125
+      },
+      "finishedMs": 63200
+    },
+    {
+      "kind": "fill",
+      "startedMs": 68228,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('to (s or Hz; blank = full range)', { exact: true })",
+      "point": {
+        "x": 1000.359375,
+        "y": 645.578125
+      },
+      "finishedMs": 68285
+    },
+    {
+      "kind": "click",
+      "startedMs": 74815,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+      "point": {
+        "x": 586.8203125,
+        "y": 747.578125
+      },
+      "finishedMs": 74943
+    },
+    {
+      "kind": "click",
+      "startedMs": 80465,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+      "point": {
+        "x": 839.71875,
+        "y": 753.578125
+      },
+      "finishedMs": 80557
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 85597,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+      "point": {
+        "x": 599.4375,
+        "y": 484.15625
+      },
+      "finishedMs": 85640
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 90654,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+      "point": {
+        "x": 839.71875,
+        "y": 592.15625
+      },
+      "finishedMs": 90690
+    },
+    {
+      "kind": "fill",
+      "startedMs": 95699,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('from (s or Hz; blank = full range)', { exact: true })",
+      "point": {
+        "x": 679.078125,
+        "y": 646.15625
+      },
+      "finishedMs": 95761
+    },
+    {
+      "kind": "fill",
+      "startedMs": 100762,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('to (s or Hz; blank = full range)', { exact: true })",
+      "point": {
+        "x": 1000.359375,
+        "y": 646.15625
+      },
+      "finishedMs": 100853
+    },
+    {
+      "kind": "click",
+      "startedMs": 107361,
+      "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+      "point": {
+        "x": 338,
+        "y": 61
+      },
+      "finishedMs": 107451
+    },
+    {
+      "kind": "click",
+      "startedMs": 113012,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 113069
+    },
+    {
+      "kind": "click",
+      "startedMs": 119613,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+      "point": {
+        "x": 417.59375,
+        "y": 98
+      },
+      "finishedMs": 119709
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open the rectifier example from the SPICE tutorial group."
+    },
+    {
+      "atSeconds": 21.742,
+      "text": "The rectifier charges its reservoir capacitor near each positive input peak."
+    },
+    {
+      "atSeconds": 27.245,
+      "text": "Startup is visible in this 200 ms transient. Measure settled operation over 160–200 ms."
+    },
+    {
+      "atSeconds": 33.916000000000004,
+      "text": "Add Mean on OUT. Set from = 160ms and to = 200ms to exclude startup."
+    },
+    {
+      "atSeconds": 72.045,
+      "text": "Add Peak-to-peak on OUT using the same window. This measures ripple around the DC level."
+    },
+    {
+      "atSeconds": 104.612,
+      "text": "Run to capture the mean and ripple measurements alongside the acquisition."
+    },
+    {
+      "atSeconds": 116.82600000000001,
+      "text": "The settled mean is about 3.90 V and the peak-to-peak ripple is about 0.684 V."
+    },
+    {
+      "atSeconds": 124.327,
+      "text": "Total RMS includes the DC level. AC RMS removes the mean; it answers a different question."
+    }
+  ],
+  "pageErrors": []
+}

@@ -44,6 +44,8 @@ v4:
         url: /v4/TinyCAD-Web-overview-and-quick-start/
       - title: Installation Instructions
         url: /v4/TinyCAD-Desktop-App/
+      - title: Bundled Examples
+        url: /v4/Bundled-Examples/
   - title: Drawing
     url: /v4/User-guide/
     children:
@@ -57,6 +59,8 @@ v4:
         url: /v4/Snap-to-Grid/
       - title: Wires
         url: /v4/Wires/
+      - title: Layout Tidy-up
+        url: /v4/Layout-Tidy-Up/
       - title: Power Symbols
         url: /v4/Power-symbols/
       - title: Labels
@@ -88,6 +92,8 @@ v4:
     children:
       - title: Using Symbol Libraries
         url: /v4/Using-Symbol-Libraries/
+      - title: Bundled Libraries
+        url: /v4/Bundled-Libraries/
       - title: Custom Libraries
         url: /v4/Custom-symbol-libraries/
       - title: Library Folders
@@ -96,6 +102,65 @@ v4:
         url: /v4/Importing-Symbols-from-KiCAD/
       - title: Editing a Symbol
         url: /v4/Editing-a-Symbol/
+  - title: Simulation
+    url: /v4/Simulation/
+    children:
+      - title: "Analyses and Settings"
+        url: /v4/Simulation-Analyses/
+      - title: "Sources, Probes and Virtual Instruments"
+        url: /v4/Simulation-Sources-and-Instruments/
+      - title: "Charts, Measurements and Circuit Explorer"
+        url: /v4/Simulation-Charts-and-Measurements/
+      - title: "SPICE Models and Netlist Output"
+        url: /v4/SPICE-output/
+      - title: "XSPICE and Digital Simulation"
+        url: /v4/XSPICE/
+      - title: "Troubleshooting"
+        url: /v4/Simulation-Troubleshooting/
+      - title: "Tutorial Start Guide"
+        url: /v4/Tutorial-Start-Here/
+      - title: "All Simulation Tutorials"
+        url: /v4/Simulation-Tutorials/
+  - title: SPICE Tutorial
+    url: /v4/SPICE-Tutorial/
+    children:
+      - title: "1. SPICE: overview and your first simulation"
+        url: /v4/SPICE-Tutorial-01/
+      - title: "2. Measuring DC voltage, current and power"
+        url: /v4/SPICE-Tutorial-02/
+      - title: "3. Choosing and configuring signal generators"
+        url: /v4/SPICE-Tutorial-03/
+      - title: "4. Transient analysis: charging a capacitor"
+        url: /v4/SPICE-Tutorial-04/
+      - title: "5. AC analysis: gain, phase and an RC filter"
+        url: /v4/SPICE-Tutorial-05/
+      - title: "6. Diodes, rectification and ripple"
+        url: /v4/SPICE-Tutorial-06/
+      - title: "7. Rebuilding AMP.DSN and checking its bias"
+        url: /v4/SPICE-Tutorial-07/
+      - title: "8. Measuring amplifier gain and bandwidth"
+        url: /v4/SPICE-Tutorial-08/
+      - title: "9. Amplifier waveform, clipping and power usage"
+        url: /v4/SPICE-Tutorial-09/
+      - title: "10. Design investigations: sweeps, tolerances, noise and diagnosis"
+        url: /v4/SPICE-Tutorial-10/
+      - title: "11. How TinyCAD implements SPICE"
+        url: /v4/SPICE-Tutorial-11/
+  - title: XSPICE and Digital Tutorial
+    url: /v4/XSPICE-Tutorial/
+    children:
+      - title: "1. XSPICE and digital simulation"
+        url: /v4/XSPICE-Tutorial-01/
+      - title: "2. Gates and truth tables"
+        url: /v4/XSPICE-Tutorial-02/
+      - title: "3. Propagation delay and logic hazards"
+        url: /v4/XSPICE-Tutorial-03/
+      - title: "4. D flip-flops, clocks and reset"
+        url: /v4/XSPICE-Tutorial-04/
+      - title: "5. Counters and divided clocks"
+        url: /v4/XSPICE-Tutorial-05/
+      - title: "6. Mixed-signal filtering and unknown states"
+        url: /v4/XSPICE-Tutorial-06/
   - title: Advanced
     url: /v4/Advanced/
     children:
@@ -105,8 +170,6 @@ v4:
         url: /v4/Generate-Netlist/
       - title: Netlist Editor
         url: /v4/Netlist-Editor/
-      - title: SPICE output
-        url: /v4/SPICE-output/
       - title: VHDL output
         url: /v4/VHDL-output/
   - title: Reference

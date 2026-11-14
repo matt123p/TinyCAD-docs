@@ -1,0 +1,123 @@
+{
+  "id": "layout-tidy-up",
+  "recorded": true,
+  "engine": null,
+  "checks": {
+    "example": "Transistor amplifier",
+    "scope": "whole sheet",
+    "strength": "low",
+    "result": "accepted changes",
+    "undo": "one toolbar Undo"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2239,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2334
+    },
+    {
+      "kind": "click",
+      "startedMs": 7450,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'Examples', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 288
+      },
+      "finishedMs": 7524
+    },
+    {
+      "kind": "click",
+      "startedMs": 12659,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Transistor amplifier', exact: true })",
+      "point": {
+        "x": 523.75,
+        "y": 709.375
+      },
+      "finishedMs": 12719
+    },
+    {
+      "kind": "click",
+      "startedMs": 17910,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17957
+    },
+    {
+      "kind": "click",
+      "startedMs": 24051,
+      "target": "getByRole('button', { name: 'Auto-layout', exact: true })",
+      "point": {
+        "x": 198,
+        "y": 61
+      },
+      "finishedMs": 24103
+    },
+    {
+      "kind": "check",
+      "startedMs": 34322,
+      "target": "getByRole('dialog').getByRole('radio', { name: 'Low', exact: true })",
+      "point": {
+        "x": 541,
+        "y": 605
+      },
+      "finishedMs": 34381
+    },
+    {
+      "kind": "click",
+      "startedMs": 40431,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Go', exact: true })",
+      "point": {
+        "x": 923,
+        "y": 745
+      },
+      "finishedMs": 40496
+    },
+    {
+      "kind": "click",
+      "startedMs": 46548,
+      "target": "getByRole('button', { name: 'Undo (Ctrl-Z)', exact: true })",
+      "point": {
+        "x": 252,
+        "y": 61
+      },
+      "finishedMs": 46617
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open the Transistor amplifier example to work on an editable copy."
+    },
+    {
+      "atSeconds": 21.721,
+      "text": "Auto-layout is beside Simulation on the toolbar."
+    },
+    {
+      "atSeconds": 27.847,
+      "text": "Whole sheet tidies the current schematic. Selected Items limits the operation to a selection."
+    },
+    {
+      "atSeconds": 32.047,
+      "text": "Start with Low to keep large components fixed while allowing smaller parts, wires and labels to improve."
+    },
+    {
+      "atSeconds": 38.123999999999995,
+      "text": "Choose Go to apply the tidy-up. The dialog closes when changes have been accepted."
+    },
+    {
+      "atSeconds": 44.254999999999995,
+      "text": "Review the new arrangement, then use Undo to revert the entire tidy-up in one step."
+    }
+  ],
+  "pageErrors": []
+}

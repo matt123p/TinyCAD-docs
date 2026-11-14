@@ -1,0 +1,12 @@
+{
+  "id": "circuit-explorer",
+  "recorded": false,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "file": "rc-low-pass.dzn",
+    "engine": "bundled browser WebAssembly ngspice",
+    "newRun": "complete / available"
+  },
+  "steps": [],
+  "pageErrors": []
+}

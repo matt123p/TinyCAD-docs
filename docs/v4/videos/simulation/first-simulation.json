@@ -1,0 +1,153 @@
+{
+  "id": "first-simulation",
+  "recorded": true,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "newRun": "complete / available",
+    "outVolts": 2.5,
+    "sourceCurrentAmps": -0.0025
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2232,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2308
+    },
+    {
+      "kind": "click",
+      "startedMs": 7419,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7544
+    },
+    {
+      "kind": "click",
+      "startedMs": 12603,
+      "target": "getByRole('dialog').getByRole('button', { name: 'divider', exact: true })",
+      "point": {
+        "x": 781.25,
+        "y": 709.375
+      },
+      "finishedMs": 12693
+    },
+    {
+      "kind": "click",
+      "startedMs": 17854,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17989
+    },
+    {
+      "kind": "click",
+      "startedMs": 24201,
+      "target": "getByRole('button', { name: 'Simulation', exact: true })",
+      "point": {
+        "x": 166,
+        "y": 61
+      },
+      "finishedMs": 24271
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 28557,
+      "finishedMs": 28571
+    },
+    {
+      "kind": "click",
+      "startedMs": 34537,
+      "target": "getByText('◷ divider', { exact: true })",
+      "point": {
+        "x": 404.4296875,
+        "y": 786
+      },
+      "finishedMs": 34586
+    },
+    {
+      "kind": "click",
+      "startedMs": 40801,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 40849
+    },
+    {
+      "kind": "click",
+      "startedMs": 45855,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Setup', exact: true })",
+      "point": {
+        "x": 320.1328125,
+        "y": 98
+      },
+      "finishedMs": 45906
+    },
+    {
+      "kind": "click",
+      "startedMs": 50930,
+      "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+      "point": {
+        "x": 338,
+        "y": 61
+      },
+      "finishedMs": 51022
+    },
+    {
+      "kind": "click",
+      "startedMs": 56085,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 56123
+    },
+    {
+      "kind": "click",
+      "startedMs": 62285,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Data', exact: true })",
+      "point": {
+        "x": 510.53125,
+        "y": 98
+      },
+      "finishedMs": 62339
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open Example → SPICE tutorial → divider → Open drawing."
+    },
+    {
+      "atSeconds": 21.927000000000003,
+      "text": "The pulse-shaped Simulation menu contains setup, sources, probes and virtual instruments."
+    },
+    {
+      "atSeconds": 32.342,
+      "text": "Select the Simulation sheet. Operating Point calculates the DC bias."
+    },
+    {
+      "atSeconds": 38.550999999999995,
+      "text": "Run creates a new acquisition using the browser’s bundled ngspice engine."
+    },
+    {
+      "atSeconds": 60.077999999999996,
+      "text": "Data confirms OUT = 2.5 V and source current = −2.5 mA for the two 1 kΩ resistors."
+    }
+  ],
+  "pageErrors": []
+}

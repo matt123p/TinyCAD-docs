@@ -7,6 +7,8 @@ layout: default
 This section covers the core drawing workflow, including first-drawing setup,
 labels, buses, no-connects, annotations, and printing.
 
+For rearranging an existing circuit, see [Layout tidy-up](../Layout-Tidy-Up/). It covers Auto-layout scopes, strength settings and reverting a result with Undo.
+
 ## Temporarily hiding objects
 
 To reach objects underneath a crowded part of a drawing:

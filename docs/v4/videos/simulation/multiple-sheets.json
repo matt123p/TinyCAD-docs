@@ -1,0 +1,436 @@
+{
+  "id": "multiple-sheets",
+  "recorded": true,
+  "engine": null,
+  "checks": {
+    "example": "divider",
+    "sheets": [
+      "Power",
+      "Control",
+      "◷ divider"
+    ],
+    "movedComponent": "R2",
+    "labels": [
+      "OUT",
+      "0"
+    ],
+    "verifiedNet": "4\nPower\n2\nOUT\nR1.2, R2.1",
+    "verifiedGround": "3\nPower\n2\n0\nV1.2, R2.2"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2355,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2482
+    },
+    {
+      "kind": "click",
+      "startedMs": 7581,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7699
+    },
+    {
+      "kind": "click",
+      "startedMs": 12996,
+      "target": "getByRole('dialog').getByRole('button', { name: 'divider', exact: true })",
+      "point": {
+        "x": 781.25,
+        "y": 709.375
+      },
+      "finishedMs": 13109
+    },
+    {
+      "kind": "click",
+      "startedMs": 18253,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 18379
+    },
+    {
+      "kind": "click",
+      "startedMs": 24404,
+      "target": "getByRole('button', { name: 'Hide chart panel', exact: true })",
+      "point": {
+        "x": 1576,
+        "y": 102
+      },
+      "finishedMs": 24509
+    },
+    {
+      "kind": "click",
+      "startedMs": 30567,
+      "target": "locator('.sheet-heading-on > span').last()",
+      "point": {
+        "x": 350.625,
+        "y": 786
+      },
+      "finishedMs": 30641
+    },
+    {
+      "kind": "click",
+      "startedMs": 35634,
+      "target": "getByRole('menuitem', { name: 'Rename', exact: true })",
+      "point": {
+        "x": 414,
+        "y": 813
+      },
+      "finishedMs": 35687
+    },
+    {
+      "kind": "fill",
+      "startedMs": 41749,
+      "target": "getByLabel('Sheet Name', { exact: true })",
+      "point": {
+        "x": 800,
+        "y": 511
+      },
+      "finishedMs": 41763
+    },
+    {
+      "kind": "click",
+      "startedMs": 46733,
+      "target": "getByRole('button', { name: 'Rename', exact: true })",
+      "point": {
+        "x": 923,
+        "y": 551
+      },
+      "finishedMs": 46808
+    },
+    {
+      "kind": "click",
+      "startedMs": 52888,
+      "target": "getByTitle('Add new sheet', { exact: true })",
+      "point": {
+        "x": 451.890625,
+        "y": 786
+      },
+      "finishedMs": 52957
+    },
+    {
+      "kind": "fill",
+      "startedMs": 59006,
+      "target": "getByLabel('Sheet Name', { exact: true })",
+      "point": {
+        "x": 800,
+        "y": 511
+      },
+      "finishedMs": 59014
+    },
+    {
+      "kind": "click",
+      "startedMs": 63999,
+      "target": "getByRole('button', { name: 'Add', exact: true })",
+      "point": {
+        "x": 923,
+        "y": 551
+      },
+      "finishedMs": 64110
+    },
+    {
+      "kind": "click",
+      "startedMs": 70170,
+      "target": "locator('.sheet-heading-on > span').last()",
+      "point": {
+        "x": 499,
+        "y": 786
+      },
+      "finishedMs": 70226
+    },
+    {
+      "kind": "click",
+      "startedMs": 75252,
+      "target": "getByRole('menuitem', { name: 'Move left', exact: true })",
+      "point": {
+        "x": 562,
+        "y": 892
+      },
+      "finishedMs": 75352
+    },
+    {
+      "kind": "dragTo",
+      "startedMs": 81365,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+      "point": {
+        "x": 399.6953125,
+        "y": 786
+      },
+      "finishedMs": 81516
+    },
+    {
+      "kind": "dragTo",
+      "startedMs": 87546,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+      "point": {
+        "x": 405.390625,
+        "y": 786
+      },
+      "finishedMs": 87684
+    },
+    {
+      "kind": "click",
+      "startedMs": 93640,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+      "point": {
+        "x": 328.140625,
+        "y": 786
+      },
+      "finishedMs": 93708
+    },
+    {
+      "kind": "mouse.click",
+      "startedMs": 98270,
+      "point": {
+        "x": 603.5,
+        "y": 296.5
+      },
+      "finishedMs": 98316
+    },
+    {
+      "kind": "key.ControlOrMeta+x",
+      "startedMs": 102517,
+      "finishedMs": 102564
+    },
+    {
+      "kind": "click",
+      "startedMs": 108590,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+      "point": {
+        "x": 398.28125,
+        "y": 786
+      },
+      "finishedMs": 108644
+    },
+    {
+      "kind": "key.ControlOrMeta+v",
+      "startedMs": 112846,
+      "finishedMs": 112921
+    },
+    {
+      "kind": "click",
+      "startedMs": 117890,
+      "target": "locator('#svg-drawing')",
+      "point": {
+        "x": 988,
+        "y": 551
+      },
+      "finishedMs": 117986
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 122188,
+      "finishedMs": 122197
+    },
+    {
+      "kind": "click",
+      "startedMs": 128230,
+      "target": "getByRole('button', { name: 'Label', exact: true })",
+      "point": {
+        "x": 536,
+        "y": 61
+      },
+      "finishedMs": 128295
+    },
+    {
+      "kind": "mouse.click",
+      "startedMs": 132860,
+      "point": {
+        "x": 383.5,
+        "y": 160.73076923076923
+      },
+      "finishedMs": 132900
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 137102,
+      "finishedMs": 137136
+    },
+    {
+      "kind": "mouse.dblclick",
+      "startedMs": 141636,
+      "point": {
+        "x": 397.5,
+        "y": 156
+      },
+      "finishedMs": 141672
+    },
+    {
+      "kind": "type",
+      "startedMs": 145888,
+      "finishedMs": 146458
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 150660,
+      "finishedMs": 150719
+    },
+    {
+      "kind": "click",
+      "startedMs": 156732,
+      "target": "getByRole('button', { name: 'Simulation', exact: true })",
+      "point": {
+        "x": 166,
+        "y": 61
+      },
+      "finishedMs": 156791
+    },
+    {
+      "kind": "hover",
+      "startedMs": 161812,
+      "target": "getByRole('menuitem', { name: 'SPICE', exact: true })",
+      "point": {
+        "x": 239.859375,
+        "y": 211
+      },
+      "finishedMs": 161856
+    },
+    {
+      "kind": "click",
+      "startedMs": 166855,
+      "target": "getByRole('menuitem', { name: 'Insert Ground', exact: true })",
+      "point": {
+        "x": 434.5703125,
+        "y": 284
+      },
+      "finishedMs": 166952
+    },
+    {
+      "kind": "mouse.click",
+      "startedMs": 171547,
+      "point": {
+        "x": 383.5,
+        "y": 202.26923076923077
+      },
+      "finishedMs": 171609
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 175812,
+      "finishedMs": 175844
+    },
+    {
+      "kind": "click",
+      "startedMs": 181874,
+      "target": "getByRole('button', { name: 'Symbols', exact: true })",
+      "point": {
+        "x": 1095,
+        "y": 827
+      },
+      "finishedMs": 181913
+    },
+    {
+      "kind": "click",
+      "startedMs": 186921,
+      "target": "getByRole('menuitem', { name: 'Netlist', exact: true })",
+      "point": {
+        "x": 1099,
+        "y": 894
+      },
+      "finishedMs": 186981
+    },
+    {
+      "kind": "click",
+      "startedMs": 197309,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+      "point": {
+        "x": 326,
+        "y": 786
+      },
+      "finishedMs": 197372
+    },
+    {
+      "kind": "click",
+      "startedMs": 203371,
+      "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+      "point": {
+        "x": 398.28125,
+        "y": 786
+      },
+      "finishedMs": 203423
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0.007999999999999896,
+      "text": "Start from Open Example → SPICE tutorial → divider. We will split its two resistors across sheets."
+    },
+    {
+      "atSeconds": 22.028000000000002,
+      "text": "Hide the chart panel to give the drawing more space."
+    },
+    {
+      "atSeconds": 28.151,
+      "text": "Open the selected sheet’s arrow menu and choose Rename."
+    },
+    {
+      "atSeconds": 39.327999999999996,
+      "text": "Name this sheet Power. Renaming the page does not rename its nets."
+    },
+    {
+      "atSeconds": 50.452,
+      "text": "The + button beside the sheet tabs adds a sheet to the same drawing."
+    },
+    {
+      "atSeconds": 56.596999999999994,
+      "text": "Enter Control and choose Add. The new schematic sheet is now selected."
+    },
+    {
+      "atSeconds": 67.753,
+      "text": "Move left in the tab menu changes page order without changing any electrical connections."
+    },
+    {
+      "atSeconds": 79.011,
+      "text": "You can also drag tabs: move Control before Power."
+    },
+    {
+      "atSeconds": 85.16499999999999,
+      "text": "Drag Power back to the first position to keep the supply page before its load."
+    },
+    {
+      "atSeconds": 91.337,
+      "text": "Select Power, select R2 and cut it. Its original wires and OUT label stay on Power."
+    },
+    {
+      "atSeconds": 106.206,
+      "text": "Select Control, paste R2, then click the drawing to finish placement."
+    },
+    {
+      "atSeconds": 125.858,
+      "text": "Place a Label on R2’s top pin and name it OUT. It joins the OUT-labelled wire on Power."
+    },
+    {
+      "atSeconds": 154.362,
+      "text": "Connect the lower pin to ground 0. Matching power-net names also connect across sheets."
+    },
+    {
+      "atSeconds": 179.48499999999999,
+      "text": "Switch the lower list from Symbols to Netlist to inspect the actual connections."
+    },
+    {
+      "atSeconds": 190.74099999999999,
+      "text": "OUT has both R1 and R2 in one net, even though they are on different schematic sheets."
+    },
+    {
+      "atSeconds": 194.94299999999998,
+      "text": "On Power, the wire carries OUT; sheet names and tab order do not form the connection."
+    },
+    {
+      "atSeconds": 201.014,
+      "text": "On Control, the exact same label OUT connects R2. All schematic sheets belong to one circuit."
+    }
+  ],
+  "pageErrors": []
+}

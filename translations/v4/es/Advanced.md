@@ -4,7 +4,9 @@ layout: default
 # TinyCAD - Avanzado
 {: #tinycad---advanced}
 
-Esta sección abarca los flujos de trabajo avanzados de edición, validación y generación de resultados.
+En esta sección se describen los flujos de trabajo avanzados de edición, validación y salida.
+
+Consulte también [Simulación y SPICE](../Simulation/) para el análisis de circuitos integrados, y [Modelos SPICE y salida de listas de conexiones](../SPICE-output/) para plantillas de modelos y la exportación a simuladores externos.
 
 ## Páginas
 {: #pages}

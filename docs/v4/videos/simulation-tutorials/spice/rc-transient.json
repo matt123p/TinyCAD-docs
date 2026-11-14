@@ -1,0 +1,259 @@
+{
+  "id": "rc-transient",
+  "recorded": true,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "lesson": "04 · RC charging, timestep and time constant",
+    "newRun": "complete / available"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2213,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2280
+    },
+    {
+      "kind": "click",
+      "startedMs": 7382,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7475
+    },
+    {
+      "kind": "click",
+      "startedMs": 12525,
+      "target": "getByRole('dialog').getByRole('button', { name: 'rc-step', exact: true })",
+      "point": {
+        "x": 523.75,
+        "y": 504.375
+      },
+      "finishedMs": 12577
+    },
+    {
+      "kind": "click",
+      "startedMs": 17633,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17703
+    },
+    {
+      "kind": "click",
+      "startedMs": 29728,
+      "target": "getByText('◷ rc-step', { exact: true })",
+      "point": {
+        "x": 404.546875,
+        "y": 786
+      },
+      "finishedMs": 29824
+    },
+    {
+      "kind": "fill",
+      "startedMs": 35896,
+      "target": "getByLabel('Maximum step (e.g. 10us)', { exact: true })",
+      "point": {
+        "x": 798.3984375,
+        "y": 259
+      },
+      "finishedMs": 35961
+    },
+    {
+      "kind": "click",
+      "startedMs": 42510,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add Measurements', exact: true })",
+      "point": {
+        "x": 1125,
+        "y": 681
+      },
+      "finishedMs": 42586
+    },
+    {
+      "kind": "click",
+      "startedMs": 48144,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+      "point": {
+        "x": 586.8203125,
+        "y": 691
+      },
+      "finishedMs": 48288
+    },
+    {
+      "kind": "click",
+      "startedMs": 53843,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+      "point": {
+        "x": 839.71875,
+        "y": 697
+      },
+      "finishedMs": 53895
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 58936,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+      "point": {
+        "x": 599.4375,
+        "y": 483.578125
+      },
+      "finishedMs": 58984
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 63995,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+      "point": {
+        "x": 839.71875,
+        "y": 537.578125
+      },
+      "finishedMs": 64028
+    },
+    {
+      "kind": "fill",
+      "startedMs": 69040,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('At (s or Hz; blank = start)', { exact: true })",
+      "point": {
+        "x": 839.71875,
+        "y": 645.578125
+      },
+      "finishedMs": 69094
+    },
+    {
+      "kind": "click",
+      "startedMs": 75607,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+      "point": {
+        "x": 586.8203125,
+        "y": 747.578125
+      },
+      "finishedMs": 75738
+    },
+    {
+      "kind": "click",
+      "startedMs": 81258,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+      "point": {
+        "x": 839.71875,
+        "y": 753.578125
+      },
+      "finishedMs": 81334
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 86384,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+      "point": {
+        "x": 599.4375,
+        "y": 484.15625
+      },
+      "finishedMs": 86426
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 91517,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+      "point": {
+        "x": 839.71875,
+        "y": 566.15625
+      },
+      "finishedMs": 91559
+    },
+    {
+      "kind": "fill",
+      "startedMs": 96564,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Initial / low level', { exact: true })",
+      "point": {
+        "x": 679.078125,
+        "y": 674.15625
+      },
+      "finishedMs": 96633
+    },
+    {
+      "kind": "fill",
+      "startedMs": 101642,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Final / high level', { exact: true })",
+      "point": {
+        "x": 1000.359375,
+        "y": 674.15625
+      },
+      "finishedMs": 101708
+    },
+    {
+      "kind": "click",
+      "startedMs": 108273,
+      "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+      "point": {
+        "x": 338,
+        "y": 61
+      },
+      "finishedMs": 108391
+    },
+    {
+      "kind": "click",
+      "startedMs": 113924,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 113984
+    },
+    {
+      "kind": "click",
+      "startedMs": 120607,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+      "point": {
+        "x": 417.59375,
+        "y": 98
+      },
+      "finishedMs": 120704
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open the rc-step example from the SPICE tutorial group."
+    },
+    {
+      "atSeconds": 21.476000000000003,
+      "text": "rc-step applies a 0–1 V step to a 1 kΩ / 1 µF network. The output charges gradually."
+    },
+    {
+      "atSeconds": 26.98,
+      "text": "The saved transient runs for 5 ms. Maximum step limits the spacing between solver points."
+    },
+    {
+      "atSeconds": 33.611,
+      "text": "Halve maximum step from 5us to 2.5us to check that the measured response is stable."
+    },
+    {
+      "atSeconds": 39.748999999999995,
+      "text": "Add a Value measurement on OUT at 1ms to inspect one time constant."
+    },
+    {
+      "atSeconds": 72.88499999999999,
+      "text": "Add Time constant with initial level 0 and final level 1. Here R × C = 1 ms."
+    },
+    {
+      "atSeconds": 105.508,
+      "text": "Run again to capture both measurements with the finer timestep."
+    },
+    {
+      "atSeconds": 117.77799999999999,
+      "text": "Named measurements show about 0.632 V at 1 ms and a time constant close to 1 ms."
+    }
+  ],
+  "pageErrors": []
+}

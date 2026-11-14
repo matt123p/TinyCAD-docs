@@ -103,6 +103,10 @@ tap its corners. Check the completed connection and adjust its segments if neede
 - Junctions are added automatically where needed.
 - Crossing wires are not connected unless a junction is present.
 
+## Tidying an existing layout
+
+Use [Layout tidy-up (Auto-layout)](../Layout-Tidy-Up/) to rearrange existing components, wires and labels on a whole sheet or within a selection. Point-to-Point Wire creates a new connection; Auto-layout tidies the connections already present.
+
 ## Editing wires
 
 To edit a wire, simply click on it.  Now you can either drag the entire wire segment by dragging the wire itself or you can move the ends of the wire by dragging the move boxes.

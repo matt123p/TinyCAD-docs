@@ -1,0 +1,10 @@
+{
+  "id": "source-settings",
+  "recorded": false,
+  "engine": null,
+  "checks": {
+    "source": "source-sine"
+  },
+  "steps": [],
+  "pageErrors": []
+}

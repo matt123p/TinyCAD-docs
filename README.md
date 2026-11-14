@@ -217,3 +217,96 @@ translations there for review before merging.
 The manual is published under
 [Creative Commons Attribution–NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 See the [manual licence page](docs/v4/Licence.md) for details.
+
+## English simulation manual and captures
+
+The simulation reference starts at `docs/v4/Simulation.md`; the bundled-resource
+guides are `Bundled-Libraries.md` and `Bundled-Examples.md`. The full analogue and
+XSPICE courses are linked from `Simulation-Tutorials.md`. The English sources and
+cached translations cover the same guides and courses. Screenshots and videos
+are shared across languages; surrounding text and video captions are translated.
+Ordinary builds only prepare cached translations and English fallbacks, as
+described above.
+
+To refresh the course from a sibling TinyCADv4 checkout:
+
+```sh
+node scripts/import-simulation-tutorials.mjs ../TinyCADv4
+```
+
+The import adapts internal links and current navigation wording, preserves
+companion drawing/plot bytes and records their source hashes and app
+commit in `docs/v4/examples/simulation-tutorials/provenance.json`.
+
+To recreate current browser screenshots and captioned recordings, first run
+`npm run build:fs` in that TinyCADv4 checkout, with its ngspice browser assets
+present. Install its Playwright Chromium and provide ffmpeg, then run:
+
+```sh
+node scripts/capture-spice-manual.mjs ../TinyCADv4
+```
+
+The script serves the local application on loopback, uses fresh browser profiles,
+opens the real bundled resources and runs the bundled WebAssembly solver. It
+asserts completed acquisitions and divider values. Only the explicit fixture's
+file chooser is supplied by the harness; circuit and result data are not mocked.
+Screenshots are in `docs/v4/images/simulation/`; MP4 recordings and capture
+evidence are in `docs/v4/videos/simulation/`. Captions are narration overlays
+and are hidden in the screenshots. Every individual click, selection, edit and
+drag is followed by at least 4.2 seconds; the script verifies a minimum four-second
+gap from the end of each action to the start of the next. A blue pointer follows
+the mouse and a red/gold ring marks clicks for three seconds. `--only circuit-explorer` (or a comma-separated
+list of capture IDs) refreshes individual workflows. The manifest identifies the
+application commit, per-action timestamps and verified steps. All ten videos
+are recorded from the current browser app. The five course scenarios live in
+`scripts/manual-tutorial-lessons.mjs`, adapted from the app’s tutorial recorder;
+`scripts/manual-recording-controls.mjs` applies pacing to every individual action.
+The importer leaves these regenerated videos and their evidence intact.
+
+After `npm run build`, validate the rendered pages and media with:
+
+```sh
+node scripts/verify-simulation-manual.mjs ../TinyCADv4
+```
+
+This checks English page rendering, image loading, local downloads and fragment
+links, playback of all ten recordings, search, product tabs, mobile rendering
+per-action video pacing, compatibility notes, duplicate walkthrough media
+and the imported companion hashes. Review screenshots and its JSON report are
+written to `/tmp/tinycad-manual-review` by default (an optional third argument
+changes that destination). Also run `npm run check:links`, `npm run check:seo`
+and `npm run test:search`. None of these commands requests translations.
+
+The Drawing section includes `Layout-Tidy-Up.md`. Its Auto-layout and Undo
+walkthrough is captured with `--only layout-tidy-up`, using the same click
+markers and minimum four-second action gaps as the simulation videos.
+
+The multi-sheet walkthrough is captured with `--only multiple-sheets`. It uses
+the actual clipboard to move R2, creates/renames/reorders sheets through the UI,
+adds OUT and 0 labels and checks that the Netlist view joins R1 and R2. Clipboard
+permissions are granted only to the isolated local capture profile.
+
+Library-folder screenshots use the real Desktop App in a disposable Electron
+profile, with temporary copies of public libraries. Build the desktop renderer
+with `npm run build:electron` in the app checkout, then capture on Linux with:
+
+```sh
+xvfb-run -a node scripts/capture-library-folders.mjs ../TinyCADv4
+```
+
+An optional third argument selects a separate directory containing the built
+`index-electron.html`. Five images and a capture manifest are written under
+`docs/v4/images/library-folders/`. Folder creation, drag/drop assignment and
+renaming are checked through the real UI and temporary desktop configuration;
+personal settings and original library files are not changed.
+
+Netlist Editor screenshots are captured from the browser app with:
+
+```sh
+node scripts/capture-spice-manual.mjs ../TinyCADv4 --only netlist-editor
+```
+
+Five images and their capture manifest are written under
+`docs/v4/images/netlist-editor/`. The capture opens the bundled divider, checks
+its live OUT connection, creates net types, assigns `control`, and opens the
+colour preview and attributes editor through the real UI.

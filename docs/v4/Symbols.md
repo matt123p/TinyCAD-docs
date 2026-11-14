@@ -6,18 +6,36 @@ layout: default
 
 Symbols are the core building blocks of a TinyCAD schematic. You place symbols from libraries, set their attributes, then wire their pins to build an electrically valid design.
 
-You can use your own Symbols or download symbols directly from the TinyCAD.net web-site.
+The library picker on the left offers three sources: **Standard** for bundled libraries, **Online** for TinyCAD.net search, and **My Libraries** for your own library files.
 
-See also:
+## Find a symbol
 
-- [Using Symbol Libraries](../Using-Symbol-Libraries/)
-- [Custom symbol libraries](../Custom-symbol-libraries/)
+### Use the bundled libraries
 
-## Find and place symbols
+Select **Standard**, then choose a collection from **Choose a standard library**. Browse its components or type a name into **Search libraries...** to filter the selected collection. You can switch collections without removing symbols already placed in your drawing.
 
-1. Type the name of the symbol you want in the search box
-2. Select the symbols to see them, and pick the one you want
-3. Drag the symbol from the preview in to you drawing
+The [bundled libraries](../Bundled-Libraries/) include modelled circuit components as well as physical equipment for network, embedded, audio, laboratory, motion-control and solar layouts. They are supplied with TinyCAD in both the browser and Desktop App; no account, separate download or library import is needed. See the library guide for the contents and purpose of each collection.
+
+### Search online
+
+If the bundled collections do not contain what you need, select **Online** and enter a component name or part number in **Search libraries...**. TinyCAD searches the TinyCAD.net symbol collection and shows matching symbols with artwork previews. Online search requires an internet connection.
+
+Select a result to inspect its preview and description, then drag its artwork into your drawing. You do not need to download a separate library first. Check that the pin names and numbers match the component and package you intend to use.
+
+### If you cannot find the symbol you want
+
+Use [Custom Symbol Libraries](../Custom-symbol-libraries/) to create a `.tclib` library or open one you already have. Your libraries are available through **My Libraries** in the picker.
+
+You can draw a new symbol or adapt a copy of a suitable existing one; see [Editing a Symbol](../Editing-a-Symbol/) for its graphics, pins and properties. You can also [import symbols from KiCad](../Importing-Symbols-from-KiCAD/) into a custom library. Bundled libraries are read-only, so keep your own definitions in a custom library.
+
+## Place the chosen symbol
+
+1. Choose **Standard**, **Online** or **My Libraries**, then browse or search that source.
+2. Select a result to inspect its larger preview and description.
+3. Drag the symbol's artwork from the list or preview onto the drawing, then position it on the grid.
+4. Press **Escape** or right-click when you have finished placing copies.
+
+The video below demonstrates finding and placing a symbol. For more on browsing and managing the picker, see [Using Symbol Libraries](../Using-Symbol-Libraries/).
 
 {% include video-player.html
 	src="/v4/images/video/Video 6.mp4"

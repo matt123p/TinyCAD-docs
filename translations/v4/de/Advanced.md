@@ -4,7 +4,9 @@ layout: default
 # TinyCAD – Erweitert
 {: #tinycad---advanced}
 
-In diesem Abschnitt geht es um erweiterte Bearbeitungs-, Validierungs- und Ausgabeabläufe.
+Dieser Abschnitt behandelt fortgeschrittene Bearbeitungs-, Prüf- und Ausgabeabläufe.
+
+Siehe auch [Simulation und SPICE](../Simulation/) für die integrierte Schaltungsanalyse sowie [SPICE-Modelle und Netlistenausgabe](../SPICE-output/) für Modellvorlagen und den Export in externe Simulatoren.
 
 ## Seiten
 {: #pages}
@@ -23,4 +25,4 @@ In diesem Abschnitt geht es um erweiterte Bearbeitungs-, Validierungs- und Ausga
 {% endfor %}
 {% endif %}
 
-- Zurück zum [Inhaltsverzeichnis von v4](../CONTENTS/)
+- Zurück zu [Inhalt v4](../CONTENTS/)

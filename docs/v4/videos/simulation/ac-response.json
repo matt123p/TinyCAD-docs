@@ -1,0 +1,12 @@
+{
+  "id": "ac-response",
+  "recorded": false,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "analysis": "AC",
+    "newRun": "complete / available"
+  },
+  "steps": [],
+  "pageErrors": []
+}

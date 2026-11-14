@@ -2,124 +2,87 @@
 layout: default
 ---
 
-# SPICE output
+# SPICE models and netlist output
 
-SPICE support in TinyCAD v4 works the same way as v3: TinyCAD generates a SPICE text file from your schematic using symbol-level templates.
+TinyCAD supports both [integrated ngspice simulation](../Simulation/) and SPICE netlist export for an external simulator. Both depend on the component's SPICE templates and pin mapping. A symbol's appearance alone does not describe its electrical behaviour.
 
-## What SPICE is used for
+## Models, templates and pin order
 
-SPICE (Simulation Program with Integrated Circuit Emphasis) is a family of circuit simulation formats and tools. A SPICE simulator lets you test circuit behavior before building hardware, for example:
+A resistor can use a native SPICE element. A transistor may need a `.model`; a more complex device can use a `.subckt`. A placed symbol's SPICE settings connect its physical pin numbers to the terminals expected by that model. Inspect the **SPICE** tab in symbol properties; instance attributes can override symbol defaults.
 
-- DC operating points and bias conditions
-- Transient (time-domain) behavior
-- AC/frequency response
-- Parameter sweeps and "what-if" analysis
+Templates use:
 
-TinyCAD does not run the simulation itself. Instead, it exports a SPICE file that you run in your chosen SPICE engine.
+- **`%(pin)`** for the connected net of the specified TinyCAD pin number.
+- **`$(attribute)`** for a component attribute.
+- **`refnum`** as a specially handled reference suffix so the template's SPICE device prefix is preserved.
 
-## SPICE file format and general layout
+For example, a resistor template may be:
 
-Different SPICE engines vary slightly, but most SPICE files follow the same overall shape:
+```text
+R$(refnum) %(1) %(2) $(NAME)
+```
 
-1. Optional header/comments
-2. Device/model includes and definitions
-3. Circuit element lines (one line per component instance)
-4. Analysis/control commands
-5. End marker (commonly `.end`)
+For reference R3, nets 7 and 9, and NAME `10k`, it produces:
 
-In practice, this means your exported file usually has:
+```spice
+R3 7 9 10k
+```
 
-- "Setup" text at the top (models, includes, options)
-- A body containing generated components and their connected nets
-- "Run" or analysis text at the bottom
+The underlying model-template attribute is **`$$SPICE`**; prologue text is **`$$SPICE_PROLOG`**. A template can reorder pins: do not assume schematic pin 1 is SPICE's first terminal. A BJT element expects **collector, base, emitter**. If a symbol numbers base 1, emitter 2 and collector 3, the template must substitute `%(3) %(1) %(2)` in that order. A subcircuit uses the order declared on its `.subckt` line, which can differ from a device package.
 
-TinyCAD's SPICE generation is designed to map directly onto this layout.
+Read the actual symbol and model together. Supply pins, hidden pins, transistor variants and op-amp models are frequent sources of mismatches. A generic 741-style behavioural model is not a complete manufacturer-qualified 741 macro-model.
 
-## How TinyCAD generates SPICE
+## Use a model in integrated simulation
 
-TinyCAD uses a string template system on each SPICE-enabled symbol. Each symbol can define:
+1. Start with a modelled symbol from a [bundled simulation library](../Bundled-Libraries/#libraries-with-simulation-models), or add an appropriate SPICE template to a custom symbol.
+2. Confirm that each template references existing attributes and the correct pins.
+3. On the Simulation sheet, attach any required model **text** and give attachments logical filenames. Typical text-file extensions are `.lib`, `.cir` and `.mod`.
+4. Resolve `.include` and `.lib` dependencies through those attachments. Keep required definitions with the drawing.
+5. Connect ground **0**, set the analysis on **Setup**, then run and inspect diagnostics.
 
-- **Model template**: inserted for every instance of that component in the schematic
-- **Prologue template**: inserted near the top of the file, once per component type
-- **Epilogue template**: inserted near the bottom of the file, once per component type
+The managed engine does not fetch a model from a website or read an arbitrary absolute path on your computer. Supply the dependencies explicitly. It also does not execute arbitrary shell commands, `.control` scripts, startup files, externally supplied native modules or file-backed device dependencies. A vendor model using simulator-specific syntax may need adaptation; “SPICE compatible” does not guarantee identical dialects.
 
-Open these fields from symbol properties in the symbol library editor (SPICE tab).
+TinyCAD's integrated Simulation sheet owns the analysis commands and final `.end`. **A legacy RUN symbol is not required.** Move the old analysis settings into Setup and delete a legacy RUN symbol when adapting an export-oriented drawing. Remove analysis statements and `.end` from any remaining component attributes; those commands are rejected in the integrated component-template path.
 
-### Template expansion
+Check a vendor model's licence before redistributing it. Inspect its documented pin order, units, model assumptions and supported simulator. Keep the manufacturer's documentation alongside your modelling notes.
 
-Templates can include:
+## Inspect and export a SPICE netlist
 
-- `%(pin)` for pin/net substitutions
-- `$(attribute)` for symbol attribute substitutions
+A netlist is a text description of devices and the nodes connecting them. Ground is named `0`. Typical content has model/setup definitions, component lines, analysis directives and a final `.end`. Useful checks include:
 
-Example model template for a resistor:
+- Does each component reference the intended model and value?
+- Do connected pins share the expected net names?
+- Are the supply/return nets present, including 0?
+- Is the semiconductor or subcircuit terminal order correct?
+- Are all model definitions and included text available to the selected engine?
 
-`R$(refnum) %(1) %(2) $(NAME)`
+For the integrated setup, open **Simulation sheet → Diagnostics → Generate circuit text**, inspect the expanded deck, then choose **Export circuit** to save `simulation.cir`. This includes the managed analysis.
 
-If the resistor instance is reference `R3`, connected between nets `7` and `9`, with `NAME=10K`, TinyCAD writes:
+For legacy template-based export, use the separate **Generate Spice NetList** command in the browser File menu or Desktop Tools menu. It is separate from the PCB-oriented [Generate Netlist](../Generate-Netlist/) dialog. The exported analysis/run directives must suit the external engine. A companion tutorial `.cir` file can also be inspected directly. **Open a `.dzn` drawing in TinyCAD; a `.cir` netlist is not a TinyCAD drawing file.**
 
-`R3 7 9 10K`
+### Legacy export templates
 
-`refnum` is handled specially so the SPICE device letter in the template is preserved.
+The export-oriented template system supports a per-instance model body plus per-symbol prologue and epilogue. Identical prologues/epilogues are deduplicated. Priorities range from 0 to 9: prologues run low to high; epilogues are arranged with priority 0 last.
 
-### Prologue/epilogue order and deduplication
+Older drawings may use a no-pin **RUN** symbol whose prologue/epilogue supplies analysis and ending directives for an exported deck. This is an export convention, not an instruction to add RUN to an integrated Simulation sheet. Review those statements before running the exported file in a separate simulator.
 
-- Prologues and epilogues are deduplicated when identical
-- Each has a priority (`0` to `9`)
-- Prologues are written from low to high priority
-- Epilogues are written so priority `0` appears last in the file
+### Conditional templates
 
-This makes it possible to control where setup and analysis text appears.
+For export-oriented/custom templates, the supported conditional forms include:
 
-## Required schematic setup for SPICE export
+```text
+?( defined(attribute), true text, false text )
+?( not_defined(attribute), true text, false text )
+?( empty(attribute), true text, false text )
+?( not_empty(attribute), true text, false text )
+?( connected(pin), true text, false text )
+?( not_connected(pin), true text, false text )
+```
 
-To generate a valid SPICE file, your drawing must include:
+Conditionals can be nested. Inspect the expanded deck rather than judging a complex template only from its source text.
 
-- SPICE-enabled symbols for the simulated circuit
-- A special **RUN** symbol
-- A net named **0** (SPICE ground)
+## Numerical notation and portability
 
-### RUN symbol
+In SPICE text **`M` is milli**, just like `m`; use **`Meg`** for mega. `1k`, `100n` and `10u` are common values. Use explicit model parameters and references instead of relying on a simulator's unspecified defaults.
 
-The RUN symbol is a normal TinyCAD symbol with no pins and no model template, but with prologue/epilogue text used to inject simulation control statements.
-
-Set RUN prologue and epilogue priorities to `0` so its text appears at the very start and very end of the generated file.
-
-Use one RUN symbol per simulation circuit.
-
-### The `0` net
-
-SPICE requires ground to be net `0`.
-
-In TinyCAD, create this by naming a connection `0` using either:
-
-- A net label, or
-- A power symbol with value `0`
-
-## Creating the SPICE output
-
-After the symbols, RUN node, and `0` net are in place, generate the SPICE output from TinyCAD's SPICE export command in the UI.
-
-Export options are intentionally minimal because run-time behavior is expected to be controlled through your RUN symbol templates.
-
-## Advanced template conditionals
-
-For more advanced symbols, template conditionals are supported (same behavior as v3), including tests for:
-
-- Attribute present/not present
-- Attribute empty/not empty
-- Pin connected/not connected
-
-Conditional syntax:
-
-- `?( defined(attributename), true string, false string )`
-- `?( not_defined(attributename), true string, false string )`
-- `?( empty(attributename), true string, false string )`
-- `?( not_empty(attributename), true string, false string )`
-- `?( connected(pinnumber), true string, false string )`
-- `?( not_connected(pinnumber), true string, false string )`
-
-Conditionals can be nested.
-
-- Back to [Advanced](../Advanced/)
-- Back to [v4 contents](../CONTENTS/)
+External ngspice command-line documentation covers a broader environment than TinyCAD's integrated engine. For complete element syntax, models, analyses and compatibility notes, see the official [ngspice documentation](https://ngspice.sourceforge.io/docs.html) and [user manual](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf). Continue with [how TinyCAD implements SPICE](../SPICE-Tutorial-11/) for a worked explanation of engines, symbols and netlists.

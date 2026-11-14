@@ -3,7 +3,7 @@
   {%- assign figure_classes = figure_classes | append: ' ' | append: include.class -%}
 {%- endif -%}
 <figure class="{{ figure_classes }}"{% if include.width %} style="width: {{ include.width }}px; max-width: 100%;"{% endif %}>
-  <video class="manual-video" controls preload="{{ include.preload | default: 'metadata' }}" playsinline{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}>
+  <video class="manual-video" controls preload="{{ include.preload | default: 'metadata' }}" playsinline{% if include.poster %} poster="{{ include.poster }}"{% endif %}{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}>
     <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}" />
     {{ page.manual_ui.videoFallback | default: 'Your browser does not support the video tag.' | escape }} <a href="{{ include.src }}">{{ page.manual_ui.openVideo | default: 'You can open the video directly' | escape }}</a>.
   </video>

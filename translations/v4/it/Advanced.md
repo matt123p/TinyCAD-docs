@@ -4,7 +4,9 @@ layout: default
 # TinyCAD - Avanzate
 {: #tinycad---advanced}
 
-Questa sezione tratta i flussi di lavoro avanzati di modifica, convalida e generazione degli output.
+Questa sezione illustra i flussi di lavoro avanzati per la modifica, la convalida e la generazione degli output.
+
+Vedere anche [Simulazione e SPICE](../Simulation/) per l’analisi dei circuiti integrati e [Modelli SPICE e generazione dell’output netlist](../SPICE-output/) per i modelli e l’esportazione verso simulatori esterni.
 
 ## Pagine
 {: #pages}

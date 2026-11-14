@@ -4,26 +4,29 @@ layout: default
 # TinyCAD – Zeichnen
 {: #tinycad---drawing}
 
-Dieser Abschnitt behandelt den grundlegenden Zeichenablauf, einschließlich der Einrichtung der ersten Zeichnung,
-Beschriftungen, Bussen, Nichtverbindungen, Anmerkungen und dem Drucken.
+Dieser Abschnitt behandelt den grundlegenden Zeichenablauf, einschließlich der
+Einrichtung der ersten Zeichnung, Beschriftungen, Busse, Nichtverbindungen,
+Anmerkungen und des Druckens.
+
+Informationen zum Umordnen einer vorhandenen Schaltung finden Sie unter [Layout aufräumen](../Layout-Tidy-Up/). Dort werden Auto-Layout-Bereiche, Stärke-Einstellungen und das Rückgängigmachen eines Ergebnisses mit Undo behandelt.
 
 ## Objekte vorübergehend ausblenden
 {: #temporarily-hiding-objects}
 
-So erreichen Sie Objekte unter einem überladenen Bereich einer Zeichnung:
+So erreichen Sie Objekte, die sich unter einem dicht gefüllten Teil einer Zeichnung befinden:
 
 1. Wählen Sie die Objekte aus, die Sie aus dem Weg räumen möchten.
 2. Öffnen Sie das Kontextmenü der Zeichnung (Rechtsklick oder langes Drücken auf einem Touchscreen)
-   und wählen Sie **Auswahl ausblenden (Hide selected)**.
-3. Öffnen Sie anschließend das Kontextmenü und wählen Sie **Alle ausgeblendeten Objekte anzeigen (Show all hidden objects)**,
-   um alle ausgeblendeten Objekte auf dem aktuellen Blatt wieder einzublenden.
+   und wählen Sie **Ausgewählte ausblenden**.
+3. Wenn Sie fertig sind, öffnen Sie das Kontextmenü und wählen Sie **Alle ausgeblendeten Objekte anzeigen**,
+   um alle ausgeblendeten Objekte auf dem aktuellen Blatt wiederherzustellen.
 
-Ausgeblendete Objekte können auf der Arbeitsfläche nicht ausgewählt werden, solange sie ausgeblendet sind. Das Ausblenden ist eine
-vorübergehende Ansichtseinstellung: Es löscht keine Objekte und speichert keine ausgeblendete Markierung in der
-Zeichnungsdatei. Ausgeblendete Objekte sind weiterhin an der elektrischen Verbindung und an Netzlisten beteiligt
-und erscheinen weiterhin in Druck- und PDF-Ausgaben.
+Ausgeblendete Objekte können nicht auf der Arbeitsfläche ausgewählt werden, solange sie ausgeblendet sind. Das Ausblenden ist eine
+vorübergehende Ansichtseinstellung: Es löscht keine Objekte und speichert keine Ausblende-Markierung in der
+Zeichnungsdatei. Ausgeblendete Objekte sind weiterhin Bestandteil der elektrischen Konnektivität und
+Netzlisten und erscheinen weiterhin in gedruckten Ausgaben und PDF-Ausgaben.
 
-Gesten für Touchscreens und präzises Platzieren finden Sie unter [Touch-Steuerung](../Touch-controls/).
+Informationen zu Touchscreen-Gesten und präziser Platzierung finden Sie unter [Touch-Steuerung](../Touch-controls/).
 
 ## Seiten
 {: #pages}
@@ -42,4 +45,4 @@ Gesten für Touchscreens und präzises Platzieren finden Sie unter [Touch-Steuer
 {% endfor %}
 {% endif %}
 
-- Zurück zu [Inhaltsverzeichnis von v4](../CONTENTS/)
+- Zurück zu den [v4-Inhalten](../CONTENTS/)

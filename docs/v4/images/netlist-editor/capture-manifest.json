@@ -1,0 +1,22 @@
+{
+  "applicationCommit": "b1fcc9bbb046adae3fdddd25f13e7a09aa822390",
+  "scope": "Real browser UI; bundled divider, live netlist, saved type assignment, colour preview and attributes editor. No circuit or UI data mocked.",
+  "captures": [
+    "netlist-overview.png",
+    "netlist-types.png",
+    "netlist-type-assignment.png",
+    "netlist-attributes.png",
+    "netlist-colour-preview.png"
+  ],
+  "checks": {
+    "example": "divider",
+    "net": "9\nCircuit\n2\nOUT\nR1.2, R2.1",
+    "type": "control",
+    "wireThickness": 2,
+    "colourPreview": "#007f5f",
+    "attributePreview": {
+      "purpose": "Divider output signal",
+      "notes": "Between R1 and R2"
+    }
+  }
+}

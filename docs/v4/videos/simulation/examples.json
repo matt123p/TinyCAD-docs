@@ -1,0 +1,122 @@
+{
+  "id": "examples",
+  "recorded": true,
+  "engine": null,
+  "checks": {
+    "example": "network-layout",
+    "explanationVisible": true
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2196,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2284
+    },
+    {
+      "kind": "click",
+      "startedMs": 7420,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'Examples', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 288
+      },
+      "finishedMs": 7521
+    },
+    {
+      "kind": "click",
+      "startedMs": 12643,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Small office network', exact: true })",
+      "point": {
+        "x": 781.25,
+        "y": 709.375
+      },
+      "finishedMs": 12720
+    },
+    {
+      "kind": "click",
+      "startedMs": 17926,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17980
+    },
+    {
+      "kind": "click",
+      "startedMs": 24116,
+      "target": "getByRole('button', { name: 'Zoom Out (-)', exact: true })",
+      "point": {
+        "x": 1004,
+        "y": 61
+      },
+      "finishedMs": 24185
+    },
+    {
+      "kind": "click",
+      "startedMs": 29186,
+      "target": "getByRole('button', { name: 'Zoom Out (-)', exact: true })",
+      "point": {
+        "x": 1004,
+        "y": 61
+      },
+      "finishedMs": 29302
+    },
+    {
+      "kind": "click",
+      "startedMs": 35403,
+      "target": "getByRole('button', { name: 'Show example explanation', exact: true })",
+      "point": {
+        "x": 1526.0234375,
+        "y": 19.59375
+      },
+      "finishedMs": 35457
+    },
+    {
+      "kind": "click",
+      "startedMs": 41501,
+      "target": "getByRole('button', { name: 'Hide example explanation', exact: true }).first()",
+      "point": {
+        "x": 1526.0234375,
+        "y": 19.59375
+      },
+      "finishedMs": 41545
+    },
+    {
+      "kind": "click",
+      "startedMs": 46482,
+      "target": "getByRole('button', { name: 'Show example explanation', exact: true })",
+      "point": {
+        "x": 1526.0234375,
+        "y": 19.59375
+      },
+      "finishedMs": 46523
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open Example is at the right of the browser title bar. Select Examples, then Small office network."
+    },
+    {
+      "atSeconds": 21.783,
+      "text": "The example is an editable copy with its device artwork embedded."
+    },
+    {
+      "atSeconds": 33.17,
+      "text": "Explanation opens the wiring guide beside the drawing; it is independent of simulation charts."
+    },
+    {
+      "atSeconds": 39.338,
+      "text": "Hide and reopen the explanation without losing its instructions. Save As keeps your own drawing."
+    }
+  ],
+  "pageErrors": []
+}
