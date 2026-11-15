@@ -4,6 +4,8 @@ layout: default
 
 # Editing a Symbol
 
+To generate a symbol from a datasheet or add several components to an open library, see the [AI assistant](../AI-Assistant/) guide. You can refine its results using the editing tools on this page.
+
 ## How symbols work in TinyCAD
 
 Symbols are created from normal objects found on the Toolbar. They may contain

@@ -32,7 +32,7 @@ try{
  const context=await browser.newContext({viewport:{width:1500,height:1000}});
  const page=await context.newPage();const errors=[];
  page.on('pageerror',e=>errors.push(e.message));
- const names=(await fs.readdir(path.join(root,'docs/v4'))).filter(n=>/^(?:Bundled-|Labels|Library-Folders|Layout-Tidy-Up|Multiple-Sheet-Drawings|Netlist-Editor|Simulation|SPICE-|XSPICE|Tutorial-).*\.md$/.test(n)).sort();
+ const names=(await fs.readdir(path.join(root,'docs/v4'))).filter(n=>/^(?:AI-Assistant|Bundled-|Labels|Library-Folders|Layout-Tidy-Up|Multiple-Sheet-Drawings|Netlist-Editor|Simulation|SPICE-|XSPICE|Tutorial-).*\.md$/.test(n)).sort();
  const links=new Set();
  for(const name of names){
   const url=`${base}/v4/${name.slice(0,-3)}/`;

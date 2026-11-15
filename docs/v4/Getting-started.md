@@ -4,6 +4,8 @@ layout: default
 
 # TinyCAD - Getting Started
 
+For help creating symbols, libraries or circuits from written instructions and datasheets, see the [AI assistant](../AI-Assistant/) guide, including provider setup and example prompts.
+
 TinyCAD v4 is available for use in two different ways:
 
 ## Desktop app

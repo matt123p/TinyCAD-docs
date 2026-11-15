@@ -46,6 +46,8 @@ v4:
         url: /v4/TinyCAD-Desktop-App/
       - title: Bundled Examples
         url: /v4/Bundled-Examples/
+  - title: AI Assistant
+    url: /v4/AI-Assistant/
   - title: Drawing
     url: /v4/User-guide/
     children:

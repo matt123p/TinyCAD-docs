@@ -1,0 +1,19 @@
+{
+  "applicationCommit": "9abbd8446ef872d2af875b927f7eb2ecb0f53e18",
+  "captures": [
+    "chat-open.png",
+    "setup-provider.png",
+    "setup-api-key.png",
+    "setup-model.png",
+    "chat-ready.png",
+    "connection-settings.png",
+    "setup-gemini.png",
+    "setup-ollama.png",
+    "setup-chatgpt-desktop.png"
+  ],
+  "scope": "Real current browser and Electron UI, temporary profiles. Model discovery only uses an illustrative intercepted catalog and a dummy key; no sign-in, billed requests, inference, or editor changes. ChatGPT sign-in availability uses the actual desktop runtime. No settings or circuit UI is mocked.",
+  "checks": {
+    "keyPersisted": false,
+    "pageErrors": []
+  }
+}

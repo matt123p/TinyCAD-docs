@@ -8,6 +8,8 @@ Symbols are the core building blocks of a TinyCAD schematic. You place symbols f
 
 The library picker on the left offers three sources: **Standard** for bundled libraries, **Online** for TinyCAD.net search, and **My Libraries** for your own library files.
 
+The [AI assistant](../AI-Assistant/) can also find or create a symbol from a datasheet and place it directly in the drawing. Open a custom library for editing when you want it to build reusable library components.
+
 ## Find a symbol
 
 ### Use the bundled libraries

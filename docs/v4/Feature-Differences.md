@@ -36,6 +36,13 @@ This page summarizes key differences between TinyCAD web and desktop.
 				<th scope="rowgroup" colspan="5">Core editing and libraries</th>
 			</tr>
 			<tr>
+				<th scope="row">AI-assisted symbol, library and circuit editing</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td>Connect an AI provider using Chat. Public hosted browser builds use API keys; Desktop also supports eligible ChatGPT account sign-in. See <a href="../AI-Assistant/">AI assistant setup and prompts</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">Load/Save TinyCAD <code>.dsn</code> files</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>

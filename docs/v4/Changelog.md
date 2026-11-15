@@ -10,6 +10,8 @@ layout: default
 
 ### Added
 
+- [AI-assisted symbol, library and circuit editing](../AI-Assistant/), including attached datasheets/images, bundled and online symbol search, direct edits to the active document, undoable changes, provider/model settings and local Ollama connections.
+
 - [Integrated simulation](../Simulation/) using local ngspice in the browser and Desktop, with operating-point, transient, AC, DC sweep, noise, transfer-function and pole-zero analyses. [Event-driven XSPICE](../XSPICE/) is supported in Desktop.
 - [Sources, probes and virtual instruments](../Simulation-Sources-and-Instruments/), including oscilloscopes, multimeters, function generators and bench supplies.
 - [Circuit Explorer](../Simulation-Charts-and-Measurements/) for tuning, sweeps, named measurements, requirements, DC overlays, tolerance studies, test cases and power/stress investigations.
@@ -34,6 +36,8 @@ layout: default
 - Improve simulation error reporting and diagnostics, browser amplifier runs, chart pop-outs and independent example-explanation panels.
 
 ### Manual
+
+- Add a complete [AI assistant guide](../AI-Assistant/), covering symbol/library and circuit creation, provider setup with screenshots, local Ollama, document attachments, example prompts and review of generated results.
 
 - Add guides to finding and using bundled libraries and examples, and replace the export-only SPICE description with the integrated simulation workflow.
 - Add analysis, model, instrument, chart, measurement and troubleshooting references, with official ngspice and XSPICE documentation links.

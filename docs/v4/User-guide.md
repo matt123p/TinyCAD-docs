@@ -4,6 +4,8 @@ layout: default
 
 # TinyCAD - Drawing
 
+The [AI assistant](../AI-Assistant/) can create a circuit or add parts to the open drawing from written instructions. Its edits remain editable and support Undo.
+
 This section covers the core drawing workflow, including first-drawing setup,
 labels, buses, no-connects, annotations, and printing.
 

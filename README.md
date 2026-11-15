@@ -310,3 +310,18 @@ Five images and their capture manifest are written under
 `docs/v4/images/netlist-editor/`. The capture opens the bundled divider, checks
 its live OUT connection, creates net types, assigns `control`, and opens the
 colour preview and attributes editor through the real UI.
+
+AI assistant setup screenshots are captured from fresh browser and Electron builds:
+
+```sh
+# In TinyCADv4, install Chromium and build the native chat engines first.
+npx playwright install chromium
+npm run chat-bundle
+# In this manual checkout (Linux, with Xvfb):
+xvfb-run -a node scripts/capture-ai-manual.mjs ../TinyCADv4
+```
+
+The capture builds into temporary directories and uses disposable profiles. It
+checks the real desktop sign-in controls without signing in. API-key model
+discovery uses a dummy key and an intercepted illustrative catalog, with no paid
+requests or inference. The manifest records this scope and the application commit.

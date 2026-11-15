@@ -26,6 +26,7 @@ new screenshots, and expanded examples.
 ## Core links
 
 - [Getting started](Getting-started/)
+- [AI assistant](AI-Assistant/)
 - [Drawing](User-guide/)
 - [Symbols & Libraries](Symbols-and-Libraries/)
 - [Bundled libraries](Bundled-Libraries/)
