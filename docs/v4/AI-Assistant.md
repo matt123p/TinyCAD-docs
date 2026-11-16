@@ -46,7 +46,6 @@ You can connect one provider at a time.
 | **ChatGPT** | Either an eligible paid ChatGPT account using **Sign In with ChatGPT**, or an OpenAI API key using **Use API Key**. Account sign-in is available in Desktop and suitably configured local browser installations. |
 | **Anthropic Claude** | An API key from the [Claude Console](https://platform.claude.com/settings/keys), with API access and billing for the models you use. |
 | **Google Gemini** | An API key from [Google AI Studio](https://aistudio.google.com/apikey). Some models have a limited free API tier; availability and quotas apply. |
-| **Z.AI GLM** | An API key from the [Z.AI developer platform](https://z.ai/manage-apikey/apikey-list) with access to the required models. |
 | **OpenAI compatible** | The service's API key, API base URL and a model that supports tool calling. |
 | **Ollama (hosted locally)** | A running local Ollama server and an installed model with tool support. Local models do not require an API key. |
 
@@ -82,7 +81,7 @@ For developers running a local browser build, `npm run start:fs` and `npm run st
 
 ![ChatGPT API-key entry with a masked-key field and provider instructions](../images/ai-assistant/setup-api-key.png)
 
-If an endpoint cannot list models, TinyCAD asks for a **Model ID** on step 2. Enter the provider's exact identifier and click **Next** again; a short greeting checks it. Z.AI also checks the key with a short greeting. These checks can use provider quota. A failed connection stays on step 2 and displays the error.
+If an endpoint cannot list models, TinyCAD asks for a **Model ID** on step 2. Enter the provider's exact identifier and click **Next** again; a short greeting checks it. These checks can use provider quota. A failed connection stays on step 2 and displays the error.
 
 For Gemini, create or select a project in Google AI Studio and copy its API key into TinyCAD. Google's [Gemini API pricing page](https://ai.google.dev/gemini-api/docs/pricing) explains which models and usage qualify for the free tier. Paid models or higher usage may require billing.
 
@@ -136,7 +135,7 @@ The header's **New chat** icon clears the conversation, draft and attachments. I
 
 Use **Import PDF/image** beside the message controls to attach PDF, PNG, JPEG or WebP files. You can attach up to **six files totalling 10 MiB**; provider limits also apply. Ask for the exact component variant, package and relevant PDF pages, and point out whether a pin diagram is a top or bottom view.
 
-For Z.AI, compatible endpoints and Ollama, **PDF pages** selects pages to render locally, for example `1-4,12`; leave it blank for all pages within the 20-page conversion limit. Choose fewer pages if the converted images exceed 10 MiB. ChatGPT/OpenAI, Claude and Gemini receive PDFs directly. Diagram-reading capability still depends on the chosen model.
+For compatible endpoints and Ollama, **PDF pages** selects pages to render locally, for example `1-4,12`; leave it blank for all pages within the 20-page conversion limit. Choose fewer pages if the converted images exceed 10 MiB. ChatGPT/OpenAI, Claude and Gemini receive PDFs directly. Diagram-reading capability still depends on the chosen model.
 
 Search of TinyCAD's public symbol library is available independently of general web browsing. Native web research is available to eligible **Sign in with ChatGPT** connections when the model/account policy permits it; citations appear as links in the response. API-key connections and the other providers do not currently gain general web search through TinyCAD. Attach the datasheet or relevant image when the assistant cannot open a manufacturer's website.
 
@@ -194,7 +193,7 @@ The **AI settings** gear shows the current provider and connection method, with 
 
 API keys and conversation history stay in application memory; keys are not saved with preferences or drawings. You need to re-enter an API key after reloading/restarting. Non-secret provider, endpoint, model and thinking preferences can be remembered. ChatGPT account authorization is managed separately by the local runtime and can survive restarts; Desktop uses secure OS encryption when available.
 
-For hosted AI, messages, attachments and the document content or previews requested by its tools are sent to the selected provider. Z.AI traffic passes transiently through TinyCAD's relay; other hosted API-key providers use direct requests. Compatible services must permit browser access (CORS) and normally use HTTPS; localhost is the exception. For a wholly local workflow, use a local Ollama model and supplied local reference documents, and avoid online symbol searches or cloud models.
+For hosted AI, messages, attachments and the document content or previews requested by its tools are sent to the selected provider. Hosted API-key connections send requests directly to the selected endpoint; TinyCAD does not provide a provider relay. Compatible services must permit browser access (CORS) and normally use HTTPS; localhost is the exception. For a wholly local workflow, use a local Ollama model and supplied local reference documents, and avoid online symbol searches or cloud models.
 
 Generated parts and circuits still need engineering review. Check exact package pinouts, power ratings, supply voltage, logic levels and operating limits against the real datasheets. TinyCAD's structural validation, design-rule checks and layout connection checks help find errors; they do not prove the circuit works, replace simulation or establish that hardware has been tested.
 
