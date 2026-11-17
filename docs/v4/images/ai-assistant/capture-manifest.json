@@ -15,5 +15,12 @@
   "checks": {
     "keyPersisted": false,
     "pageErrors": []
+  },
+  "desktopChatCapture": {
+    "file": "chat-open-desktop.png",
+    "applicationCommit": "a976269dc774daf4580c9b3981e9255779751b04",
+    "application": "TinyCAD Desktop (Electron)",
+    "source": "Existing dist/index-electron.html, served on loopback inside the real Electron runtime",
+    "scope": "Native desktop window captured using Computer Use with a fresh temporary profile. Chat panel open; no sign-in, API keys, inference or document edits."
   }
 }

@@ -6,7 +6,9 @@ layout: default
 
 TinyCAD's AI assistant turns written instructions, datasheets and circuit images into editable symbols and drawings. It works alongside the normal editor: you can ask it to create a circuit, add parts to the drawing already open, build a symbol library, or explain an existing connection.
 
-Open **Chat** on the toolbar to use it. The assistant is available in the browser and Desktop App. Connect an AI provider before sending your first message; the connection choices are explained below.
+**Desktop only:** The AI assistant (chatbot) is only available in the TinyCAD Desktop App. It is not available in the browser build.
+
+Open **Chat** on the toolbar in the Desktop App to use it. Connect an AI provider before sending your first message; the connection choices are explained below.
 
 ## What it can do
 
@@ -27,7 +29,7 @@ The assistant looks in the [bundled libraries](../Bundled-Libraries/) first, the
 
 For reusable parts, first [create or open a custom library for editing](../Custom-symbol-libraries/), then open Chat in that library window. For a circuit, keep the intended drawing window active. Tell the assistant which sheet, component references or functional block you mean. Current AI symbol retrieval and placement supports **single-unit symbols**; use the normal symbol editor for multi-unit parts that the assistant cannot import.
 
-![TinyCAD with the Chat toolbar button and the assistant panel open](../images/ai-assistant/chat-open.png)
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="Create a symbol from a datasheet in TinyCAD Desktop. AI processing waits are shown at 12× speed and marked on screen; interaction and results are shown at normal speed." %}
 
 ## Set up a connection
 
@@ -43,7 +45,7 @@ You can connect one provider at a time.
 
 | Provider in TinyCAD | What you need |
 | --- | --- |
-| **ChatGPT** | Either an eligible paid ChatGPT account using **Sign In with ChatGPT**, or an OpenAI API key using **Use API Key**. Account sign-in is available in Desktop and suitably configured local browser installations. |
+| **ChatGPT** | Either an eligible paid ChatGPT account using **Sign In with ChatGPT**, or an OpenAI API key using **Use API Key**. Account sign-in is available in the Desktop App. |
 | **Anthropic Claude** | An API key from the [Claude Console](https://platform.claude.com/settings/keys), with API access and billing for the models you use. |
 | **Google Gemini** | An API key from [Google AI Studio](https://aistudio.google.com/apikey). Some models have a limited free API tier; availability and quotas apply. |
 | **OpenAI compatible** | The service's API key, API base URL and a model that supports tool calling. |
@@ -66,10 +68,6 @@ If an account is remembered, the screen offers **Continue as …** or **Sign in 
 ![Desktop AI settings offering Sign In with ChatGPT or Use API Key](../images/ai-assistant/setup-chatgpt-desktop.png)
 
 ChatGPT sign-in requires an eligible paid account; account, workspace and app limits still apply. It does not silently switch to API-key billing when a request is refused. See OpenAI's [Sign in with ChatGPT documentation](https://developers.openai.com/siwc/token-sharing-open-source) for the account-plan connection.
-
-**On the public hosted browser app, use an API key.** This TinyCAD release supports ChatGPT account sign-in in Desktop and locally hosted browser builds with the local account runtime. If step 2 says account sign-in is unavailable on the current host, select **Use API Key** or use Desktop.
-
-For developers running a local browser build, `npm run start:fs` and `npm run start:ga` start the account runtime with the development server. A separately hosted local build needs `npm run chatgpt:local` and a proxy for `/api/chat/chatgpt` to `http://127.0.0.1:43195`, preserving the request path. The runtime is for the local user; keep it bound to loopback. See the [app's integration guide](https://github.com/matt123p/TinyCADv4/blob/feature/spice/docs/chatbot.md#run-locally) for the development configuration.
 
 #### Use an API key
 
@@ -108,8 +106,6 @@ Choose a model that supports **tools** so it can inspect and edit TinyCAD docume
 5. Choose a model and thinking level, then **Finish**.
 
 ![Ollama setup showing the local API URL and browser-origin guidance](../images/ai-assistant/setup-ollama.png)
-
-In a browser, allow the **exact TinyCAD origin** shown in the wizard through Ollama's `OLLAMA_ORIGINS` setting and restart Ollama. Include a port when the origin includes one. For example, the public browser editor uses the origin `https://online.tinycad.net`, while a local development server has a different origin. The browser may also request permission to access the local network. Follow the [Ollama origin configuration guide](https://docs.ollama.com/faq#how-can-i-allow-additional-web-origins-to-access-ollama) for your operating system.
 
 The Ollama connection accepts localhost/loopback URLs. For a remote server, choose **OpenAI compatible** instead. Give a local model sufficient context for the conversation and TinyCAD tools; see [Ollama's context configuration](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size).
 
