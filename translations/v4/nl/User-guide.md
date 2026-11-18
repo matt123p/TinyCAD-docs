@@ -4,29 +4,32 @@ layout: default
 # TinyCAD - Tekenen
 {: #tinycad---drawing}
 
-In dit gedeelte wordt de belangrijkste tekenworkflow behandeld, waaronder het
-instellen van de eerste tekening, labels, bussen, niet-aangesloten aansluitingen,
-annotaties en afdrukken.
+De [AI-assistent](../AI-Assistant/) kan op basis van geschreven instructies een schakeling maken of onderdelen toevoegen aan de geopende tekening. De wijzigingen blijven bewerkbaar en kunnen ongedaan worden gemaakt.
 
-Zie [Layout tidy-up](../Layout-Tidy-Up/) voor het herschikken van een bestaand circuit. Hierin worden de bereiken van Auto-layout, de instellingen voor de sterkte en het ongedaan maken van een resultaat met Undo behandeld.
+In dit gedeelte komen de belangrijkste tekenhandelingen aan bod, waaronder het instellen van een eerste tekening,
+labels, bussen, niet-aansluitingen, annotaties en afdrukken.
+
+Zie [Indeling opruimen](../Layout-Tidy-Up/) voor het herschikken van een bestaande schakeling. Hierin worden de bereiken van Automatische indeling, de instellingen voor de sterkte en het ongedaan maken van een resultaat met Ongedaan maken behandeld.
+
+Zie [Afbeeldingen](../Images/) voor logo's, referentieafbeeldingen en gescande schema's. Hierin komen kopiëren en plakken, bestanden importeren, het formaat wijzigen, een vaste beeldverhouding en het afsnijden van pixels aan bod.
 
 ## Objecten tijdelijk verbergen
 {: #temporarily-hiding-objects}
 
-Zo bereikt u objecten onder een druk gedeelte van een tekening:
+Zo krijgt u toegang tot objecten onder een druk deel van een tekening:
 
-1. Selecteer de objecten die u uit de weg wilt zetten.
-2. Open het contextmenu van de tekening (klik met de rechtermuisknop of houd
-   uw vinger lang op het scherm) en kies **Geselecteerde verbergen (Hide selected)**.
-3. Open het contextmenu wanneer u klaar bent en kies **Alle verborgen objecten weergeven (Show all hidden objects)**
-   om alle verborgen objecten op het huidige blad terug te zetten.
+1. Selecteer de objecten die u uit de weg wilt halen.
+2. Open het contextmenu van de tekening (klik met de rechtermuisknop of houd op een touchscreen lang ingedrukt)
+   en kies **Selectie verbergen**.
+3. Open wanneer u klaar bent het contextmenu en kies **Alle verborgen objecten weergeven**
+   om alle verborgen objecten op het huidige blad te herstellen.
 
-Verborgen objecten kunnen niet op het canvas worden geselecteerd zolang ze verborgen zijn. Verbergen is een
-tijdelijke weergave-instelling: objecten worden niet verwijderd en er wordt geen verborgen markering in het
+Verborgen objecten kunnen zolang ze verborgen zijn niet op het canvas worden geselecteerd. Verbergen is een
+tijdelijke weergave-instelling: objecten worden niet verwijderd en er wordt geen verborgen status in het
 tekenbestand opgeslagen. Verborgen objecten blijven van invloed op de elektrische verbindingen en
 netlijsten, en worden nog steeds weergegeven in afdrukken en PDF-uitvoer.
 
-Zie [Touch controls](../Touch-controls/) voor aanraakbewegingen en nauwkeurige plaatsing.
+Zie [Aanraakbediening](../Touch-controls/) voor aanraakbewegingen en nauwkeurige plaatsing.
 
 ## Pagina's
 {: #pages}
@@ -45,4 +48,4 @@ Zie [Touch controls](../Touch-controls/) voor aanraakbewegingen en nauwkeurige p
 {% endfor %}
 {% endif %}
 
-- Terug naar [v4-inhoud](../CONTENTS/)
+- Terug naar [inhoudsopgave v4](../CONTENTS/)

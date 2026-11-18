@@ -11,6 +11,8 @@ labels, buses, no-connects, annotations, and printing.
 
 For rearranging an existing circuit, see [Layout tidy-up](../Layout-Tidy-Up/). It covers Auto-layout scopes, strength settings and reverting a result with Undo.
 
+For logos, reference pictures and scanned diagrams, see [Images](../Images/). It covers copy and paste, file import, resizing, fixed aspect ratio and pixel clipping.
+
 ## Temporarily hiding objects
 
 To reach objects underneath a crowded part of a drawing:

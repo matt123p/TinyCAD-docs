@@ -36,6 +36,13 @@ Ta strona podsumowuje najważniejsze różnice między TinyCAD w przeglądarce a
 				<th scope="rowgroup" colspan="5">Podstawowa edycja i biblioteki</th>
 			</tr>
 			<tr>
+				<th scope="row">Wspomagana przez AI edycja symboli, bibliotek i obwodów</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nie</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Tak</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Nie</span></td>
+				<td>Tylko aplikacja na komputer; asystent AI (chatbot) nie jest dostępny w wersji przeglądarkowej. Połącz dostawcę AI za pomocą funkcji Chat, używając klucza API, kwalifikującego się konta ChatGPT lub lokalnego Ollama. Zobacz <a href="../AI-Assistant/">Konfiguracja asystenta AI i polecenia</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">Wczytywanie/zapisywanie plików TinyCAD <code>.dsn</code></th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Tak</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Tak</span></td>

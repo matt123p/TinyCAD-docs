@@ -75,6 +75,8 @@ v4:
         url: /v4/Text/
       - title: Shapes
         url: /v4/Shapes/
+      - title: Images
+        url: /v4/Images/
       - title: Rulers
         url: /v4/Rulers/
       - title: Printing

@@ -36,6 +36,13 @@ Cette page résume les principales différences entre TinyCAD web et la version 
 				<th scope="rowgroup" colspan="5">Édition et bibliothèques principales</th>
 			</tr>
 			<tr>
+				<th scope="row">Édition de symboles, de bibliothèques et de circuits assistée par l’IA</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Non</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Oui</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> Non</span></td>
+				<td>Application de bureau uniquement ; l’assistant IA (chatbot) n’est pas disponible dans la version pour navigateur. Connectez un fournisseur d’IA à l’aide de Chat et d’une clé API, d’un compte ChatGPT admissible ou d’Ollama en local. Voir <a href="../AI-Assistant/">Configuration et invites de l’assistant IA</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">Charger/enregistrer les fichiers <code>.dsn</code> TinyCAD</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Oui</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Oui</span></td>

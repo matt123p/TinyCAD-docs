@@ -36,6 +36,13 @@ layout: default
 				<th scope="rowgroup" colspan="5">核心编辑与库</th>
 			</tr>
 			<tr>
+				<th scope="row">AI 辅助的符号、库和电路编辑</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> 否</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> 是</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> 否</span></td>
+				<td>仅限桌面应用；浏览器版不提供 AI 助手（聊天机器人）。通过 Chat 连接 AI 提供商，需使用 API 密钥、符合条件的 ChatGPT 帐户或本地 Ollama。请参阅 <a href="../AI-Assistant/">AI 助手设置与提示</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">加载/保存 TinyCAD <code>.dsn</code> 文件</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> 是</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> 是</span></td>

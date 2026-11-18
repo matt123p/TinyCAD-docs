@@ -37,6 +37,8 @@ layout: default
 
 ### Manual
 
+- Add an [Images guide](../Images/) covering copy and paste, file import and format conversion, fixed aspect ratio, pixel clipping and saving images with the drawing.
+
 - Add a complete [AI assistant guide](../AI-Assistant/), covering symbol/library and circuit creation, provider setup with screenshots, local Ollama, document attachments, example prompts and review of generated results.
 
 - Add guides to finding and using bundled libraries and examples, and replace the export-only SPICE description with the integrated simulation workflow.

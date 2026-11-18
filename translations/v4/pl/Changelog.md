@@ -5,63 +5,69 @@ layout: default
 {: #tinycad-changelog}
 
 
-## Nieopublikowane
+## Niewydane
 {: #unreleased}
 {: #unreleased}
 
 ### Dodano
 {: #added}
 
-- [Zintegrowana symulacja](../Simulation/) z użyciem lokalnego ngspice w przeglądarce i aplikacji Desktop, obejmująca analizę punktu pracy, analizę stanów nieustalonych, AC, przemiatanie DC, szumy, transmitancję oraz analizę biegunów i zer. [Zdarzeniowy XSPICE](../XSPICE/) jest obsługiwany w aplikacji Desktop.
-- [Źródła, sondy i przyrządy wirtualne](../Simulation-Sources-and-Instruments/), w tym oscyloskopy, multimetry, generatory funkcyjne i zasilacze laboratoryjne.
-- [Eksplorator obwodów](../Simulation-Charts-and-Measurements/) do dostrajania, przemiatań, nazwanych pomiarów, wymagań, nakładek DC, analiz tolerancji, przypadków testowych oraz badania mocy i naprężeń.
-- [Skompresowane`.dzn` rysunki](../Simulation/#dzn-simulation-drawings), które przechowują razem obwód, modele, ustawienia symulacji i opcjonalne wyniki. Historia uruchomień i eksport wyników ułatwiają porównywanie i udostępnianie; zapisanie bez wyników tworzy mniejszą kopię.
-- [Dołączone biblioteki](../Bundled-Libraries/) układów sieciowych, wbudowanych płytek i modułów inteligentnego domu, sprzętu audio i laboratoryjnego, silników i układów ruchu oraz instalacji solarnych i akumulatorowych, a także kolekcje modeli SPICE, logiki, funkcjonalne i czujników. Wybierz je na karcie Standard w selektorze bibliotek.
-- [Siedem edytowalnych przykładów rysunków](../Bundled-Examples/), obejmujących oryginalny wzmacniacz tranzystorowy, sieć biurową, stację klimatyczno-wyświetlającą ESP32, dom z instalacją solarną i akumulatorową, studio podcastowe, stanowisko laboratoryjne i stanowisko sterowania silnikiem, z osadzonymi symbolami i objaśnieniami.
-- [Samouczki SPICE i XSPICE ](../Simulation-Tutorials/): jedenaście rozdziałów analogowych i sześć cyfrowych, z 28 odrębnymi rysunkami gotowymi do uruchomienia, definicjami modeli, ustawieniami analizy i zachowanymi przebiegami referencyjnymi.
-- [Porządkowanie układu](../Layout-Tidy-Up/) dla całych arkuszy lub wybranych elementów, z siłą działania Niska/Średnia/Wysoka, anulowaniem, sprawdzaniem połączeń i cofnięciem jednym krokiem.
+- [Edycja symboli, bibliotek i obwodów wspomagana przez AI ](../AI-Assistant/), w tym załączone karty katalogowe/obrazy, dołączone i internetowe wyszukiwanie symboli, bezpośrednie edycje aktywnego dokumentu, zmiany możliwe do cofnięcia, ustawienia dostawcy/modelu oraz lokalne połączenia Ollama.
+
+- [Zintegrowana symulacja](../Simulation/) z użyciem lokalnego ngspice w przeglądarce i aplikacji Desktop, obejmująca analizy punktu pracy, stanów nieustalonych, AC, przemiatania DC, szumów, funkcji przenoszenia oraz biegunów i zer. [Zdarzeniowe XSPICE](../XSPICE/) jest obsługiwane w aplikacji Desktop.
+- [Źródła, sondy i wirtualne przyrządy](../Simulation-Sources-and-Instruments/), w tym oscyloskopy, multimetry, generatory funkcyjne i zasilacze laboratoryjne.
+- [Eksplorator obwodów](../Simulation-Charts-and-Measurements/) do strojenia, przemiatań, nazwanych pomiarów, wymagań, nakładek DC, analiz tolerancji, przypadków testowych oraz badania mocy i obciążeń.
+- Rysunki [skompresowane `.dzn`](../Simulation/#dzn-simulation-drawings), zawierające obwód, modele, ustawienia symulacji i opcjonalne wyniki. Historia uruchomień i eksporty wyników ułatwiają porównywanie i udostępnianie; zapisanie bez wyników tworzy mniejszą kopię.
+- [Dołączone biblioteki](../Bundled-Libraries/) dla układów sieciowych, płytek wbudowanych i modułów inteligentnego domu, sprzętu audio i laboratoryjnego, silników i sterowania ruchem oraz planowania instalacji solarnych i akumulatorowych, a także kolekcje modeli SPICE, układów logicznych, funkcjonalnych i czujników. Wybierz je na karcie Standard w selektorze bibliotek.
+- [Siedem edytowalnych przykładów rysunków](../Bundled-Examples/) obejmujących oryginalny wzmacniacz tranzystorowy, sieć biurową, stację klimatyczno-wyświetlającą ESP32, dom z zasilaniem solarnym i akumulatorowym, studio podcastowe, stanowisko laboratoryjne oraz stanowisko sterowania silnikiem, z osadzonymi symbolami i objaśnieniami.
+- [Samouczki SPICE i XSPICE](../Simulation-Tutorials/): jedenaście rozdziałów analogowych i sześć cyfrowych, z 28 odrębnymi, uruchamialnymi rysunkami, definicjami modeli, ustawieniami analiz i zachowanymi przebiegami referencyjnymi.
+- [Porządkowanie układu](../Layout-Tidy-Up/) dla całych arkuszy lub zaznaczonych elementów, z poziomami siły Low/Medium/High, możliwością anulowania, kontrolą połączeń i funkcją cofania jednym krokiem.
 
 ### Zmieniono
 {: #changed}
 
-- Otwórz przykład (Open Example) i Objaśnienie (Explanation) znajdują się na pasku tytułu przeglądarki. W aplikacji Desktop dostępne są polecenia Plik → Otwórz przykład (File → Open Example) oraz Widok → Pokaż objaśnienie (View → View Explanation).
-- Menu Widok (View) aplikacji Desktop zawiera polecenie Pokaż wykresy (Show Charts); menu Symulacja (Simulation) na pasku narzędzi nadal zawiera przełącznik wykresów.
-- Automatyczny układ (Auto-layout) znajduje się obok polecenia Symulacja na pasku narzędzi i jest również dostępny w menu Narzędzia (Tools) aplikacji Desktop.
+- Polecenia Open Example i Explanation znajdują się na pasku tytułu przeglądarki. W aplikacji Desktop dostępne są File → Open Example i View → View Explanation.
+- Menu View aplikacji Desktop zawiera polecenie Show Charts; w menu Simulation na pasku narzędzi pozostawiono przełącznik wykresów.
+- Funkcja Auto-layout znajduje się obok Simulation na pasku narzędzi i jest również dostępna w menu Tools aplikacji Desktop.
 
 ### Naprawiono
 {: #fixed}
 
-- Przywrócono możliwość przeciągania podglądów grafiki komponentów w wynikach selektora Standard, My Libraries i Online.
-- Zmniejszono grafikę mikrokontrolerów, czujników i wyświetlaczy do praktycznych rozmiarów układu strony, zachowując identyfikatory wyprowadzeń i położenie przewodów.
-- Zapobiegnięto tworzeniu niepożądanych połączeń przez zmiany układu na końcach przewodów, zagięciach i gniazdach; poprawiono wyprowadzenia pinów i usunięto zbędne objazdy.
-- Usunięto małe pola etykiet zacisków nakładające się na tekst w symbolach laboratoryjnych i układów sterowania ruchem oraz zaktualizowano powiązane przykłady.
+- Przywrócono przeciągane podglądy grafiki komponentów w wynikach selektorów Standard, My Libraries i Online.
+- Zmniejszono grafikę sterowników wbudowanych, czujników i wyświetlaczy do praktycznych rozmiarów układu strony, zachowując tożsamość pinów i położenie przewodów.
+- Zapobiegano tworzeniu niepożądanych połączeń przez zmiany układu na końcach przewodów, zagięciach i gniazdach; poprawiono wyprowadzenia pinów i usunięto zbędne objazdy.
+- Usunięto małe pola etykiet zacisków nakładające się na tekst w symbolach laboratoryjnych i sterowania ruchem oraz zaktualizowano powiązane przykłady.
 - Ulepszono raportowanie błędów symulacji i diagnostykę, uruchamianie wzmacniaczy w przeglądarce, wyskakujące okna wykresów oraz niezależne panele objaśnień przykładów.
 
 ### Podręcznik
 {: #manual}
 
-- Dodano wskazówki dotyczące znajdowania i używania dołączonych bibliotek i przykładów oraz zastąpiono opis SPICE ograniczony do eksportu informacjami o zintegrowanym przepływie pracy symulacji.
-- Dodano opisy analiz, modeli, przyrządów, wykresów, pomiarów i rozwiązywania problemów, wraz z odnośnikami do oficjalnej dokumentacji ngspice i XSPICE.
-- Uwzględniono wszystkie istniejące kursy, rysunki/listy połączeń do pobrania oraz dziesięć filmów instruktażowych dotyczących bibliotek, przykładów, porządkowania układu, połączeń wieloarkuszowych i SPICE.
-- Doprecyzowano [różnice między funkcjami](../Feature-Differences/), w tym zgodność `.dzn` i tekstowych pól Markdown oraz obsługę XSPICE w przeglądarce.
-- Zaktualizowano podręcznik we wszystkich ośmiu obsługiwanych językach, w tym nawigację, nowe strony referencyjne, teksty samouczków i napisy do filmów.
+- Dodano [przewodnik po obrazach](../Images/) obejmujący kopiowanie i wklejanie, import plików i konwersję formatów, stałe proporcje, przycinanie pikseli oraz zapisywanie obrazów wraz z rysunkiem.
+
+- Dodano kompletny [przewodnik po asystencie AI ](../AI-Assistant/) obejmujący tworzenie symboli/bibliotek i obwodów, konfigurację dostawcy ze zrzutami ekranu, lokalną instancję Ollama, załączniki do dokumentów, przykładowe polecenia oraz weryfikację wygenerowanych wyników.
+
+- Dodano przewodniki dotyczące znajdowania i używania dołączonych bibliotek i przykładów oraz zastąpiono opis SPICE ograniczony do eksportu zintegrowanym procesem symulacji.
+- Dodano materiały referencyjne dotyczące analiz, modeli, przyrządów, wykresów, pomiarów i rozwiązywania problemów, wraz z odnośnikami do oficjalnej dokumentacji ngspice i XSPICE.
+- Dołączono wszystkie istniejące kursy, rysunki/listy połączeń do pobrania oraz dziesięć filmowych instruktaży dotyczących bibliotek, przykładów, porządkowania układu, połączeń między arkuszami i SPICE.
+- Doprecyzowano [różnice między funkcjami](../Feature-Differences/), w tym `.dzn` oraz zgodność pól tekstowych Markdown i obsługę XSPICE w przeglądarce.
+- Zaktualizowano podręcznik we wszystkich ośmiu obsługiwanych językach, w tym nawigację, nowe strony referencyjne, tekst samouczków i napisy do filmów.
 
 ## v4.0.11
 {: #v4011}
 {: #v4011}
 
-To wydanie wprowadza sformatowane notatki Markdown, wektorowy eksport SVG i elementy sterujące trasowaniem przewodów.
+To wydanie wprowadza sformatowane notatki Markdown, wektorowy zapis SVG i ustawienia trasowania przewodów.
 
 - [Pola tekstowe Markdown](../Text/#markdown-text-boxes): sformatowane notatki z listami, listami zadań i blokami kodu; ten sam renderer wektorowy dla rysunku, eksportu SVG i PDF.
 - Formatowanie źródła na żywo pozostawia widoczne edytowalne znaczniki i uwzględnia wybraną czcionkę bazową, zapewniając zgodne położenie kursora, zaznaczanie i zawijanie tekstu.
-- [Tryby trasowania przewodów](../Wires/#wire-routing-modes): kompaktowy selektor trybów 90°, 45° i Swobodny (Free), zachowujący aktywny podgląd.
-- Przycisk lupy pojawia się tylko po użyciu dotyku na obszarze rysunku.
+- [Tryby trasowania przewodów](../Wires/#wire-routing-modes): kompaktowy selektor trasowania 90°, 45° i Free, zachowujący aktywny podgląd.
+- Przycisk lupy pojawia się dopiero po użyciu dotyku na obszarze roboczym rysunku.
 
 ## v4.0.10 — 6 listopada 2026
 {: #v4010--6-november-2026}
 {: #v4010}
 
-- Pasek narzędzi edytora pozostaje widoczny, gdy panele bibliotek lub schematów wymagają więcej miejsca w pionie.
+- Pasek narzędzi edytora pozostaje widoczny, gdy panele biblioteki lub schematu wymagają więcej miejsca w pionie.
 
 ## v4.0.9 — 4 listopada 2026
 {: #v409--4-november-2026}
@@ -70,26 +76,26 @@ To wydanie wprowadza sformatowane notatki Markdown, wektorowy eksport SVG i elem
 {: #added-1}
 
 - [Sterowanie dotykowe](../Touch-controls/), w tym bezpośrednią edycję, przesuwanie dwoma palcami
-  i powiększanie przez szczypanie oraz lupę powiększającą z elementami sterującymi Kliknij, Przeciągnij/upuść, Menu i Zamknij
-  do precyzyjnego umieszczania.
-- [Zmienny rozmiar panelu bibliotek i sortowanie symboli](../Using-Symbol-Libraries/),
-  w tym alfabetyczne porządkowanie wyników wyszukiwania.
-- [Tymczasowe ukrywanie wybranych obiektów](../User-guide/#temporarily-hiding-objects)
-  oraz polecenie przywracające wszystkie ukryte obiekty na bieżącym arkuszu.
-- Polskie tłumaczenie interfejsu i przetłumaczony tekst w oknie dialogowym Zamień symbol (Replace Symbol).
+  i powiększanie przez uszczypnięcie oraz lupę z elementami Click, Drag/Drop, Menu i Close
+  ułatwiającymi precyzyjne umieszczanie.
+- [Zmienny rozmiar panelu biblioteki i sortowanie symboli](../Using-Symbol-Libraries/),
+  w tym alfabetyczne sortowanie wyników wyszukiwania.
+- [Tymczasowe ukrywanie zaznaczonych obiektów](../User-guide/#temporarily-hiding-objects)
+  oraz polecenie przywracania wszystkich ukrytych obiektów na bieżącym arkuszu.
+- Polskie tłumaczenie interfejsu i przetłumaczony tekst w oknie Replace Symbol.
 
 ### Naprawiono
 {: #fixed-1}
 
 - [Widoczność siatki i przyciąganie](../Snap-to-Grid/) działają niezależnie, a
-  ruch za pomocą klawiatury uwzględnia wyłączone przyciąganie.
+  przesuwanie za pomocą klawiatury uwzględnia wyłączenie przyciągania.
 - Obrazy bitmapowe są renderowane w umieszczonych symbolach bibliotecznych.
-- [Escape anuluje operacje rysowania i umieszczania](../Shortcuts/), również wtedy,
-  gdy fokus jest ustawiony na elementach sterujących paska narzędzi.
-- Anulowanie monitu o niezapisane zmiany w aplikacji Desktop usuwa oczekujące polecenie zakończenia.
-- Powiększanie przez szczypanie na obszarze rysunku nie kumuluje się już z powiększeniem strony w przeglądarce.
-- Ulepszono pozycjonowanie lupy dotykowej, informację zwrotną wskaźnika, obsługę gestów i przeciąganie.
-- Ulepszono działanie okna Informacje w aplikacji Desktop i systemie macOS.
+- [Escape anuluje rysowanie i umieszczanie](../Shortcuts/), także gdy
+  fokus znajduje się na elementach paska narzędzi.
+- Anulowanie monitu o niezapisanych zmianach w aplikacji Desktop usuwa oczekujące zamknięcie.
+- Powiększanie przez uszczypnięcie na obszarze roboczym nie nakłada się już na powiększenie strony w przeglądarce.
+- Ulepszono położenie lupy dotykowej, informację zwrotną kursora, obsługę gestów i przeciąganie.
+- Ulepszono działanie okna About w aplikacji Desktop i systemie macOS.
 
 ### Pakowanie i konserwacja
 {: #packaging-and-maintenance}
@@ -114,7 +120,7 @@ To wydanie wprowadza sformatowane notatki Markdown, wektorowy eksport SVG i elem
 {: #v407--13-april-2026}
 
 - Naprawiono drukowanie w aplikacji Desktop.
-- Ulepszono powiększanie przez szczypanie, aby zapobiec niekontrolowanemu powiększaniu.
+- Ulepszono powiększanie przez uszczypnięcie, aby zapobiec niekontrolowanemu powiększaniu.
 - Dodano renderowanie symboli bibliotecznych po stronie serwera.
 - Zautomatyzowano oznaczanie kompilacji produkcyjnych i tworzenie wydań GitHub.
 
@@ -125,34 +131,34 @@ To wydanie wprowadza sformatowane notatki Markdown, wektorowy eksport SVG i elem
 {: #v406--29-march-2026}
 
 To wydanie zawiera zmiany programistyczne wprowadzone w wersji 4.0.5; nie ma
-osobnego znacznika 4.0.5 ani opublikowanego wydania GitHub.
+oddzielnego tagu 4.0.5 ani opublikowanego wydania GitHub.
 
 ### Dodano
 {: #added-2}
 
 - Automatyczne trasowanie przewodów.
-- Zamień symbol (Replace Symbol), aby zastąpić istniejący komponent innym symbolem bibliotecznym.
+- Replace Symbol do zmiany istniejącego komponentu na inny symbol z biblioteki.
 - Automatyczne przewijanie podczas przeciągania w pobliżu krawędzi rysunku.
-- Dwukrotne kliknięcie zaznacza cały przewód, a trzykrotne zaznacza elementy po drugiej stronie
-  złączy i rozgałęzień typu T.
-- Opcja wyłączania wskaźnika połączenia etykiety.
+- Zaznaczanie całego przewodu dwukrotnym kliknięciem i zaznaczanie poza
+  węzłami i rozgałęzieniami trójdrożnymi trzykrotnym kliknięciem.
+- Opcję wyłączenia wskaźnika połączenia etykiety.
 
 ### Naprawiono i ulepszono
 {: #fixed-and-improved}
 
 - Foldery bibliotek są domyślnie otwarte i rozwijają się podczas wyszukiwania.
-- Ulepszono edycję tekstu, skróty schowka, klawisze nawigacji i skróty klawiaturowe,
-  gdy fokus jest ustawiony na rysunku.
-- Naprawiono zaznaczanie z użyciem Ctrl-kliknięcia, przeciąganie wielu zaznaczonych obiektów i elementy sterujące wartościami.
+- Ulepszono edycję tekstu, skróty schowka, klawisze nawigacyjne i skróty
+  klawiaturowe, gdy fokus znajduje się na rysunku.
+- Naprawiono zaznaczanie Ctrl-kliknięciem, przeciąganie wielu zaznaczonych obiektów i pokrętła.
 - Prostokąty rysowania i zaznaczania można przeciągać w dowolnym kierunku.
-- Naprawiono zamykanie w systemie macOS i ograniczono wielokrotne wczytywanie bibliotek w systemie macOS.
-- Naprawiono pozycjonowanie etykiet, tłumaczenie selektora kolorów i przetwarzanie listy połączeń w tle.
+- Naprawiono zamykanie w systemie macOS i ograniczono wielokrotne ładowanie bibliotek w macOS.
+- Naprawiono pozycjonowanie etykiet, tłumaczenie selektora kolorów i przetwarzanie list sieci połączeń w tle.
 - Poprawiono nazwy instalatora Windows i kompilacji AppX.
 
 [Pobieranie wydania](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.6)
 · [Zmiany w kodzie źródłowym](https://github.com/matt123p/TinyCADv4/compare/4.0.4...4.0.6)
 
-## v4.0.4 — znacznik kodu źródłowego, 19 marca 2026
+## v4.0.4 — tag źródłowy, 19 marca 2026
 {: #v404--source-tag-19-march-2026}
 
 - Dodano [foldery bibliotek](../Library-Folders/) do porządkowania bibliotek symboli.
@@ -162,33 +168,33 @@ osobnego znacznika 4.0.5 ani opublikowanego wydania GitHub.
 
 [Zmiany w kodzie źródłowym](https://github.com/matt123p/TinyCADv4/compare/4.0.3...4.0.4)
 
-## v4.0.3 — znacznik kodu źródłowego, 15 marca 2026
+## v4.0.3 — tag źródłowy, 15 marca 2026
 {: #v403--source-tag-15-march-2026}
 
-- Dostosowano obsługę uruchamiania w systemie macOS, aby rozwiązać problem z uruchamianiem.
+- Zmieniono obsługę uruchamiania macOS, aby rozwiązać problem z uruchomieniem.
 
-Znacznik kodu źródłowego to 4.0.3, choć metadane pakietu nadal wskazują 4.0.2.
+Tag źródłowy to 4.0.3, chociaż metadane pakietu nadal podają wersję 4.0.2.
 
 [Zmiany w kodzie źródłowym](https://github.com/matt123p/TinyCADv4/compare/4.0.2...4.0.3)
 
 ## v4.0.2 — 14 marca 2026
 {: #v402--14-march-2026}
 
-- Naprawiono okno dialogowe zamykania z niezapisanymi zmianami w systemie Linux.
+- Naprawiono okno zamykania z niezapisanymi zmianami w systemie Linux.
 - Dodano pakiety Debian x64 obok istniejących kompilacji ARM.
 - Zaktualizowano narzędzia kompilacji i konfigurację pakowania.
 
 [Pobieranie wydania](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.2)
 · [Zmiany w kodzie źródłowym](https://github.com/matt123p/TinyCADv4/compare/4.0.1...4.0.2)
 
-## v4.0.1 — początkowy znacznik kodu źródłowego, 13 marca 2026
+## v4.0.1 — początkowy tag źródłowy, 13 marca 2026
 {: #v401--initial-source-tag-13-march-2026}
 
-Pierwsza migawka kodu źródłowego zawiera już przepisany TinyCAD do użytku w przeglądarce i aplikacji
-Desktop, z edycją schematów, bibliotekami symboli, obsługą istniejących plików
-`.dsn` i `.tclib` oraz procedurami eksportu. Wcześniejszy rozwój nie jest
+Pierwsza migawka kodu źródłowego zawiera już przepisany TinyCAD do użytku w przeglądarce i
+na komputerze, z edycją schematów, bibliotekami symboli, obsługą istniejących
+plików `.dsn` i `.tclib` oraz procesami eksportu. Wcześniejszy rozwój nie jest
 odnotowany w tym repozytorium.
 
 [Początkowa migawka kodu źródłowego](https://github.com/matt123p/TinyCADv4/tree/4.0.1)
 
-- Wstecz do [spisu treści v4](../CONTENTS/)
+- Wróć do [spisu treści v4](../CONTENTS/)

@@ -4,24 +4,24 @@ layout: default
 # Podręcznik TinyCAD
 {: #tinycad-manual}
 
-TinyCAD v4 jest dostępny zarówno jako aplikacja desktopowa, jak i aplikacja online działająca w przeglądarce. Różnice
-funkcjonalne między tymi wersjami są niewielkie.
+TinyCAD v4 jest dostępny zarówno jako aplikacja komputerowa, jak i aplikacja internetowa działająca w przeglądarce. Różnice
+funkcjonalne między tymi wersjami są nieliczne.
 
-Przejdź do strony [Różnice między wersjami](Feature-Differences/), jeśli chcesz poznać dokładne różnice między wersjami TinyCAD.
+Przejdź do strony [Różnice funkcjonalne](Feature-Differences/), jeśli chcesz poznać dokładne różnice między wersjami TinyCAD.
 
 ## Ostrzeżenie
 {: #warning}
 
-**TinyCAD** jest tworzony i udostępniany bezpłatnie jako projekt open source rozwijany przez społeczność. Jest dostarczany „w stanie, w jakim się znajduje” i może zawierać błędy lub niekompletne funkcje.  
+**TinyCAD** jest tworzony i udostępniany bezpłatnie jako projekt open source, rozwijany przez społeczność. Jest dostarczany „w takim stanie, w jakim się znajduje” i może zawierać błędy lub niekompletne funkcje.  
 
-Twoim obowiązkiem jest tworzenie kopii zapasowych swojej pracy i zapobieganie utracie danych. Przed budową układów lub drukowaniem płytek PCB Twoim obowiązkiem jest dokładne sprawdzenie projektu.
+Twoim obowiązkiem jest tworzenie kopii zapasowych swojej pracy i zapobieganie utracie danych. Twoim obowiązkiem jest również dokładne sprawdzenie projektu przed budową układów lub drukowaniem PCB.
 
 ## Współtworzenie tego podręcznika
 {: #contribute-to-this-manual}
 
-Podręcznik TinyCAD jest projektem open source i jest utrzymywany w GitHub Pages.
-Zapraszamy do współtworzenia, w tym poprawiania literówek, doprecyzowywania sformułowań,
-dodawania zrzutów ekranu i rozszerzania przykładów.
+Podręcznik TinyCAD jest projektem open source i jest utrzymywany na GitHub Pages.
+Zapraszamy do współpracy, w tym do poprawiania literówek, jaśniejszego formułowania treści,
+dodawania nowych zrzutów ekranu i rozszerzania przykładów.
 
 - [Jak współtworzyć podręcznik](Contributing-to-the-Manual/)
 
@@ -29,6 +29,7 @@ dodawania zrzutów ekranu i rozszerzania przykładów.
 {: #core-links}
 
 - [Pierwsze kroki](Getting-started/)
+- [Asystent AI](AI-Assistant/)
 - [Rysowanie](User-guide/)
 - [Symbole i biblioteki](Symbols-and-Libraries/)
 - [Dołączone biblioteki](Bundled-Libraries/)
@@ -37,7 +38,7 @@ dodawania zrzutów ekranu i rozszerzania przykładów.
 - [Samouczek SPICE](SPICE-Tutorial/)
 - [Samouczek XSPICE i układów cyfrowych](XSPICE-Tutorial/)
 - [Zaawansowane zagadnienia](Advanced/)
-- [Materiały referencyjne](Reference/)
+- [Dokumentacja referencyjna](Reference/)
 - [Historia zmian](Changelog/)
 - [Licencja](Licence/)
 - [Współtworzenie podręcznika](Contributing-to-the-Manual/)

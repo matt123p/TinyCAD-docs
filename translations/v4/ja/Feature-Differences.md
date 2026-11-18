@@ -36,6 +36,13 @@ layout: default
 				<th scope="rowgroup" colspan="5">基本編集とライブラリ</th>
 				</tr>
 			<tr>
+				<th scope="row">AIを利用したシンボル、ライブラリー、回路の編集</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> いいえ</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> はい</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> いいえ</span></td>
+				<td>デスクトップアプリのみ。AIアシスタント（チャットボット）はブラウザー版では利用できません。Chatから、APIキー、利用資格のあるChatGPTアカウント、またはローカルのOllamaを使ってAIプロバイダーに接続します。以下を参照してください。 <a href="../AI-Assistant/">AIアシスタントの設定とプロンプト</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">TinyCAD <code>.dsn</code>ファイルの読み込み／保存</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> はい</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> はい</span></td>

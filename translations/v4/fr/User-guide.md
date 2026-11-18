@@ -4,28 +4,30 @@ layout: default
 # TinyCAD - Dessin
 {: #tinycad---drawing}
 
-Cette section présente les principales opérations de dessin, notamment la
-configuration du premier dessin, les étiquettes, les bus, les connexions non
-raccordées, les annotations et l’impression.
+L'[assistant IA (AI assistant)](../AI-Assistant/) peut créer un circuit ou ajouter des composants au dessin ouvert à partir d'instructions écrites. Ses modifications restent modifiables et peuvent être annulées.
 
-Pour réorganiser un circuit existant, consultez [Réorganisation de la disposition](../Layout-Tidy-Up/). Cette section présente les périmètres de mise en page automatique, les réglages de force et la façon d’annuler un résultat avec Annuler.
+Cette section couvre le flux de travail essentiel du dessin, notamment la configuration du premier dessin,
+les étiquettes, les bus, les connexions non raccordées, les annotations et l'impression.
+
+Pour réorganiser un circuit existant, consultez [Mise en page](../Layout-Tidy-Up/). Cette section couvre les portées de la disposition automatique, les paramètres de force et l'annulation d'un résultat avec Undo.
+
+Pour les logos, les images de référence et les schémas numérisés, consultez [Images](../Images/). Cette section couvre le copier-coller, l'importation de fichiers, le redimensionnement, le rapport hauteur/largeur fixe et le rognage des pixels.
 
 ## Masquer temporairement des objets
 {: #temporarily-hiding-objects}
 
-Pour accéder aux objets situés sous une partie encombrée du dessin :
+Pour accéder aux objets situés sous une partie encombrée d'un dessin :
 
 1. Sélectionnez les objets que vous souhaitez écarter.
-2. Ouvrez le menu contextuel du dessin (clic droit ou appui prolongé sur un écran
-   tactile), puis choisissez **Masquer la sélection (Hide selected)**.
-3. Une fois terminé, ouvrez le menu contextuel et choisissez **Afficher tous les objets masqués (Show all hidden objects)**
-   pour restaurer tous les objets masqués de la feuille active.
+2. Ouvrez le menu contextuel du dessin (clic droit ou appui long sur un écran tactile)
+   et choisissez **Masquer la sélection (Hide selected)**.
+3. Lorsque vous avez terminé, ouvrez le menu contextuel et choisissez **Afficher tous les objets masqués (Show all hidden objects)**
+   pour rétablir tous les objets masqués sur la feuille actuelle.
 
-Les objets masqués ne peuvent pas être sélectionnés sur le canevas tant qu’ils
-sont masqués. Le masquage est un réglage d’affichage temporaire : il ne supprime
-pas les objets et n’enregistre pas d’indicateur de masquage dans le fichier de
-dessin. Les objets masqués participent toujours à la connectivité électrique et
-aux listes de connexions, et apparaissent toujours dans les sorties imprimées et PDF.
+Les objets masqués ne peuvent pas être sélectionnés sur le canevas tant qu'ils sont masqués. Le masquage est un
+paramètre d'affichage temporaire : il ne supprime pas les objets et n'enregistre pas d'indicateur de masquage dans le
+fichier de dessin. Les objets masqués continuent de participer à la connectivité électrique et aux
+listes de réseaux, et apparaissent toujours dans les sorties imprimées et PDF.
 
 Pour les gestes tactiles et le placement précis, consultez [Commandes tactiles](../Touch-controls/).
 

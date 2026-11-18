@@ -10,6 +10,8 @@ layout: default
 ](../Using-Symbol-Libraries/)。有关绘制或更改符号本身（包括引脚和符号属性），请参阅[编辑符号
 ](../Editing-a-Symbol/)。
 
+[AI 助手](../AI-Assistant/)可以向已打开以供编辑的库添加元件。先创建或打开符号库，然后描述所需的元件并附上相应的数据手册。检查生成的符号，再按常规方式保存符号库。
+
 库文件使用 `.tclib` 扩展名，可以存储在计算机上，也可以通过 Google 集成存储在 Google Drive 上。桌面版 TinyCAD 与浏览器版之间的库文件可以相互兼容。
 
 你也可以加载由 TinyCAD 旧版 v3 编写的库。
