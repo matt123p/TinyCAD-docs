@@ -4,7 +4,9 @@ layout: default
 # TinyCAD — zaawansowane
 {: #tinycad---advanced}
 
-Ta sekcja opisuje zaawansowane procesy edycji, weryfikacji i generowania danych wyjściowych.
+Ta sekcja opisuje zaawansowane przepływy pracy związane z edycją, walidacją i generowaniem danych wyjściowych.
+
+Zobacz także [Symulacja i SPICE](../Simulation/) — informacje o analizie układów scalonych — oraz [Modele SPICE i generowanie netlist](../SPICE-output/) — informacje o szablonach modeli i eksporcie do zewnętrznego symulatora.
 
 ## Strony
 {: #pages}
@@ -23,4 +25,4 @@ Ta sekcja opisuje zaawansowane procesy edycji, weryfikacji i generowania danych 
 {% endfor %}
 {% endif %}
 
-- Powrót do [spisu treści v4](../CONTENTS/)
+- Wróć do [spisu treści v4](../CONTENTS/)

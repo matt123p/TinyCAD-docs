@@ -36,11 +36,32 @@ This page summarizes key differences between TinyCAD web and desktop.
 				<th scope="rowgroup" colspan="5">Core editing and libraries</th>
 			</tr>
 			<tr>
+				<th scope="row">AI-assisted symbol, library and circuit editing</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td>Desktop app only; the AI assistant (chatbot) is not available in the browser build. Connect an AI provider using Chat, with an API key, an eligible ChatGPT account or local Ollama. See <a href="../AI-Assistant/">AI assistant setup and prompts</a>.</td>
+			</tr>
+			<tr>
 				<th scope="row">Load/Save TinyCAD <code>.dsn</code> files</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td>TinyCAD web aims for full file-format compatibility with desktop.</td>
+			</tr>
+			<tr>
+				<th scope="row">Load/Save compressed TinyCAD <code>.dzn</code> files</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td>ZIP-based drawing files containing simulation setup and optional results. See <a href="../Simulation/#dzn-simulation-drawings">simulation files</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Markdown formatting in text boxes</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td>Earlier versions use plain text. See <a href="../Text/#markdown-text-boxes">Markdown text boxes</a>.</td>
 			</tr>
 			<tr>
 				<th scope="row">Interface language support</th>
@@ -55,6 +76,13 @@ This page summarizes key differences between TinyCAD web and desktop.
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td>See <a href="../Custom-symbol-libraries/">custom libraries</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Bundled equipment/model libraries and example browser</th>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>No</td>
+				<td>See <a href="../Bundled-Libraries/">bundled libraries</a> and <a href="../Bundled-Examples/">examples</a>.</td>
 			</tr>
 			<tr>
 				<th scope="row">Import symbols from TinyCAD.net</th>
@@ -170,6 +198,27 @@ This page summarizes key differences between TinyCAD web and desktop.
 				<th scope="rowgroup" colspan="5">Advanced Features</th>
 			</tr>
 			<tr>
+				<th scope="row">Integrated analogue SPICE simulation</th>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></span><span class="feature-detail-copy">WebAssembly ngspice</span></div></td>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></span><span class="feature-detail-copy">Native ngspice</span></div></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td><a href="../Simulation/">Simulation sheets, charts, measurements and exploration</a>.</td>
+			</tr>
+			<tr>
+				<th scope="row">Event-driven XSPICE simulation</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span><sup><a href="#xspice-browser-note">1</a></sup></td>
+				<td><div class="feature-detail"><span><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></span><span class="feature-detail-copy">Bundled code models</span></div></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Virtual-instrument pop-outs</th>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td></td>
+			</tr>
+			<tr>
 				<th scope="row">SPICE simulation file output</th>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
 				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
@@ -231,7 +280,7 @@ This page summarizes key differences between TinyCAD web and desktop.
 			</tr>
 			<tr>
 				<th scope="row">Installation required</th>
-				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
+				<td><div class="feature-detail"><span class="feature-detail-title">No</span></div></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Yes</span><span class="feature-detail-copy">App Stores and installer packages.</span></div></td>
 				<td><div class="feature-detail"><span class="feature-detail-title">Yes</span><span class="feature-detail-copy">Installer package required.</span></div></td>
 				<td></td>
@@ -239,6 +288,8 @@ This page summarizes key differences between TinyCAD web and desktop.
 		</tbody>
 	</table>
 </div>
+
+<p id="xspice-browser-note"><sup>1</sup> Browser builds can open drawings containing previously saved XSPICE results for viewing. Running XSPICE requires TinyCAD Desktop.</p>
 
 - Back to [Reference](../Reference/)
 - Back to [v4 contents](../CONTENTS/)

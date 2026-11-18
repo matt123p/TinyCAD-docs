@@ -4,7 +4,9 @@ layout: default
 # TinyCAD - Geavanceerd
 {: #tinycad---advanced}
 
-Dit gedeelte behandelt geavanceerde bewerkings-, validatie- en uitvoerworkflows.
+Deze sectie behandelt geavanceerde bewerkings-, validatie- en uitvoerworkflows.
+
+Zie ook [Simulatie en SPICE](../Simulation/) voor geïntegreerde-circuitanalyse, en [SPICE-modellen en netlistuitvoer](../SPICE-output/) voor modelsjablonen en export naar externe simulators.
 
 ## Pagina's
 {: #pages}
@@ -23,4 +25,4 @@ Dit gedeelte behandelt geavanceerde bewerkings-, validatie- en uitvoerworkflows.
 {% endfor %}
 {% endif %}
 
-- Terug naar de [inhoudsopgave van v4](../CONTENTS/)
+- Terug naar [v4-inhoud](../CONTENTS/)

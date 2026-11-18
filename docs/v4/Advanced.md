@@ -6,6 +6,8 @@ layout: default
 
 This section covers advanced editing, validation, and output workflows.
 
+See also [Simulation and SPICE](../Simulation/) for integrated circuit analysis, and [SPICE models and netlist output](../SPICE-output/) for model templates and external simulator export.
+
 ## Pages
 
 {% assign current_version = page.url | split: '/' | slice: 1, 1 | first -%}

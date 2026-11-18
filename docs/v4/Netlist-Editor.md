@@ -33,6 +33,11 @@ The list is live and updates automatically whilst you edit the schematic.
 
 If another panel is open because something is selected, clear the selection first.
 
+![Netlist view below the divider schematic, with the OUT row highlighted](../images/netlist-editor/netlist-overview.png)
+
+In this bundled divider example, the `OUT` row connects `R1.2` to `R2.1`.
+Hovering over that row highlights the connection in the drawing.
+
 ## What each column means
 
 - `Net`: the net name or internal net number
@@ -75,8 +80,12 @@ Each row has a `Type` field.
 To assign a type:
 
 1. Click in the `Type` field for the net.
-2. Pick an existing type from the list, or type a new name.
-3. Click away from the field to apply the change.
+2. Pick an existing type from the list.
+3. To define a new type first, use `Netlist Types` as described below, then return to the net's `Type` field.
+
+![Netlist filtered to OUT, with the control type assigned](../images/netlist-editor/netlist-type-assignment.png)
+
+Here, searching for `OUT` isolates the divider's output net, and its `Type` is set to `control`.
 
 
 ## What a net type is
@@ -142,6 +151,10 @@ If you change the colors on the `default` row, you are changing the normal net c
 
 After that, you can assign the new type to nets from the bottom `Netlist` view.
 
+![Netlist Types editor with default, control and power types and a wire thickness of 2 for control](../images/netlist-editor/netlist-types.png)
+
+The example adds `control` and `power` types. The `control` type has a wire thickness of `2`; each colour button opens its own editor.
+
 ## How to duplicate a type
 
 This is useful when you want something similar to an existing type.
@@ -163,11 +176,15 @@ Each type can have separate colors for:
 To change a color:
 
 1. Click the color cell in the row.
-2. Pick the color in the color dialog.
-3. Close the color dialog.
+2. Enable `Override colour` for a non-default type, then pick a color.
+3. Click `OK` in the color dialog.
 4. Click `OK` in the main `Netlist Types` window.
 
 Non-default types can either use their own color or fall back to the default drawing color.
+
+![Wire colour editor showing Override colour enabled and a green wire in the preview](../images/netlist-editor/netlist-colour-preview.png)
+
+The preview shows the selected wire colour alongside the label and power-symbol colours. Use the `Wire`, `Label` and `Power` tabs to inspect each setting before saving.
 
 ## How to change wire thickness
 
@@ -184,9 +201,13 @@ Attributes are simple name/value entries saved with the type.
 To add them:
 
 1. Click the `Attributes` cell for the type.
-2. Add or edit the attribute names and values.
+2. Click `Add Attribute`, then enter the attribute name and value. Repeat for any additional entries.
 3. Save the attributes.
 4. Click `OK` in the main dialog.
+
+![Attributes editor with purpose and notes entries for the control type](../images/netlist-editor/netlist-attributes.png)
+
+These example entries describe the type's purpose and add a wiring note. They belong to the type and can be shared by every net assigned to it.
 
 At the moment, these attributes are mainly stored with the drawing. They are useful for keeping extra type information, even if they are not yet used by every output format.
 
@@ -200,4 +221,4 @@ At the moment, these attributes are mainly stored with the drawing. They are use
 - [VHDL output](../VHDL-output/)
 
 - Back to [Advanced](../Advanced/)
-- Back to [v4 contents](../CONTENTS/)
+- Back to [v4 contents](../)

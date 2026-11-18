@@ -1,0 +1,322 @@
+{
+  "id": "ac-response",
+  "recorded": true,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "lesson": "05 · AC response, decibels and cutoff",
+    "newRun": "complete / available"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2205,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2302
+    },
+    {
+      "kind": "click",
+      "startedMs": 7431,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7526
+    },
+    {
+      "kind": "click",
+      "startedMs": 12603,
+      "target": "getByRole('dialog').getByRole('button', { name: 'rc-ac', exact: true })",
+      "point": {
+        "x": 781.25,
+        "y": 504.375
+      },
+      "finishedMs": 12645
+    },
+    {
+      "kind": "click",
+      "startedMs": 17766,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 17812
+    },
+    {
+      "kind": "click",
+      "startedMs": 28902,
+      "target": "getByText('◷ rc-ac', { exact: true })",
+      "point": {
+        "x": 398.546875,
+        "y": 786
+      },
+      "finishedMs": 28969
+    },
+    {
+      "kind": "click",
+      "startedMs": 35572,
+      "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+      "point": {
+        "x": 338,
+        "y": 61
+      },
+      "finishedMs": 35693
+    },
+    {
+      "kind": "click",
+      "startedMs": 41272,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 41357
+    },
+    {
+      "kind": "click",
+      "startedMs": 47921,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Setup', exact: true })",
+      "point": {
+        "x": 320.1328125,
+        "y": 98
+      },
+      "finishedMs": 48009
+    },
+    {
+      "kind": "click",
+      "startedMs": 53570,
+      "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('summary').first()",
+      "point": {
+        "x": 839.71875,
+        "y": 705
+      },
+      "finishedMs": 53645
+    },
+    {
+      "kind": "click",
+      "startedMs": 60203,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+      "point": {
+        "x": 417.59375,
+        "y": 98
+      },
+      "finishedMs": 60292
+    },
+    {
+      "kind": "click",
+      "startedMs": 66934,
+      "target": "getByRole('button', { name: 'Signals', exact: true })",
+      "point": {
+        "x": 1224.5625,
+        "y": 339
+      },
+      "finishedMs": 67001
+    },
+    {
+      "kind": "click",
+      "startedMs": 72551,
+      "target": "getByRole('menuitemcheckbox', { name: 'OUT / IN (V/V)', exact: true })",
+      "point": {
+        "x": 1312,
+        "y": 474
+      },
+      "finishedMs": 72636
+    },
+    {
+      "kind": "click",
+      "startedMs": 78187,
+      "target": "getByRole('menuitemcheckbox', { name: 'V(out) (V)', exact: true })",
+      "point": {
+        "x": 1312,
+        "y": 372
+      },
+      "finishedMs": 78268
+    },
+    {
+      "kind": "click",
+      "startedMs": 83869,
+      "target": "getByRole('menuitemcheckbox', { name: 'V(in) (V)', exact: true })",
+      "point": {
+        "x": 1312,
+        "y": 406
+      },
+      "finishedMs": 83935
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 88138,
+      "finishedMs": 88168
+    },
+    {
+      "kind": "click",
+      "startedMs": 94703,
+      "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+      "point": {
+        "x": 1576,
+        "y": 363
+      },
+      "finishedMs": 94792
+    },
+    {
+      "kind": "hover",
+      "startedMs": 99803,
+      "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+      "point": {
+        "x": 1460.484375,
+        "y": 396
+      },
+      "finishedMs": 99854
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 104837,
+      "target": "getByLabel('Display', { exact: true })",
+      "point": {
+        "x": 1199,
+        "y": 431
+      },
+      "finishedMs": 104881
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 109085,
+      "finishedMs": 109107
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 113309,
+      "finishedMs": 113314
+    },
+    {
+      "kind": "click",
+      "startedMs": 119818,
+      "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+      "point": {
+        "x": 1576,
+        "y": 363
+      },
+      "finishedMs": 119906
+    },
+    {
+      "kind": "hover",
+      "startedMs": 124879,
+      "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+      "point": {
+        "x": 1460.484375,
+        "y": 396
+      },
+      "finishedMs": 124977
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 129938,
+      "target": "getByLabel('Display', { exact: true })",
+      "point": {
+        "x": 1199,
+        "y": 431
+      },
+      "finishedMs": 129961
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 134163,
+      "finishedMs": 134183
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 138386,
+      "finishedMs": 138391
+    },
+    {
+      "kind": "click",
+      "startedMs": 144915,
+      "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+      "point": {
+        "x": 1576,
+        "y": 363
+      },
+      "finishedMs": 144959
+    },
+    {
+      "kind": "hover",
+      "startedMs": 149975,
+      "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+      "point": {
+        "x": 1460.484375,
+        "y": 396
+      },
+      "finishedMs": 150037
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 155073,
+      "target": "getByLabel('Display', { exact: true })",
+      "point": {
+        "x": 1199,
+        "y": 431
+      },
+      "finishedMs": 155110
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 159312,
+      "finishedMs": 159323
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 163525,
+      "finishedMs": 163530
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open the rc-ac example from the SPICE tutorial group."
+    },
+    {
+      "atSeconds": 21.595,
+      "text": "rc-ac is the same RC network, measured in the frequency domain."
+    },
+    {
+      "atSeconds": 26.098,
+      "text": "The AC sweep uses 1 Hz to 100 kHz and 100 points per decade."
+    },
+    {
+      "atSeconds": 32.78,
+      "text": "Run the sweep. AC analysis calculates small-signal response rather than stepping through time."
+    },
+    {
+      "atSeconds": 45.163000000000004,
+      "text": "The prepared Cutoff measurement compares OUT with IN using reference gain 1."
+    },
+    {
+      "atSeconds": 57.461000000000006,
+      "text": "The cutoff is about 159.15 Hz, where the gain is 0.707 or −3.01 dB."
+    },
+    {
+      "atSeconds": 64.19500000000001,
+      "text": "Select the derived OUT / IN trace and hide the separate node voltages to plot gain directly."
+    },
+    {
+      "atSeconds": 91.94500000000001,
+      "text": "Use the chart menu to show Magnitude (dB). The frequency axis remains logarithmic."
+    },
+    {
+      "atSeconds": 117.092,
+      "text": "Switch to Phase: the output lags, passing approximately −45° at the corner frequency."
+    },
+    {
+      "atSeconds": 142.167,
+      "text": "OUT / IN expresses gain even if the input AC amplitude changes."
+    }
+  ],
+  "pageErrors": []
+}

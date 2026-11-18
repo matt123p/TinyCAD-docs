@@ -4,7 +4,9 @@ layout: default
 # TinyCAD - Avancé
 {: #tinycad---advanced}
 
-Cette section traite des workflows avancés de modification, de validation et de génération de sorties.
+Cette section couvre les workflows avancés de modification, de validation et de sortie.
+
+Voir aussi [Simulation et SPICE](../Simulation/) pour l’analyse de circuits intégrés, et [Modèles SPICE et sortie de netlist](../SPICE-output/) pour les modèles et l’exportation vers un simulateur externe.
 
 ## Pages
 {: #pages}
@@ -23,4 +25,4 @@ Cette section traite des workflows avancés de modification, de validation et de
 {% endfor %}
 {% endif %}
 
-- Retour à [Sommaire v4](../CONTENTS/)
+- Retour au [sommaire de la v4](../CONTENTS/)

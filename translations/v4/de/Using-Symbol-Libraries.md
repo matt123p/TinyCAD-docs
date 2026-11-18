@@ -7,25 +7,25 @@ layout: default
 ## Was ist eine Symbolbibliothek?
 {: #what-is-a-symbol-library}
 
-Im Schaltungsentwurf ist eine **Symbolbibliothek** eine Sammlung von Schaltplansymbolen, die in einer einzigen Datei gespeichert sind. Jedes Symbol stellt eine elektronische Komponente wie einen Widerstand, einen Kondensator, einen IC, einen Steckverbinder, einen Transistor oder ein anderes Bauteil als standardisierte Grafik mit festgelegten elektrischen Anschlusspunkten dar.
+Beim Schaltungsentwurf ist eine **Symbolbibliothek** eine Sammlung von Schaltplansymbolen, die in einer einzelnen Datei gespeichert sind. Jedes Symbol stellt eine elektronische Komponente dar, beispielsweise einen Widerstand, einen Kondensator, einen IC, einen Steckverbinder, einen Transistor oder ein anderes Bauteil, und zwar als standardisierte Grafik mit festgelegten elektrischen Anschlusspunkten.
 
-TinyCAD-Symbolbibliotheken verwenden das Dateiformat `.tclib`. Eine einzelne Bibliotheksdatei kann Dutzende oder Hunderte zusammengehöriger Symbole enthalten, die normalerweise nach Kategorie oder Verwendungszweck gruppiert sind. Sie können beispielsweise eine Bibliothek für passive Bauelemente, eine weitere für Logik-ICs und eine weitere für Steckverbinder haben.
+TinyCAD-Symbolbibliotheken verwenden das Dateiformat `.tclib`. Eine einzelne Bibliotheksdatei kann Dutzende oder Hunderte verwandter Symbole enthalten, die üblicherweise nach Kategorie oder Zweck gruppiert sind. Beispielsweise könnten Sie eine Bibliothek für passive Bauteile, eine weitere für Logik-ICs und eine weitere für Steckverbinder haben.
 
 ## Wofür werden Symbolbibliotheken verwendet?
 {: #what-are-symbol-libraries-used-for}
 
-Symbolbibliotheken erfüllen bei der Schaltplanerstellung mehrere wichtige Aufgaben:
+Symbolbibliotheken erfüllen beim Erfassen von Schaltplänen mehrere wichtige Aufgaben:
 
-- **Wiederverwendung in verschiedenen Entwürfen.** Sobald ein Symbol in einer Bibliothek definiert ist, kann es in jeden Schaltplan eingefügt werden, ohne es neu erstellen zu müssen. Das spart Zeit und sorgt für Konsistenz zwischen Projekten.
-- **Standardisierte Darstellung.** Bibliotheken legen für jede Komponente einen einheitlichen visuellen Stil und eine einheitliche Pin-Konfiguration fest. Jede Instanz eines 555-Timers oder eines Operationsverstärkers sieht gleich aus und hat dieselben Pin-Definitionen, wodurch Fehlinterpretationen vermieden werden.
-- **Elektrische Korrektheit.** Jedes Symbol enthält Pin-Informationen — Pinnamen, Nummern und elektrische Typen (Eingang, Ausgang, Versorgung, passiv usw.). Diese Daten steuern nachgelagerte Prozesse wie die Netzlistenerstellung, Design Rule Checks und den Export in PCB-Layoutwerkzeuge.
-- **Organisation.** Wenn Symbole nach Funktion, Hersteller oder Projekt in Bibliotheken gruppiert werden, lassen sich passende Bauteile leicht finden. Mit TinyCAD können Sie nur die Bibliotheken laden, die Sie für einen bestimmten Entwurf benötigen.
-- **Austausch und Zusammenarbeit.** Bibliotheksdateien können mit Teammitgliedern geteilt oder aus der Community heruntergeladen werden, sodass alle mit denselben geprüften Symbolddefinitionen arbeiten.
+- **Wiederverwendung in verschiedenen Entwürfen.** Sobald ein Symbol in einer Bibliothek definiert ist, kann es in jedem Schaltplan platziert werden, ohne es neu erstellen zu müssen. Das spart Zeit und gewährleistet Konsistenz zwischen Projekten.
+- **Standardisierte Darstellung.** Bibliotheken sorgen für einen einheitlichen visuellen Stil und eine einheitliche Anschlussbelegung für jede Komponente. Jede Instanz eines 555-Timers oder eines Operationsverstärkers sieht gleich aus und hat dieselben Anschlussdefinitionen, wodurch Fehlinterpretationen vermieden werden.
+- **Elektrische Korrektheit.** Jedes Symbol enthält Anschlussinformationen – Anschlussnamen, Nummern und elektrische Typen (Eingang, Ausgang, Versorgung, passiv usw.). Diese Daten dienen als Grundlage für nachgelagerte Prozesse wie die Netzlisten-Erstellung, Designregelprüfungen und den Export in Werkzeuge für das PCB-Layout.
+- **Organisation.** Durch die Gruppierung von Symbolen in Bibliotheken nach Funktion, Hersteller oder Projekt lassen sich die passenden Bauteile leicht finden. In TinyCAD können Sie nur die Bibliotheken laden, die Sie für einen bestimmten Entwurf benötigen.
+- **Austausch und Zusammenarbeit.** Bibliotheksdateien können zwischen Teammitgliedern geteilt oder aus der Community heruntergeladen werden, sodass alle mit denselben geprüften Symbold definitionen arbeiten.
 
 ## Integrierte und benutzerdefinierte Bibliotheken
 {: #built-in-and-custom-libraries}
 
-TinyCAD wird mit einer Reihe integrierter Bibliotheken für gängige Bauteilfamilien geliefert. Für nicht enthaltene Bauteile können Sie:
+TinyCAD wird mit [gebündelten Bibliotheken](../Bundled-Libraries/) für Geräteanordnungen und modellierte elektronische Schaltungen geliefert. Wählen Sie im Auswahlbereich links **Standard** und anschließend eine Sammlung unter **Choose a standard library**. Ein separater Bibliotheksimport ist nicht erforderlich. Für nicht enthaltene Bauteile können Sie:
 
 - Eigene [benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/) erstellen
 - [Symbole aus KiCAD](../Importing-Symbols-from-KiCAD/)-Bibliotheken importieren
@@ -34,72 +34,71 @@ TinyCAD wird mit einer Reihe integrierter Bibliotheken für gängige Bauteilfami
 ## Typischer Arbeitsablauf
 {: #typical-workflow}
 
-In der Praxis umfasst die Arbeit mit Symbolbibliotheken üblicherweise folgende Schritte:
+In der Praxis umfasst die Arbeit mit Symbolbibliotheken üblicherweise die folgenden Schritte:
 
 1. Laden Sie die Bibliotheken, die in der aktuellen TinyCAD-Sitzung verfügbar sein sollen, oder fügen Sie sie hinzu.
-2. Durchsuchen Sie die Symbole in diesen Bibliotheken, suchen Sie nach ihnen und zeigen Sie eine Vorschau an.
-3. Fügen Sie Symbole in die Zeichnung ein.
-4. Wenn eine Symbolddefinition geändert werden muss, bearbeiten Sie die Bibliothek statt der eingefügten Instanz.
+2. Durchsuchen, suchen und zeigen Sie eine Vorschau der Symbole aus diesen Bibliotheken an.
+3. Platzieren Sie Symbole in der Zeichnung.
+4. Wenn eine Symbold efinition geändert werden muss, bearbeiten Sie die Bibliothek, statt die platzierte Instanz zu ändern.
 
-Diese Seite behandelt die Schritte 1 bis 3. Informationen zur Verwaltung von Bibliotheksdateien finden Sie unter [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/). Informationen zum Ändern der Symbolddefinition selbst finden Sie unter [Ein Symbol bearbeiten](../Editing-a-Symbol/).
+Diese Seite behandelt die Schritte 1 bis 3. Informationen zur Verwaltung von Bibliotheksdateien finden Sie unter [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/). Informationen zum Ändern der Symbold efinitions selbst finden Sie unter [Ein Symbol bearbeiten](../Editing-a-Symbol/).
 
 ## Bibliotheken laden
 {: #loading-libraries}
 
-Bevor Sie ein Symbol einfügen können, muss seine Bibliothek in TinyCAD verfügbar sein.
+Bevor Sie ein Symbol platzieren können, muss seine Bibliothek in TinyCAD verfügbar sein.
 
-- Integrierte Bibliotheken sind in TinyCAD enthalten.
+- Integrierte Bibliotheken sind Bestandteil von TinyCAD.
 - Benutzerdefinierte Bibliotheken müssen hinzugefügt oder geöffnet werden, bevor sie durchsucht werden können.
-- Die genauen Schritte unterscheiden sich zwischen TinyCAD Web und der Desktopanwendung.
+- Die genauen Schritte unterscheiden sich zwischen TinyCAD Web und der Desktop-Anwendung.
 
-Die produktspezifischen Schritte zum Hinzufügen, Öffnen, Aktualisieren, Erstellen und Bearbeiten von Bibliotheksdateien finden Sie unter [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/).
+Unter [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/) finden Sie die produktspezifischen Schritte zum Hinzufügen, Öffnen, Aktualisieren, Erstellen und Bearbeiten von Bibliotheksdateien.
 
 ## Durchsuchen, Suchen und Vorschau anzeigen
 {: #browsing-searching-and-previewing}
 
-Um Symbole aus einer Bibliothek zu verwenden, muss die Bibliothek zuerst in Ihrer TinyCAD-Sitzung geladen werden. Nach dem Laden:
+Um Symbole aus einer Bibliothek zu verwenden, muss die Bibliothek zunächst in Ihrer TinyCAD-Sitzung geladen sein. Nach dem Laden:
 
-1. Öffnen Sie die Symbolauswahl.
-2. Klappen Sie eine Bibliothek auf, um deren Inhalt zu durchsuchen, oder verwenden Sie das Suchfeld, um ein Symbol anhand seines Namens oder seiner Beschreibung zu finden.
-3. Klicken Sie auf ein Symbol, um eine Vorschau anzuzeigen.
-4. Wählen Sie das Symbol aus, um es als aktives Platzierungswerkzeug festzulegen, und klicken Sie dann in Ihre Zeichnung, um Instanzen einzufügen.
+1. Öffnen Sie links die Symbolauswahl und wählen Sie **Standard**, **Online** oder **Meine Bibliotheken**.
+2. Wählen Sie unter Standard eine gebündelte Bibliothek aus; unter Meine Bibliotheken öffnen oder erweitern Sie Ihre eigenen Bibliotheken. Verwenden Sie **Search libraries...**, um ein Symbol nach Namen oder Beschreibung zu finden.
+3. Sehen Sie sich die Grafik in der Ergebnisliste an und wählen Sie anschließend ein Symbol aus, um eine größere Vorschau und die Beschreibung anzuzeigen.
+4. Ziehen Sie die Vorschau in die Zeichnung und positionieren Sie sie am Raster. Drücken Sie Escape oder klicken Sie mit der rechten Maustaste, um das Platzieren von Kopien zu beenden.
 
-Weitere Informationen zum Einfügen und Konfigurieren ausgewählter Symbole finden Sie unter [Symbole](../Symbols/).
+Weitere Informationen zum Platzieren und Konfigurieren ausgewählter Symbole finden Sie unter [Symbole](../Symbols/).
 
 ## Größe des Bibliotheksbereichs ändern
 {: #resizing-the-library-panel}
 
 Ziehen Sie den rechten Rand des Bibliotheksbereichs, um ihn breiter oder schmaler zu machen. Ein breiterer
-Bereich erleichtert die Anzeige langer Symbolnamen und Beschreibungen. TinyCAD merkt sich die Breite
-auf diesem Gerät, sofern der lokale Speicher verfügbar ist.
+Bereich erleichtert die Anzeige langer Symbolnamen und Beschreibungen. Wenn lokaler Speicher verfügbar ist, merkt sich TinyCAD die Breite
+auf diesem Gerät.
 
 ## Symbole sortieren
 {: #sorting-symbols}
 
 Verwenden Sie unter **Meine Bibliotheken** die Sortierschaltfläche neben den Bibliothekssteuerelementen, um zwischen
-**Bibliotheksreihenfolge**, **A bis Z** und **Z bis A** zu wechseln. Der Tooltip der Schaltfläche nennt den aktuellen Modus.
+**Bibliotheksreihenfolge**, **A bis Z** und **Z bis A** umzuschalten. Der Tooltip der Schaltfläche zeigt den aktuellen Modus an.
 Die Sortierung gilt für Symbole innerhalb von Bibliotheken und für Suchergebnisse, einschließlich
-Online-Ergebnissen; Bibliotheksdateien oder -ordner werden dadurch nicht umsortiert. TinyCAD
-merkt sich den Sortiermodus auf diesem Gerät, sofern der lokale Speicher verfügbar ist.
+Online-Ergebnissen; sie ordnet Ihre Bibliotheksdateien oder -ordner nicht neu an. Wenn lokaler Speicher verfügbar ist, merkt sich TinyCAD
+den Sortiermodus auf diesem Gerät.
 
-Die Dateisystemversion im Browser zeigt nur die Onlinesuche an und bietet keine
-Sortierschaltfläche **Meine Bibliotheken**.
+Der Browser und die Desktop-Auswahl bieten die Registerkarten **Standard**, **Online** und **Meine Bibliotheken**. Die Quelle und die Auswahl der Standardbibliothek werden auf diesem Gerät gespeichert.
 
-## Symbole in eine Zeichnung einfügen
+## Symbole in einer Zeichnung platzieren
 {: #placing-symbols-in-a-drawing}
 
-Sobald ein Symbol im Bibliotheksbrowser ausgewählt ist, wird es zum aktiven Platzierungswerkzeug.
+Sobald ein Symbol im Bibliotheksbrowser ausgewählt wurde, wird es zum aktiven Platzierungswerkzeug.
 
-Den genauen Ablauf zum Einfügen, einschließlich des Verhaltens ausgewählter Symbole, finden Sie unter [Symbole](../Symbols/).
+Den eigentlichen Platzierungsablauf, einschließlich des Verhaltens ausgewählter Symbole, finden Sie unter [Symbole](../Symbols/).
 
-Beachten Sie, dass das Einfügen eines Symbols in eine Zeichnung **nicht** die Bibliotheksdefinition bearbeitet. Wenn Sie die Grafik, Pins oder Attribute für die zukünftige Verwendung ändern möchten, bearbeiten Sie stattdessen das Symbol in seiner Bibliothek. Siehe [Ein Symbol bearbeiten](../Editing-a-Symbol/).
+Beachten Sie, dass das Platzieren eines Symbols in einer Zeichnung **nicht** die Bibliotheksdefinition ändert. Wenn Sie Grafiken, Anschlüsse oder Attribute für die künftige Verwendung ändern möchten, bearbeiten Sie stattdessen das Symbol in seiner Bibliothek. Siehe [Ein Symbol bearbeiten](../Editing-a-Symbol/).
 
 ## Verwandte Aufgaben
 {: #related-tasks}
 
 - Verwenden Sie [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/), um `.tclib`-Dateien hinzuzufügen, zu öffnen, zu erstellen und zu verwalten.
-- Verwenden Sie [Ein Symbol bearbeiten](../Editing-a-Symbol/), um die Grafik, Pins und Attribute eines Symbols zu ändern.
-- Unter [Symbole](../Symbols/) finden Sie Einzelheiten zum Einfügen eines ausgewählten Symbols.
+- Verwenden Sie [Ein Symbol bearbeiten](../Editing-a-Symbol/), um Grafik, Anschlüsse und Attribute eines Symbols zu ändern.
+- Verwenden Sie [Symbole](../Symbols/) für Details zum Platzieren, nachdem ein Symbol ausgewählt wurde.
 
 ## Seiten
 {: #pages}
@@ -118,4 +117,4 @@ Beachten Sie, dass das Einfügen eines Symbols in eine Zeichnung **nicht** die B
 {% endfor %}
 {% endif %}
 
-- Zurück zu [Inhalt von v4](../CONTENTS/)
+- Zurück zu [Inhalt von v4](../)

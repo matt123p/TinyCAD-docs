@@ -5,6 +5,48 @@ layout: default
 # TinyCAD Changelog
 
 
+## Unreleased
+{: #unreleased}
+
+### Added
+
+- [AI-assisted symbol, library and circuit editing](../AI-Assistant/), including attached datasheets/images, bundled and online symbol search, direct edits to the active document, undoable changes, provider/model settings and local Ollama connections.
+
+- [Integrated simulation](../Simulation/) using local ngspice in the browser and Desktop, with operating-point, transient, AC, DC sweep, noise, transfer-function and pole-zero analyses. [Event-driven XSPICE](../XSPICE/) is supported in Desktop.
+- [Sources, probes and virtual instruments](../Simulation-Sources-and-Instruments/), including oscilloscopes, multimeters, function generators and bench supplies.
+- [Circuit Explorer](../Simulation-Charts-and-Measurements/) for tuning, sweeps, named measurements, requirements, DC overlays, tolerance studies, test cases and power/stress investigations.
+- [Compressed `.dzn` drawings](../Simulation/#dzn-simulation-drawings) that keep the circuit, models, simulation settings and optional results together. Run history and result exports support comparison and sharing; Save without results creates a smaller copy.
+- [Bundled libraries](../Bundled-Libraries/) for network layouts, embedded boards and smart-home modules, audio, laboratory equipment, motors/motion and solar/battery planning, alongside modelled SPICE, logic, functional and sensor collections. Choose them from the library picker's Standard tab.
+- [Seven editable drawing examples](../Bundled-Examples/), covering the original transistor amplifier, office network, ESP32 climate/display station, solar/battery home, podcast studio, laboratory bench and motor-control bench, with embedded symbols and explanations.
+- [SPICE and XSPICE tutorials](../Simulation-Tutorials/): eleven analogue and six digital chapters, with 28 distinct runnable drawings, model definitions, analysis settings and retained reference acquisitions.
+- [Layout tidy-up](../Layout-Tidy-Up/) for whole sheets or selected items, with Low/Medium/High strength, cancellation, connection checks and one-step Undo.
+
+### Changed
+
+- Open Example and Explanation are in the browser title bar. Desktop provides File → Open Example and View → View Explanation.
+- Desktop's View menu includes Show Charts; the toolbar's Simulation menu retains its chart toggle.
+- Auto-layout sits beside Simulation on the toolbar and is also available under Desktop's Tools menu.
+
+### Fixed
+
+- Restore draggable component artwork previews in Standard, My Libraries and Online picker results.
+- Reduce embedded-controller, sensor and display artwork to practical page-layout sizes while preserving pin identities and wiring positions.
+- Prevent layout changes from creating unwanted connections at wire endpoints, bends or sockets; improve pin exits and remove unnecessary detours.
+- Remove small terminal-label boxes that overlap text in laboratory and motion-control symbols, and update the affected examples.
+- Improve simulation error reporting and diagnostics, browser amplifier runs, chart pop-outs and independent example-explanation panels.
+
+### Manual
+
+- Add an [Images guide](../Images/) covering copy and paste, file import and format conversion, fixed aspect ratio, pixel clipping and saving images with the drawing.
+
+- Add a complete [AI assistant guide](../AI-Assistant/), covering symbol/library and circuit creation, provider setup with screenshots, local Ollama, document attachments, example prompts and review of generated results.
+
+- Add guides to finding and using bundled libraries and examples, and replace the export-only SPICE description with the integrated simulation workflow.
+- Add analysis, model, instrument, chart, measurement and troubleshooting references, with official ngspice and XSPICE documentation links.
+- Include the complete existing courses, downloadable drawings/netlists and ten video walkthroughs covering libraries, examples, layout tidy-up, multi-sheet connections and SPICE.
+- Clarify [feature differences](../Feature-Differences/), including `.dzn` and Markdown text-box compatibility and browser XSPICE support.
+- Update the manual in all eight supported languages, including navigation, new reference pages, tutorial text and video captions.
+
 ## v4.0.11
 {: #v4011}
 

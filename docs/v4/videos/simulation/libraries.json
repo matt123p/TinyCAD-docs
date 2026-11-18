@@ -1,0 +1,83 @@
+{
+  "id": "libraries",
+  "recorded": true,
+  "engine": null,
+  "checks": {
+    "library": "network-layout",
+    "component": "Switch - desktop - 8 RJ45"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2290,
+      "target": "getByRole('tab', { name: 'Standard', exact: true })",
+      "point": {
+        "x": 56,
+        "y": 164
+      },
+      "finishedMs": 2343
+    },
+    {
+      "kind": "selectOption",
+      "startedMs": 7318,
+      "target": "getByRole('combobox', { name: 'Choose a standard library', exact: true })",
+      "point": {
+        "x": 144,
+        "y": 259
+      },
+      "finishedMs": 7341
+    },
+    {
+      "kind": "fill",
+      "startedMs": 13563,
+      "target": "getByPlaceholder('Search libraries...')",
+      "point": {
+        "x": 126,
+        "y": 110
+      },
+      "finishedMs": 13642
+    },
+    {
+      "kind": "click",
+      "startedMs": 19675,
+      "target": "locator('li[role=\"button\"]').filter({ has: locator('span').filter({ hasText: /^Switch - desktop - 8 RJ45$/ }) })",
+      "point": {
+        "x": 144,
+        "y": 449.5
+      },
+      "finishedMs": 19750
+    },
+    {
+      "kind": "dragTo",
+      "startedMs": 24787,
+      "target": "locator('li[role=\"button\"]').filter({ has: locator('span').filter({ hasText: /^Switch - desktop - 8 RJ45$/ }) }).locator('div.symbol-svg[draggable]')",
+      "point": {
+        "x": 144,
+        "y": 462
+      },
+      "finishedMs": 24990
+    },
+    {
+      "kind": "key.Escape",
+      "startedMs": 29194,
+      "finishedMs": 29202
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0.0010000000000000009,
+      "text": "Choose Standard, then Network layout. Bundled libraries need no account or separate download."
+    },
+    {
+      "atSeconds": 11.171,
+      "text": "Search the selected library. Each result includes a draggable artwork preview."
+    },
+    {
+      "atSeconds": 17.365,
+      "text": "Select a component to inspect it, then drag its preview onto the drawing."
+    }
+  ],
+  "pageErrors": []
+}

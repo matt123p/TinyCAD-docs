@@ -15,7 +15,7 @@ El panel Mis bibliotecas admite carpetas para que puedas organizar las bibliotec
 ### Navegador
 {: #browser}
 
-Las carpetas de bibliotecas no están disponibles en la versión de TinyCAD para navegador.
+Las carpetas de bibliotecas no son compatibles con la versión de TinyCAD para navegador.
 
 ### Aplicación de escritorio
 {: #desktop-app}
@@ -26,6 +26,8 @@ Las carpetas de bibliotecas solo están disponibles en la aplicación de escrito
 
 Los modos basados en navegador siguen mostrando Mis bibliotecas cuando es compatible, pero no permiten crear carpetas, agruparlas ni arrastrarlas y soltarlas.
 
+![Mis bibliotecas en la aplicación de escritorio, con Componentes de circuito expandida, una carpeta Sensores y módulos vacía y bibliotecas Sin clasificar.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+
 #### Qué puedes hacer
 {: #what-you-can-do}
 
@@ -35,9 +37,9 @@ Los modos basados en navegador siguen mostrando Mis bibliotecas cuando es compat
 - Reordenar carpetas mediante arrastrar y soltar
 - Mover bibliotecas entre carpetas mediante arrastrar y soltar
 - Añadir varios archivos de biblioteca existentes en una sola operación
-- Añadir bibliotecas directamente a la carpeta seleccionada
+- Añadir bibliotecas directamente a la carpeta seleccionada en ese momento
 
-Las bibliotecas que no estén asignadas a una carpeta aparecen en la sección Sin clasificar.
+Las bibliotecas que no estén asignadas a una carpeta aparecerán en la sección Sin clasificar.
 
 #### Crear una carpeta
 {: #create-a-folder}
@@ -45,7 +47,10 @@ Las bibliotecas que no estén asignadas a una carpeta aparecen en la sección Si
 1. Abre el panel Bibliotecas.
 2. Cambia a Mis bibliotecas.
 3. Selecciona el botón de carpeta en el encabezado del panel.
-4. Introduce un nombre para la nueva carpeta.
+4. Introduce un nombre para la nueva carpeta, como `Project libraries`.
+5. Elige **Añadir**.
+
+![Cuadro de diálogo Crear carpeta con Bibliotecas del proyecto introducido y el botón Añadir listo para confirmar.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 La nueva carpeta aparece en la lista de bibliotecas y se puede seleccionar de inmediato.
 
@@ -54,7 +59,7 @@ La nueva carpeta aparece en la lista de bibliotecas y se puede seleccionar de in
 
 Haz clic en una fila de carpeta para seleccionarla.
 
-La carpeta seleccionada se utilizará al añadir bibliotecas existentes.
+La carpeta seleccionada se utiliza al añadir bibliotecas existentes.
 
 Si haces clic en una biblioteca, TinyCAD selecciona automáticamente la carpeta a la que pertenece. Así queda claro dónde se colocarán las bibliotecas que añadas.
 
@@ -63,9 +68,11 @@ Si haces clic en una biblioteca, TinyCAD selecciona automáticamente la carpeta 
 
 1. Selecciona la carpeta de destino en Mis bibliotecas.
 2. Selecciona Añadir.
-3. Elige uno o varios archivos de biblioteca existentes.
+3. Elige uno o más archivos de biblioteca existentes.
 
 Las bibliotecas seleccionadas se añaden a la carpeta seleccionada.
+
+![Bibliotecas del proyecto seleccionadas en Mis bibliotecas, con un área de colocación vacía y el botón para añadir bibliotecas en el encabezado.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Si no seleccionas una carpeta personalizada, las bibliotecas se añaden a Sin clasificar.
 
@@ -76,39 +83,43 @@ Arrastra una biblioteca desde su ubicación actual y suéltala en otra carpeta.
 
 También puedes soltar una biblioteca en Sin clasificar para quitarla de una carpeta personalizada.
 
-Si una carpeta está vacía, TinyCAD muestra un destino para soltar elementos, de modo que puedas mover bibliotecas a ella.
+Si una carpeta está vacía, TinyCAD muestra un destino para que puedas mover bibliotecas a ella.
+
+![Interfaces de sensores movidas de Sin clasificar a Sensores y módulos, con los controles para reordenar, cambiar el nombre y quitar la carpeta seleccionada visibles.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Reordenar carpetas
 {: #reorder-folders}
 
 Las carpetas se pueden reordenar directamente en el panel.
 
-1. Coloca el cursor sobre la carpeta que quieras mover.
-2. Arrastra el control de reordenación.
-3. Suelta la carpeta en la posición deseada.
+1. Pasa el cursor por encima de la carpeta que quieras mover.
+2. Arrastra el controlador de reordenación.
+3. Suelta la carpeta en la posición de destino.
 
 El nuevo orden se guarda automáticamente.
 
-#### Cambiar el nombre de una carpeta o eliminarla
+#### Cambiar el nombre o eliminar una carpeta
 {: #rename-or-delete-a-folder}
 
-Los botones de acciones de la carpeta se muestran al pasar el cursor sobre ella o seleccionarla.
+Los botones de acciones de carpeta se muestran al pasar el cursor por encima de una carpeta o seleccionarla.
 
-- Selecciona Editar para cambiar el nombre de la carpeta.
-- Selecciona Eliminar para quitar la carpeta.
+- Selecciona **Cambiar nombre de carpeta** (el icono del lápiz) para cambiar el nombre de la carpeta. Introduce el nuevo nombre y elige **Cambiar nombre**.
+- Selecciona **Quitar carpeta** (el icono de la papelera) para quitar la carpeta. Confirma con **Eliminar**.
 
-Al eliminar una carpeta, todas las bibliotecas que contiene se trasladan a Sin clasificar. Los archivos de biblioteca no se eliminan de TinyCAD.
+![Cuadro de diálogo Cambiar nombre de carpeta, que cambia Sensores y módulos por Sensores y pantallas.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+
+Al eliminar una carpeta, las bibliotecas que contiene se trasladan a Sin clasificar. Los archivos de biblioteca no se eliminan de TinyCAD.
 
 #### Bibliotecas sin clasificar
 {: #unfiled-libraries}
 
-Sin clasificar es la ubicación predeterminada de las bibliotecas que no están asignadas a una carpeta personalizada.
+Sin clasificar es la ubicación predeterminada para las bibliotecas que no están asignadas a una carpeta personalizada.
 
-- Las bibliotecas nuevas se añaden a Sin clasificar si no hay ninguna carpeta personalizada seleccionada
+- Las bibliotecas nuevas se añaden a Sin clasificar si no se selecciona ninguna carpeta personalizada
 - Las bibliotecas de una carpeta eliminada se trasladan a Sin clasificar
 - Puedes arrastrar bibliotecas desde Sin clasificar a cualquier carpeta personalizada
 
-Si no hay carpetas personalizadas, TinyCAD muestra la lista de bibliotecas sin el encabezado Sin clasificar.
+Si no hay carpetas personalizadas, TinyCAD muestra la lista de bibliotecas sin un encabezado Sin clasificar.
 
 #### Notas
 {: #notes}
@@ -121,4 +132,4 @@ Si no hay carpetas personalizadas, TinyCAD muestra la lista de bibliotecas sin e
 
 
 - Volver a [Símbolos y bibliotecas](../Symbols-and-Libraries/)
-- Volver a [contenido de v4](../CONTENTS/)
+- Volver al [contenido de v4](../)

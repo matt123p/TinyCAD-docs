@@ -1,0 +1,168 @@
+{
+  "id": "source-settings",
+  "recorded": true,
+  "engine": "bundled browser WebAssembly ngspice",
+  "checks": {
+    "engine": "bundled browser WebAssembly ngspice",
+    "lesson": "03 · Source settings and waveform preview",
+    "newRun": "complete / available"
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 2193,
+      "target": "getByRole('button', { name: 'Open Example', exact: true })",
+      "point": {
+        "x": 1516.109375,
+        "y": 19.59375
+      },
+      "finishedMs": 2290
+    },
+    {
+      "kind": "click",
+      "startedMs": 7440,
+      "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+      "point": {
+        "x": 268.5,
+        "y": 342
+      },
+      "finishedMs": 7555
+    },
+    {
+      "kind": "click",
+      "startedMs": 12750,
+      "target": "getByRole('dialog').getByRole('button', { name: 'source-sine', exact: true })",
+      "point": {
+        "x": 523.75,
+        "y": 747.375
+      },
+      "finishedMs": 12798
+    },
+    {
+      "kind": "click",
+      "startedMs": 17986,
+      "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+      "point": {
+        "x": 1350.8203125,
+        "y": 871
+      },
+      "finishedMs": 18113
+    },
+    {
+      "kind": "mouse.dblclick",
+      "startedMs": 24005,
+      "point": {
+        "x": 388.5,
+        "y": 301.5
+      },
+      "finishedMs": 24470
+    },
+    {
+      "kind": "fill",
+      "startedMs": 36470,
+      "target": "getByLabel('Offset', { exact: true })",
+      "point": {
+        "x": 408.1953125,
+        "y": 842
+      },
+      "finishedMs": 36537
+    },
+    {
+      "kind": "fill",
+      "startedMs": 41555,
+      "target": "getByLabel('Amplitude', { exact: true })",
+      "point": {
+        "x": 634.59375,
+        "y": 842
+      },
+      "finishedMs": 41605
+    },
+    {
+      "kind": "fill",
+      "startedMs": 47623,
+      "target": "getByLabel('Frequency (Hz)', { exact: true })",
+      "point": {
+        "x": 408.1953125,
+        "y": 896
+      },
+      "finishedMs": 47675
+    },
+    {
+      "kind": "click",
+      "startedMs": 59717,
+      "target": "getByText('◷ source-sine', { exact: true })",
+      "point": {
+        "x": 418.1484375,
+        "y": 646
+      },
+      "finishedMs": 59805
+    },
+    {
+      "kind": "click",
+      "startedMs": 65306,
+      "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+      "point": {
+        "x": 338,
+        "y": 61
+      },
+      "finishedMs": 65381
+    },
+    {
+      "kind": "click",
+      "startedMs": 70953,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+      "point": {
+        "x": 573.7421875,
+        "y": 98
+      },
+      "finishedMs": 71001
+    },
+    {
+      "kind": "click",
+      "startedMs": 77536,
+      "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+      "point": {
+        "x": 417.59375,
+        "y": 98
+      },
+      "finishedMs": 77630
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0,
+      "text": "Open the source-sine example from the SPICE tutorial group."
+    },
+    {
+      "atSeconds": 21.898000000000003,
+      "text": "source-sine drives a 1 kΩ load. Double-click the source body to see its settings."
+    },
+    {
+      "atSeconds": 28.249000000000002,
+      "text": "Offset = 1 V, amplitude = 2 V peak and frequency = 1 kHz produce a −1 to +3 V sine."
+    },
+    {
+      "atSeconds": 34.248999999999995,
+      "text": "Set offset to 0 and amplitude to 1. The preview immediately changes to a ±1 V sine."
+    },
+    {
+      "atSeconds": 45.424,
+      "text": "Double the frequency to 2k. There are now twice as many cycles in the preview."
+    },
+    {
+      "atSeconds": 51.475,
+      "text": "AC amplitude is separate: it excites an AC sweep, not this transient waveform."
+    },
+    {
+      "atSeconds": 56.975,
+      "text": "Select the Simulation sheet and run the edited source through the actual circuit."
+    },
+    {
+      "atSeconds": 74.807,
+      "text": "The new trace spans about −1 to +1 V, with ten cycles in the 5 ms acquisition."
+    }
+  ],
+  "pageErrors": []
+}

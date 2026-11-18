@@ -1,0 +1,54 @@
+{
+  "source": "Recording 2026-11-17 174520.mp4",
+  "sourceSha256": "dce485bb3be398f99eb32da7102b0e69e6a78534a20eb26c12dd49edd54d7fe6",
+  "sourceDurationSeconds": 359.666667,
+  "outputDurationSeconds": 110,
+  "description": "Edited video ends at 1:50; the unnecessary tail is omitted. AI processing waits accelerated 12x with a burned-in label throughout each accelerated interval. Interaction, replies, placement, layout and final result remain at normal speed. Silent source audio removed.",
+  "segments": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 18,
+      "speed": 1
+    },
+    {
+      "startSeconds": 18,
+      "endSeconds": 97,
+      "speed": 12
+    },
+    {
+      "startSeconds": 97,
+      "endSeconds": 130,
+      "speed": 1
+    },
+    {
+      "startSeconds": 130,
+      "endSeconds": 237,
+      "speed": 12
+    },
+    {
+      "startSeconds": 237,
+      "endSeconds": 245,
+      "speed": 1
+    },
+    {
+      "startSeconds": 245,
+      "endSeconds": 294,
+      "speed": 12
+    },
+    {
+      "startSeconds": 294,
+      "endSeconds": 303,
+      "speed": 1
+    },
+    {
+      "startSeconds": 303,
+      "endSeconds": 337,
+      "speed": 12
+    },
+    {
+      "startSeconds": 337,
+      "endSeconds": 359.666667,
+      "speed": 1
+    }
+  ]
+}

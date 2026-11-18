@@ -1,0 +1,18 @@
+{
+  "applicationCommit": "b1fcc9bbb046adae3fdddd25f13e7a09aa822390",
+  "application": "TinyCAD Desktop (Electron)",
+  "scope": "Actual UI with a temporary profile and copies of public bundled libraries. Created and renamed folders and verified a drag/drop assignment persisted. No personal configuration changed.",
+  "captures": [
+    "folders-overview.png",
+    "folder-create.png",
+    "folder-selected.png",
+    "folder-organise.png",
+    "folder-rename.png"
+  ],
+  "checks": {
+    "created": "Project libraries",
+    "movedLibrary": "Sensor interfaces",
+    "renamed": "Sensors and displays",
+    "pageErrors": []
+  }
+}

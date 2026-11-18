@@ -4,6 +4,8 @@ layout: default
 # 编辑符号
 {: #editing-a-symbol}
 
+如果要根据数据手册生成符号，或向已打开的库添加多个元件，请参阅 [AI 助手](../AI-Assistant/)指南。您可以使用本页介绍的编辑工具完善生成结果。
+
 ## TinyCAD 中的符号工作原理
 {: #how-symbols-work-in-tinycad}
 

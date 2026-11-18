@@ -1,135 +1,94 @@
 ---
 layout: default
 ---
-# SPICE-uitvoer
-{: #spice-output}
+# SPICE-modellen en netlistuitvoer
+{: #spice-models-and-netlist-output}
 
-SPICE-ondersteuning in TinyCAD v4 werkt hetzelfde als in v3: TinyCAD genereert op basis van uw schema een SPICE-tekstbestand met behulp van sjablonen op symboolniveau.
+TinyCAD ondersteunt zowel [geïntegreerde ngspice-simulatie](../Simulation/) als het exporteren van SPICE-netlists voor een externe simulator. Beide zijn afhankelijk van de SPICE-sjablonen en pinmapping van het component. Alleen het uiterlijk van een symbool beschrijft het elektrische gedrag ervan niet.
 
-## Waarvoor SPICE wordt gebruikt
-{: #what-spice-is-used-for}
+## Modellen, sjablonen en pinvolgorde
+{: #models-templates-and-pin-order}
 
-SPICE (Simulation Program with Integrated Circuit Emphasis) is een familie van circuit-simulatieformaten en -hulpmiddelen. Met een SPICE-simulator kunt u het gedrag van een circuit testen voordat u de hardware bouwt, bijvoorbeeld:
+Een weerstand kan een native SPICE-element gebruiken. Voor een transistor kan een `.model` nodig zijn; een complexer apparaat kan een `.subckt` gebruiken. De SPICE-instellingen van een geplaatst symbool koppelen de fysieke pinnummers aan de aansluitingen die het model verwacht. Controleer het tabblad **SPICE** in de symboleigenschappen; instantie-attributen kunnen de standaardwaarden van het symbool overschrijven.
 
-- DC-werkpunten en voorspanningscondities
-- Transiëntgedrag (tijddomein)
-- AC-/frequentierespons
-- Parameter-sweeps en 'wat-als'-analyses
+Sjablonen gebruiken:
 
-TinyCAD voert de simulatie niet zelf uit. In plaats daarvan exporteert het een SPICE-bestand dat u uitvoert met de SPICE-engine van uw keuze.
+- **`%(pin)`** voor het verbonden net van het opgegeven TinyCAD-pinnummer.
+- **`$(attribute)`** voor een componentattribuut.
+- **`refnum`** als een speciaal behandelde referentieachtervoegsel, zodat het SPICE-elementvoorvoegsel van het sjabloon behouden blijft.
 
-## SPICE-bestandsindeling en algemene opbouw
-{: #spice-file-format-and-general-layout}
+Een weerstandssjabloon kan bijvoorbeeld zijn:
 
-SPICE-engines verschillen enigszins van elkaar, maar de meeste SPICE-bestanden hebben dezelfde algemene opbouw:
+```text
+R$(refnum) %(1) %(2) $(NAME)
+```
 
-1. Optionele koptekst/opmerkingen
-2. Inclusies en definities van apparaten/modellen
-3. Regels met circuitelementen (één regel per componentinstantie)
-4. Analyse-/besturingsopdrachten
-5. Eindmarkering (meestal `.end`)
+Voor referentie R3, netten 7 en 9, en NAME `10k` levert dit op:
 
-In de praktijk betekent dit dat uw geëxporteerde bestand meestal het volgende bevat:
+```spice
+R3 7 9 10k
+```
 
-- Tekst voor de 'Setup' bovenaan (modellen, inclusies, opties)
-- Een hoofdgedeelte met gegenereerde componenten en de bijbehorende netverbindingen
-- Tekst voor 'Run' of analyse onderaan
+Het onderliggende model-sjabloonattribuut is **`$$SPICE`**; proloogtekst is **`$$SPICE_PROLOG`**. Een sjabloon kan de pinnen in een andere volgorde plaatsen: ga er niet van uit dat schemapin 1 de eerste aansluiting van SPICE is. Een BJT-element verwacht **collector, basis, emitter**. Als een symbool basis 1, emitter 2 en collector 3 nummert, moet het sjabloon `%(3) %(1) %(2)` in die volgorde vervangen. Een subcircuit gebruikt de volgorde die is gedeclareerd op de `.subckt`-regel; deze kan afwijken van die van een componentbehuizing.
 
-De SPICE-generatie van TinyCAD is ontworpen om rechtstreeks op deze indeling aan te sluiten.
+Lees het daadwerkelijke symbool en model samen. Voedingspinnen, verborgen pinnen, transistorvarianten en operationele-versterkermodellen zijn veelvoorkomende bronnen van afwijkingen. Een generiek gedragsmodel in 741-stijl is geen volledig, door de fabrikant gekwalificeerd 741-macromodel.
 
-## Hoe TinyCAD SPICE genereert
-{: #how-tinycad-generates-spice}
+## Een model gebruiken in de geïntegreerde simulatie
+{: #use-a-model-in-integrated-simulation}
 
-TinyCAD gebruikt een systeem met tekensjablonen voor elk SPICE-compatibel symbool. Elk symbool kan het volgende definiëren:
+1. Begin met een gemodelleerd symbool uit een [meegeleverde simulat bibliotheek](../Bundled-Libraries/#libraries-with-simulation-models), of voeg een geschikt SPICE-sjabloon toe aan een aangepast symbool.
+2. Controleer of elk sjabloon verwijst naar bestaande attributen en de juiste pinnen.
+3. Voeg op het Simulation-blad eventuele vereiste model-**tekst** toe en geef bijlagen logische bestandsnamen. Typische extensies voor tekstbestanden zijn `.lib`, `.cir` en `.mod`.
+4. Los `.include`- en `.lib`-afhankelijkheden op via die bijlagen. Bewaar vereiste definities bij de tekening.
+5. Verbind aarde **0**, stel de analyse in via **Setup** en voer deze vervolgens uit; controleer de diagnostiek.
 
-- **Modelsjabloon**: wordt ingevoegd voor elke instantie van die component in het schema
-- **Proloogsjabloon**: wordt bovenaan het bestand ingevoegd, eenmaal per componenttype
-- **Epilog sjabloon**: wordt onderaan het bestand ingevoegd, eenmaal per componenttype
+De beheerde engine haalt geen model op van een website en leest geen willekeurig absoluut pad op uw computer. Lever de afhankelijkheden expliciet aan. De engine voert ook geen willekeurige shellopdrachten, `.control`-scripts, opstartbestanden, extern aangeleverde native modules of apparaat-afhankelijkheden op basis van bestanden uit. Een leveranciersmodel dat simulatorspecifieke syntaxis gebruikt, moet mogelijk worden aangepast; “SPICE-compatibel” garandeert geen identieke dialecten.
 
-Open deze velden vanuit de symbooleigenschappen in de symboolbibliotheekeditor (tabblad SPICE).
+Het geïntegreerde Simulation-blad van TinyCAD beheert de analyseopdrachten en de uiteindelijke `.end`. **Een verouderd RUN-symbool is niet vereist.** Verplaats de oude analyse-instellingen naar Setup en verwijder een verouderd RUN-symbool wanneer u een tekening aanpast die op export is gericht. Verwijder analyse-instructies en `.end` uit eventuele resterende componentattributen; deze opdrachten worden afgewezen in het geïntegreerde pad voor componentsjablonen.
 
-### Sjabloonuitbreiding
-{: #template-expansion}
+Controleer de licentie van een leveranciersmodel voordat u het verspreidt. Bekijk de gedocumenteerde pinvolgorde, eenheden, modelaannames en ondersteunde simulator. Bewaar de documentatie van de fabrikant bij uw modelleerantekeningen.
 
-Sjablonen kunnen het volgende bevatten:
+## Een SPICE-netlist bekijken en exporteren
+{: #inspect-and-export-a-spice-netlist}
 
-- `%(pin)` voor vervangingen van pinnen/netten
-- `$(attribute)` voor vervangingen van symboolkenmerken
+Een netlist is een tekstuele beschrijving van componenten en de knooppunten die ze verbinden. Aarde heet `0`. Typische inhoud bestaat uit model-/setupdefinities, componentregels, analyse-instructies en een afsluitende `.end`. Nuttige controles zijn onder meer:
 
-Voorbeeld van een modelsjabloon voor een weerstand:
+- Verwijst elk component naar het bedoelde model en de bedoelde waarde?
+- Hebben verbonden pinnen de verwachte netnamen?
+- Zijn de voedings-/retournetten aanwezig, inclusief 0?
+- Klopt de aansluitvolgorde van de halfgeleider of het subcircuit?
+- Zijn alle modeldefinities en opgenomen tekst beschikbaar voor de geselecteerde engine?
 
-`R$(refnum) %(1) %(2) $(NAME)`
+Voor de geïntegreerde setup opent u **Simulation sheet → Diagnostics → Generate circuit text**, bekijkt u de uitgevouwen netlist en kiest u vervolgens **Export circuit** om `simulation.cir` op te slaan. Dit bevat de beheerde analyse.
 
-Als de referentie van de weerstandsinstantie `R3` is, deze is aangesloten tussen netten `7` en `9`, en `NAME=10K`, schrijft TinyCAD:
+Gebruik voor verouderde export op basis van sjablonen de afzonderlijke opdracht **Generate Spice NetList** in het menu File van de browser of het menu Desktop Tools. Deze staat los van het PCB-gerichte dialoogvenster [Generate Netlist](../Generate-Netlist/). De geëxporteerde analyse-/uitvoerinstructies moeten geschikt zijn voor de externe engine. Een bijbehorend tutorialbestand `.cir` kan ook rechtstreeks worden bekeken. **Open een `.dzn`-tekening in TinyCAD; een `.cir`-netlist is geen TinyCAD-tekeningbestand.**
 
-`R3 7 9 10K`
+### Verouderde exportsjablonen
+{: #legacy-export-templates}
 
-`refnum` wordt speciaal behandeld, zodat de SPICE-apparaatletter in het sjabloon behouden blijft.
+Het op export gerichte sjabloonsysteem ondersteunt een modeltekst per instantie en een proloog en epiloog per symbool. Identieke prologen/epilogen worden ontdubbeld. Prioriteiten lopen van 0 tot 9: prologen worden uitgevoerd van laag naar hoog; epilogen worden gerangschikt met prioriteit 0 als laatste.
 
-### Volgorde en ontdubbeling van proloog/epiloog
-{: #prologueepilogue-order-and-deduplication}
+Oudere tekeningen gebruiken mogelijk een **RUN**-symbool zonder pinnen, waarvan de proloog/epiloog de analyse- en afsluitende richtlijnen voor een geëxporteerde netlist bevat. Dit is een exportconventie, geen instructie om RUN toe te voegen aan een geïntegreerd Simulation-blad. Controleer deze instructies voordat u het geëxporteerde bestand in een afzonderlijke simulator uitvoert.
 
-- Identieke prologen en epilogen worden ontdubbeld
-- Elk heeft een prioriteit (van `0` tot `9`)
-- Prologen worden geschreven van lage naar hoge prioriteit
-- Epilogen worden zo geschreven dat prioriteit `0` als laatste in het bestand verschijnt
+### Voorwaardelijke sjablonen
+{: #conditional-templates}
 
-Hierdoor kunt u bepalen waar setup- en analysetekst verschijnt.
+Voor exportgerichte/aangepaste sjablonen zijn onder meer de volgende voorwaardelijke vormen beschikbaar:
 
-## Vereiste schemainstellingen voor SPICE-export
-{: #required-schematic-setup-for-spice-export}
+```text
+?( defined(attribute), true text, false text )
+?( not_defined(attribute), true text, false text )
+?( empty(attribute), true text, false text )
+?( not_empty(attribute), true text, false text )
+?( connected(pin), true text, false text )
+?( not_connected(pin), true text, false text )
+```
 
-Om een geldig SPICE-bestand te genereren, moet uw tekening het volgende bevatten:
+Voorwaardelijke constructies kunnen genest worden. Controleer de uitgevouwen netlist in plaats van een complex sjabloon alleen op basis van de brontekst te beoordelen.
 
-- SPICE-compatibele symbolen voor het te simuleren circuit
-- Een speciaal **RUN**-symbool
-- Een net met de naam **0** (SPICE-aarde)
+## Numerieke notatie en overdraagbaarheid
+{: #numerical-notation-and-portability}
 
-### RUN-symbool
-{: #run-symbol}
+In SPICE-tekst betekent **`M` milli**, net als `m`; gebruik **`Meg`** voor mega. `1k`, `100n` en `10u` zijn veelvoorkomende waarden. Gebruik expliciete modelparameters en verwijzingen in plaats van te vertrouwen op niet-gespecificeerde standaardwaarden van een simulator.
 
-Het RUN-symbool is een normaal TinyCAD-symbool zonder pinnen en zonder modelsjabloon, maar met proloog-/epiloogtekst die wordt gebruikt om besturingsinstructies voor de simulatie in te voegen.
-
-Stel de proloog- en epiloogprioriteiten van RUN in op `0`, zodat de tekst helemaal aan het begin en helemaal aan het einde van het gegenereerde bestand verschijnt.
-
-Gebruik één RUN-symbool per simulatiecircuit.
-
-### Het net `0`
-{: #the-0-net}
-
-SPICE vereist dat aarde net `0` is.
-
-Maak dit in TinyCAD door een verbinding de naam `0` te geven, met behulp van een van de volgende mogelijkheden:
-
-- Een netlabel, of
-- Een voedingssymbool met de waarde `0`
-
-## De SPICE-uitvoer maken
-{: #creating-the-spice-output}
-
-Nadat de symbolen, de RUN-node en het net `0` zijn geplaatst, genereert u de SPICE-uitvoer met de SPICE-exportopdracht in de interface van TinyCAD.
-
-De exportopties zijn bewust minimaal gehouden, omdat het gedrag tijdens uitvoering naar verwachting wordt geregeld via de sjablonen van uw RUN-symbool.
-
-## Geavanceerde voorwaardelijke sjablonen
-{: #advanced-template-conditionals}
-
-Voor geavanceerdere symbolen worden voorwaardelijke sjablooninstructies ondersteund (hetzelfde gedrag als in v3), waaronder tests voor:
-
-- Kenmerk aanwezig/niet aanwezig
-- Kenmerk leeg/niet leeg
-- Pin aangesloten/niet aangesloten
-
-Voorwaardelijke syntaxis:
-
-- `?( defined(attributename), true string, false string )`
-- `?( not_defined(attributename), true string, false string )`
-- `?( empty(attributename), true string, false string )`
-- `?( not_empty(attributename), true string, false string )`
-- `?( connected(pinnumber), true string, false string )`
-- `?( not_connected(pinnumber), true string, false string )`
-
-Voorwaardelijke instructies kunnen genest worden.
-
-- Terug naar [Geavanceerd](../Advanced/)
-- Terug naar [Inhoudsopgave v4](../CONTENTS/)
+De documentatie van de externe ngspice-opdrachtregel beschrijft een bredere omgeving dan de geïntegreerde engine van TinyCAD. Raadpleeg voor volledige syntaxis van elementen, modellen, analyses en compatibiliteitsopmerkingen de officiële [ngspice-documentatie](https://ngspice.sourceforge.io/docs.html) en [gebruikershandleiding](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf). Ga verder met [hoe TinyCAD SPICE implementeert](../SPICE-Tutorial-11/) voor een stapsgewijze uitleg van engines, symbolen en netlists.

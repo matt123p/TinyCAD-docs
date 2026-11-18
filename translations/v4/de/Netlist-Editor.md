@@ -6,46 +6,51 @@ layout: default
 
 `Netlist Editor` ist eine neue Funktion in TinyCAD v4.
 
-Verwenden Sie diese Funktion, wenn Sie:
+Verwenden Sie diese Funktion, wenn Sie Folgendes möchten:
 
-- sehen möchten, wie TinyCAD Ihre Drähte und Beschriftungen zu Netzen zusammengefasst hat
-- herausfinden möchten, wo ein Netz in der Zeichnung verwendet wird
-- einem Netz einen Typ zuweisen möchten
-- das Aussehen einer Gruppe von Netzen im Schaltplan ändern möchten
+- sehen, wie TinyCAD Ihre Drähte und Beschriftungen zu Netzen gruppiert hat
+- herausfinden, wo ein Netz in der Zeichnung verwendet wird
+- einem Netz einen Typ zuweisen
+- das Aussehen einer Gruppe von Netzen im Schaltplan ändern
 
 ## Was die Netzlistenansicht ist
 {: #what-the-netlist-view-is}
 
 `Netlist Editor` ist eine aktuelle Liste der Netze in Ihrer Zeichnung.
 
-Ein Netz ist eine elektrische Verbindung. TinyCAD ermittelt es anhand Ihrer:
+Ein Netz ist eine elektrische Verbindung. TinyCAD ermittelt diese anhand Ihrer:
 
 - Drähte
 - Pins
 - Beschriftungen
 - Stromversorgungssymbole
 
-Die Liste ist aktuell und wird automatisch aktualisiert, während Sie den Schaltplan bearbeiten.
+Die Liste wird laufend aktualisiert, während Sie den Schaltplan bearbeiten.
 
-## So öffnen Sie sie
+## So öffnen Sie die Ansicht
 {: #how-to-open-it}
 
-1. Sehen Sie sich das untere Bedienfeld des Editors an.
+1. Sehen Sie sich den unteren Bereich des Editors an.
 2. Wenn `Symbols` angezeigt wird, verwenden Sie die Modustaste und wechseln Sie zu `Netlist`.
 
-Wenn ein anderes Bedienfeld geöffnet ist, weil etwas ausgewählt wurde, heben Sie zuerst die Auswahl auf.
+Wenn ein anderes Bedienfeld geöffnet ist, weil etwas ausgewählt ist, heben Sie zuerst die Auswahl auf.
+
+![Netzlistenansicht unter dem Teilerschaltplan, mit hervorgehobener Zeile OUT](../images/netlist-editor/netlist-overview.png)
+
+In diesem enthaltenen Teilerbeispiel verbindet die Zeile `OUT` `R1.2` mit `R2.1`.
+Wenn Sie den Mauszeiger über diese Zeile bewegen, wird die Verbindung in der Zeichnung hervorgehoben.
 
 ## Bedeutung der einzelnen Spalten
 {: #what-each-column-means}
 
 - `Net`: der Netzname oder die interne Netznummer
 - `Sheet`: das Blatt, auf dem das Hauptelement dieser Zeile gefunden wurde
-- `Connections`: die Anzahl der Pinverbindungen auf diesem Netz
-- `Labels`: die auf diesem Netz gefundenen Beschriftungen
+- `Connections`: Anzahl der Pinverbindungen an diesem Netz
+- `Labels`: Beschriftungen, die an diesem Netz gefunden wurden
 - `Type`: der diesem Netz zugewiesene Netzlistentyp
-- `Symbols`: verbundene Bauteile und Pins auf diesem Netz
+- `Symbols`: verbundene Bauteile und Pins an diesem Netz
 
-## Die Netzlistenansicht verwenden
+## So verwenden Sie die Netzlistenansicht
 {: #how-to-use-the-netlist-view}
 
 ### Ein Netz suchen
@@ -53,7 +58,7 @@ Wenn ein anderes Bedienfeld geöffnet ist, weil etwas ausgewählt wurde, heben S
 
 Verwenden Sie das Suchfeld, um die Liste zu filtern.
 
-Sie können nach Folgendem suchen:
+Sie können suchen nach:
 
 - Netzname
 - Blattname
@@ -64,38 +69,42 @@ Sie können nach Folgendem suchen:
 ### Ein Netz in der Zeichnung hervorheben
 {: #highlight-a-net-in-the-drawing}
 
-Bewegen Sie die Maus über eine Zeile.
+Bewegen Sie den Mauszeiger über eine Zeile.
 
-TinyCAD hebt die passenden Netzelemente im Schaltplan hervor, damit Sie sehen können, wo sich das Netz befindet.
+TinyCAD hebt die entsprechenden Netzelemente im Schaltplan hervor, damit Sie sehen können, wo sich das Netz befindet.
 
 ### Zu einem Netz in der Zeichnung springen
 {: #jump-to-a-net-in-the-drawing}
 
 Klicken Sie auf eine Zeile.
 
-TinyCAD springt zum zugehörigen Element im richtigen Blatt.
+TinyCAD springt zum zugehörigen Element auf dem richtigen Blatt.
 
 ## So weisen Sie einem Netz einen Typ zu
 {: #how-to-assign-a-type-to-a-net}
 
-Jede Zeile hat ein `Type`-Feld.
+Jede Zeile enthält ein Feld `Type`.
 
 So weisen Sie einen Typ zu:
 
-1. Klicken Sie in das `Type`-Feld des Netzes.
-2. Wählen Sie einen vorhandenen Typ aus der Liste aus oder geben Sie einen neuen Namen ein.
-3. Klicken Sie außerhalb des Feldes, um die Änderung zu übernehmen.
+1. Klicken Sie in das Feld `Type` des Netzes.
+2. Wählen Sie einen vorhandenen Typ aus der Liste aus.
+3. Um zuerst einen neuen Typ zu definieren, verwenden Sie wie unten beschrieben `Netlist Types` und kehren Sie dann zum Feld `Type` des Netzes zurück.
+
+![Netzliste gefiltert nach OUT, mit zugewiesenem Steuertyp](../images/netlist-editor/netlist-type-assignment.png)
+
+Hier wird durch die Suche nach `OUT` das Ausgangsnetz des Teilers isoliert, und sein `Type` ist auf `control` gesetzt.
 
 
 ## Was ein Netztyp ist
 {: #what-a-net-type-is}
 
-Ein Netztyp ist eine wiederverwendbare Bezeichnung für eine Gruppe von Netzen.
+Ein Netztyp ist eine wiederverwendbare Kennzeichnung für eine Gruppe von Netzen.
 
 Sie können ihn verwenden, um:
 
 - Netze in Kategorien zu organisieren
-- Netzen mit übereinstimmendem Typ dieselben Farben zuzuweisen
+- Netzen desselben Typs dieselben Farben zuzuweisen
 - bestimmte Netze in der Zeichnung dicker darzustellen
 - zusätzliche Hinweise als Attribute zu speichern
 
@@ -107,13 +116,13 @@ Beispiele für mögliche Typnamen:
 - `analog`
 - `high_current`
 
-## So öffnen Sie Netlist Types
+## So öffnen Sie die Netzlistentypen
 {: #how-to-open-netlist-types}
 
-1. Öffnen Sie in der unteren Leiste die Ansicht `Netlist`.
+1. Öffnen Sie die Ansicht `Netlist` in der unteren Leiste.
 2. Klicken Sie auf `Netlist Types`.
 
-Hiermit wird der Editor für alle verfügbaren Typdefinitionen geöffnet.
+Dadurch wird der Editor für alle verfügbaren Typdefinitionen geöffnet.
 
 ## Was Sie in den Netzlistentypen tun können
 {: #what-you-can-do-in-netlist-types}
@@ -129,7 +138,7 @@ Im Fenster `Netlist Types` können Sie:
 - die Farbe des Stromversorgungssymbols ändern
 - die Drahtstärke ändern
 - eigene Attribute hinzufügen
-- das Ergebnis vor dem Speichern in der Vorschau anzeigen
+- das Ergebnis vor dem Speichern in der Vorschau ansehen
 
 ## Der Standardtyp
 {: #the-default-type}
@@ -153,16 +162,20 @@ Wenn Sie die Farben in der Zeile `default` ändern, ändern Sie die normalen Net
 4. Legen Sie die gewünschten Farben und die Drahtstärke fest.
 5. Klicken Sie zum Speichern auf `OK`.
 
-Danach können Sie den Netzen in der unteren Ansicht `Netlist` den neuen Typ zuweisen.
+Danach können Sie Netzen in der unteren Ansicht `Netlist` den neuen Typ zuweisen.
+
+![Editor für Netzlistentypen mit Standard-, Steuerungs- und Stromversorgungstypen sowie einer Drahtstärke von 2 für den Steuerungstyp](../images/netlist-editor/netlist-types.png)
+
+Das Beispiel fügt die Typen `control` und `power` hinzu. Für den Typ `control` ist eine Drahtstärke von `2` festgelegt; jede Farbtaste öffnet einen eigenen Editor.
 
 ## So duplizieren Sie einen Typ
 {: #how-to-duplicate-a-type}
 
-Dies ist nützlich, wenn Sie etwas erstellen möchten, das einem vorhandenen Typ ähnelt.
+Das ist nützlich, wenn Sie etwas Ähnliches wie einen vorhandenen Typ erstellen möchten.
 
 1. Wählen Sie die Typzeile aus.
 2. Klicken Sie auf `Duplicate`.
-3. Ändern Sie den neuen Namen.
+3. Ändern Sie den Namen des neuen Typs.
 4. Bearbeiten Sie die gewünschten Farben oder Einstellungen.
 5. Klicken Sie auf `OK`.
 
@@ -171,27 +184,31 @@ Dies ist nützlich, wenn Sie etwas erstellen möchten, das einem vorhandenen Typ
 
 Für jeden Typ können separate Farben festgelegt werden für:
 
-- Leitungen
+- Drähte
 - Beschriftungen
-- Versorgungselemente
+- Stromversorgungselemente
 
 So ändern Sie eine Farbe:
 
-1. Klicken Sie auf die Farbelle in der Zeile.
-2. Wählen Sie die Farbe im Farbauswahldialog aus.
-3. Schließen Sie den Farbauswahldialog.
-4. Klicken Sie auf `OK` im Hauptfenster `Netlist Types`.
+1. Klicken Sie auf das Farbfeld in der Zeile.
+2. Aktivieren Sie `Override colour` für einen Typ, der nicht dem Standard entspricht, und wählen Sie anschließend eine Farbe.
+3. Klicken Sie im Farbdialog auf `OK`.
+4. Klicken Sie im Hauptfenster auf `OK` `Netlist Types`.
 
-Nicht standardmäßige Typen können entweder ihre eigene Farbe verwenden oder auf die standardmäßige Zeichenfarbe zurückgreifen.
+Nicht-Standardtypen können entweder ihre eigene Farbe verwenden oder auf die Standard-Zeichnungsfarbe zurückgreifen.
 
-## So ändern Sie die Leitungsbreite
+![Drahtfarben-Editor mit aktiviertem Farb-Override und einem grünen Draht in der Vorschau](../images/netlist-editor/netlist-colour-preview.png)
+
+Die Vorschau zeigt neben den Beschriftungs- und Stromversorgungssymbolfarben die ausgewählte Drahtfarbe. Verwenden Sie die Registerkarten `Wire`, `Label` und `Power`, um jede Einstellung vor dem Speichern zu prüfen.
+
+## So ändern Sie die Drahtstärke
 {: #how-to-change-wire-thickness}
 
 1. Suchen Sie die Typzeile.
 2. Ändern Sie den Wert `Wire Thickness`.
 3. Klicken Sie auf `OK`.
 
-Dies wirkt sich darauf aus, wie Leitungen in Netzen dieses Typs im Schaltplan gezeichnet werden.
+Dadurch wird festgelegt, wie Drähte von Netzen dieses Typs im Schaltplan dargestellt werden.
 
 ## So fügen Sie Attribute hinzu
 {: #how-to-add-attributes}
@@ -200,22 +217,26 @@ Attribute sind einfache Name/Wert-Einträge, die mit dem Typ gespeichert werden.
 
 So fügen Sie sie hinzu:
 
-1. Klicken Sie auf die Zelle `Attributes` für den Typ.
-2. Fügen Sie Attributnamen und -werte hinzu oder bearbeiten Sie sie.
+1. Klicken Sie auf das Feld `Attributes` für den Typ.
+2. Klicken Sie auf `Add Attribute` und geben Sie dann Attributname und -wert ein. Wiederholen Sie den Vorgang für weitere Einträge.
 3. Speichern Sie die Attribute.
 4. Klicken Sie im Hauptdialog auf `OK`.
 
-Derzeit werden diese Attribute hauptsächlich mit der Zeichnung gespeichert. Sie sind nützlich, um zusätzliche Typinformationen festzuhalten, auch wenn sie noch nicht von jedem Ausgabeformat verwendet werden.
+![Attributeditor mit Einträgen für Zweck und Hinweise beim Steuerungstyp](../images/netlist-editor/netlist-attributes.png)
+
+Diese Beispieleinträge beschreiben den Zweck des Typs und ergänzen einen Verdrahtungshinweis. Sie gehören zum Typ und können von jedem ihm zugewiesenen Netz gemeinsam genutzt werden.
+
+Derzeit werden diese Attribute hauptsächlich zusammen mit der Zeichnung gespeichert. Sie sind hilfreich, um zusätzliche Typinformationen festzuhalten, auch wenn sie noch nicht von allen Ausgabeformaten verwendet werden.
 
 
 ## Verwandte Seiten
 {: #related-pages}
 
-- [Netzliste generieren](../Generate-Netlist/)
+- [Netzliste erzeugen](../Generate-Netlist/)
 - [Stückliste](../Bill-Of-Materials/)
-- [Design Rule Check](../Design-Rules-Check/)
+- [Entwurfsregelprüfung](../Design-Rules-Check/)
 - [SPICE-Ausgabe](../SPICE-output/)
 - [VHDL-Ausgabe](../VHDL-output/)
 
 - Zurück zu [Erweitert](../Advanced/)
-- Zurück zu [v4-Inhalt](../CONTENTS/)
+- Zurück zu [v4-Inhalt](../)

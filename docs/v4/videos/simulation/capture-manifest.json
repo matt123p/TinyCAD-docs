@@ -1,0 +1,2150 @@
+{
+  "applicationCommit": "b1fcc9bbb046adae3fdddd25f13e7a09aa822390",
+  "tool": "Playwright Chromium; MP4 encoded by ffmpeg",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring; blue pointer",
+  "scope": "Real UI and bundled solver. Fresh profiles; file picker substitutes only the explicit fixture file. Captions are narration overlays; screenshots hide the overlay. No drawing or solver result is fabricated.",
+  "captures": [
+    {
+      "id": "examples",
+      "recorded": true,
+      "engine": null,
+      "checks": {
+        "example": "network-layout",
+        "explanationVisible": true
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2196,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2284
+        },
+        {
+          "kind": "click",
+          "startedMs": 7420,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'Examples', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 288
+          },
+          "finishedMs": 7521
+        },
+        {
+          "kind": "click",
+          "startedMs": 12643,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Small office network', exact: true })",
+          "point": {
+            "x": 781.25,
+            "y": 709.375
+          },
+          "finishedMs": 12720
+        },
+        {
+          "kind": "click",
+          "startedMs": 17926,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17980
+        },
+        {
+          "kind": "click",
+          "startedMs": 24116,
+          "target": "getByRole('button', { name: 'Zoom Out (-)', exact: true })",
+          "point": {
+            "x": 1004,
+            "y": 61
+          },
+          "finishedMs": 24185
+        },
+        {
+          "kind": "click",
+          "startedMs": 29186,
+          "target": "getByRole('button', { name: 'Zoom Out (-)', exact: true })",
+          "point": {
+            "x": 1004,
+            "y": 61
+          },
+          "finishedMs": 29302
+        },
+        {
+          "kind": "click",
+          "startedMs": 35403,
+          "target": "getByRole('button', { name: 'Show example explanation', exact: true })",
+          "point": {
+            "x": 1526.0234375,
+            "y": 19.59375
+          },
+          "finishedMs": 35457
+        },
+        {
+          "kind": "click",
+          "startedMs": 41501,
+          "target": "getByRole('button', { name: 'Hide example explanation', exact: true }).first()",
+          "point": {
+            "x": 1526.0234375,
+            "y": 19.59375
+          },
+          "finishedMs": 41545
+        },
+        {
+          "kind": "click",
+          "startedMs": 46482,
+          "target": "getByRole('button', { name: 'Show example explanation', exact: true })",
+          "point": {
+            "x": 1526.0234375,
+            "y": 19.59375
+          },
+          "finishedMs": 46523
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open Example is at the right of the browser title bar. Select Examples, then Small office network."
+        },
+        {
+          "atSeconds": 21.783,
+          "text": "The example is an editable copy with its device artwork embedded."
+        },
+        {
+          "atSeconds": 33.17,
+          "text": "Explanation opens the wiring guide beside the drawing; it is independent of simulation charts."
+        },
+        {
+          "atSeconds": 39.338,
+          "text": "Hide and reopen the explanation without losing its instructions. Save As keeps your own drawing."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "first-simulation",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "newRun": "complete / available",
+        "outVolts": 2.5,
+        "sourceCurrentAmps": -0.0025
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2232,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2308
+        },
+        {
+          "kind": "click",
+          "startedMs": 7419,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7544
+        },
+        {
+          "kind": "click",
+          "startedMs": 12603,
+          "target": "getByRole('dialog').getByRole('button', { name: 'divider', exact: true })",
+          "point": {
+            "x": 781.25,
+            "y": 709.375
+          },
+          "finishedMs": 12693
+        },
+        {
+          "kind": "click",
+          "startedMs": 17854,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17989
+        },
+        {
+          "kind": "click",
+          "startedMs": 24201,
+          "target": "getByRole('button', { name: 'Simulation', exact: true })",
+          "point": {
+            "x": 166,
+            "y": 61
+          },
+          "finishedMs": 24271
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 28557,
+          "finishedMs": 28571
+        },
+        {
+          "kind": "click",
+          "startedMs": 34537,
+          "target": "getByText('◷ divider', { exact: true })",
+          "point": {
+            "x": 404.4296875,
+            "y": 786
+          },
+          "finishedMs": 34586
+        },
+        {
+          "kind": "click",
+          "startedMs": 40801,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 40849
+        },
+        {
+          "kind": "click",
+          "startedMs": 45855,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Setup', exact: true })",
+          "point": {
+            "x": 320.1328125,
+            "y": 98
+          },
+          "finishedMs": 45906
+        },
+        {
+          "kind": "click",
+          "startedMs": 50930,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 51022
+        },
+        {
+          "kind": "click",
+          "startedMs": 56085,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 56123
+        },
+        {
+          "kind": "click",
+          "startedMs": 62285,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Data', exact: true })",
+          "point": {
+            "x": 510.53125,
+            "y": 98
+          },
+          "finishedMs": 62339
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open Example → SPICE tutorial → divider → Open drawing."
+        },
+        {
+          "atSeconds": 21.927000000000003,
+          "text": "The pulse-shaped Simulation menu contains setup, sources, probes and virtual instruments."
+        },
+        {
+          "atSeconds": 32.342,
+          "text": "Select the Simulation sheet. Operating Point calculates the DC bias."
+        },
+        {
+          "atSeconds": 38.550999999999995,
+          "text": "Run creates a new acquisition using the browser’s bundled ngspice engine."
+        },
+        {
+          "atSeconds": 60.077999999999996,
+          "text": "Data confirms OUT = 2.5 V and source current = −2.5 mA for the two 1 kΩ resistors."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "layout-tidy-up",
+      "recorded": true,
+      "engine": null,
+      "checks": {
+        "example": "Transistor amplifier",
+        "scope": "whole sheet",
+        "strength": "low",
+        "result": "accepted changes",
+        "undo": "one toolbar Undo"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2239,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2334
+        },
+        {
+          "kind": "click",
+          "startedMs": 7450,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'Examples', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 288
+          },
+          "finishedMs": 7524
+        },
+        {
+          "kind": "click",
+          "startedMs": 12659,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Transistor amplifier', exact: true })",
+          "point": {
+            "x": 523.75,
+            "y": 709.375
+          },
+          "finishedMs": 12719
+        },
+        {
+          "kind": "click",
+          "startedMs": 17910,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17957
+        },
+        {
+          "kind": "click",
+          "startedMs": 24051,
+          "target": "getByRole('button', { name: 'Auto-layout', exact: true })",
+          "point": {
+            "x": 198,
+            "y": 61
+          },
+          "finishedMs": 24103
+        },
+        {
+          "kind": "check",
+          "startedMs": 34322,
+          "target": "getByRole('dialog').getByRole('radio', { name: 'Low', exact: true })",
+          "point": {
+            "x": 541,
+            "y": 605
+          },
+          "finishedMs": 34381
+        },
+        {
+          "kind": "click",
+          "startedMs": 40431,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Go', exact: true })",
+          "point": {
+            "x": 923,
+            "y": 745
+          },
+          "finishedMs": 40496
+        },
+        {
+          "kind": "click",
+          "startedMs": 46548,
+          "target": "getByRole('button', { name: 'Undo (Ctrl-Z)', exact: true })",
+          "point": {
+            "x": 252,
+            "y": 61
+          },
+          "finishedMs": 46617
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open the Transistor amplifier example to work on an editable copy."
+        },
+        {
+          "atSeconds": 21.721,
+          "text": "Auto-layout is beside Simulation on the toolbar."
+        },
+        {
+          "atSeconds": 27.847,
+          "text": "Whole sheet tidies the current schematic. Selected Items limits the operation to a selection."
+        },
+        {
+          "atSeconds": 32.047,
+          "text": "Start with Low to keep large components fixed while allowing smaller parts, wires and labels to improve."
+        },
+        {
+          "atSeconds": 38.123999999999995,
+          "text": "Choose Go to apply the tidy-up. The dialog closes when changes have been accepted."
+        },
+        {
+          "atSeconds": 44.254999999999995,
+          "text": "Review the new arrangement, then use Undo to revert the entire tidy-up in one step."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "libraries",
+      "recorded": true,
+      "engine": null,
+      "checks": {
+        "library": "network-layout",
+        "component": "Switch - desktop - 8 RJ45"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2290,
+          "target": "getByRole('tab', { name: 'Standard', exact: true })",
+          "point": {
+            "x": 56,
+            "y": 164
+          },
+          "finishedMs": 2343
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 7318,
+          "target": "getByRole('combobox', { name: 'Choose a standard library', exact: true })",
+          "point": {
+            "x": 144,
+            "y": 259
+          },
+          "finishedMs": 7341
+        },
+        {
+          "kind": "fill",
+          "startedMs": 13563,
+          "target": "getByPlaceholder('Search libraries...')",
+          "point": {
+            "x": 126,
+            "y": 110
+          },
+          "finishedMs": 13642
+        },
+        {
+          "kind": "click",
+          "startedMs": 19675,
+          "target": "locator('li[role=\"button\"]').filter({ has: locator('span').filter({ hasText: /^Switch - desktop - 8 RJ45$/ }) })",
+          "point": {
+            "x": 144,
+            "y": 449.5
+          },
+          "finishedMs": 19750
+        },
+        {
+          "kind": "dragTo",
+          "startedMs": 24787,
+          "target": "locator('li[role=\"button\"]').filter({ has: locator('span').filter({ hasText: /^Switch - desktop - 8 RJ45$/ }) }).locator('div.symbol-svg[draggable]')",
+          "point": {
+            "x": 144,
+            "y": 462
+          },
+          "finishedMs": 24990
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 29194,
+          "finishedMs": 29202
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0.0010000000000000009,
+          "text": "Choose Standard, then Network layout. Bundled libraries need no account or separate download."
+        },
+        {
+          "atSeconds": 11.171,
+          "text": "Search the selected library. Each result includes a draggable artwork preview."
+        },
+        {
+          "atSeconds": 17.365,
+          "text": "Select a component to inspect it, then drag its preview onto the drawing."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "multiple-sheets",
+      "recorded": true,
+      "engine": null,
+      "checks": {
+        "example": "divider",
+        "sheets": [
+          "Power",
+          "Control",
+          "◷ divider"
+        ],
+        "movedComponent": "R2",
+        "labels": [
+          "OUT",
+          "0"
+        ],
+        "verifiedNet": "4\nPower\n2\nOUT\nR1.2, R2.1",
+        "verifiedGround": "3\nPower\n2\n0\nV1.2, R2.2"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2355,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2482
+        },
+        {
+          "kind": "click",
+          "startedMs": 7581,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7699
+        },
+        {
+          "kind": "click",
+          "startedMs": 12996,
+          "target": "getByRole('dialog').getByRole('button', { name: 'divider', exact: true })",
+          "point": {
+            "x": 781.25,
+            "y": 709.375
+          },
+          "finishedMs": 13109
+        },
+        {
+          "kind": "click",
+          "startedMs": 18253,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 18379
+        },
+        {
+          "kind": "click",
+          "startedMs": 24404,
+          "target": "getByRole('button', { name: 'Hide chart panel', exact: true })",
+          "point": {
+            "x": 1576,
+            "y": 102
+          },
+          "finishedMs": 24509
+        },
+        {
+          "kind": "click",
+          "startedMs": 30567,
+          "target": "locator('.sheet-heading-on > span').last()",
+          "point": {
+            "x": 350.625,
+            "y": 786
+          },
+          "finishedMs": 30641
+        },
+        {
+          "kind": "click",
+          "startedMs": 35634,
+          "target": "getByRole('menuitem', { name: 'Rename', exact: true })",
+          "point": {
+            "x": 414,
+            "y": 813
+          },
+          "finishedMs": 35687
+        },
+        {
+          "kind": "fill",
+          "startedMs": 41749,
+          "target": "getByLabel('Sheet Name', { exact: true })",
+          "point": {
+            "x": 800,
+            "y": 511
+          },
+          "finishedMs": 41763
+        },
+        {
+          "kind": "click",
+          "startedMs": 46733,
+          "target": "getByRole('button', { name: 'Rename', exact: true })",
+          "point": {
+            "x": 923,
+            "y": 551
+          },
+          "finishedMs": 46808
+        },
+        {
+          "kind": "click",
+          "startedMs": 52888,
+          "target": "getByTitle('Add new sheet', { exact: true })",
+          "point": {
+            "x": 451.890625,
+            "y": 786
+          },
+          "finishedMs": 52957
+        },
+        {
+          "kind": "fill",
+          "startedMs": 59006,
+          "target": "getByLabel('Sheet Name', { exact: true })",
+          "point": {
+            "x": 800,
+            "y": 511
+          },
+          "finishedMs": 59014
+        },
+        {
+          "kind": "click",
+          "startedMs": 63999,
+          "target": "getByRole('button', { name: 'Add', exact: true })",
+          "point": {
+            "x": 923,
+            "y": 551
+          },
+          "finishedMs": 64110
+        },
+        {
+          "kind": "click",
+          "startedMs": 70170,
+          "target": "locator('.sheet-heading-on > span').last()",
+          "point": {
+            "x": 499,
+            "y": 786
+          },
+          "finishedMs": 70226
+        },
+        {
+          "kind": "click",
+          "startedMs": 75252,
+          "target": "getByRole('menuitem', { name: 'Move left', exact: true })",
+          "point": {
+            "x": 562,
+            "y": 892
+          },
+          "finishedMs": 75352
+        },
+        {
+          "kind": "dragTo",
+          "startedMs": 81365,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+          "point": {
+            "x": 399.6953125,
+            "y": 786
+          },
+          "finishedMs": 81516
+        },
+        {
+          "kind": "dragTo",
+          "startedMs": 87546,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+          "point": {
+            "x": 405.390625,
+            "y": 786
+          },
+          "finishedMs": 87684
+        },
+        {
+          "kind": "click",
+          "startedMs": 93640,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+          "point": {
+            "x": 328.140625,
+            "y": 786
+          },
+          "finishedMs": 93708
+        },
+        {
+          "kind": "mouse.click",
+          "startedMs": 98270,
+          "point": {
+            "x": 603.5,
+            "y": 296.5
+          },
+          "finishedMs": 98316
+        },
+        {
+          "kind": "key.ControlOrMeta+x",
+          "startedMs": 102517,
+          "finishedMs": 102564
+        },
+        {
+          "kind": "click",
+          "startedMs": 108590,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+          "point": {
+            "x": 398.28125,
+            "y": 786
+          },
+          "finishedMs": 108644
+        },
+        {
+          "kind": "key.ControlOrMeta+v",
+          "startedMs": 112846,
+          "finishedMs": 112921
+        },
+        {
+          "kind": "click",
+          "startedMs": 117890,
+          "target": "locator('#svg-drawing')",
+          "point": {
+            "x": 988,
+            "y": 551
+          },
+          "finishedMs": 117986
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 122188,
+          "finishedMs": 122197
+        },
+        {
+          "kind": "click",
+          "startedMs": 128230,
+          "target": "getByRole('button', { name: 'Label', exact: true })",
+          "point": {
+            "x": 536,
+            "y": 61
+          },
+          "finishedMs": 128295
+        },
+        {
+          "kind": "mouse.click",
+          "startedMs": 132860,
+          "point": {
+            "x": 383.5,
+            "y": 160.73076923076923
+          },
+          "finishedMs": 132900
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 137102,
+          "finishedMs": 137136
+        },
+        {
+          "kind": "mouse.dblclick",
+          "startedMs": 141636,
+          "point": {
+            "x": 397.5,
+            "y": 156
+          },
+          "finishedMs": 141672
+        },
+        {
+          "kind": "type",
+          "startedMs": 145888,
+          "finishedMs": 146458
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 150660,
+          "finishedMs": 150719
+        },
+        {
+          "kind": "click",
+          "startedMs": 156732,
+          "target": "getByRole('button', { name: 'Simulation', exact: true })",
+          "point": {
+            "x": 166,
+            "y": 61
+          },
+          "finishedMs": 156791
+        },
+        {
+          "kind": "hover",
+          "startedMs": 161812,
+          "target": "getByRole('menuitem', { name: 'SPICE', exact: true })",
+          "point": {
+            "x": 239.859375,
+            "y": 211
+          },
+          "finishedMs": 161856
+        },
+        {
+          "kind": "click",
+          "startedMs": 166855,
+          "target": "getByRole('menuitem', { name: 'Insert Ground', exact: true })",
+          "point": {
+            "x": 434.5703125,
+            "y": 284
+          },
+          "finishedMs": 166952
+        },
+        {
+          "kind": "mouse.click",
+          "startedMs": 171547,
+          "point": {
+            "x": 383.5,
+            "y": 202.26923076923077
+          },
+          "finishedMs": 171609
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 175812,
+          "finishedMs": 175844
+        },
+        {
+          "kind": "click",
+          "startedMs": 181874,
+          "target": "getByRole('button', { name: 'Symbols', exact: true })",
+          "point": {
+            "x": 1095,
+            "y": 827
+          },
+          "finishedMs": 181913
+        },
+        {
+          "kind": "click",
+          "startedMs": 186921,
+          "target": "getByRole('menuitem', { name: 'Netlist', exact: true })",
+          "point": {
+            "x": 1099,
+            "y": 894
+          },
+          "finishedMs": 186981
+        },
+        {
+          "kind": "click",
+          "startedMs": 197309,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Power$/ })",
+          "point": {
+            "x": 326,
+            "y": 786
+          },
+          "finishedMs": 197372
+        },
+        {
+          "kind": "click",
+          "startedMs": 203371,
+          "target": "locator('.sheet-heading').filter({ hasText: /^Control$/ })",
+          "point": {
+            "x": 398.28125,
+            "y": 786
+          },
+          "finishedMs": 203423
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0.007999999999999896,
+          "text": "Start from Open Example → SPICE tutorial → divider. We will split its two resistors across sheets."
+        },
+        {
+          "atSeconds": 22.028000000000002,
+          "text": "Hide the chart panel to give the drawing more space."
+        },
+        {
+          "atSeconds": 28.151,
+          "text": "Open the selected sheet’s arrow menu and choose Rename."
+        },
+        {
+          "atSeconds": 39.327999999999996,
+          "text": "Name this sheet Power. Renaming the page does not rename its nets."
+        },
+        {
+          "atSeconds": 50.452,
+          "text": "The + button beside the sheet tabs adds a sheet to the same drawing."
+        },
+        {
+          "atSeconds": 56.596999999999994,
+          "text": "Enter Control and choose Add. The new schematic sheet is now selected."
+        },
+        {
+          "atSeconds": 67.753,
+          "text": "Move left in the tab menu changes page order without changing any electrical connections."
+        },
+        {
+          "atSeconds": 79.011,
+          "text": "You can also drag tabs: move Control before Power."
+        },
+        {
+          "atSeconds": 85.16499999999999,
+          "text": "Drag Power back to the first position to keep the supply page before its load."
+        },
+        {
+          "atSeconds": 91.337,
+          "text": "Select Power, select R2 and cut it. Its original wires and OUT label stay on Power."
+        },
+        {
+          "atSeconds": 106.206,
+          "text": "Select Control, paste R2, then click the drawing to finish placement."
+        },
+        {
+          "atSeconds": 125.858,
+          "text": "Place a Label on R2’s top pin and name it OUT. It joins the OUT-labelled wire on Power."
+        },
+        {
+          "atSeconds": 154.362,
+          "text": "Connect the lower pin to ground 0. Matching power-net names also connect across sheets."
+        },
+        {
+          "atSeconds": 179.48499999999999,
+          "text": "Switch the lower list from Symbols to Netlist to inspect the actual connections."
+        },
+        {
+          "atSeconds": 190.74099999999999,
+          "text": "OUT has both R1 and R2 in one net, even though they are on different schematic sheets."
+        },
+        {
+          "atSeconds": 194.94299999999998,
+          "text": "On Power, the wire carries OUT; sheet names and tab order do not form the connection."
+        },
+        {
+          "atSeconds": 201.014,
+          "text": "On Control, the exact same label OUT connects R2. All schematic sheets belong to one circuit."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "ac-response",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "lesson": "05 · AC response, decibels and cutoff",
+        "newRun": "complete / available"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2205,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2302
+        },
+        {
+          "kind": "click",
+          "startedMs": 7431,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7526
+        },
+        {
+          "kind": "click",
+          "startedMs": 12603,
+          "target": "getByRole('dialog').getByRole('button', { name: 'rc-ac', exact: true })",
+          "point": {
+            "x": 781.25,
+            "y": 504.375
+          },
+          "finishedMs": 12645
+        },
+        {
+          "kind": "click",
+          "startedMs": 17766,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17812
+        },
+        {
+          "kind": "click",
+          "startedMs": 28902,
+          "target": "getByText('◷ rc-ac', { exact: true })",
+          "point": {
+            "x": 398.546875,
+            "y": 786
+          },
+          "finishedMs": 28969
+        },
+        {
+          "kind": "click",
+          "startedMs": 35572,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 35693
+        },
+        {
+          "kind": "click",
+          "startedMs": 41272,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 41357
+        },
+        {
+          "kind": "click",
+          "startedMs": 47921,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Setup', exact: true })",
+          "point": {
+            "x": 320.1328125,
+            "y": 98
+          },
+          "finishedMs": 48009
+        },
+        {
+          "kind": "click",
+          "startedMs": 53570,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('summary').first()",
+          "point": {
+            "x": 839.71875,
+            "y": 705
+          },
+          "finishedMs": 53645
+        },
+        {
+          "kind": "click",
+          "startedMs": 60203,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+          "point": {
+            "x": 417.59375,
+            "y": 98
+          },
+          "finishedMs": 60292
+        },
+        {
+          "kind": "click",
+          "startedMs": 66934,
+          "target": "getByRole('button', { name: 'Signals', exact: true })",
+          "point": {
+            "x": 1224.5625,
+            "y": 339
+          },
+          "finishedMs": 67001
+        },
+        {
+          "kind": "click",
+          "startedMs": 72551,
+          "target": "getByRole('menuitemcheckbox', { name: 'OUT / IN (V/V)', exact: true })",
+          "point": {
+            "x": 1312,
+            "y": 474
+          },
+          "finishedMs": 72636
+        },
+        {
+          "kind": "click",
+          "startedMs": 78187,
+          "target": "getByRole('menuitemcheckbox', { name: 'V(out) (V)', exact: true })",
+          "point": {
+            "x": 1312,
+            "y": 372
+          },
+          "finishedMs": 78268
+        },
+        {
+          "kind": "click",
+          "startedMs": 83869,
+          "target": "getByRole('menuitemcheckbox', { name: 'V(in) (V)', exact: true })",
+          "point": {
+            "x": 1312,
+            "y": 406
+          },
+          "finishedMs": 83935
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 88138,
+          "finishedMs": 88168
+        },
+        {
+          "kind": "click",
+          "startedMs": 94703,
+          "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+          "point": {
+            "x": 1576,
+            "y": 363
+          },
+          "finishedMs": 94792
+        },
+        {
+          "kind": "hover",
+          "startedMs": 99803,
+          "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+          "point": {
+            "x": 1460.484375,
+            "y": 396
+          },
+          "finishedMs": 99854
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 104837,
+          "target": "getByLabel('Display', { exact: true })",
+          "point": {
+            "x": 1199,
+            "y": 431
+          },
+          "finishedMs": 104881
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 109085,
+          "finishedMs": 109107
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 113309,
+          "finishedMs": 113314
+        },
+        {
+          "kind": "click",
+          "startedMs": 119818,
+          "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+          "point": {
+            "x": 1576,
+            "y": 363
+          },
+          "finishedMs": 119906
+        },
+        {
+          "kind": "hover",
+          "startedMs": 124879,
+          "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+          "point": {
+            "x": 1460.484375,
+            "y": 396
+          },
+          "finishedMs": 124977
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 129938,
+          "target": "getByLabel('Display', { exact: true })",
+          "point": {
+            "x": 1199,
+            "y": 431
+          },
+          "finishedMs": 129961
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 134163,
+          "finishedMs": 134183
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 138386,
+          "finishedMs": 138391
+        },
+        {
+          "kind": "click",
+          "startedMs": 144915,
+          "target": "getByRole('button', { name: 'Chart menu', exact: true }).first()",
+          "point": {
+            "x": 1576,
+            "y": 363
+          },
+          "finishedMs": 144959
+        },
+        {
+          "kind": "hover",
+          "startedMs": 149975,
+          "target": "getByRole('menuitem', { name: 'Chart options and cursors' })",
+          "point": {
+            "x": 1460.484375,
+            "y": 396
+          },
+          "finishedMs": 150037
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 155073,
+          "target": "getByLabel('Display', { exact: true })",
+          "point": {
+            "x": 1199,
+            "y": 431
+          },
+          "finishedMs": 155110
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 159312,
+          "finishedMs": 159323
+        },
+        {
+          "kind": "key.Escape",
+          "startedMs": 163525,
+          "finishedMs": 163530
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open the rc-ac example from the SPICE tutorial group."
+        },
+        {
+          "atSeconds": 21.595,
+          "text": "rc-ac is the same RC network, measured in the frequency domain."
+        },
+        {
+          "atSeconds": 26.098,
+          "text": "The AC sweep uses 1 Hz to 100 kHz and 100 points per decade."
+        },
+        {
+          "atSeconds": 32.78,
+          "text": "Run the sweep. AC analysis calculates small-signal response rather than stepping through time."
+        },
+        {
+          "atSeconds": 45.163000000000004,
+          "text": "The prepared Cutoff measurement compares OUT with IN using reference gain 1."
+        },
+        {
+          "atSeconds": 57.461000000000006,
+          "text": "The cutoff is about 159.15 Hz, where the gain is 0.707 or −3.01 dB."
+        },
+        {
+          "atSeconds": 64.19500000000001,
+          "text": "Select the derived OUT / IN trace and hide the separate node voltages to plot gain directly."
+        },
+        {
+          "atSeconds": 91.94500000000001,
+          "text": "Use the chart menu to show Magnitude (dB). The frequency axis remains logarithmic."
+        },
+        {
+          "atSeconds": 117.092,
+          "text": "Switch to Phase: the output lags, passing approximately −45° at the corner frequency."
+        },
+        {
+          "atSeconds": 142.167,
+          "text": "OUT / IN expresses gain even if the input AC amplitude changes."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "first-run",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "lesson": "01 · Open, run and change a divider",
+        "newRun": "complete / available"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2740,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2851
+        },
+        {
+          "kind": "fill",
+          "startedMs": 8017,
+          "target": "getByRole('textbox', { name: 'Search groups and examples' })",
+          "point": {
+            "x": 284.5,
+            "y": 192
+          },
+          "finishedMs": 8034
+        },
+        {
+          "kind": "click",
+          "startedMs": 14689,
+          "target": "getByRole('navigation', { name: 'Example groups' }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 288
+          },
+          "finishedMs": 14807
+        },
+        {
+          "kind": "click",
+          "startedMs": 20440,
+          "target": "getByRole('dialog').getByRole('button', { name: 'divider', exact: true })",
+          "point": {
+            "x": 523.75,
+            "y": 700.375
+          },
+          "finishedMs": 20588
+        },
+        {
+          "kind": "click",
+          "startedMs": 26223,
+          "target": "getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 26359
+        },
+        {
+          "kind": "click",
+          "startedMs": 33006,
+          "target": "getByText('◷ divider', { exact: true })",
+          "point": {
+            "x": 404.4296875,
+            "y": 786
+          },
+          "finishedMs": 33090
+        },
+        {
+          "kind": "click",
+          "startedMs": 39672,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 39800
+        },
+        {
+          "kind": "click",
+          "startedMs": 45319,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 45379
+        },
+        {
+          "kind": "click",
+          "startedMs": 51988,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Data', exact: true })",
+          "point": {
+            "x": 510.53125,
+            "y": 98
+          },
+          "finishedMs": 52085
+        },
+        {
+          "kind": "click",
+          "startedMs": 58788,
+          "target": "getByText('Circuit', { exact: true }).first()",
+          "point": {
+            "x": 321.3125,
+            "y": 786
+          },
+          "finishedMs": 58922
+        },
+        {
+          "kind": "mouse.dblclick",
+          "startedMs": 63805,
+          "point": {
+            "x": 603.5,
+            "y": 296.5
+          },
+          "finishedMs": 64335
+        },
+        {
+          "kind": "fill",
+          "startedMs": 70322,
+          "target": "getByRole('table', { name: 'Properties' }).getByRole('row').filter({ has: getByRole('cell', { name: 'Value', exact: true }) }).getByRole('textbox')",
+          "point": {
+            "x": 610.9765625,
+            "y": 982
+          },
+          "finishedMs": 70370
+        },
+        {
+          "kind": "click",
+          "startedMs": 76919,
+          "target": "getByText('◷ divider', { exact: true })",
+          "point": {
+            "x": 404.4296875,
+            "y": 786
+          },
+          "finishedMs": 77022
+        },
+        {
+          "kind": "click",
+          "startedMs": 82554,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 82659
+        },
+        {
+          "kind": "click",
+          "startedMs": 88154,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 88241
+        },
+        {
+          "kind": "click",
+          "startedMs": 94785,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Data', exact: true })",
+          "point": {
+            "x": 510.53125,
+            "y": 98
+          },
+          "finishedMs": 94828
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open Example contains the complete tutorial circuits and their instructions."
+        },
+        {
+          "atSeconds": 11.828,
+          "text": "Choose SPICE tutorial, then divider. Open drawing creates an editable copy."
+        },
+        {
+          "atSeconds": 30.151,
+          "text": "Select the Simulation sheet. Operating Point finds the DC voltages and currents."
+        },
+        {
+          "atSeconds": 36.898,
+          "text": "Run a new acquisition. History confirms that the browser solver completed it."
+        },
+        {
+          "atSeconds": 49.181,
+          "text": "Data gives OUT = 2.5 V, IN = 5 V and source current = −2.5 mA."
+        },
+        {
+          "atSeconds": 55.999,
+          "text": "Return to Circuit and double-click R2 to open its properties."
+        },
+        {
+          "atSeconds": 68.11699999999999,
+          "text": "Change R2 Value from 1k to 2k. The previous acquisition still describes the old circuit."
+        },
+        {
+          "atSeconds": 74.16399999999999,
+          "text": "Run again to calculate the changed circuit. Both acquisitions remain in History."
+        },
+        {
+          "atSeconds": 92.03699999999999,
+          "text": "OUT is now about 3.333 V. Save As keeps your edited copy of the example."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "rc-transient",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "lesson": "04 · RC charging, timestep and time constant",
+        "newRun": "complete / available"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2213,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2280
+        },
+        {
+          "kind": "click",
+          "startedMs": 7382,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7475
+        },
+        {
+          "kind": "click",
+          "startedMs": 12525,
+          "target": "getByRole('dialog').getByRole('button', { name: 'rc-step', exact: true })",
+          "point": {
+            "x": 523.75,
+            "y": 504.375
+          },
+          "finishedMs": 12577
+        },
+        {
+          "kind": "click",
+          "startedMs": 17633,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17703
+        },
+        {
+          "kind": "click",
+          "startedMs": 29728,
+          "target": "getByText('◷ rc-step', { exact: true })",
+          "point": {
+            "x": 404.546875,
+            "y": 786
+          },
+          "finishedMs": 29824
+        },
+        {
+          "kind": "fill",
+          "startedMs": 35896,
+          "target": "getByLabel('Maximum step (e.g. 10us)', { exact: true })",
+          "point": {
+            "x": 798.3984375,
+            "y": 259
+          },
+          "finishedMs": 35961
+        },
+        {
+          "kind": "click",
+          "startedMs": 42510,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add Measurements', exact: true })",
+          "point": {
+            "x": 1125,
+            "y": 681
+          },
+          "finishedMs": 42586
+        },
+        {
+          "kind": "click",
+          "startedMs": 48144,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+          "point": {
+            "x": 586.8203125,
+            "y": 691
+          },
+          "finishedMs": 48288
+        },
+        {
+          "kind": "click",
+          "startedMs": 53843,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+          "point": {
+            "x": 839.71875,
+            "y": 697
+          },
+          "finishedMs": 53895
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 58936,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+          "point": {
+            "x": 599.4375,
+            "y": 483.578125
+          },
+          "finishedMs": 58984
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 63995,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+          "point": {
+            "x": 839.71875,
+            "y": 537.578125
+          },
+          "finishedMs": 64028
+        },
+        {
+          "kind": "fill",
+          "startedMs": 69040,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('At (s or Hz; blank = start)', { exact: true })",
+          "point": {
+            "x": 839.71875,
+            "y": 645.578125
+          },
+          "finishedMs": 69094
+        },
+        {
+          "kind": "click",
+          "startedMs": 75607,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+          "point": {
+            "x": 586.8203125,
+            "y": 747.578125
+          },
+          "finishedMs": 75738
+        },
+        {
+          "kind": "click",
+          "startedMs": 81258,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+          "point": {
+            "x": 839.71875,
+            "y": 753.578125
+          },
+          "finishedMs": 81334
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 86384,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+          "point": {
+            "x": 599.4375,
+            "y": 484.15625
+          },
+          "finishedMs": 86426
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 91517,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+          "point": {
+            "x": 839.71875,
+            "y": 566.15625
+          },
+          "finishedMs": 91559
+        },
+        {
+          "kind": "fill",
+          "startedMs": 96564,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Initial / low level', { exact: true })",
+          "point": {
+            "x": 679.078125,
+            "y": 674.15625
+          },
+          "finishedMs": 96633
+        },
+        {
+          "kind": "fill",
+          "startedMs": 101642,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Final / high level', { exact: true })",
+          "point": {
+            "x": 1000.359375,
+            "y": 674.15625
+          },
+          "finishedMs": 101708
+        },
+        {
+          "kind": "click",
+          "startedMs": 108273,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 108391
+        },
+        {
+          "kind": "click",
+          "startedMs": 113924,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 113984
+        },
+        {
+          "kind": "click",
+          "startedMs": 120607,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+          "point": {
+            "x": 417.59375,
+            "y": 98
+          },
+          "finishedMs": 120704
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open the rc-step example from the SPICE tutorial group."
+        },
+        {
+          "atSeconds": 21.476000000000003,
+          "text": "rc-step applies a 0–1 V step to a 1 kΩ / 1 µF network. The output charges gradually."
+        },
+        {
+          "atSeconds": 26.98,
+          "text": "The saved transient runs for 5 ms. Maximum step limits the spacing between solver points."
+        },
+        {
+          "atSeconds": 33.611,
+          "text": "Halve maximum step from 5us to 2.5us to check that the measured response is stable."
+        },
+        {
+          "atSeconds": 39.748999999999995,
+          "text": "Add a Value measurement on OUT at 1ms to inspect one time constant."
+        },
+        {
+          "atSeconds": 72.88499999999999,
+          "text": "Add Time constant with initial level 0 and final level 1. Here R × C = 1 ms."
+        },
+        {
+          "atSeconds": 105.508,
+          "text": "Run again to capture both measurements with the finer timestep."
+        },
+        {
+          "atSeconds": 117.77799999999999,
+          "text": "Named measurements show about 0.632 V at 1 ms and a time constant close to 1 ms."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "rectifier-ripple",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "lesson": "06 · Measure settled rectifier ripple",
+        "newRun": "complete / available"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2240,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2333
+        },
+        {
+          "kind": "click",
+          "startedMs": 7470,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7564
+        },
+        {
+          "kind": "click",
+          "startedMs": 12736,
+          "target": "getByRole('dialog').getByRole('button', { name: 'rectifier', exact: true })",
+          "point": {
+            "x": 1038.75,
+            "y": 504.375
+          },
+          "finishedMs": 12800
+        },
+        {
+          "kind": "click",
+          "startedMs": 17944,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 17992
+        },
+        {
+          "kind": "click",
+          "startedMs": 30049,
+          "target": "getByText('◷ rectifier', { exact: true })",
+          "point": {
+            "x": 407.0546875,
+            "y": 786
+          },
+          "finishedMs": 30158
+        },
+        {
+          "kind": "click",
+          "startedMs": 36731,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add Measurements', exact: true })",
+          "point": {
+            "x": 1125,
+            "y": 681
+          },
+          "finishedMs": 36773
+        },
+        {
+          "kind": "click",
+          "startedMs": 42347,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+          "point": {
+            "x": 586.8203125,
+            "y": 691
+          },
+          "finishedMs": 42476
+        },
+        {
+          "kind": "click",
+          "startedMs": 47979,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+          "point": {
+            "x": 839.71875,
+            "y": 697
+          },
+          "finishedMs": 48021
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 53088,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+          "point": {
+            "x": 599.4375,
+            "y": 483.578125
+          },
+          "finishedMs": 53136
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 58115,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+          "point": {
+            "x": 839.71875,
+            "y": 591.578125
+          },
+          "finishedMs": 58146
+        },
+        {
+          "kind": "fill",
+          "startedMs": 63134,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('from (s or Hz; blank = full range)', { exact: true })",
+          "point": {
+            "x": 679.078125,
+            "y": 645.578125
+          },
+          "finishedMs": 63200
+        },
+        {
+          "kind": "fill",
+          "startedMs": 68228,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('to (s or Hz; blank = full range)', { exact: true })",
+          "point": {
+            "x": 1000.359375,
+            "y": 645.578125
+          },
+          "finishedMs": 68285
+        },
+        {
+          "kind": "click",
+          "startedMs": 74815,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).getByRole('button', { name: 'Add measurement', exact: true })",
+          "point": {
+            "x": 586.8203125,
+            "y": 747.578125
+          },
+          "finishedMs": 74943
+        },
+        {
+          "kind": "click",
+          "startedMs": 80465,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().locator('summary')",
+          "point": {
+            "x": 839.71875,
+            "y": 753.578125
+          },
+          "finishedMs": 80557
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 85597,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Measurement', { exact: true })",
+          "point": {
+            "x": 599.4375,
+            "y": 484.15625
+          },
+          "finishedMs": 85640
+        },
+        {
+          "kind": "selectOption",
+          "startedMs": 90654,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('Signal / component', { exact: true })",
+          "point": {
+            "x": 839.71875,
+            "y": 592.15625
+          },
+          "finishedMs": 90690
+        },
+        {
+          "kind": "fill",
+          "startedMs": 95699,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('from (s or Hz; blank = full range)', { exact: true })",
+          "point": {
+            "x": 679.078125,
+            "y": 646.15625
+          },
+          "finishedMs": 95761
+        },
+        {
+          "kind": "fill",
+          "startedMs": 100762,
+          "target": "getByRole('region', { name: 'Circuit Explorer', exact: true }).locator('details').last().getByLabel('to (s or Hz; blank = full range)', { exact: true })",
+          "point": {
+            "x": 1000.359375,
+            "y": 646.15625
+          },
+          "finishedMs": 100853
+        },
+        {
+          "kind": "click",
+          "startedMs": 107361,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 107451
+        },
+        {
+          "kind": "click",
+          "startedMs": 113012,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 113069
+        },
+        {
+          "kind": "click",
+          "startedMs": 119613,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+          "point": {
+            "x": 417.59375,
+            "y": 98
+          },
+          "finishedMs": 119709
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open the rectifier example from the SPICE tutorial group."
+        },
+        {
+          "atSeconds": 21.742,
+          "text": "The rectifier charges its reservoir capacitor near each positive input peak."
+        },
+        {
+          "atSeconds": 27.245,
+          "text": "Startup is visible in this 200 ms transient. Measure settled operation over 160–200 ms."
+        },
+        {
+          "atSeconds": 33.916000000000004,
+          "text": "Add Mean on OUT. Set from = 160ms and to = 200ms to exclude startup."
+        },
+        {
+          "atSeconds": 72.045,
+          "text": "Add Peak-to-peak on OUT using the same window. This measures ripple around the DC level."
+        },
+        {
+          "atSeconds": 104.612,
+          "text": "Run to capture the mean and ripple measurements alongside the acquisition."
+        },
+        {
+          "atSeconds": 116.82600000000001,
+          "text": "The settled mean is about 3.90 V and the peak-to-peak ripple is about 0.684 V."
+        },
+        {
+          "atSeconds": 124.327,
+          "text": "Total RMS includes the DC level. AC RMS removes the mean; it answers a different question."
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "id": "source-settings",
+      "recorded": true,
+      "engine": "bundled browser WebAssembly ngspice",
+      "checks": {
+        "engine": "bundled browser WebAssembly ngspice",
+        "lesson": "03 · Source settings and waveform preview",
+        "newRun": "complete / available"
+      },
+      "minimumActionGapSeconds": 4,
+      "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+      "actions": [
+        {
+          "kind": "click",
+          "startedMs": 2193,
+          "target": "getByRole('button', { name: 'Open Example', exact: true })",
+          "point": {
+            "x": 1516.109375,
+            "y": 19.59375
+          },
+          "finishedMs": 2290
+        },
+        {
+          "kind": "click",
+          "startedMs": 7440,
+          "target": "getByRole('navigation', { name: 'Example groups', exact: true }).getByRole('button', { name: 'SPICE tutorial', exact: true })",
+          "point": {
+            "x": 268.5,
+            "y": 342
+          },
+          "finishedMs": 7555
+        },
+        {
+          "kind": "click",
+          "startedMs": 12750,
+          "target": "getByRole('dialog').getByRole('button', { name: 'source-sine', exact: true })",
+          "point": {
+            "x": 523.75,
+            "y": 747.375
+          },
+          "finishedMs": 12798
+        },
+        {
+          "kind": "click",
+          "startedMs": 17986,
+          "target": "getByRole('dialog').getByRole('button', { name: 'Open drawing', exact: true })",
+          "point": {
+            "x": 1350.8203125,
+            "y": 871
+          },
+          "finishedMs": 18113
+        },
+        {
+          "kind": "mouse.dblclick",
+          "startedMs": 24005,
+          "point": {
+            "x": 388.5,
+            "y": 301.5
+          },
+          "finishedMs": 24470
+        },
+        {
+          "kind": "fill",
+          "startedMs": 36470,
+          "target": "getByLabel('Offset', { exact: true })",
+          "point": {
+            "x": 408.1953125,
+            "y": 842
+          },
+          "finishedMs": 36537
+        },
+        {
+          "kind": "fill",
+          "startedMs": 41555,
+          "target": "getByLabel('Amplitude', { exact: true })",
+          "point": {
+            "x": 634.59375,
+            "y": 842
+          },
+          "finishedMs": 41605
+        },
+        {
+          "kind": "fill",
+          "startedMs": 47623,
+          "target": "getByLabel('Frequency (Hz)', { exact: true })",
+          "point": {
+            "x": 408.1953125,
+            "y": 896
+          },
+          "finishedMs": 47675
+        },
+        {
+          "kind": "click",
+          "startedMs": 59717,
+          "target": "getByText('◷ source-sine', { exact: true })",
+          "point": {
+            "x": 418.1484375,
+            "y": 646
+          },
+          "finishedMs": 59805
+        },
+        {
+          "kind": "click",
+          "startedMs": 65306,
+          "target": "getByRole('button', { name: 'Run', exact: true }).first()",
+          "point": {
+            "x": 338,
+            "y": 61
+          },
+          "finishedMs": 65381
+        },
+        {
+          "kind": "click",
+          "startedMs": 70953,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'History', exact: true })",
+          "point": {
+            "x": 573.7421875,
+            "y": 98
+          },
+          "finishedMs": 71001
+        },
+        {
+          "kind": "click",
+          "startedMs": 77536,
+          "target": "getByRole('region', { name: 'Simulation sheet', exact: true }).getByRole('tab', { name: 'Measurements', exact: true }).first()",
+          "point": {
+            "x": 417.59375,
+            "y": 98
+          },
+          "finishedMs": 77630
+        }
+      ],
+      "steps": [
+        {
+          "atSeconds": 0,
+          "text": "Open the source-sine example from the SPICE tutorial group."
+        },
+        {
+          "atSeconds": 21.898000000000003,
+          "text": "source-sine drives a 1 kΩ load. Double-click the source body to see its settings."
+        },
+        {
+          "atSeconds": 28.249000000000002,
+          "text": "Offset = 1 V, amplitude = 2 V peak and frequency = 1 kHz produce a −1 to +3 V sine."
+        },
+        {
+          "atSeconds": 34.248999999999995,
+          "text": "Set offset to 0 and amplitude to 1. The preview immediately changes to a ±1 V sine."
+        },
+        {
+          "atSeconds": 45.424,
+          "text": "Double the frequency to 2k. There are now twice as many cycles in the preview."
+        },
+        {
+          "atSeconds": 51.475,
+          "text": "AC amplitude is separate: it excites an AC sweep, not this transient waveform."
+        },
+        {
+          "atSeconds": 56.975,
+          "text": "Select the Simulation sheet and run the edited source through the actual circuit."
+        },
+        {
+          "atSeconds": 74.807,
+          "text": "The new trace spans about −1 to +1 V, with ten cycles in the 5 ms acquisition."
+        }
+      ],
+      "pageErrors": []
+    }
+  ]
+}

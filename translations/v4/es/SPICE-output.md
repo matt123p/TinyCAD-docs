@@ -1,135 +1,94 @@
 ---
 layout: default
 ---
-# Salida de SPICE
-{: #spice-output}
+# Modelos SPICE y salida de listas de conexiones
+{: #spice-models-and-netlist-output}
 
-La compatibilidad con SPICE en TinyCAD v4 funciona igual que en v3: TinyCAD genera un archivo de texto SPICE a partir del esquema mediante plantillas a nivel de símbolo.
+TinyCAD admite tanto la [simulación ngspice integrada](../Simulation/) como la exportación de listas de conexiones SPICE para un simulador externo. Ambas dependen de las plantillas SPICE del componente y de la asignación de pines. La apariencia de un símbolo por sí sola no describe su comportamiento eléctrico.
 
-## Para qué se usa SPICE
-{: #what-spice-is-used-for}
+## Modelos, plantillas y orden de pines
+{: #models-templates-and-pin-order}
 
-SPICE (Simulation Program with Integrated Circuit Emphasis) es una familia de formatos y herramientas de simulación de circuitos. Un simulador SPICE permite probar el comportamiento de un circuito antes de construir el hardware, por ejemplo:
+Una resistencia puede usar un elemento SPICE nativo. Un transistor puede necesitar un `.model`; un dispositivo más complejo puede usar un `.subckt`. La configuración SPICE de un símbolo colocado conecta sus números de pin físicos con los terminales que espera ese modelo. Examine la pestaña **SPICE** en las propiedades del símbolo; los atributos de instancia pueden sobrescribir los valores predeterminados del símbolo.
 
-- Puntos de funcionamiento en CC y condiciones de polarización
-- Comportamiento transitorio (en el dominio del tiempo)
-- Respuesta en CA/frecuencia
-- Barridos de parámetros y análisis de «qué pasaría si»
+Las plantillas usan:
 
-TinyCAD no ejecuta la simulación. En su lugar, exporta un archivo SPICE que se ejecuta en el motor SPICE que elija.
+- **`%(pin)`** para la red conectada al número de pin especificado de TinyCAD.
+- **`$(attribute)`** para un atributo del componente.
+- **`refnum`** como sufijo de referencia con tratamiento especial, de modo que se conserva el prefijo de dispositivo SPICE de la plantilla.
 
-## Formato y estructura general de los archivos SPICE
-{: #spice-file-format-and-general-layout}
+Por ejemplo, una plantilla de resistencia puede ser:
 
-Los distintos motores SPICE varían ligeramente, pero la mayoría de los archivos SPICE siguen la misma estructura general:
+```text
+R$(refnum) %(1) %(2) $(NAME)
+```
 
-1. Encabezado/comentarios opcionales
-2. Inclusiones y definiciones de dispositivos/modelos
-3. Líneas de elementos del circuito (una línea por instancia de componente)
-4. Comandos de análisis/control
-5. Marcador de fin (normalmente `.end`)
+Para la referencia R3, las redes 7 y 9, y NAME `10k`, genera:
 
-En la práctica, esto significa que el archivo exportado suele contener:
+```spice
+R3 7 9 10k
+```
 
-- Texto de «Configuración» en la parte superior (modelos, inclusiones, opciones)
-- Un cuerpo con los componentes generados y sus redes conectadas
-- Texto de «Ejecución» o de análisis en la parte inferior
+El atributo de plantilla de modelo subyacente es **`$$SPICE`**; el texto del prólogo es **`$$SPICE_PROLOG`**. Una plantilla puede reordenar los pines: no suponga que el pin 1 del esquema es el primer terminal de SPICE. Un elemento BJT espera **colector, base, emisor**. Si un símbolo numera la base como 1, el emisor como 2 y el colector como 3, la plantilla debe sustituir `%(3) %(1) %(2)` en ese orden. Un subcircuito usa el orden declarado en su línea `.subckt`, que puede diferir del de un encapsulado de dispositivo.
 
-La generación de SPICE de TinyCAD está diseñada para adaptarse directamente a esta estructura.
+Lea conjuntamente el símbolo y el modelo reales. Los pines de alimentación, los pines ocultos, las variantes de transistores y los modelos de amplificadores operacionales son fuentes frecuentes de discrepancias. Un modelo de comportamiento genérico de estilo 741 no es un macromodelo 741 completo y cualificado por el fabricante.
 
-## Cómo genera TinyCAD el código SPICE
-{: #how-tinycad-generates-spice}
+## Usar un modelo en la simulación integrada
+{: #use-a-model-in-integrated-simulation}
 
-TinyCAD utiliza un sistema de plantillas de cadenas en cada símbolo habilitado para SPICE. Cada símbolo puede definir:
+1. Empiece con un símbolo modelado de una [biblioteca de simulación incluida](../Bundled-Libraries/#libraries-with-simulation-models), o añada una plantilla SPICE adecuada a un símbolo personalizado.
+2. Confirme que cada plantilla hace referencia a atributos existentes y a los pines correctos.
+3. En la hoja Simulation, adjunte cualquier **texto** de modelo necesario y asigne nombres de archivo lógicos a los adjuntos. Las extensiones habituales de los archivos de texto son `.lib`, `.cir` y `.mod`.
+4. Resuelva las dependencias de `.include` y `.lib` mediante esos adjuntos. Mantenga las definiciones necesarias junto con el dibujo.
+5. Conecte la tierra **0**, configure el análisis en **Setup**, ejecútelo y examine los diagnósticos.
 
-- **Plantilla de modelo**: se inserta para cada instancia de ese componente en el esquema
-- **Plantilla de prólogo**: se inserta cerca de la parte superior del archivo, una vez por tipo de componente
-- **Plantilla de epílogo**: se inserta cerca de la parte inferior del archivo, una vez por tipo de componente
+El motor administrado no descarga un modelo de un sitio web ni lee una ruta absoluta arbitraria de su equipo. Proporcione las dependencias explícitamente. Tampoco ejecuta comandos arbitrarios de shell, scripts `.control`, archivos de inicio, módulos nativos proporcionados externamente ni dependencias de dispositivos basadas en archivos. Puede que sea necesario adaptar un modelo de fabricante que use sintaxis específica de un simulador; «compatible con SPICE» no garantiza que los dialectos sean idénticos.
 
-Abra estos campos desde las propiedades del símbolo en el editor de la biblioteca de símbolos (pestaña SPICE).
+La hoja Simulation integrada de TinyCAD administra los comandos de análisis y el `.end` final. **No se necesita un símbolo RUN heredado.** Traslade la configuración de análisis antigua a Setup y elimine el símbolo RUN heredado al adaptar un dibujo orientado a la exportación. Elimine las instrucciones de análisis y `.end` de los atributos de componentes que queden; esos comandos se rechazan en el flujo integrado de plantillas de componentes.
 
-### Expansión de plantillas
-{: #template-expansion}
+Compruebe la licencia de un modelo de fabricante antes de redistribuirlo. Examine el orden de pines documentado, las unidades, las hipótesis del modelo y el simulador admitido. Conserve la documentación del fabricante junto con sus notas de modelado.
 
-Las plantillas pueden incluir:
+## Examinar y exportar una lista de conexiones SPICE
+{: #inspect-and-export-a-spice-netlist}
 
-- `%(pin)` para sustituciones de pines/redes
-- `$(attribute)` para sustituciones de atributos del símbolo
+Una lista de conexiones es una descripción textual de los dispositivos y los nodos que los conectan. La tierra se denomina `0`. El contenido habitual incluye definiciones de modelos/configuración, líneas de componentes, directivas de análisis y un `.end` final. Entre las comprobaciones útiles se incluyen:
 
-Ejemplo de plantilla de modelo para una resistencia:
+- ¿Hace referencia cada componente al modelo y valor previstos?
+- ¿Comparten los pines conectados los nombres de red esperados?
+- ¿Están presentes las redes de alimentación/retorno, incluida la 0?
+- ¿Es correcto el orden de terminales del semiconductor o subcircuito?
+- ¿Están disponibles para el motor seleccionado todas las definiciones de modelos y el texto incluido?
 
-`R$(refnum) %(1) %(2) $(NAME)`
+Para la configuración integrada, abra **Simulation sheet → Diagnostics → Generate circuit text**, examine el circuito expandido y, a continuación, elija **Export circuit** para guardar `simulation.cir`. Esto incluye el análisis administrado.
 
-Si la referencia de la instancia de resistencia es `R3`, está conectada entre las redes `7` y `9`, y tiene `NAME=10K`, TinyCAD escribe:
+Para la exportación heredada basada en plantillas, use el comando independiente **Generate Spice NetList** del menú File del navegador o del menú Desktop Tools. Es independiente del diálogo [Generate Netlist](../Generate-Netlist/) orientado a PCB. Las directivas de análisis/ejecución exportadas deben ser adecuadas para el motor externo. También se puede inspeccionar directamente un archivo `.cir` complementario del tutorial. **Abra un dibujo `.dzn` en TinyCAD; una lista de conexiones `.cir` no es un archivo de dibujo de TinyCAD.**
 
-`R3 7 9 10K`
+### Plantillas de exportación heredadas
+{: #legacy-export-templates}
 
-`refnum` se gestiona de forma especial para conservar la letra del dispositivo SPICE de la plantilla.
+El sistema de plantillas orientado a la exportación admite un cuerpo de modelo por instancia y un prólogo y epílogo por símbolo. Los prólogos/epílogos idénticos se deduplican. Las prioridades van de 0 a 9: los prólogos se ejecutan de menor a mayor prioridad; los epílogos se ordenan con la prioridad 0 al final.
 
-### Orden y eliminación de duplicados de prólogos/epílogos
-{: #prologueepilogue-order-and-deduplication}
+Los dibujos antiguos pueden usar un símbolo **RUN** sin pines, cuyo prólogo/epílogo proporciona las directivas de análisis y terminación para un circuito exportado. Esta es una convención de exportación, no una instrucción para añadir RUN a una hoja Simulation integrada. Revise esas instrucciones antes de ejecutar el archivo exportado en un simulador independiente.
 
-- Los prólogos y epílogos idénticos se eliminan de forma que solo quede uno
-- Cada uno tiene una prioridad (de `0` a `9`)
-- Los prólogos se escriben de menor a mayor prioridad
-- Los epílogos se escriben de modo que la prioridad `0` aparezca al final del archivo
+### Plantillas condicionales
+{: #conditional-templates}
 
-Esto permite controlar dónde aparece el texto de configuración y análisis.
+Para las plantillas personalizadas/orientadas a la exportación, se admiten las siguientes formas condicionales:
 
-## Configuración necesaria del esquema para exportar a SPICE
-{: #required-schematic-setup-for-spice-export}
+```text
+?( defined(attribute), true text, false text )
+?( not_defined(attribute), true text, false text )
+?( empty(attribute), true text, false text )
+?( not_empty(attribute), true text, false text )
+?( connected(pin), true text, false text )
+?( not_connected(pin), true text, false text )
+```
 
-Para generar un archivo SPICE válido, el dibujo debe incluir:
+Las condicionales se pueden anidar. Examine el circuito expandido en lugar de juzgar una plantilla compleja solo por su texto de origen.
 
-- Símbolos habilitados para SPICE para el circuito simulado
-- Un símbolo especial **RUN**
-- Una red llamada **0** (tierra de SPICE)
+## Notación numérica y portabilidad
+{: #numerical-notation-and-portability}
 
-### Símbolo RUN
-{: #run-symbol}
+En el texto SPICE, **`M` significa mili**, igual que `m`; use **`Meg`** para mega. `1k`, `100n` y `10u` son valores habituales. Use parámetros y referencias explícitos del modelo en lugar de depender de los valores predeterminados no especificados de un simulador.
 
-El símbolo RUN es un símbolo normal de TinyCAD sin pines ni plantilla de modelo, pero con texto de prólogo/epílogo que se utiliza para insertar instrucciones de control de la simulación.
-
-Establezca las prioridades del prólogo y el epílogo de RUN en `0` para que su texto aparezca al principio y al final del archivo generado, respectivamente.
-
-Utilice un símbolo RUN por circuito de simulación.
-
-### La red `0`
-{: #the-0-net}
-
-SPICE requiere que la tierra sea la red `0`.
-
-En TinyCAD, créela asignando el nombre `0` a una conexión mediante una de estas opciones:
-
-- Una etiqueta de red, o
-- Un símbolo de alimentación con el valor `0`
-
-## Creación de la salida SPICE
-{: #creating-the-spice-output}
-
-Una vez colocados los símbolos, el nodo RUN y la red `0`, genere la salida SPICE mediante el comando de exportación de SPICE de la interfaz de usuario de TinyCAD.
-
-Las opciones de exportación son intencionadamente mínimas, ya que se espera que el comportamiento en tiempo de ejecución se controle mediante las plantillas del símbolo RUN.
-
-## Condicionales avanzadas de plantillas
-{: #advanced-template-conditionals}
-
-Se admiten condicionales de plantillas para símbolos más avanzados (con el mismo comportamiento que en v3), incluidas pruebas para:
-
-- Atributo presente/no presente
-- Atributo vacío/no vacío
-- Pin conectado/no conectado
-
-Sintaxis condicional:
-
-- `?( defined(attributename), true string, false string )`
-- `?( not_defined(attributename), true string, false string )`
-- `?( empty(attributename), true string, false string )`
-- `?( not_empty(attributename), true string, false string )`
-- `?( connected(pinnumber), true string, false string )`
-- `?( not_connected(pinnumber), true string, false string )`
-
-Los condicionales pueden anidarse.
-
-- Volver a [Avanzado](../Advanced/)
-- Volver a [contenido de v4](../CONTENTS/)
+La documentación de la línea de comandos de ngspice externo abarca un entorno más amplio que el motor integrado de TinyCAD. Para consultar la sintaxis completa de los elementos, los modelos, los análisis y las notas de compatibilidad, vea la [documentación oficial de ngspice](https://ngspice.sourceforge.io/docs.html) y el [manual del usuario](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf). Continúe con [cómo implementa TinyCAD SPICE](../SPICE-Tutorial-11/) para una explicación práctica de los motores, los símbolos y las listas de conexiones.

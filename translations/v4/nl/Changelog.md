@@ -1,152 +1,195 @@
 ---
 layout: default
 ---
-# TinyCAD-wijzigingslogboek
+# Wijzigingslogboek van TinyCAD
 {: #tinycad-changelog}
 
+
+## Nog niet uitgebracht
+{: #unreleased}
+{: #unreleased}
+
+### Toegevoegd
+{: #added}
+
+- [AI-ondersteunde bewerking van symbolen, bibliotheken en schakelingen](../AI-Assistant/), inclusief bijgevoegde datasheets/afbeeldingen, zoeken naar gebundelde en online symbolen, directe bewerkingen van het actieve document, ongedaan te maken wijzigingen, instellingen voor providers/modellen en lokale Ollama-verbindingen.
+
+- [Geïntegreerde simulatie](../Simulation/) met lokale ngspice in de browser en Desktop, met analyses van het werkpunt, transiëntgedrag, AC, DC-sweep, ruis, overdrachtsfunctie en pool-nulpunten. [Gebeurtenisgestuurde XSPICE](../XSPICE/) wordt ondersteund in Desktop.
+- [Bronnen, probes en virtuele instrumenten](../Simulation-Sources-and-Instruments/), waaronder oscilloscopen, multimeters, functiegeneratoren en laboratoriumvoedingen.
+- [Circuit Explorer](../Simulation-Charts-and-Measurements/) voor afstemming, sweeps, benoemde metingen, eisen, DC-overlays, tolerantieberekeningen, testgevallen en onderzoek naar vermogen/belasting.
+- [Gecomprimeerde `.dzn`-tekeningen](../Simulation/#dzn-simulation-drawings) waarin de schakeling, modellen, simulatie-instellingen en optionele resultaten bij elkaar blijven. Uitvoergeschiedenis en export van resultaten ondersteunen vergelijken en delen; met Opslaan zonder resultaten maakt u een kleinere kopie.
+- [Gebundelde bibliotheken](../Bundled-Libraries/) voor netwerktopologieën, embedded boards en smarthomemodules, audio, laboratoriumapparatuur, motoren/beweging en planning van zonne-energie/accu's, naast gemodelleerde SPICE-, logica-, functionele en sensorcollecties. Kies deze op het tabblad Standaard van de bibliotheekkiezer.
+- [Zeven bewerkbare tekeningvoorbeelden](../Bundled-Examples/), met de oorspronkelijke transistorversterker, een kantoornetwerk, een ESP32-klimaat-/displaystation, een woning met zonne-energie/accu, een podcaststudio, een laboratoriumwerkbank en een motorbesturingswerkbank, met ingebedde symbolen en toelichtingen.
+- [SPICE- en XSPICE-zelfstudies](../Simulation-Tutorials/): elf analoge en zes digitale hoofdstukken, met 28 afzonderlijke uitvoerbare tekeningen, modeldefinities, analyse-instellingen en bewaarde referentiemetingen.
+- [Tekening opruimen](../Layout-Tidy-Up/) voor volledige bladen of geselecteerde items, met een sterkte van Laag/Gemiddeld/Hoog, annuleren, verbindingscontroles en één stap Ongedaan maken.
+
+### Gewijzigd
+{: #changed}
+
+- Voorbeeld openen en Toelichting openen staan in de titelbalk van de browser. Desktop biedt Bestand → Voorbeeld openen en Beeld → Toelichting weergeven.
+- Het menu Beeld van Desktop bevat Grafieken weergeven; het menu Simulatie op de werkbalk behoudt de schakelaar voor grafieken.
+- Automatische indeling staat op de werkbalk naast Simulatie en is ook beschikbaar in het menu Extra van Desktop.
+
+### Opgelost
+{: #fixed}
+
+- Herstel versleepbare voorbeelden van componentillustraties in de resultaten van Standaard, Mijn bibliotheken en de online kiezer.
+- Verklein illustraties van embedded controllers, sensoren en displays tot praktische afmetingen voor de pagina-indeling, met behoud van pinaanduidingen en bedradingsposities.
+- Voorkom dat wijzigingen in de indeling ongewenste verbindingen maken bij draadeinden, bochten of aansluitingen; verbeter pinuitgangen en verwijder onnodige omwegen.
+- Verwijder kleine aansluitingslabelkaders die tekst in laboratorium- en bewegingsbesturingssymbolen overlappen, en werk de betreffende voorbeelden bij.
+- Verbeter foutmeldingen en diagnostiek van simulaties, versterkerruns in de browser, grafiekvensters en onafhankelijke deelvensters met voorbeeldtoelichtingen.
+
+### Handleiding
+{: #manual}
+
+- Voeg een [handleiding voor afbeeldingen](../Images/) toe over kopiëren en plakken, bestanden importeren en indelingen converteren, vaste beeldverhouding, pixels bijsnijden en afbeeldingen samen met de tekening opslaan.
+
+- Voeg een volledige [handleiding voor de AI-assistent](../AI-Assistant/) toe over het maken van symbolen/bibliotheken en schakelingen, providerinstellingen met schermafbeeldingen, lokale Ollama, documentbijlagen, voorbeeldprompts en het beoordelen van gegenereerde resultaten.
+
+- Voeg handleidingen toe voor het vinden en gebruiken van gebundelde bibliotheken en voorbeelden, en vervang de SPICE-beschrijving die alleen export behandelt door de geïntegreerde simulatieprocedure.
+- Voeg naslaginformatie toe over analyses, modellen, instrumenten, grafieken, metingen en probleemoplossing, met koppelingen naar de officiële documentatie van ngspice en XSPICE.
+- Neem de bestaande volledige cursussen, downloadbare tekeningen/netlists en tien videohandleidingen op over bibliotheken, voorbeelden, indeling opruimen, verbindingen tussen meerdere bladen en SPICE.
+- Verduidelijk [verschillen tussen functies](../Feature-Differences/), waaronder `.dzn` en compatibiliteit met Markdown-tekstvakken en XSPICE-ondersteuning in de browser.
+- Werk de handleiding bij in alle acht ondersteunde talen, inclusief navigatie, nieuwe naslagpagina's, tekst van zelfstudies en videobijschriften.
 
 ## v4.0.11
 {: #v4011}
 {: #v4011}
 
-Deze release voegt opgemaakte Markdown-notities, vectoruitvoer in SVG-formaat en besturingselementen voor draadroutering toe.
+Deze versie voegt opgemaakte Markdown-notities, vector-SVG-uitvoer en instellingen voor draadroutering toe.
 
-- [Markdown-tekstvakken](../Text/#markdown-text-boxes): opgemaakte notities met lijsten, taaklijsten en codeblokken; dezelfde vectorrenderer voor de tekening, SVG-export en PDF.
-- Live bronopmaak houdt bewerkbare markeringen zichtbaar en volgt het gekozen basislettertype, met overeenkomstige cursorplaatsing, selectie en regelterugloop.
-- [Draadrouteringsmodi](../Wires/#wire-routing-modes): een compacte keuzeknop voor routering onder 90°, 45° en vrij, waarbij een actieve voorbeeldweergave behouden blijft.
+- [Markdown-tekstvakken](../Text/#markdown-text-boxes): opgemaakte notities met lijsten, takenlijsten en codeblokken; dezelfde vectorrenderer voor de tekening, SVG-export en PDF.
+- Live bronopmaak houdt bewerkbare markeringen zichtbaar en volgt het gekozen basislettertype, met overeenkomstige cursorplaatsing, selectie en tekstterugloop.
+- [Draadrouteringsmodi](../Wires/#wire-routing-modes): een compacte keuzeschakelaar voor routering onder 90°, 45° en Vrij, waarbij een actieve voorvertoning behouden blijft.
 - De vergrootglasknop verschijnt alleen na aanraakinvoer op het tekengebied.
 
 ## v4.0.10 — 6 november 2026
 {: #v4010--6-november-2026}
 {: #v4010}
 
-- Houd de werkbalk van de editor zichtbaar wanneer bibliotheek- of schema-panelen meer verticale ruimte nodig hebben.
+- Houd de editorwerkbalk zichtbaar wanneer bibliotheek- of schemapanelen meer verticale ruimte nodig hebben.
 
 ## v4.0.9 — 4 november 2026
 {: #v409--4-november-2026}
 
 ### Toegevoegd
-{: #added}
+{: #added-1}
 
-- [Aanraakbediening](../Touch-controls/), waaronder rechtstreeks bewerken, pannen met twee vingers
+- [Aanraakbediening](../Touch-controls/), met directe bewerking, pannen met twee vingers
   en zoomen met knijpen, en een vergrootglas met de bedieningselementen Klikken, Slepen/neerzetten, Menu en Sluiten
   voor nauwkeurige plaatsing.
-- [Aanpasbaar bibliotheekpaneel en symboolsortering](../Using-Symbol-Libraries/),
-  waaronder alfabetische sortering van zoekresultaten.
+- [Formaat van bibliotheekpaneel wijzigen en symbolen sorteren](../Using-Symbol-Libraries/),
+  inclusief alfabetische sortering van zoekresultaten.
 - [Geselecteerde objecten tijdelijk verbergen](../User-guide/#temporarily-hiding-objects)
-  en een opdracht om alle verborgen objecten op het huidige blad weer te geven.
+  en een opdracht om alle verborgen objecten op het huidige blad te herstellen.
 - Poolse interfacevertaling en vertaalde tekst in het dialoogvenster Symbool vervangen.
 
 ### Opgelost
-{: #fixed}
+{: #fixed-1}
 
-- [Rasterzichtbaarheid en uitlijnen](../Snap-to-Grid/) werken onafhankelijk van elkaar, en
-  verplaatsen met het toetsenbord houdt rekening met uitgeschakeld uitlijnen.
-- Bitmapafbeeldingen worden weergegeven in geplaatste bibliatuursymbolen.
+- [Rasterzichtbaarheid en magnetisch uitlijnen](../Snap-to-Grid/) werken onafhankelijk van elkaar, en
+  verplaatsen met het toetsenbord houdt rekening met uitgeschakeld magnetisch uitlijnen.
+- Bitmapafbeeldingen worden weergegeven in geplaatste bibliotheeksymbolen.
 - [Escape annuleert teken- en plaatsingsacties](../Shortcuts/), ook wanneer
   de focus op werkbalkbedieningselementen staat.
-- Als u de melding over niet-opgeslagen wijzigingen op het bureaublad annuleert, wordt het wachtende afsluiten geannuleerd.
-- Knijpzoomen op het tekengebied stapelt niet langer op met zoomen van de browserpagina.
-- Verbeterde positionering van het aanraakvergrootglas, aanwijzerfeedback, gebarenverwerking en slepen.
-- Verbeterd gedrag van het dialoogvenster Info op desktop en macOS.
+- Als u de prompt voor niet-opgeslagen wijzigingen in Desktop annuleert, wordt het geplande afsluiten geannuleerd.
+- Zoomen met knijpen op het tekengebied stapelt niet langer op de zoom van de browserpagina.
+- Verbeterde positionering van het aanraakvergrootglas, aanwijzerfeedback, gebarenafhandeling en slepen.
+- Verbeterd gedrag van het dialoogvenster Info in Desktop en macOS.
 
-### Pakketten en onderhoud
+### Pakketbouw en onderhoud
 {: #packaging-and-maintenance}
 
-- Afhankelijkheden bijgewerkt om beveiligingslekken te verhelpen.
-- Linux ARMv7-pakketten verwijderd omdat de Electron-runtime Linux x64
-  en ARM64 ondersteunt. Snap-pakketten zijn bedoeld voor x64; Debian-pakketten voor x64 en ARM64.
+- Afhankelijkheden bijgewerkt om beveiligingslekken aan te pakken.
+- Linux ARMv7-pakketten verwijderd omdat de Electron-runtime Linux x64 en ARM64 ondersteunt. Snap-pakketten zijn bedoeld voor x64; Debian-pakketten voor x64 en ARM64.
 
-[Releases downloaden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.9)
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.9)
 · [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/v4.0.8...v4.0.9)
 
 ## v4.0.8 — 3 mei 2026
 {: #v408--3-may-2026}
 
 - Rotatie van voedingssymbolen bij het opslaan en opnieuw openen van een tekening opgelost.
-- Nettypen van draden behouden bij opslaan en laden, zodat draadkleuren consistent blijven.
+- Draadnettypen behouden bij opslaan en laden, zodat draadkleuren consistent blijven.
 
-[Releases downloaden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.8)
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.8)
 · [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/v4.0.7...v4.0.8)
 
 ## v4.0.7 — 13 april 2026
 {: #v407--13-april-2026}
 
-- Afdrukken in de desktopapplicatie hersteld.
-- Knijpzoomen verbeterd om ongecontroleerd zoomen te voorkomen.
-- Server-side rendering van bibliatuursymbolen toegevoegd.
-- Automatische tagging van productieversies en aanmaak van GitHub-releases.
+- Afdrukken in de desktopapplicatie opgelost.
+- Gedrag van zoomen met knijpen verbeterd om ongecontroleerd zoomen te voorkomen.
+- Server-side rendering van bibliotheeksymbolen toegevoegd.
+- Automatische tagging van productiebuilds en aanmaak van GitHub-releases.
 
-[Releases downloaden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.7)
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.0.7)
 · [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/4.0.6...v4.0.7)
 
 ## v4.0.6 — 29 maart 2026
 {: #v406--29-march-2026}
 
-Deze release bevat de ontwikkelingswijzigingen die zijn aangebracht onder versie 4.0.5; er is
-geen afzonderlijke 4.0.5-tag of gepubliceerde GitHub-release.
+Deze versie bevat de ontwikkelwijzigingen die zijn aangebracht onder versie 4.0.5; er is geen afzonderlijke 4.0.5-tag of gepubliceerde GitHub-release.
 
 ### Toegevoegd
-{: #added-1}
+{: #added-2}
 
 - Automatische draadroutering.
-- Symbool vervangen om een bestaand component te vervangen door een ander bibliatuursymbool.
+- Symbool vervangen om een bestaande component te wijzigen in een ander bibliotheeksymbool.
 - Automatisch scrollen tijdens het slepen nabij de rand van de tekening.
-- Dubbelklikken om een volledige draad te selecteren en driemaal klikken om verder dan
-  knooppunten en T-aansluitingen te selecteren.
+- Dubbelklikken selecteert een volledige draad en driemaal klikken selecteert voorbij knooppunten en T-aansluitingen.
 - Een optie om de verbindingsindicator van labels uit te schakelen.
 
 ### Opgelost en verbeterd
 {: #fixed-and-improved}
 
-- Bibliotheekmappen zijn standaard geopend en worden uitgevouwen tijdens het zoeken.
-- Tekstbewerking, sneltoetsen voor het klembord, navigatietoetsen en sneltoetsen
-  verbeterd wanneer de tekening focus heeft.
-- Selectie met Ctrl-klik, het slepen van meerdere geselecteerde objecten en draaiknoppen hersteld.
+- Bibliotheekmappen zijn standaard geopend en worden uitgevouwen bij het zoeken.
+- Tekstbewerking, sneltoetsen voor het klembord, navigatietoetsen en sneltoetsen verbeterd wanneer de tekening focus heeft.
+- Selectie met Ctrl-klik, slepen van meerdere geselecteerde objecten en draaiknoppen opgelost.
 - Teken- en selectierechthoeken kunnen in beide richtingen worden gesleept.
-- Afsluiten op macOS hersteld en dubbel laden van bibliotheken op macOS verminderd.
-- Labelpositionering, vertaling van de kleurkiezer en achtergrondverwerking van netlijsten hersteld.
+- Afsluiten op macOS opgelost en dubbel laden van bibliotheken op macOS verminderd.
+- Labelpositionering, vertaling van de kleurenkiezer en achtergrondverwerking van netlists opgelost.
 - Namen van Windows-installatieprogramma's en AppX-builds gecorrigeerd.
 
-[Releases downloaden](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.6)
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.6)
 · [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/4.0.4...4.0.6)
 
 ## v4.0.4 — brontag, 19 maart 2026
 {: #v404--source-tag-19-march-2026}
 
 - [Bibliotheekmappen](../Library-Folders/) toegevoegd om symboolbibliotheken te organiseren.
-- Nederlandse interfacevertaling toegevoegd.
-- Buildartefacten voor de browser en implementatie naar GitHub Pages toegevoegd.
-- Snap-packaging hersteld.
+- Nederlandse interfacetaal toegevoegd.
+- Browserbuildartefacten en implementatie op GitHub Pages toegevoegd.
+- Snap-pakketbouw opgelost.
 
 [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/4.0.3...4.0.4)
 
 ## v4.0.3 — brontag, 15 maart 2026
 {: #v403--source-tag-15-march-2026}
 
-- De opstartafhandeling van macOS aangepast om een opstartprobleem op te lossen.
+- Afhandeling van het opstarten van macOS aangepast om een opstartprobleem aan te pakken.
 
-De brontag is 4.0.3, hoewel de pakketmetadata nog steeds 4.0.2 vermeldt.
+De brontag is 4.0.3, hoewel de metagegevens van het pakket nog steeds 4.0.2 vermelden.
 
 [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/4.0.2...4.0.3)
 
 ## v4.0.2 — 14 maart 2026
 {: #v402--14-march-2026}
 
-- Het dialoogvenster voor sluiten met niet-opgeslagen wijzigingen op Linux hersteld.
+- Het dialoogvenster voor niet-opgeslagen wijzigingen bij afsluiten op Linux opgelost.
 - x64 Debian-pakketten toegevoegd naast de bestaande ARM-builds.
-- Buildgereedschap en configuratie voor packaging bijgewerkt.
+- Buildgereedschappen en pakketconfiguratie bijgewerkt.
 
-[Releases downloaden](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.2)
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/4.0.2)
 · [Broncodewijzigingen](https://github.com/matt123p/TinyCADv4/compare/4.0.1...4.0.2)
 
 ## v4.0.1 — eerste brontag, 13 maart 2026
 {: #v401--initial-source-tag-13-march-2026}
 
-De eerste momentopname van de broncode bevat al de herschreven TinyCAD-versie voor gebruik in de browser en op het bureaublad, met schemabewerking, symboolbibliotheken, ondersteuning voor bestaande
-`.dsn`- en `.tclib`-bestanden en exportmogelijkheden. Eerdere ontwikkeling is niet
+De eerste momentopname van de broncode bevat al de TinyCAD-herschrijving voor browser- en desktopgebruik, met schemabewerking, symboolbibliotheken, ondersteuning voor bestaande
+`.dsn`- en `.tclib`-bestanden en exportprocedures. Eerdere ontwikkeling is niet
 vastgelegd in deze repository.
 
 [Eerste momentopname van de broncode](https://github.com/matt123p/TinyCADv4/tree/4.0.1)
 
-- Terug naar de [inhoudsopgave van v4](../CONTENTS/)
+- Terug naar [inhoud van v4](../CONTENTS/)

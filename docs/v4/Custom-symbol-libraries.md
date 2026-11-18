@@ -13,6 +13,8 @@ Libraries](../Using-Symbol-Libraries/). For drawing or changing the symbol
 itself, including pins and symbol properties, see [Editing a
 Symbol](../Editing-a-Symbol/).
 
+The [AI assistant](../AI-Assistant/) can add components to a library open for editing. Create or open the library first, then describe the required parts and attach their datasheets. Review the generated symbols and save the library normally.
+
 Library files use the `.tclib` extension and can be stored on your computer or,
 with Google integration, on Google Drive. They are cross-compatible between the
 desktop version of TinyCAD and the browser version.

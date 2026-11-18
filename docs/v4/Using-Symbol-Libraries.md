@@ -22,7 +22,7 @@ Symbol libraries serve several key purposes in schematic capture:
 
 ## Built-in and custom libraries
 
-TinyCAD ships with a set of built-in libraries covering common component families. For parts not included, you can:
+TinyCAD ships with [bundled libraries](../Bundled-Libraries/) for equipment layouts and modelled electronic circuits. Select **Standard** in the left-hand picker, then choose a collection from **Choose a standard library**. No separate library import is needed. For parts not included, you can:
 
 - Create your own [custom symbol libraries](../Custom-symbol-libraries/)
 - [Import symbols from KiCAD](../Importing-Symbols-from-KiCAD/) libraries
@@ -53,10 +53,10 @@ Use [Custom Symbol Libraries](../Custom-symbol-libraries/) for the product-speci
 
 To use symbols from a library, the library must first be loaded in your TinyCAD session. Once loaded:
 
-1. Open the symbol picker.
-2. Expand a library to browse its contents, or use the search box to find a symbol by name or description.
-3. Click a symbol to preview it.
-4. Select the symbol to make it the active placement tool, then click in your drawing to place instances.
+1. Open the symbol picker on the left and choose **Standard**, **Online** or **My Libraries**.
+2. In Standard, choose one bundled library; in My Libraries, open or expand your own libraries. Use **Search libraries...** to find a symbol by name or description.
+3. Inspect the artwork in the result list, then select a symbol for its larger preview and description.
+4. Drag its preview into the drawing and position it on the grid. Press Escape or right-click to finish placing copies.
 
 For more on placing and configuring symbols once selected, see [Symbols](../Symbols/).
 
@@ -74,8 +74,7 @@ Sorting applies to symbols within libraries and to search results, including
 online results; it does not rearrange your library files or folders. TinyCAD
 remembers the sort mode on this device when local storage is available.
 
-The browser file-system version only displays online search and does not expose
-the **My Libraries** sort button.
+The browser and Desktop picker provide **Standard**, **Online** and **My Libraries** tabs. The source and standard-library choice are remembered on this device.
 
 ## Placing symbols in a drawing
 
@@ -107,4 +106,4 @@ Remember that placing a symbol in a drawing does **not** edit the library defini
 {% endfor %}
 {% endif %}
 
-- Back to [v4 contents](../CONTENTS/)
+- Back to [v4 contents](../)

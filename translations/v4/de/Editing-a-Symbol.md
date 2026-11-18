@@ -4,39 +4,41 @@ layout: default
 # Ein Symbol bearbeiten
 {: #editing-a-symbol}
 
-## Funktionsweise von Symbolen in TinyCAD
+Informationen zum Generieren eines Symbols aus einem Datenblatt oder zum Hinzufügen mehrerer Komponenten zu einer geöffneten Bibliothek finden Sie im Leitfaden zum [KI-Assistenten](../AI-Assistant/). Die Ergebnisse können Sie mit den Bearbeitungswerkzeugen auf dieser Seite verfeinern.
+
+## So funktionieren Symbole in TinyCAD
 {: #how-symbols-work-in-tinycad}
 
-Symbole werden aus normalen Objekten erstellt, die in der Symbolleiste zu finden sind. Sie können
+Symbole werden aus den normalen Objekten der Werkzeugleiste erstellt. Sie können
 alle diese Objekte außer anderen Symbolen enthalten.
 
-Enthält das Symbol Objekte mit Sonderfunktionen (z. B. ein Versorgungselement
-oder einen Draht), werden diese Objekte wie Anmerkungen behandelt.
+Enthält das Symbol Objekte mit Sonderfunktionen (z. B. ein Versorgungssymbol
+oder eine Leitung), werden diese Objekte wie Annotationen behandelt.
 
-Ihre Sonderfunktionen gehen bei der Verwendung in einem Symbol verloren. Nur **Pins** definieren
+Alle ihre Sonderfunktionen gehen bei der Verwendung in einem Symbol verloren. Nur **Pins** definieren
 elektrische Verbindungspunkte.
 
 Zusammenfassung:
-- Ein Symbol ist eine wiederverwendbare Grafik mit Attributen.
-- Die elektrische Verbindung wird durch **Pins** definiert.
-- Symbole werden in **Bibliotheken** gespeichert (`.tclib`)
+- ein Symbol ist eine wiederverwendbare Grafik mit Attributen
+- die elektrische Verbindung wird durch **Pins** definiert
+- und Symbole werden in **Bibliotheken** gespeichert (`.tclib`)
 
 ## Bevor Sie beginnen
 {: #before-you-start}
 
 Auf dieser Seite wird vorausgesetzt, dass Sie bereits eine Bibliothek zur Bearbeitung geöffnet haben. Die Schritte zum
-Öffnen oder Erstellen einer Bibliothek hängen davon ab, ob Sie TinyCAD Web oder
-die Desktop-Anwendung verwenden. Beginnen Sie daher mit [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/).
+Öffnen oder Erstellen einer Bibliothek unterscheiden sich je nachdem, ob Sie TinyCAD Web oder
+die Desktopanwendung verwenden. Beginnen Sie daher mit [Benutzerdefinierte Symbolbibliotheken](../Custom-symbol-libraries/).
 
-Wenn Sie statt der Bearbeitung nach dem Durchsuchen und Platzieren von Symbolen suchen, lesen Sie [Symbolbibliotheken verwenden](../Using-Symbol-Libraries/).
+Wenn Sie Symbole durchsuchen und platzieren möchten, statt sie zu bearbeiten, lesen Sie [Symbolbibliotheken verwenden](../Using-Symbol-Libraries/).
 
 ## Symbol öffnen oder erstellen
 {: #open-or-create-the-symbol}
 
 1. Öffnen Sie die Bibliothek.
-2. Klicken Sie zum Bearbeiten eines vorhandenen Symbols in der Symbolliste der Bibliothek darauf.
-3. Klicken Sie zum Erstellen eines neuen Symbols auf die Schaltfläche `+` in der Symbolliste.
-4. Das ausgewählte oder neu erstellte Symbol wird auf der Editorfläche geladen.
+2. Um ein vorhandenes Symbol zu bearbeiten, klicken Sie in der Symbolliste der Bibliothek darauf.
+3. Um ein neues Symbol zu erstellen, klicken Sie in der Symbolliste auf die Schaltfläche `+`.
+4. Das ausgewählte oder neue Symbol wird auf der Editor-Arbeitsfläche geladen.
 
 Anschließend können Sie die Grafiken, Pins und Symbolattribute ändern.
 
@@ -48,32 +50,32 @@ Anschließend können Sie die Grafiken, Pins und Symbolattribute ändern.
 %}
 
 
-## Symbolform (Grafiken) zeichnen
+## Symbolform (Grafik) zeichnen
 {: #drawing-the-symbol-shape-graphics}
 
-Verwenden Sie die üblichen Zeichenwerkzeuge, um den Symbolumriss zu erstellen:
+Verwenden Sie die standardmäßigen Zeichenwerkzeuge, um den Symbolumriss zu erstellen:
 
 - Linien/Polylinien für Gehäusekanten,
 - Rechtecke/Ellipsen/Bögen für gängige Gehäuseumrisse,
 - Text für optionale interne Beschriftungen.
 
-Achten Sie darauf, dass das Symbol bei normaler Schaltplanvergrößerung gut lesbar ist. Einfache Formen funktionieren in der Regel
-besser als stark verzierte Grafiken.
+Achten Sie darauf, dass das Symbol bei normaler Schaltplanvergrößerung gut lesbar ist. Einfache Formen sind in der Regel
+besser geeignet als aufwendig dekorative Grafiken.
 
 ## Pins hinzufügen
 {: #adding-pins}
 
-Pins sind der einzige elektrisch aktive Bestandteil eines Symbols.
+Pins sind der einzige elektrisch aktive Teil eines Symbols.
 
 Legen Sie für jeden Pin Folgendes fest:
 
 - **Pinnummer** (erforderlich und innerhalb eines Bauteils eindeutig),
 - **Pinname** (optional, aber dringend empfohlen),
 - **Elektrischer Typ** (für eine korrekte DRC erforderlich),
-- **Pin-Stil/-Form** (visueller Stil),
-- **Sichtbarkeit** des Pinname-/Pinnummer-Texts nach Bedarf.
+- **Pin-Stil/-Form** (Darstellungsstil),
+- **Sichtbarkeit** des Pin-Namens/-Nummerntxts nach Bedarf.
 
-Platzieren Sie Pins sorgfältig am Raster, damit sich Verdrahtungen im Schaltplan einfach erstellen lassen.
+Platzieren Sie Pins sorgfältig am Raster, damit sich im Schaltplan problemlos Leitungen anschließen lassen.
 
 {% include video-player.html
 	src="/v4/images/video/Video 13.mp4"
@@ -86,12 +88,12 @@ Platzieren Sie Pins sorgfältig am Raster, damit sich Verdrahtungen im Schaltpla
 ## Pin-Bereich
 {: #pin-panel}
 
-Pins können im Bereich **Pin** im **unteren Bedienfeld** bearbeitet werden.
+Sie können Pins im Bereich **Pin** im **unteren Bedienfeld** bearbeiten.
 
 Änderungen im Pin-Bereich werden **sofort übernommen**: Jede Feldänderung löst unmittelbar
-eine Pin-Aktualisierung aus (es gibt keinen separaten Schritt „OK/Übernehmen“).
+eine Pin-Aktualisierung aus (es gibt keinen separaten Schritt mit OK/Übernehmen).
 
-Abschnitte im Pin-Bereich:
+Abschnitte des Pin-Bereichs:
 
 1. **Name**
 	- Kontrollkästchen „Anzeigen“ (`show_name`)
@@ -102,30 +104,30 @@ Abschnitte im Pin-Bereich:
 	- Textfeld „Nummer“ (`number`)
 	- Numerisches Feld „Versatz“ (`number_pos`)
 3. **Typ**
-	- Dropdownliste „Form“ (`which`)
-	- Dropdownliste „Elektrisch“ (`elec`)
+	- Dropdown-Menü „Form“ (`which`)
+	- Dropdown-Menü „Elektrisch“ (`elec`)
 	- Numerisches Feld „Länge“ (`length`, UI-Bereich 5..50)
 
 Hinweise:
 
-- Die Form steuert das Erscheinungsbild des Symbols und einige besondere visuelle Verhaltensweisen.
-- Sowohl die Form `Cross` als auch der elektrische Typ `Not Connected` zeichnen ein Kreuzsymbol.
-- Die Formstile `Power` und `Hidden` werden mit der Farbe für verborgene Pins dargestellt.
+- Die Form steuert das Erscheinungsbild des Symbols und einige besondere Darstellungsweisen.
+- Die Form `Cross` und der elektrische Typ `Not Connected` zeichnen beide eine Kreuzmarkierung.
+- Die Formstile `Power` und `Hidden` werden mit der Farbe für ausgeblendete Pins dargestellt.
 
 ## Elektrische Pin-Typen und DRC-Verhalten
 {: #pin-electrical-types-and-drc-behavior}
 
-Die Auswahl des richtigen elektrischen Typs ist unerlässlich. DRC verwendet diese Typen, um
-Verdrahtungsfehler zu erkennen.
+Die Auswahl des richtigen elektrischen Typs ist entscheidend. DRC verwendet diese Typen, um
+Verbindungsfehler zu erkennen.
 
 Aktuelle Werte im TinyCAD-v4-Quellcode (`elec`):
 
 - `0` Eingang
 - `1` Ausgang
-- `2` Tri-State
+- `2` Tristate
 - `3` Open Collector
 - `4` Passiv
-- `5` Ein-/Ausgang
+- `5` Eingang/Ausgang
 - `6` Nicht verbunden
 - `7` Frei
 - `8` Nicht angegeben
@@ -133,52 +135,52 @@ Aktuelle Werte im TinyCAD-v4-Quellcode (`elec`):
 - `10` Versorgungsausgang
 - `11` Open Emitter
 
-Allgemeine Hinweise:
+Allgemeine Richtlinien:
 
-- Kennzeichnen Sie tatsächlich angesteuerte Signale als **Ausgang**.
+- Kennzeichnen Sie tatsächlich getriebene Signale als **Ausgang**.
 - Kennzeichnen Sie ausschließlich empfangende Signale als **Eingang**.
-- Verwenden Sie **Versorgungseingang/Versorgungsausgang**, wenn die Bedeutung der Versorgungsansteuerung für DRC relevant ist.
-- Verwenden Sie **Nicht verbunden** nur für Pins, die absichtlich unverbunden sein sollen.
-- Verwenden Sie **Frei**/**Nicht angegeben** umsichtig und einheitlich in der gesamten Bibliothek.
+- Verwenden Sie **Versorgungseingang/Versorgungsausgang**, wenn die Versorgungstreiber-Semantik für DRC relevant ist.
+- Verwenden Sie **Nicht verbunden** nur für Pins, die absichtlich unverbunden bleiben sollen.
+- Verwenden Sie **Frei**/**Nicht angegeben** vorsichtig und einheitlich innerhalb einer Bibliothek.
 
 Praktische Auswirkungen auf DRC:
 
-- Falsche Pin-Typen können zu falschen DRC-Fehlern führen (oder echte Fehler verbergen).
-- Namen von Versorgungspins müssen den vorgesehenen Versorgungsnamen entsprechen, damit das automatische Verhalten funktioniert.
+- Eine falsche Pin-Typisierung kann zu falschen DRC-Fehlern führen (oder echte Fehler verbergen).
+- Die Namen von Versorgungspins müssen den vorgesehenen Versorgungsnamen entsprechen, damit das automatische Verhalten funktioniert.
 
-## Versorgungspins und verborgene Pins
+## Versorgungspins und ausgeblendete Pins
 {: #power-and-hidden-pins}
 
-Versorgungspins und verborgene Pins werden beim Bearbeiten des Symbols angezeigt, sind aber normalerweise
-verborgen, wenn das Symbol in einer Zeichnung platziert wird.
+Versorgungs- und ausgeblendete Pins werden beim Bearbeiten des Symbols angezeigt, sind aber normalerweise
+in einer Zeichnung ausgeblendet, wenn das Symbol platziert wird.
 
 Insbesondere für **Versorgungspins** gilt:
 
 - Der Pinname dient als Name des Versorgungsnetzes.
 - Bei übereinstimmenden Versorgungsnamen wird automatisch eine Verbindung hergestellt.
-- Im platzierten Symbol werden normalerweise keine Drähte direkt zu diesen verborgenen Versorgungspins gezeichnet.
+- In der platzierten Symbolansicht werden Leitungen normalerweise nicht direkt zu diesen ausgeblendeten Versorgungspins gezeichnet.
 
-Für **verborgene Pins** gilt:
+Für **ausgeblendete Pins** gilt:
 
 - Sie bleiben elektrisch aktiv.
 - Verwenden Sie sie, wenn Sie die Pinform und Pinbeschriftungen selbst zeichnen möchten.
 
-## Mehrteilige Symbole (Bauteileinheiten pro Gehäuse)
+## Mehrteilige Symbole (Bauteile pro Gehäuse)
 {: #multi-part-symbols-parts-per-package}
 
 TinyCAD unterstützt Bauteile mit mehreren logischen Einheiten in einem Gehäuse (zum
 Beispiel Vierfachgatter).
 
-Es werden zwei Arten mehrteiliger Symbole verwendet:
+Es gibt zwei Arten mehrteiliger Symbole:
 
 1. **Homogene** mehrteilige Symbole:
-	 - Die Teile haben denselben Umriss.
-	 - Sie unterscheiden sich normalerweise nur durch die Pinnummern.
+	 - die Teile haben denselben Umriss,
+	 - sie unterscheiden sich meist nur durch die Pinnummern.
 2. **Heterogene** mehrteilige Symbole:
-	 - Die Teile können unterschiedliche Umrisse haben.
-	 - Die Teile können außerdem unterschiedliche Pinbelegungen/Funktionen haben.
+	 - die Teile können unterschiedliche Umrisse haben,
+	 - die Teile können außerdem unterschiedliche Pinbelegungen/Funktionen aufweisen.
 
-Verwenden Sie homogene Symbole, wenn die Teile austauschbar sind, und heterogene, wenn jedes Teil
+Verwenden Sie homogene Symbole, wenn die Teile austauschbar sind; verwenden Sie heterogene, wenn jedes Teil
 eine eigene Funktion hat.
 
 ### Arbeitsablauf für mehrteilige Symbole
@@ -187,64 +189,59 @@ eine eigene Funktion hat.
 1. Entscheiden Sie zuerst, ob das Symbol homogen oder heterogen sein soll.
 2. Legen Sie die Anzahl der Teile pro Gehäuse fest.
 
-Bei homogenen Teilen:
-- Das erste Teil bestimmt die Form des Symbols und die Anordnung der Pins.
+Für homogene Teile:
+- Das erste Teil definiert die Symbolform und die Anordnung der Pins.
 
-Bei heterogenen Teilen:
+Für heterogene Teile:
 - Sie können für jedes Teil eine andere Form zeichnen.
 
-## Symbolattribute und -eigenschaften
+## Symbolattribute und Eigenschaften
 {: #symbol-attributes-and-properties}
 
 Sie können die Attribute des Symbols im Bereich **Symbol** im **unteren Bedienfeld** bearbeiten.
 
-Legen Sie zusätzlich zu Grafiken und Pins die Symbolattribute sorgfältig fest:
+Definieren Sie neben Grafiken und Pins auch die Symbolattribute sorgfältig:
 
-- Primärer Symbolname (und gegebenenfalls Aliasnamen),
-- Standardformat für **Ref** (z. B. `U?`, `R?`, `C?`),
+- Primärer Symbolname (und gegebenenfalls Aliase),
+- Standardformat für **Ref** (zum Beispiel `U?`, `R?`, `C?`),
 - Standardwert für **Name/Wert**,
-- Zusätzliche Attribute/Parameter (z. B. Gehäuse/Footprint, Felder für
-	Simulationsmodelle oder projektspezifische Metadaten).
+- zusätzliche Attribute/Parameter (zum Beispiel Gehäuse/Footprint, Simulationsmodellfelder oder projektspezifische Metadaten).
 
 ## Speichern, duplizieren, umbenennen, löschen
 {: #save-duplicate-rename-delete}
 
-Übliche Aktionen zur Symbolverwaltung beim Bearbeiten einer Bibliothek:
+Gängige Aktionen zur Symbolverwaltung beim Bearbeiten einer Bibliothek:
 
-- **Speichern/Aktualisieren** des aktuellen Symbols, um Änderungen zu sichern.
-- **Duplizieren**, um Varianten zu erstellen (empfohlen, statt ein Basissymbol
-	unwiderruflich zu verändern).
-- **Umbenennen** zur Vereinheitlichung der Benennung.
-- **Löschen** veralteter Symbole (bei versehentlichem Löschen rückgängig machen).
+- **Speichern/Aktualisieren** schreibt Änderungen am aktuellen Symbol.
+- **Duplizieren** erstellt Varianten (empfohlen, statt ein Basissymbol destruktiv zu bearbeiten).
+- **Umbenennen** dient der Vereinheitlichung von Bezeichnungen.
+- **Löschen** entfernt veraltete Symbole (machen Sie den Vorgang rückgängig, falls Sie versehentlich gelöscht haben).
 
-Verwenden Sie Duplikate für Gehäuse-/Wertvarianten, die dieselben Grafiken, aber unterschiedliche
+Verwenden Sie Duplikate für Gehäuse-/Wertvarianten, die dieselben Grafiken, aber andere
 Standardwerte haben.
 
-## Prüfliste vor der Veröffentlichung eines Symbols
+## Prüfliste zur Validierung vor der Veröffentlichung eines Symbols
 {: #validation-checklist-before-publishing-a-symbol}
 
-Überprüfen Sie vor der allgemeinen Verwendung eines Symbols Folgendes:
+Prüfen Sie vor der breiten Verwendung eines Symbols Folgendes:
 
-1. Die Pins liegen am Raster und lassen sich einfach verdrahten.
+1. Die Pins liegen auf dem Raster und lassen sich leicht verdrahten.
 2. Die Pinnummern sind vollständig und je Teil eindeutig.
 3. Die elektrischen Typen sind für alle Pins korrekt festgelegt.
-4. Das Verhalten von Versorgungs- und verborgenen Pins ist beabsichtigt.
-5. Die Einrichtung mehrteiliger Symbole (falls vorhanden) ist korrekt.
-6. Die Standardwerte für Name/Referenz sind sinnvoll.
+4. Das Verhalten von Versorgungs-/ausgeblendeten Pins ist beabsichtigt.
+5. Die Konfiguration mehrteiliger Symbole (falls vorhanden) ist korrekt.
+6. Namens-/Referenz-Standardwerte sind sinnvoll.
 7. Das Symbol ist bei normaler Zeichnungsvergrößerung gut lesbar.
 
-Platzieren Sie anschließend das Symbol in einem Testschaltplan und führen Sie DRC aus.
+Platzieren Sie das Symbol anschließend in einem Testschaltplan und führen Sie DRC aus.
 
 ## Tipps zur Fehlerbehebung
 {: #troubleshooting-tips}
 
-- **Drähte werden nicht mit dem Symbol verbunden:** Überprüfen Sie die Platzierung der Pin-Endpunkte und die
-	Ausrichtung am Raster.
+- **Leitungen werden nicht mit dem Symbol verbunden:** Prüfen Sie die Position der Pin-Endpunkte und deren Ausrichtung am Raster.
 - **Unerwartete DRC-Fehler:** Überprüfen Sie den elektrischen Typ jedes Pins.
-- **Falsches Verhalten von Teilen in mehrteiligen Symbolen:** Überprüfen Sie die Auswahl der Teile und die Pinnummerierung
-	für jedes Teil erneut.
-- **Versorgung wird nicht automatisch verbunden:** Stellen Sie sicher, dass die Namen der Versorgungspins mit den vorgesehenen Netznamen
-	übereinstimmen.
+- **Falsches Verhalten eines Teils in mehrteiligen Symbolen:** Überprüfen Sie die Teileauswahl und Pinnummerierung für jedes Teil.
+- **Versorgung wird nicht automatisch verbunden:** Prüfen Sie, ob die Namen der Versorgungspins den vorgesehenen Netznamen entsprechen.
 
 ## Verwandte Seiten
 {: #related-pages}

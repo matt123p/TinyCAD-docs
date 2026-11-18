@@ -6,6 +6,8 @@ layout: default
 
 本节介绍高级编辑、验证和输出工作流程。
 
+另请参阅[仿真与 SPICE](../Simulation/)，了解集成电路分析；以及 [SPICE 模型和网表输出](../SPICE-output/)，了解模型模板和外部仿真器导出。
+
 ## 页面
 {: #pages}
 

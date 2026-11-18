@@ -4,15 +4,15 @@ layout: default
 # TinyCAD-handleiding
 {: #tinycad-manual}
 
-TinyCAD v4 is beschikbaar als desktopapp en als browsergebaseerde online app. Er zijn slechts
-een klein aantal functieverschillen tussen de twee versies.
+TinyCAD v4 is beschikbaar als desktopapplicatie en als online applicatie in de browser. Er zijn slechts
+enkele verschillen in functies tussen de twee versies.
 
-Ga naar de pagina [Functieverschillen](Feature-Differences/) als u de exacte verschillen tussen de versies van TinyCAD wilt weten.
+Ga naar de pagina [Verschillen in functies](Feature-Differences/) als u de exacte verschillen tussen de versies van TinyCAD wilt weten.
 
 ## Waarschuwing
 {: #warning}
 
-**TinyCAD** wordt geschreven en gratis beschikbaar gesteld als een open-sourceproject dat door de gemeenschap wordt gedragen. Het wordt geleverd "zoals het is" en kan bugs of onvolledige functies bevatten.  
+**TinyCAD** is geschreven en wordt gratis aangeboden als een open-sourceproject dat door de gemeenschap wordt gedragen. Het wordt geleverd "zoals het is" en kan bugs of onvolledige functies bevatten.  
 
 Het is uw verantwoordelijkheid om een back-up van uw werk te maken en gegevensverlies te voorkomen. Het is uw verantwoordelijkheid om alles zorgvuldig te controleren voordat u schakelingen bouwt of PCB's afdrukt.
 
@@ -20,7 +20,7 @@ Het is uw verantwoordelijkheid om een back-up van uw werk te maken en gegevensve
 {: #contribute-to-this-manual}
 
 De TinyCAD-handleiding is open source en wordt onderhouden op GitHub Pages.
-Bijdragen van de gemeenschap zijn welkom, waaronder correcties van typefouten, duidelijkere formuleringen,
+Bijdragen vanuit de gemeenschap zijn welkom, zoals correcties van typefouten, duidelijkere formuleringen,
 nieuwe schermafbeeldingen en uitgebreidere voorbeelden.
 
 - [Bijdragen aan de handleiding](Contributing-to-the-Manual/)
@@ -29,10 +29,16 @@ nieuwe schermafbeeldingen en uitgebreidere voorbeelden.
 {: #core-links}
 
 - [Aan de slag](Getting-started/)
+- [AI-assistent](AI-Assistant/)
 - [Tekenen](User-guide/)
 - [Symbolen en bibliotheken](Symbols-and-Libraries/)
+- [Meegeleverde bibliotheken](Bundled-Libraries/)
+- [Meegeleverde voorbeelden](Bundled-Examples/)
+- [Simulatie en SPICE](Simulation/)
+- [SPICE-zelfstudie](SPICE-Tutorial/)
+- [XSPICE- en digitale zelfstudie](XSPICE-Tutorial/)
 - [Geavanceerd](Advanced/)
-- [Referentie](Reference/)
+- [Naslaginformatie](Reference/)
 - [Wijzigingslogboek](Changelog/)
 - [Licentie](Licence/)
 - [Bijdragen aan de handleiding](Contributing-to-the-Manual/)
