@@ -7,7 +7,29 @@ layout: default
 
 ## Nog niet uitgebracht
 {: #unreleased}
-{: #unreleased}
+
+### Toegevoegd
+{: #unreleased-added}
+
+- [Gebundelde SPICE-modellen](../SPICE-output/) met offline zoeken, modelbeschrijvingen, bronlinks en pinaansluitingen. Alle 29 symbolen voor SPICE-essentiële componenten hebben gekoppelde standaardmodellen, waaronder basispassieve componenten en OpenJellyBean LM358- en LM324-behuizingen.
+- De Desktop-[AI-assistent](../AI-Assistant/) kan modellen inspecteren en op verzoek voor SPICE-ondersteuning een gekoppelde of aangepaste definitie instellen.
+- [KiCad-symboolimport](../Importing-Symbols-from-KiCAD/) kan ondersteunde ingesloten of bijbehorende SPICE-modellen naar TinyCAD overbrengen als bewerkbare aangepaste definities.
+
+### Gewijzigd
+{: #unreleased-changed}
+
+- De standaardonderdelen in de SPICE- en XSPICE-tutorials gebruiken gekoppelde modellen en behouden hun oorspronkelijke simulatieresultaten.
+- Bij plaatsingen uit de standaardbibliotheek wordt het bewerkbare veld Name weergegeven. Bij de meegeleverde apparatuur- en netwerkontwerpen zijn notities in Markdown-indeling opgenomen.
+
+## v4.1.1 — 20 november 2026
+{: #v411}
+
+- De opstartproblemen van Linux Snap zijn verholpen door de Electron-runtimebibliotheken mee te leveren en XWayland te gebruiken op Wayland-desktops.
+
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 18 november 2026
+{: #v410}
 
 ### Toegevoegd
 {: #added}
@@ -39,6 +61,8 @@ layout: default
 - Verwijder kleine aansluitingslabelkaders die tekst in laboratorium- en bewegingsbesturingssymbolen overlappen, en werk de betreffende voorbeelden bij.
 - Verbeter foutmeldingen en diagnostiek van simulaties, versterkerruns in de browser, grafiekvensters en onafhankelijke deelvensters met voorbeeldtoelichtingen.
 
+- De achtergrondkleur van de pagina wordt toegepast wanneer de linialen verborgen zijn; ook is een crash bij het selecteren van een verborgen pin verholpen.
+
 ### Handleiding
 {: #manual}
 
@@ -51,6 +75,8 @@ layout: default
 - Neem de bestaande volledige cursussen, downloadbare tekeningen/netlists en tien videohandleidingen op over bibliotheken, voorbeelden, indeling opruimen, verbindingen tussen meerdere bladen en SPICE.
 - Verduidelijk [verschillen tussen functies](../Feature-Differences/), waaronder `.dzn` en compatibiliteit met Markdown-tekstvakken en XSPICE-ondersteuning in de browser.
 - Werk de handleiding bij in alle acht ondersteunde talen, inclusief navigatie, nieuwe naslagpagina's, tekst van zelfstudies en videobijschriften.
+
+[Downloadbare uitgavebestanden](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}

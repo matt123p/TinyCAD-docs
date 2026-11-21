@@ -7,7 +7,29 @@ layout: default
 
 ## Non publié
 {: #unreleased}
-{: #unreleased}
+
+### Ajouté
+{: #unreleased-added}
+
+- [Modèles SPICE fournis](../SPICE-output/) avec recherche hors ligne, descriptions des modèles, liens vers les sources et correspondance des broches. Les 29 symboles essentiels SPICE disposent tous de modèles par défaut liés, notamment les passifs de base ainsi que les boîtiers LM358 et LM324 d’OpenJellyBean.
+- L’[assistant IA de bureau](../AI-Assistant/) peut examiner les modèles et définir une définition liée ou personnalisée lorsque vous lui demandez de prendre en charge SPICE.
+- L’[importation de symboles KiCad](../Importing-Symbols-from-KiCAD/) peut transférer dans TinyCAD les modèles SPICE intégrés ou associés pris en charge, sous forme de définitions personnalisées modifiables.
+
+### Modifié
+{: #unreleased-changed}
+
+- Les composants standard des tutoriels SPICE et XSPICE utilisent des modèles liés et conservent leurs résultats de simulation d’origine.
+- Les placements de bibliothèques standard affichent le champ Nom modifiable. Les dessins d’équipements et de réseaux fournis comprennent des notes mises en forme en Markdown.
+
+## v4.1.1 — 20 novembre 2026
+{: #v411}
+
+- Correction du démarrage de Linux Snap grâce à l’intégration des bibliothèques d’exécution Electron et à l’utilisation de XWayland sur les bureaux Wayland.
+
+[Téléchargements de la version](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 18 novembre 2026
+{: #v410}
 
 ### Ajouts
 {: #added}
@@ -39,6 +61,8 @@ layout: default
 - Supprimer les petites cases d’étiquettes de bornes qui chevauchent le texte dans les symboles de laboratoire et de commande de mouvement, et mettre à jour les exemples concernés.
 - Améliorer les rapports d’erreurs et les diagnostics de simulation, les exécutions d’amplificateurs dans le navigateur, les fenêtres détachées des graphiques et les panneaux indépendants d’explication des exemples.
 
+- Application de la couleur d’arrière-plan de la page lorsque les règles sont masquées et correction d’un plantage lors de la sélection d’une broche masquée.
+
 ### Manuel
 {: #manual}
 
@@ -51,6 +75,8 @@ layout: default
 - Inclure les cours existants complets, les dessins/netlists téléchargeables et dix tutoriels vidéo couvrant les bibliothèques, les exemples, la réorganisation de la mise en page, les connexions multi-feuilles et SPICE.
 - Clarifier les [différences entre fonctionnalités](../Feature-Differences/), notamment `.dzn` et la compatibilité des zones de texte Markdown ainsi que la prise en charge de XSPICE dans le navigateur.
 - Mettre à jour le manuel dans les huit langues prises en charge, y compris la navigation, les nouvelles pages de référence, le texte des tutoriels et les sous-titres des vidéos.
+
+[Téléchargements de la version](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}

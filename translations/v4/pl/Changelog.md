@@ -7,7 +7,29 @@ layout: default
 
 ## Niewydane
 {: #unreleased}
-{: #unreleased}
+
+### Dodano
+{: #unreleased-added}
+
+- [Dołączone modele SPICE](../SPICE-output/) z wyszukiwaniem offline, opisami modeli, linkami do źródeł i mapowaniem pinów. Wszystkie 29 symboli z zestawu SPICE essentials mają połączone modele domyślne, w tym podstawowe elementy pasywne oraz obudowy OpenJellyBean LM358 i LM324.
+- [Asystent AI](../AI-Assistant/) w wersji Desktop może sprawdzać modele i na żądanie skonfigurować połączoną definicję lub definicję Custom na potrzeby obsługi SPICE.
+- [Import symboli KiCad](../Importing-Symbols-from-KiCAD/) może przenieść obsługiwane osadzone modele SPICE lub modele z plików towarzyszących do TinyCAD jako edytowalne definicje Custom.
+
+### Zmieniono
+{: #unreleased-changed}
+
+- Standardowe elementy w samouczkach SPICE i XSPICE korzystają z połączonych modeli i zachowują oryginalne wyniki symulacji.
+- W przypadku elementów wstawianych ze standardowych bibliotek wyświetlane jest edytowalne pole Name. Dołączone rysunki urządzeń i sieci zawierają notatki sformatowane w Markdown.
+
+## v4.1.1 — 20 listopada 2026
+{: #v411}
+
+- Naprawiono uruchamianie wersji Snap w systemie Linux przez dołączenie bibliotek wykonawczych Electron i używanie XWayland na pulpitach Wayland.
+
+[Pobieranie wydania](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 18 listopada 2026
+{: #v410}
 
 ### Dodano
 {: #added}
@@ -39,6 +61,8 @@ layout: default
 - Usunięto małe pola etykiet zacisków nakładające się na tekst w symbolach laboratoryjnych i sterowania ruchem oraz zaktualizowano powiązane przykłady.
 - Ulepszono raportowanie błędów symulacji i diagnostykę, uruchamianie wzmacniaczy w przeglądarce, wyskakujące okna wykresów oraz niezależne panele objaśnień przykładów.
 
+- Zastosuj kolor tła strony, gdy linijki są ukryte, i napraw awarię występującą podczas zaznaczania ukrytego pinu.
+
 ### Podręcznik
 {: #manual}
 
@@ -51,6 +75,8 @@ layout: default
 - Dołączono wszystkie istniejące kursy, rysunki/listy połączeń do pobrania oraz dziesięć filmowych instruktaży dotyczących bibliotek, przykładów, porządkowania układu, połączeń między arkuszami i SPICE.
 - Doprecyzowano [różnice między funkcjami](../Feature-Differences/), w tym `.dzn` oraz zgodność pól tekstowych Markdown i obsługę XSPICE w przeglądarce.
 - Zaktualizowano podręcznik we wszystkich ośmiu obsługiwanych językach, w tym nawigację, nowe strony referencyjne, tekst samouczków i napisy do filmów.
+
+[Pobieranie wydania](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}

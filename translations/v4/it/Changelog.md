@@ -7,7 +7,29 @@ layout: default
 
 ## Non rilasciato
 {: #unreleased}
-{: #unreleased}
+
+### Aggiunto
+{: #unreleased-added}
+
+- [Modelli SPICE inclusi](../SPICE-output/) con ricerca offline, descrizioni dei modelli, collegamenti alle fonti e mappatura dei pin. Tutti i 29 simboli essenziali di SPICE hanno modelli predefiniti collegati, inclusi i componenti passivi di base e i package LM358 e LM324 di OpenJellyBean.
+- L'[assistente AI](../AI-Assistant/) Desktop può esaminare i modelli e impostare una definizione collegata o personalizzata quando gli viene richiesto di fornire supporto SPICE.
+- L'[importazione di simboli KiCad](../Importing-Symbols-from-KiCAD/) può trasferire in TinyCAD i modelli SPICE incorporati o associati supportati, come definizioni personalizzate modificabili.
+
+### Modificato
+{: #unreleased-changed}
+
+- I componenti standard dei tutorial SPICE e XSPICE usano modelli collegati e mantengono i risultati di simulazione originali.
+- I simboli inseriti dalla libreria standard mostrano il campo Nome (Name) modificabile. I disegni di apparecchiature e reti inclusi nel pacchetto contengono note formattate in Markdown.
+
+## v4.1.1 — 20 novembre 2026
+{: #v411}
+
+- Risolto il problema di avvio di Linux Snap includendo le librerie di runtime di Electron e usando XWayland sui desktop Wayland.
+
+[Download della versione](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 18 novembre 2026
+{: #v410}
 
 ### Aggiunto
 {: #added}
@@ -39,6 +61,8 @@ layout: default
 - Rimosse le piccole caselle delle etichette dei terminali che si sovrappongono al testo nei simboli di laboratorio e di controllo del movimento, e aggiornati gli esempi interessati.
 - Migliorate la segnalazione degli errori di simulazione e la diagnostica, le esecuzioni dell'amplificatore nel browser, le finestre separate dei grafici e i pannelli indipendenti per le spiegazioni degli esempi.
 
+- Applicato il colore di sfondo della pagina quando i righelli sono nascosti e risolto un arresto anomalo durante la selezione di un pin nascosto.
+
 ### Manuale
 {: #manual}
 
@@ -51,6 +75,8 @@ layout: default
 - Inclusi i corsi esistenti completi, disegni/netlist scaricabili e dieci video tutorial che trattano librerie, esempi, riordino del layout, connessioni su più fogli e SPICE.
 - Chiarite le [differenze tra funzionalità](../Feature-Differences/), incluse la compatibilità di `.dzn` e dei riquadri di testo Markdown, e il supporto XSPICE nel browser.
 - Aggiornato il manuale in tutte le otto lingue supportate, includendo navigazione, nuove pagine di riferimento, testo dei tutorial e didascalie dei video.
+
+[Download della versione](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}

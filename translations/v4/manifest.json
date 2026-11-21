@@ -26,8 +26,8 @@
       "promptVersion": 1
     },
     "nl/Changelog.md": {
-      "fingerprint": "be4539264e12865a09a5377794bb2d470d55d7b82c0ed680e0ce2c0dd43ccd7c",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "9b98b9bd82599392be4fc9b60eda7a8447134ab9ea048180c1d995e78efd7e1f",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -278,8 +278,8 @@
       "promptVersion": 1
     },
     "fr/Changelog.md": {
-      "fingerprint": "2009ea04a16dc9e07939e74b965656159716753f1bba7e588c66ba2038038a69",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "8ff57dea52c5f2ea8d01902132828f6e16b9a699756874a277afb04d8b3f57bc",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -530,8 +530,8 @@
       "promptVersion": 1
     },
     "es/Changelog.md": {
-      "fingerprint": "09f977e9b52daa5bee57cc80f1a75d28edf3c573cb080420b55b4704175f004e",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "5cac300ea724f176d88115741330dd42903133f80160ced6c67cec872002920e",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -776,8 +776,8 @@
       "promptVersion": 1
     },
     "de/Changelog.md": {
-      "fingerprint": "14076cdd0726a6635afb276e3116f1babd11f38cb6ffae3364837c540b89597f",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "4398d098affc83a1a55837f6998b8bac3ec544d3dda6fddcfa483df391cd0599",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1022,8 +1022,8 @@
       "promptVersion": 1
     },
     "it/Changelog.md": {
-      "fingerprint": "fde787b1157dfd4036e9d35b2cde3e26f67b1585378e6324ab9d023275840c99",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "27020d680b07ad8f0fc9579ae5fe2ecf71be219370510376d9958d43f3620a0b",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1268,8 +1268,8 @@
       "promptVersion": 1
     },
     "ja/Changelog.md": {
-      "fingerprint": "f57ee9fc6f3c93a096fb542852d7e4f5133fc99bbb021f27770afb048c3f717b",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "3ed3c4001a92e430b8f7e00ac32084e71c8cda0a2bf6e622d178cb1b89738840",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1490,8 +1490,8 @@
       "promptVersion": 1
     },
     "pl/Changelog.md": {
-      "fingerprint": "87c40d3f1ab17b6d9f54151ae11836f82a0d28e1dfdd206b04063708c1ce829d",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "973c238e39aa28a2e616935c2f307e45e64535e6ef2c3688f8fe20477c17396d",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },
@@ -1736,8 +1736,8 @@
       "promptVersion": 1
     },
     "zh-CN/Changelog.md": {
-      "fingerprint": "f6067bfbacdfc2cd3b15c905fab9d90ad4edd3a3d37bfa5cb2cef6cc41c67e87",
-      "sourceHash": "ef64da646bfff12949a939302fa4efa383a9f7397ea4b7988bb5149c1cefdda6",
+      "fingerprint": "7b68479c309fcb88fa59b29e9c54e50cf805724a9d6d2347b9a02a209afd20e3",
+      "sourceHash": "f856c50060e2ba02c7b561e4cc685f605f6a08609e14680d5ccaf6c1edb6856f",
       "model": "gpt-6-luna",
       "promptVersion": 1
     },

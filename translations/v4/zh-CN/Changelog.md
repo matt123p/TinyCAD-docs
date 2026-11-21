@@ -7,7 +7,29 @@ layout: default
 
 ## 尚未发布
 {: #unreleased}
-{: #unreleased}
+
+### 新增
+{: #unreleased-added}
+
+- [捆绑的 SPICE 模型](../SPICE-output/) 支持离线搜索，并提供模型说明、源链接和引脚映射。全部 29 个 SPICE essentials 符号都关联了默认模型，包括 Basic 无源元件以及 OpenJellyBean LM358 和 LM324 封装。
+- [桌面 AI 助手](../AI-Assistant/) 可检查模型，并可在用户请求 SPICE 支持时设置关联定义或自定义定义。
+- [KiCad 符号导入](../Importing-Symbols-from-KiCAD/) 可将受支持的嵌入式或随附 SPICE 模型导入 TinyCAD，并将其作为可编辑的自定义定义。
+
+### 更改
+{: #unreleased-changed}
+
+- SPICE 和 XSPICE 教程中的标准元件使用关联模型，并保留原有仿真结果。
+- 标准库中的元件放置后会显示可编辑的 Name 字段。捆绑的设备和网络图纸包含 Markdown 格式的注释。
+
+## v4.1.1 — 2026年11月20日
+{: #v411}
+
+- 通过捆绑 Electron 运行时库并在 Wayland 桌面上使用 XWayland，修复了 Linux Snap 启动问题。
+
+[发布下载](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 2026年11月18日
+{: #v410}
 
 ### 新增
 {: #added}
@@ -39,6 +61,8 @@ layout: default
 - 移除实验室和运动控制符号中与文本重叠的小型端子标签框，并更新受影响的示例。
 - 改进仿真错误报告和诊断、浏览器中的放大器运行、弹出图表以及独立的示例说明面板。
 
+- 隐藏标尺时应用页面背景颜色，并修复了选择隐藏引脚时发生的崩溃。
+
 ### 手册
 {: #manual}
 
@@ -51,6 +75,8 @@ layout: default
 - 收录所有现有课程、可下载的绘图/网表以及十个视频演示，内容涵盖库、示例、布局整理、多页连接和 SPICE。
 - 澄清[功能差异](../Feature-Differences/)，包括 `.dzn` 和 Markdown 文本框兼容性，以及浏览器对 XSPICE 的支持。
 - 更新全部八种受支持语言的手册，包括导航、新增参考页面、教程文本和视频字幕。
+
+[发布下载](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}

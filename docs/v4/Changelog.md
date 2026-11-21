@@ -10,6 +10,27 @@ layout: default
 
 ### Added
 
+- [Bundled SPICE models](../SPICE-output/) with offline search, model descriptions, source links and pin mapping. All 29 SPICE essentials symbols have linked defaults, including Basic passives and OpenJellyBean LM358 and LM324 packages.
+- The Desktop [AI assistant](../AI-Assistant/) can inspect models and set a linked or Custom definition when asked for SPICE support.
+- [KiCad symbol import](../Importing-Symbols-from-KiCAD/) can carry supported embedded or accompanying SPICE models into TinyCAD as editable Custom definitions.
+
+### Changed
+
+- The stock parts in the SPICE and XSPICE tutorials use linked models and keep their original simulation results.
+- Standard library placements display the editable Name field. Bundled equipment and network drawings include Markdown-formatted notes.
+
+## v4.1.1 — 20 November 2026
+{: #v411}
+
+- Fixed Linux Snap startup by bundling the Electron runtime libraries and using XWayland on Wayland desktops.
+
+[Release downloads](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.1)
+
+## v4.1.0 — 18 November 2026
+{: #v410}
+
+### Added
+
 - [AI-assisted symbol, library and circuit editing](../AI-Assistant/), including attached datasheets/images, bundled and online symbol search, direct edits to the active document, undoable changes, provider/model settings and local Ollama connections.
 
 - [Integrated simulation](../Simulation/) using local ngspice in the browser and Desktop, with operating-point, transient, AC, DC sweep, noise, transfer-function and pole-zero analyses. [Event-driven XSPICE](../XSPICE/) is supported in Desktop.
@@ -34,6 +55,7 @@ layout: default
 - Prevent layout changes from creating unwanted connections at wire endpoints, bends or sockets; improve pin exits and remove unnecessary detours.
 - Remove small terminal-label boxes that overlap text in laboratory and motion-control symbols, and update the affected examples.
 - Improve simulation error reporting and diagnostics, browser amplifier runs, chart pop-outs and independent example-explanation panels.
+- Apply page background colour when rulers are hidden and fix a hidden-pin selection crash.
 
 ### Manual
 
@@ -46,6 +68,8 @@ layout: default
 - Include the complete existing courses, downloadable drawings/netlists and ten video walkthroughs covering libraries, examples, layout tidy-up, multi-sheet connections and SPICE.
 - Clarify [feature differences](../Feature-Differences/), including `.dzn` and Markdown text-box compatibility and browser XSPICE support.
 - Update the manual in all eight supported languages, including navigation, new reference pages, tutorial text and video captions.
+
+[Release downloads](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.0)
 
 ## v4.0.11
 {: #v4011}
