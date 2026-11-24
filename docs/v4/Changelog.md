@@ -5,19 +5,30 @@ layout: default
 # TinyCAD Changelog
 
 
-## Unreleased
-{: #unreleased}
+## v4.1.2 — 24 November 2026
+{: #v412}
 
-### Added
+This release restores direct printing on Windows, improves standard library symbol names, and expands the bundled SPICE model catalog.
 
-- [Bundled SPICE models](../SPICE-output/) with offline search, model descriptions, source links and pin mapping. All 29 SPICE essentials symbols have linked defaults, including Basic passives and OpenJellyBean LM358 and LM324 packages.
-- The Desktop [AI assistant](../AI-Assistant/) can inspect models and set a linked or Custom definition when asked for SPICE support.
-- [KiCad symbol import](../Importing-Symbols-from-KiCAD/) can carry supported embedded or accompanying SPICE models into TinyCAD as editable Custom definitions.
+### Printing and page setup
 
-### Changed
+- [Desktop Print Preview](../Printing/) lets you select sheets and save your printer, paper size, orientation, copies, colour mode and double-sided settings. **Print** sends the selected sheets directly to the chosen printer or the system default.
+- **Advanced Print…** opens a PDF of the selected sheets. On Linux, TinyCAD also opens the system print dialog and keeps the PDF open if you cancel. Direct printing also works when launching TinyCAD from tools such as the VS Code Snap on GNOME Wayland.
+- [Page Size](../Page-Size/) accepts dimensions in millimetres or inches.
 
-- The stock parts in the SPICE and XSPICE tutorials use linked models and keep their original simulation results.
-- Standard library placements display the editable Name field. Bundled equipment and network drawings include Markdown-formatted notes.
+### Symbols and examples
+
+- Newly placed standard library symbols show their editable **Name** field by default. Duplicate name captions have been removed from their artwork.
+- Bundled equipment and network drawings demonstrate Markdown formatting in their notes.
+
+### Simulation
+
+- Search [bundled SPICE models](../Bundled-SPICE-Models/) offline in the symbol editor or on a placed component. All 29 SPICE essentials symbols have linked models and preset pin mappings, including OpenJellyBean models for the LM358 and LM324.
+- When asked for SPICE support, the desktop [AI assistant](../AI-Assistant/) can search the catalog, inspect model text and pin mappings, and attach or set a model.
+- [KiCad symbol import](../Importing-Symbols-from-KiCAD/) preserves supported embedded or accompanying SPICE models as editable Custom definitions, including pin mappings and parameter overrides.
+- Stock parts in the SPICE and XSPICE tutorials use linked models and retain their original simulation results.
+
+[Release downloads](https://github.com/matt123p/TinyCADv4/releases/tag/v4.1.2)
 
 ## v4.1.1 — 20 November 2026
 {: #v411}
