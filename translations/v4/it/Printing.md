@@ -9,7 +9,7 @@ layout: default
 ### Browser
 {: #browser}
 
-Per stampare da un browser, usa l'opzione Esporta in PDF. Potrai quindi stampare direttamente il PDF.
+Nel menu **File**, scegli **Esporta in PDF**. TinyCAD apre il disegno come PDF in una nuova scheda. Usa i comandi di stampa del visualizzatore PDF per stamparlo.
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -17,29 +17,27 @@ Per stampare da un browser, usa l'opzione Esporta in PDF. Potrai quindi stampare
 ### App desktop
 {: #desktop-app}
 
-Usa l'opzione **Stampa** nel menu della barra degli strumenti.
+Scegli **File → Stampa** per aprire l’**Anteprima di stampa**. Il disegno appare a sinistra e le impostazioni di stampa a destra.
 
-L'app desktop apre una finestra di dialogo di stampa per il tuo sistema operativo.
-Seleziona la stampante, controlla le impostazioni della pagina e stampa il disegno.
+<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
-{% include video-player.html
-	src="/v4/images/video/Video 10.mp4"
-	width=1532
-	height=978
-	caption="Video dimostrativo che mostra come stampare un disegno."
-%}
+#### Stampare direttamente
+{: #print-directly}
+
+1. Se il disegno contiene più fogli, usa **◀ Prec.** e **Succ. ▶** per visualizzarne l’anteprima. Inizialmente tutti i fogli sono selezionati. In **Pagine da stampare**, deseleziona le caselle dei fogli che vuoi escludere.
+2. Scegli una **Stampante** o lascia selezionata **Stampante predefinita di sistema**. Imposta **Formato carta**, **Orientamento**, **Copie**, **Modalità colore** e **Stampa fronte-retro**. Scegli **Come nel disegno** per usare l’orientamento del primo foglio selezionato.
+3. Scegli **Stampa** per inviare i fogli selezionati direttamente alla stampante. Per riutilizzare le impostazioni la prossima volta, scegli **Salva impostazioni di stampa** prima di stampare.
+
+Il **Formato carta** nell’anteprima si applica al lavoro di stampa. Per modificare le dimensioni dei fogli del disegno, apri [Dimensioni pagina](../Page-Size/) dal menu **Impostazioni**. Puoi inserire le dimensioni in millimetri o pollici.
+
+#### Stampa avanzata
+{: #advanced-print}
+
+Scegli **Stampa avanzata…** per creare un PDF dei fogli selezionati con le dimensioni del disegno. Su Windows e macOS, TinyCAD apre il PDF nel visualizzatore predefinito. Usa i comandi di stampa del visualizzatore per scegliere la stampante e le opzioni aggiuntive. Su Linux, TinyCAD apre il PDF e mostra la finestra di stampa del sistema. Se annulli la stampa dalla finestra, il PDF rimane aperto.
+
+**Stampa avanzata…** è disponibile anche quando TinyCAD non trova stampanti. Per salvare un PDF da usare in seguito, scegli **File → Export → Esporta in PDF**.
 
 </div>
-
-## Markdown in stampa ed esportazione
-{: #markdown-in-print-and-export}
-{: #markdown-in-print-and-export}
-
-I titoli, gli elenchi e i blocchi di codice nelle caselle di testo mantengono la formattazione nell'esportazione SVG, nella stampa dal browser e nell'esportazione PDF. Nell'output SVG è incluso solo il foglio corrente.
-
-Il disegno, l'esportazione SVG e il PDF usano lo stesso testo e le stesse forme SVG. Le note Markdown restano elementi grafici vettoriali, conservando il carattere di base e la formattazione scelti.
-
-[Caselle di testo Markdown](../Text/#markdown-text-boxes).
 
 ## Esportazione SVG
 {: #svg-export}

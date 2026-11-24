@@ -9,7 +9,7 @@ layout: default
 ### Navegador
 {: #browser}
 
-Para imprimir desde un navegador, usa la opción Exportar a PDF. Después puedes imprimir el PDF directamente.
+En el menú **Archivo**, elige **Exportar a PDF**. TinyCAD abre el dibujo como PDF en una pestaña nueva. Usa los controles de impresión del visor de PDF para imprimirlo.
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -17,29 +17,27 @@ Para imprimir desde un navegador, usa la opción Exportar a PDF. Después puedes
 ### Aplicación de escritorio
 {: #desktop-app}
 
-Usa la opción **Imprimir (Print)** del menú de la barra de herramientas.
+Elige **Archivo → Imprimir** para abrir la **Vista previa de impresión**. El dibujo aparece a la izquierda y los ajustes de impresión a la derecha.
 
-La aplicación de escritorio abre un cuadro de diálogo de impresión para tu sistema operativo.
-Selecciona la impresora, comprueba la configuración de página y, a continuación, imprime el dibujo.
+<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
-{% include video-player.html
-	src="/v4/images/video/Video 10.mp4"
-	width=1532
-	height=978
-	caption="Video tutorial que muestra cómo imprimir un dibujo."
-%}
+#### Imprimir directamente
+{: #print-directly}
+
+1. Si el dibujo contiene varias hojas, usa **◀ Ant.** y **Sig. ▶** para verlas. Todas las hojas están seleccionadas al principio. En **Páginas a imprimir**, desmarca las casillas de las hojas que quieras omitir.
+2. Elige una **Impresora** o deja seleccionada **Impresora predeterminada del sistema**. Configura **Tamaño de papel**, **Orientación**, **Copias**, **Modo de color** y **Impresión a doble cara**. Elige **Según el dibujo** para usar la orientación de la primera hoja seleccionada.
+3. Elige **Imprimir** para enviar las hojas seleccionadas directamente a la impresora. Si quieres reutilizar los ajustes la próxima vez, elige **Guardar ajustes de impresión** antes de imprimir.
+
+El **Tamaño de papel** de la vista previa se aplica al trabajo de impresión. Para cambiar las dimensiones de las hojas del dibujo, abre [Tamaño de página](../Page-Size/) en el menú **Configuración**. Puedes introducir las dimensiones en milímetros o pulgadas.
+
+#### Impresión avanzada
+{: #advanced-print}
+
+Elige **Impresión avanzada…** para crear un PDF con las hojas seleccionadas y sus dimensiones originales. En Windows y macOS, TinyCAD abre el PDF en el visor predeterminado. Usa los controles de impresión de ese visor para elegir la impresora y las opciones adicionales. En Linux, TinyCAD abre el PDF y muestra el cuadro de diálogo de impresión del sistema. Si cancelas el cuadro de diálogo, el PDF permanece abierto.
+
+**Impresión avanzada…** también está disponible si TinyCAD no encuentra impresoras. Para guardar un archivo PDF y usarlo más adelante, elige **Archivo → Export → Exportar a PDF**.
 
 </div>
-
-## Markdown al imprimir y exportar
-{: #markdown-in-print-and-export}
-{: #markdown-in-print-and-export}
-
-Los encabezados, las listas y los bloques de código de los cuadros de texto conservan su formato al exportar a SVG, imprimir desde el navegador y exportar a PDF. En la salida SVG solo se incluye la hoja actual.
-
-El dibujo, la exportación a SVG y el PDF usan el mismo texto y las mismas formas SVG. Las notas Markdown siguen siendo gráficos vectoriales, que conservan la fuente base y el formato elegidos.
-
-[Cuadros de texto Markdown](../Text/#markdown-text-boxes).
 
 ## Exportación a SVG
 {: #svg-export}

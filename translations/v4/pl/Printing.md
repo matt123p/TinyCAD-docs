@@ -9,7 +9,7 @@ layout: default
 ### Przeglądarka
 {: #browser}
 
-Aby drukować z przeglądarki, użyj opcji Eksportuj do PDF. Następnie możesz bezpośrednio wydrukować plik PDF.
+W menu **Plik** wybierz **Eksportuj do PDF**. TinyCAD otworzy rysunek jako PDF w nowej karcie. Użyj funkcji drukowania w przeglądarce PDF, aby go wydrukować.
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -17,29 +17,27 @@ Aby drukować z przeglądarki, użyj opcji Eksportuj do PDF. Następnie możesz 
 ### Aplikacja desktopowa
 {: #desktop-app}
 
-Użyj opcji **Drukuj** w menu paska narzędzi.
+Wybierz **Plik → Drukuj**, aby otworzyć **Podgląd wydruku**. Po lewej stronie widać rysunek, a po prawej ustawienia drukowania.
 
-Aplikacja desktopowa otworzy okno dialogowe drukowania systemu operacyjnego.
-Wybierz drukarkę, sprawdź ustawienia strony, a następnie wydrukuj rysunek.
+<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
-{% include video-player.html
-	src="/v4/images/video/Video 10.mp4"
-	width=1532
-	height=978
-	caption="Film instruktażowy pokazujący, jak wydrukować rysunek."
-%}
+#### Drukowanie bezpośrednie
+{: #print-directly}
+
+1. Jeśli rysunek zawiera kilka arkuszy, użyj przycisków **◀ Poprzednia** i **Następna ▶**, aby je wyświetlić. Początkowo zaznaczone są wszystkie arkusze. W sekcji **Arkusze do wydruku** usuń zaznaczenie arkuszy, które chcesz pominąć.
+2. Wybierz drukarkę w polu **Drukarka** lub pozostaw ustawienie **Domyślna drukarka systemowa**. Ustaw **Rozmiar papieru**, **Orientacja**, **Kopie**, **Tryb kolorów** i **Druk dwustronny**. Wybierz **Zgodnie z rysunkiem**, aby użyć orientacji pierwszego zaznaczonego arkusza.
+3. Wybierz **Drukuj**, aby wysłać zaznaczone arkusze bezpośrednio do drukarki. Jeśli chcesz użyć tych samych ustawień następnym razem, przed drukowaniem wybierz **Zapisz ustawienia drukowania**.
+
+**Rozmiar papieru** w podglądzie wydruku dotyczy zadania drukowania. Aby zmienić wymiary arkuszy rysunku, otwórz [Rozmiar strony](../Page-Size/) w menu **Ustawienia**. Wymiary możesz podać w milimetrach lub calach.
+
+#### Drukowanie zaawansowane
+{: #advanced-print}
+
+Wybierz **Drukowanie zaawansowane…**, aby utworzyć PDF z zaznaczonych arkuszy z zachowaniem ich wymiarów. W systemach Windows i macOS TinyCAD otwiera PDF w domyślnej przeglądarce plików PDF. Użyj jej funkcji drukowania, aby wybrać drukarkę i dodatkowe opcje. W systemie Linux TinyCAD otwiera PDF i wyświetla systemowe okno drukowania. Jeśli anulujesz drukowanie w tym oknie, PDF pozostanie otwarty.
+
+**Drukowanie zaawansowane…** jest dostępne także wtedy, gdy TinyCAD nie znajdzie drukarek. Aby zapisać plik PDF na później, wybierz **Plik → Export → Eksportuj do PDF**.
 
 </div>
-
-## Markdown podczas drukowania i eksportowania
-{: #markdown-in-print-and-export}
-{: #markdown-in-print-and-export}
-
-Nagłówki, listy i bloki kodu w polach tekstowych zachowują formatowanie podczas eksportu SVG, drukowania z przeglądarki i eksportu do PDF. W wynikowym pliku SVG uwzględniany jest tylko bieżący arkusz.
-
-Rysunek, eksport SVG i plik PDF korzystają z tego samego tekstu i kształtów SVG. Notatki w Markdown pozostają grafiką wektorową, zachowując wybraną czcionkę bazową i formatowanie.
-
-[Pola tekstowe Markdown](../Text/#markdown-text-boxes).
 
 ## Eksport SVG
 {: #svg-export}

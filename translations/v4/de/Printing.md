@@ -9,7 +9,7 @@ layout: default
 ### Browser
 {: #browser}
 
-Zum Drucken in einem Browser verwenden Sie die Option „Als PDF exportieren“. Anschließend können Sie die PDF-Datei direkt drucken.
+Wählen Sie im Menü **Datei** die Option **Als PDF exportieren**. TinyCAD öffnet die Zeichnung als PDF in einem neuen Tab. Drucken Sie sie über die Druckfunktion des PDF-Viewers.
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -17,29 +17,27 @@ Zum Drucken in einem Browser verwenden Sie die Option „Als PDF exportieren“.
 ### Desktop-App
 {: #desktop-app}
 
-Verwenden Sie im Symbolleistenmenü die Option **Drucken**.
+Wählen Sie **Datei → Drucken**, um die **Druckvorschau** zu öffnen. Links sehen Sie die Zeichnung, rechts die Druckereinstellungen.
 
-Die Desktop-App öffnet den Druckdialog Ihres Betriebssystems.
-Wählen Sie Ihren Drucker aus, überprüfen Sie die Seiteneinstellungen und drucken Sie anschließend die Zeichnung.
+<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
-{% include video-player.html
-	src="/v4/images/video/Video 10.mp4"
-	width=1532
-	height=978
-	caption="Videoanleitung zum Drucken einer Zeichnung."
-%}
+#### Direkt drucken
+{: #print-directly}
+
+1. Bei Zeichnungen mit mehreren Blättern wechseln Sie mit **◀ Zurück** und **Weiter ▶** durch die Vorschau. Anfangs sind alle Blätter ausgewählt. Deaktivieren Sie unter **Zu druckende Seiten** die Kontrollkästchen der Blätter, die Sie auslassen möchten.
+2. Wählen Sie einen **Drucker** oder lassen Sie **Standarddrucker des Systems** ausgewählt. Stellen Sie **Papierformat**, **Ausrichtung**, **Kopien**, **Farbmodus** und **Beidseitiger Druck** ein. Mit **Wie in der Zeichnung** übernehmen Sie die Ausrichtung des ersten ausgewählten Blatts.
+3. Wählen Sie **Drucken**, um die ausgewählten Blätter direkt an den Drucker zu senden. Wenn Sie die Einstellungen beim nächsten Mal wiederverwenden möchten, wählen Sie vorher **Druckereinstellungen speichern**.
+
+Das **Papierformat** in der Druckvorschau gilt für den Druckauftrag. Die Blattabmessungen der Zeichnung ändern Sie über [Seitengröße](../Page-Size/) im Menü **Einstellungen**. Sie können die Maße in Millimetern oder Zoll eingeben.
+
+#### Erweitert drucken
+{: #advanced-print}
+
+Wählen Sie **Erweitert drucken…**, um eine PDF-Datei mit den ausgewählten Blättern in ihren ursprünglichen Abmessungen zu erstellen. Unter Windows und macOS öffnet TinyCAD die Datei im Standard-PDF-Viewer. Wählen Sie dort über die Druckfunktion den Drucker und weitere Optionen. Unter Linux öffnet TinyCAD die PDF-Datei und zeigt den Systemdruckdialog an. Wenn Sie diesen Dialog abbrechen, bleibt die PDF-Datei geöffnet.
+
+**Erweitert drucken…** ist auch verfügbar, wenn TinyCAD keine Drucker findet. Um eine PDF-Datei für später zu speichern, wählen Sie **Datei → Export → Als PDF exportieren**.
 
 </div>
-
-## Markdown beim Drucken und Exportieren
-{: #markdown-in-print-and-export}
-{: #markdown-in-print-and-export}
-
-Überschriften, Listen und Codeblöcke in Textfeldern behalten ihre Formatierung beim SVG-Export, beim Drucken über den Browser und beim PDF-Export bei. In der SVG-Ausgabe ist nur das aktuelle Blatt enthalten.
-
-Für die Zeichnung, den SVG-Export und die PDF-Datei werden dieselben SVG-Texte und -Formen verwendet. Markdown-Notizen bleiben Vektorgrafiken und bewahren die gewählte Grundschriftart sowie die Formatierung.
-
-[Markdown-Textfelder](../Text/#markdown-text-boxes).
 
 ## SVG-Export
 {: #svg-export}

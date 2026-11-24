@@ -9,7 +9,7 @@ layout: default
 ### 浏览器
 {: #browser}
 
-要从浏览器打印，请使用“导出为 PDF”选项。然后即可直接打印 PDF。
+在 **文件** 菜单中选择 **导出为 PDF** 。TinyCAD 会在新标签页中以 PDF 格式打开图纸。使用 PDF 查看器的打印功能打印图纸。
 
 <img src="/v4/images/media/image12.png" alt="The File menu"  />
 
@@ -17,29 +17,27 @@ layout: default
 ### 桌面应用
 {: #desktop-app}
 
-使用工具栏菜单中的 **打印（Print）** 选项。
+选择 **文件 → 打印** 以打开 **打印预览** 。左侧显示图纸，右侧显示打印设置。
 
-桌面应用会打开操作系统的打印对话框。
-选择打印机，检查页面设置，然后打印图纸。
+<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
-{% include video-player.html
-	src="/v4/images/video/Video 10.mp4"
-	width=1532
-	height=978
-	caption="演示如何打印图纸的视频教程。"
-%}
+#### 直接打印
+{: #print-directly}
+
+1. 如果图纸包含多张图页，可用 **◀ 上一页** 和 **下一页 ▶** 逐页预览。默认选中所有图页。在 **要打印的页面** 中取消勾选不需要打印的图页。
+2. 选择 **打印机** ，或保留 **系统默认打印机** 。设置 **纸张大小** 、 **方向** 、 **份数** 、 **颜色模式** 和 **双面打印** 。选择 **与图纸一致** 可使用第一张选中图页的方向。
+3. 选择 **打印** 即可将选中的图页直接发送到打印机。如果下次还要使用同样的设置，请在打印前选择 **保存打印设置** 。
+
+打印预览中的 **纸张大小** 仅用于本次打印任务。要更改图纸的图页尺寸，请在 **设置** 菜单中打开[页面尺寸](../Page-Size/)。尺寸可用毫米或英寸输入。
+
+#### 高级打印
+{: #advanced-print}
+
+选择 **高级打印…** ，可按图纸中的尺寸将所选图页生成 PDF。在 Windows 和 macOS 上，TinyCAD 会在默认 PDF 查看器中打开 PDF。使用查看器的打印功能选择打印机和其他选项。在 Linux 上，TinyCAD 会打开 PDF 并显示系统打印对话框。如果取消打印，PDF 仍会保持打开。
+
+即使 TinyCAD 未找到打印机，也可以使用 **高级打印…** 。要保存 PDF 以便以后使用，请选择 **文件 → Export → 导出为 PDF** 。
 
 </div>
-
-## 打印和导出中的 Markdown
-{: #markdown-in-print-and-export}
-{: #markdown-in-print-and-export}
-
-文本框标题、列表和代码块在 SVG 导出、浏览器打印和 PDF 导出中都会保留其格式。SVG 输出仅包含当前工作表。
-
-图纸、SVG 导出和 PDF 使用相同的 SVG 文本和图形。Markdown 注释保留为矢量图形，并保留所选的基础字体和格式。
-
-[Markdown 文本框](../Text/#markdown-text-boxes).
 
 ## SVG 导出
 {: #svg-export}
