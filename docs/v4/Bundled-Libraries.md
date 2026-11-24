@@ -61,7 +61,7 @@ Use these collections when you want to [run a circuit simulation](../Simulation/
 
 | Library | Contents | Modelling purpose |
 | --- | --- | --- |
-| **SPICE essentials** — 27 symbols | Passive parts, sources, diodes, LEDs, transistors, transformer and a 741-style amplifier | A starting set of modelled analogue components |
+| **SPICE essentials** — 29 symbols | Passives, sources, diodes, LEDs, transistors, transformer, resonators, 741, LM358 and LM324 | Analogue components with a [bundled model and preset pin mapping](../Bundled-SPICE-Models/) |
 | **Digital logic** — 28 symbols | Gates, counters and storage | Configurable logic behaviour implemented using portable analogue SPICE models |
 | **Functional blocks** — 17 symbols | ADC/DAC, communication interfaces, state machines and programmable I/O blocks | Explore system-level behaviour without implementing a complete chip |
 | **Sensors and interfaces** — 10 symbols | Modelled sensors, a test point, analogue switch and AM modulator | Relate a configured stimulus to electrical output |

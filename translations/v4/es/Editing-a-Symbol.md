@@ -4,7 +4,7 @@ layout: default
 # Edición de un símbolo
 {: #editing-a-symbol}
 
-Para generar un símbolo a partir de una hoja de datos o añadir varios componentes a una biblioteca abierta, consulta la [guía del asistente de IA](../AI-Assistant/). Puedes perfeccionar los resultados con las herramientas de edición de esta página.
+Para generar un símbolo a partir de una hoja de datos o añadir varios componentes a una biblioteca abierta, consulta la [guía del asistente de IA](../AI-Assistant/). Puedes perfeccionar sus resultados con las herramientas de edición de esta página.
 
 ## Cómo funcionan los símbolos en TinyCAD
 {: #how-symbols-work-in-tinycad}
@@ -13,10 +13,10 @@ Los símbolos se crean a partir de objetos normales de la barra de herramientas.
 cualquiera de estos objetos, excepto otros símbolos.
 
 Si el símbolo contiene objetos con funciones especiales (como un elemento de alimentación
-o un cable), esos objetos se tratarán como anotaciones.
+o un cable), dichos objetos se tratarán como anotaciones.
 
 Todas sus funciones especiales se pierden al usarlos en un símbolo. Solo los **pines** definen
-puntos de conexión eléctrica.
+los puntos de conexión eléctrica.
 
 Resumen:
 - un símbolo es un gráfico reutilizable más atributos
@@ -26,7 +26,7 @@ Resumen:
 ## Antes de empezar
 {: #before-you-start}
 
-Esta página presupone que ya tienes una biblioteca abierta para editarla. Los pasos para
+Esta página presupone que ya tienes una biblioteca abierta para editar. Los pasos para
 abrir o crear una biblioteca dependen de si usas TinyCAD Web o la aplicación de escritorio,
 así que empieza por [Bibliotecas de símbolos personalizadas](../Custom-symbol-libraries/).
 
@@ -46,7 +46,7 @@ A continuación, puedes modificar los gráficos, los pines y los atributos del s
 	src="/v4/images/video/Video 12.mp4"
 	width=1532
 	height=978
-	caption="Vídeo explicativo sobre cómo editar una biblioteca."
+	caption="Recorrido en vídeo que muestra cómo editar una biblioteca."
 %}
 
 
@@ -59,8 +59,8 @@ Usa las herramientas de dibujo estándar para crear el contorno del símbolo:
 - rectángulos/elipses/arcos para los contornos habituales de encapsulados,
 - texto para las marcas internas opcionales.
 
-Procura que el símbolo sea legible con el nivel de zoom normal del esquema. Las formas sencillas suelen funcionar
-mejor que los diseños muy ornamentados.
+Procura que el símbolo sea legible con el nivel de zoom habitual del esquema. Las formas
+sencillas suelen funcionar mejor que los dibujos muy decorativos.
 
 ## Añadir pines
 {: #adding-pins}
@@ -69,29 +69,29 @@ Los pines son la única parte eléctricamente activa de un símbolo.
 
 Para cada pin, establece:
 
-- **Número de pin** (obligatorio y único dentro de una unidad),
+- **Número de pin** (obligatorio y único dentro de un componente),
 - **Nombre del pin** (opcional, pero muy recomendable),
 - **Tipo eléctrico** (obligatorio para un DRC preciso),
 - **Estilo/forma del pin** (estilo visual),
-- **Visibilidad** del texto del nombre/número del pin según sea necesario.
+- **Visibilidad** del texto del nombre/número del pin, según sea necesario.
 
-Coloca los pines cuidadosamente en la cuadrícula para que sea sencillo cablear el esquema.
+Coloca los pines cuidadosamente sobre la cuadrícula para facilitar el cableado en el esquema.
 
 {% include video-player.html
 	src="/v4/images/video/Video 13.mp4"
 	width=1532
 	height=978
-	caption="Vídeo explicativo sobre cómo añadir pines."
+	caption="Recorrido en vídeo que muestra cómo añadir pines."
 %}
 
 
 ## Panel de pines
 {: #pin-panel}
 
-Puedes editar los pines en el panel **Pin**, en el área del **panel inferior**.
+Puedes editar los pines en el panel **Pin** del área del **panel inferior**.
 
-Los cambios del panel Pin se aplican **en tiempo real**: cada cambio de campo ejecuta de inmediato
-una acción de actualización del pin (no hay un paso independiente de Aceptar/Aplicar).
+Los cambios en el panel Pin son **inmediatos**: cada cambio de campo ejecuta una acción de
+actualización del pin de inmediato (no hay un paso independiente de Aceptar/Aplicar).
 
 Secciones del panel Pin:
 
@@ -110,14 +110,14 @@ Secciones del panel Pin:
 
 Notas:
 
-- La forma controla la apariencia del símbolo y algunos comportamientos visuales especiales.
-- Tanto la forma `Cross` como el tipo eléctrico `Not Connected` dibujan una marca en forma de cruz.
-- Los estilos de forma `Power` y `Hidden` se muestran con el color de los pines ocultos.
+- La forma controla el aspecto del símbolo y algunos comportamientos visuales especiales.
+- Las formas `Cross` y el tipo eléctrico `Not Connected` dibujan ambos una marca en forma de cruz.
+- Los estilos de forma `Power` y `Hidden` se representan con el color de los pines ocultos.
 
 ## Tipos eléctricos de pin y comportamiento del DRC
 {: #pin-electrical-types-and-drc-behavior}
 
-Seleccionar el tipo eléctrico correcto es fundamental. El DRC usa estos tipos para detectar
+Seleccionar el tipo eléctrico correcto es esencial. El DRC usa estos tipos para detectar
 errores de conexión.
 
 Valores actuales en el código fuente de TinyCAD v4 (`elec`):
@@ -135,23 +135,23 @@ Valores actuales en el código fuente de TinyCAD v4 (`elec`):
 - `10` Salida de alimentación
 - `11` Emisor abierto
 
-Pautas generales:
+Orientación general:
 
-- Marca las señales realmente accionadas como **Salida**.
+- Marca las señales realmente excitadas como **Salida**.
 - Marca las señales que solo reciben como **Entrada**.
-- Usa **Entrada de alimentación/Salida de alimentación** cuando la semántica de accionamiento de alimentación sea importante para el DRC.
-- Usa **Sin conexión** solo para pines que deban permanecer intencionadamente sin conexión.
-- Usa **Libre**/**Sin especificar** con precaución y de forma coherente en toda la biblioteca.
+- Usa **Entrada de alimentación/Salida de alimentación** cuando la semántica de alimentación sea relevante para el DRC.
+- Usa **Sin conexión** únicamente para pines que intencionadamente no tienen conexión.
+- Usa **Libre**/**Sin especificar** con cautela y de forma coherente en toda la biblioteca.
 
 Implicaciones prácticas para el DRC:
 
-- Asignar un tipo incorrecto a un pin puede provocar errores de DRC falsos (o pasar por alto errores reales).
+- Un tipo de pin incorrecto puede provocar errores falsos del DRC (o esconder errores reales).
 - Los nombres de los pines de alimentación deben coincidir con los nombres de alimentación previstos para que funcione el comportamiento automático.
 
-## Pines de alimentación y ocultos
+## Pines de alimentación y pines ocultos
 {: #power-and-hidden-pins}
 
-Los pines de alimentación y los ocultos se muestran al editar el símbolo, pero normalmente
+Los pines de alimentación y los pines ocultos se muestran al editar el símbolo, pero normalmente
 se ocultan cuando el símbolo se coloca en un dibujo.
 
 En el caso concreto de los **pines de alimentación**:
@@ -163,88 +163,91 @@ En el caso concreto de los **pines de alimentación**:
 
 En el caso de los **pines ocultos**:
 
-- Siguen estando eléctricamente activos.
+- Siguen siendo eléctricamente activos.
 - Úsalos cuando quieras dibujar tu propia forma de pin y sus etiquetas.
 
-## Símbolos multipartes (unidades por encapsulado)
+## Símbolos de varias unidades (unidades por encapsulado)
 {: #multi-part-symbols-parts-per-package}
 
 TinyCAD admite dispositivos con varias unidades lógicas en un mismo encapsulado (por
 ejemplo, puertas cuádruples).
 
-Se utilizan dos estilos de símbolos multipartes:
+Se usan dos estilos de símbolos de varias unidades:
 
-1. Símbolos multipartes **homogéneos**:
+1. Símbolos de varias unidades **homogéneos**:
 	 - las unidades comparten el mismo contorno,
-	 - normalmente solo se diferencian en los números de pin.
-2. Símbolos multipartes **heterogéneos**:
-	 - las unidades pueden tener contornos diferentes,
-	 - también pueden tener conjuntos de pines o funciones diferentes.
+	 - normalmente solo se diferencian por los números de pin.
+2. Símbolos de varias unidades **heterogéneos**:
+	 - las unidades pueden tener contornos distintos,
+	 - las unidades también pueden tener conjuntos de pines/funciones diferentes.
 
-Usa el estilo homogéneo cuando las unidades sean intercambiables; usa el heterogéneo cuando cada unidad
-tenga una función distinta.
+Usa el estilo homogéneo cuando las unidades sean intercambiables; usa el heterogéneo cuando cada unidad tenga una función distinta.
 
-### Flujo de trabajo con símbolos multipartes
+### Flujo de trabajo para varias unidades
 {: #multi-part-workflow}
 
-1. Decide primero si usarás el estilo homogéneo o heterogéneo.
+1. Decide primero si el símbolo será homogéneo o heterogéneo.
 2. Establece el número de unidades por encapsulado.
 
-Para las unidades homogéneas:
+Para unidades homogéneas:
 - La primera unidad define la forma del símbolo y la disposición de los pines
 
-Para las unidades heterogéneas:
-- Puedes dibujar una forma diferente para cada unidad
+Para unidades heterogéneas:
+- Puedes dibujar una forma distinta para cada unidad
 
 ## Atributos y propiedades del símbolo
 {: #symbol-attributes-and-properties}
 
-Puedes editar los atributos del símbolo en el panel **Symbol**, en el **panel inferior**.
+Puedes editar los atributos del símbolo en el panel **Symbol** del **panel inferior**.
 
 Además de los gráficos y los pines, define cuidadosamente los atributos del símbolo:
 
 - Nombre principal del símbolo (y alias, si se usan),
 - Formato predeterminado de **Ref** (por ejemplo, `U?`, `R?`, `C?`),
 - **Nombre/Valor** predeterminado,
-- Atributos/parámetros adicionales (por ejemplo, campos de encapsulado/huella, campos del modelo de
+- Atributos/parámetros adicionales (por ejemplo, encapsulado/huella, campos del modelo de
 	simulación o metadatos específicos del proyecto).
 
-## Guardar, duplicar, cambiar el nombre y eliminar
+## Establecer un modelo SPICE
+{: #set-a-spice-model}
+
+Selecciona el símbolo en una biblioteca editable y abre su pestaña **SPICE**. Elige **Incluido → Buscar modelo SPICE…** para vincular un modelo y verificar la correspondencia de sus pines, o **Personalizado** para editar la plantilla de instancia y el texto del modelo. Guarda la biblioteca para aplicar el valor predeterminado a futuras colocaciones. Consulta [Modelos SPICE incluidos](../Bundled-SPICE-Models/#set-a-library-default-or-edit-a-custom-copy) para obtener información sobre el selector, la selección de modelos y las copias personalizadas.
+
+## Guardar, duplicar, renombrar y eliminar
 {: #save-duplicate-rename-delete}
 
-Acciones habituales para administrar símbolos al editar una biblioteca:
+Acciones habituales para gestionar símbolos al editar bibliotecas:
 
 - **Guardar/actualizar** el símbolo actual para guardar los cambios.
-- **Duplicar** para crear variantes (se recomienda en lugar de modificar destructivamente un símbolo base).
-- **Cambiar el nombre** al estandarizar la nomenclatura.
-- **Eliminar** símbolos obsoletos (deshaz la acción si los eliminas por accidente).
+- **Duplicar** para crear variantes (recomendado en lugar de modificar de forma destructiva un símbolo base).
+- **Renombrar** para estandarizar los nombres.
+- **Eliminar** los símbolos obsoletos (deshaz la acción si los eliminas por accidente).
 
-Usa la duplicación para crear variantes de encapsulado/valor que compartan los gráficos, pero tengan
-valores predeterminados diferentes.
+Usa la duplicación para crear variantes de encapsulado/valor que compartan los gráficos, pero difieran en los valores predeterminados.
 
 ## Lista de comprobación para validar un símbolo antes de publicarlo
 {: #validation-checklist-before-publishing-a-symbol}
 
-Antes de usar ampliamente un símbolo, comprueba que:
+Antes de usar un símbolo de forma generalizada, comprueba lo siguiente:
 
-1. Los pines estén en la cuadrícula y sean fáciles de cablear.
-2. Los números de pin estén completos y sean únicos en cada unidad.
-3. Los tipos eléctricos estén correctamente asignados a todos los pines.
-4. El comportamiento de los pines de alimentación/ocultos sea intencionado.
-5. La configuración multipartes (si la hay) sea correcta.
-6. Los valores predeterminados del nombre y la referencia sean adecuados.
-7. El símbolo sea legible con el nivel de zoom normal del dibujo.
+1. Los pines están sobre la cuadrícula y son fáciles de cablear.
+2. Los números de pin están completos y son únicos para cada unidad.
+3. Los tipos eléctricos están configurados correctamente para todos los pines.
+4. El comportamiento de los pines de alimentación/ocultos es intencionado.
+5. La configuración de varias unidades (si la hay) es correcta.
+6. Los valores predeterminados de nombre/referencia son adecuados.
+7. El símbolo es legible con el nivel de zoom habitual del dibujo.
 
 A continuación, coloca el símbolo en un esquema de prueba y ejecuta el DRC.
 
 ## Consejos para solucionar problemas
 {: #troubleshooting-tips}
 
-- **Los cables no se conectan al símbolo:** comprueba la posición de los extremos de los pines y su
-	alineación con la cuadrícula.
-- **Errores de DRC inesperados:** verifica el tipo eléctrico de todos los pines.
-- **Comportamiento incorrecto de una unidad en símbolos multipartes:** vuelve a comprobar la selección de la unidad y la
-	numeración de los pines de cada unidad.
+- **Los cables no se conectan al símbolo:** comprueba la ubicación de los extremos de los pines y
+	la alineación con la cuadrícula.
+- **Errores inesperados del DRC:** verifica el tipo eléctrico de cada pin.
+- **Comportamiento incorrecto de una unidad en símbolos de varias unidades:** vuelve a comprobar la selección de unidades y la
+	numeración de pines de cada unidad.
 - **La alimentación no se conecta automáticamente:** comprueba que los nombres de los pines de alimentación coincidan con los nombres de red
 	previstos.
 
@@ -257,4 +260,4 @@ A continuación, coloca el símbolo en un esquema de prueba y ejecuta el DRC.
 - [Comprobación de reglas de diseño](../Design-Rules-Check/)
 
 - Volver a [Símbolos y bibliotecas](../Symbols-and-Libraries/)
-- Volver al [índice de v4](../CONTENTS/)
+- Volver al [contenido de v4](../CONTENTS/)

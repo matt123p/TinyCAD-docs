@@ -50,7 +50,7 @@ SPICEは *Simulation Program with Integrated Circuit Emphasis* の略です。�
 ## 新しいシミュレーションを作成する
 {: #build-a-new-simulation}
 
-1. **Standard → SPICE essentials** からモデル付き部品を配置するか、ツールバーの **Simulation → SPICE components** サブメニューを使用します。**More…** を選ぶと、SPICE essentialsの全コレクションが開きます。
+1. **Standard → SPICE essentials** からモデル付き部品を配置するか、ツールバーの **Simulation → SPICE components** サブメニューを使用します。**More…** を選ぶと、SPICE essentialsの全コレクションが開きます。 シンボルにはあらかじめ [同梱モデルとピン割り当て](../Bundled-SPICE-Models/) が設定されています。
 2. ピンを配線で接続し、重要なノードには読みやすいラベルを付けます。グラウンド **0** に実際に接続してください。正しい電源シンボルを配置するには、**Simulation → SPICE → Insert Ground** を使用します。
 3. **Simulation → SPICE → Insert Source** で励振源を追加します。電圧／電流の種類と波形を設定します。便利なチャートを使いたい場合は、[プローブ](../Simulation-Sources-and-Instruments/#probes-and-ground) を追加します。
 4. **Simulation → Simulate** を選択して **Simulation sheet** を追加します。
@@ -104,6 +104,7 @@ TinyCAD v3では`.dzn`ファイルを開けません。拡張子を`.dsn`に変�
 - [解析と設定](../Simulation-Analyses/) — DC、過渡、AC、ノイズ、伝達関数、極零点。
 - [ソース、プローブ、仮想計測器](../Simulation-Sources-and-Instruments/) — 励振、測定接続、負荷。
 - [チャート、測定、Circuit Explorer](../Simulation-Charts-and-Measurements/) — 調整、スイープ、要件、スタディ。
+- [同梱 SPICE モデル](../Bundled-SPICE-Models/) — モデルの検索、割り当て、カスタマイズ。
 - [SPICEモデルとネットリスト出力](../SPICE-output/) — テンプレート、モデルファイル、外部シミュレーション。
 - [XSPICEとデジタルシミュレーション](../XSPICE/) — Desktopのイベント駆動型および混合信号モデル。
 - [トラブルシューティング](../Simulation-Troubleshooting/) — 接続、モデル、数値上の問題の診断。

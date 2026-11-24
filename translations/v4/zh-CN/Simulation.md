@@ -50,7 +50,7 @@ SPICE 是 *Simulation Program with Integrated Circuit Emphasis*（集成电路�
 ## 构建新的仿真
 {: #build-a-new-simulation}
 
-1. 从 **Standard → SPICE essentials** 放置带模型的元件，或使用工具栏中的 **Simulation → SPICE components** 子菜单。**More…** 会打开完整的 SPICE essentials 元件集。
+1. 从 **Standard → SPICE essentials** 放置带模型的元件，或使用工具栏中的 **Simulation → SPICE components** 子菜单。**More…** 会打开完整的 SPICE essentials 元件集。这些符号已预设 [内置模型和引脚映射](../Bundled-SPICE-Models/)。
 2. 用导线连接引脚，并为重要节点添加易读的标签。确保电路与地 **0** 有实际连接：使用 **Simulation → SPICE → Insert Ground** 可放置正确的电源符号。
 3. 使用 **Simulation → SPICE → Insert Source** 添加激励，并设置其电压/电流类型和波形。若想方便地绘制图表，可添加[探针](../Simulation-Sources-and-Instruments/#probes-and-ground)。
 4. 选择 **Simulation → Simulate** 添加一个 **Simulation sheet**。
@@ -104,6 +104,7 @@ TinyCAD v3 无法打开 `.dzn` 文件。将扩展名改为 `.dsn` 并不会转�
 - [分析类型与设置](../Simulation-Analyses/) — DC、瞬态、AC、噪声、传递函数和极零分析。
 - [源、探针与虚拟仪器](../Simulation-Sources-and-Instruments/) — 激励、测量连接和负载。
 - [图表、测量与 Circuit Explorer](../Simulation-Charts-and-Measurements/) — 调整、扫描、要求和研究。
+- [内置 SPICE 模型](../Bundled-SPICE-Models/) — 查找、关联和自定义模型。
 - [SPICE 模型与网表输出](../SPICE-output/) — 模板、模型文件和外部仿真。
 - [XSPICE 与数字仿真](../XSPICE/) — 桌面版事件驱动和混合信号模型。
 - [故障排除](../Simulation-Troubleshooting/) — 诊断连接、模型和数值问题。

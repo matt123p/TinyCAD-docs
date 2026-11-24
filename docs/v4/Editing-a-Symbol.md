@@ -199,6 +199,10 @@ In addition to graphics and pins, define symbol attributes carefully:
 - Additional attributes/parameters (for example package/footprint, simulation
 	model fields, or project-specific metadata).
 
+## Set a SPICE model
+
+Select the symbol in an editable library and open its **SPICE** tab. Choose **Bundled → Find SPICE model…** to link a model and verify its pin mapping, or **Custom** to edit the instance template and model text. Save the library to apply the default to future placements. See [Bundled SPICE models](../Bundled-SPICE-Models/#set-a-library-default-or-edit-a-custom-copy) for the picker, model selection and Custom copies.
+
 ## Save, duplicate, rename, delete
 
 Common symbol management actions in library editing:

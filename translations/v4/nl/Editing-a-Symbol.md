@@ -4,49 +4,49 @@ layout: default
 # Een symbool bewerken
 {: #editing-a-symbol}
 
-Als u een symbool wilt genereren op basis van een gegevensblad of meerdere componenten aan een geopende bibliotheek wilt toevoegen, raadpleeg dan de handleiding voor de [AI-assistent](../AI-Assistant/). U kunt de resultaten ervan verfijnen met de bewerkingstools op deze pagina.
+Als u een symbool wilt genereren op basis van een gegevensblad of meerdere componenten aan een geopende bibliotheek wilt toevoegen, raadpleeg dan de [handleiding voor de AI-assistent](../AI-Assistant/). U kunt de resultaten verfijnen met de bewerkingstools op deze pagina.
 
 ## Hoe symbolen werken in TinyCAD
 {: #how-symbols-work-in-tinycad}
 
-Symbolen worden gemaakt met normale objecten op de werkbalk. Ze kunnen
+Symbolen worden gemaakt met normale objecten op de werkbalk. Ze mogen
 elk van deze objecten bevatten, behalve andere symbolen.
 
 Als het symbool objecten met speciale functies bevat (zoals een voedingsitem
-of een draad), worden die objecten behandeld als annotatie.
+of een draad), worden die objecten behandeld alsof het annotaties zijn.
 
-Al hun speciale functies gaan verloren wanneer ze in een symbool worden gebruikt. Alleen **pinnen** definiëren
+Al hun speciale functies gaan verloren wanneer ze in een symbool worden gebruikt. Alleen **pennen** definiëren
 elektrische aansluitpunten.
 
 Samenvatting:
-- een symbool is een herbruikbare afbeelding met attributen
-- elektrische connectiviteit wordt gedefinieerd door **pinnen**
+- een symbool is een herbruikbare afbeelding plus attributen
+- elektrische connectiviteit wordt gedefinieerd door **pennen**
 - en symbolen worden opgeslagen in **bibliotheken** (`.tclib`)
 
 ## Voordat u begint
 {: #before-you-start}
 
 Op deze pagina wordt ervan uitgegaan dat u al een bibliotheek hebt geopend om te bewerken. De stappen voor
-het openen of maken van een bibliotheek zijn afhankelijk van of u TinyCAD Web of
-de desktoptoepassing gebruikt. Begin daarom bij [Aangepaste symboolbibliotheken](../Custom-symbol-libraries/).
+het openen of maken van een bibliotheek zijn afhankelijk van het feit of u TinyCAD Web of
+de desktoptoepassing gebruikt. Begin daarom met [Aangepaste symboolbibliotheken](../Custom-symbol-libraries/).
 
-Als u op zoek bent naar bladeren en plaatsen in plaats van bewerken, raadpleeg dan [Symboolbibliotheken gebruiken](../Using-Symbol-Libraries/).
+Als u symbolen wilt doorzoeken en plaatsen in plaats van bewerken, raadpleeg dan [Symboolbibliotheken gebruiken](../Using-Symbol-Libraries/).
 
 ## Het symbool openen of maken
 {: #open-or-create-the-symbol}
 
 1. Open de bibliotheek.
-2. Klik op een bestaand symbool in de symboollijst van de bibliotheek om het te bewerken.
-3. Klik op de knop `+` in de symboollijst om een nieuw symbool te maken.
+2. Als u een bestaand symbool wilt bewerken, klikt u erop in de lijst met bibliotheeksymbolen.
+3. Als u een nieuw symbool wilt maken, klikt u op de knop `+` in de lijst met symbolen.
 4. Het geselecteerde of nieuwe symbool wordt in het editorcanvas geladen.
 
-U kunt vervolgens de afbeeldingen, pinnen en symboolattributen aanpassen.
+U kunt vervolgens de afbeeldingen, pennen en symboolattributen wijzigen.
 
 {% include video-player.html
 	src="/v4/images/video/Video 12.mp4"
 	width=1532
 	height=978
-	caption="Videohandleiding over het bewerken van een bibliotheek."
+	caption="Videohandleiding waarin wordt getoond hoe u een bibliotheek bewerkt."
 %}
 
 
@@ -55,69 +55,69 @@ U kunt vervolgens de afbeeldingen, pinnen en symboolattributen aanpassen.
 
 Gebruik standaardtekengereedschappen om de omtrek van het symbool te maken:
 
-- lijnen/polylijnen voor randen van de behuizing,
-- rechthoeken/ellipsen/bogen voor gebruikelijke behuizingsomtrekken,
-- tekst voor eventuele interne markeringen.
+- lijnen/polylijnen voor de randen van de behuizing,
+- rechthoeken/ellipsen/bogen voor gangbare behuizingsomtrekken,
+- tekst voor optionele interne markeringen.
 
-Zorg dat het symbool op de normale zoomfactor van het schema goed leesbaar is. Eenvoudige vormen werken meestal
-beter dan zeer decoratieve illustraties.
+Zorg dat het symbool bij de normale zoom voor schema's goed leesbaar is. Eenvoudige vormen werken meestal
+beter dan zeer decoratieve afbeeldingen.
 
-## Pinnen toevoegen
+## Pennen toevoegen
 {: #adding-pins}
 
-Pinnen zijn het enige elektrisch actieve onderdeel van een symbool.
+Pennen zijn het enige elektrisch actieve onderdeel van een symbool.
 
-Stel voor elke pin het volgende in:
+Stel voor elke pen het volgende in:
 
-- **Pinnummer** (vereist en uniek binnen een onderdeel),
-- **Pinnaam** (optioneel, maar sterk aanbevolen),
+- **Pennummer** (vereist en uniek binnen een onderdeel),
+- **Pennaam** (optioneel, maar sterk aanbevolen),
 - **Elektrisch type** (vereist voor nauwkeurige DRC),
-- **Pinstijl/-vorm** (visuele stijl),
-- **Zichtbaarheid** van pinnaam/-nummertekst, indien nodig.
+- **Penstijl/-vorm** (visuele stijl),
+- **Zichtbaarheid** van de pennaam/-nummertekst, indien nodig.
 
-Plaats pinnen zorgvuldig op het raster, zodat bedrading in het schema eenvoudig is.
+Plaats de pennen zorgvuldig op het raster, zodat bedrading in het schema eenvoudig is.
 
 {% include video-player.html
 	src="/v4/images/video/Video 13.mp4"
 	width=1532
 	height=978
-	caption="Videohandleiding over het toevoegen van pinnen."
+	caption="Videohandleiding waarin wordt getoond hoe u pennen toevoegt."
 %}
 
 
-## Pinpaneel
+## Pennenpaneel
 {: #pin-panel}
 
-U kunt pinnen bewerken in het paneel **Pin** in het gebied van het **onderste paneel**.
+U kunt pennen bewerken in het paneel **Pen** in het gebied van het **onderste paneel**.
 
-Wijzigingen in het pinpaneel worden **direct toegepast**: bij elke veldwijziging wordt onmiddellijk
-een pinupdateactie uitgevoerd (er is geen aparte stap OK/Toepassen).
+Bewerkingen in het pennenpaneel zijn **direct**: elke veldwijziging voert onmiddellijk
+een actie uit om de pen bij te werken (er is geen aparte stap OK/Toepassen).
 
-Onderdelen van het pinpaneel:
+Onderdelen van het pennenpaneel:
 
 1. **Naam**
 	- Selectievakje Weergeven (`show_name`)
 	- Tekstveld Naam (`name`)
-	- Selectievakje Centreren op pin (`centre_name`)
+	- Selectievakje Centreren op pen (`centre_name`)
 2. **Nummer**
 	- Selectievakje Weergeven (`show_number`)
 	- Tekstveld Nummer (`number`)
 	- Numeriek veld Verschuiving (`number_pos`)
 3. **Type**
-	- Vervolgkeuzelijst Vorm (`which`)
-	- Vervolgkeuzelijst Elektrisch (`elec`)
+	- Keuzelijst Vorm (`which`)
+	- Keuzelijst Elektrisch (`elec`)
 	- Numeriek veld Lengte (`length`, UI-bereik 5..50)
 
 Opmerkingen:
 
 - Vorm bepaalt het uiterlijk van het symbool en bepaalde speciale visuele gedragingen.
-- De vorm `Cross` en het elektrische type `Not Connected` tekenen beide een kruisvormige markering.
-- De vormstijlen `Power` en `Hidden` worden weergegeven met de kleur voor verborgen pinnen.
+- De vorm `Cross` en het elektrische type `Not Connected` tekenen beide een kruis.
+- De vormstijlen `Power` en `Hidden` worden weergegeven met de kleur voor verborgen pennen.
 
-## Elektrische pintypen en DRC-gedrag
+## Elektrische pentypen en DRC-gedrag
 {: #pin-electrical-types-and-drc-behavior}
 
-Het juiste elektrische type selecteren is essentieel. DRC gebruikt deze typen om
+Het selecteren van het juiste elektrische type is essentieel. DRC gebruikt deze typen om
 verbindingsfouten op te sporen.
 
 Huidige waarden in de TinyCAD v4-broncode (`elec`):
@@ -137,114 +137,118 @@ Huidige waarden in de TinyCAD v4-broncode (`elec`):
 
 Algemene richtlijnen:
 
-- Stel werkelijk aangestuurde signalen in als **Uitgang**.
-- Stel signalen die alleen ontvangen worden in als **Ingang**.
-- Gebruik **Voedingsingang/Voedingsuitgang** wanneer de voedingsaansturing van belang is voor DRC.
-- Gebruik **Niet aangesloten** alleen voor pinnen die bewust niet zijn aangesloten.
-- Gebruik **Vrij**/**Niet gespecificeerd** voorzichtig en consequent in een bibliotheek.
+- Markeer daadwerkelijk aangestuurde signalen als **Uitgang**.
+- Markeer signalen die alleen worden ontvangen als **Ingang**.
+- Gebruik **Voedingsingang/Voedingsuitgang** wanneer de eigenschappen van de voedingsaansturing van belang zijn voor DRC.
+- Gebruik **Niet aangesloten** alleen voor pennen die opzettelijk niet zijn aangesloten.
+- Gebruik **Vrij**/**Niet gespecificeerd** voorzichtig en consequent binnen een bibliotheek.
 
 Praktische gevolgen voor DRC:
 
-- Een onjuist pintype kan valse DRC-fouten veroorzaken (of echte fouten verbergen).
-- Pinnamen van voedingspinnen moeten overeenkomen met de beoogde voedingsnamen voor automatisch gedrag.
+- Onjuiste pentypen kunnen valse DRC-fouten veroorzaken (of echte fouten verbergen).
+- Namen van voedingspennen moeten overeenkomen met de bedoelde voedingsnamen voor automatisch gedrag.
 
-## Voedings- en verborgen pinnen
+## Voeding en verborgen pennen
 {: #power-and-hidden-pins}
 
-Voedings- en verborgen pinnen worden weergegeven tijdens het bewerken van het symbool, maar zijn doorgaans
+Voedingspennen en verborgen pennen worden weergegeven tijdens het bewerken van het symbool, maar zijn doorgaans
 verborgen wanneer het symbool in een tekening wordt geplaatst.
 
-Specifiek voor **voedingspinnen** geldt:
+Voor **voedingspennen** geldt specifiek:
 
-- De pinnaam fungeert als de naam van het voedingsnet.
-- De verbinding wordt automatisch gemaakt wanneer voedingsnamen overeenkomen.
-- In de geplaatste symboolweergave worden draden normaal gesproken niet rechtstreeks naar deze verborgen voedingspinnen getekend.
+- De pennaam fungeert als de naam van het voedingsnet.
+- De verbinding wordt automatisch gemaakt wanneer de voedingsnamen overeenkomen.
+- Draden worden in de geplaatste symboolweergave normaal gesproken niet rechtstreeks naar deze verborgen voedingspennen getekend.
 
-Voor **verborgen pinnen** geldt:
+Voor **verborgen pennen** geldt:
 
 - Ze blijven elektrisch actief.
-- Gebruik ze wanneer u zelf de pinvorm en pinlabels wilt tekenen.
+- Gebruik ze wanneer u zelf de penvorm en penlabels wilt tekenen.
 
-## Meerdelige symbolen (delen per behuizing)
+## Meerdelige symbolen (onderdelen per behuizing)
 {: #multi-part-symbols-parts-per-package}
 
-TinyCAD ondersteunt componenten met meerdere logische eenheden in één behuizing (bijvoorbeeld
+TinyCAD ondersteunt apparaten met meerdere logische eenheden in één behuizing (bijvoorbeeld
 quad-poorten).
 
 Er worden twee stijlen voor meerdelige symbolen gebruikt:
 
 1. **Homogene** meerdelige symbolen:
-	 - de delen hebben dezelfde omtrek,
-	 - en verschillen doorgaans alleen in pinnummers.
+	 - onderdelen delen dezelfde omtrek,
+	 - verschillen meestal alleen in pennummers.
 2. **Heterogene** meerdelige symbolen:
-	 - de delen kunnen verschillende omtrekken hebben,
-	 - en kunnen ook verschillende pinsets/functies hebben.
+	 - onderdelen kunnen verschillende omtrekken hebben,
+	 - onderdelen kunnen ook verschillende pennensets/functies hebben.
 
-Gebruik homogeen wanneer de delen onderling uitwisselbaar zijn; gebruik heterogeen wanneer elk deel
-een afzonderlijke functie heeft.
+Gebruik homogeen wanneer onderdelen onderling uitwisselbaar zijn; gebruik heterogeen wanneer elk onderdeel
+een eigen functie heeft.
 
 ### Werkwijze voor meerdelige symbolen
 {: #multi-part-workflow}
 
-1. Bepaal eerst of het symbool homogeen of heterogeen is.
-2. Stel het aantal delen per behuizing in.
+1. Bepaal eerst of u homogeen of heterogeen wilt werken.
+2. Stel het aantal onderdelen per behuizing in.
 
-Voor homogene delen:
-- Het eerste deel bepaalt de vorm van het symbool en de plaatsing van de pinnen
+Voor homogene onderdelen:
+- Het eerste onderdeel bepaalt de vorm van het symbool en de indeling van de pennen
 
-Voor heterogene delen:
-- U kunt voor elk deel een andere vorm tekenen
+Voor heterogene onderdelen:
+- U kunt voor elk onderdeel een andere vorm tekenen
 
 ## Symboolattributen en -eigenschappen
 {: #symbol-attributes-and-properties}
 
 U kunt de attributen van het symbool bewerken in het paneel **Symbool** in het **onderste paneel**.
 
-Definieer naast afbeeldingen en pinnen ook de symboolattributen zorgvuldig:
+Definieer naast afbeeldingen en pennen ook zorgvuldig de symboolattributen:
 
 - Primaire symboolnaam (en eventuele aliassen),
-- Standaardindeling **Ref** (bijvoorbeeld `U?`, `R?`, `C?`),
-- Standaard **Naam/Waarde**,
-- Aanvullende attributen/parameters (bijvoorbeeld behuizing/footprint, velden voor het simulatiemodel
-	of projectspecifieke metadata).
+- Standaardindeling voor **Ref** (bijvoorbeeld `U?`, `R?`, `C?`),
+- Standaardwaarde voor **Naam/Waarde**,
+- Aanvullende attributen/parameters (bijvoorbeeld velden voor behuizing/footprint, simulatiemodel
+	of projectspecifieke metagegevens).
 
-## Opslaan, dupliceren, hernoemen, verwijderen
+## Een SPICE-model instellen
+{: #set-a-spice-model}
+
+Selecteer het symbool in een bewerkbare bibliotheek en open het tabblad **SPICE**. Kies **Gebundeld → SPICE-model zoeken…** om een model te koppelen en de pennentoewijzing te controleren, of **Aangepast** om de instantiesjabloon en modeltekst te bewerken. Sla de bibliotheek op om de standaardinstelling toe te passen op toekomstige plaatsingen. Zie [Gebundelde SPICE-modellen](../Bundled-SPICE-Models/#set-a-library-default-or-edit-a-custom-copy) voor de kiezer, modelselectie en aangepaste kopieën.
+
+## Opslaan, dupliceren, hernoemen en verwijderen
 {: #save-duplicate-rename-delete}
 
 Veelgebruikte acties voor symboolbeheer bij het bewerken van bibliotheken:
 
-- **Opslaan/bijwerken** om het huidige symbool en de wijzigingen op te slaan.
+- **Opslaan/bijwerken** van het huidige symbool om wijzigingen vast te leggen.
 - **Dupliceren** om varianten te maken (aanbevolen in plaats van een basissymbool
-	destructief te bewerken).
+	onomkeerbaar te bewerken).
 - **Hernoemen** bij het standaardiseren van namen.
-- **Verwijderen** van verouderde symbolen (maak de verwijdering ongedaan als dit per ongeluk is gebeurd).
+- Verouderde symbolen **verwijderen** (ongedaan maken als u er per ongeluk een hebt verwijderd).
 
-Gebruik dupliceren voor behuizings-/waardevarianten met dezelfde afbeeldingen maar verschillende
-standaardwaarden.
+Gebruik duplicatie voor varianten van behuizing/waarde die dezelfde afbeeldingen delen, maar verschillende
+standaardwaarden hebben.
 
-## Controlelijst voor validatie voordat u een symbool publiceert
+## Controlelijst voor het publiceren van een symbool
 {: #validation-checklist-before-publishing-a-symbol}
 
-Controleer het volgende voordat u een symbool breed toepast:
+Controleer het volgende voordat u een symbool op grote schaal gebruikt:
 
-1. De pinnen liggen op het raster en zijn eenvoudig aan te sluiten.
-2. De pinnummers zijn volledig en uniek per deel.
-3. De elektrische typen zijn voor alle pinnen juist ingesteld.
-4. Het gedrag van voedings-/verborgen pinnen is bewust gekozen.
+1. De pennen liggen op het raster en zijn eenvoudig aan te sluiten.
+2. De pennummers zijn volledig en uniek per onderdeel.
+3. De elektrische typen zijn voor alle pennen correct ingesteld.
+4. Het gedrag van voedingspennen/verborgen pennen is opzettelijk.
 5. De instelling voor meerdelige symbolen (indien van toepassing) is correct.
-6. De standaardwaarden voor naam/verwijzing zijn logisch.
-7. Het symbool is leesbaar op de normale zoomfactor van de tekening.
+6. De standaardwaarden voor naam/referentie zijn zinvol.
+7. Het symbool is leesbaar bij de normale zoom voor tekeningen.
 
 Plaats het symbool vervolgens in een testschema en voer DRC uit.
 
 ## Tips voor probleemoplossing
 {: #troubleshooting-tips}
 
-- **Draden maken geen verbinding met het symbool:** controleer de plaatsing van de pinuiteinden en de uitlijning op het raster.
-- **Onverwachte DRC-fouten:** controleer het elektrische type van elke pin.
-- **Verkeerd gedrag van delen in meerdelige symbolen:** controleer de deelkeuze en pinnummering
-	voor elk deel opnieuw.
-- **Voeding wordt niet automatisch verbonden:** controleer of de namen van voedingspinnen overeenkomen met de beoogde netnamen.
+- **Draden maken geen verbinding met het symbool:** controleer de plaatsing van de penuiteinden en de uitlijning op het raster.
+- **Onverwachte DRC-fouten:** controleer het elektrische type van elke pen.
+- **Onjuist gedrag van onderdelen in meerdelige symbolen:** controleer de onderdeelkeuze en pennummering voor elk onderdeel opnieuw.
+- **Voeding wordt niet automatisch aangesloten:** controleer of de namen van voedingspennen overeenkomen met de bedoelde netnamen.
 
 ## Gerelateerde pagina's
 {: #related-pages}
@@ -252,7 +256,7 @@ Plaats het symbool vervolgens in een testschema en voer DRC uit.
 - [Aangepaste symboolbibliotheken](../Custom-symbol-libraries/)
 - [Symboolbibliotheken gebruiken](../Using-Symbol-Libraries/)
 - [Symbolen](../Symbols/)
-- [Ontwerpregelcontrole](../Design-Rules-Check/)
+- [Ontwerpregels controleren](../Design-Rules-Check/)
 
 - Terug naar [Symbolen en bibliotheken](../Symbols-and-Libraries/)
-- Terug naar [Inhoudsopgave v4](../CONTENTS/)
+- Terug naar [Inhoud van v4](../CONTENTS/)

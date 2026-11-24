@@ -163,6 +163,14 @@ Continue with another batch after checking the first. Save the `.tclib` normally
 
 This asks for an editable design and calculations. To establish simulated behaviour, review the models and use [Simulation](../Simulation/) yourself; a confident AI explanation is not a recorded simulator run.
 
+### Find or attach a SPICE model
+
+Ask explicitly for SPICE or simulation support. The assistant can look up [bundled SPICE models](../Bundled-SPICE-Models/) without a web search and inspect their sources, assumptions and terminal order. If the exact model is unavailable, ask it to evaluate a documented drop-in candidate or a generic approximation. Confirm the package pinout independently.
+
+> Find a bundled SPICE model for Q1 and tell me how its terminals map to the symbol. Leave the drawing as it is until I review the source and assumptions.
+
+To change the drawing, ask the assistant to attach the model after checking the pin mapping. When you ask it to build a reusable library component with SPICE support, it can set a bundled or Custom definition for future placements.
+
 ### Add parts without redrawing the circuit
 
 > Add a 100 nF decoupling capacitor between U1's supply and ground, close to U1. Identify its actual supply pins before wiring. Keep the rest of the circuit, references and values unchanged, then check the affected nets.

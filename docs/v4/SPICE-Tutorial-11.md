@@ -176,7 +176,7 @@ Use **Export circuit** if you need to inspect or run the netlist separately.
 TinyCAD's Simulation sheet owns `.op`, `.tran`, `.ac` and the other analysis
 commands; do not paste them or `.end` into a component's SPICE properties.
 
-For an additional device model, expand **Setup → SPICE models**. Choose a
+For a part already in TinyCAD's catalog, use [Bundled SPICE models](../Bundled-SPICE-Models/) to choose a definition and verify its pin mapping. For an external file required by a Custom definition, expand **Setup → SPICE models**. Choose a
 `.lib`, `.cir` or `.mod` file, or enter its filename and model text. In either
 case, choose **Save model** to attach it. Use a simple filename such as
 `device.lib`. Then configure the

@@ -46,7 +46,7 @@ The example includes a retained reference acquisition. Seeing a result immediate
 
 ## Build a new simulation
 
-1. Place modelled components from **Standard → SPICE essentials**, or use the toolbar's **Simulation → SPICE components** submenu. **More…** opens the full SPICE essentials collection.
+1. Place modelled components from **Standard → SPICE essentials**, or use the toolbar's **Simulation → SPICE components** submenu. **More…** opens the full SPICE essentials collection. Its symbols already have a [bundled model and pin mapping](../Bundled-SPICE-Models/).
 2. Connect the pins with wires and give important nodes readable labels. Include a real connection to ground **0**: **Simulation → SPICE → Insert Ground** supplies the correct power symbol.
 3. Add a stimulus with **Simulation → SPICE → Insert Source**. Set its voltage/current type and waveform. Add [probes](../Simulation-Sources-and-Instruments/#probes-and-ground) if you want convenient charts.
 4. Choose **Simulation → Simulate** to add a **Simulation sheet**.
@@ -95,6 +95,7 @@ TinyCAD v3 cannot open `.dzn` files. Changing the extension to `.dsn` does not c
 - [Analyses and settings](../Simulation-Analyses/) — DC, transient, AC, noise, transfer function and pole-zero.
 - [Sources, probes and virtual instruments](../Simulation-Sources-and-Instruments/) — stimuli, measurement connections and loading.
 - [Charts, measurements and Circuit Explorer](../Simulation-Charts-and-Measurements/) — tuning, sweeps, requirements and studies.
+- [Bundled SPICE models](../Bundled-SPICE-Models/) — find, attach and customise a model.
 - [SPICE models and netlist output](../SPICE-output/) — templates, model files and external simulation.
 - [XSPICE and digital simulation](../XSPICE/) — Desktop event-driven and mixed-signal models.
 - [Troubleshooting](../Simulation-Troubleshooting/) — diagnose connectivity, models and numerical problems.

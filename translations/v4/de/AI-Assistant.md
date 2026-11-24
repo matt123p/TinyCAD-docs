@@ -177,6 +177,15 @@ Fahren Sie nach Prüfung des ersten Durchgangs mit einem weiteren fort. Speicher
 
 Damit wird ein bearbeitbarer Entwurf samt Berechnungen angefordert. Um das simulierte Verhalten zu ermitteln, prüfen Sie die Modelle und führen Sie selbst eine [Simulation](../Simulation/) aus. Eine überzeugend klingende KI-Erklärung ist kein protokollierter Simulationslauf.
 
+### SPICE-Modell finden oder zuordnen
+{: #find-or-attach-a-spice-model}
+
+Bitten Sie ausdrücklich um SPICE- oder Simulationsunterstützung. Der Assistent kann [gebündelte SPICE-Modelle](../Bundled-SPICE-Models/) ohne Websuche nachschlagen und deren Quellen, Annahmen und Anschlussreihenfolge prüfen. Falls das genaue Modell nicht verfügbar ist, bitten Sie ihn, einen dokumentierten, direkt einsetzbaren Ersatzkandidaten oder eine generische Näherung zu bewerten. Überprüfen Sie die Pinbelegung des Bauteilgehäuses unabhängig.
+
+> Finde ein gebündeltes SPICE-Modell für Q1 und erkläre mir, wie dessen Anschlüsse dem Symbol zugeordnet sind. Lass die Zeichnung unverändert, bis ich Quelle und Annahmen geprüft habe.
+
+Wenn die Zeichnung geändert werden soll, bitten Sie den Assistenten, das Modell nach Prüfung der Pinbelegung zuzuordnen. Wenn Sie ihn bitten, eine wiederverwendbare Bibliothekskomponente mit SPICE-Unterstützung zu erstellen, kann er für künftige Platzierungen eine gebündelte oder benutzerdefinierte (Custom) Definition festlegen.
+
 ### Bauteile hinzufügen, ohne die Schaltung neu zu zeichnen
 {: #add-parts-without-redrawing-the-circuit}
 

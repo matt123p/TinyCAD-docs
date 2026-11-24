@@ -115,6 +115,8 @@ v4:
         url: /v4/Simulation-Sources-and-Instruments/
       - title: "Charts, Measurements and Circuit Explorer"
         url: /v4/Simulation-Charts-and-Measurements/
+      - title: "Bundled SPICE Models"
+        url: /v4/Bundled-SPICE-Models/
       - title: "SPICE Models and Netlist Output"
         url: /v4/SPICE-output/
       - title: "XSPICE and Digital Simulation"

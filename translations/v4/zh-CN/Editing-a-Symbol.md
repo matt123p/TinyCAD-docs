@@ -205,6 +205,11 @@ TinyCAD 支持一个封装中包含多个逻辑单元的器件（例如四路门
 - 其他属性/参数（例如封装/封装库，仿真
 	模型字段，或项目专用元数据）。
 
+## 设置 SPICE 模型
+{: #set-a-spice-model}
+
+在可编辑的库中选择符号，然后打开其 **SPICE** 选项卡。选择 **Bundled → 查找 SPICE 模型…**，以关联模型并验证其引脚映射；或者选择 **Custom**，以编辑实例模板和模型文本。保存库，即可将默认设置应用于今后的放置操作。有关选择器、模型选择和自定义副本，请参阅[捆绑的 SPICE 模型](../Bundled-SPICE-Models/#set-a-library-default-or-edit-a-custom-copy)。
+
 ## 保存、复制、重命名、删除
 {: #save-duplicate-rename-delete}
 

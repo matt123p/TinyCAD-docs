@@ -4,7 +4,7 @@ layout: default
 # Modifier un symbole
 {: #editing-a-symbol}
 
-Pour générer un symbole à partir d’une fiche technique ou ajouter plusieurs composants à une bibliothèque ouverte, consultez le [guide de l’assistant IA.](../AI-Assistant/) Vous pouvez affiner ses résultats à l’aide des outils d’édition de cette page.
+Pour générer un symbole à partir d’une fiche technique ou ajouter plusieurs composants à une bibliothèque ouverte, consultez le [guide de l’assistant IA ](../AI-Assistant/). Vous pouvez affiner ses résultats à l’aide des outils de modification présentés sur cette page.
 
 ## Fonctionnement des symboles dans TinyCAD
 {: #how-symbols-work-in-tinycad}
@@ -13,13 +13,13 @@ Les symboles sont créés à partir d’objets standard disponibles dans la barr
 n’importe lequel de ces objets, à l’exception d’autres symboles.
 
 Si le symbole contient des objets dotés de fonctions spéciales (comme un élément d’alimentation
-ou un fil), ces objets seront alors traités comme des annotations.
+ou un fil), ces objets seront traités comme des annotations.
 
 Toutes leurs fonctions spéciales sont perdues lorsqu’ils sont utilisés dans un symbole. Seules les **broches** définissent
 les points de connexion électrique.
 
-Résumé :
-- un symbole est un dessin réutilisable accompagné d’attributs
+En résumé :
+- un symbole est un élément graphique réutilisable accompagné d’attributs
 - la connectivité électrique est définie par les **broches**
 - et les symboles sont stockés dans des **bibliothèques** (`.tclib`)
 
@@ -28,9 +28,9 @@ Résumé :
 
 Cette page suppose qu’une bibliothèque est déjà ouverte pour modification. Les étapes pour
 ouvrir ou créer une bibliothèque dépendent de l’utilisation de TinyCAD Web ou de
-l’application de bureau ; commencez donc par [Bibliothèques de symboles personnalisées](../Custom-symbol-libraries/).
+l’application de bureau ; commencez donc par consulter [Bibliothèques de symboles personnalisées](../Custom-symbol-libraries/).
 
-Si vous souhaitez parcourir les symboles et les placer plutôt que les modifier, consultez [Utiliser les bibliothèques de symboles](../Using-Symbol-Libraries/).
+Pour parcourir et placer des symboles plutôt que les modifier, consultez [Utiliser les bibliothèques de symboles](../Using-Symbol-Libraries/).
 
 ## Ouvrir ou créer le symbole
 {: #open-or-create-the-symbol}
@@ -38,86 +38,86 @@ Si vous souhaitez parcourir les symboles et les placer plutôt que les modifier,
 1. Ouvrez la bibliothèque.
 2. Pour modifier un symbole existant, cliquez dessus dans la liste des symboles de la bibliothèque.
 3. Pour créer un symbole, cliquez sur le bouton `+` dans la liste des symboles.
-4. Le symbole sélectionné ou nouveau se charge sur le canevas de l’éditeur.
+4. Le symbole sélectionné ou nouvellement créé est chargé sur le canevas de l’éditeur.
 
-Vous pouvez ensuite modifier les éléments graphiques, les broches et les attributs du symbole.
+Vous pouvez ensuite modifier le graphisme, les broches et les attributs du symbole.
 
 {% include video-player.html
 	src="/v4/images/video/Video 12.mp4"
 	width=1532
 	height=978
-	caption="Tutoriel vidéo montrant comment modifier une bibliothèque."
+	caption="Démonstration vidéo expliquant comment modifier une bibliothèque."
 %}
 
 
-## Dessiner la forme du symbole (éléments graphiques)
+## Dessiner la forme du symbole (graphisme)
 {: #drawing-the-symbol-shape-graphics}
 
 Utilisez les outils de dessin standard pour créer le contour du symbole :
 
-- lignes/polylignes pour les bords du boîtier,
-- rectangles/ellipses/arcs pour les contours courants des boîtiers,
+- lignes/polylignes pour les bords du corps,
+- rectangles/ellipses/arcs pour les contours courants de boîtier,
 - texte pour les marquages internes facultatifs.
 
-Veillez à ce que le symbole reste lisible au niveau de zoom normal du schéma. Les formes simples donnent généralement
-un meilleur résultat que les dessins très décoratifs.
+Veillez à ce que le symbole reste lisible au niveau de zoom normal du schéma. Les formes simples sont généralement
+plus efficaces qu’un graphisme très décoratif.
 
 ## Ajouter des broches
 {: #adding-pins}
 
-Les broches sont la seule partie électriquement active d’un symbole.
+Les broches sont la seule partie d’un symbole qui soit électriquement active.
 
 Pour chaque broche, définissez :
 
-- **Numéro de broche** (obligatoire et unique dans un composant),
+- **Numéro de broche** (obligatoire et unique pour un élément),
 - **Nom de broche** (facultatif, mais vivement recommandé),
-- **Type électrique** (obligatoire pour un DRC précis),
-- **Style/forme de broche** (apparence visuelle),
+- **Type électrique** (obligatoire pour un contrôle DRC précis),
+- **Style/forme de broche** (aspect visuel),
 - **Visibilité** du texte du nom/numéro de broche selon les besoins.
 
-Placez soigneusement les broches sur la grille afin que le câblage du schéma soit simple.
+Placez soigneusement les broches sur la grille afin de faciliter le câblage dans le schéma.
 
 {% include video-player.html
 	src="/v4/images/video/Video 13.mp4"
 	width=1532
 	height=978
-	caption="Tutoriel vidéo montrant comment ajouter des broches."
+	caption="Démonstration vidéo expliquant comment ajouter des broches."
 %}
 
 
-## Panneau des broches
+## Panneau Broche
 {: #pin-panel}
 
-Vous pouvez modifier les broches dans le panneau **Broche**, dans la zone du **panneau inférieur**.
+Vous pouvez modifier les broches dans le panneau **Broche** de la zone du **panneau inférieur**.
 
-Les modifications du panneau des broches sont **immédiates** : chaque changement de champ déclenche une action de mise à jour
-immédiate de la broche (sans étape distincte OK/Appliquer).
+Les modifications apportées dans le panneau Broche sont **appliquées en direct** : chaque changement de champ déclenche immédiatement
+une action de mise à jour de la broche (aucune étape distincte de validation/application).
 
-Sections du panneau des broches :
+Sections du panneau Broche :
 
 1. **Nom**
 	- Case à cocher Afficher (`show_name`)
-	- Champ de texte du nom (`name`)
+	- Champ de texte Nom (`name`)
 	- Case à cocher Centrer sur la broche (`centre_name`)
 2. **Numéro**
 	- Case à cocher Afficher (`show_number`)
-	- Champ de texte du numéro (`number`)
-	- Champ numérique du décalage (`number_pos`)
+	- Champ de texte Numéro (`number`)
+	- Champ numérique Décalage (`number_pos`)
 3. **Type**
 	- Liste déroulante Forme (`which`)
 	- Liste déroulante Électrique (`elec`)
-	- Champ numérique de longueur (`length`, plage de l’interface : 5..50)
+	- Champ numérique Longueur (`length`, plage de l’interface : 5..50)
 
 Remarques :
 
 - La forme détermine l’apparence du symbole et certains comportements visuels particuliers.
-- Les formes `Cross` et le type électrique `Not Connected` affichent tous deux une marque en croix.
-- Les styles de forme `Power` et `Hidden` sont affichés avec la couleur des broches masquées.
+- Les formes `Cross` et le type électrique `Not Connected` dessinent tous deux un marqueur en croix.
+- Les styles de forme `Power` et `Hidden` sont rendus avec la couleur des broches masquées.
 
-## Types électriques des broches et comportement du DRC
+## Types électriques des broches et comportement DRC
 {: #pin-electrical-types-and-drc-behavior}
 
-Il est essentiel de sélectionner le type électrique approprié. Le DRC utilise ces types pour détecter
+Le choix du type électrique approprié est essentiel. Le DRC utilise ces types pour détecter
 les erreurs de connexion.
 
 Valeurs actuelles dans le code source de TinyCAD v4 (`elec`) :
@@ -128,37 +128,37 @@ Valeurs actuelles dans le code source de TinyCAD v4 (`elec`) :
 - `3` Collecteur ouvert
 - `4` Passif
 - `5` Entrée/Sortie
-- `6` Non connecté
+- `6` Non connectée
 - `7` Libre
 - `8` Non spécifié
 - `9` Entrée d’alimentation
 - `10` Sortie d’alimentation
 - `11` Émetteur ouvert
 
-Recommandations générales :
+Conseils généraux :
 
 - Définissez les signaux réellement pilotés comme **Sortie**.
 - Définissez les signaux uniquement récepteurs comme **Entrée**.
-- Utilisez **Entrée d’alimentation/Sortie d’alimentation** lorsque les règles de pilotage de l’alimentation sont importantes pour le DRC.
-- Utilisez **Non connecté** uniquement pour les broches intentionnellement non connectées.
+- Utilisez **Entrée d’alimentation/Sortie d’alimentation** lorsque la sémantique de pilotage de l’alimentation est importante pour le DRC.
+- Utilisez **Non connectée** uniquement pour les broches intentionnellement non connectées.
 - Utilisez **Libre**/**Non spécifié** avec prudence et de manière cohérente dans toute une bibliothèque.
 
 Conséquences pratiques pour le DRC :
 
-- Un type de broche incorrect peut provoquer de fausses erreurs DRC (ou masquer de vraies erreurs).
-- Les noms des broches d’alimentation doivent correspondre aux noms d’alimentation prévus pour permettre le comportement automatique.
+- Un type de broche incorrect peut provoquer de fausses erreurs DRC (ou masquer des erreurs réelles).
+- Les noms des broches d’alimentation doivent correspondre aux noms d’alimentation prévus pour assurer le comportement automatique.
 
 ## Broches d’alimentation et broches masquées
 {: #power-and-hidden-pins}
 
-Les broches d’alimentation et les broches masquées sont visibles lors de la modification du symbole, mais sont généralement
+Les broches d’alimentation et les broches masquées sont visibles lors de la modification du symbole, mais elles sont généralement
 masquées lorsque le symbole est placé dans un dessin.
 
 Pour les **broches d’alimentation** en particulier :
 
 - Le nom de la broche sert de nom de réseau d’alimentation.
 - La connectivité est automatique lorsque les noms d’alimentation correspondent.
-- Les fils ne sont généralement pas dessinés directement jusqu’à ces broches d’alimentation masquées dans la
+- Les fils ne sont normalement pas tracés directement jusqu’à ces broches d’alimentation masquées dans la
 	vue du symbole placé.
 
 Pour les **broches masquées** :
@@ -166,86 +166,91 @@ Pour les **broches masquées** :
 - Elles restent électriquement actives.
 - Utilisez-les lorsque vous souhaitez dessiner vous-même la forme des broches et leurs libellés.
 
-## Symboles multiparties (parties par boîtier)
+## Symboles multiparties (éléments par boîtier)
 {: #multi-part-symbols-parts-per-package}
 
 TinyCAD prend en charge les composants comportant plusieurs unités logiques dans un même boîtier (par
 exemple, des portes quadruples).
 
-Deux styles de symboles multiparties sont utilisés :
+Deux types de symboles multiparties sont utilisés :
 
 1. Symboles multiparties **homogènes** :
-	 - les parties partagent le même contour,
-	 - elles ne diffèrent généralement que par leurs numéros de broches.
+	 - les éléments partagent le même contour,
+	 - ils diffèrent généralement uniquement par les numéros de broches.
 2. Symboles multiparties **hétérogènes** :
-	 - les parties peuvent avoir des contours différents,
-	 - les parties peuvent également avoir des ensembles/fonctions de broches différents.
+	 - les éléments peuvent avoir des contours différents,
+	 - les éléments peuvent également avoir des jeux de broches/fonctions différents.
 
-Utilisez le style homogène lorsque les parties sont interchangeables ; utilisez le style hétérogène lorsque chaque partie
+Utilisez le type homogène lorsque les éléments sont interchangeables ; utilisez le type hétérogène lorsque chaque élément
 remplit une fonction distincte.
 
 ### Procédure multipartie
 {: #multi-part-workflow}
 
-1. Décidez d’abord entre le style homogène et le style hétérogène.
-2. Définissez le nombre de parties par boîtier.
+1. Déterminez d’abord si le symbole sera homogène ou hétérogène.
+2. Définissez le nombre d’éléments par boîtier.
 
-Pour les parties homogènes :
-- La première partie définit la forme du symbole et la disposition des broches
+Pour les éléments homogènes :
+- Le premier élément définit la forme du symbole et la disposition des broches
 
-Pour les parties hétérogènes :
-- Vous pouvez dessiner une forme différente pour chaque partie
+Pour les éléments hétérogènes :
+- Vous pouvez dessiner une forme différente pour chaque élément
 
 ## Attributs et propriétés du symbole
 {: #symbol-attributes-and-properties}
 
 Vous pouvez modifier les attributs du symbole dans le panneau **Symbole**, dans le **panneau inférieur**.
 
-En plus des éléments graphiques et des broches, définissez soigneusement les attributs du symbole :
+Outre le graphisme et les broches, définissez soigneusement les attributs du symbole :
 
 - Nom principal du symbole (et alias, le cas échéant),
 - Format **Réf** par défaut (par exemple `U?`, `R?`, `C?`),
 - **Nom/Valeur** par défaut,
-- Attributs/paramètres supplémentaires (par exemple le boîtier/empreinte, les champs du
-	modèle de simulation ou les métadonnées propres au projet).
+- Attributs/paramètres supplémentaires (par exemple, boîtier/empreinte, champs de
+	modèle de simulation ou métadonnées propres au projet).
+
+## Définir un modèle SPICE
+{: #set-a-spice-model}
+
+Sélectionnez le symbole dans une bibliothèque modifiable et ouvrez son onglet **SPICE**. Choisissez **Fourni → Rechercher un modèle SPICE…** pour lier un modèle et vérifier la correspondance de ses broches, ou **Personnalisé** pour modifier le modèle d’instance et le texte du modèle. Enregistrez la bibliothèque pour appliquer cette valeur par défaut aux placements futurs. Consultez [Modèles SPICE fournis](../Bundled-SPICE-Models/#set-a-library-default-or-edit-a-custom-copy) pour en savoir plus sur le sélecteur, le choix des modèles et les copies personnalisées.
 
 ## Enregistrer, dupliquer, renommer, supprimer
 {: #save-duplicate-rename-delete}
 
 Actions courantes de gestion des symboles lors de la modification d’une bibliothèque :
 
-- **Enregistrer/mettre à jour** le symbole actuel pour enregistrer les modifications.
+- **Enregistrer/mettre à jour** le symbole actuel pour écrire les modifications.
 - **Dupliquer** pour créer des variantes (recommandé plutôt que de modifier
 	de manière destructive un symbole de base).
-- **Renommer** lors de la normalisation des noms.
-- **Supprimer** les symboles obsolètes (annulez la suppression si elle était accidentelle).
+- **Renommer** pour uniformiser les noms.
+- **Supprimer** les symboles obsolètes (annulez la suppression en cas d’erreur).
 
-Utilisez la duplication pour les variantes de boîtier/valeur qui partagent les mêmes éléments graphiques, mais dont les
-valeurs par défaut diffèrent.
+Utilisez la duplication pour créer des variantes de boîtier/valeur qui partagent le même graphisme, mais diffèrent par leurs
+valeurs par défaut.
 
-## Liste de vérification avant de publier un symbole
+## Liste de vérification avant la publication d’un symbole
 {: #validation-checklist-before-publishing-a-symbol}
 
-Avant d’utiliser largement un symbole, vérifiez que :
+Avant d’utiliser largement un symbole, vérifiez les points suivants :
 
 1. Les broches sont sur la grille et faciles à câbler.
-2. Les numéros de broches sont complets et uniques pour chaque partie.
+2. Les numéros de broches sont complets et uniques pour chaque élément.
 3. Les types électriques sont correctement définis pour toutes les broches.
 4. Le comportement des broches d’alimentation/masquées est intentionnel.
 5. La configuration multipartie (le cas échéant) est correcte.
 6. Les valeurs par défaut du nom/de la référence sont pertinentes.
-7. L’apparence du symbole est lisible au niveau de zoom normal du dessin.
+7. Le symbole reste lisible au niveau de zoom normal du dessin.
 
 Placez ensuite le symbole dans un schéma de test et lancez le DRC.
 
 ## Conseils de dépannage
 {: #troubleshooting-tips}
 
-- **Les fils ne se connectent pas au symbole :** vérifiez l’emplacement des extrémités des broches et
-	leur alignement sur la grille.
+- **Les fils ne se connectent pas au symbole :** vérifiez le positionnement des extrémités des broches et leur
+	alignement sur la grille.
 - **Erreurs DRC inattendues :** vérifiez le type électrique de chaque broche.
-- **Comportement incorrect d’une partie dans un symbole multipartie :** revérifiez la sélection de la partie et la numérotation des broches
-	pour chaque partie.
+- **Comportement incorrect d’un élément dans un symbole multipartie :** revérifiez la sélection de l’élément et la numérotation des broches
+	pour chaque élément.
 - **Connexion automatique de l’alimentation absente :** vérifiez que les noms des broches d’alimentation correspondent aux noms de réseau
 	prévus.
 

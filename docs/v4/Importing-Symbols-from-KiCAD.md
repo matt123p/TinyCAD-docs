@@ -31,7 +31,7 @@ Depending on how you are running TinyCAD, you will find it in one of these place
 - Desktop app (Electron): **File > Import > KiCad Symbols...**
 - Browser/file-system mode: the toolbar **File** menu, then **Import KiCad Symbols**
 
-After you choose a `.kicad_sym` file, TinyCAD reads all symbols in that library and then shows one of two import dialogs depending on what you are editing at the time.
+Select one `.kicad_sym` library and any companion SPICE files it needs. TinyCAD reads the library and shows the import dialog for the current drawing or library editor.
 
 ## Two import modes
 
@@ -93,6 +93,14 @@ This is the right route if you want to reuse imported symbols across multiple dr
 6. Click **Import selected**.
 7. Review the imported symbols in the library editor.
 8. Save the library.
+
+## Import SPICE models with symbols
+
+TinyCAD reads supported SPICE models embedded in a modern KiCad symbol library. For models stored separately, select the model files together with the `.kicad_sym` file in the file chooser. Include any model files referenced by `.include` as well.
+
+If a SPICE definition could not be imported, the dialog shows **SPICE model skipped** with the reason. You can still import the symbol artwork and properties. Open the imported symbol's **SPICE → Custom** settings to review the instance template and any model text in **Prologue**. TinyCAD uses the KiCad pin assignments and parameter overrides to construct the definition.
+
+Supported inputs include single-unit symbols with ordinary model cards or subcircuits, ideal resistors, capacitors and inductors, and DC voltage or current sources. For a legacy KiCad SPICE definition, open and save it in a recent KiCad version first. If you need a different model, use the [bundled model picker](../Bundled-SPICE-Models/).
 
 ## Supported symbol features
 

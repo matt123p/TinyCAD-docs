@@ -11,7 +11,8 @@ Read the acquisition status and diagnostic output before changing settings. Dist
 | Symptom | Check |
 | --- | --- |
 | Missing ground / floating circuit | Connect a power symbol or label with value **0**. A separate GND label is not automatically node 0. Check source returns and isolated subcircuits. |
-| Missing component model | Use a modelled library part or supply a template and model. Equipment pictures are not simulation models. |
+| Missing component model | Select the symbol and check **SPICE**. Use a modelled library part or [attach a bundled or Custom definition](../Bundled-SPICE-Models/). |
+| No models match the search | Clear the search or try a part alias or device family. A SPICE essentials symbol shows only its verified models. |
 | Missing attributes or invalid pin mapping | Inspect the component's SPICE properties and actual model terminal order. Instance overrides can change the defaults. |
 | Model/include not found | Attach model text and its dependencies to the Simulation sheet using matching logical filenames. A local absolute path or web URL is not fetched automatically. |
 | Analysis directives in a component | Remove legacy `.op`, `.tran`, `.ac`, `.end` and run-control text from component attributes. The integrated Simulation sheet owns analysis settings. |

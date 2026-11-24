@@ -6,6 +6,8 @@ layout: default
 
 TinyCAD supports both [integrated ngspice simulation](../Simulation/) and SPICE netlist export for an external simulator. Both depend on the component's SPICE templates and pin mapping. A symbol's appearance alone does not describe its electrical behaviour.
 
+For choosing a model already included in TinyCAD, start with [Bundled SPICE models](../Bundled-SPICE-Models/).
+
 ## Models, templates and pin order
 
 A resistor can use a native SPICE element. A transistor may need a `.model`; a more complex device can use a `.subckt`. A placed symbol's SPICE settings connect its physical pin numbers to the terminals expected by that model. Inspect the **SPICE** tab in symbol properties; instance attributes can override symbol defaults.
@@ -19,10 +21,10 @@ Templates use:
 For example, a resistor template may be:
 
 ```text
-R$(refnum) %(1) %(2) $(NAME)
+R$(refnum) %(1) %(2) $(Value)
 ```
 
-For reference R3, nets 7 and 9, and NAME `10k`, it produces:
+For reference R3, nets 7 and 9, and Value `10k`, it produces:
 
 ```spice
 R3 7 9 10k
@@ -34,11 +36,10 @@ Read the actual symbol and model together. Supply pins, hidden pins, transistor 
 
 ## Use a model in integrated simulation
 
-1. Start with a modelled symbol from a [bundled simulation library](../Bundled-Libraries/#libraries-with-simulation-models), or add an appropriate SPICE template to a custom symbol.
-2. Confirm that each template references existing attributes and the correct pins.
-3. On the Simulation sheet, attach any required model **text** and give attachments logical filenames. Typical text-file extensions are `.lib`, `.cir` and `.mod`.
-4. Resolve `.include` and `.lib` dependencies through those attachments. Keep required definitions with the drawing.
-5. Connect ground **0**, set the analysis on **Setup**, then run and inspect diagnostics.
+1. Start with a [bundled model](../Bundled-SPICE-Models/) or add an appropriate Custom template to your symbol. Confirm that the pin mapping matches the model's terminal order.
+2. TinyCAD resolves linked bundled models automatically. If a Custom model needs external text, use **Setup → SPICE models** to attach it with a logical filename such as `part.lib`, `part.cir` or `part.mod`.
+3. Resolve `.include` and `.lib` dependencies through those attachments. Save the drawing to keep the required definitions with it.
+4. Connect ground **0**, set the analysis on **Setup**, then run and inspect diagnostics.
 
 The managed engine does not fetch a model from a website or read an arbitrary absolute path on your computer. Supply the dependencies explicitly. It also does not execute arbitrary shell commands, `.control` scripts, startup files, externally supplied native modules or file-backed device dependencies. A vendor model using simulator-specific syntax may need adaptation; “SPICE compatible” does not guarantee identical dialects.
 
@@ -56,9 +57,9 @@ A netlist is a text description of devices and the nodes connecting them. Ground
 - Is the semiconductor or subcircuit terminal order correct?
 - Are all model definitions and included text available to the selected engine?
 
-For the integrated setup, open **Simulation sheet → Diagnostics → Generate circuit text**, inspect the expanded deck, then choose **Export circuit** to save `simulation.cir`. This includes the managed analysis.
+For the integrated setup, open **Simulation sheet → Diagnostics → Generate circuit text**, inspect the expanded deck, then choose **Export circuit** to save `simulation.cir`. This includes the managed analysis and may reference separate model files with `.include`. An external simulator needs copies of those files at the named locations.
 
-For legacy template-based export, use the separate **Generate Spice NetList** command in the browser File menu or Desktop Tools menu. It is separate from the PCB-oriented [Generate Netlist](../Generate-Netlist/) dialog. The exported analysis/run directives must suit the external engine. A companion tutorial `.cir` file can also be inspected directly. **Open a `.dzn` drawing in TinyCAD; a `.cir` netlist is not a TinyCAD drawing file.**
+For legacy template-based export, use the separate **Generate Spice NetList** command in the browser File menu or Desktop Tools menu. It is separate from the PCB-oriented [Generate Netlist](../Generate-Netlist/) dialog. This command embeds the referenced bundled definitions. Supply any external dependencies used by Custom templates, and check that the analysis and run directives suit the external engine. A companion tutorial `.cir` file can also be inspected directly. **Open a `.dzn` drawing in TinyCAD; a `.cir` netlist is not a TinyCAD drawing file.**
 
 ### Legacy export templates
 
