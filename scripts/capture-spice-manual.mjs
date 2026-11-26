@@ -46,10 +46,11 @@ async function screenshot(page,name){
  await page.evaluate(()=>{const n=document.getElementById('manual-caption');if(n)n.style.visibility='visible';});
  console.log('Screenshot',name);
 }
-async function capture(id,record,body,directory=videos){
+async function capture(id,record,body,directory=videos,{width=1600,height=1000,format='mp4',prepare}={}){
  const probe=process.argv.includes('--probe');if(probe)record=false;
  if(only&&!only.includes(id))return;
- const context=await browser.newContext({viewport:{width:1600,height:1000},deviceScaleFactor:1,locale:'en-US',colorScheme:'light',...(record?{recordVideo:{dir:temporary,size:{width:1600,height:1000}}}:{})});
+ const viewport={width,height};
+ const context=await browser.newContext({viewport,deviceScaleFactor:1,locale:'en-US',colorScheme:'light',...(record?{recordVideo:{dir:temporary,size:viewport}}:{})});
  const rawPage=await context.newPage();const actions=[];const page=record?await recordingPage(rawPage,actions):rawPage;page.setDefaultTimeout(20000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const frames=[];const started=Date.now();
  const step=async(text,action,hold=4200)=>{
@@ -60,13 +61,20 @@ async function capture(id,record,body,directory=videos){
  };
  try{
   await page.goto(base);await page.getByRole('button',{name:'Open Example',exact:true}).waitFor();await page.evaluate(()=>document.fonts.ready);
+  if(prepare)await prepare(rawPage);
   const trimAt=(Date.now()-started)/1000;
   const checks=await body({page,step,evidence:async name=>{await screenshot(page,id+'-'+name);}});
   if(record)expect(actions.length).toBeGreaterThan(3);
   for(let i=1;i<actions.length;i++)expect(actions[i].startedMs-actions[i-1].finishedMs).toBeGreaterThanOrEqual(4000);
   expect(errors).toEqual([]);
   const video=page.video();await context.close();
-  if(record){const source=await video.path();const dest=path.join(directory,id+'.mp4');
+  if(record&&format==='webm'){
+   execFileSync('ffmpeg',[
+    '-loglevel','error','-y','-i',await video.path(),'-ss',String(trimAt),'-an','-c:v','libvpx-vp9',
+    '-b:v','0','-crf','35','-deadline','good','-cpu-used','4',
+    path.join(directory,id+'.webm'),
+   ]);
+  }else if(record){const source=await video.path();const dest=path.join(directory,id+'.mp4');
    execFileSync('ffmpeg',['-loglevel','error','-y','-ss',String(Math.max(0,trimAt-.3)),'-i',source,'-an','-c:v','libx264','-preset','fast','-crf','24','-pix_fmt','yuv420p','-movflags','+faststart',dest]);
    execFileSync('ffmpeg',['-loglevel','error','-y','-ss','1','-i',dest,'-frames:v','1','-update','1',path.join(directory,id+'.jpg')]);
   }
@@ -124,56 +132,106 @@ try{
   await screenshot(page,'simulation-data');
   return {engine:'bundled browser WebAssembly ngspice',newRun:'complete / available',outVolts:2.5,sourceCurrentAmps:-.0025};
  });
- await capture('netlist-editor',false,async({page})=>{
-  const directory=path.join(root,'docs/v4/images/netlist-editor');await fs.mkdir(directory,{recursive:true});
-  const shots=[];async function shot(name,element){if(element)await element.screenshot({path:path.join(directory,name+'.png'),animations:'disabled'});else await page.screenshot({path:path.join(directory,name+'.png'),animations:'disabled'});shots.push(name+'.png');}
-  await page.setViewportSize({width:1280,height:800});
+ const netlistVideos=path.join(root,'docs/v4/videos/netlist-editor');
+ if(!only||only.includes('netlist-editor'))await fs.mkdir(netlistVideos,{recursive:true});
+ async function prepareDivider(page){
   await openExample(page,'SPICE tutorial','divider');
   await page.getByRole('button',{name:'Hide chart panel',exact:true}).click();
   await page.getByTitle('Hide side panel',{exact:true}).click();
-  await page.getByRole('button',{name:'Symbols',exact:true}).click();await page.getByRole('menuitem',{name:'Netlist',exact:true}).click();
+  await page.mouse.move(145,285);
+  await page.keyboard.down('Control');
+  for(let i=0;i<3;i++){
+   await page.mouse.wheel(0,-100);
+   await pause(180);
+  }
+  await page.keyboard.up('Control');
+  await page.mouse.move(8,80);
+  await page.evaluate(()=>document.querySelectorAll('#manual-pointer, #manual-click').forEach(el=>el.style.display='none'));
+  await pause(800);
+ }
+ await capture('netlist-editor',true,async({page,step})=>{
+  const directory=path.join(root,'docs/v4/images/netlist-editor');await fs.mkdir(directory,{recursive:true});
+  const shots=[];
+  async function shot(name,element=page,clip){
+   await page.evaluate(()=>document.querySelectorAll('#manual-caption, #manual-pointer, #manual-click').forEach(el=>el.style.visibility='hidden'));
+   try{
+    await element.screenshot({path:path.join(directory,name+'.png'),animations:'disabled',...clip&&{clip}});
+    shots.push(name+'.png');
+   }finally{
+    await page.evaluate(()=>document.querySelectorAll('#manual-caption, #manual-pointer, #manual-click').forEach(el=>el.style.visibility=''));
+   }
+  }
+  await shot('netlist-walkthrough-start');
+  const circuitClip={x:80,y:146,width:550,height:385};
+  await shot('netlist-wire-before',page,circuitClip);
+  await step('Open the Symbols menu in the bottom panel and switch to Netlist.',async()=>{
+   await page.getByRole('button',{name:'Symbols',exact:true}).click();
+   await page.getByRole('menuitem',{name:'Netlist',exact:true}).click();
+  });
   const out=page.getByRole('row').filter({has:page.getByRole('gridcell',{name:'OUT',exact:true})});
-  await expect(out).toHaveCount(1);await expect(out).toContainText('R1.');await expect(out).toContainText('R2.');
-  await out.hover();await shot('netlist-overview');
-  await page.getByRole('button',{name:'Netlist Types',exact:true}).click();
+  await expect(out).toHaveCount(1);await expect(out).toContainText('R1.2');await expect(out).toContainText('R2.1');
+  await expect(out.getByRole('combobox')).toHaveValue('default');
+  const readStrokes=()=>page.locator('#svg-drawing path[stroke-linecap="round"][style]').evaluateAll(paths=>paths.map(el=>({d:el.getAttribute('d'),color:el.style.stroke,width:el.style.strokeWidth})));
+  const before=await readStrokes();
+  await step('Open Netlist Types to define a reusable wire style.',()=>page.getByRole('button',{name:'Netlist Types',exact:true}).click());
   const types=page.locator('[role=dialog]').filter({has:page.getByText('Netlist Types',{exact:true})});
-  await types.getByRole('button',{name:'Add',exact:true}).click();
-  await types.locator('tbody tr').last().getByRole('textbox').fill('control');
-  await types.getByRole('button',{name:'Add',exact:true}).click();
-  await types.locator('tbody tr').last().getByRole('textbox').fill('power');
+  await step('Click Add and name the new type control.',async()=>{
+   await types.getByRole('button',{name:'Add',exact:true}).click();
+   await types.locator('tbody tr').last().getByRole('textbox').fill('control');
+  });
   const control=types.locator('tbody tr').nth(1);
-  await expect(control.getByRole('textbox')).toHaveValue('control');
-  await control.getByRole('spinbutton').fill('2');await control.getByRole('spinbutton').press('Tab');
-  await shot('netlist-types',types);
-  await types.getByRole('button',{name:'OK',exact:true}).click();
-  await page.getByPlaceholder('Search...',{exact:true}).fill('OUT');
-  await out.getByRole('combobox').click();await out.getByRole('combobox').press('ArrowDown');await page.getByRole('option',{name:'control',exact:true}).click();
-  await expect(out.getByRole('combobox')).toHaveValue('control');await shot('netlist-type-assignment',page.locator('.bottom-panel-wrapper'));
-  await page.getByPlaceholder('Search...',{exact:true}).fill('');
-  const net=await out.innerText();
-  // Save the types before opening secondary editors, keeping each illustration independent.
-  await page.getByRole('button',{name:'Netlist Types',exact:true}).click();
-  const savedControl=types.locator('tbody tr').filter({has:page.locator('input[value="control"]')});
-  await expect(savedControl).toHaveCount(1);
-  await savedControl.locator('td').nth(5).getByRole('button').click();
-  const attributes=page.getByRole('dialog',{name:'Edit Attributes',exact:true});
-  await attributes.getByRole('button',{name:'Add Attribute',exact:true}).click();
-  let attr=attributes.locator('tbody tr').last();await attr.getByRole('textbox').nth(0).fill('purpose');await attr.getByRole('textbox').nth(1).fill('Divider output signal');
-  await attributes.getByRole('button',{name:'Add Attribute',exact:true}).click();
-  attr=attributes.locator('tbody tr').last();await attr.getByRole('textbox').nth(0).fill('notes');await attr.getByRole('textbox').nth(1).fill('Between R1 and R2');
-  await shot('netlist-attributes',attributes);
-  await attributes.getByRole('button',{name:'OK',exact:true}).click();
-  await expect(types).toBeVisible();
-  await savedControl.locator('td').nth(1).locator('button').click();
+  const thickness=control.getByRole('spinbutton');
+  await step('Set Wire Thickness to 4. The normal thickness is 1.',async()=>{
+   await thickness.fill('4');
+   await thickness.press('Tab');
+   await expect(thickness).toHaveValue('4');
+  });
+  await step('Click the Wire Colour cell on the control row to open the colour picker.',()=>control.locator('td').nth(1).getByRole('button').click());
   const colour=page.getByRole('dialog',{name:'Edit Wire colour',exact:true});
-  await colour.getByRole('checkbox',{name:'Override colour',exact:true}).check();
-  await colour.locator('input').filter({visible:true}).nth(1).fill('007f5f');
-  await colour.locator('input').filter({visible:true}).nth(1).press('Tab');
-  await shot('netlist-colour-preview',colour);
-  const checks={example:'divider',net,type:'control',wireThickness:2,colourPreview:'#007f5f',attributePreview:{purpose:'Divider output signal',notes:'Between R1 and R2'}};
-  await fs.writeFile(path.join(directory,'capture-manifest.json'),JSON.stringify({applicationCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:app,encoding:'utf8'}).trim(),scope:'Real browser UI; bundled divider, live netlist, saved type assignment, colour preview and attributes editor. No circuit or UI data mocked.',captures:shots,checks},null,2)+'\n');
+  const hex=colour.locator('input').filter({visible:true}).nth(1);
+  await step('Enable Override colour, then enter 007F5F in the Hex field for green.',async()=>{
+   await colour.getByRole('checkbox',{name:'Override colour',exact:true}).check();
+   await hex.fill('007f5f');
+   await hex.press('Tab');
+  });
+  await shot('netlist-wire-colour',colour);
+  await step('Click OK in the colour picker, then OK again in Netlist Types.',()=>colour.getByRole('button',{name:'OK',exact:true}).click());
+  await expect(types).toBeVisible();
+  await shot('netlist-wire-type',types);
+  await types.getByRole('button',{name:'OK',exact:true,includeHidden:true}).click();
+  const focusedOut=out.and(page.locator('[style*="box-shadow: inset"]'));
+  await step('Click the OUT wire above R2. TinyCAD highlights its row in the Netlist view.',async()=>{
+   const resistor=await page.locator('#sheet-content-Circuit rect[width="10"][height="26"]').boundingBox();
+   await expect(focusedOut).toHaveCount(0);
+   await page.mouse.click(resistor.x+resistor.width/2,resistor.y-24);
+   await expect(focusedOut).toHaveCount(1);
+  });
+  await step('On the highlighted OUT row, open the Type list and choose control.',async()=>{
+   const type=out.getByRole('combobox');
+   await type.click();
+   await type.press('ArrowDown');
+   await page.getByRole('option',{name:'control',exact:true}).click();
+   await expect(type).toHaveValue('control');
+  });
+  await page.mouse.move(8,80);
+  await shot('netlist-wire-assignment');
+  await step('Click a blank spot on the schematic to see the green, thicker OUT wire.',async()=>{
+   await page.mouse.click(650,350);
+   await expect(focusedOut).toHaveCount(0);
+   await expect.poll(async()=>(await readStrokes()).filter(el=>el.color==='rgb(0, 127, 95)'&&el.width==='4').length).toBeGreaterThan(0);
+  },6500);
+  const after=await readStrokes();
+  const styled=after.filter(el=>el.color==='rgb(0, 127, 95)'&&el.width==='4');
+  for(const wire of styled){
+   expect(before).toEqual(expect.arrayContaining([expect.objectContaining({d:wire.d,width:'1'})]));
+  }
+  expect(after.filter(el=>!styled.includes(el))).toEqual(before.filter(el=>!styled.some(wire=>wire.d===el.d)));
+  await shot('netlist-wire-after',page,circuitClip);
+  const checks={example:'divider',net:'OUT',pins:['R1.2','R2.1'],selection:'Clicked the schematic wire and verified the OUT row was focused',type:'control',wireThickness:4,wireColour:'#007f5f',styledWireSegments:styled.length};
+  if(process.argv.includes('--probe'))return checks;
+  await fs.writeFile(path.join(directory,'capture-manifest.json'),JSON.stringify({applicationCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:app,encoding:'utf8'}).trim(),scope:'Real browser UI. The schematic’s SVG strokes verify the saved colour and thickness on OUT and the original styling of the other nets.',captures:shots,checks},null,2)+'\n');
   return checks;
- });
+ },netlistVideos,{width:1280,height:800,format:'webm',prepare:prepareDivider});
  await capture('multiple-sheets',true,async({page,step})=>{
   await page.context().grantPermissions(['clipboard-read','clipboard-write']);
   const tab=name=>page.locator('.sheet-heading').filter({hasText:new RegExp('^'+name+'$')});
@@ -243,6 +301,8 @@ try{
   await explorer.getByRole('tab',{name:'Requirements',exact:true}).click();await explorer.evaluate(node=>node.scrollIntoView({block:'start'}));await screenshot(page,'explorer-requirements');
   await explorer.getByRole('tab',{name:'Add tools',exact:true}).click();await explorer.getByRole('button',{name:'Add Analysis lab',exact:true}).click();await explorer.evaluate(node=>node.scrollIntoView({block:'start'}));await screenshot(page,'analysis-lab');return {file:'rc-low-pass.dzn',engine:'bundled browser WebAssembly ngspice',newRun:'complete / available'};
  });
+ if(!only?.every(id=>id==='netlist-editor')){
  const captures=[];for(const directory of [videos,path.join(root,'docs/v4/videos/simulation-tutorials/spice')]){for(const name of await fs.readdir(directory)){if(name.endsWith('.json')&&name!=='capture-manifest.json'){const entry=JSON.parse(await fs.readFile(path.join(directory,name),'utf8'));if(entry.recorded&&entry.actions?.length)captures.push(entry);}}}
  await fs.writeFile(path.join(videos,'capture-manifest.json'),JSON.stringify({applicationCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:app,encoding:'utf8'}).trim(),tool:'Playwright Chromium; MP4 encoded by ffmpeg',viewport:{width:1600,height:1000},minimumActionGapSeconds:4,clickMarker:'red/gold ring; blue pointer',scope:'Real UI and bundled solver. Fresh profiles; file picker substitutes only the explicit fixture file. Captions are narration overlays; screenshots hide the overlay. No drawing or solver result is fabricated.',captures:captures.filter(Boolean)},null,2)+'\n');
+ }
 }finally{await browser.close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));await fs.rm(temporary,{recursive:true,force:true});}

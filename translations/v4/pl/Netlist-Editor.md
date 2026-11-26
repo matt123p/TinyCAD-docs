@@ -1,56 +1,56 @@
 ---
 layout: default
 ---
-# Edytor listy sieci
+# Edytor listy połączeń
 {: #netlist-editor}
 
 `Netlist Editor` to nowa funkcja w TinyCAD v4.
 
 Użyj tej funkcji, gdy chcesz:
 
-- zobaczyć, jak TinyCAD pogrupował przewody i etykiety w sieci
+- sprawdzić, jak TinyCAD pogrupował przewody i etykiety w sieci
 - znaleźć miejsca użycia sieci na rysunku
 - przypisać sieci typ
 - zmienić wygląd grupy sieci na schemacie
 
-## Czym jest widok listy sieci
+## Czym jest widok listy połączeń
 {: #what-the-netlist-view-is}
 
 `Netlist Editor` to aktualizowana na bieżąco lista sieci na rysunku.
 
-Sieć to połączenie elektryczne. TinyCAD ustala je na podstawie:
+Sieć to połączenie elektryczne. TinyCAD wyznacza je na podstawie:
 
 - przewodów
 - wyprowadzeń
 - etykiet
 - symboli zasilania
 
-Lista jest aktualizowana na bieżąco podczas edytowania schematu.
+Lista jest aktualizowana na bieżąco podczas edycji schematu.
 
-## Jak go otworzyć
+## Jak otworzyć widok
 {: #how-to-open-it}
 
 1. Spójrz na dolny panel edytora.
 2. Jeśli widzisz `Symbols`, użyj przycisku trybu i przełącz na `Netlist`.
 
-Jeśli otwarty jest inny panel, ponieważ zaznaczono jakiś element, najpierw usuń zaznaczenie.
+Jeśli otwarty jest inny panel, ponieważ coś jest zaznaczone, najpierw usuń zaznaczenie.
 
-![Widok listy sieci pod schematem dzielnika, z podświetlonym wierszem OUT](../images/netlist-editor/netlist-overview.png)
+![Widok listy połączeń poniżej schematu dzielnika, z wyróżnionym wierszem OUT](../images/netlist-editor/netlist-overview.png)
 
-W dołączonym przykładzie dzielnika wiersz `OUT` łączy `R1.2` z `R2.1`.
-Najechanie kursorem na ten wiersz podświetla połączenie na rysunku.
+W tym przykładowym schemacie dzielnika wiersz `OUT` łączy `R1.2` z `R2.1`.
+Umieszczenie wskaźnika myszy nad tym wierszem wyróżnia połączenie na rysunku.
 
 ## Znaczenie poszczególnych kolumn
 {: #what-each-column-means}
 
 - `Net`: nazwa sieci lub jej wewnętrzny numer
-- `Sheet`: arkusz, na którym znaleziono główny element danego wiersza
-- `Connections`: liczba połączeń wyprowadzeń w tej sieci
+- `Sheet`: arkusz, na którym znaleziono główny element wiersza
+- `Connections`: liczba połączeń z wyprowadzeniami w tej sieci
 - `Labels`: etykiety znalezione w tej sieci
-- `Type`: typ listy sieci przypisany do tej sieci
-- `Symbols`: połączone elementy i wyprowadzenia w tej sieci
+- `Type`: typ listy połączeń przypisany do tej sieci
+- `Symbols`: podłączone elementy i wyprowadzenia w tej sieci
 
-## Jak korzystać z widoku listy sieci
+## Jak korzystać z widoku listy połączeń
 {: #how-to-use-the-netlist-view}
 
 ### Znajdowanie sieci
@@ -66,12 +66,12 @@ Możesz wyszukiwać według:
 - oznaczenia symbolu
 - nazwy typu
 
-### Podświetlanie sieci na rysunku
+### Wyróżnianie sieci na rysunku
 {: #highlight-a-net-in-the-drawing}
 
-Przesuń kursor myszy nad wiersz.
+Najedź wskaźnikiem myszy na wiersz.
 
-TinyCAD podświetli odpowiadające mu elementy sieci na schemacie, aby pokazać, gdzie znajduje się ta sieć.
+TinyCAD wyróżni odpowiadające mu elementy sieci na schemacie, aby pokazać, gdzie znajduje się ta sieć.
 
 ### Przechodzenie do sieci na rysunku
 {: #jump-to-a-net-in-the-drawing}
@@ -83,51 +83,51 @@ TinyCAD przejdzie do powiązanego elementu na właściwym arkuszu.
 ## Jak przypisać typ do sieci
 {: #how-to-assign-a-type-to-a-net}
 
-Każdy wiersz ma pole `Type`.
+Przy otwartym widoku **Netlist** kliknij przewód na schemacie, aby wyróżnić wiersz odpowiadającej mu sieci. Użyj listy **Type** w tym wierszu, aby wybrać istniejący typ. Aby utworzyć typ z własnym stylem przewodu, najpierw otwórz **Netlist Types** i zdefiniuj styl.
 
-Aby przypisać typ:
+Typ sieci to zestaw stylów rysowania, którego można używać ponownie. Przypisz ten sam typ do kilku sieci, aby nadać im jednakowy wygląd. Edycja typu aktualizuje wszystkie używające go sieci. Możesz też ustawić dla sieci danego typu własne kolory etykiet i symboli zasilania albo zapisać uwagi jako atrybuty. Zmiany stylu wpływają na wygląd rysunku, ale nie zmieniają połączeń elektrycznych.
 
-1. Kliknij pole `Type` dla danej sieci.
-2. Wybierz istniejący typ z listy.
-3. Aby najpierw zdefiniować nowy typ, użyj `Netlist Types` zgodnie z poniższym opisem, a następnie wróć do pola `Type` sieci.
+## Przykład – zmień kolor przewodu OUT dzielnika na zielony i zwiększ jego grubość
+{: #example--make-the-dividers-out-wire-green-and-thicker}
 
-![Lista sieci odfiltrowana do OUT, z przypisanym typem control](../images/netlist-editor/netlist-type-assignment.png)
+Otwórz dołączony rysunek `divider` za pomocą **Open Example** → **SPICE tutorial** i powiększ widok obwodu. W dolnym panelu przełącz z **Symbols** na **Netlist**. Etykieta **OUT** wskazuje sieć między wyprowadzeniami **R1.2** i **R2.1**. Początkowo ma ona typ `default` i standardową grubość przewodu.
 
-Tutaj wyszukanie `OUT` wyodrębnia sieć wyjściową dzielnika, a jej `Type` ustawiono na `control`.
+![Dzielnik przed zmianą stylu, z cienkim niebieskim przewodem OUT między R1 i R2](../images/netlist-editor/netlist-wire-before.png)
 
+### Tworzenie stylu przewodu
+{: #create-the-wire-style}
 
-## Czym jest typ sieci
-{: #what-a-net-type-is}
+1. Kliknij **Netlist Types**, kliknij **Add** i nadaj nowemu typowi nazwę `control`.
+2. W wierszu `control` ustaw **Wire thickness** na `4`. Wartość `1` oznacza standardową grubość linii. Naciśnij **Tab**, aby zatwierdzić wartość.
+3. W tym samym wierszu kliknij komórkę **Wire colour**. Zaznacz **Override colour** i wpisz `007F5F` w polu **Hex**, aby ustawić kolor zielony. Podgląd pokaże przewód z zastosowanymi oboma ustawieniami.
+4. Kliknij **OK** w oknie wyboru koloru. Sprawdź zieloną próbkę koloru i wartość grubości w wierszu `control`, a następnie kliknij **OK** w oknie **Netlist Types**, aby zapisać typ.
 
-Typ sieci to wielokrotnego użytku oznaczenie grupy sieci.
+![Okno wyboru koloru przewodu dla control, z zaznaczoną opcją Override colour i zielonym przewodem widocznym w podglądzie](../images/netlist-editor/netlist-wire-colour.png)
 
-Można go używać do:
+![Okno Netlist Types z zieloną próbką Wire colour i wartością Wire thickness równą 4 w wierszu control](../images/netlist-editor/netlist-wire-type.png)
 
-- porządkowania sieci w kategorie
-- nadawania pasującym sieciom tych samych kolorów
-- pogrubiania wybranych sieci na rysunku
-- przechowywania dodatkowych uwag w postaci atrybutów
+### Zastosowanie stylu do OUT
+{: #apply-the-style-to-out}
 
-Przykładowe nazwy typów:
+1. Kliknij przewód tuż nad **R2** na schemacie. TinyCAD wyróżni wiersz **OUT** w panelu **Netlist**.
+2. Otwórz listę **Type** w wyróżnionym wierszu i wybierz `control`.
+3. Kliknij pusty obszar schematu, aby usunąć zaznaczenie. Przewód między **R1.2** i **R2.1** jest teraz zielony i grubszy. Wybierz `default` z listy **Type**, aby przywrócić standardowy styl przewodu.
 
-- `power`
-- `control`
-- `logic`
-- `analog`
-- `high_current`
+![Zaznaczony przewód OUT na schemacie i wyróżniony odpowiadający mu wiersz Netlist z wybranym control](../images/netlist-editor/netlist-wire-assignment.png)
 
-## Jak otworzyć typy listy sieci
-{: #how-to-open-netlist-types}
+![Dzielnik po zmianie stylu, z grubszym zielonym przewodem OUT między R1 i R2](../images/netlist-editor/netlist-wire-after.png)
 
-1. Otwórz widok `Netlist` na dolnym pasku.
-2. Kliknij `Netlist Types`.
+Użyj polecenia **Save As**, aby zachować edytowaną kopię przykładu.
 
-Otworzy się edytor wszystkich dostępnych definicji typów.
+### Obejrzyj prezentację
+{: #watch-the-walkthrough}
 
-## Co można zrobić w typach listy sieci
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Przełącz na Netlist, utwórz zielony styl przewodu, a następnie kliknij przewód OUT, aby znaleźć jego wiersz i zastosować styl." %}
+
+## Co można zrobić w oknie Netlist Types
 {: #what-you-can-do-in-netlist-types}
 
-W oknie `Netlist Types` można:
+W oknie `Netlist Types` możesz:
 
 - dodać nowy typ
 - powielić istniejący typ
@@ -143,82 +143,32 @@ W oknie `Netlist Types` można:
 ## Typ domyślny
 {: #the-default-type}
 
-Typ `default` jest zawsze dostępny.
-
-Ważne informacje:
-
-- nie można zmienić jego nazwy
-- nie można go usunąć
-- używa standardowych kolorów rysunku
-
-Zmiana kolorów w wierszu `default` oznacza zmianę standardowych kolorów sieci używanych na rysunku.
-
-## Jak utworzyć nowy typ
-{: #how-to-create-a-new-type}
-
-1. Otwórz `Netlist Types`.
-2. Kliknij `Add`.
-3. Wprowadź nazwę.
-4. Ustaw wybrane kolory i grubość przewodu.
-5. Kliknij `OK`, aby zapisać.
-
-Następnie można przypisać nowy typ do sieci w widoku `Netlist` na dolnym pasku.
-
-![Edytor typów listy sieci z typami default, control i power oraz grubością przewodu 2 dla control](../images/netlist-editor/netlist-types.png)
-
-W przykładzie dodano typy `control` i `power`. Typ `control` ma grubość przewodu `2`; każdy przycisk koloru otwiera osobny edytor.
+Typ `default` ma stałą nazwę i grubość przewodu równą `1`. TinyCAD używa kolorów z tego wiersza jako standardowych kolorów sieci na rysunku. Sieci, którym nie przypisano typu, używają `default`.
 
 ## Jak powielić typ
 {: #how-to-duplicate-a-type}
 
-Przydaje się to, gdy chcesz utworzyć typ podobny do istniejącego.
+Ta funkcja jest przydatna, gdy chcesz utworzyć typ podobny do istniejącego.
 
-1. Zaznacz wiersz typu.
+1. Wybierz wiersz typu.
 2. Kliknij `Duplicate`.
-3. Zmień nazwę nowego typu.
-4. Zmień wybrane kolory lub ustawienia.
-5. Kliknij `OK`.
+3. Zmień nazwę kopii i dostosuj jej kolory lub grubość.
+4. Kliknij `OK`.
 
-## Jak zmienić kolory
-{: #how-to-change-colors}
+## Kolory etykiet i symboli zasilania
+{: #label-and-power-symbol-colours}
 
-Każdy typ może mieć osobne kolory dla:
-
-- przewodów
-- etykiet
-- elementów zasilania
-
-Aby zmienić kolor:
-
-1. Kliknij komórkę koloru w wierszu.
-2. Włącz `Override colour` dla typu innego niż domyślny, a następnie wybierz kolor.
-3. Kliknij `OK` w oknie dialogowym koloru.
-4. Kliknij `OK` w głównym oknie `Netlist Types`.
-
-Typy inne niż domyślny mogą używać własnego koloru albo standardowego koloru rysunku.
-
-![Edytor koloru przewodu z włączoną opcją Override colour i zielonym przewodem w podglądzie](../images/netlist-editor/netlist-colour-preview.png)
-
-Podgląd pokazuje wybrany kolor przewodu oraz kolory etykiety i symbolu zasilania. Użyj kart `Wire`, `Label` i `Power`, aby sprawdzić poszczególne ustawienia przed zapisaniem.
-
-## Jak zmienić grubość przewodu
-{: #how-to-change-wire-thickness}
-
-1. Znajdź wiersz typu.
-2. Zmień wartość `Wire Thickness`.
-3. Kliknij `OK`.
-
-Wpływa to na sposób rysowania na schemacie przewodów należących do sieci tego typu.
+Użyj kart **Wire**, **Label** i **Power** w oknie wyboru koloru, aby niezależnie edytować każdy kolor. W przypadku typu niestandardowego włącz **Override colour** na każdej karcie, którą chcesz dostosować. Karta z wyłączoną opcją zastępowania używa domyślnego koloru danego elementu na rysunku.
 
 ## Jak dodawać atrybuty
 {: #how-to-add-attributes}
 
-Atrybuty to proste wpisy nazwa/wartość zapisywane wraz z typem.
+Atrybuty to proste wpisy nazwa/wartość zapisywane razem z typem.
 
 Aby je dodać:
 
 1. Kliknij komórkę `Attributes` dla danego typu.
-2. Kliknij `Add Attribute`, a następnie wprowadź nazwę i wartość atrybutu. Powtórz czynność, aby dodać kolejne wpisy.
+2. Kliknij `Add Attribute`, a następnie wpisz nazwę i wartość atrybutu. Powtórz te czynności, aby dodać kolejne wpisy.
 3. Zapisz atrybuty.
 4. Kliknij `OK` w głównym oknie dialogowym.
 
@@ -226,17 +176,17 @@ Aby je dodać:
 
 Te przykładowe wpisy opisują przeznaczenie typu i dodają uwagę dotyczącą okablowania. Są przypisane do typu i mogą być współdzielone przez każdą przypisaną do niego sieć.
 
-Obecnie te atrybuty są przechowywane głównie wraz z rysunkiem. Przydają się do zachowania dodatkowych informacji o typie, nawet jeśli nie są jeszcze używane przez każdy format wyjściowy.
+Obecnie atrybuty te są przechowywane głównie razem z rysunkiem. Przydają się do zachowywania dodatkowych informacji o typie, nawet jeśli nie są jeszcze wykorzystywane przez wszystkie formaty wyjściowe.
 
 
 ## Powiązane strony
 {: #related-pages}
 
-- [Generowanie listy sieci](../Generate-Netlist/)
+- [Generowanie listy połączeń](../Generate-Netlist/)
 - [Zestawienie materiałów](../Bill-Of-Materials/)
 - [Sprawdzanie reguł projektowych](../Design-Rules-Check/)
 - [Wyjście SPICE](../SPICE-output/)
 - [Wyjście VHDL](../VHDL-output/)
 
-- Wróć do [Zaawansowane](../Advanced/)
-- Wróć do [spisu treści v4](../)
+- Wstecz do [Zaawansowane](../Advanced/)
+- Wstecz do [Spis treści v4](../)

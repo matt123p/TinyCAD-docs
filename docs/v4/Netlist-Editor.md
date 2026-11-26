@@ -75,44 +75,42 @@ TinyCAD jumps to the related item in the correct sheet.
 
 ## How to assign a type to a net
 
-Each row has a `Type` field.
+With the **Netlist** view open, click a wire on the schematic to highlight its net's row. Use the **Type** list on that row to choose an existing type. To create a type with its own wire style, open **Netlist Types** and define the style first.
 
-To assign a type:
+A net type is a reusable set of drawing styles. Assign the same type to several nets to give them the same appearance. Editing that type updates every net using it. You can also give nets of a type their own label and power symbol colours, or store notes as attributes. Styling changes the drawing's appearance while preserving its electrical connections.
 
-1. Click in the `Type` field for the net.
-2. Pick an existing type from the list.
-3. To define a new type first, use `Netlist Types` as described below, then return to the net's `Type` field.
+## Example – Make the divider's OUT wire green and thicker
 
-![Netlist filtered to OUT, with the control type assigned](../images/netlist-editor/netlist-type-assignment.png)
+Open the bundled `divider` drawing from **Open Example** → **SPICE tutorial** and zoom in on the circuit. In the bottom panel, switch from **Symbols** to **Netlist**. The **OUT** label identifies the net between pins **R1.2** and **R2.1**. It starts with the `default` type and normal wire thickness.
 
-Here, searching for `OUT` isolates the divider's output net, and its `Type` is set to `control`.
+![Divider before styling, showing the thin blue OUT wire between R1 and R2](../images/netlist-editor/netlist-wire-before.png)
 
+### Create the wire style
 
-## What a net type is
+1. Click **Netlist Types**, click **Add**, and name the new type `control`.
+2. In the `control` row, set **Wire thickness** to `4`. A value of `1` gives the normal line thickness. Press **Tab** to commit the value.
+3. In the same row, click the **Wire colour** cell. Tick **Override colour** and enter `007F5F` in the **Hex** field for green. The preview shows the wire with both settings.
+4. Click **OK** in the colour picker. Check the green swatch and the thickness value on the `control` row, then click **OK** in **Netlist Types** to save the type.
 
-A net type is a reusable label for a group of nets.
+![Wire colour picker for control, with Override colour ticked and the green wire visible in the preview](../images/netlist-editor/netlist-wire-colour.png)
 
-You can use it to:
+![Netlist Types showing the green Wire colour swatch and Wire thickness of 4 on the control row](../images/netlist-editor/netlist-wire-type.png)
 
-- organize nets into categories
-- give matching nets the same colors
-- make certain nets thicker in the drawing
-- store extra notes as attributes
+### Apply the style to OUT
 
-Examples of possible type names:
+1. Click the wire just above **R2** on the schematic. TinyCAD highlights the **OUT** row in the **Netlist** panel.
+2. Open the **Type** list on the highlighted row and choose `control`.
+3. Click a blank area of the schematic to clear the selection. The wire between **R1.2** and **R2.1** is now green and thicker. Choose `default` in the **Type** list to restore the normal wire style.
 
-- `power`
-- `control`
-- `logic`
-- `analog`
-- `high_current`
+![Selected OUT wire on the schematic and its highlighted Netlist row with control selected](../images/netlist-editor/netlist-wire-assignment.png)
 
-## How to open Netlist Types
+![Divider after styling, showing the thicker green OUT wire between R1 and R2](../images/netlist-editor/netlist-wire-after.png)
 
-1. Open the bottom bar `Netlist` view.
-2. Click `Netlist Types`.
+Use **Save As** to keep your edited copy of the example.
 
-This opens the editor for all available type definitions.
+### Watch the walkthrough
+
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Switch to Netlist, create a green wire style, then click the OUT wire to find its row and apply the style." %}
 
 ## What you can do in Netlist Types
 
@@ -131,29 +129,7 @@ In the `Netlist Types` window you can:
 
 ## The default type
 
-There is always a `default` type.
-
-Important things to know:
-
-- it cannot be renamed
-- it cannot be deleted
-- its colors are the normal drawing colors
-
-If you change the colors on the `default` row, you are changing the normal net colors used by the drawing.
-
-## How to create a new type
-
-1. Open `Netlist Types`.
-2. Click `Add`.
-3. Enter a name.
-4. Set the colors and wire thickness you want.
-5. Click `OK` to save.
-
-After that, you can assign the new type to nets from the bottom `Netlist` view.
-
-![Netlist Types editor with default, control and power types and a wire thickness of 2 for control](../images/netlist-editor/netlist-types.png)
-
-The example adds `control` and `power` types. The `control` type has a wire thickness of `2`; each colour button opens its own editor.
+The `default` type has a fixed name and a wire thickness of `1`. TinyCAD uses the colours on this row as the drawing's normal net colours. Nets without a type assignment use `default`.
 
 ## How to duplicate a type
 
@@ -161,38 +137,12 @@ This is useful when you want something similar to an existing type.
 
 1. Select the type row.
 2. Click `Duplicate`.
-3. Change the new name.
-4. Edit any colors or settings you want.
-5. Click `OK`.
+3. Rename the copy and adjust its colours or thickness.
+4. Click `OK`.
 
-## How to change colors
+## Label and power symbol colours
 
-Each type can have separate colors for:
-
-- wires
-- labels
-- power items
-
-To change a color:
-
-1. Click the color cell in the row.
-2. Enable `Override colour` for a non-default type, then pick a color.
-3. Click `OK` in the color dialog.
-4. Click `OK` in the main `Netlist Types` window.
-
-Non-default types can either use their own color or fall back to the default drawing color.
-
-![Wire colour editor showing Override colour enabled and a green wire in the preview](../images/netlist-editor/netlist-colour-preview.png)
-
-The preview shows the selected wire colour alongside the label and power-symbol colours. Use the `Wire`, `Label` and `Power` tabs to inspect each setting before saving.
-
-## How to change wire thickness
-
-1. Find the type row.
-2. Change the `Wire Thickness` value.
-3. Click `OK`.
-
-This affects how wires on nets of that type are drawn on the schematic.
+Use the **Wire**, **Label** and **Power** tabs in the colour picker to edit each colour independently. For a custom type, enable **Override colour** on each tab you want to customise. A tab with the override cleared uses the drawing's default colour for that item.
 
 ## How to add attributes
 

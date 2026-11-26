@@ -1,0 +1,213 @@
+{
+  "id": "netlist-editor",
+  "recorded": true,
+  "engine": null,
+  "checks": {
+    "example": "divider",
+    "net": "OUT",
+    "pins": [
+      "R1.2",
+      "R2.1"
+    ],
+    "selection": "Clicked the schematic wire and verified the OUT row was focused",
+    "type": "control",
+    "wireThickness": 4,
+    "wireColour": "#007f5f",
+    "styledWireSegments": 2
+  },
+  "minimumActionGapSeconds": 4,
+  "clickMarker": "red/gold ring for 3 seconds; persistent blue pointer",
+  "actions": [
+    {
+      "kind": "click",
+      "startedMs": 4729,
+      "target": "getByRole('button', { name: 'Symbols', exact: true })",
+      "point": {
+        "x": 1200,
+        "y": 627
+      },
+      "finishedMs": 4773
+    },
+    {
+      "kind": "click",
+      "startedMs": 9731,
+      "target": "getByRole('menuitem', { name: 'Netlist', exact: true })",
+      "point": {
+        "x": 1204,
+        "y": 694
+      },
+      "finishedMs": 9781
+    },
+    {
+      "kind": "click",
+      "startedMs": 15787,
+      "target": "getByRole('button', { name: 'Netlist Types', exact: true })",
+      "point": {
+        "x": 1114.890625,
+        "y": 627
+      },
+      "finishedMs": 15843
+    },
+    {
+      "kind": "click",
+      "startedMs": 21842,
+      "target": "locator('[role=dialog]').filter({ has: getByText('Netlist Types', { exact: true }) }).getByRole('button', { name: 'Add', exact: true })",
+      "point": {
+        "x": 309.671875,
+        "y": 131
+      },
+      "finishedMs": 21876
+    },
+    {
+      "kind": "fill",
+      "startedMs": 26847,
+      "target": "locator('[role=dialog]').filter({ has: getByText('Netlist Types', { exact: true }) }).locator('tbody tr').last().getByRole('textbox')",
+      "point": {
+        "x": 326.7421875,
+        "y": 234
+      },
+      "finishedMs": 26859
+    },
+    {
+      "kind": "fill",
+      "startedMs": 32823,
+      "target": "locator('[role=dialog]').filter({ has: getByText('Netlist Types', { exact: true }) }).locator('tbody tr').nth(1).getByRole('spinbutton')",
+      "point": {
+        "x": 760.59375,
+        "y": 234
+      },
+      "finishedMs": 32834
+    },
+    {
+      "kind": "click",
+      "startedMs": 38805,
+      "target": "locator('[role=dialog]').filter({ has: getByText('Netlist Types', { exact: true }) }).locator('tbody tr').nth(1).locator('td').nth(1).getByRole('button')",
+      "point": {
+        "x": 483.5,
+        "y": 234
+      },
+      "finishedMs": 38857
+    },
+    {
+      "kind": "check",
+      "startedMs": 44845,
+      "target": "getByRole('dialog', { name: 'Edit Wire colour', exact: true }).getByRole('checkbox', { name: 'Override colour', exact: true })",
+      "point": {
+        "x": 361,
+        "y": 243
+      },
+      "finishedMs": 44890
+    },
+    {
+      "kind": "fill",
+      "startedMs": 49863,
+      "target": "getByRole('dialog', { name: 'Edit Wire colour', exact: true }).locator('input').visible().nth(1)",
+      "point": {
+        "x": 391.3828125,
+        "y": 461.5
+      },
+      "finishedMs": 49882
+    },
+    {
+      "kind": "click",
+      "startedMs": 55937,
+      "target": "getByRole('dialog', { name: 'Edit Wire colour', exact: true }).getByRole('button', { name: 'OK', exact: true })",
+      "point": {
+        "x": 887,
+        "y": 627
+      },
+      "finishedMs": 55979
+    },
+    {
+      "kind": "click",
+      "startedMs": 61077,
+      "target": "locator('[role=dialog]').filter({ has: getByText('Netlist Types', { exact: true }) }).getByRole('button', { name: 'OK', exact: true, includeHidden: true })",
+      "point": {
+        "x": 913,
+        "y": 702
+      },
+      "finishedMs": 61169
+    },
+    {
+      "kind": "mouse.click",
+      "startedMs": 66651,
+      "point": {
+        "x": 490.21875,
+        "y": 257.625
+      },
+      "finishedMs": 66669
+    },
+    {
+      "kind": "click",
+      "startedMs": 72654,
+      "target": "getByRole('row').filter({ has: getByRole('gridcell', { name: 'OUT', exact: true }) }).getByRole('combobox')",
+      "point": {
+        "x": 811.796875,
+        "y": 721
+      },
+      "finishedMs": 72706
+    },
+    {
+      "kind": "click",
+      "startedMs": 77680,
+      "target": "getByRole('option', { name: 'control', exact: true })",
+      "point": {
+        "x": 807,
+        "y": 653
+      },
+      "finishedMs": 77738
+    },
+    {
+      "kind": "mouse.click",
+      "startedMs": 83286,
+      "point": {
+        "x": 650,
+        "y": 350
+      },
+      "finishedMs": 83315
+    }
+  ],
+  "steps": [
+    {
+      "atSeconds": 0.10199999999999987,
+      "text": "Open the Symbols menu in the bottom panel and switch to Netlist."
+    },
+    {
+      "atSeconds": 11.171999999999999,
+      "text": "Open Netlist Types to define a reusable wire style."
+    },
+    {
+      "atSeconds": 17.201999999999998,
+      "text": "Click Add and name the new type control."
+    },
+    {
+      "atSeconds": 28.209,
+      "text": "Set Wire Thickness to 4. The normal thickness is 1."
+    },
+    {
+      "atSeconds": 34.205000000000005,
+      "text": "Click the Wire Colour cell on the control row to open the colour picker."
+    },
+    {
+      "atSeconds": 40.201,
+      "text": "Enable Override colour, then enter 007F5F in the Hex field for green."
+    },
+    {
+      "atSeconds": 51.332,
+      "text": "Click OK in the colour picker, then OK again in Netlist Types."
+    },
+    {
+      "atSeconds": 62.51800000000001,
+      "text": "Click the OUT wire above R2. TinyCAD highlights its row in the Netlist view."
+    },
+    {
+      "atSeconds": 68.036,
+      "text": "On the highlighted OUT row, open the Type list and choose control."
+    },
+    {
+      "atSeconds": 79.149,
+      "text": "Click a blank spot on the schematic to see the green, thicker OUT wire."
+    }
+  ],
+  "pageErrors": []
+}

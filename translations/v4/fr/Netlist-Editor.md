@@ -6,26 +6,26 @@ layout: default
 
 Le `Netlist Editor` est une nouvelle fonctionnalité de TinyCAD v4.
 
-Utilisez cette fonctionnalité si vous souhaitez :
+Utilisez cette fonctionnalité pour :
 
-- voir comment TinyCAD a regroupé vos fils et étiquettes en nets
-- trouver où un net est utilisé dans le dessin
-- attribuer un type à un net
-- modifier l'apparence d'un groupe de nets dans le schéma
+- voir comment TinyCAD a regroupé vos fils et étiquettes en réseaux
+- trouver où un réseau est utilisé dans le dessin
+- attribuer un type à un réseau
+- modifier l'apparence d'un groupe de réseaux sur le schéma
 
-## Qu'est-ce que la vue Netlist ?
+## Présentation de la vue Netlist
 {: #what-the-netlist-view-is}
 
-Le `Netlist Editor` est une liste dynamique des nets de votre dessin.
+Le `Netlist Editor` est une liste dynamique des réseaux de votre dessin.
 
-Un net est une connexion électrique. TinyCAD la détermine à partir de vos :
+Un réseau est une connexion électrique. TinyCAD le détermine à partir de vos :
 
 - fils
 - broches
 - étiquettes
 - symboles d'alimentation
 
-La liste est dynamique et se met à jour automatiquement pendant que vous modifiez le schéma.
+La liste est dynamique et se met automatiquement à jour pendant que vous modifiez le schéma.
 
 ## Comment l'ouvrir
 {: #how-to-open-it}
@@ -33,103 +33,103 @@ La liste est dynamique et se met à jour automatiquement pendant que vous modifi
 1. Regardez le panneau inférieur de l'éditeur.
 2. Si vous voyez `Symbols`, utilisez le bouton de mode et passez à `Netlist`.
 
-Si un autre panneau est ouvert parce qu'un élément est sélectionné, désélectionnez-le d'abord.
+Si un autre panneau est ouvert parce qu'un élément est sélectionné, effacez d'abord la sélection.
 
-![Vue Netlist sous le schéma du diviseur, avec la ligne OUT mise en surbrillance](../images/netlist-editor/netlist-overview.png)
+![Vue Netlist sous le schéma du diviseur, avec la ligne OUT mise en évidence](../images/netlist-editor/netlist-overview.png)
 
 Dans cet exemple de diviseur fourni, la ligne `OUT` relie `R1.2` à `R2.1`.
-Le survol de cette ligne met la connexion en surbrillance dans le dessin.
+Le survol de cette ligne met en évidence la connexion dans le dessin.
 
 ## Signification de chaque colonne
 {: #what-each-column-means}
 
-- `Net` : le nom du net ou son numéro interne
-- `Sheet` : la feuille où se trouve l'élément principal de cette ligne
-- `Connections` : le nombre de connexions de broches sur ce net
-- `Labels` : les étiquettes trouvées sur ce net
-- `Type` : le type de netlist attribué à ce net
-- `Symbols` : les composants et broches connectés à ce net
+- `Net` : le nom du réseau ou son numéro interne
+- `Sheet` : la feuille où l'élément principal de cette ligne a été trouvé
+- `Connections` : le nombre de connexions de broches sur ce réseau
+- `Labels` : les étiquettes trouvées sur ce réseau
+- `Type` : le type de netlist attribué à ce réseau
+- `Symbols` : les composants et broches connectés à ce réseau
 
-## Comment utiliser la vue Netlist
+## Utilisation de la vue Netlist
 {: #how-to-use-the-netlist-view}
 
-### Trouver un net
+### Rechercher un réseau
 {: #find-a-net}
 
 Utilisez la zone de recherche pour filtrer la liste.
 
-Vous pouvez effectuer une recherche par :
+Vous pouvez rechercher par :
 
-- nom du net
+- nom du réseau
 - nom de la feuille
 - texte de l'étiquette
 - référence du symbole
 - nom du type
 
-### Mettre un net en surbrillance dans le dessin
+### Mettre en évidence un réseau dans le dessin
 {: #highlight-a-net-in-the-drawing}
 
-Passez la souris sur une ligne.
+Déplacez le pointeur de la souris sur une ligne.
 
-TinyCAD met en surbrillance les éléments correspondants du net dans le schéma pour vous indiquer où il se trouve.
+TinyCAD met en évidence les éléments du réseau correspondant dans le schéma afin que vous puissiez voir où se trouve ce réseau.
 
-### Accéder à un net dans le dessin
+### Accéder à un réseau dans le dessin
 {: #jump-to-a-net-in-the-drawing}
 
 Cliquez sur une ligne.
 
 TinyCAD accède à l'élément correspondant dans la feuille appropriée.
 
-## Comment attribuer un type à un net
+## Attribuer un type à un réseau
 {: #how-to-assign-a-type-to-a-net}
 
-Chaque ligne comporte un champ `Type`.
+Lorsque la vue **Netlist** est ouverte, cliquez sur un fil du schéma pour mettre en évidence la ligne de son réseau. Utilisez la liste **Type** de cette ligne pour choisir un type existant. Pour créer un type avec son propre style de fil, ouvrez **Netlist Types** et définissez d'abord le style.
 
-Pour attribuer un type :
+Un type de réseau est un ensemble réutilisable de styles de dessin. Attribuez le même type à plusieurs réseaux pour leur donner la même apparence. La modification de ce type met à jour tous les réseaux qui l'utilisent. Vous pouvez également définir des couleurs propres aux étiquettes et aux symboles d'alimentation des réseaux de ce type, ou enregistrer des notes sous forme d'attributs. La mise en forme modifie l'apparence du dessin tout en préservant ses connexions électriques.
 
-1. Cliquez dans le champ `Type` du net.
-2. Choisissez un type existant dans la liste.
-3. Pour définir d'abord un nouveau type, utilisez `Netlist Types` comme indiqué ci-dessous, puis revenez au champ `Type` du net.
+## Exemple – Mettre en vert et épaissir le fil OUT du diviseur
+{: #example--make-the-dividers-out-wire-green-and-thicker}
 
-![Netlist filtrée sur OUT, avec le type control attribué](../images/netlist-editor/netlist-type-assignment.png)
+Ouvrez le dessin `divider` fourni, depuis **Open Example** → **SPICE tutorial**, puis zoomez sur le circuit. Dans le panneau inférieur, passez de **Symbols** à **Netlist**. L'étiquette **OUT** identifie le réseau entre les broches **R1.2** et **R2.1**. Au départ, il utilise le type `default` et une épaisseur de fil normale.
 
-Ici, la recherche de `OUT` isole le net de sortie du diviseur, et son `Type` est défini sur `control`.
+![Diviseur avant la mise en forme, montrant le fin fil OUT bleu entre R1 et R2](../images/netlist-editor/netlist-wire-before.png)
 
+### Créer le style de fil
+{: #create-the-wire-style}
 
-## Qu'est-ce qu'un type de net ?
-{: #what-a-net-type-is}
+1. Cliquez sur **Netlist Types**, puis sur **Add**, et nommez le nouveau type `control`.
+2. Dans la ligne `control`, définissez **Wire thickness** sur `4`. La valeur `1` correspond à l'épaisseur de ligne normale. Appuyez sur **Tab** pour valider la valeur.
+3. Dans la même ligne, cliquez sur la cellule **Wire colour**. Cochez **Override colour**, puis saisissez `007F5F` dans le champ **Hex** pour obtenir du vert. L'aperçu montre le fil avec les deux réglages appliqués.
+4. Cliquez sur **OK** dans le sélecteur de couleurs. Vérifiez l'échantillon vert et la valeur d'épaisseur sur la ligne `control`, puis cliquez sur **OK** dans **Netlist Types** pour enregistrer le type.
 
-Un type de net est une étiquette réutilisable pour un groupe de nets.
+![Sélecteur de couleur de fil pour control, avec Override colour coché et le fil vert visible dans l'aperçu](../images/netlist-editor/netlist-wire-colour.png)
 
-Vous pouvez l'utiliser pour :
+![Netlist Types montrant l'échantillon vert Wire colour et Wire thickness réglé sur 4 sur la ligne control](../images/netlist-editor/netlist-wire-type.png)
 
-- organiser les nets en catégories
-- donner les mêmes couleurs aux nets correspondants
-- tracer certains nets avec des fils plus épais dans le dessin
-- enregistrer des notes supplémentaires sous forme d'attributs
+### Appliquer le style à OUT
+{: #apply-the-style-to-out}
 
-Exemples de noms de type possibles :
+1. Cliquez sur le fil juste au-dessus de **R2** dans le schéma. TinyCAD met en évidence la ligne **OUT** dans le panneau **Netlist**.
+2. Ouvrez la liste **Type** de la ligne mise en évidence et choisissez `control`.
+3. Cliquez sur une zone vide du schéma pour effacer la sélection. Le fil entre **R1.2** et **R2.1** est maintenant vert et plus épais. Choisissez `default` dans la liste **Type** pour rétablir le style de fil normal.
 
-- `power`
-- `control`
-- `logic`
-- `analog`
-- `high_current`
+![Fil OUT sélectionné dans le schéma et sa ligne Netlist mise en évidence, avec control sélectionné](../images/netlist-editor/netlist-wire-assignment.png)
 
-## Comment ouvrir Netlist Types
-{: #how-to-open-netlist-types}
+![Diviseur après la mise en forme, montrant le fil OUT épaissi et vert entre R1 et R2](../images/netlist-editor/netlist-wire-after.png)
 
-1. Ouvrez la vue `Netlist` de la barre inférieure.
-2. Cliquez sur `Netlist Types`.
+Utilisez **Save As** pour conserver votre copie modifiée de l'exemple.
 
-Cela ouvre l'éditeur de toutes les définitions de type disponibles.
+### Suivre la démonstration
+{: #watch-the-walkthrough}
 
-## Opérations possibles dans Netlist Types
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Passez à Netlist, créez un style de fil vert, puis cliquez sur le fil OUT pour trouver sa ligne et lui appliquer le style." %}
+
+## Fonctions disponibles dans Netlist Types
 {: #what-you-can-do-in-netlist-types}
 
 Dans la fenêtre `Netlist Types`, vous pouvez :
 
-- ajouter un type
+- ajouter un nouveau type
 - dupliquer un type existant
 - renommer un type
 - supprimer un type
@@ -140,77 +140,27 @@ Dans la fenêtre `Netlist Types`, vous pouvez :
 - ajouter vos propres attributs
 - prévisualiser le résultat avant l'enregistrement
 
-## Le type par défaut
+## Type par défaut
 {: #the-default-type}
 
-Il existe toujours un type `default`.
+Le type `default` a un nom fixe et une épaisseur de fil de `1`. TinyCAD utilise les couleurs de cette ligne comme couleurs de réseau normales du dessin. Les réseaux sans type attribué utilisent `default`.
 
-Points importants à savoir :
-
-- il ne peut pas être renommé
-- il ne peut pas être supprimé
-- ses couleurs sont les couleurs normales du dessin
-
-Si vous modifiez les couleurs de la ligne `default`, vous modifiez les couleurs normales des nets utilisées dans le dessin.
-
-## Comment créer un type
-{: #how-to-create-a-new-type}
-
-1. Ouvrez `Netlist Types`.
-2. Cliquez sur `Add`.
-3. Saisissez un nom.
-4. Définissez les couleurs et l'épaisseur des fils souhaitées.
-5. Cliquez sur `OK` pour enregistrer.
-
-Vous pourrez ensuite attribuer le nouveau type aux nets depuis la vue `Netlist` située en bas.
-
-![Éditeur Netlist Types avec les types default, control et power et une épaisseur de fil de 2 pour control](../images/netlist-editor/netlist-types.png)
-
-L'exemple ajoute les types `control` et `power`. Le type `control` a une épaisseur de fil de `2` ; chaque bouton de couleur ouvre son propre éditeur.
-
-## Comment dupliquer un type
+## Dupliquer un type
 {: #how-to-duplicate-a-type}
 
-C'est utile lorsque vous souhaitez créer un type similaire à un type existant.
+Cette fonction est utile lorsque vous souhaitez créer un type similaire à un type existant.
 
 1. Sélectionnez la ligne du type.
 2. Cliquez sur `Duplicate`.
-3. Modifiez le nouveau nom.
-4. Modifiez les couleurs ou les paramètres souhaités.
-5. Cliquez sur `OK`.
+3. Renommez la copie et modifiez ses couleurs ou son épaisseur.
+4. Cliquez sur `OK`.
 
-## Comment modifier les couleurs
-{: #how-to-change-colors}
+## Couleurs des étiquettes et des symboles d'alimentation
+{: #label-and-power-symbol-colours}
 
-Chaque type peut avoir des couleurs distinctes pour :
+Utilisez les onglets **Wire**, **Label** et **Power** du sélecteur de couleurs pour modifier chaque couleur séparément. Pour un type personnalisé, activez **Override colour** dans chaque onglet à personnaliser. Un onglet où cette option est désactivée utilise la couleur par défaut du dessin pour l'élément concerné.
 
-- les fils
-- les étiquettes
-- les éléments d'alimentation
-
-Pour modifier une couleur :
-
-1. Cliquez sur la cellule de couleur de la ligne.
-2. Activez `Override colour` pour un type autre que le type par défaut, puis choisissez une couleur.
-3. Cliquez sur `OK` dans la boîte de dialogue des couleurs.
-4. Cliquez sur `OK` dans la fenêtre principale `Netlist Types`.
-
-Les types autres que le type par défaut peuvent utiliser leur propre couleur ou reprendre la couleur de dessin par défaut.
-
-![Éditeur de couleur des fils montrant l'option Override colour activée et un fil vert dans l'aperçu](../images/netlist-editor/netlist-colour-preview.png)
-
-L'aperçu montre la couleur de fil sélectionnée, ainsi que les couleurs des étiquettes et des symboles d'alimentation. Utilisez les onglets `Wire`, `Label` et `Power` pour vérifier chaque paramètre avant l'enregistrement.
-
-## Comment modifier l'épaisseur des fils
-{: #how-to-change-wire-thickness}
-
-1. Repérez la ligne du type.
-2. Modifiez la valeur `Wire Thickness`.
-3. Cliquez sur `OK`.
-
-Cela modifie la façon dont les fils des nets de ce type sont tracés dans le schéma.
-
-## Comment ajouter des attributs
+## Ajouter des attributs
 {: #how-to-add-attributes}
 
 Les attributs sont de simples entrées nom/valeur enregistrées avec le type.
@@ -218,25 +168,25 @@ Les attributs sont de simples entrées nom/valeur enregistrées avec le type.
 Pour les ajouter :
 
 1. Cliquez sur la cellule `Attributes` du type.
-2. Cliquez sur `Add Attribute`, puis saisissez le nom et la valeur de l'attribut. Répétez l'opération pour les entrées supplémentaires.
+2. Cliquez sur `Add Attribute`, puis saisissez le nom et la valeur de l'attribut. Répétez l'opération pour ajouter d'autres entrées.
 3. Enregistrez les attributs.
 4. Cliquez sur `OK` dans la boîte de dialogue principale.
 
-![Éditeur d'attributs avec des entrées purpose et notes pour le type control](../images/netlist-editor/netlist-attributes.png)
+![Éditeur d'attributs avec les entrées purpose et notes pour le type control](../images/netlist-editor/netlist-attributes.png)
 
-Ces exemples d'entrées décrivent l'objectif du type et ajoutent une note de câblage. Elles sont associées au type et peuvent être partagées par chaque net qui lui est attribué.
+Ces exemples d'entrées décrivent l'objectif du type et ajoutent une note de câblage. Elles appartiennent au type et peuvent être partagées par tous les réseaux qui lui sont attribués.
 
-Pour le moment, ces attributs sont principalement enregistrés avec le dessin. Ils sont utiles pour conserver des informations supplémentaires sur les types, même s'ils ne sont pas encore utilisés par tous les formats de sortie.
+Pour l'instant, ces attributs sont principalement enregistrés avec le dessin. Ils permettent de conserver des informations supplémentaires sur le type, même s'ils ne sont pas encore utilisés par tous les formats de sortie.
 
 
 ## Pages associées
 {: #related-pages}
 
-- [Générer la netlist](../Generate-Netlist/)
+- [Générer une netlist](../Generate-Netlist/)
 - [Nomenclature](../Bill-Of-Materials/)
 - [Vérification des règles de conception](../Design-Rules-Check/)
 - [Sortie SPICE](../SPICE-output/)
 - [Sortie VHDL](../VHDL-output/)
 
-- Retour à [Avancé](../Advanced/)
-- Retour à [Sommaire v4](../)
+- Retour à [Fonctions avancées](../Advanced/)
+- Retour à [Sommaire de la v4](../)

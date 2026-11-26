@@ -6,17 +6,17 @@ layout: default
 
 De `Netlist Editor` is een nieuwe functie in TinyCAD v4.
 
-Gebruik deze functie als u het volgende wilt:
+Gebruik deze functie wanneer u het volgende wilt:
 
 - zien hoe TinyCAD uw draden en labels in netten heeft gegroepeerd
 - vinden waar een net in de tekening wordt gebruikt
 - een type aan een net toewijzen
-- de weergave van een groep netten in het schema wijzigen
+- wijzigen hoe een groep netten er op het schema uitziet
 
 ## Wat de Netlist-weergave is
 {: #what-the-netlist-view-is}
 
-De `Netlist Editor` is een live lijst van de netten in uw tekening.
+De `Netlist Editor` is een live lijst met de netten in uw tekening.
 
 Een net is een elektrische verbinding. TinyCAD bepaalt dit aan de hand van uw:
 
@@ -27,28 +27,28 @@ Een net is een elektrische verbinding. TinyCAD bepaalt dit aan de hand van uw:
 
 De lijst is live en wordt automatisch bijgewerkt terwijl u het schema bewerkt.
 
-## Zo opent u deze weergave
+## Hoe u de weergave opent
 {: #how-to-open-it}
 
 1. Kijk naar het onderste paneel van de editor.
 2. Als u `Symbols` ziet, gebruikt u de modusknop om over te schakelen naar `Netlist`.
 
-Als er een ander paneel is geopend omdat iets is geselecteerd, maakt u eerst de selectie ongedaan.
+Als er een ander paneel is geopend omdat er iets is geselecteerd, maakt u eerst de selectie ongedaan.
 
-![Netlist-weergave onder het schematische delerdiagram, met de rij OUT gemarkeerd](../images/netlist-editor/netlist-overview.png)
+![Netlist-weergave onder het delerschema, met de rij OUT gemarkeerd](../images/netlist-editor/netlist-overview.png)
 
-In dit meegeleverde voorbeeld van een deler verbindt de rij `OUT` `R1.2` met `R2.1`.
-Als u de muisaanwijzer op die rij plaatst, wordt de verbinding in de tekening gemarkeerd.
+In dit meegeleverde delervoorbeeld verbindt de rij `OUT` `R1.2` met `R2.1`.
+Als u de muisaanwijzer boven die rij houdt, wordt de verbinding in de tekening gemarkeerd.
 
-## Betekenis van de kolommen
+## Wat elke kolom betekent
 {: #what-each-column-means}
 
 - `Net`: de netnaam of het interne netnummer
 - `Sheet`: het blad waarop het hoofditem voor die rij is gevonden
 - `Connections`: het aantal pinaansluitingen op dat net
 - `Labels`: labels die op dat net zijn gevonden
-- `Type`: het aan dat net toegewezen netlisttype
-- `Symbols`: aangesloten onderdelen en pinnen op dat net
+- `Type`: het netlisttype dat aan dat net is toegewezen
+- `Symbols`: onderdelen en pinnen die op dat net zijn aangesloten
 
 ## De Netlist-weergave gebruiken
 {: #how-to-use-the-netlist-view}
@@ -69,9 +69,9 @@ U kunt zoeken op:
 ### Een net in de tekening markeren
 {: #highlight-a-net-in-the-drawing}
 
-Plaats de muisaanwijzer op een rij.
+Beweeg de muisaanwijzer over een rij.
 
-TinyCAD markeert de overeenkomende netitems in het schema, zodat u kunt zien waar dat net zich bevindt.
+TinyCAD markeert de bijbehorende netitems in het schema, zodat u kunt zien waar dat net zich bevindt.
 
 ### Naar een net in de tekening springen
 {: #jump-to-a-net-in-the-drawing}
@@ -83,46 +83,46 @@ TinyCAD springt naar het bijbehorende item op het juiste blad.
 ## Een type aan een net toewijzen
 {: #how-to-assign-a-type-to-a-net}
 
-Elke rij heeft een veld `Type`.
+Klik met de weergave **Netlist** geopend op een draad in het schema om de rij van het bijbehorende net te markeren. Gebruik de lijst **Type** op die rij om een bestaand type te kiezen. Als u een type met een eigen draadstijl wilt maken, opent u **Netlist Types** en definieert u eerst de stijl.
 
-Een type toewijzen:
+Een nettype is een herbruikbare verzameling tekenstijlen. Wijs hetzelfde type aan meerdere netten toe om ze er hetzelfde uit te laten zien. Als u dat type bewerkt, worden alle netten die het gebruiken bijgewerkt. U kunt netten van een type ook hun eigen label- en voedingssymboolkleuren geven, of notities als kenmerken opslaan. Stijlwijzigingen veranderen het uiterlijk van de tekening, maar behouden de elektrische verbindingen.
 
-1. Klik in het veld `Type` voor het net.
-2. Kies een bestaand type uit de lijst.
-3. Als u eerst een nieuw type wilt definiëren, gebruikt u `Netlist Types` zoals hieronder beschreven en keert u daarna terug naar het veld `Type` van het net.
+## Voorbeeld – Maak de OUT-draad van de deler groen en dikker
+{: #example--make-the-dividers-out-wire-green-and-thicker}
 
-![Netlist gefilterd op OUT, met het type control toegewezen](../images/netlist-editor/netlist-type-assignment.png)
+Open de meegeleverde tekening `divider` via **Open Example** → **SPICE tutorial** en zoom in op de schakeling. Schakel in het onderste paneel over van **Symbols** naar **Netlist**. Het label **OUT** identificeert het net tussen pinnen **R1.2** en **R2.1**. Het net gebruikt aanvankelijk het type `default` en heeft de normale draaddikte.
 
-Hier wordt door te zoeken naar `OUT` het uitgangsnet van de deler geïsoleerd en wordt het `Type` ingesteld op `control`.
+![Deler vóór het opmaken, met de dunne blauwe OUT-draad tussen R1 en R2](../images/netlist-editor/netlist-wire-before.png)
 
+### De draadstijl maken
+{: #create-the-wire-style}
 
-## Wat een nettype is
-{: #what-a-net-type-is}
+1. Klik op **Netlist Types**, klik op **Add** en geef het nieuwe type de naam `control`.
+2. Stel in de rij `control` **Wire thickness** in op `4`. De waarde `1` geeft de normale lijndikte. Druk op **Tab** om de waarde toe te passen.
+3. Klik in dezelfde rij op de cel **Wire colour**. Vink **Override colour** aan en voer voor groen `007F5F` in het veld **Hex** in. In het voorbeeld ziet u de draad met beide instellingen.
+4. Klik op **OK** in de kleurenkiezer. Controleer het groene kleurstaal en de diktewaarde op de rij `control` en klik vervolgens op **OK** in **Netlist Types** om het type op te slaan.
 
-Een nettype is een herbruikbaar label voor een groep netten.
+![Kleurenkiezer voor de draad, met Override colour aangevinkt en de groene draad zichtbaar in het voorbeeld](../images/netlist-editor/netlist-wire-colour.png)
 
-U kunt het gebruiken om:
+![Netlist Types met het groene kleurstaal voor Wire colour en een Wire thickness van 4 op de rij control](../images/netlist-editor/netlist-wire-type.png)
 
-- netten in categorieën in te delen
-- overeenkomende netten dezelfde kleuren te geven
-- bepaalde netten in de tekening dikker weer te geven
-- extra opmerkingen als attributen op te slaan
+### De stijl op OUT toepassen
+{: #apply-the-style-to-out}
 
-Voorbeelden van mogelijke typenamen:
+1. Klik op de draad vlak boven **R2** in het schema. TinyCAD markeert de rij **OUT** in het paneel **Netlist**.
+2. Open de lijst **Type** op de gemarkeerde rij en kies `control`.
+3. Klik op een leeg gebied van het schema om de selectie ongedaan te maken. De draad tussen **R1.2** en **R2.1** is nu groen en dikker. Kies `default` in de lijst **Type** om de normale draadstijl te herstellen.
 
-- `power`
-- `control`
-- `logic`
-- `analog`
-- `high_current`
+![Geselecteerde OUT-draad in het schema en de gemarkeerde Netlist-rij met control geselecteerd](../images/netlist-editor/netlist-wire-assignment.png)
 
-## Netlist Types openen
-{: #how-to-open-netlist-types}
+![Deler na het opmaken, met de dikkere groene OUT-draad tussen R1 en R2](../images/netlist-editor/netlist-wire-after.png)
 
-1. Open de `Netlist`-weergave in de onderste balk.
-2. Klik op `Netlist Types`.
+Gebruik **Save As** om uw bewerkte kopie van het voorbeeld te bewaren.
 
-Hiermee opent u de editor voor alle beschikbare typedefinities.
+### De uitlegvideo bekijken
+{: #watch-the-walkthrough}
+
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Schakel over naar Netlist, maak een groene draadstijl en klik vervolgens op de OUT-draad om de bijbehorende rij te vinden en de stijl toe te passen." %}
 
 ## Wat u kunt doen in Netlist Types
 {: #what-you-can-do-in-netlist-types}
@@ -135,108 +135,58 @@ In het venster `Netlist Types` kunt u:
 - een type verwijderen
 - de draadkleur wijzigen
 - de labelkleur wijzigen
-- de kleur van voedingssymbolen wijzigen
+- de kleur van het voedingssymbool wijzigen
 - de draaddikte wijzigen
-- uw eigen attributen toevoegen
+- uw eigen kenmerken toevoegen
 - het resultaat bekijken voordat u het opslaat
 
 ## Het standaardtype
 {: #the-default-type}
 
-Er is altijd een type `default`.
-
-Belangrijke zaken om te weten:
-
-- het kan niet worden hernoemd
-- het kan niet worden verwijderd
-- de kleuren zijn de normale tekenkleuren
-
-Als u de kleuren op de rij `default` wijzigt, verandert u de normale netkleuren die in de tekening worden gebruikt.
-
-## Een nieuw type maken
-{: #how-to-create-a-new-type}
-
-1. Open `Netlist Types`.
-2. Klik op `Add`.
-3. Voer een naam in.
-4. Stel de gewenste kleuren en draaddikte in.
-5. Klik op `OK` om op te slaan.
-
-Daarna kunt u het nieuwe type aan netten toewijzen via de `Netlist`-weergave onderaan.
-
-![Netlist Types-editor met de typen default, control en power en een draaddikte van 2 voor control](../images/netlist-editor/netlist-types.png)
-
-In het voorbeeld worden de typen `control` en `power` toegevoegd. Het type `control` heeft een draaddikte van `2`; elke kleurknop opent een eigen editor.
+Het type `default` heeft een vaste naam en een draaddikte van `1`. TinyCAD gebruikt de kleuren op deze rij als de normale netkleuren van de tekening. Netten zonder toegewezen type gebruiken `default`.
 
 ## Een type dupliceren
 {: #how-to-duplicate-a-type}
 
-Dit is handig als u iets wilt dat lijkt op een bestaand type.
+Dit is handig wanneer u iets wilt maken dat lijkt op een bestaand type.
 
 1. Selecteer de typerij.
 2. Klik op `Duplicate`.
-3. Wijzig de nieuwe naam.
-4. Bewerk de gewenste kleuren of instellingen.
-5. Klik op `OK`.
+3. Hernoem de kopie en pas de kleuren of dikte aan.
+4. Klik op `OK`.
 
-## Kleuren wijzigen
-{: #how-to-change-colors}
+## Kleuren van labels en voedingssymbolen
+{: #label-and-power-symbol-colours}
 
-Elk type kan aparte kleuren hebben voor:
+Gebruik de tabbladen **Wire**, **Label** en **Power** in de kleurenkiezer om elke kleur afzonderlijk te bewerken. Schakel voor een aangepast type op elk tabblad dat u wilt aanpassen **Override colour** in. Als de overschrijving op een tabblad is uitgeschakeld, gebruikt dat item de standaardkleur van de tekening.
 
-- draden
-- labels
-- voedingsitems
-
-Een kleur wijzigen:
-
-1. Klik op de kleurcel in de rij.
-2. Schakel voor een niet-standaardtype `Override colour` in en kies vervolgens een kleur.
-3. Klik op `OK` in het kleurendialoogvenster.
-4. Klik op `OK` in het hoofdvenster `Netlist Types`.
-
-Niet-standaardtypen kunnen hun eigen kleur gebruiken of terugvallen op de standaardtekenkleur.
-
-![Draadkleureditor met Override colour ingeschakeld en een groene draad in het voorbeeld](../images/netlist-editor/netlist-colour-preview.png)
-
-In het voorbeeld ziet u de geselecteerde draadkleur naast de label- en voedingssymboolkleuren. Gebruik de tabbladen `Wire`, `Label` en `Power` om elke instelling te bekijken voordat u opslaat.
-
-## De draaddikte wijzigen
-{: #how-to-change-wire-thickness}
-
-1. Zoek de typerij.
-2. Wijzig de waarde `Wire Thickness`.
-3. Klik op `OK`.
-
-Dit bepaalt hoe draden van netten van dat type in het schema worden getekend.
-
-## Attributen toevoegen
+## Kenmerken toevoegen
 {: #how-to-add-attributes}
 
-Attributen zijn eenvoudige naam/waarde-vermeldingen die bij het type worden opgeslagen.
+Kenmerken zijn eenvoudige naam/waarde-items die bij het type worden opgeslagen.
 
-Toevoegen:
+Zo voegt u ze toe:
 
-1. Klik op de cel `Attributes` voor het type.
-2. Klik op `Add Attribute` en voer vervolgens de attribuutnaam en -waarde in. Herhaal dit voor eventuele extra vermeldingen.
-3. Sla de attributen op.
-4. Klik op `OK` in het hoofddialoogvenster.
+1. Klik op de cel `Attributes` van het type.
+2. Klik op `Add Attribute` en voer vervolgens de naam en waarde van het kenmerk in. Herhaal dit voor eventuele extra items.
+3. Sla de kenmerken op.
+4. Klik op `OK` in het hoofdvenster.
 
-![Attributeneditor met de vermeldingen purpose en notes voor het type control](../images/netlist-editor/netlist-attributes.png)
+![Kenmerkeditor met items voor doel en notities voor het type control](../images/netlist-editor/netlist-attributes.png)
 
-Deze voorbeeldvermeldingen beschrijven het doel van het type en voegen een bedradingsopmerking toe. Ze horen bij het type en kunnen worden gedeeld door elk net waaraan het type is toegewezen.
+Deze voorbeelditems beschrijven het doel van het type en voegen een bedradingsnotitie toe. Ze horen bij het type en kunnen worden gedeeld door elk net dat eraan is toegewezen.
 
-Op dit moment worden deze attributen voornamelijk bij de tekening opgeslagen. Ze zijn handig om extra type-informatie bij te houden, ook als ze nog niet door elk uitvoerformaat worden gebruikt.
+Op dit moment worden deze kenmerken voornamelijk bij de tekening opgeslagen. Ze zijn handig om extra type-informatie bij te houden, ook als ze nog niet door elk uitvoerformaat worden gebruikt.
 
 
-## Gerelateerde pagina's
+## Verwante pagina's
 {: #related-pages}
 
 - [Netlist genereren](../Generate-Netlist/)
 - [Materiaallijst](../Bill-Of-Materials/)
-- [Ontwerpregelscontrole](../Design-Rules-Check/)
+- [Ontwerpregels controleren](../Design-Rules-Check/)
 - [SPICE-uitvoer](../SPICE-output/)
 - [VHDL-uitvoer](../VHDL-output/)
 
 - Terug naar [Geavanceerd](../Advanced/)
-- Terug naar [v4-inhoud](../)
+- Terug naar [v4-inhoudsopgave](../)

@@ -300,16 +300,20 @@ An optional third argument selects a separate directory containing the built
 renaming are checked through the real UI and temporary desktop configuration;
 personal settings and original library files are not changed.
 
-Netlist Editor screenshots are captured from the browser app with:
+Capture the Netlist Editor walkthrough from the browser app with the following command.
 
 ```sh
 node scripts/capture-spice-manual.mjs ../TinyCADv4 --only netlist-editor
 ```
 
-Five images and their capture manifest are written under
-`docs/v4/images/netlist-editor/`. The capture opens the bundled divider, checks
-its live OUT connection, creates net types, assigns `control`, and opens the
-colour preview and attributes editor through the real UI.
+The script writes screenshots and a capture manifest under
+`docs/v4/images/netlist-editor/`. Playwright records the walkthrough and
+FFmpeg encodes it as WebM (VP9). The video and its action log are written under
+`docs/v4/videos/netlist-editor/`. The walkthrough starts with the divider
+already open and zoomed in. It switches to the Netlist view, creates a green
+`control` type with wire thickness 4, then clicks the OUT wire to select its
+row and apply the type. The capture verifies the focused row and rendered
+wire style.
 
 AI assistant setup screenshots are captured from fresh browser and Electron builds:
 

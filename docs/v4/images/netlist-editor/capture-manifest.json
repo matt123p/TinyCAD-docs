@@ -1,22 +1,25 @@
 {
-  "applicationCommit": "b1fcc9bbb046adae3fdddd25f13e7a09aa822390",
-  "scope": "Real browser UI; bundled divider, live netlist, saved type assignment, colour preview and attributes editor. No circuit or UI data mocked.",
+  "applicationCommit": "4113d2271ebd70af7406c1828f8dfbddefbd3593",
+  "scope": "Real browser UI. The schematic’s SVG strokes verify the saved colour and thickness on OUT and the original styling of the other nets.",
   "captures": [
-    "netlist-overview.png",
-    "netlist-types.png",
-    "netlist-type-assignment.png",
-    "netlist-attributes.png",
-    "netlist-colour-preview.png"
+    "netlist-walkthrough-start.png",
+    "netlist-wire-before.png",
+    "netlist-wire-colour.png",
+    "netlist-wire-type.png",
+    "netlist-wire-assignment.png",
+    "netlist-wire-after.png"
   ],
   "checks": {
     "example": "divider",
-    "net": "9\nCircuit\n2\nOUT\nR1.2, R2.1",
+    "net": "OUT",
+    "pins": [
+      "R1.2",
+      "R2.1"
+    ],
+    "selection": "Clicked the schematic wire and verified the OUT row was focused",
     "type": "control",
-    "wireThickness": 2,
-    "colourPreview": "#007f5f",
-    "attributePreview": {
-      "purpose": "Divider output signal",
-      "notes": "Between R1 and R2"
-    }
+    "wireThickness": 4,
+    "wireColour": "#007f5f",
+    "styledWireSegments": 2
   }
 }
