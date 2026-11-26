@@ -27,7 +27,7 @@ independent options:
 
 Grid dots may be suppressed when zoomed out too far to display them clearly.
 
-![Settings dialog with separate Show the grid and Snap to grid checkboxes.](../images/grid-settings.png)
+![Settings dialog with separate Show the grid and Snap to grid checkboxes.](../Images/grid-settings.png)
 
 With objects selected, the arrow keys move them by the grid spacing when snapping
 is enabled. With snapping disabled, they move in small steps without being

@@ -30,7 +30,7 @@ De AC-instellingen controleren, de afsnijfrequentie aflezen en schakelen tussen 
 ### Schakeling en referentieresultaten
 {: #circuit-and-reference-results}
 
-![Berekende magnitude- en faserespons](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Berekende magnitude- en faserespons](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Het complexe resultaat interpreteren
 {: #interpret-the-complex-result}

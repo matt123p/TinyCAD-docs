@@ -43,7 +43,7 @@ Jeśli szukasz informacji o przeglądaniu i umieszczaniu symboli, a nie o ich ed
 Następnie możesz modyfikować grafikę, wyprowadzenia i atrybuty symbolu.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Film instruktażowy pokazujący edycję biblioteki."
@@ -79,7 +79,7 @@ Umieszczaj wyprowadzenia starannie na siatce, aby prowadzenie przewodów na
 schemacie było proste.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Film instruktażowy pokazujący dodawanie wyprowadzeń."

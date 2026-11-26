@@ -42,7 +42,7 @@ Se cerchi informazioni su come sfogliare e posizionare i simboli anziché modifi
 Puoi quindi modificare la grafica, i pin e gli attributi del simbolo.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Video dimostrativo su come modificare una libreria."
@@ -77,7 +77,7 @@ Per ogni pin, imposta:
 Posiziona con cura i pin sulla griglia, in modo che il cablaggio nello schema sia semplice.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Video dimostrativo su come aggiungere pin."

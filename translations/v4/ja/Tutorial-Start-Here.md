@@ -46,7 +46,7 @@ TinyCADで作業している間は、マニュアルまたはMarkdownビュー�
 
 ツールバーのパルス形のアイコンには、マウスを合わせると **Simulation** と表示されます。レッスンに **Simulation → Show charts** または **Simulation → SPICE components** とある場合は、そのアイコンのメニューを開きます。**Simulation sheet** は、図面内の独立したタブで、実験の設定と結果のビューが含まれています。
 
-![最初のdivider回路とシミュレーションチャートパネルを表示したTinyCAD](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![最初のdivider回路とシミュレーションチャートパネルを表示したTinyCAD](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 このアプリケーションのスクリーンショットには、開いたdividerと、回路の下のシートタブ、右側のチャートパネルが表示されています。主な出発点は、回路、Simulationシート、**Run**です。
 

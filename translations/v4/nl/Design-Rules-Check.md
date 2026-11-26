@@ -21,7 +21,7 @@ Streef naar nul ontwerpfouten om meer vertrouwen te krijgen in de correctheid va
 4. Selecteer **OK** om de controle uit te voeren.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Videohandleiding waarin wordt getoond hoe u de ontwerpregelcontrole uitvoert en gebruikt."

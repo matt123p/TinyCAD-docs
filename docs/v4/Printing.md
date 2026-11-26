@@ -10,14 +10,14 @@ layout: default
 
 In the File menu, choose **Export to PDF**. TinyCAD opens the drawing as a PDF in a new tab. Use the PDF viewer's print controls to print it.
 
-<img src="/v4/images/media/image12.png" alt="The File menu"  />
+<img src="/v4/Images/media/image12.png" alt="The File menu"  />
 
 
 ### Desktop App
 
 Choose **File → Print** to open **Print Preview**. The drawing appears on the left and the printer settings appear on the right.
 
-<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
+<img src="/v4/Images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
 #### Print directly
 

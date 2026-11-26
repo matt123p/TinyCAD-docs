@@ -13,7 +13,7 @@ title: 7. Rebuilding AMP.DSN and checking its bias
 `D:\Projects\TinyCAD\examples\AMP.DSN`のトポロジーを再構築したものです。タイトルは**Transistor Amplifier**で、原版ではMatt Pyne、1995年と記されています。TinyCADの
 SPICE essentialsライブラリの部品と、設定可能なシミュレーション用電源を使用しています。
 
-![シミュレーション用部品を使って再構築したAMP.DSN](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![シミュレーション用部品を使って再構築したAMP.DSN](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## 元の回路で維持したものとモデル化したもの
 {: #what-was-preserved-and-what-was-modelled}

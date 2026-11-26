@@ -13,8 +13,8 @@ Open **logic-nand**. X1 bevat ADC-bruggen, een
 tweeingangs-XSPICE-NAND-poort en een DAC-uitgangsbrug. Onafhankelijke pulsbronnen sturen
 A en B met verschillende snelheden aan. Voer de transiëntanalyse van 8 µs uit en geef A, B en Y weer.
 
-![NAND-testcircuit](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Berekende NAND-golfvormen](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![NAND-testcircuit](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Berekende NAND-golfvormen](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 De Booleaanse functie is `Y = NOT(A AND B)`:
 

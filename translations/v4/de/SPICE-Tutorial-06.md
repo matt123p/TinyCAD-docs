@@ -63,9 +63,9 @@ Ein Messzeitfenster von 160–200 ms festlegen und den Mittelwert der Spannung m
 ### Schaltung und Referenzergebnisse
 {: #circuit-and-reference-results}
 
-![Einweggleichrichter und Ladekondensator](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Einweggleichrichter und Ladekondensator](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Berechneter Einschwingvorgang und stationäre Welligkeit](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Berechneter Einschwingvorgang und stationäre Welligkeit](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Experimente, die die Zielkonflikte verdeutlichen
 {: #experiments-that-reveal-the-trade-offs}

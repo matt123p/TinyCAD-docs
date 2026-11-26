@@ -59,7 +59,7 @@ Otwieranie osadzonego przykładu, sprawdzanie wartości DC, zmiana R2 i uruchami
 ### Obwód i wyniki referencyjne
 {: #circuit-and-reference-results}
 
-![Obwód dzielnika napięcia wygenerowany z zapisanego rysunku](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Obwód dzielnika napięcia wygenerowany z zapisanego rysunku](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Przewidź wynik
 {: #predict-the-answer}
@@ -68,7 +68,7 @@ Prąd wynosi `I = 5 / (1000 + 1000) = 2.5 mA`. Na dolnym rezystorze występuje z
 `VOUT = I × 1000 = 2.5 V`. Po zmianie R2 na 2 kΩ równanie dzielnika daje
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Obliczone wyniki punktu pracy](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Obliczone wyniki punktu pracy](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 Prąd źródła wynosi −2.5 mA. Nie oznacza to błędu połączeń: SPICE definiuje prąd źródła
 jako wpływający do jego dodatniego zacisku. Źródło oddające energię ma zgodnie z tą

@@ -11,8 +11,8 @@ Les exemples de ce chapitre sont fournis avec TinyCAD. Choisissez **Open Example
 
 Ouvrez **logic-counter**. X1 contient quatre bascules D. La sortie inversée de chacune est renvoyée à son entrée D, de sorte qu’elle bascule à chaque impulsion d’horloge. La première étape reçoit CLK ; les étapes suivantes sont cadencées par la sortie inversée de l’étape précédente. Cela forme un compteur binaire asynchrone croissant.
 
-![Circuit de test d’un compteur quatre bits](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Sorties d’horloge divisée calculées](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Circuit de test d’un compteur quatre bits](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Sorties d’horloge divisée calculées](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 La période d’entrée est de 1 µs. La réinitialisation efface les étapes au démarrage, et le premier front de comptage survient vers 0,5 µs. Exécutez l’analyse transitoire enregistrée de 18 µs. Lisez chaque valeur une fois le transitoire de propagation terminé, par exemple à 0,8 µs, 1,8 µs, 2,8 µs, et ainsi de suite.
 

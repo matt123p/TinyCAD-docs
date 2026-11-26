@@ -39,7 +39,7 @@ De sinusoffset, piekamplitude en frequentie wijzigen en vervolgens de transiënt
 ### Schakeling en referentieresultaten
 {: #circuit-and-reference-results}
 
-![Voorbeelden van gemeten golfvormen](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Voorbeelden van gemeten golfvormen](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplitude, offset en timing
 {: #amplitude-offset-and-timing}

@@ -33,7 +33,7 @@ layout: default
 
 当 R1 = 1 kΩ、C = 1 µF 时，标称拐角频率约为 159.15 Hz。**Measurements** 包含截止频率、100 Hz 处的增益以及理想拐角频率处的相位；**Requirements** 检查截止频率是否在 150–170 Hz 范围内。
 
-![RC 配套图纸中的 Circuit Explorer 调参控件](../images/simulation/explorer-tuning.png)
+![RC 配套图纸中的 Circuit Explorer 调参控件](../Images/simulation/explorer-tuning.png)
 
 ## 调参而不更改已保存的电路
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ RC 配套文件预设了 1 kΩ、2.2 kΩ、4.7 kΩ、6.8 kΩ 和 10 kΩ。其理
 
 在 **Measurements** 中添加名称，选择信号/元件并展开其设置。设置有意义的时间/频率窗口以及任何必需的电平或参考值。元件/探针绑定使用图纸身份和参考标号，因此重新打开后仍可保持绑定。
 
-![预设的截止频率、增益和相位测量](../images/simulation/explorer-measurements.png)
+![预设的截止频率、增益和相位测量](../Images/simulation/explorer-measurements.png)
 
 | 测量 | 解释 |
 | --- | --- |
@@ -91,7 +91,7 @@ RC 配套文件预设了 1 kΩ、2.2 kΩ、4.7 kΩ、6.8 kΩ 和 10 kΩ。其理
 
 使用 **Requirements** 将命名测量与 **at least**、**at most** 或包含端点的 **between** 范围进行比较。单位必须匹配。结果为 **pass**、**fail** 或 **unavailable**；不可用的指标不能算作满足要求。
 
-![带有明确可接受范围的 RC 截止频率要求](../images/simulation/explorer-requirements.png)
+![带有明确可接受范围的 RC 截止频率要求](../Images/simulation/explorer-requirements.png)
 
 选择一个可用的测量以检查其依据和适用的原理图高亮显示。导出结果时保留测量定义、窗口和阈值。并非所有类型的信号或模型都支持完整的双向探针高亮显示。
 
@@ -100,7 +100,7 @@ DC 原理图叠加需要一次最新且已完成的工作点采集。电压以 0
 ## Analysis lab
 {: #analysis-lab}
 
-![Circuit Explorer 中的 Analysis lab 工作流](../images/simulation/analysis-lab.png)
+![Circuit Explorer 中的 Analysis lab 工作流](../Images/simulation/analysis-lab.png)
 
 ### 频率响应与放大器响应
 {: #frequency-and-amplifier-response}

@@ -23,7 +23,7 @@ Vous pouvez convertir cet ensemble en polygone en sélectionnant « Fermer le po
 Une fois converti en polygone, vous pouvez modifier son remplissage.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Présentation vidéo montrant comment dessiner et modifier un polygone."

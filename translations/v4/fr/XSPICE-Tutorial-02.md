@@ -13,8 +13,8 @@ Ouvrez **logic-nand**. X1 contient des ponts ADC,
 une porte NAND XSPICE à deux entrées et un pont de sortie DAC. Des sources d’impulsions indépendantes sollicitent
 A et B à des fréquences différentes. Lancez le transitoire de 8 µs et affichez A, B et Y.
 
-![Circuit de test NAND](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Formes d’onde NAND calculées](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![Circuit de test NAND](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Formes d’onde NAND calculées](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 La fonction booléenne est `Y = NOT(A AND B)`:
 

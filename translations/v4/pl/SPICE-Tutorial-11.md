@@ -121,7 +121,7 @@ sieć; nie tworzy napięcia zasilającego. Podłącz do tej sieci rzeczywiste ź
    około **3,333 V**. Starsza zachowana akwizycja nadal opisuje wcześniejszy obwód;
    zmiana wartości nie modyfikuje jej wyników.
 
-![Arkusz Simulation TinyCAD z analizą RC AC i wynikiem częstotliwości odcięcia](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![Arkusz Simulation TinyCAD z analizą RC AC i wynikiem częstotliwości odcięcia](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Ten zrzut ekranu aplikacji przedstawia widok **Konfiguracja** dla **rc-ac**,
 innego osadzonego przykładu. Filtr 1 kΩ/1 µF ma częstotliwość odcięcia około **159,15 Hz**. Otwórz go,
@@ -208,7 +208,7 @@ zawiera mostek analogowo-cyfrowy, bufor sterowany zdarzeniami i
 mostek cyfrowo-analogowy. Zwykłe źródło steruje wejściem analogowym;
 mostki udostępniają stany logiczne jako napięcia na wykresach TinyCAD.
 
-![Obliczone sygnały wejściowy i wyjściowy osadzonego bufora XSPICE](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Obliczone sygnały wejściowy i wyjściowy osadzonego bufora XSPICE](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Uruchom zapisaną analizę przejściową. Oczekuj impulsów 0–5 V o okresie 1 µs oraz
 opóźnienia przejścia na wyjściu wynoszącego około 20 ns, z niezerowymi czasami narastania i opadania. Powiększ wykres, aby sprawdzić

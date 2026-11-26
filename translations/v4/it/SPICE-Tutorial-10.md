@@ -41,7 +41,7 @@ Apri **rc-noise**. Richiede il rumore in uscita su OUT,
 riferito alla sorgente indipendente V1, da 1 Hz a 100 kHz a 27 °C.
 La sorgente ideale è priva di rumore; R1 contribuisce con rumore termico filtrato da C1.
 
-![Densità spettrale del rumore in uscita RC calcolata](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Densità spettrale del rumore in uscita RC calcolata](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 Il rumore totale in uscita è circa **64,2 nV RMS** in questa banda. Per un
 circuito RC ideale integrato da zero a frequenza infinita, il rumore quadratico medio del condensatore è `kT/C`, che corrisponde a circa 64,4 nV RMS a 300,15 K e 1 µF.

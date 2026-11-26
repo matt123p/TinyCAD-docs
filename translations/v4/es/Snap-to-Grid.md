@@ -29,7 +29,7 @@ opciones independientes:
 
 Es posible que los puntos de la cuadrícula no se muestren cuando el nivel de zoom sea demasiado bajo para verlos con claridad.
 
-![Cuadro de diálogo Settings con casillas independientes para Show the grid y Snap to grid.](../images/grid-settings.png)
+![Cuadro de diálogo Settings con casillas independientes para Show the grid y Snap to grid.](../Images/grid-settings.png)
 
 Con los objetos seleccionados, las teclas de flecha los mueven según el espaciado de la cuadrícula cuando el ajuste
 está activado. Si el ajuste está desactivado, se mueven en pasos pequeños sin que sus posiciones se

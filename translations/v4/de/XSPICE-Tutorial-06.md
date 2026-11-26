@@ -12,8 +12,8 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Open Ex
 Öffnen Sie **logic-filter**. Eine Impulsfolge mit 0–5 V und 10 kHz
 wird durch die XSPICE-Puffer- und DAC-Brücke geleitet und steuert anschließend einen physikalischen SPICE-Tiefpassfilter mit 1 kΩ/1 µF. Der hohe Pegel dauert in einer Periode von 100 µs 25 µs, sodass der nominale Tastgrad etwa 25 % beträgt. Aufgrund endlicher Eingangsflanken weicht der genaue, durch die Schwellenwerte definierte Tastgrad geringfügig davon ab.
 
-![Gemischt digitaler und analoger Filterkreis](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![Berechnetes PWM- und gefiltertes Ausgangssignal](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Gemischt digitaler und analoger Filterkreis](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![Berechnetes PWM- und gefiltertes Ausgangssignal](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Führen Sie die Transientenanalyse über 5 ms aus. Zeichnen Sie A, Y und FILTERED auf. Der digitale Pfad erhält die Impulsfunktion; das RC-Netzwerk bildet ihren Mittelwert und behält dabei eine gewisse Welligkeit bei.
 Der langfristige Mittelwert nähert sich `5 V × 0.25 ≈ 1.25 V`. Da τ = 1 ms beträgt,
@@ -31,7 +31,7 @@ Dieses Modell eignet sich gut zum Verständnis der PWM-Spannungswandlung. Es ist
 
 Öffnen Sie **logic-unknown**. Sein PWL-Eingang wird zunächst auf 0 V, dann auf 2 V und anschließend auf 5 V gehalten. Führen Sie die Simulation über 3 µs aus und untersuchen Sie das mittlere Plateau.
 
-![Berechnete analoge Darstellung eines undefinierten digitalen Zustands](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Berechnete analoge Darstellung eines undefinierten digitalen Zustands](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 Die niedrige und hohe Schwelle der ADC-Brücke liegen bei 1 V und 3 V. Das 2-V-Plateau liegt dazwischen, daher ist der ereignisgesteuerte Eingang undefiniert. Dieser unbekannte Zustand wird durch den Puffer weitergegeben. Die DAC-Brücke bildet ihn auf **2.5 V** ab, weil ihr Parameter `out_undef` diesen Anzeigewert ausdrücklich vorgibt.
 

@@ -13,8 +13,8 @@ Apri **logic-dff**. Fornisce stimoli analogici separati
 per D, CLK e RESET. All'interno di X1, i ponti alimentano un flip-flop D XSPICE;
 Q e NQ vengono riconvertite in uscite analogiche per la visualizzazione dei grafici.
 
-![Circuito di prova del flip-flop D](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Clock, dati, reset e Q calcolati](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Circuito di prova del flip-flop D](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Clock, dati, reset e Q calcolati](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Esegui l'analisi transitoria di 8 µs. A ogni fronte di salita del clock, Q acquisisce D e poi mantiene
 lo stato tra un fronte e l'altro. NQ ne è il complemento una volta esaurito il ritardo di propagazione. Il

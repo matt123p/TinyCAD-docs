@@ -14,7 +14,7 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Open Ex
 im Original Matt Pyne, 1995 zugeschrieben. Die Schaltung verwendet Bauteile aus der
 SPICE-Essentials-Bibliothek von TinyCAD sowie konfigurierbare Simulationsquellen.
 
-![Neu aufgebautes AMP.DSN mit Simulationsbauteilen](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![Neu aufgebautes AMP.DSN mit Simulationsbauteilen](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Was beibehalten und was modelliert wurde
 {: #what-was-preserved-and-what-was-modelled}

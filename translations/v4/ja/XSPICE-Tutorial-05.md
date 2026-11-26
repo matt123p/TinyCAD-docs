@@ -12,8 +12,8 @@ title: 5. Counters and divided clocks
 **logic-counter**を開きます。X1には4個のD
 フリップフロップがあります。それぞれの反転出力をDにフィードバックしているため、クロックが入るとトグルします。最初の段にはCLKが入力され、後続の段は直前の段の反転出力でクロックされます。これにより、リップル型の2進アップカウンターが構成されます。
 
-![4ビットカウンターのテスト回路](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![計算された分周クロック出力](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![4ビットカウンターのテスト回路](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![計算された分周クロック出力](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 入力周期は1 µsです。起動直後にリセットで各段がクリアされ、最初のカウントエッジは約0.5 µsです。保存済みの18 µs過渡解析を実行します。リップルが収まった後の値を、たとえば0.8 µs、1.8 µs、2.8 µsなどで読み取ります。
 

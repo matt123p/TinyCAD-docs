@@ -33,7 +33,7 @@ Pobierz plik [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), otwórz 
 
 Dla R1 = 1 kΩ i C = 1 µF nominalna częstotliwość graniczna wynosi około 159,15 Hz. **Pomiary** obejmuje częstotliwość odcięcia, wzmocnienie przy 100 Hz i fazę przy idealnej częstotliwości granicznej; **Wymagania** sprawdza, czy częstotliwość odcięcia mieści się w zakresie 150–170 Hz.
 
-![Elementy sterujące dostrajaniem Circuit Explorer na rysunku towarzyszącym RC](../images/simulation/explorer-tuning.png)
+![Elementy sterujące dostrajaniem Circuit Explorer na rysunku towarzyszącym RC](../Images/simulation/explorer-tuning.png)
 
 ## Dostrajanie bez zmieniania zapisanego obwodu
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Definicje przemiatania, wartości, jednostki, stan uruchomienia i przechwycone p
 
 W sekcji **Pomiary** dodaj nazwę, wybierz sygnał/komponent i rozwiń jego ustawienia. Określ odpowiednie okno czasu/częstotliwości oraz wymagane poziomy lub wartości odniesienia. Powiązania komponentów/sond używają tożsamości arkusza wraz z oznaczeniem, aby mogły być zachowane po ponownym otwarciu.
 
-![Przygotowane pomiary częstotliwości odcięcia, wzmocnienia i fazy](../images/simulation/explorer-measurements.png)
+![Przygotowane pomiary częstotliwości odcięcia, wzmocnienia i fazy](../Images/simulation/explorer-measurements.png)
 
 | Pomiar | Interpretacja |
 | --- | --- |
@@ -91,7 +91,7 @@ Dla częstotliwości odcięcia użyj jawnego liniowego wzmocnienia odniesienia l
 
 Użyj sekcji **Wymagania**, aby sprawdzić nazwany pomiar pod kątem warunku **co najmniej**, **co najwyżej** lub włącznie **między** wskazanymi wartościami. Jednostki muszą być zgodne. Wyniki to **spełnione**, **niespełnione** lub **niedostępne**; niedostępny parametr nie oznacza spełnienia wymagania.
 
-![Wymaganie częstotliwości odcięcia RC z jawnym dopuszczalnym zakresem](../images/simulation/explorer-requirements.png)
+![Wymaganie częstotliwości odcięcia RC z jawnym dopuszczalnym zakresem](../Images/simulation/explorer-requirements.png)
 
 Wybierz dostępny pomiar, aby sprawdzić jego dane potwierdzające i powiązane wyróżnienie na schemacie. Zachowaj definicje pomiarów, okna i progi wraz z wyeksportowanymi wynikami. Ogólne dwukierunkowe podświetlanie sond nie jest w pełni obsługiwane dla każdego rodzaju sygnału lub modelu.
 
@@ -100,7 +100,7 @@ Nakładka DC na schemacie wymaga świeżej, ukończonej akwizycji punktu pracy. 
 ## Laboratorium analiz
 {: #analysis-lab}
 
-![Przepływy pracy w laboratorium analiz Circuit Explorer](../images/simulation/analysis-lab.png)
+![Przepływy pracy w laboratorium analiz Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Odpowiedź częstotliwościowa i wzmacniacza
 {: #frequency-and-amplifier-response}

@@ -64,6 +64,9 @@ jobs:
       - name: Check built SEO metadata
         run: npm run check:seo
 
+      - name: Check built Netlist Editor images
+        run: npm run check:netlist-images
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -94,3 +97,6 @@ jobs:
 
       - name: Check deployed SEO assets
         run: npm run check:seo -- https://docs.tinycad.net
+
+      - name: Check deployed Netlist Editor images
+        run: npm run check:netlist-images -- https://docs.tinycad.net

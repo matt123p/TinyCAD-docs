@@ -30,7 +30,7 @@ TinyCAD 的 AI 助手可将书面指令、数据手册和电路图像转换为�
 
 若要创建可复用元件，请先[创建或打开自定义库以供编辑](../Custom-symbol-libraries/)，然后在该库窗口中打开 Chat。若要绘制电路，请保持目标图纸窗口处于活动状态。告诉助手你指的是哪个图纸页、元件参考标号或功能模块。目前 AI 符号检索和放置支持**单单元符号**；对于助手无法导入的多单元元件，请使用常规符号编辑器。
 
-{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="在 TinyCAD Desktop 中根据数据手册创建符号。AI 处理等待时间会以 12 倍速显示并在屏幕上标注；交互和结果以正常速度显示。" %}
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/Images/ai-assistant/chat-open-desktop.png" caption="在 TinyCAD Desktop 中根据数据手册创建符号。AI 处理等待时间会以 12 倍速显示并在屏幕上标注；交互和结果以正常速度显示。" %}
 
 ## 设置连接
 {: #set-up-a-connection}
@@ -42,7 +42,7 @@ TinyCAD 的 AI 助手可将书面指令、数据手册和电路图像转换为�
 2. 点击 **Click here to Sign in to use AI**，或点击面板标题栏中的 **AI settings** 齿轮。
 3. 在 **Step 1 — Choose provider** 中选择提供商，然后点击 **Next**。
 
-![显示提供商步骤的 AI 设置](../images/ai-assistant/setup-provider.png)
+![显示提供商步骤的 AI 设置](../Images/ai-assistant/setup-provider.png)
 
 一次只能连接一个提供商。
 
@@ -70,7 +70,7 @@ TinyCAD 的 AI 助手可将书面指令、数据手册和电路图像转换为�
 
 如果系统记住了某个账户，屏幕会显示 **Continue as …** 或 **Sign in with a different account**。TinyCAD 一次只保留一个账户。连接后，消息框上方会显示 **Using ChatGPT plan** 和 **Manage usage**。首次使用时会提示，请求将使用你的套餐额度或可用点数。
 
-![提供 Sign In with ChatGPT 或 Use API Key 选项的桌面版 AI 设置](../images/ai-assistant/setup-chatgpt-desktop.png)
+![提供 Sign In with ChatGPT 或 Use API Key 选项的桌面版 AI 设置](../Images/ai-assistant/setup-chatgpt-desktop.png)
 
 ChatGPT 登录需要符合条件的付费账户；账户、工作区和应用限制仍然适用。如果请求被拒绝，它不会悄悄切换为 API 密钥计费。有关账户套餐连接方式，请参阅 OpenAI 的[使用 ChatGPT 登录文档](https://developers.openai.com/siwc/token-sharing-open-source)。
 
@@ -83,20 +83,20 @@ ChatGPT 登录需要符合条件的付费账户；账户、工作区和应用限
 4. 对于 **OpenAI compatible**，还需输入服务的 **API base URL**。
 5. 点击 **Next**。TinyCAD 会检查连接并自动获取可用模型。
 
-![ChatGPT API 密钥输入页，包含隐藏密钥的输入框和提供商说明](../images/ai-assistant/setup-api-key.png)
+![ChatGPT API 密钥输入页，包含隐藏密钥的输入框和提供商说明](../Images/ai-assistant/setup-api-key.png)
 
 如果端点无法列出模型，TinyCAD 会在第 2 步要求输入 **Model ID**。输入提供商提供的准确标识符，然后再次点击 **Next**；系统会发送简短问候语以检查连接。这些检查可能会消耗提供商配额。连接失败时会停留在第 2 步并显示错误。
 
 对于 Gemini，请在 Google AI Studio 中创建或选择项目，并将其 API 密钥复制到 TinyCAD。Google 的 [Gemini API 定价页面](https://ai.google.dev/gemini-api/docs/pricing) 说明了哪些模型和用量符合免费层级的条件。付费模型或更高用量可能需要启用计费。
 
-![Google Gemini 设置，其中包含 Google AI Studio 密钥链接](../images/ai-assistant/setup-gemini.png)
+![Google Gemini 设置，其中包含 Google AI Studio 密钥链接](../Images/ai-assistant/setup-gemini.png)
 
 ### 3. 选择模型和思考级别
 {: #pick-a-model-and-thinking-level}
 
 成功连接后，在 **Step 3 — Pick Model** 中选择模型，调整 **Thinking**，然后点击 **Finish**。
 
-![最终设置步骤中的模型选择和 Thinking 滑块](../images/ai-assistant/setup-model.png)
+![最终设置步骤中的模型选择和 Thinking 滑块](../Images/ai-assistant/setup-model.png)
 
 此示例中的模型列表仅供参考；你看到的列表取决于提供商、端点和账户。ChatGPT 会显示连接返回的受支持 Sol、Luna 和 Astra 模型。最新版本显示在前面，较旧的选项位于 **More models** 下，并会记住最多六个最近选择。
 
@@ -113,7 +113,7 @@ ChatGPT 登录需要符合条件的付费账户；账户、工作区和应用限
 4. 使用 **Ollama API URL**，通常为 `http://localhost:11434/v1`，然后点击 **Next** 列出已安装的模型。
 5. 选择模型和思考级别，然后点击 **Finish**。
 
-![Ollama 设置，显示本地 API URL 和浏览器来源说明](../images/ai-assistant/setup-ollama.png)
+![Ollama 设置，显示本地 API URL 和浏览器来源说明](../Images/ai-assistant/setup-ollama.png)
 
 Ollama 连接接受 localhost/loopback URL。若使用远程服务器，请改选 **OpenAI compatible**。为本地模型提供足够的上下文容量，以容纳对话和 TinyCAD 工具；请参阅 [Ollama 的上下文配置](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size)。
 
@@ -124,7 +124,7 @@ Ollama 连接接受 localhost/loopback URL。若使用远程服务器，请改�
 
 在消息框中输入请求并点击 **Send**，或按 **Enter**。使用 **Shift+Enter** 换行。先提出范围明确的任务，检查结果后再要求进行下一项更改。
 
-![已连接的聊天面板，其中有一条准备发送的示例请求](../images/ai-assistant/chat-ready.png)
+![已连接的聊天面板，其中有一条准备发送的示例请求](../Images/ai-assistant/chat-ready.png)
 
 请明确指出目标图纸页、参考标号、数值和连接方式。“将 R2 的上端连接到 Control 图纸页上的 OUT”比“修好导线”更容易检查。扩展现有电路时，请说明哪些内容应保持不变。
 
@@ -212,7 +212,7 @@ TinyCAD 公共符号库搜索功能独立于常规网页浏览。符合条件的
 
 **AI settings** 齿轮会显示当前提供商和连接方式，并提供模型/思考控制项和 **Save**。对于密钥连接，可选择 **Clear API key**；对于 ChatGPT 账户，可选择 **Sign out**；对于本地 Ollama，可选择 **Disconnect Ollama**。如需设置其他提供商，请先断开当前连接。**Cancel** 会保留现有连接和已保存的设置。
 
-![现有 API 密钥连接的 AI 设置](../images/ai-assistant/connection-settings.png)
+![现有 API 密钥连接的 AI 设置](../Images/ai-assistant/connection-settings.png)
 
 API 密钥和对话历史保留在应用程序内存中；密钥不会与首选项或图纸一起保存。重新加载/重启后需要重新输入 API 密钥。非机密的提供商、端点、模型和思考偏好可以记住。ChatGPT 账户授权由本地运行时单独管理，重启后可能仍然有效；若操作系统支持，Desktop 会使用安全的 OS 加密。
 

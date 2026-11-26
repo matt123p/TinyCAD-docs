@@ -24,9 +24,9 @@ title: "4. Transient analysis: charging a capacitor"
 ### 回路と基準結果
 {: #circuit-and-reference-results}
 
-![RC 充電回路](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![RC 充電回路](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![計算されたコンデンサの充電曲線](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![計算されたコンデンサの充電曲線](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## 出力が瞬時に跳ね上がらず、曲線を描く理由
 {: #why-the-output-curves-rather-than-jumps}

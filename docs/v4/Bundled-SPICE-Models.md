@@ -12,7 +12,7 @@ Open **Standard → SPICE essentials** in the side panel, or use **Simulation �
 
 Place a symbol, select it on the drawing and open **SPICE** in the bottom **Symbol** panel. **Bundled** shows the linked model and its source. Ordinary symbol fields such as **Value**, **Wiper** and **Initial Voltage** still control TinyCAD Basic models that use those fields. For example, set a resistor's **Value** to `10k` to simulate 10 kΩ with its default **Ideal resistor** model.
 
-![The placed symbol’s SPICE tab shows Bundled selected and links to the TinyCAD Basic yellow LED model.](/v4/images/simulation/bundled-spice-properties.png)
+![The placed symbol’s SPICE tab shows Bundled selected and links to the TinyCAD Basic yellow LED model.](/v4/Images/simulation/bundled-spice-properties.png)
 
 To try this in a complete circuit, choose **Open Example → SPICE tutorial → divider** and select one of the resistors. Its **SPICE** tab shows the **Ideal resistor** link. Change the resistor value, then run the example's Operating Point setup again. The retained result represents the circuit before your edit.
 
@@ -23,13 +23,13 @@ To try this in a complete circuit, choose **Open Example → SPICE tutorial → 
 3. Select a row. The details below the table show the model description, source, terminal order and any adjustable parameters. Expand **View SPICE definition** to see the instance template and any model cards or subcircuits it uses. Select the source link for the original definition or the upstream archive and member filename.
 4. Review the pin mapping and set any parameter overrides. Choose **Select SPICE model**. In a drawing, this changes the selected placement and can be undone.
 
-![Find SPICE model dialog for a yellow LED. The selected circsim model shows its source and verified anode and cathode pin numbers.](/v4/images/simulation/bundled-spice-picker.png)
+![Find SPICE model dialog for a yellow LED. The selected circsim model shows its source and verified anode and cathode pin numbers.](/v4/Images/simulation/bundled-spice-picker.png)
 
 **SPICE essentials symbols** list only models with verified mappings for that symbol's pin layout. Some symbols have just the Basic default. For example, a yellow LED offers its Basic model and the circsim yellow LED. A stock NPN transistor can use the generic model or an alternative such as OpenJellyBean's `2N3904_OJ`, with the collector, base and emitter already mapped to pins 3, 1 and 2.
 
 **Other symbols**, including older placements without the library identity, can browse the full catalog for their edition. Review the suggested matches and select a distinct physical pin for each model terminal. Include supply pins, even when hidden on the schematic. Use the symbol's verified package pinout and the model's terminal order. Leave physical pins that the model omits outside the mapping. A temporary symbol with the wrong number or function of pins needs correction before it can represent the device.
 
-![Manual pin mapping for a 741 symbol in a custom library, with the five circsim LM741 terminals assigned to physical pins 3, 2, 6, 7 and 4.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Manual pin mapping for a 741 symbol in a custom library, with the five circsim LM741 terminals assigned to physical pins 3, 2, 6, 7 and 4.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 The example maps the circsim `LM741` model to a 741 symbol using pins 3 (non-inverting), 2 (inverting), 6 (output), 7 (positive supply) and 4 (negative supply). The model omits offset-null pins. For a multi-part library symbol, TinyCAD offers the pin numbers shared by the parts that will use the template. Choose a complete package model when your symbol and simulation need the full package.
 

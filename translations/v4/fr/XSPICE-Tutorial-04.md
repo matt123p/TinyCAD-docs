@@ -13,8 +13,8 @@ Ouvrez **logic-dff**. Il fournit des signaux de test analogiques distincts
 pour D, CLK et RESET. À l’intérieur de X1, des ponts alimentent une bascule D XSPICE ;
 Q et NQ sont reconverties en sorties analogiques pour l’affichage des courbes.
 
-![Circuit de test de la bascule D](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Horloge, données, réinitialisation et Q calculés](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Circuit de test de la bascule D](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Horloge, données, réinitialisation et Q calculés](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Lancez la simulation transitoire de 8 µs. À chaque front montant de l’horloge, Q capture D, puis conserve
 cet état entre les fronts. NQ en est le complément une fois le temps de propagation écoulé. Le

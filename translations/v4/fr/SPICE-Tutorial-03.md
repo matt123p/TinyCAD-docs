@@ -48,7 +48,7 @@ Modification du décalage, de l’amplitude de crête et de la fréquence du sig
 ### Circuit et résultats de référence
 {: #circuit-and-reference-results}
 
-![Exemples de formes d’onde mesurées](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Exemples de formes d’onde mesurées](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplitude, décalage et temporisation
 {: #amplitude-offset-and-timing}

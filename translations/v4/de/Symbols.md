@@ -45,7 +45,7 @@ Sie können ein neues Symbol zeichnen oder eine geeignete vorhandene Vorlage anp
 Das folgende Video zeigt, wie Sie ein Symbol finden und platzieren. Weitere Informationen zum Durchsuchen und Verwalten der Auswahl finden Sie unter [Symbolbibliotheken verwenden](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Videoanleitung zum Finden und Platzieren eines Symbols."
@@ -58,7 +58,7 @@ Das folgende Video zeigt, wie Sie ein Symbol finden und platzieren. Weitere Info
 
 Legen Sie beim Platzieren eines Symbols die Ausrichtung über die Dreh- und Spiegelungsschaltflächen in der Symbolleiste fest.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Symboltext bearbeiten und verschieben
@@ -71,7 +71,7 @@ Sie können auch Textfelder des Symbols (zum Beispiel Wert/Name/Referenz) unabh�
 Sie können den Text bearbeiten, indem Sie darauf klicken.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Videoanleitung zum Bearbeiten und Neupositionieren von Symboltext."

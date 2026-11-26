@@ -26,9 +26,9 @@ Affiner le pas de temps maximal et mesurer OUT à 1 ms ainsi que la constante de
 ### Circuit et résultats de référence
 {: #circuit-and-reference-results}
 
-![Circuit de charge RC](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![Circuit de charge RC](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Courbe calculée de charge du condensateur](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Courbe calculée de charge du condensateur](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Pourquoi la sortie évolue progressivement au lieu de faire un saut
 {: #why-the-output-curves-rather-than-jumps}

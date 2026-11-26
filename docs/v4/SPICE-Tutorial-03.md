@@ -46,7 +46,7 @@ Changing sine offset, peak amplitude and frequency, then rerunning the transient
 
 ### Circuit and reference results
 
-![Measured waveform examples](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Measured waveform examples](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplitude, offset and timing
 

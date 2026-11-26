@@ -15,8 +15,8 @@ attraversa il buffer XSPICE e il ponte DAC, quindi pilota un filtro passa-basso 
 ciclo di lavoro nominale è circa il 25%. I fronti d'ingresso non ideali rendono il ciclo di lavoro
 preciso, definito in base alle soglie, leggermente diverso.
 
-![Circuito con filtro misto digitale e analogico](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![PWM calcolata e uscita filtrata](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Circuito con filtro misto digitale e analogico](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![PWM calcolata e uscita filtrata](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Esegui l'analisi transitoria di 5 ms. Traccia A, Y e FILTERED. Il percorso digitale conserva la
 funzione a impulsi; la rete RC ne calcola la media, mantenendo una certa ondulazione.
@@ -43,7 +43,7 @@ o un modello del dispositivo quando sono importanti la corrente di carico e le p
 Apri **logic-unknown**. Il suo ingresso PWL è mantenuto a
 0 V, poi a 2 V e infine a 5 V. Esegui una simulazione di 3 µs e osserva il plateau intermedio.
 
-![Rappresentazione analogica calcolata di uno stato digitale indefinito](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Rappresentazione analogica calcolata di uno stato digitale indefinito](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 Le soglie bassa e alta del ponte ADC sono 1 V e 3 V. Il plateau a 2 V è compreso
 tra queste soglie, quindi l'ingresso a eventi è indefinito. Questo stato sconosciuto si propaga

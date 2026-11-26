@@ -23,7 +23,7 @@ layout: default
 
 使用 **Data**（数据）查看节点电压和支路电流。电压是相对于地 0 而言的。电流符号遵循器件声明的端子顺序；电源电流为负可能仅表示电源正在提供功率。[DC 教程](../SPICE-Tutorial-02/)演示了电压、电流和功率的分析过程。
 
-![分压器刚完成工作点分析后得到的标量电压和电流结果](../images/simulation/simulation-data.png)
+![分压器刚完成工作点分析后得到的标量电压和电流结果](../Images/simulation/simulation-data.png)
 
 ## 瞬态：随时间变化的特性
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ AC 分析会先求解工作点，在该点对非线性器件进行线性化，�
 
 将源的 **AC amplitude**（AC 幅值）和相位与瞬态波形设置分开设置。对于单输入电压传递特性，AC 幅值为 **1 V**、相位为 **0°**，便于解读结果。仅设置瞬态正弦幅值并不会启用 AC 激励。对于一般输入，应计算复数比值 `V(out) / V(in)`；仅看输出电压并不总能得到增益。
 
-![随附 RC 滤波器的 AC 扫描设置](../images/simulation/ac-setup.png)
+![随附 RC 滤波器的 AC 扫描设置](../Images/simulation/ac-setup.png)
 
 对于 R = 1 kΩ、C = 1 µF 的一阶低通滤波器，`fc = 1 / (2πRC) ≈ 159.15 Hz`。在该频率下，通带增益为 1 的滤波器增益约为 0.707，即 −3.0103 dB，相位约为 −45°。[滤波器教程](../SPICE-Tutorial-05/)展示了幅值、分贝和相位。
 
-![在浏览器中重新运行 RC 示例后得到的实际 AC 结果](../images/simulation/ac-charts.png)
+![在浏览器中重新运行 RC 示例后得到的实际 AC 结果](../Images/simulation/ac-charts.png)
 
 ## DC 扫描
 {: #dc-sweep}

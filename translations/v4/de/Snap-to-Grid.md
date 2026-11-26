@@ -24,7 +24,7 @@ Bei der üblichen Schaltplanbearbeitung sollte der Rasterfang aktiviert bleiben.
 
 Bei zu geringer Zoomstufe werden Rasterpunkte möglicherweise ausgeblendet, wenn sie nicht mehr deutlich dargestellt werden können.
 
-![Dialogfeld „Settings“ mit separaten Kontrollkästchen für „Show the grid“ und „Snap to grid“.](../images/grid-settings.png)
+![Dialogfeld „Settings“ mit separaten Kontrollkästchen für „Show the grid“ und „Snap to grid“.](../Images/grid-settings.png)
 
 Wenn Objekte ausgewählt sind, verschieben die Pfeiltasten sie bei aktiviertem Rasterfang um den Rasterabstand. Bei deaktiviertem Rasterfang werden sie in kleinen Schritten verschoben, ohne auf das Raster zurückgesetzt zu werden. Halten Sie **Ctrl** gedrückt, um unabhängig von der Rasterfangeinstellung kleine Schritte auszuführen. Wenn nichts ausgewählt ist, verschieben die Pfeiltasten die Ansicht.
 

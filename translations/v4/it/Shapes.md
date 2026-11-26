@@ -24,7 +24,7 @@ Puoi convertire queste linee in un poligono selezionando «Chiudi poligono (Clos
 contestuale. Una volta convertito in poligono, puoi modificarne il riempimento.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Video dimostrativo che mostra come disegnare e modificare un poligono."

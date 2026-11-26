@@ -10,7 +10,7 @@ layout: default
 同じ名前の電源シンボルは、すべて電気的に接続されているものとして扱われます。
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="電源シンボルの配置方法を紹介する動画。"

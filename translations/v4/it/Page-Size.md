@@ -6,7 +6,7 @@ layout: default
 
 Usa **Dimensioni pagina** per impostare le dimensioni del foglio per tutti i fogli.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Cosa puoi modificare
 {: #what-you-can-change}

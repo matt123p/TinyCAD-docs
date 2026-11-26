@@ -14,7 +14,7 @@ directamente a una puerta AND. Otra pasa por un inversor antes de llegar a la
 otra entrada de la puerta AND. La expresión booleana es `A AND NOT A`, que siempre es cero
 una vez que todo se estabiliza. Sin embargo, el transitorio puede contener un impulso.
 
-![Impulsos de peligro calculados](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Impulsos de peligro calculados](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 El inversor tiene un retardo de 100 ns y la puerta AND tiene un retardo de 10 ns. En un flanco
 ascendente de la entrada, la ruta directa pasa a nivel alto mientras que la ruta invertida permanece alta

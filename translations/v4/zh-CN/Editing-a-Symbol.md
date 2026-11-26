@@ -43,7 +43,7 @@ layout: default
 然后，你可以修改图形、引脚和符号属性。
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="演示如何编辑库的视频教程。"
@@ -78,7 +78,7 @@ layout: default
 将引脚仔细地放置在网格上，以便在原理图中轻松布线。
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="演示如何添加引脚的视频教程。"

@@ -26,9 +26,9 @@ Verfeinern der maximalen Schrittweite und Messen von OUT bei 1 ms sowie der RC-Z
 ### Schaltung und Referenzergebnisse
 {: #circuit-and-reference-results}
 
-![RC-Ladeschaltung](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![RC-Ladeschaltung](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Berechnete Ladekurve des Kondensators](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Berechnete Ladekurve des Kondensators](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Warum der Ausgang eine Kurve bildet statt zu springen
 {: #why-the-output-curves-rather-than-jumps}

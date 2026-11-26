@@ -13,8 +13,8 @@ title: 4. D flip-flops, clocks and reset
 刺激信号が用意されています。X1の内部では、ブリッジがXSPICEのDフリップフロップに接続され、
 QとNQはプロット用にアナログ出力へ変換されます。
 
-![Dフリップフロップのテスト回路](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![計算されたクロック、データ、リセット、Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Dフリップフロップのテスト回路](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![計算されたクロック、データ、リセット、Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 8 µsの過渡解析を実行します。クロックの立ち上がりエッジごとにQはDを取り込み、その状態を
 エッジ間で保持します。伝搬が落ち着くと、NQはその反転出力になります。

@@ -41,7 +41,7 @@ If you are looking for browsing and placement rather than editing, see [Using Sy
 You can then modify the graphics, pins, and symbol attributes.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Video walkthrough showing how to edit a library."
@@ -74,7 +74,7 @@ For each pin, set:
 Place pins carefully on-grid so wiring in the schematic is straightforward.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Video walkthrough showing how to add pins."

@@ -20,7 +20,7 @@ layout: default
 ダウンロードできます。完了したら、「閉じる」を選択します。
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="部品表の生成方法を説明する動画ガイド。"

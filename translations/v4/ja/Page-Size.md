@@ -6,7 +6,7 @@ layout: default
 
 **ページサイズ**を使用して、すべてのシートの用紙寸法を設定します。
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## 変更できる項目
 {: #what-you-can-change}

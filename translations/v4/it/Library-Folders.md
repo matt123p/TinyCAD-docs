@@ -26,7 +26,7 @@ Le cartelle delle librerie sono disponibili solo nell'app desktop.
 
 Le modalità basate su browser mostrano comunque My Libraries, ove supportato, ma non consentono di creare cartelle, raggrupparle o trascinarle.
 
-![My Libraries nell'app desktop, con Circuit components espansa, la cartella Sensors and modules vuota e le librerie Unfiled.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![My Libraries nell'app desktop, con Circuit components espansa, la cartella Sensors and modules vuota e le librerie Unfiled.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### Operazioni disponibili
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ Le librerie non assegnate a una cartella vengono visualizzate nella sezione Unfi
 4. Inserisci un nome per la nuova cartella, ad esempio `Project libraries`.
 5. Scegli **Add**.
 
-![Finestra di dialogo per la creazione di una cartella, con Project libraries inserito e il pulsante Add pronto per confermare.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Finestra di dialogo per la creazione di una cartella, con Project libraries inserito e il pulsante Add pronto per confermare.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 La nuova cartella appare nell'elenco delle librerie ed è subito selezionabile.
 
@@ -72,7 +72,7 @@ Se fai clic su una libreria, TinyCAD seleziona automaticamente la cartella a cui
 
 Le librerie selezionate vengono aggiunte alla cartella selezionata.
 
-![Project libraries selezionata in My Libraries, con un'area di rilascio vuota e il pulsante per aggiungere librerie nell'intestazione.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![Project libraries selezionata in My Libraries, con un'area di rilascio vuota e il pulsante per aggiungere librerie nell'intestazione.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Se non selezioni una cartella personalizzata, le librerie vengono aggiunte a Unfiled.
 
@@ -85,7 +85,7 @@ Puoi anche rilasciare una libreria su Unfiled per rimuoverla da una cartella per
 
 Se una cartella è vuota, TinyCAD mostra un'area di rilascio che ti consente di spostarvi le librerie.
 
-![Sensor interfaces spostata da Unfiled a Sensors and modules, con i controlli per riordinare, rinominare e rimuovere la cartella selezionata visibili.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Sensor interfaces spostata da Unfiled a Sensors and modules, con i controlli per riordinare, rinominare e rimuovere la cartella selezionata visibili.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Riordinare le cartelle
 {: #reorder-folders}
@@ -106,7 +106,7 @@ I pulsanti delle azioni della cartella vengono mostrati quando passi il puntator
 - Seleziona **Rename folder** (l'icona della matita) per rinominare la cartella. Inserisci il nuovo nome e scegli **Rename**.
 - Seleziona **Remove folder** (l'icona del cestino) per rimuovere la cartella. Conferma con **Delete**.
 
-![Finestra di dialogo per rinominare una cartella, che cambia Sensors and modules in Sensors and displays.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Finestra di dialogo per rinominare una cartella, che cambia Sensors and modules in Sensors and displays.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 Quando una cartella viene eliminata, le librerie al suo interno vengono spostate in Unfiled. I file delle librerie non vengono rimossi da TinyCAD.
 

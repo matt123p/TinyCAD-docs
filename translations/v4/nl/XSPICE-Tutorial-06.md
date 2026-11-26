@@ -15,8 +15,8 @@ loopt door de XSPICE-buffer en DAC-brug en stuurt vervolgens een fysiek SPICE-la
 nominale dutycycle is ongeveer 25%. Door de eindige ingangflanken wijkt de nauwkeurig
 op drempels gebaseerde dutycycle enigszins af.
 
-![Gemengde digitale en analoge filterschakeling](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![Berekende PWM- en gefilterde uitgang](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Gemengde digitale en analoge filterschakeling](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![Berekende PWM- en gefilterde uitgang](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Voer de transiënte analyse van 5 ms uit. Plot A, Y en FILTERED. Het digitale pad behoudt de
 pulsvorm; het RC-netwerk middelt deze uit en behoudt daarbij enige rimpel.
@@ -43,7 +43,7 @@ toe of gebruik een apparaatmodel wanneer belastingsstroom en verliezen in de uit
 Open **logic-unknown**. De PWL-ingang wordt achtereenvolgens op
 0 V, 2 V en 5 V gehouden. Voer een simulatie van 3 µs uit en inspecteer het middelste plateau.
 
-![Berekende analoge weergave van een ongedefinieerde digitale toestand](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Berekende analoge weergave van een ongedefinieerde digitale toestand](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 De lage en hoge drempels van de ADC-brug zijn 1 V en 3 V. Het plateau van 2 V ligt
 ertussen, waardoor de eventgestuurde ingang ongedefinieerd is. Die onbekende waarde plant zich voort

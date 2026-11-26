@@ -66,7 +66,7 @@ wordt gemeld als niet beschikbaar; dit mag niet worden opgevat als nulverbruik.
 Open **dc-sweep**. De opgeslagen **DC sweep** gebruikt V1,
 begint bij 0 V, stopt bij 10 V en verhoogt in stappen van 0,5 V. Voer de simulatie uit en plot OUT.
 
-![Berekende DC-overdrachtskarakteristiek](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Berekende DC-overdrachtskarakteristiek](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 De horizontale as geeft de gesweepte bronwaarde weer, niet de tijd. Verwachte waarden zijn
 0 V, 2,5 V en 5 V bij voedingsspanningen van respectievelijk 0 V, 5 V en 10 V. De helling is 0,5 V/V.

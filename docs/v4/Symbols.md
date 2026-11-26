@@ -40,7 +40,7 @@ You can draw a new symbol or adapt a copy of a suitable existing one; see [Editi
 The video below demonstrates finding and placing a symbol. For more on browsing and managing the picker, see [Using Symbol Libraries](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Video walkthrough showing how to find and place a symbol."
@@ -52,7 +52,7 @@ The video below demonstrates finding and placing a symbol. For more on browsing 
 
 When placing a symbol, set orientation by using the rotate and flip buttons on the toolbar.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Editing and moving symbol text
@@ -64,7 +64,7 @@ You can also move symbol text fields (for example value/name/reference) independ
 You can edit the text by clicking on it.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Video walkthrough showing how to edit and reposition symbol text."

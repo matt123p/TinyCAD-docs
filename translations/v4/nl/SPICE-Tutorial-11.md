@@ -129,7 +129,7 @@ net; het maakt geen voedingsspanning aan. Sluit een echte bron op dat net aan.
    ongeveer **3,333 V** wordt. Een oudere bewaarde acquisitie beschrijft nog steeds
    het eerdere circuit; een waarde wijzigen past de resultaten ervan niet aan.
 
-![TinyCADs Simulation-blad met de RC AC-analyse en afsnijfrequentieresultaat](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![TinyCADs Simulation-blad met de RC AC-analyse en afsnijfrequentieresultaat](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Deze schermafbeelding van de toepassing toont de weergave **Setup** voor **rc-ac**,
 een ander ingebed voorbeeld. Het filter van 1 kΩ/1 µF heeft een afsnijfrequentie van
@@ -217,7 +217,7 @@ een analoog-naar-digitaalbrug, een gebeurtenisgestuurde buffer en een digitaal-n
 analoogbrug. De gewone bron stuurt de analoge ingang aan; met de bruggen zijn de
 logische toestanden in de grafieken van TinyCAD als spanningen zichtbaar.
 
-![Berekende in- en uitgang van de ingebedde XSPICE-buffer](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Berekende in- en uitgang van de ingebedde XSPICE-buffer](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Voer de opgeslagen transiëntanalyse uit. Verwacht pulsen van 0–5 V met een periode
 van 1 µs en een uitgangsovergang die ongeveer 20 ns vertraagd is, met eindige flanken.

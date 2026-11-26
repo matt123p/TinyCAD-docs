@@ -51,7 +51,7 @@ Diese Bilanz ist ein nützliches Werkzeug zur Fehlersuche. Ein Faktor von 1000 w
 Öffnen Sie **dc-sweep**. Die gespeicherte Analyse **DC sweep** verwendet V1,
 beginnt bei 0 V, endet bei 10 V und hat eine Schrittweite von 0,5 V. Starten Sie die Analyse und stellen Sie OUT grafisch dar.
 
-![Berechnete Gleichspannungs-Übertragungskennlinie](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Berechnete Gleichspannungs-Übertragungskennlinie](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 Die horizontale Achse zeigt den durchlaufenen Quellenwert, nicht die Zeit. Erwartete Werte sind
 0 V, 2,5 V und 5 V bei Versorgungsspannungen von 0 V, 5 V und 10 V. Die Steigung beträgt 0,5 V/V.

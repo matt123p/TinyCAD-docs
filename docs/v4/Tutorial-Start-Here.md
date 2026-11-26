@@ -80,7 +80,7 @@ lesson says **Simulation → Show charts** or **Simulation → SPICE components*
 that icon's menu. The **Simulation sheet** is a separate tab within the drawing;
 it contains the experiment's setup and results views.
 
-![TinyCAD with the first divider circuit and its simulation chart panel](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD with the first divider circuit and its simulation chart panel](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 This application screenshot shows the divider after opening it, with its sheet
 tabs below the circuit and the chart panel on the right. The key starting points

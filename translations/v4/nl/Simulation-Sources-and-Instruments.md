@@ -21,7 +21,7 @@ Kies **Simulation → SPICE → Insert Source**. De editor wordt geopend voordat
 | Exponentieel | Een gevormde overgang | Niveaus, vertragingen en tijdconstanten |
 | FM | Frequentiemodulatie | Draaggolf- en modulatie-instellingen |
 
-![Editor van de sinusbron en golfvormvoorbeeld](../images/simulation/source-settings.png)
+![Editor van de sinusbron en golfvormvoorbeeld](../Images/simulation/source-settings.png)
 
 Het voorbeeld geeft de numerieke golfvorminstellingen weer. Gebruik het om een onverwachte offset, piek of timing op te merken voordat u de simulatie start. Ongeldige instellingen verhinderen het opstarten. Het pictogram van een bron verandert afhankelijk van de golfvorm; een stroombron behoudt zijn richtingspijl.
 

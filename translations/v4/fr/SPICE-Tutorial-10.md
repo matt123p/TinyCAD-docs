@@ -41,7 +41,7 @@ Ouvrez **rc-noise**. L’exemple demande le bruit de sortie sur OUT,
 rapporté à la source d’entrée indépendante V1, de 1 Hz à 100 kHz à 27 °C.
 La source idéale est sans bruit ; R1 contribue au bruit thermique, filtré par C1.
 
-![Densité spectrale de bruit de sortie calculée](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Densité spectrale de bruit de sortie calculée](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 Le bruit total de sortie est d’environ **64,2 nV RMS** sur cette bande. Pour un
 circuit RC idéal intégré de zéro à une fréquence infinie, le bruit quadratique moyen du condensateur vaut `kT/C`, soit environ 64,4 nV RMS à 300,15 K et 1 µF.

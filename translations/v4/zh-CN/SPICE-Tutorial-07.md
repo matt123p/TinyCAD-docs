@@ -14,7 +14,7 @@ title: 7. Rebuilding AMP.DSN and checking its bias
 原作者署名为 Matt Pyne，年份为 1995。它使用 TinyCAD 的
 SPICE 基础元件库中的元件以及可配置的仿真信号源。
 
-![重建后的 AMP.DSN，包含仿真元件](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![重建后的 AMP.DSN，包含仿真元件](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## 保留了哪些内容，以及哪些内容经过了建模
 {: #what-was-preserved-and-what-was-modelled}

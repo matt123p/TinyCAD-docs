@@ -9,7 +9,7 @@ layout: default
 
 设计详情框可以显示在图纸的左下方：
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## 编辑设计详情
 {: #edit-design-details}
@@ -21,7 +21,7 @@ layout: default
 
 从设置菜单中使用 **设计详情（Design Details）** 进行编辑：
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 保存设计时，这些详情也会随之保存。
 
@@ -39,11 +39,11 @@ layout: default
 
 您可以切换详情框的显示/隐藏，并配置设计参考标记（页面边缘周围的字母/数字）：
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 设计参考标记如下所示：
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## 注释
 {: #notes}

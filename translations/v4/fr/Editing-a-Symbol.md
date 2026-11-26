@@ -43,7 +43,7 @@ Pour parcourir et placer des symboles plutôt que les modifier, consultez [Utili
 Vous pouvez ensuite modifier le graphisme, les broches et les attributs du symbole.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Démonstration vidéo expliquant comment modifier une bibliothèque."
@@ -78,7 +78,7 @@ Pour chaque broche, définissez :
 Placez soigneusement les broches sur la grille afin de faciliter le câblage dans le schéma.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Démonstration vidéo expliquant comment ajouter des broches."

@@ -46,7 +46,7 @@ Markdownテキストボックスは[TinyCAD v4.0.11](../Changelog/#v4011)で使�
 2. ボックス内をクリックしてMarkdownを入力します。入力中に書式が表示されます。
 3. 別の場所をクリックすると、Markdown記号のない書式設定済みの注記が表示されます。内容が切れている場合は、ボックスのサイズを変更してください。
 
-![見出し、コンポーネントリスト、タスクリスト、コードブロックを含む、SVGでレンダリングされたMarkdown注記。](../images/markdown-preview.png)
+![見出し、コンポーネントリスト、タスクリスト、コードブロックを含む、SVGでレンダリングされたMarkdown注記。](../Images/markdown-preview.png)
 
 ### 編集可能なMarkdownソース
 {: #editable-markdown-source}
@@ -56,7 +56,7 @@ Markdownテキストボックスは[TinyCAD v4.0.11](../Changelog/#v4011)で使�
 
 選択したフォントファミリー、サイズ、太字、斜体の設定が基本スタイルになります。見出しはそのサイズを基準に拡大縮小され、コードにも選択したフォントファミリーが使われます。元に戻す、コピー／貼り付け、保存を行っても、Markdownソースは保持されます。
 
-![見出し、太字、リスト、タスクリスト、コードフェンスの記号を表示したまま、同じ注記を編集しているところ。](../images/markdown-source-editor.png)
+![見出し、太字、リスト、タスクリスト、コードフェンスの記号を表示したまま、同じ注記を編集しているところ。](../Images/markdown-source-editor.png)
 
 ### 対応する書式
 {: #supported-formatting}

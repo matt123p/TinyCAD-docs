@@ -23,7 +23,7 @@ TinyCAD 支持常用的形状工具，可用于绘制非电气图形元素，包
 转换为多边形后，你可以更改填充。
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="演示如何绘制和编辑多边形的视频教程。"

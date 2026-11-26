@@ -22,7 +22,7 @@ v4 では、**デザインルールチェックは v3 と同じように動作�
 4. **OK** を選択してチェックを実行します。
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="デザインルールチェッカーの実行方法と使用方法を紹介する動画ガイド。"

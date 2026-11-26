@@ -24,7 +24,7 @@ Możesz przekształcić je w wielokąt, wybierając w menu kontekstowym poleceni
 Po przekształceniu w wielokąt możesz zmienić jego wypełnienie.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Film instruktażowy pokazujący, jak rysować i edytować wielokąt."

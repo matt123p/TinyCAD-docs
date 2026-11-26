@@ -123,7 +123,7 @@ réseau ; elle ne crée pas une tension d’alimentation. Connectez une source r
    environ **3,333 V**. Une acquisition antérieure conservée décrit toujours
    le circuit précédent ; la modification d’une valeur ne réécrit pas ses résultats.
 
-![Feuille Simulation de TinyCAD montrant l’analyse AC du circuit RC et le résultat de fréquence de coupure](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![Feuille Simulation de TinyCAD montrant l’analyse AC du circuit RC et le résultat de fréquence de coupure](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Cette capture d’écran de l’application montre la vue **Configuration (Setup)** de **rc-ac**,
 un autre exemple intégré. Son filtre de 1 kΩ/1 µF a une fréquence de coupure proche de **159,15 Hz**. Ouvrez-le
@@ -210,7 +210,7 @@ contient un pont analogique-numérique, un tampon à événements et un
 pont numérique-analogique. La source ordinaire pilote l’entrée analogique ;
 les ponts rendent les états logiques visibles sous forme de tensions dans les graphiques de TinyCAD.
 
-![Signaux d’entrée et de sortie calculés du tampon XSPICE intégré](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Signaux d’entrée et de sortie calculés du tampon XSPICE intégré](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Exécutez la simulation transitoire enregistrée. Attendez-vous à des impulsions de 0 à 5 V d’une période de 1 µs et à une transition de sortie
 décalée d’environ 20 ns, avec des fronts finis. Zoomez pour examiner

@@ -45,7 +45,7 @@ Je kunt een nieuw symbool tekenen of een kopie van een geschikt bestaand symbool
 De video hieronder laat zien hoe je een symbool zoekt en plaatst. Zie [Symboolbibliotheken gebruiken](../Using-Symbol-Libraries/) voor meer informatie over bladeren door de kiezer en het beheren ervan.
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Videohandleiding waarin wordt getoond hoe je een symbool zoekt en plaatst."
@@ -58,7 +58,7 @@ De video hieronder laat zien hoe je een symbool zoekt en plaatst. Zie [Symboolbi
 
 Stel bij het plaatsen van een symbool de oriëntatie in met de draai- en spiegelknoppen op de werkbalk.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Symbooltekst bewerken en verplaatsen
@@ -71,7 +71,7 @@ Je kunt tekstvelden van een symbool (bijvoorbeeld waarde/naam/referentie) ook af
 Je kunt de tekst bewerken door erop te klikken.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Videohandleiding waarin wordt getoond hoe je symbooltekst bewerkt en verplaatst."

@@ -21,7 +21,7 @@ Choisissez **Simulation → SPICE → Insérer une source (Insert Source)**. Son
 | Exponentiel | Transition façonnée | Niveaux, retards et constantes de temps |
 | FM | Modulation de fréquence | Paramètres de la porteuse et de la modulation |
 
-![Éditeur de source sinusoïdale et aperçu de la forme d’onde](../images/simulation/source-settings.png)
+![Éditeur de source sinusoïdale et aperçu de la forme d’onde](../Images/simulation/source-settings.png)
 
 L’aperçu reflète les paramètres numériques de la forme d’onde. Utilisez-le pour repérer un décalage, une crête ou une temporisation inattendus avant l’exécution. Des paramètres non valides empêchent le démarrage. L’icône d’une source change en fonction de sa forme d’onde, et une source de courant conserve sa flèche de direction.
 

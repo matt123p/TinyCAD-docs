@@ -33,7 +33,7 @@ Laden Sie [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn) herunter, ö
 
 Bei R1 = 1 kΩ und C = 1 µF liegt die nominale Eckfrequenz bei etwa 159,15 Hz. **Measurements** enthält Grenzfrequenz, Verstärkung bei 100 Hz und Phase an der idealen Eckfrequenz; **Requirements** prüft, ob die Grenzfrequenz zwischen 150 und 170 Hz liegt.
 
-![Abstimmungssteuerelemente von Circuit Explorer in der RC-Begleitzeichnung](../images/simulation/explorer-tuning.png)
+![Abstimmungssteuerelemente von Circuit Explorer in der RC-Begleitzeichnung](../Images/simulation/explorer-tuning.png)
 
 ## Abstimmen, ohne die gespeicherte Schaltung zu ändern
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Sweep-Definitionen, Werte, Einheiten, Laufstatus und erfasste Messgrößen werde
 
 Fügen Sie unter **Measurements** einen Namen hinzu, wählen Sie ein Signal/eine Komponente aus und klappen Sie die zugehörigen Einstellungen auf. Legen Sie ein aussagekräftiges Zeit-/Frequenzfenster sowie erforderliche Pegel oder Referenzen fest. Zuordnungen von Komponenten/Messpunkten verwenden die Identität des Blatts zusammen mit der Referenz, damit sie auch nach erneutem Öffnen bestehen bleiben.
 
-![Vorbereitete Messungen von Grenzfrequenz, Verstärkung und Phase](../images/simulation/explorer-measurements.png)
+![Vorbereitete Messungen von Grenzfrequenz, Verstärkung und Phase](../Images/simulation/explorer-measurements.png)
 
 | Messung | Interpretation |
 | --- | --- |
@@ -91,7 +91,7 @@ Verwenden Sie für die Grenzfrequenz eine explizite lineare Referenzverstärkung
 
 Verwenden Sie **Requirements**, um eine benannte Messung anhand von **mindestens**, **höchstens** oder einem inklusiven Bereich **zwischen** zu prüfen. Die Einheiten müssen übereinstimmen. Ergebnisse sind **pass**, **fail** oder **unavailable**; eine nicht verfügbare Messgröße bedeutet nicht, dass die Anforderung bestanden ist.
 
-![Die RC-Grenzfrequenzanforderung mit einem expliziten zulässigen Bereich](../images/simulation/explorer-requirements.png)
+![Die RC-Grenzfrequenzanforderung mit einem expliziten zulässigen Bereich](../Images/simulation/explorer-requirements.png)
 
 Wählen Sie eine verfügbare Messung aus, um ihre Nachweise und die dazugehörige Schaltplanhervorhebung zu prüfen. Behalten Sie Messdefinitionen, Fenster und Schwellenwerte bei exportierten Ergebnissen bei. Die allgemeine Hervorhebung in beide Richtungen zwischen Messpunkten ist nicht für alle Signal- oder Modelltypen verfügbar.
 
@@ -100,7 +100,7 @@ Die DC-Schaltplanüberlagerung erfordert eine aktuelle, abgeschlossene Arbeitspu
 ## Analysis lab
 {: #analysis-lab}
 
-![Arbeitsabläufe im Analysis lab von Circuit Explorer](../images/simulation/analysis-lab.png)
+![Arbeitsabläufe im Analysis lab von Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Frequenz- und Verstärkerantwort
 {: #frequency-and-amplifier-response}

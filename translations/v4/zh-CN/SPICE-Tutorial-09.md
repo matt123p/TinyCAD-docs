@@ -13,7 +13,7 @@ title: 9. Amplifier waveform, clipping and power usage
 10 mV、频率为 1 kHz 的正弦波。瞬态分析持续 12 ms，最大步长为 2 µs。
 比较 IN 和 OUT，然后测量最后四个周期，即 8 ms 至 12 ms 之间的波形。
 
-![测得的小信号放大器波形](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![测得的小信号放大器波形](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 AC 分析结果预测 OUT 端的峰值约为 8.92 mV，且相对于输入信号反相。
 瞬态分析在测量窗口内得到约 −8.87 至 +8.99 mV，
@@ -44,7 +44,7 @@ RMS 值为 **6.304 mV**。正负峰值之间的微小差异
 打开 **amp-clipping**。仅 VIN 的幅度发生变化，
 增至峰值 500 mV。线性外推会预测 OUT 端的峰值在正负方向上均约为 446 mV。但计算得到的波形并非如此。
 
-![计算得到的不对称大信号输出](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![计算得到的不对称大信号输出](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 在相同的 8–12 ms 窗口内，输出约在
 **−0.162 至 +0.389 V** 之间变化，RMS 值为 **0.2126 V**。电源消耗约为

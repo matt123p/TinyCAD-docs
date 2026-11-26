@@ -10,7 +10,7 @@ layout: default
 {: #placing-and-moving}
 
 {% include video-player.html
-	src="/v4/images/video/Video 9.mp4"
+	src="/v4/Images/video/Video 9.mp4"
 	width=1522
 	height=916
 	caption="ルーラーの配置と移動方法を紹介する動画です。"

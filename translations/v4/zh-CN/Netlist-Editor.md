@@ -35,7 +35,7 @@ layout: default
 
 如果由于选中了某个对象而打开了其他面板，请先清除选择。
 
-![分隔器原理图下方的网表视图，其中 OUT 行已突出显示](../images/netlist-editor/netlist-overview.png)
+![分隔器原理图下方的网表视图，其中 OUT 行已突出显示](../Images/netlist-editor/netlist-overview.png)
 
 在这个随附的分压器示例中，`OUT` 行将 `R1.2` 连接到 `R2.1`。
 将鼠标悬停在该行上时，图纸中的连接会突出显示。
@@ -92,7 +92,7 @@ TinyCAD 会跳转到正确图纸页中的相关项目。
 
 将随附的 `divider` 图纸通过 **Open Example** → **SPICE tutorial** 打开，然后放大电路。在底部面板中从 **Symbols** 切换到 **Netlist**。**OUT** 标签标识引脚 **R1.2** 和 **R2.1** 之间的网络。该网络最初使用 `default` 类型和常规导线粗细。
 
-![样式设置前的分压器，显示 R1 与 R2 之间细蓝色的 OUT 导线](../images/netlist-editor/netlist-wire-before.png)
+![样式设置前的分压器，显示 R1 与 R2 之间细蓝色的 OUT 导线](../Images/netlist-editor/netlist-wire-before.png)
 
 ### 创建导线样式
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ TinyCAD 会跳转到正确图纸页中的相关项目。
 3. 在同一行中点击 **Wire colour**（导线颜色）单元格。勾选 **Override colour**（覆盖颜色），将 `007F5F` 输入到 **Hex** 字段中即可选择绿色。预览会显示应用这两项设置后的导线。
 4. 在颜色选择器中单击 **OK**。检查 `control` 行中的绿色色块和粗细值，然后在 **Netlist Types**（网表类型）中单击 **OK** 保存该类型。
 
-![导线颜色选择器，其中已勾选 Override colour，预览中显示绿色导线](../images/netlist-editor/netlist-wire-colour.png)
+![导线颜色选择器，其中已勾选 Override colour，预览中显示绿色导线](../Images/netlist-editor/netlist-wire-colour.png)
 
-![网表类型窗口，控制行中显示绿色的 Wire colour 色块和 4 的 Wire thickness](../images/netlist-editor/netlist-wire-type.png)
+![网表类型窗口，控制行中显示绿色的 Wire colour 色块和 4 的 Wire thickness](../Images/netlist-editor/netlist-wire-type.png)
 
 ### 将样式应用于 OUT
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ TinyCAD 会跳转到正确图纸页中的相关项目。
 2. 打开突出显示行上的 **Type**（类型）列表，然后选择 `control`。
 3. 点击原理图中的空白处以取消选择。**R1.2** 和 **R2.1** 之间的导线现在变成绿色且更粗。选择 `default`（在 **Type** 列表中）即可恢复常规导线样式。
 
-![原理图中选中的 OUT 导线及其在网表面板中突出显示的行，已选择 control](../images/netlist-editor/netlist-wire-assignment.png)
+![原理图中选中的 OUT 导线及其在网表面板中突出显示的行，已选择 control](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![样式设置后的分压器，显示 R1 与 R2 之间较粗的绿色 OUT 导线](../images/netlist-editor/netlist-wire-after.png)
+![样式设置后的分压器，显示 R1 与 R2 之间较粗的绿色 OUT 导线](../Images/netlist-editor/netlist-wire-after.png)
 
 使用 **Save As**（另存为）保留已编辑的示例副本。
 
 ### 观看操作演示
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="切换到网表视图，创建绿色导线样式，然后单击 OUT 导线以找到对应行并应用该样式。" %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="切换到网表视图，创建绿色导线样式，然后单击 OUT 导线以找到对应行并应用该样式。" %}
 
 ## 网表类型中的可用操作
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ TinyCAD 会跳转到正确图纸页中的相关项目。
 3. 保存属性。
 4. 在主对话框中单击 `OK`。
 
-![属性编辑器，其中包含 control 类型的 purpose 和 notes 条目](../images/netlist-editor/netlist-attributes.png)
+![属性编辑器，其中包含 control 类型的 purpose 和 notes 条目](../Images/netlist-editor/netlist-attributes.png)
 
 这些示例条目描述了该类型的用途，并添加了一条布线备注。它们属于该类型，可供所有指定了该类型的网络共用。
 

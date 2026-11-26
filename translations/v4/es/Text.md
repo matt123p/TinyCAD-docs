@@ -54,7 +54,7 @@ Los cuadros de texto Markdown están disponibles en [TinyCAD v4.0.11](../Changel
 3. Haz clic en otro lugar para ver la nota con formato, sin los marcadores Markdown. Cambia el tamaño
    del cuadro si el contenido queda recortado.
 
-![Nota Markdown renderizada en SVG con un encabezado, una lista de componentes, una lista de tareas y un bloque de código.](../images/markdown-preview.png)
+![Nota Markdown renderizada en SVG con un encabezado, una lista de componentes, una lista de tareas y un bloque de código.](../Images/markdown-preview.png)
 
 ### Código fuente Markdown editable
 {: #editable-markdown-source}
@@ -69,7 +69,7 @@ La familia tipográfica, el tamaño y las opciones de negrita y cursiva que elij
 Los encabezados cambian de tamaño con respecto a ese tamaño; el código también usa la familia elegida. Deshacer,
 copiar y pegar, y guardar conservan el código fuente Markdown.
 
-![Edición de la misma nota con los marcadores visibles de encabezado, negrita, lista, lista de tareas y bloque de código.](../images/markdown-source-editor.png)
+![Edición de la misma nota con los marcadores visibles de encabezado, negrita, lista, lista de tareas y bloque de código.](../Images/markdown-source-editor.png)
 
 ### Formato compatible
 {: #supported-formatting}

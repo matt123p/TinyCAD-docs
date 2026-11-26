@@ -11,7 +11,7 @@ layout: default
 
 Kies in het menu **Bestand** de optie **Exporteren naar PDF**. TinyCAD opent de tekening als PDF in een nieuw tabblad. Gebruik de afdrukfunctie van de PDF-lezer om de tekening af te drukken.
 
-<img src="/v4/images/media/image12.png" alt="The File menu"  />
+<img src="/v4/Images/media/image12.png" alt="The File menu"  />
 
 
 ### Desktop-app
@@ -19,7 +19,7 @@ Kies in het menu **Bestand** de optie **Exporteren naar PDF**. TinyCAD opent de 
 
 Kies **Bestand → Afdrukken** om het **Afdrukvoorbeeld** te openen. Links staat de tekening en rechts staan de printerinstellingen.
 
-<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
+<img src="/v4/Images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
 #### Rechtstreeks afdrukken
 {: #print-directly}

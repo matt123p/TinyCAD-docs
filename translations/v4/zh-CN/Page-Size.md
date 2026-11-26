@@ -6,7 +6,7 @@ layout: default
 
 使用 **页面尺寸** 设置所有图纸页的尺寸。
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## 可更改的设置
 {: #what-you-can-change}

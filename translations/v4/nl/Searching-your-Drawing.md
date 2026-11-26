@@ -7,7 +7,7 @@ layout: default
 Gebruik **Zoeken** in het onderste paneel om tekst in de tekening te zoeken:
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="Videorondleiding die laat zien hoe u in een tekening zoekt."

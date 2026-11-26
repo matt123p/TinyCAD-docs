@@ -14,7 +14,7 @@ mediante cables. En este ejemplo, colocarás algunos símbolos y luego los conec
 
 Este es un circuito sencillo para dibujar:
 
-<img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
+<img src="/v4/Images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
 <p>
 	<a href="/v4/examples/First%20Drawing.dsn" class="btn btn-primary" download>
@@ -27,7 +27,7 @@ Este es un circuito sencillo para dibujar:
 {: #video-walkthrough}
 
 {% include video-player.html
-	src="/v4/images/video/Video 2.mp4"
+	src="/v4/Images/video/Video 2.mp4"
 	width=1618
 	height=922
 	caption="Vídeo explicativo que muestra cómo editar y reubicar el texto de los símbolos."
@@ -47,15 +47,15 @@ Ahora coloca una resistencia y un LED.
 
 Usa los controles de rotación e inversión de la barra de herramientas para orientar los símbolos:
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 Si cometes un error, usa Deshacer/Rehacer (Undo/Redo):
 
-<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" />
+<img src="/v4/Images/media/image6.png" alt="Undo and Redo toolbar buttons" />
 
 Tu dibujo debería tener un aspecto similar a este:
 
-<img src="/v4/images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
+<img src="/v4/Images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
 
 ## Cableado de un circuito
 {: #wiring-up-a-circuit}
@@ -71,7 +71,7 @@ Consejo: pulsa `W` en el teclado para volver rápidamente al modo de cableado.
 
 Una vez cableado, debería tener un aspecto similar a este:
 
-<img src="/v4/images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
+<img src="/v4/Images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
 
 ## Anotación del dibujo
 {: #annotating-the-drawing}
@@ -102,7 +102,7 @@ en el dibujo.
 
 Para guardar el dibujo, usa los botones «Save As» o «Save» de la barra de herramientas:
 
-<img src="/v4/images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
+<img src="/v4/Images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
 
 
 ### Google en el navegador
@@ -114,7 +114,7 @@ Tu primer dibujo está completo. Para cambiarle el nombre:
 2. Cámbiale el nombre a `First Drawing.dsn`.
 3. Pulsa Enter.
 
-<img src="/v4/images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
+<img src="/v4/Images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
 
 Guárdalo en Google Drive con el icono **Save**.
 
@@ -124,7 +124,7 @@ Para volver a cargarlo desde Google Drive:
 2. Busca el dibujo.
 3. Haz clic con el botón derecho y elige **Open with -> TinyCAD**.
 
-<img src="/v4/images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
+<img src="/v4/Images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
 
 También puedes cambiar el nombre y eliminar diseños de TinyCAD en Google Drive.
 

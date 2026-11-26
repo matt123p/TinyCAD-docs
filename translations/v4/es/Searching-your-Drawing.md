@@ -7,7 +7,7 @@ layout: default
 Usa **Buscar** en el panel inferior para buscar texto en el dibujo:
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="Vídeo explicativo que muestra cómo buscar en un dibujo."

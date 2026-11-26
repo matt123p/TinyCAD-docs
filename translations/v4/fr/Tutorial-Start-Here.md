@@ -81,7 +81,7 @@ leçon indique **Simulation → Afficher les graphiques** ou **Simulation → Co
 le menu de cette icône. La **feuille Simulation** est un onglet distinct du dessin ; elle
 contient la configuration de l’expérience et les vues des résultats.
 
-![TinyCAD avec le premier circuit diviseur et son panneau de graphiques de simulation](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD avec le premier circuit diviseur et son panneau de graphiques de simulation](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Cette capture d’écran de l’application montre le diviseur après son ouverture, avec les onglets de feuille
 sous le circuit et le panneau de graphiques à droite. Les principaux points de départ

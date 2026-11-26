@@ -15,7 +15,7 @@ inverter voordat het de andere ingang van de EN-poort bereikt. De Booleaanse
 expressie is `A AND NOT A`, die na het uitdempen van alle transiënten altijd nul is.
 Toch kan de transiënt een puls bevatten.
 
-![Berekende hazardpulsen](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Berekende hazardpulsen](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 De inverter heeft een vertraging van 100 ns en de EN-poort een vertraging van
 10 ns. Bij een stijgende flank van de ingang wordt het directe pad hoog, terwijl

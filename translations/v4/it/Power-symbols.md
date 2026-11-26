@@ -10,7 +10,7 @@ I simboli di alimentazione indicano la connessione a reti di alimentazione denom
 Tutti i simboli di alimentazione con lo stesso nome sono considerati connessi elettricamente.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Video dimostrativo che mostra come posizionare i simboli di alimentazione."

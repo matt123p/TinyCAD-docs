@@ -38,7 +38,7 @@ layout: default
 1. 在 Google Drive 中，右键单击 `.tclib` 文件。
 2. 选择  **使用以下方式打开 (Open with) -> TinyCAD** 。
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 对你希望能够使用的 **每个** 库重复此操作。
 
@@ -53,22 +53,22 @@ layout: default
 1. 打开 **我的库** （My Libraries）。
 2. 点击 **我的库** （My Libraries）旁边的 **刷新** （Refresh）。
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 刷新后，库会显示在列表中：
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 展开库即可浏览其中的内容：
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### 创建新库
 {: #creating-a-new-library}
 
 使用菜单项 **新建自定义库** （New Custom Library）：
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### 编辑库
 {: #edit-a-library}
@@ -84,7 +84,7 @@ layout: default
 在使用库中的任何符号之前，必须先将该库添加到
  **我的库** 下的库列表中。
 
-![“我的库”侧边栏](/v4/images/media/image9.png)
+![“我的库”侧边栏](/v4/Images/media/image9.png)
 
 要将库添加到此列表，请点击  **添加** 。此时会
 出现文件选择对话框。请选择扩展名为 `.tclib` 的库文件。
@@ -99,7 +99,7 @@ layout: default
 使用库编辑对话框选择该库，然后点击  **编辑** 。此时会打开一个新
 窗口，其中显示该库的缩略图。
 
-![显示符号缩略图的库编辑器](/v4/images/media/image10.png)
+![显示符号缩略图的库编辑器](/v4/Images/media/image10.png)
 
 使用库编辑窗口可以：
 

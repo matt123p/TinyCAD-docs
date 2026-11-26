@@ -7,7 +7,7 @@ layout: default
 Usa **Cerca (Search)** dal pannello inferiore per cercare testo nel disegno:
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="Video tutorial che mostra come cercare in un disegno."

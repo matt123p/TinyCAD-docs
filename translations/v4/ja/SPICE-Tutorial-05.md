@@ -26,7 +26,7 @@ ACの設定を確認し、遮断周波数を読み取り、振幅、デシベル
 ### 回路と基準結果
 {: #circuit-and-reference-results}
 
-![計算された振幅および位相応答](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![計算された振幅および位相応答](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## 複素数の結果を解釈する
 {: #interpret-the-complex-result}

@@ -11,8 +11,8 @@ title: 2. Gates and truth tables
 
 **logic-nand** を開きます。X1にはADCブリッジ、2入力XSPICE NAND、DAC出力ブリッジが含まれています。独立したパルス源が、異なる周期でAとBを駆動します。8 µsの過渡解析を実行し、A、B、Yを表示します。
 
-![NANDテスト回路](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![計算されたNAND波形](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![NANDテスト回路](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![計算されたNAND波形](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 ブール関数は `Y = NOT(A AND B)` です。
 

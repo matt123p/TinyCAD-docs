@@ -54,7 +54,7 @@ het aansluitpunt dat u probeert te bereiken niet bedekt.
 
 4. Tik op **Vergrootglas verbergen (Hide Loupe)** om terug te keren naar rechtstreeks aanraken.
 
-![Vergrootglas voor aanraking met een vergroot aansluitgebied, richtkruis en de bedieningselementen Klikken, Slepen en Menu.](../images/touch-loupe.png)
+![Vergrootglas voor aanraking met een vergroot aansluitgebied, richtkruis en de bedieningselementen Klikken, Slepen en Menu.](../Images/touch-loupe.png)
 
 Om bijvoorbeeld een draad te tekenen, kiest u **Draad (Wire)**, richt u op de beginpin en tikt u op
 **Klikken (Click)**. Schuif uw vinger om naar het volgende punt te richten en tik opnieuw op **Klikken (Click)**.

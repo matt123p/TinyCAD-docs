@@ -63,7 +63,7 @@ reported as unavailable; it must not be interpreted as zero consumption.
 Open **dc-sweep**. The saved **DC sweep** uses V1,
 starting at 0 V, stopping at 10 V and incrementing by 0.5 V. Run and plot OUT.
 
-![Computed DC transfer curve](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Computed DC transfer curve](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 The horizontal axis is the swept source value, not time. Expected values are
 0 V, 2.5 V and 5 V at supply values of 0 V, 5 V and 10 V. The slope is 0.5 V/V.

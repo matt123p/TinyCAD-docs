@@ -10,7 +10,7 @@ Power symbols indicate connection to named power nets such as `GND`, `+5V`,
 All power symbols with the same name are considered electrically connected.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Video walkthrough showing how to place power symbols."

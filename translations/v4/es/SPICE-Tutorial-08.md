@@ -17,7 +17,7 @@ no demuestra que el hardware original se comporte con precisión en RF.
 Seleccione **Voltage gain**, la traza derivada OUT/IN guardada. Visualice la magnitud en dB
 y la fase. En sus notas, mantenga diferenciadas las tensiones de nodo y la ganancia adimensional.
 
-![Ganancia y fase calculadas del amplificador](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Ganancia y fase calculadas del amplificador](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Interprete el resultado antes de explicarlo
 {: #read-the-result-before-explaining-it}

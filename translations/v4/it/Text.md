@@ -54,7 +54,7 @@ Le caselle di testo Markdown sono disponibili in [TinyCAD v4.0.11](../Changelog/
 3. Fai clic altrove per visualizzare la nota formattata senza i marcatori Markdown. Ridimensiona
    la casella se il contenuto è tagliato.
 
-![Nota Markdown renderizzata in SVG con un titolo, un elenco di componenti, un elenco di attività e un blocco di codice.](../images/markdown-preview.png)
+![Nota Markdown renderizzata in SVG con un titolo, un elenco di componenti, un elenco di attività e un blocco di codice.](../Images/markdown-preview.png)
 
 ### Sorgente Markdown modificabile
 {: #editable-markdown-source}
@@ -69,7 +69,7 @@ La famiglia e la dimensione del carattere scelte, insieme alle impostazioni di g
 I titoli vengono ridimensionati in proporzione a tale dimensione; anche il codice usa la famiglia scelta. Annulla,
 le operazioni di copia/incolla e il salvataggio preservano la sorgente Markdown.
 
-![Modifica della stessa nota con i marcatori visibili per titolo, grassetto, elenco, elenco di attività e blocco di codice.](../images/markdown-source-editor.png)
+![Modifica della stessa nota con i marcatori visibili per titolo, grassetto, elenco, elenco di attività e blocco di codice.](../Images/markdown-source-editor.png)
 
 ### Formattazione supportata
 {: #supported-formatting}

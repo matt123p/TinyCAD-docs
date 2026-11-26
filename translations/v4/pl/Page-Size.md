@@ -6,7 +6,7 @@ layout: default
 
 Użyj opcji **Rozmiar strony** (Page Size), aby ustawić wymiary arkusza dla wszystkich arkuszy.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Co można zmienić
 {: #what-you-can-change}

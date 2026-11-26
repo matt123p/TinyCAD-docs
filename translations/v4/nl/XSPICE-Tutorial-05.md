@@ -11,8 +11,8 @@ De voorbeelden in dit hoofdstuk worden meegeleverd met TinyCAD. Kies **Voorbeeld
 
 Open **logic-counter**. X1 bevat vier D-flipflops. Elke flipflop voert zijn geïnverteerde uitgang terug naar D, zodat deze omschakelt wanneer er een klokpuls binnenkomt. De eerste trap krijgt CLK; de volgende trappen worden geklokt door de geïnverteerde uitgang van de voorgaande trap. Dit vormt een binaire rimpelteller die omhoog telt.
 
-![Testschakeling met een vierbits teller](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Berekende uitgangen van de gedeelde kloksignalen](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Testschakeling met een vierbits teller](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Berekende uitgangen van de gedeelde kloksignalen](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 De ingangsperiode is 1 µs. Bij het opstarten worden de trappen rond het begin gereset en de eerste telrand treedt rond 0,5 µs op. Voer de opgeslagen transiëntanalyse van 18 µs uit. Lees elke waarde af nadat de rimpel is uitgewerkt, bijvoorbeeld bij 0,8 µs, 1,8 µs, 2,8 µs enzovoort.
 

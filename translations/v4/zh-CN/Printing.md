@@ -11,7 +11,7 @@ layout: default
 
 在 **文件** 菜单中选择 **导出为 PDF** 。TinyCAD 会在新标签页中以 PDF 格式打开图纸。使用 PDF 查看器的打印功能打印图纸。
 
-<img src="/v4/images/media/image12.png" alt="The File menu"  />
+<img src="/v4/Images/media/image12.png" alt="The File menu"  />
 
 
 ### 桌面应用
@@ -19,7 +19,7 @@ layout: default
 
 选择 **文件 → 打印** 以打开 **打印预览** 。左侧显示图纸，右侧显示打印设置。
 
-<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
+<img src="/v4/Images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
 #### 直接打印
 {: #print-directly}

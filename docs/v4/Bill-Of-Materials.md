@@ -18,7 +18,7 @@ You can generate the Bill of Materials by selecting the option for the menu.  Yo
 then download it as a CSV file.  When you are finished, select "Close".
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Video walkthrough showing how to generate Bill of Materials."

@@ -8,7 +8,7 @@ layout: default
 
 設計詳細ボックスは、図面の左下に表示されることがあります。
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## 設計詳細を編集する
 {: #edit-design-details}
@@ -20,7 +20,7 @@ layout: default
 
 設定メニューから**設計詳細**を選択して編集します。
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 設計を保存すると、これらの詳細も一緒に保存されます。
 
@@ -38,11 +38,11 @@ layout: default
 
 ボックスの表示を切り替え、設計ガイド（ページ端の文字や数字）を設定できます。
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 設計ガイドは次のように表示されます。
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## 注記
 {: #notes}

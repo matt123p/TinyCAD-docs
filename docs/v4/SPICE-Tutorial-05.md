@@ -28,7 +28,7 @@ Checking the AC setup, reading the cutoff, and switching between magnitude, deci
 
 ### Circuit and reference results
 
-![Computed magnitude and phase response](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Computed magnitude and phase response](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Interpret the complex result
 

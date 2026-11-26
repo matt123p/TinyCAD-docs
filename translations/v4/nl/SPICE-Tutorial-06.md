@@ -49,9 +49,9 @@ Een meetvenster van 160–200 ms instellen en de gemiddelde spanning vergelijken
 ### Schakeling en referentieresultaten
 {: #circuit-and-reference-results}
 
-![Halvegelijkrichter en buffercondensator](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Halvegelijkrichter en buffercondensator](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Berekende opstart- en stationaire rimpel](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Berekende opstart- en stationaire rimpel](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Experimenten die de afwegingen laten zien
 {: #experiments-that-reveal-the-trade-offs}

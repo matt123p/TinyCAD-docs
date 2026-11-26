@@ -26,9 +26,9 @@ De maximale tijdstap verfijnen en OUT meten bij 1 ms en bij de RC-tijdconstante.
 ### Schakeling en referentieresultaten
 {: #circuit-and-reference-results}
 
-![RC-laadschakeling](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![RC-laadschakeling](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Berekende laadcurve van de condensator](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Berekende laadcurve van de condensator](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Waarom de uitgang geleidelijk verandert in plaats van te springen
 {: #why-the-output-curves-rather-than-jumps}

@@ -53,7 +53,7 @@ zasłania punktu połączenia, do którego próbujesz dotrzeć.
 
 4. Stuknij **Ukryj lupę (Hide Loupe)**, aby wrócić do bezpośredniej obsługi dotykowej.
 
-![Lupa dotykowa pokazująca powiększony obszar połączenia, celownik oraz przyciski Kliknij, Przeciągnij i Menu.](../images/touch-loupe.png)
+![Lupa dotykowa pokazująca powiększony obszar połączenia, celownik oraz przyciski Kliknij, Przeciągnij i Menu.](../Images/touch-loupe.png)
 
 Aby na przykład narysować przewód, wybierz **Przewód (Wire)**, ustaw celownik na początkowym wyprowadzeniu i stuknij
 **Kliknij (Click)**. Przesuń palec, aby ustawić celownik na następnym punkcie, i ponownie stuknij **Kliknij (Click)**.

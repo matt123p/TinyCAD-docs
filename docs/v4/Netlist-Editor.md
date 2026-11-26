@@ -33,7 +33,7 @@ The list is live and updates automatically whilst you edit the schematic.
 
 If another panel is open because something is selected, clear the selection first.
 
-![Netlist view below the divider schematic, with the OUT row highlighted](../images/netlist-editor/netlist-overview.png)
+![Netlist view below the divider schematic, with the OUT row highlighted](../Images/netlist-editor/netlist-overview.png)
 
 In this bundled divider example, the `OUT` row connects `R1.2` to `R2.1`.
 Hovering over that row highlights the connection in the drawing.
@@ -83,7 +83,7 @@ A net type is a reusable set of drawing styles. Assign the same type to several 
 
 Open the bundled `divider` drawing from **Open Example** → **SPICE tutorial** and zoom in on the circuit. In the bottom panel, switch from **Symbols** to **Netlist**. The **OUT** label identifies the net between pins **R1.2** and **R2.1**. It starts with the `default` type and normal wire thickness.
 
-![Divider before styling, showing the thin blue OUT wire between R1 and R2](../images/netlist-editor/netlist-wire-before.png)
+![Divider before styling, showing the thin blue OUT wire between R1 and R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### Create the wire style
 
@@ -92,9 +92,9 @@ Open the bundled `divider` drawing from **Open Example** → **SPICE tutorial** 
 3. In the same row, click the **Wire colour** cell. Tick **Override colour** and enter `007F5F` in the **Hex** field for green. The preview shows the wire with both settings.
 4. Click **OK** in the colour picker. Check the green swatch and the thickness value on the `control` row, then click **OK** in **Netlist Types** to save the type.
 
-![Wire colour picker for control, with Override colour ticked and the green wire visible in the preview](../images/netlist-editor/netlist-wire-colour.png)
+![Wire colour picker for control, with Override colour ticked and the green wire visible in the preview](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Netlist Types showing the green Wire colour swatch and Wire thickness of 4 on the control row](../images/netlist-editor/netlist-wire-type.png)
+![Netlist Types showing the green Wire colour swatch and Wire thickness of 4 on the control row](../Images/netlist-editor/netlist-wire-type.png)
 
 ### Apply the style to OUT
 
@@ -102,15 +102,15 @@ Open the bundled `divider` drawing from **Open Example** → **SPICE tutorial** 
 2. Open the **Type** list on the highlighted row and choose `control`.
 3. Click a blank area of the schematic to clear the selection. The wire between **R1.2** and **R2.1** is now green and thicker. Choose `default` in the **Type** list to restore the normal wire style.
 
-![Selected OUT wire on the schematic and its highlighted Netlist row with control selected](../images/netlist-editor/netlist-wire-assignment.png)
+![Selected OUT wire on the schematic and its highlighted Netlist row with control selected](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Divider after styling, showing the thicker green OUT wire between R1 and R2](../images/netlist-editor/netlist-wire-after.png)
+![Divider after styling, showing the thicker green OUT wire between R1 and R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Use **Save As** to keep your edited copy of the example.
 
 ### Watch the walkthrough
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Switch to Netlist, create a green wire style, then click the OUT wire to find its row and apply the style." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Switch to Netlist, create a green wire style, then click the OUT wire to find its row and apply the style." %}
 
 ## What you can do in Netlist Types
 
@@ -155,7 +155,7 @@ To add them:
 3. Save the attributes.
 4. Click `OK` in the main dialog.
 
-![Attributes editor with purpose and notes entries for the control type](../images/netlist-editor/netlist-attributes.png)
+![Attributes editor with purpose and notes entries for the control type](../Images/netlist-editor/netlist-attributes.png)
 
 These example entries describe the type's purpose and add a wiring note. They belong to the type and can be shared by every net assigned to it.
 

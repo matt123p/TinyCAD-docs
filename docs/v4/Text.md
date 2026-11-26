@@ -51,7 +51,7 @@ Markdown text boxes are available in [TinyCAD v4.0.11](../Changelog/#v4011).
 3. Click elsewhere to see the formatted note without the Markdown markers. Resize
    the box if the content is clipped.
 
-![SVG-rendered Markdown note with a heading, component list, task list and code block.](../images/markdown-preview.png)
+![SVG-rendered Markdown note with a heading, component list, task list and code block.](../Images/markdown-preview.png)
 
 ### Editable Markdown source
 {: #editable-markdown-source}
@@ -65,7 +65,7 @@ Your chosen font family, size, bold and italic settings form the base style.
 Headings scale relative to that size; code also uses the chosen family. Undo,
 copy/paste and saving preserve the Markdown source.
 
-![Editing the same note with visible heading, bold, list, task-list and code-fence markers.](../images/markdown-source-editor.png)
+![Editing the same note with visible heading, bold, list, task-list and code-fence markers.](../Images/markdown-source-editor.png)
 
 ### Supported formatting
 {: #supported-formatting}

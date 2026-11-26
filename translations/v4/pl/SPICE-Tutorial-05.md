@@ -30,7 +30,7 @@ Sprawdzanie konfiguracji AC, odczytywanie częstotliwości granicznej oraz prze�
 ### Układ i wyniki odniesienia
 {: #circuit-and-reference-results}
 
-![Obliczona charakterystyka modułu i fazy](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Obliczona charakterystyka modułu i fazy](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Interpretacja wyniku zespolonego
 {: #interpret-the-complex-result}

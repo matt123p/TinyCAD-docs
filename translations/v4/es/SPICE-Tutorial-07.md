@@ -14,7 +14,7 @@ Abra **amp-bias**. Este reconstruye la topología de
 atribuido originalmente a Matt Pyne, en 1995. Utiliza componentes de la biblioteca
 SPICE essentials de TinyCAD y fuentes de simulación configurables.
 
-![AMP.DSN reconstruido con componentes de simulación](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![AMP.DSN reconstruido con componentes de simulación](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Qué se conservó y qué se modeló
 {: #what-was-preserved-and-what-was-modelled}

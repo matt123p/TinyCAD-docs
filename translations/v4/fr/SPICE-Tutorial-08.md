@@ -17,7 +17,7 @@ elle ne permet pas d’établir que le matériel d’origine se comporte avec pr
 Sélectionnez **Voltage gain**, la trace calculée enregistrée OUT/IN. Affichez le module en dB
 et la phase. Dans vos notes, distinguez les tensions de nœud du gain sans dimension.
 
-![Gain et phase calculés de l’amplificateur](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Gain et phase calculés de l’amplificateur](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Interpréter le résultat avant de l’expliquer
 {: #read-the-result-before-explaining-it}

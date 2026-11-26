@@ -36,7 +36,7 @@ Wenn Sie bereits Bibliotheken mit der Desktopversion von TinyCAD erstellt haben,
 1. Klicken Sie in Google Drive mit der rechten Maustaste auf die Datei `.tclib`.
 2. Wählen Sie **Öffnen mit (Open with) -> TinyCAD**.
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 Wiederholen Sie dies für **jede** Bibliothek, die verfügbar sein soll.
 
@@ -49,22 +49,22 @@ Kehren Sie zu Ihrer Zeichnungssitzung zurück:
 1. Öffnen Sie **Meine Bibliotheken (My Libraries)**.
 2. Klicken Sie neben **Meine Bibliotheken (My Libraries)** auf **Aktualisieren (Refresh)**.
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 Nach der Aktualisierung werden die Bibliotheken aufgelistet:
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 Sie können Bibliotheken durchsuchen, indem Sie sie aufklappen:
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### Eine neue Bibliothek erstellen
 {: #creating-a-new-library}
 
 Verwenden Sie den Menüpunkt **Neue benutzerdefinierte Bibliothek (New Custom Library)**:
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### Eine Bibliothek bearbeiten
 {: #edit-a-library}
@@ -79,7 +79,7 @@ Bearbeiten Sie eine vorhandene Bibliothek, indem Sie sie in TinyCAD Web über di
 
 Bevor Symbole aus einer Bibliothek verwendet werden können, muss die Bibliothek zur Liste der Bibliotheken unter **Meine Bibliotheken (My Libraries)** hinzugefügt werden.
 
-![Seitenleiste „Meine Bibliotheken“](/v4/images/media/image9.png)
+![Seitenleiste „Meine Bibliotheken“](/v4/Images/media/image9.png)
 
 Um eine Bibliothek zu dieser Liste hinzuzufügen, klicken Sie auf **Hinzufügen (Add)**. Ein Dateiauswahldialog wird angezeigt. Wählen Sie eine Bibliotheksdatei mit der Erweiterung `.tclib` aus.
 
@@ -90,7 +90,7 @@ Um eine Bibliothek aus der Liste zu entfernen, klicken Sie auf das Bearbeitungss
 
 Wählen Sie im Bibliotheksbearbeitungsdialog die Bibliothek aus und klicken Sie auf **Bearbeiten (Edit)**. Ein neues Fenster mit Miniaturansichten der Bibliothek wird geöffnet.
 
-![Bibliothekseditor mit Symbolminiaturen](/v4/images/media/image10.png)
+![Bibliothekseditor mit Symbolminiaturen](/v4/Images/media/image10.png)
 
 Verwenden Sie das Bibliotheksbearbeitungsfenster, um:
 

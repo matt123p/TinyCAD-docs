@@ -11,7 +11,7 @@ layout: default
 
 W menu **Plik** wybierz **Eksportuj do PDF**. TinyCAD otworzy rysunek jako PDF w nowej karcie. Użyj funkcji drukowania w przeglądarce PDF, aby go wydrukować.
 
-<img src="/v4/images/media/image12.png" alt="The File menu"  />
+<img src="/v4/Images/media/image12.png" alt="The File menu"  />
 
 
 ### Aplikacja desktopowa
@@ -19,7 +19,7 @@ W menu **Plik** wybierz **Eksportuj do PDF**. TinyCAD otworzy rysunek jako PDF w
 
 Wybierz **Plik → Drukuj**, aby otworzyć **Podgląd wydruku**. Po lewej stronie widać rysunek, a po prawej ustawienia drukowania.
 
-<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
+<img src="/v4/Images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
 #### Drukowanie bezpośrednie
 {: #print-directly}

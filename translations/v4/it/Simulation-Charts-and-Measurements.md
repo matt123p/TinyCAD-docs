@@ -33,7 +33,7 @@ Scarica [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), aprilo tramit
 
 Con R1 = 1 kΩ e C = 1 µF, la frequenza d’angolo nominale è circa 159,15 Hz. **Misurazioni** include il taglio, il guadagno a 100 Hz e la fase alla frequenza d’angolo ideale; **Requisiti** verifica che la frequenza di taglio sia compresa tra 150 e 170 Hz.
 
-![Controlli di regolazione di Circuit Explorer nello schema RC complementare](../images/simulation/explorer-tuning.png)
+![Controlli di regolazione di Circuit Explorer nello schema RC complementare](../Images/simulation/explorer-tuning.png)
 
 ## Regola senza modificare il circuito salvato
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Le definizioni dello sweep, i valori, le unità, lo stato delle esecuzioni e le 
 
 In **Misurazioni**, aggiungi un nome, seleziona un segnale/componente ed espandi le relative impostazioni. Imposta una finestra temporale/di frequenza significativa e gli eventuali livelli o riferimenti richiesti. I collegamenti ai componenti/alle sonde usano l’identità del foglio insieme al riferimento, per poter sopravvivere alla riapertura.
 
-![Misurazioni preparate di frequenza di taglio, guadagno e fase](../images/simulation/explorer-measurements.png)
+![Misurazioni preparate di frequenza di taglio, guadagno e fase](../Images/simulation/explorer-measurements.png)
 
 | Misurazione | Interpretazione |
 | --- | --- |
@@ -91,7 +91,7 @@ Per la frequenza di taglio, usa un guadagno di riferimento lineare esplicito opp
 
 Usa **Requisiti** per verificare una misurazione con nome rispetto a **almeno**, **al massimo** o un intervallo inclusivo **tra**. Le unità devono corrispondere. Gli esiti sono **superato**, **non superato** o **non disponibile**; una metrica non disponibile non equivale a un requisito superato.
 
-![Requisito sulla frequenza di taglio RC con un intervallo accettabile esplicito](../images/simulation/explorer-requirements.png)
+![Requisito sulla frequenza di taglio RC con un intervallo accettabile esplicito](../Images/simulation/explorer-requirements.png)
 
 Seleziona una misurazione disponibile per esaminarne gli elementi probatori e l’eventuale evidenziazione applicabile nello schema. Conserva le definizioni delle misurazioni, le finestre e le soglie insieme ai risultati esportati. L’evidenziazione bidirezionale generale delle sonde non è completa per ogni tipo di segnale o modello.
 
@@ -100,7 +100,7 @@ La sovrapposizione DC nello schema richiede un’acquisizione del punto di funzi
 ## Laboratorio di analisi
 {: #analysis-lab}
 
-![Flussi di lavoro del Laboratorio di analisi in Circuit Explorer](../images/simulation/analysis-lab.png)
+![Flussi di lavoro del Laboratorio di analisi in Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Risposta in frequenza e dell’amplificatore
 {: #frequency-and-amplifier-response}

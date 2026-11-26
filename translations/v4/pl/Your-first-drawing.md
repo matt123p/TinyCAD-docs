@@ -14,7 +14,7 @@ przewodami. W tym przykładzie umieścisz kilka symboli, a następnie połączys
 
 Oto prosty obwód do narysowania:
 
-<img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
+<img src="/v4/Images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
 <p>
 	<a href="/v4/examples/First%20Drawing.dsn" class="btn btn-primary" download>
@@ -27,7 +27,7 @@ Oto prosty obwód do narysowania:
 {: #video-walkthrough}
 
 {% include video-player.html
-	src="/v4/images/video/Video 2.mp4"
+	src="/v4/Images/video/Video 2.mp4"
 	width=1618
 	height=922
 	caption="Film instruktażowy pokazujący, jak edytować i przesuwać tekst symbolu."
@@ -47,15 +47,15 @@ Teraz umieść rezystor i diodę LED.
 
 Użyj przycisków obracania/odwracania na pasku narzędzi, aby ustawić symbole:
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 Jeśli popełnisz błąd, użyj poleceń Cofnij/Ponów (Undo/Redo):
 
-<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" />
+<img src="/v4/Images/media/image6.png" alt="Undo and Redo toolbar buttons" />
 
 Rysunek powinien wyglądać podobnie do tego:
 
-<img src="/v4/images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
+<img src="/v4/Images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
 
 ## Łączenie obwodu przewodami
 {: #wiring-up-a-circuit}
@@ -71,7 +71,7 @@ Wskazówka: naciśnij `W` na klawiaturze, aby szybko ponownie włączyć tryb ry
 
 Po połączeniu obwód powinien wyglądać podobnie do tego:
 
-<img src="/v4/images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
+<img src="/v4/Images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
 
 ## Dodawanie opisów do rysunku
 {: #annotating-the-drawing}
@@ -102,7 +102,7 @@ na rysunku.
 
 Aby zapisać rysunek, użyj przycisków „Zapisz jako” (Save As) lub „Zapisz” (Save) na pasku narzędzi:
 
-<img src="/v4/images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
+<img src="/v4/Images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
 
 
 ### Google w przeglądarce
@@ -114,7 +114,7 @@ Pierwszy rysunek jest gotowy. Aby zmienić jego nazwę:
 2. Zmień nazwę na `First Drawing.dsn`.
 3. Naciśnij Enter.
 
-<img src="/v4/images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
+<img src="/v4/Images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
 
 Zapisz na Dysku Google, używając ikony **Zapisz (Save)**.
 
@@ -124,7 +124,7 @@ Aby ponownie wczytać rysunek z Dysku Google:
 2. Znajdź rysunek.
 3. Kliknij go prawym przyciskiem myszy i wybierz **Otwórz za pomocą -> TinyCAD (Open with -> TinyCAD)**.
 
-<img src="/v4/images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
+<img src="/v4/Images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
 
 Możesz także zmieniać nazwy projektów TinyCAD i usuwać je na Dysku Google.
 

@@ -24,7 +24,7 @@ Sie können diese in ein Polygon umwandeln, indem Sie im Kontextmenü „Polygon
 Sobald es in ein Polygon umgewandelt wurde, können Sie die Füllung ändern.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Videoanleitung zum Zeichnen und Bearbeiten eines Polygons."

@@ -13,7 +13,7 @@ layout: default
 
 作成する簡単な回路を示します。
 
-<img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
+<img src="/v4/Images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
 <p>
 	<a href="/v4/examples/First%20Drawing.dsn" class="btn btn-primary" download>
@@ -26,7 +26,7 @@ layout: default
 {: #video-walkthrough}
 
 {% include video-player.html
-	src="/v4/images/video/Video 2.mp4"
+	src="/v4/Images/video/Video 2.mp4"
 	width=1618
 	height=922
 	caption="シンボルのテキストを編集し、位置を調整する方法を示す動画。"
@@ -46,15 +46,15 @@ layout: default
 
 ツールバーの回転／反転コントロールを使って、シンボルの向きを調整します。
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 間違えた場合は、元に戻す／やり直しを使用します。
 
-<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" />
+<img src="/v4/Images/media/image6.png" alt="Undo and Redo toolbar buttons" />
 
 図面は次のようになります。
 
-<img src="/v4/images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
+<img src="/v4/Images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
 
 ## 回路の配線
 {: #wiring-up-a-circuit}
@@ -69,7 +69,7 @@ layout: default
 
 配線すると、次のようになります。
 
-<img src="/v4/images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
+<img src="/v4/Images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
 
 ## 図面への注釈
 {: #annotating-the-drawing}
@@ -98,7 +98,7 @@ layout: default
 
 図面を保存するには、ツールバーの「Save As」または「Save」ボタンを使用します。
 
-<img src="/v4/images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
+<img src="/v4/Images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
 
 
 ### ブラウザーのGoogle
@@ -110,7 +110,7 @@ layout: default
 2. 名前を`First Drawing.dsn`に変更します。
 3. Enterを押します。
 
-<img src="/v4/images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
+<img src="/v4/Images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
 
 **Save**アイコンを使ってGoogle Driveに保存します。
 
@@ -120,7 +120,7 @@ Google Driveから再度読み込むには、次の手順を実行します。
 2. 図面を見つけます。
 3. 右クリックして、**Open with -> TinyCAD**を選択します。
 
-<img src="/v4/images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
+<img src="/v4/Images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
 
 Google Driveでは、TinyCADの図面の名前変更や削除もできます。
 

@@ -21,8 +21,8 @@ Utilisez **TinyCAD Desktop** pour ce cours. Son moteur natif intégré comprend 
 
 Ouvrez **logic-buffer**. Exécutez la simulation transitoire de 8 µs enregistrée et tracez A et Y. A est un signal de 0 à 5 V, de période 1 µs. Y le suit avec un léger retard de propagation et des fronts de sortie de durée finie.
 
-![Circuit de test du tampon XSPICE](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Entrée et sortie calculées du tampon](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Circuit de test du tampon XSPICE](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Entrée et sortie calculées du tampon](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 est un sous-circuit intégré qui comporte trois étages internes explicites :
 

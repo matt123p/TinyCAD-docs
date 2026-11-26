@@ -9,7 +9,7 @@ Details. Diese Werte bearbeiten Sie mit dem Befehl **Konstruktionsdetails (Desig
 
 Das Feld „Konstruktionsdetails“ kann unten links in der Zeichnung erscheinen:
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Konstruktionsdetails bearbeiten
 {: #edit-design-details}
@@ -21,7 +21,7 @@ Das Feld „Konstruktionsdetails“ kann unten links in der Zeichnung erscheinen
 
 Bearbeiten Sie die Details über das Einstellungsmenü mit **Konstruktionsdetails (Design Details)**:
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 Beim Speichern des Entwurfs werden diese Details mitgespeichert.
 
@@ -41,11 +41,11 @@ in der Zeichnung angezeigt wird.
 Sie können das Feld ein- oder ausschalten und Konstruktionshilfslinien konfigurieren (Buchstaben/Zahlen
 am Seitenrand):
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 Die Konstruktionshilfslinien werden wie folgt angezeigt:
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Hinweise
 {: #notes}

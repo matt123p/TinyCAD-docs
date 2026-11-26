@@ -13,7 +13,7 @@ Apri **amp-small-signal**. VIN fornisce una sinusoide
 con picco di 10 mV e frequenza di 1 kHz. L’analisi transitoria dura 12 ms, con un passo massimo di 2 µs.
 Confronta IN e OUT, quindi misura gli ultimi quattro cicli, da 8 ms a 12 ms.
 
-![Forme d’onda misurate dell’amplificatore a piccolo segnale](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Forme d’onda misurate dell’amplificatore a piccolo segnale](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 Il risultato AC prevede un picco di circa 8.92 mV su OUT, invertito rispetto all’ingresso.
 L’analisi transitoria restituisce circa da −8.87 a +8.99 mV nella finestra di misurazione,
@@ -46,7 +46,7 @@ Apri **amp-clipping**. Cambia solo l’ampiezza di VIN,
 portandola a un picco di 500 mV. Un’estrapolazione lineare prevederebbe un picco di circa 446 mV su OUT
 in entrambe le direzioni. La forma d’onda calcolata non si comporta così.
 
-![Uscita calcolata asimmetrica a grande segnale](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Uscita calcolata asimmetrica a grande segnale](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 Nella stessa finestra da 8 a 12 ms, l’uscita varia approssimativamente da
 **−0.162 a +0.389 V**, con **0.2126 V RMS**. Il consumo dell’alimentazione è circa

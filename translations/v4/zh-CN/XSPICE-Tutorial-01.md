@@ -23,8 +23,8 @@ XSPICE 通过代码模型和事件驱动仿真系统扩展了 ngspice。
 打开 **logic-buffer**。运行保存的 8 µs 瞬态分析，
 并绘制 A 和 Y。A 是周期为 1 µs、幅度为 0–5 V 的波形。Y 在经过一小段传播延迟后跟随该波形，且输出边沿具有有限的转换时间。
 
-![XSPICE 缓冲器测试电路](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![计算得到的缓冲器输入和输出](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![XSPICE 缓冲器测试电路](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![计算得到的缓冲器输入和输出](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 是一个嵌入式子电路，包含三个明确的内部级：
 

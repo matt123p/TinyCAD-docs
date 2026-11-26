@@ -11,7 +11,7 @@ title: 9. Amplifier waveform, clipping and power usage
 
 **amp-small-signal** を開きます。VIN はピーク値 10 mV、周波数 1 kHz の正弦波を供給します。過渡解析の時間は 12 ms、最大刻み幅は 2 µs です。IN と OUT を比較し、最後の4周期、つまり 8 ms から 12 ms までを測定します。
 
-![測定した小信号アンプの波形](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![測定した小信号アンプの波形](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 AC解析の結果から、OUT のピーク値は約 8.92 mV で、入力に対して反転すると予測されます。過渡解析では、測定区間において約 −8.87～+8.99 mVとなり、**実効値は 6.304 mV** です。正負のピーク値にわずかな差があるのは、非線形モデルと過渡解析の残留効果によるものです。
 
@@ -29,7 +29,7 @@ TinyCAD で VCC と RL のコンポーネント電力測定を追加し、From/T
 
 **amp-clipping** を開きます。VIN の振幅だけを、ピーク値 500 mV に変更します。線形に外挿すると、OUT は正負両方向に約 446 mV のピーク値になると予測されます。しかし、計算された波形はそうなりません。
 
-![計算された非対称な大信号出力](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![計算された非対称な大信号出力](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 同じ 8～12 ms の区間で、出力は約 **−0.162～+0.389 V** の範囲となり、**実効値は 0.2126 V** です。電源消費電力は約 **315.23 mW**、抵抗負荷の合計電力は **5.65 mW** で、この区間の電気効率は約 **1.79%** です。この有限の測定区間における出力の平均値は約 31 mV です。交流成分のみの負荷電力を求めるには、二乗する前に平均値を差し引きます。全体の実効値ではなく、リップルの実効値を使ってください。
 

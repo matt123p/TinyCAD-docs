@@ -21,7 +21,7 @@ Dąż do uzyskania zera błędów projektowych, aby zwiększyć pewność co do 
 4. Wybierz **OK**, aby uruchomić kontrolę.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Samouczek wideo pokazujący, jak uruchomić i używać narzędzia do kontroli reguł projektowych."

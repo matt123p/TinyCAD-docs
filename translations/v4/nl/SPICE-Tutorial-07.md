@@ -14,7 +14,7 @@ Open **amp-bias**. Hiermee wordt de topologie opnieuw opgebouwd van
 in het origineel toegeschreven aan Matt Pyne, 1995. Het gebruikt componenten uit de
 SPICE-basisonderdelenbibliotheek van TinyCAD en configureerbare simulatiebronnen.
 
-![Opnieuw opgebouwde AMP.DSN met simulatiecomponenten](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![Opnieuw opgebouwde AMP.DSN met simulatiecomponenten](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Wat behouden is en wat gemodelleerd werd
 {: #what-was-preserved-and-what-was-modelled}

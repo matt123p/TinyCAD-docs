@@ -11,8 +11,8 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Open Ex
 
 Öffnen Sie **logic-counter**. X1 enthält vier D-Flipflops. Jedes führt seinen invertierten Ausgang auf den D-Eingang zurück, sodass es bei jedem Takt umschaltet. Die erste Stufe erhält CLK; die nachfolgenden Stufen werden jeweils vom invertierten Ausgang der vorherigen Stufe getaktet. Dadurch entsteht ein asynchroner binärer Aufwärtszähler.
 
-![Vier-Bit-Zähler-Testschaltung](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Berechnete Ausgänge des geteilten Takts](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Vier-Bit-Zähler-Testschaltung](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Berechnete Ausgänge des geteilten Takts](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 Die Eingangsperiode beträgt 1 µs. Der Reset löscht die Stufen kurz nach dem Start, und die erste Zählflanke tritt etwa bei 0,5 µs auf. Führen Sie die gespeicherte transiente Simulation über 18 µs aus. Lesen Sie jeden Wert ab, nachdem sich das Ripple eingeschwungen hat, beispielsweise bei 0,8 µs, 1,8 µs, 2,8 µs usw.
 

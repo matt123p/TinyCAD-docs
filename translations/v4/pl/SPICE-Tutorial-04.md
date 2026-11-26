@@ -26,9 +26,9 @@ Zmniejszanie maksymalnego kroku czasowego i pomiar OUT po 1 ms oraz stałej czas
 ### Obwód i wyniki referencyjne
 {: #circuit-and-reference-results}
 
-![Obwód ładowania RC](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![Obwód ładowania RC](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Obliczony przebieg ładowania kondensatora](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Obliczony przebieg ładowania kondensatora](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Dlaczego napięcie wyjściowe zmienia się płynnie, a nie skokowo
 {: #why-the-output-curves-rather-than-jumps}

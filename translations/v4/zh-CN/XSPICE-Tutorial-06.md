@@ -15,8 +15,8 @@ title: 6. Mixed-signal filtering and unknown states
 标称占空比约为 25%。输入边沿并非理想，因此按阈值定义的精确
 占空比会略有不同。
 
-![混合数字与模拟滤波电路](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![计算得到的 PWM 和滤波输出](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![混合数字与模拟滤波电路](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![计算得到的 PWM 和滤波输出](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 运行 5 ms 瞬态分析。绘制 A、Y 和 FILTERED。数字路径保留了
 脉冲功能；RC 网络对其进行平均，同时保留一定纹波。
@@ -43,7 +43,7 @@ title: 6. Mixed-signal filtering and unknown states
 打开 **logic-unknown**。其 PWL 输入依次保持在
 0 V、2 V 和 5 V。运行 3 µs 并检查中间的平台。
 
-![未定义数字状态的计算模拟表示](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![未定义数字状态的计算模拟表示](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 ADC 桥接器的低阈值和高阈值分别为 1 V 和 3 V。2 V 平台位于
 两者之间，因此事件驱动输入处于未定义状态。该未知状态会传播

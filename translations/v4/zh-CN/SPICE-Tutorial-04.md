@@ -26,9 +26,9 @@ title: "4. Transient analysis: charging a capacitor"
 ### 电路和参考结果
 {: #circuit-and-reference-results}
 
-![RC 充电电路](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![RC 充电电路](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![计算得到的电容充电曲线](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![计算得到的电容充电曲线](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## 为什么输出是曲线而非跳变
 {: #why-the-output-curves-rather-than-jumps}

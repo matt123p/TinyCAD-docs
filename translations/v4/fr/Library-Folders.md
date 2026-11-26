@@ -26,7 +26,7 @@ Les dossiers de bibliothèques sont disponibles uniquement dans l’application 
 
 Les modes basés sur un navigateur affichent toujours Mes bibliothèques lorsqu’ils le permettent, mais ne proposent ni la création de dossiers, ni le regroupement des dossiers, ni le glisser-déposer de dossiers.
 
-![Mes bibliothèques dans l’application de bureau, avec Circuit components développé, un dossier Sensors and modules vide et des bibliothèques non classées.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![Mes bibliothèques dans l’application de bureau, avec Circuit components développé, un dossier Sensors and modules vide et des bibliothèques non classées.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### Actions possibles
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ Les bibliothèques qui ne sont attribuées à aucun dossier apparaissent dans la
 4. Saisissez un nom pour le nouveau dossier, par exemple `Project libraries`.
 5. Choisissez **Ajouter (Add)**.
 
-![Boîte de dialogue de création de dossier, avec Project libraries saisi et le bouton Ajouter prêt à confirmer.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Boîte de dialogue de création de dossier, avec Project libraries saisi et le bouton Ajouter prêt à confirmer.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 Le nouveau dossier apparaît dans la liste des bibliothèques et peut être sélectionné immédiatement.
 
@@ -72,7 +72,7 @@ Si vous cliquez sur une bibliothèque, TinyCAD sélectionne automatiquement le d
 
 Les bibliothèques sélectionnées sont ajoutées au dossier sélectionné.
 
-![Project libraries sélectionné dans Mes bibliothèques, avec une zone de dépôt vide et le bouton d’ajout de bibliothèques dans l’en-tête.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![Project libraries sélectionné dans Mes bibliothèques, avec une zone de dépôt vide et le bouton d’ajout de bibliothèques dans l’en-tête.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Si vous ne sélectionnez pas de dossier personnalisé, les bibliothèques sont ajoutées à Non classées (Unfiled).
 
@@ -85,7 +85,7 @@ Vous pouvez également déposer une bibliothèque dans Non classées (Unfiled) p
 
 Si un dossier est vide, TinyCAD affiche une zone de dépôt pour vous permettre d’y déplacer des bibliothèques.
 
-![Sensor interfaces déplacé de Non classées vers Sensors and modules, avec les commandes de réorganisation, de renommage et de suppression du dossier sélectionné visibles.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Sensor interfaces déplacé de Non classées vers Sensors and modules, avec les commandes de réorganisation, de renommage et de suppression du dossier sélectionné visibles.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Réorganiser les dossiers
 {: #reorder-folders}
@@ -106,7 +106,7 @@ Les boutons d’action du dossier s’affichent lorsque vous placez le pointeur 
 - Sélectionnez **Renommer le dossier (Rename folder)** (l’icône en forme de crayon) pour renommer le dossier. Saisissez le nouveau nom, puis choisissez **Renommer (Rename)**.
 - Sélectionnez **Supprimer le dossier (Remove folder)** (l’icône de corbeille) pour supprimer le dossier. Confirmez en choisissant **Supprimer (Delete)**.
 
-![Boîte de dialogue de renommage du dossier, modifiant Sensors and modules en Sensors and displays.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Boîte de dialogue de renommage du dossier, modifiant Sensors and modules en Sensors and displays.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 Lorsqu’un dossier est supprimé, les bibliothèques qu’il contient sont déplacées vers Non classées (Unfiled). Les fichiers de bibliothèque eux-mêmes ne sont pas supprimés de TinyCAD.
 

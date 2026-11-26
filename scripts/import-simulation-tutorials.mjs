@@ -39,7 +39,7 @@ const records = [];
 function destination(file) {
   if (pages.has(file)) return 'v4/' + pages.get(file).replace(/\.md$/, '/') ;
   const parts = file.split('/');
-  if (parts[1] === 'images') return 'v4/images/simulation-tutorials/' + parts[0] + '/' + parts.slice(2).join('/');
+  if (parts[1] === 'images') return 'v4/Images/simulation-tutorials/' + parts[0] + '/' + parts.slice(2).join('/');
   if (parts[1] === 'videos') return 'v4/videos/simulation-tutorials/' + parts[0] + '/' + parts.slice(2).join('/');
   if (parts[1] === 'circuits') return 'v4/examples/simulation-tutorials/' + parts[0] + '/' + parts.slice(2).join('/');
   return null;

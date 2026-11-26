@@ -66,7 +66,7 @@ viene segnalata come non disponibile; non deve essere interpretata come consumo 
 Aprire **dc-sweep**. L'analisi salvata **Sweep DC (DC sweep)** usa V1,
 con valore iniziale di 0 V, valore finale di 10 V e incrementi di 0,5 V. Eseguire l'analisi e tracciare OUT.
 
-![Curva di trasferimento CC calcolata](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Curva di trasferimento CC calcolata](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 L'asse orizzontale rappresenta il valore del generatore variato, non il tempo. I valori attesi sono
 0 V, 2,5 V e 5 V quando l'alimentazione vale rispettivamente 0 V, 5 V e 10 V. La pendenza è 0,5 V/V.

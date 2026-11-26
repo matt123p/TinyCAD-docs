@@ -65,9 +65,9 @@ Ajustar una ventana de medición de 160–200 ms y comparar la tensión media co
 ### Circuito y resultados de referencia
 {: #circuit-and-reference-results}
 
-![Rectificador de media onda y condensador de reserva](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Rectificador de media onda y condensador de reserva](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Rizado calculado durante el arranque y en régimen permanente](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Rizado calculado durante el arranque y en régimen permanente](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Experimentos que muestran las ventajas y desventajas
 {: #experiments-that-reveal-the-trade-offs}

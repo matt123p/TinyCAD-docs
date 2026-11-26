@@ -7,7 +7,7 @@ layout: default
 Utilisez **Rechercher** dans le panneau inférieur pour rechercher du texte dans le dessin :
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="Vidéo de démonstration montrant comment rechercher dans un dessin."

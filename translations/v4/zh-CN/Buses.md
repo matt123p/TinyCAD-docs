@@ -13,7 +13,7 @@ layout: default
 ## 绘图示例
 {: #example-drawing}
 
-<img src="/v4/images/Image 1.svg" alt="A example of using Buses" />
+<img src="/v4/Images/Image 1.svg" alt="A example of using Buses" />
 
 <p>
 	<a href="/v4/examples/Bus%20Example.dsn" class="btn btn-primary" download>

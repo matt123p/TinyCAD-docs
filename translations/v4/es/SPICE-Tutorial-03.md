@@ -39,7 +39,7 @@ Cambio del desplazamiento, la amplitud de pico y la frecuencia del seno; despué
 ### Circuito y resultados de referencia
 {: #circuit-and-reference-results}
 
-![Ejemplos de formas de onda medidas](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Ejemplos de formas de onda medidas](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplitud, desplazamiento y temporización
 {: #amplitude-offset-and-timing}

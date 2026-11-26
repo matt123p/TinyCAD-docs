@@ -45,7 +45,7 @@ l'accesso a ciascuna di esse:
 1. In Google Drive, fate clic con il pulsante destro del mouse sul file `.tclib`.
 2. Scegliete **Apri con -> TinyCAD (Open with -> TinyCAD)**.
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 Ripetete l'operazione per **ogni** libreria che volete rendere disponibile.
 
@@ -60,22 +60,22 @@ Tornate alla sessione di disegno:
 1. Aprite **Le mie librerie (My Libraries)**.
 2. Fate clic su **Aggiorna (Refresh)** accanto a **Le mie librerie (My Libraries)**.
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 Dopo l'aggiornamento, le librerie vengono elencate:
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 Potete esplorare le librerie espandendole:
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### Creare una nuova libreria
 {: #creating-a-new-library}
 
 Usate la voce di menu **Nuova libreria personalizzata (New Custom Library)**:
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### Modificare una libreria
 {: #edit-a-library}
@@ -91,7 +91,7 @@ Modificate una libreria esistente aprendola in TinyCAD web tramite il pulsante *
 Prima di poter usare i simboli di una libreria, è necessario aggiungere la libreria all'elenco
 delle librerie in **Le mie librerie (My Libraries)**.
 
-![Pannello laterale Le mie librerie](/v4/images/media/image9.png)
+![Pannello laterale Le mie librerie](/v4/Images/media/image9.png)
 
 Per aggiungere una libreria a questo elenco, fate clic su **Aggiungi (Add)**. Verrà visualizzata una finestra di dialogo per la selezione dei file.
 Selezionate un file di libreria con estensione `.tclib`.
@@ -106,7 +106,7 @@ soltanto dall'elenco.
 Usate la finestra di dialogo di modifica delle librerie per selezionare la libreria e fate clic su **Modifica (Edit)**. Si apre una nuova
 finestra con una vista in miniatura della libreria.
 
-![Editor della libreria con miniature dei simboli](/v4/images/media/image10.png)
+![Editor della libreria con miniature dei simboli](/v4/Images/media/image10.png)
 
 Usate la finestra di modifica della libreria per:
 

@@ -33,7 +33,7 @@ Téléchargez [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), ouvrez-
 
 Avec R1 = 1 kΩ et C = 1 µF, la fréquence de coupure nominale est d’environ 159,15 Hz. **Mesures** comprend la coupure, le gain à 100 Hz et la phase à la fréquence de coupure idéale ; **Exigences** vérifie que la fréquence de coupure se situe entre 150 et 170 Hz.
 
-![Commandes de réglage de Circuit Explorer dans le schéma RC compagnon](../images/simulation/explorer-tuning.png)
+![Commandes de réglage de Circuit Explorer dans le schéma RC compagnon](../Images/simulation/explorer-tuning.png)
 
 ## Régler sans modifier le circuit enregistré
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Les définitions de balayage, les valeurs, les unités, l’état d’exécution
 
 Dans **Mesures**, ajoutez un nom, sélectionnez un signal/composant et développez ses paramètres. Définissez une fenêtre temporelle/fréquentielle pertinente ainsi que les niveaux ou références nécessaires. Les associations aux composants/sondes utilisent l’identité de la feuille et la référence afin de pouvoir être conservées après réouverture.
 
-![Mesures préparées de coupure, de gain et de phase](../images/simulation/explorer-measurements.png)
+![Mesures préparées de coupure, de gain et de phase](../Images/simulation/explorer-measurements.png)
 
 | Mesure | Interprétation |
 | --- | --- |
@@ -91,7 +91,7 @@ Pour la coupure, utilisez un gain de référence linéaire explicite ou **crête
 
 Utilisez **Exigences** pour tester une mesure nommée avec **au moins**, **au plus** ou une plage **entre** bornes incluses. Les unités doivent correspondre. Les résultats sont **réussi**, **échoué** ou **indisponible** ; une mesure indisponible ne constitue pas une exigence satisfaite.
 
-![Exigence de fréquence de coupure RC avec une plage acceptable explicite](../images/simulation/explorer-requirements.png)
+![Exigence de fréquence de coupure RC avec une plage acceptable explicite](../Images/simulation/explorer-requirements.png)
 
 Sélectionnez une mesure disponible pour examiner les éléments justificatifs et la mise en évidence applicable dans le schéma. Conservez les définitions de mesure, les fenêtres et les seuils avec les résultats exportés. La mise en évidence bidirectionnelle générale des sondes n’est pas complète pour tous les types de signaux ou de modèles.
 
@@ -100,7 +100,7 @@ La superposition CC du schéma nécessite une acquisition du point de fonctionne
 ## Laboratoire d’analyse
 {: #analysis-lab}
 
-![Flux de travail du laboratoire d’analyse dans Circuit Explorer](../images/simulation/analysis-lab.png)
+![Flux de travail du laboratoire d’analyse dans Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Réponse fréquentielle et réponse d’amplificateur
 {: #frequency-and-amplifier-response}

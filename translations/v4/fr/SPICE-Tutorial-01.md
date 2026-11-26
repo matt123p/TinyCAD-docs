@@ -60,7 +60,7 @@ Ouverture de l’exemple intégré, vérification des valeurs en courant continu
 ### Circuit et résultats de référence
 {: #circuit-and-reference-results}
 
-![Circuit diviseur de tension généré à partir du schéma enregistré](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Circuit diviseur de tension généré à partir du schéma enregistré](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Prédire le résultat
 {: #predict-the-answer}
@@ -69,7 +69,7 @@ Le courant est `I = 5 / (1000 + 1000) = 2.5 mA`. La résistance inférieure pré
 `VOUT = I × 1000 = 2.5 V`. Lorsque R2 passe à 2 kΩ, l’équation du diviseur donne
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Résultats calculés du point de fonctionnement](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Résultats calculés du point de fonctionnement](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 Le courant de la source est de −2,5 mA. Il ne s’agit pas d’une erreur de câblage : SPICE définit le courant d’une source comme entrant par sa borne positive. Selon cette convention, une source qui fournit de l’énergie présente un courant négatif. Le chapitre 2 utilise ce signe pour calculer correctement la puissance.
 

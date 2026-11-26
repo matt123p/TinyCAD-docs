@@ -17,7 +17,7 @@ nie dowodzi, że oryginalny układ sprzętowy zachowuje się dokładnie w zakres
 Wybierz **Wzmocnienie napięciowe (Voltage gain)** — zapisaną krzywą pochodną OUT/IN. Wyświetl moduł w dB
 i fazę. W notatkach rozróżniaj napięcia w węzłach i bezwymiarowe wzmocnienie.
 
-![Obliczone wzmocnienie i faza wzmacniacza](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Obliczone wzmocnienie i faza wzmacniacza](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Najpierw odczytaj wynik, potem go objaśniaj
 {: #read-the-result-before-explaining-it}

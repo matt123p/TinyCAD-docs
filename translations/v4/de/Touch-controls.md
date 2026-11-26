@@ -46,7 +46,7 @@ Die Lupe vergrößert den Bereich um ein Fadenkreuz, sodass Ihr Finger den Ansch
 
 4. Tippen Sie auf **Lupe ausblenden (Hide Loupe)**, um zur direkten Touch-Bedienung zurückzukehren.
 
-![Touch-Lupe mit vergrößertem Anschlussbereich, Fadenkreuz und den Bedienelementen Klicken, Ziehen und Menü.](../images/touch-loupe.png)
+![Touch-Lupe mit vergrößertem Anschlussbereich, Fadenkreuz und den Bedienelementen Klicken, Ziehen und Menü.](../Images/touch-loupe.png)
 
 Um beispielsweise eine Leitung zu zeichnen, wählen Sie **Leitung (Wire)**, richten Sie das Fadenkreuz auf den Anfangspin aus und tippen Sie auf **Klicken (Click)**. Bewegen Sie den Finger, um das Fadenkreuz auf den nächsten Punkt auszurichten, und tippen Sie erneut auf **Klicken (Click)**. Verwenden Sie **Menü (Menu)** für die Kontextbefehle des Werkzeugs, wenn Sie den Vorgang beenden oder abbrechen möchten.
 

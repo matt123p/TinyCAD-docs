@@ -17,7 +17,7 @@ er belegt nicht, dass sich die ursprüngliche Hardware bei HF genau verhält.
 Wählen Sie **Voltage gain (Spannungsverstärkung)**, die gespeicherte abgeleitete Spur OUT/IN. Zeigen Sie den Betrag in dB
 und die Phase an. Halten Sie Knotenspannungen und dimensionslose Verstärkung in Ihren Notizen auseinander.
 
-![Berechnete Verstärkung und Phase des Verstärkers](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Berechnete Verstärkung und Phase des Verstärkers](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Lesen Sie das Ergebnis, bevor Sie es erklären
 {: #read-the-result-before-explaining-it}

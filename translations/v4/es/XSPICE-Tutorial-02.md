@@ -13,8 +13,8 @@ Abra **logic-nand**. X1 contiene puentes ADC, una puerta NAND XSPICE de
 dos entradas y un puente de salida DAC. Fuentes de pulsos independientes estimulan
 A y B a distintas velocidades. Ejecute el análisis transitorio de 8 µs y muestre A, B e Y.
 
-![Circuito de prueba NAND](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Formas de onda NAND calculadas](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![Circuito de prueba NAND](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Formas de onda NAND calculadas](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 La función booleana es `Y = NOT(A AND B)`:
 

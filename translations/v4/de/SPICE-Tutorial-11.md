@@ -123,7 +123,7 @@ Netz; es erzeugt keine Versorgungsspannung. Verbinden Sie eine tatsächliche Que
    ungefähr **3,333 V** betragen. Eine ältere, beibehaltene Erfassung beschreibt weiterhin
    die vorherige Schaltung; eine Wertänderung schreibt ihre Ergebnisse nicht um.
 
-![TinyCAD-Blatt Simulation mit RC-AC-Analyse und Grenzfrequenzmesswert](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![TinyCAD-Blatt Simulation mit RC-AC-Analyse und Grenzfrequenzmesswert](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Dieser Anwendungs-Screenshot zeigt die Ansicht **Setup** für **rc-ac**, ein weiteres
 Beispiel aus den eingebetteten Beispielen. Sein 1-kΩ/1-µF-Filter hat eine Grenzfrequenz von etwa **159,15 Hz**. Öffnen Sie es,
@@ -209,7 +209,7 @@ enthält eine Analog-Digital-Brücke, einen ereignisgesteuerten Puffer und eine
 Digital-Analog-Brücke. Die gewöhnliche Quelle treibt den Analogeingang;
 die Brücken machen die Logikzustände als Spannungen in den Diagrammen von TinyCAD sichtbar.
 
-![Berechneter Ein- und Ausgang des eingebetteten XSPICE-Puffers](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Berechneter Ein- und Ausgang des eingebetteten XSPICE-Puffers](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Führen Sie die gespeicherte Transientenanalyse aus. Erwartet werden 0–5-V-Impulse mit einer Periode
 von 1 µs und eine um ungefähr 20 ns verzögerte Ausgangsflanke mit endlicher Flankensteilheit. Zoomen Sie hinein, um

@@ -60,7 +60,7 @@ Das eingebettete Beispiel öffnen, die Gleichstromwerte prüfen, R2 ändern und 
 ### Schaltung und Referenzergebnisse
 {: #circuit-and-reference-results}
 
-![Spannungsteilerschaltung, dargestellt anhand der gespeicherten Zeichnung](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Spannungsteilerschaltung, dargestellt anhand der gespeicherten Zeichnung](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Das Ergebnis vorhersagen
 {: #predict-the-answer}
@@ -69,7 +69,7 @@ Der Strom beträgt `I = 5 / (1000 + 1000) = 2.5 mA`. Daher hat der untere Widers
 `VOUT = I × 1000 = 2.5 V`. Bei einem auf 2 kΩ geänderten R2 ergibt die Spannungsteilerformel
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Berechnete Arbeitpunktergebnisse](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Berechnete Arbeitpunktergebnisse](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 Der Quellstrom beträgt −2,5 mA. Das ist kein Verdrahtungsfehler: SPICE definiert
 den Quellstrom als in den positiven Anschluss hineinfließend. Eine Quelle, die

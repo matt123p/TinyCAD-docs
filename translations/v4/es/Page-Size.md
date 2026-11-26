@@ -6,7 +6,7 @@ layout: default
 
 Use **Tamaño de página** para establecer las dimensiones de todas las hojas.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Qué puede cambiar
 {: #what-you-can-change}

@@ -51,7 +51,7 @@ Elementy sterujące **Pomiary (Measurements)** w TinyCAD pozwalają wybrać napi
 Otwórz **dc-sweep**. Zapisana analiza **Przemiatanie DC (DC sweep)** używa źródła V1,
 rozpoczyna od 0 V, kończy na 10 V i zwiększa wartość o 0,5 V. Uruchom analizę i wykreśl OUT.
 
-![Obliczona charakterystyka przejściowa DC](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Obliczona charakterystyka przejściowa DC](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 Oś pozioma przedstawia wartość przemiatanego źródła, a nie czas. Oczekiwane wartości wynoszą
 0 V, 2,5 V i 5 V przy napięciach zasilania odpowiednio 0 V, 5 V i 10 V. Nachylenie wynosi 0,5 V/V.

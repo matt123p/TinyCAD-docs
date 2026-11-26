@@ -29,7 +29,7 @@ Comprobar la configuración de CA, leer la frecuencia de corte y cambiar entre m
 ### Circuito y resultados de referencia
 {: #circuit-and-reference-results}
 
-![Respuesta de magnitud y fase calculada](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Respuesta de magnitud y fase calculada](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Interpretar el resultado complejo
 {: #interpret-the-complex-result}

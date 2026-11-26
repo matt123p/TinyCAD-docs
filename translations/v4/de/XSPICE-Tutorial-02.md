@@ -11,8 +11,8 @@ Die Beispiele in diesem Kapitel werden mit TinyCAD mitgeliefert. Wählen Sie **B
 
 Öffnen Sie **logic-nand**. X1 enthält ADC-Brücken, ein zweieingängiges XSPICE-NAND-Gatter und eine DAC-Ausgangsbrücke. Unabhängige Impulsquellen steuern A und B mit unterschiedlichen Frequenzen an. Führen Sie die 8-µs-Transientensimulation aus und zeigen Sie A, B und Y an.
 
-![NAND-Testschaltung](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Berechnete NAND-Wellenformen](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![NAND-Testschaltung](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Berechnete NAND-Wellenformen](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 Die Boolesche Funktion lautet `Y = NOT(A AND B)`:
 

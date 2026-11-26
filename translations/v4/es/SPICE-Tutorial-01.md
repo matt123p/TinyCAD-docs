@@ -47,14 +47,14 @@ Abrir el ejemplo integrado, comprobar los valores de CC, cambiar R2 y ejecutar u
 ### Circuito y resultados de referencia
 {: #circuit-and-reference-results}
 
-![Circuito divisor de tensión generado a partir del dibujo guardado](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Circuito divisor de tensión generado a partir del dibujo guardado](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Predice el resultado
 {: #predict-the-answer}
 
 La corriente es `I = 5 / (1000 + 1000) = 2.5 mA`. Por tanto, la resistencia inferior tiene `VOUT = I × 1000 = 2.5 V`. Al cambiar R2 a 2 kΩ, la ecuación del divisor da `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Resultados calculados del punto de operación](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Resultados calculados del punto de operación](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 La corriente de la fuente es −2,5 mA. No se trata de un error de cableado: SPICE define la corriente de la fuente como entrante por su terminal positivo. Según esta convención, una fuente que suministra energía tiene corriente negativa. En el capítulo 2 se utiliza el signo para calcular correctamente la potencia.
 

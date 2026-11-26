@@ -45,14 +45,14 @@ SPICE 根据由相互连接的元件及其数学模型描述的电路，计算�
 ### 电路和参考结果
 {: #circuit-and-reference-results}
 
-![根据已保存的绘图渲染的分压器电路](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![根据已保存的绘图渲染的分压器电路](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## 预测结果
 {: #predict-the-answer}
 
 电流为 `I = 5 / (1000 + 1000) = 2.5 mA`。因此，下方电阻两端的电压为 `VOUT = I × 1000 = 2.5 V`。将 R2 更改为 2 kΩ 后，分压器公式得出 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`。
 
-![计算出的工作点结果](/v4/images/simulation-tutorials/spice/divider-results.png)
+![计算出的工作点结果](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 电源电流为 −2.5 mA。这并非接线错误：SPICE 将流入电源正端的电流定义为正。按照这一约定，向外提供能量的电源电流为负。第 2 章将使用该符号约定正确计算功率。
 

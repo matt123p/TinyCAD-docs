@@ -13,8 +13,8 @@ Open **logic-dff**. It provides separate analogue
 stimuli for D, CLK and RESET. Inside X1, bridges feed an XSPICE D flip-flop;
 Q and NQ are converted back to analogue outputs for plotting.
 
-![D flip-flop test circuit](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Computed clock, data, reset and Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![D flip-flop test circuit](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Computed clock, data, reset and Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Run the 8 µs transient. On each rising clock edge, Q captures D and then holds
 that state between edges. NQ is its complement after propagation settles. The

@@ -56,7 +56,7 @@ Opening the embedded example, checking the DC numbers, changing R2 and running a
 
 ### Circuit and reference results
 
-![Voltage-divider circuit rendered from the saved drawing](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Voltage-divider circuit rendered from the saved drawing](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Predict the answer
 
@@ -64,7 +64,7 @@ The current is `I = 5 / (1000 + 1000) = 2.5 mA`. The lower resistor therefore
 has `VOUT = I × 1000 = 2.5 V`. With R2 changed to 2 kΩ, the divider equation gives
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Computed operating-point results](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Computed operating-point results](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 The source current is −2.5 mA. This is not a wiring error: SPICE defines source
 current as entering its positive terminal. A source delivering energy has a

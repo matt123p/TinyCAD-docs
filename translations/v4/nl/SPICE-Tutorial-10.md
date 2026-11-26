@@ -40,7 +40,7 @@ Open **rc-noise**. Dit voorbeeld vraagt om de uitgangsruis op OUT,
 herleid naar de onafhankelijke ingangsbron V1, van 1 Hz tot 100 kHz bij 27°C.
 De ideale bron is ruisvrij; R1 draagt thermische ruis bij, die door C1 wordt gefilterd.
 
-![Berekende spectrale dichtheid van de RC-uitgangsruis](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Berekende spectrale dichtheid van de RC-uitgangsruis](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 De totale uitgangsruis is ongeveer **64,2 nV RMS** over die band. Voor een
 ideaal RC-circuit, geïntegreerd van nul tot oneindig hoge frequentie, is de gemiddelde kwadratische ruis van de condensator `kT/C`, wat bij 300,15 K en 1 µF ongeveer 64,4 nV RMS oplevert.

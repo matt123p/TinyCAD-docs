@@ -33,8 +33,8 @@ XSPICEは、コードモデルとイベント駆動型シミュレーション�
 プロットします。Aは周期1 µsの0～5 V波形です。Yはわずかな伝搬遅延の後に追従し、
 出力エッジには有限の立ち上がり・立ち下がり時間があります。
 
-![XSPICEバッファのテスト回路](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![計算されたバッファの入力と出力](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![XSPICEバッファのテスト回路](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![計算されたバッファの入力と出力](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1は、次の3つの明示的な内部段を持つ埋め込みサブサーキットです。
 

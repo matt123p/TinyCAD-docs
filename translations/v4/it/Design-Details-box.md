@@ -9,7 +9,7 @@ correlati. Puoi modificare questi valori con il comando **Dettagli progetto**.
 
 Il riquadro Dettagli progetto può apparire in basso a sinistra del disegno:
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Modificare i dettagli del progetto
 {: #edit-design-details}
@@ -21,7 +21,7 @@ Il riquadro Dettagli progetto può apparire in basso a sinistra del disegno:
 
 Puoi modificarli dal menu delle impostazioni usando **Dettagli progetto**:
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 Quando il progetto viene salvato, anche questi dettagli vengono salvati.
 
@@ -41,11 +41,11 @@ visualizzato sul disegno.
 Puoi attivare o disattivare il riquadro e configurare le guide del progetto (lettere/numeri
 attorno al bordo della pagina):
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 Le guide del progetto appaiono come segue:
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Note
 {: #notes}

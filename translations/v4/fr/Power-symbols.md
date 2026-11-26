@@ -10,7 +10,7 @@ Les symboles d’alimentation indiquent une connexion à des réseaux d’alimen
 Tous les symboles d’alimentation portant le même nom sont considérés comme connectés électriquement.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Vidéo explicative montrant comment placer des symboles d’alimentation."

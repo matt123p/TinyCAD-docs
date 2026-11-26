@@ -11,8 +11,8 @@ title: 6. Mixed-signal filtering and unknown states
 
 **logic-filter** を開きます。0～5 V、10 kHz のパルス列が、XSPICE バッファと DAC ブリッジを通過し、物理 SPICE の 1 kΩ/1 µF ローパスフィルタを駆動します。高レベルの継続時間は 100 µs 周期のうち 25 µs なので、公称デューティサイクルは約 25% です。入力エッジには有限の立ち上がり時間があるため、しきい値で定義される正確なデューティサイクルはわずかに異なります。
 
-![混合デジタル・アナログフィルタ回路](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![計算された PWM とフィルタ出力](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![混合デジタル・アナログフィルタ回路](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![計算された PWM とフィルタ出力](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 5 ms の過渡解析を実行します。A、Y、FILTERED をプロットしてください。デジタル経路はパルス関数を保持し、RC 回路網はリップルをある程度残しながら平均化します。長時間平均は `5 V × 0.25 ≈ 1.25 V` に近づきます。τ = 1 ms なので、起動には数ミリ秒かかります。
 
@@ -28,7 +28,7 @@ title: 6. Mixed-signal filtering and unknown states
 
 **logic-unknown** を開きます。その PWL 入力は、最初に 0 V、次に 2 V、最後に 5 V に保持されます。3 µs 実行し、中間の平坦部を確認してください。
 
-![不定のデジタル状態をアナログで表した計算結果](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![不定のデジタル状態をアナログで表した計算結果](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 ADCブリッジの低閾値と高閾値は、それぞれ1 Vと3 Vです。2 Vのプラトーはその間にあるため、イベント駆動入力は未定義です。この不明値はバッファを通じて伝播します。DACブリッジは、表示レベルとして**2.5 V**を明示的に要求する`out_undef`パラメーターにより、その不明値を変換します。
 

@@ -26,7 +26,7 @@ Foldery bibliotek są dostępne tylko w aplikacji desktopowej.
 
 Tryby przeglądarkowe nadal wyświetlają Moje biblioteki, jeśli ta funkcja jest w nich obsługiwana, ale nie udostępniają tworzenia folderów, grupowania folderów ani przeciągania i upuszczania folderów.
 
-![Panel Moje biblioteki w aplikacji desktopowej z rozwiniętym folderem Circuit components, pustym folderem Sensors and modules oraz sekcją Unfiled.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![Panel Moje biblioteki w aplikacji desktopowej z rozwiniętym folderem Circuit components, pustym folderem Sensors and modules oraz sekcją Unfiled.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### Dostępne działania
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ Biblioteki, które nie są przypisane do folderu, pojawiają się w sekcji Bez f
 4. Wpisz nazwę nowego folderu, na przykład `Project libraries`.
 5. Wybierz **Dodaj**.
 
-![Okno dialogowe tworzenia folderu z wpisaną nazwą Project libraries i przyciskiem Dodaj gotowym do zatwierdzenia.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Okno dialogowe tworzenia folderu z wpisaną nazwą Project libraries i przyciskiem Dodaj gotowym do zatwierdzenia.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 Nowy folder pojawi się na liście bibliotek i będzie można go od razu wybrać.
 
@@ -72,7 +72,7 @@ Kliknięcie biblioteki powoduje, że TinyCAD automatycznie wybiera folder, do kt
 
 Wybrane biblioteki zostaną dodane do wybranego folderu.
 
-![Biblioteki Project libraries wybrane w sekcji Moje biblioteki, z pustym obszarem upuszczania i przyciskiem dodawania bibliotek w nagłówku.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![Biblioteki Project libraries wybrane w sekcji Moje biblioteki, z pustym obszarem upuszczania i przyciskiem dodawania bibliotek w nagłówku.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Jeśli nie wybierzesz folderu niestandardowego, biblioteki zostaną dodane do sekcji Bez folderu.
 
@@ -85,7 +85,7 @@ Możesz też upuścić bibliotekę w sekcji Bez folderu, aby usunąć ją z fold
 
 Jeśli folder jest pusty, TinyCAD wyświetli obszar upuszczania, umożliwiający przeniesienie do niego bibliotek.
 
-![Interfejsy czujników przeniesione z sekcji Bez folderu do Sensors and modules; widoczne są elementy sterujące zmianą kolejności, zmianą nazwy i usuwaniem wybranego folderu.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Interfejsy czujników przeniesione z sekcji Bez folderu do Sensors and modules; widoczne są elementy sterujące zmianą kolejności, zmianą nazwy i usuwaniem wybranego folderu.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Zmienianie kolejności folderów
 {: #reorder-folders}
@@ -106,7 +106,7 @@ Przyciski czynności dotyczących folderu są wyświetlane po najechaniu na nieg
 - Wybierz **Zmień nazwę folderu** (ikona ołówka), aby zmienić nazwę folderu. Wpisz nową nazwę i wybierz **Zmień nazwę**.
 - Wybierz **Usuń folder** (ikona kosza), aby usunąć folder. Potwierdź, wybierając **Usuń**.
 
-![Okno dialogowe zmiany nazwy folderu, w którym nazwa Sensors and modules jest zmieniana na Sensors and displays.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Okno dialogowe zmiany nazwy folderu, w którym nazwa Sensors and modules jest zmieniana na Sensors and displays.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 Po usunięciu folderu znajdujące się w nim biblioteki są przenoszone do sekcji Bez folderu. Same pliki bibliotek nie są usuwane z TinyCAD.
 

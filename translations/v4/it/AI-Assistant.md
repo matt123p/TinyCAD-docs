@@ -30,7 +30,7 @@ L'assistente cerca prima nelle [librerie incluse](../Bundled-Libraries/), quindi
 
 Per i componenti riutilizzabili, prima [crea o apri una libreria personalizzata per modificarla](../Custom-symbol-libraries/), quindi apri Chat nella finestra di quella libreria. Per un circuito, mantieni attiva la finestra del disegno desiderato. Specifica all'assistente a quale foglio, riferimento di componente o blocco funzionale ti riferisci. Il recupero e il posizionamento dei simboli AI attuali supportano **simboli a unità singola**; per i componenti multi-unità che l'assistente non può importare, usa il normale editor dei simboli.
 
-{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="Crea un simbolo da una scheda tecnica in TinyCAD Desktop. Le attese per l'elaborazione AI sono mostrate a velocità 12× e contrassegnate sullo schermo; l'interazione e i risultati sono mostrati a velocità normale." %}
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/Images/ai-assistant/chat-open-desktop.png" caption="Crea un simbolo da una scheda tecnica in TinyCAD Desktop. Le attese per l'elaborazione AI sono mostrate a velocità 12× e contrassegnate sullo schermo; l'interazione e i risultati sono mostrati a velocità normale." %}
 
 ## Configurare una connessione
 {: #set-up-a-connection}
@@ -42,7 +42,7 @@ Per i componenti riutilizzabili, prima [crea o apri una libreria personalizzata 
 2. Fai clic su **Click here to Sign in to use AI** oppure sull'ingranaggio **AI settings** nell'intestazione del pannello.
 3. In **Step 1 — Choose provider**, seleziona un provider, quindi fai clic su **Next**.
 
-![Impostazioni AI con la fase Provider](../images/ai-assistant/setup-provider.png)
+![Impostazioni AI con la fase Provider](../Images/ai-assistant/setup-provider.png)
 
 Puoi connettere un solo provider alla volta.
 
@@ -70,7 +70,7 @@ In TinyCAD Desktop, scegli **ChatGPT**, quindi **Sign In with ChatGPT** nella fa
 
 Se un account è già memorizzato, la schermata offre **Continue as …** oppure **Sign in with a different account**. TinyCAD mantiene un solo account alla volta. Dopo la connessione, sopra la casella dei messaggi compaiono **Using ChatGPT plan** e **Manage usage**. Il messaggio visualizzato al primo utilizzo spiega che le richieste usano la quota del tuo piano o i crediti disponibili.
 
-![Impostazioni AI Desktop con le opzioni Sign In with ChatGPT e Use API Key](../images/ai-assistant/setup-chatgpt-desktop.png)
+![Impostazioni AI Desktop con le opzioni Sign In with ChatGPT e Use API Key](../Images/ai-assistant/setup-chatgpt-desktop.png)
 
 L'accesso a ChatGPT richiede un account a pagamento idoneo; restano comunque in vigore i limiti dell'account, dell'area di lavoro e dell'app. Se una richiesta viene rifiutata, non passa automaticamente alla fatturazione tramite chiave API. Consulta la [documentazione OpenAI per l'accesso con ChatGPT](https://developers.openai.com/siwc/token-sharing-open-source) relativa alla connessione tramite piano account.
 
@@ -83,20 +83,20 @@ L'accesso a ChatGPT richiede un account a pagamento idoneo; restano comunque in 
 4. Per **OpenAI compatible**, inserisci anche l'**API base URL** del servizio.
 5. Fai clic su **Next**. TinyCAD verifica la connessione e recupera automaticamente i modelli disponibili.
 
-![Inserimento della chiave API ChatGPT con il campo della chiave mascherata e le istruzioni del provider](../images/ai-assistant/setup-api-key.png)
+![Inserimento della chiave API ChatGPT con il campo della chiave mascherata e le istruzioni del provider](../Images/ai-assistant/setup-api-key.png)
 
 Se un endpoint non può elencare i modelli, TinyCAD chiede un **Model ID** nella fase 2. Inserisci l'identificativo esatto del provider e fai di nuovo clic su **Next**; un breve messaggio di saluto ne verifica il funzionamento. Queste verifiche possono consumare la quota del provider. Se la connessione non riesce, la procedura resta nella fase 2 e mostra l'errore.
 
 Per Gemini, crea o seleziona un progetto in Google AI Studio e copia la relativa chiave API in TinyCAD. La [pagina dei prezzi dell'API Gemini di Google](https://ai.google.dev/gemini-api/docs/pricing) spiega quali modelli e modalità di utilizzo rientrano nel livello gratuito. I modelli a pagamento o un utilizzo maggiore potrebbero richiedere la fatturazione.
 
-![Configurazione di Google Gemini con il link alla chiave di Google AI Studio](../images/ai-assistant/setup-gemini.png)
+![Configurazione di Google Gemini con il link alla chiave di Google AI Studio](../Images/ai-assistant/setup-gemini.png)
 
 ### 3. Scegliere un modello e il livello di ragionamento
 {: #pick-a-model-and-thinking-level}
 
 Dopo aver stabilito la connessione, scegli un modello in **Step 3 — Pick Model**, regola **Thinking**, quindi fai clic su **Finish**.
 
-![Selezione del modello e cursore Thinking nella fase finale della configurazione](../images/ai-assistant/setup-model.png)
+![Selezione del modello e cursore Thinking nella fase finale della configurazione](../Images/ai-assistant/setup-model.png)
 
 L'elenco dei modelli in questa illustrazione è un esempio; il tuo elenco dipende dal provider, dall'endpoint e dall'account. ChatGPT mostra i modelli Sol, Luna e Astra supportati restituiti dalla connessione. Le versioni più recenti sono visualizzate per prime; le versioni precedenti si trovano in **More models** e vengono memorizzate fino a sei scelte recenti.
 
@@ -113,7 +113,7 @@ Scegli un modello che supporti gli **strumenti**, così potrà esaminare e modif
 4. Usa **Ollama API URL**, normalmente `http://localhost:11434/v1`, quindi fai clic su **Next** per elencare i modelli installati.
 5. Scegli un modello e un livello di ragionamento, quindi fai clic su **Finish**.
 
-![Configurazione di Ollama con l'URL dell'API locale e le indicazioni sull'origine del browser](../images/ai-assistant/setup-ollama.png)
+![Configurazione di Ollama con l'URL dell'API locale e le indicazioni sull'origine del browser](../Images/ai-assistant/setup-ollama.png)
 
 La connessione Ollama accetta URL localhost/loopback. Per un server remoto, scegli **OpenAI compatible**. Assegna al modello locale un contesto sufficiente per la conversazione e gli strumenti TinyCAD; consulta la [configurazione del contesto di Ollama](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size).
 
@@ -124,7 +124,7 @@ Le richieste a Ollama locale vanno direttamente al server locale. Per l'inferenz
 
 Digita una richiesta nella casella dei messaggi e fai clic su **Send**, oppure premi **Enter**. Usa **Shift+Enter** per inserire un'altra riga. Inizia con un'attività circoscritta, controlla il risultato e poi chiedi la modifica successiva.
 
-![Pannello di chat connesso con una richiesta di esempio pronta per l'invio](../images/ai-assistant/chat-ready.png)
+![Pannello di chat connesso con una richiesta di esempio pronta per l'invio](../Images/ai-assistant/chat-ready.png)
 
 Specifica con chiarezza il foglio, i riferimenti, i valori e le connessioni di destinazione. «Collega l'estremità superiore di R2 a OUT nel foglio Control» è più facile da verificare di «sistema il filo». Indica cosa deve restare invariato quando ampli un circuito esistente.
 
@@ -212,7 +212,7 @@ Per modificare il disegno, chiedi all'assistente di associare il modello dopo av
 
 L'ingranaggio **AI settings** mostra il provider e il metodo di connessione correnti, insieme ai controlli del modello/del ragionamento e a **Save**. Per una connessione tramite chiave offre **Clear API key**; per un account ChatGPT offre **Sign out**; per Ollama locale offre **Disconnect Ollama**. Disconnetti prima il provider per configurarne un altro. **Cancel** mantiene la connessione e le impostazioni salvate esistenti.
 
-![Impostazioni AI per una connessione esistente tramite chiave API](../images/ai-assistant/connection-settings.png)
+![Impostazioni AI per una connessione esistente tramite chiave API](../Images/ai-assistant/connection-settings.png)
 
 Le chiavi API e la cronologia delle conversazioni restano nella memoria dell'applicazione; le chiavi non vengono salvate nelle preferenze o nei disegni. Dopo aver ricaricato o riavviato l'app, dovrai reinserire la chiave API. Le preferenze non segrete del provider, dell'endpoint, del modello e del ragionamento possono essere memorizzate. L'autorizzazione dell'account ChatGPT è gestita separatamente dal runtime locale e può persistere dopo il riavvio; Desktop usa la crittografia sicura del sistema operativo quando disponibile.
 

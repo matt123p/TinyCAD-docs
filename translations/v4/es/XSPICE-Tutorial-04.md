@@ -13,8 +13,8 @@ Abra **logic-dff**. Proporciona estímulos analógicos independientes
 para D, CLK y RESET. Dentro de X1, unos puentes alimentan un biestable D de XSPICE;
 Q y NQ se convierten de nuevo en salidas analógicas para representarlas en una gráfica.
 
-![Circuito de prueba del biestable D](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Reloj, datos, reinicio y Q calculados](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Circuito de prueba del biestable D](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Reloj, datos, reinicio y Q calculados](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Ejecute el análisis transitorio de 8 µs. En cada flanco ascendente del reloj, Q captura D y luego mantiene
 ese estado entre flancos. NQ es su complemento una vez transcurrido el tiempo de propagación. El

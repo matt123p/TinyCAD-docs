@@ -33,8 +33,8 @@ Otwórz **logic-buffer**. Uruchom zapisaną symulację stanów nieustalonych o c
 za nim z niewielkim opóźnieniem propagacji i skończonymi czasami narastania
 oraz opadania zboczy.
 
-![Obwód testowy bufora XSPICE](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Obliczone przebiegi wejściowy i wyjściowy bufora](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Obwód testowy bufora XSPICE](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Obliczone przebiegi wejściowy i wyjściowy bufora](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 jest osadzonym podukładem z trzema jawnymi stopniami wewnętrznymi:
 

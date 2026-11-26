@@ -14,7 +14,7 @@ title: 8. Measuring amplifier gain and bandwidth
 
 保存済みのOUT/IN派生トレースである**Voltage gain**を選択します。振幅をdB、位相を表示します。メモではノード電圧と無次元のゲインを区別してください。
 
-![計算されたアンプのゲインと位相](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![計算されたアンプのゲインと位相](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## 説明する前に結果を読み取る
 {: #read-the-result-before-explaining-it}

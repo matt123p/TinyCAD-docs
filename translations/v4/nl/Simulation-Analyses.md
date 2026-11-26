@@ -23,7 +23,7 @@ Operating point bepaalt een stationaire DC-oplossing. Ideale condensatoren zijn 
 
 Gebruik **Data** voor knooppuntspanningen en takstromen. Spanning is relatief ten opzichte van aarde 0. De stroomrichting volgt de opgegeven volgorde van de aansluitingen van het component; een negatieve voedingsstroom kan simpelweg betekenen dat de voeding vermogen levert. De [DC-zelfstudie](../SPICE-Tutorial-02/) behandelt spanning, stroom en vermogen.
 
-![Scalaire spannings- en stroomresultaten van de nieuwe operating-point-run van de spanningsdeler](../images/simulation/simulation-data.png)
+![Scalaire spannings- en stroomresultaten van de nieuwe operating-point-run van de spanningsdeler](../Images/simulation/simulation-data.png)
 
 ## Transient: gedrag in de tijd
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Stel de begin- en stopfrequentie en het aantal punten per decade in. Een logarit
 
 Stel de **AC-amplitude** en fase van de bron afzonderlijk in van de instellingen voor de transiënte golfvorm. Met een AC-amplitude van **1 V** en een fase van **0°** is de spanningsoverdracht bij één ingang eenvoudig te interpreteren. Een transiënte sinusamplitude activeert op zichzelf geen AC-stimulus. Bereken voor een algemene ingang de complexe verhouding `V(out) / V(in)`; alleen de uitgangsspanning is niet altijd de versterking.
 
-![AC-sweepinstellingen voor het meegeleverde RC-filter](../images/simulation/ac-setup.png)
+![AC-sweepinstellingen voor het meegeleverde RC-filter](../Images/simulation/ac-setup.png)
 
 Voor een eerste-orde laagdoorlaatfilter met R = 1 kΩ en C = 1 µF geldt `fc = 1 / (2πRC) ≈ 159.15 Hz`. Op die frequentie is de versterking van een filter met eenheidsversterking in de doorlaatband ongeveer 0,707, of −3,0103 dB, en de fase ongeveer −45°. De [filter-zelfstudie](../SPICE-Tutorial-05/) toont de amplitude, dB en fase.
 
-![Werkelijke AC-resultaten van een nieuwe browserversie van het RC-voorbeeld](../images/simulation/ac-charts.png)
+![Werkelijke AC-resultaten van een nieuwe browserversie van het RC-voorbeeld](../Images/simulation/ac-charts.png)
 
 ## DC-sweep
 {: #dc-sweep}

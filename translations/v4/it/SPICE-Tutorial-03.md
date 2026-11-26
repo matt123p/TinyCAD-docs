@@ -39,7 +39,7 @@ Modifica dell'offset, dell'ampiezza di picco e della frequenza sinusoidali, segu
 ### Circuito e risultati di riferimento
 {: #circuit-and-reference-results}
 
-![Esempi di forme d'onda misurate](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Esempi di forme d'onda misurate](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Ampiezza, offset e temporizzazione
 {: #amplitude-offset-and-timing}

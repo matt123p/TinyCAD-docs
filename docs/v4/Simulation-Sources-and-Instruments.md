@@ -20,7 +20,7 @@ Choose **Simulation → SPICE → Insert Source**. Its editor opens before place
 | Exponential | A shaped transition | Levels, delays and time constants |
 | FM | Frequency modulation | Carrier and modulation settings |
 
-![The sine source editor and waveform preview](../images/simulation/source-settings.png)
+![The sine source editor and waveform preview](../Images/simulation/source-settings.png)
 
 The preview reflects the numerical waveform settings. Use it to catch an unexpected offset, peak or timing before running. Invalid settings prevent startup. A source's icon changes with its waveform, and a current source retains its direction arrow.
 

@@ -35,7 +35,7 @@ La lista es dinámica y se actualiza automáticamente mientras editas el esquema
 
 Si hay otro panel abierto porque hay algo seleccionado, anula primero la selección.
 
-![Vista Lista de conexiones debajo del esquema del divisor, con la fila OUT resaltada](../images/netlist-editor/netlist-overview.png)
+![Vista Lista de conexiones debajo del esquema del divisor, con la fila OUT resaltada](../Images/netlist-editor/netlist-overview.png)
 
 En este ejemplo del divisor incluido, la fila `OUT` conecta `R1.2` con `R2.1`.
 Al pasar el cursor por esa fila, se resalta la conexión en el dibujo.
@@ -92,7 +92,7 @@ Un tipo de red es un conjunto reutilizable de estilos de dibujo. Asigna el mismo
 
 Abre el dibujo `divider` incluido desde **Abrir ejemplo** → **Tutorial de SPICE** y amplía el circuito. En el panel inferior, cambia de **Símbolos** a **Lista de conexiones**. La etiqueta **OUT** identifica la red entre los pines **R1.2** y **R2.1**. Al principio tiene el tipo `default` y el grosor de cable normal.
 
-![Divisor antes de aplicar el estilo; se muestra el cable OUT azul y fino entre R1 y R2](../images/netlist-editor/netlist-wire-before.png)
+![Divisor antes de aplicar el estilo; se muestra el cable OUT azul y fino entre R1 y R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### Crear el estilo de cable
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ Abre el dibujo `divider` incluido desde **Abrir ejemplo** → **Tutorial de SPIC
 3. En la misma fila, haz clic en la celda **Color del cable**. Marca **Anular color** e introduce `007F5F` en el campo **Hexadecimal** para obtener el color verde. La vista previa muestra el cable con ambos ajustes.
 4. Haz clic en **Aceptar** en el selector de color. Comprueba la muestra verde y el valor del grosor en la fila `control` y, a continuación, haz clic en **Aceptar** en **Tipos de lista de conexiones** para guardar el tipo.
 
-![Selector de color del cable de control, con Anular color marcado y el cable verde visible en la vista previa](../images/netlist-editor/netlist-wire-colour.png)
+![Selector de color del cable de control, con Anular color marcado y el cable verde visible en la vista previa](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Tipos de lista de conexiones, con la muestra verde de Color del cable y un Grosor del cable de 4 en la fila de control](../images/netlist-editor/netlist-wire-type.png)
+![Tipos de lista de conexiones, con la muestra verde de Color del cable y un Grosor del cable de 4 en la fila de control](../Images/netlist-editor/netlist-wire-type.png)
 
 ### Aplicar el estilo a OUT
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ Abre el dibujo `divider` incluido desde **Abrir ejemplo** → **Tutorial de SPIC
 2. Abre la lista **Tipo** de la fila resaltada y elige `control`.
 3. Haz clic en una zona vacía del esquema para anular la selección. El cable entre **R1.2** y **R2.1** ahora es verde y más grueso. Elige `default` en la lista **Tipo** para restaurar el estilo de cable normal.
 
-![Cable OUT seleccionado en el esquema y su fila resaltada en la lista de conexiones con control seleccionado](../images/netlist-editor/netlist-wire-assignment.png)
+![Cable OUT seleccionado en el esquema y su fila resaltada en la lista de conexiones con control seleccionado](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Divisor después de aplicar el estilo; se muestra el cable OUT verde y más grueso entre R1 y R2](../images/netlist-editor/netlist-wire-after.png)
+![Divisor después de aplicar el estilo; se muestra el cable OUT verde y más grueso entre R1 y R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Usa **Guardar como** para conservar la copia editada del ejemplo.
 
 ### Ver el tutorial paso a paso
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Cambia a Lista de conexiones, crea un estilo de cable verde y, a continuación, haz clic en el cable OUT para encontrar su fila y aplicar el estilo." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Cambia a Lista de conexiones, crea un estilo de cable verde y, a continuación, haz clic en el cable OUT para encontrar su fila y aplicar el estilo." %}
 
 ## Qué puedes hacer en Tipos de lista de conexiones
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ Para añadirlos:
 3. Guarda los atributos.
 4. Haz clic en `OK` en el cuadro de diálogo principal.
 
-![Editor de atributos con entradas de finalidad y notas para el tipo de control](../images/netlist-editor/netlist-attributes.png)
+![Editor de atributos con entradas de finalidad y notas para el tipo de control](../Images/netlist-editor/netlist-attributes.png)
 
 Estas entradas de ejemplo describen la finalidad del tipo y añaden una nota sobre el cableado. Pertenecen al tipo y pueden compartirse entre todas las redes que lo tengan asignado.
 

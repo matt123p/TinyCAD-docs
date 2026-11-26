@@ -29,7 +29,7 @@ test('every current v4 page round-trips protected markup, including nested Liqui
   }
 });
 test('protected code, destinations, Liquid and original anchors survive translated prose', () => {
-  const raw = '---\nlayout: default\n---\n# A Heading\n\nA [link](../Symbols/#a) and `Ctrl-C`.\n\n{% include video-player.html src="/v4/images/a.mp4" caption="A video" %}\n\n```js\nconsole.log("A code");\n```\n';
+  const raw = '---\nlayout: default\n---\n# A Heading\n\nA [link](../Symbols/#a) and `Ctrl-C`.\n\n{% include video-player.html src="/v4/Images/a.mp4" caption="A video" %}\n\n```js\nconsole.log("A code");\n```\n';
   const input = protectPage(raw);
   const translated = input.strings.map((s) => s.replace('A Heading', 'Un titre').replace('A video', 'Une vidéo'));
   const output = input.restore(translated);
@@ -111,7 +111,7 @@ test('partial and stale previews use current English, localized routes and share
   let fallback = splitPage(read(path.join(root, 'docs/v4/fr/Touch-controls.md')));
   assert.equal(fallback.frontMatter.lang, 'en');
   assert.equal(fallback.frontMatter.manual_fallback, true);
-  assert.match(fallback.body, /\(\/v4\/images\/touch-loupe.png\)/);
+  assert.match(fallback.body, /\(\/v4\/Images\/touch-loupe.png\)/);
   fs.appendFileSync(path.join(root, 'docs/v4/User-guide.md'), '\nUpdated source.\n');
   prepare(root);
   translated = splitPage(read(path.join(root, 'docs/v4/fr/User-guide.md')));

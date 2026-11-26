@@ -32,7 +32,7 @@ En TinyCAD v4.0.11, use el selector junto a Cable para elegir cómo se dibujan l
 
 Al elegir un modo, se activa Cable y se conserva cualquier vista previa de cable activa. Puede cambiar de modo antes de colocar el siguiente segmento. El ajuste a la cuadrícula sigue siendo una opción independiente. Para el trazado automático entre dos puntos de conexión, use la herramienta vecina [Cable punto a punto](#auto-routing).
 
-![Selector de la barra de herramientas para cables que muestra las opciones 90°, 45° y Libre.](../images/wire-routing-modes.png)
+![Selector de la barra de herramientas para cables que muestra las opciones 90°, 45° y Libre.](../Images/wire-routing-modes.png)
 
 ## Colocación de cables
 {: #placing-wires}
@@ -46,7 +46,7 @@ Al elegir un modo, se activa Cable y se conserva cualquier vista previa de cable
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Vídeo explicativo que muestra cómo colocar cables."
@@ -82,16 +82,16 @@ La resistencia y el LED están en la cuadrícula y la conexión entre ellos est�
 
 Primero, seleccione Cable punto a punto y elija el pin derecho de R1.
 
-![1. Empiece con R1 y D1 desconectados. El círculo rojo marca el pin de inicio de R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. Empiece con R1 y D1 desconectados. El círculo rojo marca el pin de inicio de R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 A continuación, apunte al pin superior de D1. La vista previa muestra la ruta y su esquina antes de
 confirmarla.
 
-![2. Obtenga una vista previa de la ruta automática hasta D1. El círculo rojo marca el pin de destino.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Obtenga una vista previa de la ruta automática hasta D1. El círculo rojo marca el pin de destino.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Por último, haga clic o toque el pin de D1. TinyCAD coloca todos los segmentos en una sola operación.
 
-![3. Confirme el destino para colocar la conexión completa, incluida su esquina.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Confirme el destino para colocar la conexión completa, incluida su esquina.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 En una pantalla táctil, puede tocar directamente los dos extremos. Para pines pequeños o muy juntos,
 use la [lupa](../Touch-controls/#precise-placement-with-the-loupe): apunte

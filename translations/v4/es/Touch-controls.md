@@ -48,7 +48,7 @@ La lupa amplía el área alrededor de una mira, para que tu dedo no cubra el pun
 
 4. Toca **Ocultar lupa (Hide Loupe)** para volver al toque directo.
 
-![Lupa táctil que muestra un área de conexión ampliada, una mira y los controles Clic, Arrastrar y Menú.](../images/touch-loupe.png)
+![Lupa táctil que muestra un área de conexión ampliada, una mira y los controles Clic, Arrastrar y Menú.](../Images/touch-loupe.png)
 
 Por ejemplo, para dibujar un cable, elige **Cable (Wire)**, orienta la mira hacia el pin inicial y toca **Clic (Click)**. Desliza el dedo para orientar la mira hacia el siguiente punto y vuelve a tocar **Clic (Click)**.
 Usa **Menú (Menu)** para acceder a los comandos contextuales de la herramienta cuando quieras terminar o cancelar.

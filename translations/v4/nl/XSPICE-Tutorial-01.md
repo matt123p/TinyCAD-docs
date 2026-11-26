@@ -29,8 +29,8 @@ Open **logic-buffer**. Voer de opgeslagen transiënte analyse van 8 µs uit
 en plot A en Y. A is een golfvorm van 0–5 V met een periode van 1 µs. Y volgt deze na een
 kleine voortplantingsvertraging en met eindige uitgangsflanken.
 
-![XSPICE-buffertestschakeling](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Berekende bufferin- en -uitgang](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![XSPICE-buffertestschakeling](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Berekende bufferin- en -uitgang](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 is een ingebedde subschakeling met drie expliciete interne trappen:
 

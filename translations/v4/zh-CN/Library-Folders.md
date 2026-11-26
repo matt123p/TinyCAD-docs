@@ -26,7 +26,7 @@ TinyCAD 浏览器版不支持库文件夹。
 
 在支持的浏览器模式下，仍会显示“我的库”，但不提供创建文件夹、按文件夹分组或通过拖放操作文件夹的功能。
 
-![“我的库”桌面应用界面，显示已展开的“电路元件”、空的“传感器和模块”文件夹，以及“未分类”库。](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![“我的库”桌面应用界面，显示已展开的“电路元件”、空的“传感器和模块”文件夹，以及“未分类”库。](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### 可执行的操作
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ TinyCAD 浏览器版不支持库文件夹。
 4. 输入新文件夹的名称，例如 `Project libraries`。
 5. 选择 **添加**。
 
-![创建文件夹对话框，已输入“项目库”，并显示可供确认的“添加”按钮。](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![创建文件夹对话框，已输入“项目库”，并显示可供确认的“添加”按钮。](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 新文件夹会显示在库列表中，可以立即选中。
 
@@ -72,7 +72,7 @@ TinyCAD 浏览器版不支持库文件夹。
 
 所选库会添加到所选文件夹中。
 
-![“我的库”中已选中“项目库”，显示空的放置区域以及标题栏中的“添加库”按钮。](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![“我的库”中已选中“项目库”，显示空的放置区域以及标题栏中的“添加库”按钮。](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 如果未选择自定义文件夹，库将添加到“未分类”。
 
@@ -85,7 +85,7 @@ TinyCAD 浏览器版不支持库文件夹。
 
 如果文件夹为空，TinyCAD 会显示放置目标，方便您将库移入其中。
 
-![已将“传感器接口”从“未分类”移入“传感器和模块”，并显示所选文件夹的重新排序、重命名和移除控件。](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![已将“传感器接口”从“未分类”移入“传感器和模块”，并显示所选文件夹的重新排序、重命名和移除控件。](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### 重新排列文件夹
 {: #reorder-folders}
@@ -106,7 +106,7 @@ TinyCAD 浏览器版不支持库文件夹。
 - 选择 **重命名文件夹**（铅笔图标）来重命名文件夹。输入新名称，然后选择 **重命名**。
 - 选择 **移除文件夹**（垃圾桶图标）来移除文件夹。选择 **删除**进行确认。
 
-![重命名文件夹对话框，将“传感器和模块”更改为“传感器和显示器”。](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![重命名文件夹对话框，将“传感器和模块”更改为“传感器和显示器”。](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 删除文件夹时，其中的所有库都会移至“未分类”。库文件本身不会从 TinyCAD 中移除。
 

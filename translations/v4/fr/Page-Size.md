@@ -6,7 +6,7 @@ layout: default
 
 Utilisez **Format de page** pour définir les dimensions de toutes les feuilles.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Éléments modifiables
 {: #what-you-can-change}

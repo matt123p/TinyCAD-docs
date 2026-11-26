@@ -51,7 +51,7 @@ cover the connection point you are trying to reach.
 
 4. Tap **Hide Loupe** to return to direct touch.
 
-![Touch loupe showing a magnified connection area, crosshair, and Click, Drag and Menu controls.](../images/touch-loupe.png)
+![Touch loupe showing a magnified connection area, crosshair, and Click, Drag and Menu controls.](../Images/touch-loupe.png)
 
 For example, to draw a wire, choose **Wire**, aim at the starting pin, and tap
 **Click**. Slide your finger to aim at the next point and tap **Click** again.

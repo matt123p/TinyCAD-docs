@@ -30,7 +30,7 @@ TinyCADのAIアシスタントは、文章による指示、データシート�
 
 再利用可能な部品の場合は、まず [編集するカスタムライブラリを作成または開き](../Custom-symbol-libraries/)、そのライブラリウィンドウで［チャット］を開きます。回路図では、使用する回路図ウィンドウをアクティブにしておきます。対象のシート、部品参照、または機能ブロックをアシスタントに伝えてください。現在のAIによるシンボルの取得と配置は **単一ユニットのシンボル**に対応しています。アシスタントがインポートできない複数ユニットの部品には、通常のシンボルエディターを使用してください。
 
-{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="TinyCAD Desktopでデータシートからシンボルを作成します。AI処理の待ち時間は12倍速で表示され、画面上に示されます。操作と結果は通常の速度で表示されます。" %}
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/Images/ai-assistant/chat-open-desktop.png" caption="TinyCAD Desktopでデータシートからシンボルを作成します。AI処理の待ち時間は12倍速で表示され、画面上に示されます。操作と結果は通常の速度で表示されます。" %}
 
 ## 接続を設定する
 {: #set-up-a-connection}
@@ -42,7 +42,7 @@ TinyCADのAIアシスタントは、文章による指示、データシート�
 2. **ここをクリックしてサインインし、AIを使用する** をクリックするか、パネル上部の **AI設定** の歯車アイコンをクリックします。
 3. **ステップ1 — プロバイダーを選択** でプロバイダーを選び、 **次へ** をクリックします。
 
-![プロバイダーのステップが表示されたAI設定](../images/ai-assistant/setup-provider.png)
+![プロバイダーのステップが表示されたAI設定](../Images/ai-assistant/setup-provider.png)
 
 一度に接続できるプロバイダーは1つです。
 
@@ -70,7 +70,7 @@ TinyCAD Desktopで **ChatGPT** を選び、ステップ2で **ChatGPTでサイ�
 
 アカウントが記憶されている場合、画面には **…として続行** または **別のアカウントでサインイン**が表示されます。TinyCADで保持できるアカウントは一度に1つです。接続後は、 **ChatGPTプランの使用** と **使用状況の管理** がメッセージボックスの上に表示されます。初回使用時のメッセージには、リクエストがプランの利用枠または利用可能なクレジットを使用することが説明されています。
 
-![「ChatGPTでサインイン」または「APIキーを使用」を提示するDesktop AI設定](../images/ai-assistant/setup-chatgpt-desktop.png)
+![「ChatGPTでサインイン」または「APIキーを使用」を提示するDesktop AI設定](../Images/ai-assistant/setup-chatgpt-desktop.png)
 
 ChatGPTでのサインインには対象となる有料アカウントが必要です。アカウント、ワークスペース、アプリの制限は引き続き適用されます。リクエストが拒否された場合に、APIキーによる課金へ暗黙に切り替わることはありません。OpenAI の [ChatGPTでのサインインに関するドキュメント](https://developers.openai.com/siwc/token-sharing-open-source) で、アカウントプランとの連携をご確認ください。
 
@@ -83,20 +83,20 @@ ChatGPTでのサインインには対象となる有料アカウントが必要�
 4. **OpenAI互換** の場合は、サービスの **APIベースURL** も入力します。
 5. **次へ** をクリックします。TinyCADが接続を確認し、利用可能なモデルを自動的に取得します。
 
-![マスクされたキー入力欄とプロバイダーの案内を表示したChatGPT APIキー入力画面](../images/ai-assistant/setup-api-key.png)
+![マスクされたキー入力欄とプロバイダーの案内を表示したChatGPT APIキー入力画面](../Images/ai-assistant/setup-api-key.png)
 
 エンドポイントからモデルの一覧を取得できない場合は、ステップ2で **モデルID** の入力が求められます。プロバイダーが指定する正確なIDを入力し、再度 **次へ** をクリックしてください。TinyCADは短いあいさつ文を送って接続を確認します。確認にプロバイダーの利用枠を消費する場合があります。接続に失敗するとステップ2に留まり、エラーが表示されます。
 
 Geminiの場合は、Google AI Studioでプロジェクトを作成または選択し、そのAPIキーをTinyCADにコピーします。Googleの [Gemini APIの料金ページには](https://ai.google.dev/gemini-api/docs/pricing) 無料枠の対象となるモデルと利用条件が記載されています。有料モデルや利用量の増加には、課金が必要になる場合があります。
 
-![Google AI Studioのキーへのリンクを使ったGoogle Geminiの設定](../images/ai-assistant/setup-gemini.png)
+![Google AI Studioのキーへのリンクを使ったGoogle Geminiの設定](../Images/ai-assistant/setup-gemini.png)
 
 ### 3. モデルと思考レベルを選択
 {: #pick-a-model-and-thinking-level}
 
 接続に成功したら、 **ステップ3 — モデルを選択** でモデルを選び、 **思考レベル** を調整して、 **完了** をクリックします。
 
-![最終設定ステップでのモデル選択と思考スライダー](../images/ai-assistant/setup-model.png)
+![最終設定ステップでのモデル選択と思考スライダー](../Images/ai-assistant/setup-model.png)
 
 この図のモデル一覧は一例です。実際の一覧は、プロバイダー、エンドポイント、アカウントによって異なります。ChatGPTには、接続から返された対応モデルのSol、Luna、Astraが表示されます。新しいバージョンが先に表示され、古いモデルは **その他のモデル** の下に表示されます。また、最近選んだモデルが最大6つまで記憶されます。
 
@@ -113,7 +113,7 @@ TinyCADのドキュメントを確認・編集できるように、 **ツール�
 4. **Ollama API URL** に通常は `http://localhost:11434/v1` を指定します。 **次へ** をクリックすると、インストール済みのモデルが一覧表示されます。
 5. モデルと思考レベルを選び、 **完了** をクリックします。
 
-![ローカルAPI URLとブラウザーのオリジンに関するガイダンスを示すOllamaの設定](../images/ai-assistant/setup-ollama.png)
+![ローカルAPI URLとブラウザーのオリジンに関するガイダンスを示すOllamaの設定](../Images/ai-assistant/setup-ollama.png)
 
 Ollama接続ではlocalhostやその他のループバックURLを使用できます。リモートサーバーに接続する場合は **OpenAI互換** を選びます。ローカルモデルには会話とTinyCADのツールに必要なコンテキスト容量を割り当ててください。詳しくは [Ollamaのコンテキスト設定](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size) を参照してください。
 
@@ -124,7 +124,7 @@ Ollama接続ではlocalhostやその他のループバックURLを使用でき�
 
 メッセージ欄に依頼を入力して **送信** をクリックするか、 **Enter** を押します。改行するには **Shift+Enter** を使います。まず範囲を絞った作業を依頼し、結果を確認してから次の変更を依頼してください。
 
-![送信可能なリクエスト例が入力された、接続済みのチャットパネル](../images/ai-assistant/chat-ready.png)
+![送信可能なリクエスト例が入力された、接続済みのチャットパネル](../Images/ai-assistant/chat-ready.png)
 
 対象のシート、参照番号、値、接続について具体的に指定してください。「配線を直して」よりも、「ControlシートでR2の上端をOUTに接続して」のほうが確認しやすくなります。既存の回路を拡張する場合は、変更せずに残すべき部分も明記してください。
 
@@ -212,7 +212,7 @@ SPICEまたはシミュレーションのサポートを明示的に依頼して
 
 **AI設定** の歯車アイコンを開くと、現在のプロバイダーと接続方法が表示され、モデルと思考レベルを設定して **保存** できます。APIキーで接続している場合は **APIキーを消去**、ChatGPTアカウントで接続している場合は **サインアウト**、ローカルのOllamaに接続している場合は **Ollamaを切断** が表示されます。別のプロバイダーを設定する前に、現在の接続を解除してください。 **キャンセル** を選ぶと、現在の接続と保存済みの設定が維持されます。
 
-![既存のAPIキー接続のAI設定](../images/ai-assistant/connection-settings.png)
+![既存のAPIキー接続のAI設定](../Images/ai-assistant/connection-settings.png)
 
 APIキーと会話履歴はアプリケーションのメモリ内に保持されます。キーは設定や図面とともに保存されません。再読み込み／再起動後は、APIキーを再入力する必要があります。機密情報ではないプロバイダー、エンドポイント、モデル、思考に関する設定は記憶させることができます。ChatGPTアカウントの認証はローカルランタイムで個別に管理され、再起動後も保持される場合があります。Desktopでは、利用可能な場合、安全なOS暗号化が使用されます。
 

@@ -23,7 +23,7 @@ Streben Sie null Entwurfsfehler an, um das Vertrauen in die Korrektheit des Scha
 4. Wählen Sie **OK**, um die Prüfung auszuführen.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Videoanleitung zur Ausführung und Verwendung der Entwurfsregelprüfung."

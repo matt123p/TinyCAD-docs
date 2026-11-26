@@ -23,7 +23,7 @@ Visez zéro erreur de conception afin d'accroître la confiance dans la conformi
 4. Sélectionnez **OK** pour lancer la vérification.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Vidéo de démonstration montrant comment lancer et utiliser le vérificateur des règles de conception."

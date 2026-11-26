@@ -29,7 +29,7 @@ onafhankelijke opties te wijzigen:
 
 Rasterpunten worden mogelijk verborgen als er te ver is uitgezoomd om ze duidelijk weer te geven.
 
-![Het dialoogvenster Settings met afzonderlijke selectievakjes voor Show the grid en Snap to grid.](../images/grid-settings.png)
+![Het dialoogvenster Settings met afzonderlijke selectievakjes voor Show the grid en Snap to grid.](../Images/grid-settings.png)
 
 Wanneer objecten zijn geselecteerd, verplaatsen de pijltoetsen ze met de rasterafstand als uitlijnen is ingeschakeld.
 Als uitlijnen is uitgeschakeld, worden ze in kleine stappen verplaatst zonder

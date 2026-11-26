@@ -31,7 +31,7 @@ layout: default
 
 选择模式后会激活 Wire 工具，并保留当前活动的导线预览。放置下一段之前，可以更改模式。网格吸附仍是单独的设置。若要在两个连接点之间自动布线，请使用旁边的 [点到点导线工具（Point-to-Point Wire）](#auto-routing)。
 
-![显示 90°、45° 和自由选项的导线工具栏选择器。](../images/wire-routing-modes.png)
+![显示 90°、45° 和自由选项的导线工具栏选择器。](../Images/wire-routing-modes.png)
 
 ## 放置导线
 {: #placing-wires}
@@ -45,7 +45,7 @@ layout: default
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="演示如何放置导线的视频讲解。"
@@ -76,15 +76,15 @@ layout: default
 
 首先，选择 Point-to-Point Wire，然后选择 R1 的右侧引脚。
 
-![1. 开始时 R1 和 D1 尚未连接。红色圆圈标出 R1 上的起始引脚。](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. 开始时 R1 和 D1 尚未连接。红色圆圈标出 R1 上的起始引脚。](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 接下来，将指针移到 D1 的上方引脚。提交之前，预览会显示布线路径及其拐角。
 
-![2. 预览到 D1 的自动布线路径。红色圆圈标出目标引脚。](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. 预览到 D1 的自动布线路径。红色圆圈标出目标引脚。](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 最后，单击或轻触 D1 的引脚。TinyCAD 会一次性放置所有线段。
 
-![3. 确认目标位置以放置完整连接，包括拐角。](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. 确认目标位置以放置完整连接，包括拐角。](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 在触摸屏上，可以直接轻触两个端点。对于较小或较拥挤的引脚，请使用[放大镜](../Touch-controls/#precise-placement-with-the-loupe)：瞄准
 每个端点，然后按 **单击**。无需沿路径拖动，也无需轻触拐角。检查完成的连接，并根据需要调整其线段。

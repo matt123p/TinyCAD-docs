@@ -7,7 +7,7 @@ layout: default
 下部パネルの **検索 (Search)** を使用して、図面内のテキストを検索します:
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="図面内を検索する方法を紹介する動画。"

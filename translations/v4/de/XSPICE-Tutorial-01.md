@@ -31,8 +31,8 @@ Engines, Symbolddefinitionen und das Simulationsblatt zusammenwirken.
 und zeichnen Sie A und Y auf. A ist eine Wellenform von 0–5 V mit einer Periodendauer von 1 µs. Y folgt mit einer
 kleinen Ausbreitungsverzögerung und endlichen Ausgangsflanken.
 
-![XSPICE-Puffertestschaltung](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Berechneter Puffer-Eingang und -Ausgang](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![XSPICE-Puffertestschaltung](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Berechneter Puffer-Eingang und -Ausgang](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 ist eine eingebettete Subschaltung mit drei expliziten internen Stufen:
 
