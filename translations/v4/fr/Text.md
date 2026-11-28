@@ -53,7 +53,7 @@ Les zones de texte Markdown sont disponibles dans [TinyCAD v4.0.11](../Changelog
 3. Cliquez ailleurs pour afficher la note mise en forme sans les marqueurs Markdown. Redimensionnez
    la zone si le contenu est tronqué.
 
-![Note Markdown rendue en SVG, avec un titre, une liste de composants, une liste de tâches et un bloc de code.](../images/markdown-preview.png)
+![Note Markdown rendue en SVG, avec un titre, une liste de composants, une liste de tâches et un bloc de code.](../Images/markdown-preview.png)
 
 ### Source Markdown modifiable
 {: #editable-markdown-source}
@@ -68,7 +68,7 @@ La famille de polices, la taille, le gras et l’italique que vous choisissez co
 Les titres sont mis à l’échelle par rapport à cette taille ; le code utilise également la famille choisie. Les opérations Annuler,
 copier-coller et enregistrer préservent la source Markdown.
 
-![Modification de la même note, avec les marqueurs visibles de titre, de gras, de liste, de liste de tâches et de délimitation du code.](../images/markdown-source-editor.png)
+![Modification de la même note, avec les marqueurs visibles de titre, de gras, de liste, de liste de tâches et de délimitation du code.](../Images/markdown-source-editor.png)
 
 ### Mise en forme prise en charge
 {: #supported-formatting}

@@ -119,7 +119,7 @@ net; it does not create a supply voltage. Connect an actual source to that net.
    approximately **3.333 V**. An older retained acquisition still describes
    the earlier circuit; changing a value does not rewrite its results.
 
-![TinyCAD's Simulation sheet with the RC AC analysis and cutoff result](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![TinyCAD's Simulation sheet with the RC AC analysis and cutoff result](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 This application screenshot shows the **Setup** view for **rc-ac**, another
 embedded example. Its 1 kΩ/1 µF filter has a cutoff near **159.15 Hz**. Open it
@@ -204,7 +204,7 @@ contains an analogue-to-digital bridge, an event-driven buffer and a
 digital-to-analogue bridge. The ordinary source drives the analogue input;
 the bridges make the logic states accessible as voltages in TinyCAD's charts.
 
-![Computed input and output of the embedded XSPICE buffer](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Computed input and output of the embedded XSPICE buffer](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Run the saved transient. Expect 0–5 V pulses with a 1 µs period and an output
 transition delayed by approximately 20 ns, with finite edges. Zoom in to inspect

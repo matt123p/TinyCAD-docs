@@ -13,7 +13,7 @@ Otwórz **Standard → SPICE essentials** w panelu bocznym lub użyj **Simulatio
 
 Umieść symbol, zaznacz go na rysunku i otwórz kartę **SPICE** w dolnym panelu **Symbol**. Opcja **Bundled** pokazuje powiązany model i jego źródło. Zwykłe pola symbolu, takie jak **Value**, **Wiper** i **Initial Voltage**, nadal sterują modelami TinyCAD Basic korzystającymi z tych pól. Na przykład ustaw **Value** rezystora na `10k`, aby symulować 10 kΩ przy użyciu domyślnego modelu **Ideal resistor**.
 
-![Karta SPICE umieszczonego symbolu pokazuje wybraną opcję Bundled i odsyłacze do modelu żółtej diody LED TinyCAD Basic.](/v4/images/simulation/bundled-spice-properties.png)
+![Karta SPICE umieszczonego symbolu pokazuje wybraną opcję Bundled i odsyłacze do modelu żółtej diody LED TinyCAD Basic.](/v4/Images/simulation/bundled-spice-properties.png)
 
 Aby wypróbować to w kompletnym obwodzie, wybierz **Open Example → SPICE tutorial → divider**, a następnie zaznacz jeden z rezystorów. Jego karta **SPICE** pokazuje odsyłacz **Ideal resistor**. Zmień wartość rezystora, a następnie ponownie uruchom analizę Operating Point w przykładzie. Zachowany wynik przedstawia obwód sprzed wprowadzenia zmian.
 
@@ -25,13 +25,13 @@ Aby wypróbować to w kompletnym obwodzie, wybierz **Open Example → SPICE tuto
 3. Wybierz wiersz. Szczegóły pod tabelą zawierają opis modelu, źródło, kolejność wyprowadzeń oraz parametry, które można dostosować. Rozwiń **View SPICE definition**, aby zobaczyć szablon instancji oraz używane karty modelu lub podukłady. Wybierz odsyłacz do źródła, aby otworzyć oryginalną definicję albo archiwum źródłowe i nazwę pliku w archiwum.
 4. Sprawdź przypisanie wyprowadzeń i ustaw ewentualne nadpisania parametrów. Wybierz **Select SPICE model**. Na rysunku zmienia to model zaznaczonego symbolu i można tę zmianę cofnąć.
 
-![Okno Find SPICE model dla żółtej diody LED. Wybrany model circsim pokazuje źródło oraz zweryfikowane numery wyprowadzeń anody i katody.](/v4/images/simulation/bundled-spice-picker.png)
+![Okno Find SPICE model dla żółtej diody LED. Wybrany model circsim pokazuje źródło oraz zweryfikowane numery wyprowadzeń anody i katody.](/v4/Images/simulation/bundled-spice-picker.png)
 
 **Symbole SPICE essentials** wyświetlają wyłącznie modele ze zweryfikowanymi przypisaniami dla układu wyprowadzeń danego symbolu. Niektóre symbole mają tylko domyślny model Basic. Na przykład żółta dioda LED oferuje model Basic oraz model żółtej diody LED circsim. Standardowy tranzystor NPN może używać modelu ogólnego lub alternatywnego, takiego jak `2N3904_OJ` OpenJellyBean, z kolektorem, bazą i emiterem przypisanymi odpowiednio do wyprowadzeń 3, 1 i 2.
 
 **Inne symbole**, w tym starsze umieszczenia bez tożsamości bibliotecznej, mogą przeszukiwać pełny katalog dostępny w danej edycji. Sprawdź sugerowane dopasowania i przypisz każdemu zaciskowi modelu odrębne fizyczne wyprowadzenie. Uwzględnij wyprowadzenia zasilania, nawet jeśli są ukryte na schemacie. Użyj zweryfikowanego układu wyprowadzeń obudowy symbolu oraz kolejności zacisków modelu. Pozostaw poza przypisaniem fizyczne wyprowadzenia pominięte przez model. Tymczasowy symbol o nieprawidłowej liczbie lub funkcji wyprowadzeń należy poprawić, zanim będzie można go użyć jako reprezentacji urządzenia.
 
-![Ręczne przypisanie wyprowadzeń dla symbolu 741 w bibliotece niestandardowej. Pięć zacisków circsim LM741 przypisano do fizycznych wyprowadzeń 3, 2, 6, 7 i 4.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Ręczne przypisanie wyprowadzeń dla symbolu 741 w bibliotece niestandardowej. Pięć zacisków circsim LM741 przypisano do fizycznych wyprowadzeń 3, 2, 6, 7 i 4.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 Przykład przypisuje model circsim `LM741` do symbolu 741, używając wyprowadzeń 3 (wejście nieodwracające), 2 (wejście odwracające), 6 (wyjście), 7 (zasilanie dodatnie) i 4 (zasilanie ujemne). Model pomija wyprowadzenia zerowania napięcia niezrównoważenia. W przypadku symbolu bibliotecznego złożonego z wielu części TinyCAD udostępnia numery wyprowadzeń wspólne dla części korzystających z szablonu. Wybierz kompletny model obudowy, gdy symbol i symulacja wymagają uwzględnienia całej obudowy.
 

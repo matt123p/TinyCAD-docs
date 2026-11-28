@@ -10,7 +10,7 @@ Linialen bieden een positionele referentie rondom de tekening, zodat plaatsen ee
 {: #placing-and-moving}
 
 {% include video-player.html
-	src="/v4/images/video/Video 9.mp4"
+	src="/v4/Images/video/Video 9.mp4"
 	width=1522
 	height=916
 	caption="Videohandleiding over het plaatsen en verplaatsen van linialen."

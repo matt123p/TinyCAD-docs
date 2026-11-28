@@ -82,7 +82,7 @@ El icono con forma de pulso de la barra de herramientas muestra el texto emergen
 el menú de ese icono. La **hoja Simulation** es una pestaña independiente dentro del dibujo;
 contiene las vistas de configuración y resultados del experimento.
 
-![TinyCAD con el primer circuito divisor y su panel de gráficos de simulación](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD con el primer circuito divisor y su panel de gráficos de simulación](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Esta captura de pantalla de la aplicación muestra el divisor después de abrirlo, con las pestañas
 de hoja debajo del circuito y el panel de gráficos a la derecha. Los puntos de partida clave

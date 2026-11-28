@@ -38,7 +38,7 @@ layout: default
 その後、図形、ピン、シンボル属性を変更できます。
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="ライブラリの編集方法を紹介する動画チュートリアル。"
@@ -72,7 +72,7 @@ layout: default
 回路図で配線しやすいよう、ピンは慎重にグリッドに合わせて配置してください。
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="ピンの追加方法を紹介する動画チュートリアル。"

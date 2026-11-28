@@ -21,7 +21,7 @@ Aim for zero design errors to increase confidence in schematic correctness.
 4. Select **OK** to run the check.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Video walkthrough showing how to run and use the design rules checker."

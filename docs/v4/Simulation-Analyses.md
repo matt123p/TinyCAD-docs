@@ -22,7 +22,7 @@ Operating point finds a steady DC solution. Ideal capacitors are open circuits a
 
 Use **Data** for node voltages and branch currents. Voltage is relative to ground 0. Current sign follows the device's declared terminal order; a negative supply current can simply mean that it is delivering power. The [DC tutorial](../SPICE-Tutorial-02/) works through voltage, current and power.
 
-![Scalar voltage and current results from the divider's fresh operating-point run](../images/simulation/simulation-data.png)
+![Scalar voltage and current results from the divider's fresh operating-point run](../Images/simulation/simulation-data.png)
 
 ## Transient: behaviour over time
 
@@ -42,11 +42,11 @@ Set start and stop frequencies and points per decade. A logarithmic sweep is use
 
 Set the source's **AC amplitude** and phase separately from its transient waveform settings. An AC amplitude of **1 V** with phase **0°** makes a single-input voltage transfer easy to interpret. A transient sine amplitude by itself does not enable an AC stimulus. For a general input, calculate the complex ratio `V(out) / V(in)`; output voltage alone is not always gain.
 
-![AC sweep settings for the bundled RC filter](../images/simulation/ac-setup.png)
+![AC sweep settings for the bundled RC filter](../Images/simulation/ac-setup.png)
 
 For a first-order low-pass with R = 1 kΩ and C = 1 µF, `fc = 1 / (2πRC) ≈ 159.15 Hz`. At that frequency, a unity-passband filter has gain about 0.707, or −3.0103 dB, and phase about −45°. The [filter tutorial](../SPICE-Tutorial-05/) shows magnitude, dB and phase.
 
-![Actual AC results from a fresh browser run of the RC example](../images/simulation/ac-charts.png)
+![Actual AC results from a fresh browser run of the RC example](../Images/simulation/ac-charts.png)
 
 ## DC sweep
 

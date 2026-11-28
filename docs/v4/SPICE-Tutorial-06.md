@@ -59,9 +59,9 @@ Setting a 160–200 ms measurement window and comparing mean voltage with peak-t
 
 ### Circuit and reference results
 
-![Half-wave rectifier and reservoir capacitor](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Half-wave rectifier and reservoir capacitor](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Computed startup and steady ripple](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Computed startup and steady ripple](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Experiments that reveal the trade-offs
 

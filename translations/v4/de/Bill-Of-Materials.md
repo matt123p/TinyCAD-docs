@@ -20,7 +20,7 @@ Sie können die Stückliste erstellen, indem Sie die entsprechende Menüoption a
 als CSV-Datei herunterladen. Wenn Sie fertig sind, wählen Sie „Schließen“.
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Videoanleitung zum Erstellen einer Stückliste."

@@ -11,7 +11,7 @@ layout: default
 
 **ファイル** メニューから **PDFとしてエクスポート** を選択します。TinyCAD が図面を PDF として新しいタブで開きます。PDF ビューアーの印刷機能で印刷します。
 
-<img src="/v4/images/media/image12.png" alt="The File menu"  />
+<img src="/v4/Images/media/image12.png" alt="The File menu"  />
 
 
 ### デスクトップアプリ
@@ -19,7 +19,7 @@ layout: default
 
 **ファイル → 印刷** を選択して **印刷プレビュー** を開きます。左側に図面、右側に印刷設定が表示されます。
 
-<img src="/v4/images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
+<img src="/v4/Images/desktop-print-preview.png" alt="TinyCAD Print Preview showing a drawing, printer settings and sheet selection" />
 
 #### 直接印刷する
 {: #print-directly}

@@ -6,7 +6,7 @@ layout: default
 
 Mit **Seitengröße** legen Sie die Blattabmessungen für alle Blätter fest.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Änderbare Einstellungen
 {: #what-you-can-change}

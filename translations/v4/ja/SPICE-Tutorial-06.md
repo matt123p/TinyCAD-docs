@@ -58,9 +58,9 @@ title: 6. Diodes, rectification and ripple
 ### 回路と基準結果
 {: #circuit-and-reference-results}
 
-![半波整流回路と平滑コンデンサ](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![半波整流回路と平滑コンデンサ](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![起動時および定常時のリップルの計算結果](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![起動時および定常時のリップルの計算結果](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## トレードオフがわかる実験
 {: #experiments-that-reveal-the-trade-offs}

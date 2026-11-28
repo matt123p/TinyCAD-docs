@@ -81,7 +81,7 @@ Po otwarciu przykładu wybierz **Explanation** na pasku tytułu przeglądarki al
 Ikona w kształcie impulsu na pasku narzędzi ma etykietę po najechaniu **Simulation**. Gdy lekcja poleca **Simulation → Show charts** lub **Simulation → SPICE components**, otwórz menu tej ikony. **Arkusz Simulation** jest osobną kartą w obrębie rysunku;
 zawiera konfigurację doświadczenia i widoki wyników.
 
-![Zrzut ekranu TinyCAD z pierwszym układem dzielnika i panelem wykresów symulacji](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![Zrzut ekranu TinyCAD z pierwszym układem dzielnika i panelem wykresów symulacji](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Ten zrzut ekranu aplikacji przedstawia otwarty dzielnik, karty arkuszy poniżej
 układu i panel wykresów po prawej stronie. Najważniejsze punkty wyjścia to

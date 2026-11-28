@@ -40,7 +40,7 @@ ein Erfassungs-Hash ist eine Kennung, keine wiederherstellbare Schaltungsversion
 bezogen auf die unabhängige Eingangsquelle V1, von 1 Hz bis 100 kHz bei 27 °C.
 Die ideale Quelle ist rauschfrei; R1 trägt thermisches Rauschen bei, das durch C1 gefiltert wird.
 
-![Berechnete spektrale Dichte des RC-Ausgangsrauschens](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Berechnete spektrale Dichte des RC-Ausgangsrauschens](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 Das gesamte Ausgangsrauschen beträgt in diesem Frequenzband ungefähr **64,2 nV RMS**. Für einen
 idealen RC-Kreis, integriert von null bis unendlicher Frequenz, beträgt das mittlere Rauschquadrat des Kondensators `kT/C`; bei 300,15 K und 1 µF ergibt sich etwa 64,4 nV RMS.

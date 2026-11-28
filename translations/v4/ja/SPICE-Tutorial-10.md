@@ -41,7 +41,7 @@ TinyCADでは、テストケースの条件と測定／要件の定義を保持�
 独立入力電源V1を基準として、27°Cで1 Hzから100 kHzまで求めます。
 理想電源はノイズを発生せず、R1がC1によってフィルタリングされた熱雑音を生じます。
 
-![計算されたRC出力ノイズのスペクトル密度](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![計算されたRC出力ノイズのスペクトル密度](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 この帯域での出力ノイズの合計は約**64.2 nV RMS**です。理想的なRC回路で、ゼロから無限大の周波数まで積分すると、コンデンサの
 平均二乗ノイズは`kT/C`となり、300.15 K、1 µFでは約64.4 nV RMSです。

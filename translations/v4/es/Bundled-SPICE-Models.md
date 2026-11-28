@@ -13,7 +13,7 @@ Abra **Standard → SPICE essentials** en el panel lateral o use **Simulation �
 
 Coloque un símbolo, selecciónelo en el dibujo y abra **SPICE** en el panel inferior **Symbol**. **Bundled** muestra el modelo vinculado y su origen. Los campos habituales del símbolo, como **Value**, **Wiper** e **Initial Voltage**, siguen controlando los modelos TinyCAD Basic que usan esos campos. Por ejemplo, establezca **Value** de una resistencia en `10k` para simular 10 kΩ con su modelo predeterminado **Ideal resistor**.
 
-![La pestaña SPICE del símbolo colocado muestra Bundled seleccionado y enlaces al modelo TinyCAD Basic de LED amarillo.](/v4/images/simulation/bundled-spice-properties.png)
+![La pestaña SPICE del símbolo colocado muestra Bundled seleccionado y enlaces al modelo TinyCAD Basic de LED amarillo.](/v4/Images/simulation/bundled-spice-properties.png)
 
 Para probarlo en un circuito completo, elija **Open Example → SPICE tutorial → divider** y seleccione una de las resistencias. Su pestaña **SPICE** muestra el enlace **Ideal resistor**. Cambie el valor de la resistencia y vuelva a ejecutar la configuración de punto de operación del ejemplo. El resultado conservado representa el circuito anterior a la edición.
 
@@ -25,13 +25,13 @@ Para probarlo en un circuito completo, elija **Open Example → SPICE tutorial �
 3. Seleccione una fila. Los detalles debajo de la tabla muestran la descripción del modelo, el origen, el orden de terminales y los parámetros ajustables, si los hay. Despliegue **View SPICE definition** para ver la plantilla de instancia y las tarjetas de modelo o subcircuitos que utiliza. Seleccione el enlace del origen para consultar la definición original o el archivo de archivo ascendente y el nombre del miembro.
 4. Revise la asignación de pines y establezca las anulaciones de parámetros que necesite. Elija **Select SPICE model**. En un dibujo, esto cambia la colocación seleccionada y se puede deshacer.
 
-![Diálogo Find SPICE model para un LED amarillo. El modelo circsim seleccionado muestra su origen y los números de pin verificados del ánodo y el cátodo.](/v4/images/simulation/bundled-spice-picker.png)
+![Diálogo Find SPICE model para un LED amarillo. El modelo circsim seleccionado muestra su origen y los números de pin verificados del ánodo y el cátodo.](/v4/Images/simulation/bundled-spice-picker.png)
 
 Los **símbolos SPICE essentials** solo muestran modelos con asignaciones verificadas para la disposición de pines de ese símbolo. Algunos símbolos solo tienen el modelo Basic predeterminado. Por ejemplo, un LED amarillo ofrece su modelo Basic y el LED amarillo circsim. Un transistor NPN estándar puede usar el modelo genérico o una alternativa, como `2N3904_OJ` de OpenJellyBean, con el colector, la base y el emisor ya asignados a los pines 3, 1 y 2.
 
 **Otros símbolos**, incluidas las colocaciones antiguas sin la identidad de biblioteca, pueden explorar el catálogo completo de su edición. Revise las coincidencias sugeridas y seleccione un pin físico distinto para cada terminal del modelo. Incluya los pines de alimentación, aunque estén ocultos en el esquema. Use el pinout verificado del encapsulado del símbolo y el orden de terminales del modelo. Deje fuera de la asignación los pines físicos que el modelo omita. Un símbolo temporal con un número o una función de pines incorrectos debe corregirse antes de poder representar el dispositivo.
 
-![Asignación manual de pines para un símbolo 741 de una biblioteca personalizada, con los cinco terminales circsim LM741 asignados a los pines físicos 3, 2, 6, 7 y 4.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Asignación manual de pines para un símbolo 741 de una biblioteca personalizada, con los cinco terminales circsim LM741 asignados a los pines físicos 3, 2, 6, 7 y 4.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 El ejemplo asigna el modelo circsim `LM741` a un símbolo 741 mediante los pines 3 (no inversor), 2 (inversor), 6 (salida), 7 (alimentación positiva) y 4 (alimentación negativa). El modelo omite los pines de ajuste de offset. Para un símbolo de biblioteca multiparte, TinyCAD ofrece los números de pin compartidos por las partes que usarán la plantilla. Elija un modelo de encapsulado completo si el símbolo y la simulación necesitan el encapsulado completo.
 

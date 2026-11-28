@@ -18,7 +18,7 @@ layout: default
 选择菜单中的相应选项即可生成物料清单。随后可以将其下载为 CSV 文件。完成后，选择“关闭”。
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="演示如何生成物料清单的视频。"

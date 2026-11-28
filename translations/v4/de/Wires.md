@@ -33,7 +33,7 @@ Wählen Sie in TinyCAD v4.0.11 mit dem Auswahlfeld neben Wire aus, wie neue Segm
 
 Durch die Auswahl eines Modus wird Wire aktiviert und eine eventuell aktive Leitungsvorschau beibehalten. Sie können den Modus ändern, bevor Sie das nächste Segment platzieren. Das Einrasten am Raster ist eine separate Einstellung. Für eine automatische Leitungsführung zwischen zwei Verbindungspunkten verwenden Sie das benachbarte [Punkt-zu-Punkt-Leitungswerkzeug](#auto-routing).
 
-![Auswahlfeld für die Leitungssymbolleiste mit den Optionen 90°, 45° und Frei.](../images/wire-routing-modes.png)
+![Auswahlfeld für die Leitungssymbolleiste mit den Optionen 90°, 45° und Frei.](../Images/wire-routing-modes.png)
 
 ## Leitungen platzieren
 {: #placing-wires}
@@ -47,7 +47,7 @@ Durch die Auswahl eines Modus wird Wire aktiviert und eine eventuell aktive Leit
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Videoanleitung zum Platzieren von Leitungen."
@@ -85,16 +85,16 @@ Der Widerstand und die LED liegen auf dem Raster; die Verbindung zwischen ihnen 
 
 Wählen Sie zunächst Point-to-Point Wire aus und klicken Sie auf den rechten Anschluss von R1.
 
-![1. R1 und D1 sind noch nicht verbunden. Der rote Kreis markiert den Startanschluss an R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. R1 und D1 sind noch nicht verbunden. Der rote Kreis markiert den Startanschluss an R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Zeigen Sie anschließend auf den oberen Anschluss von D1. Die Vorschau zeigt die Route und deren Ecke,
 bevor Sie sie bestätigen.
 
-![2. Vorschau der automatischen Route zu D1. Der rote Kreis markiert den Zielanschluss.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Vorschau der automatischen Route zu D1. Der rote Kreis markiert den Zielanschluss.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Klicken oder tippen Sie schließlich auf den Anschluss von D1. TinyCAD platziert alle Segmente in einem einzigen Vorgang.
 
-![3. Bestätigen Sie das Ziel, um die vollständige Verbindung einschließlich ihrer Ecke zu platzieren.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Bestätigen Sie das Ziel, um die vollständige Verbindung einschließlich ihrer Ecke zu platzieren.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 Auf einem Touchscreen können Sie die beiden Endpunkte direkt antippen. Bei kleinen oder dicht beieinanderliegenden
 Anschlüssen verwenden Sie die [Lupe](../Touch-controls/#precise-placement-with-the-loupe): zielen Sie

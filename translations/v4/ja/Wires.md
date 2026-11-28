@@ -31,7 +31,7 @@ TinyCAD v4.0.11では、Wireの横にあるセレクターを使って、新し�
 
 モードを選択するとWireが有効になり、アクティブな配線プレビューが維持されます。次のセグメントを配置する前にモードを変更できます。グリッドへのスナップは別の設定です。2つの接続点の間を自動配線するには、隣にある[Point-to-Point Wireツール](#auto-routing)を使用してください。
 
-![90°、45°、Freeの選択肢を表示する配線ツールバーのセレクター。](../images/wire-routing-modes.png)
+![90°、45°、Freeの選択肢を表示する配線ツールバーのセレクター。](../Images/wire-routing-modes.png)
 
 ## 配線の配置
 {: #placing-wires}
@@ -45,7 +45,7 @@ TinyCAD v4.0.11では、Wireの横にあるセレクターを使って、新し�
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="配線の配置方法を紹介する動画。"
@@ -76,15 +76,15 @@ TinyCAD v4.0.11では、Wireの横にあるセレクターを使って、新し�
 
 まず、Point-to-Point Wireを選択し、R1の右側のピンを選びます。
 
-![1. R1とD1が未接続の状態から始めます。赤い円はR1の始点ピンを示しています。](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. R1とD1が未接続の状態から始めます。赤い円はR1の始点ピンを示しています。](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 次に、D1の上側のピンにポインターを合わせます。プレビューに、確定前の経路と角が表示されます。
 
-![2. D1への自動配線をプレビューします。赤い円は終点のピンを示しています。](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. D1への自動配線をプレビューします。赤い円は終点のピンを示しています。](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 最後に、D1のピンをクリックまたはタップします。TinyCADはすべてのセグメントを一度に配置します。
 
-![3. 終点を確定すると、角を含む接続全体が配置されます。](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. 終点を確定すると、角を含む接続全体が配置されます。](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 タッチスクリーンでは、2つの端点を直接タップできます。ピンが小さい場合や密集している場合は、[ルーペ](../Touch-controls/#precise-placement-with-the-loupe)を使用して各端点を狙い、**クリック**を押してください。経路に沿ってドラッグしたり、角をタップしたりする必要はありません。接続が完了したら確認し、必要に応じてセグメントを調整してください。
 

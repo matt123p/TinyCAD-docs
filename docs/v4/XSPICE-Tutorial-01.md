@@ -30,8 +30,8 @@ Open **logic-buffer**. Run the saved 8 µs transient
 and plot A and Y. A is a 0–5 V waveform with a 1 µs period. Y follows it after a
 small propagation delay and with finite output edges.
 
-![XSPICE buffer test circuit](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Computed buffer input and output](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![XSPICE buffer test circuit](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Computed buffer input and output](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 is an embedded subcircuit with three explicit internal stages:
 

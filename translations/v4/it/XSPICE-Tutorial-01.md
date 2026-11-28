@@ -32,8 +32,8 @@ Apri **logic-buffer**. Esegui il transitorio salvato di 8 µs
 e traccia A e Y. A è una forma d'onda da 0 a 5 V con periodo di 1 µs. Y la segue con un
 piccolo ritardo di propagazione e fronti di uscita non ideali.
 
-![Circuito di prova del buffer XSPICE](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Segnali di ingresso e uscita del buffer calcolati](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Circuito di prova del buffer XSPICE](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Segnali di ingresso e uscita del buffer calcolati](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 è un sottocircuito incorporato con tre stadi interni espliciti:
 

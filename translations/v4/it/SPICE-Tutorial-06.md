@@ -62,9 +62,9 @@ Impostazione di un intervallo di misura di 160–200 ms e confronto tra tensione
 ### Circuito e risultati di riferimento
 {: #circuit-and-reference-results}
 
-![Raddrizzatore a semionda e condensatore di livellamento](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Raddrizzatore a semionda e condensatore di livellamento](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Avviamento calcolato e ondulazione a regime](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Avviamento calcolato e ondulazione a regime](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Esperimenti che mettono in evidenza i compromessi
 {: #experiments-that-reveal-the-trade-offs}

@@ -134,7 +134,7 @@ sorgente effettiva.
    circa **3,333 V**. Un'acquisizione precedente conservata descrive ancora il
    circuito precedente; modificare un valore non riscrive i risultati.
 
-![Scheda Simulation di TinyCAD con analisi CA RC e risultato della frequenza di taglio](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![Scheda Simulation di TinyCAD con analisi CA RC e risultato della frequenza di taglio](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Questa schermata dell'applicazione mostra la vista **Setup** per **rc-ac**, un
 altro esempio incorporato. Il suo filtro da 1 kΩ/1 µF ha una frequenza di taglio
@@ -225,7 +225,7 @@ contiene un ponte analogico-digitale, un buffer a eventi discreti e un ponte
 digitale-analogico. La sorgente ordinaria pilota l'ingresso analogico; i ponti
 rendono gli stati logici accessibili come tensioni nei grafici di TinyCAD.
 
-![Ingresso e uscita calcolati del buffer XSPICE incorporato](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Ingresso e uscita calcolati del buffer XSPICE incorporato](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Esegui il transitorio salvato. Aspettati impulsi da 0–5 V con un periodo di
 1 µs e una transizione in uscita ritardata di circa 20 ns, con fronti finiti.

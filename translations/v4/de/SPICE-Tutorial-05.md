@@ -30,7 +30,7 @@ Wechselstromeinstellungen prüfen, die Grenzfrequenz ablesen und zwischen Betrag
 ### Schaltung und Referenzergebnisse
 {: #circuit-and-reference-results}
 
-![Berechneter Betrags- und Phasengang](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Berechneter Betrags- und Phasengang](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Das komplexe Ergebnis interpretieren
 {: #interpret-the-complex-result}

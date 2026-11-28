@@ -21,7 +21,7 @@ Scegliere **Simulation → SPICE → Insert Source** (Inserisci sorgente). L'edi
 | Exponential | Transizione sagomata | Livelli, ritardi e costanti di tempo |
 | FM | Modulazione di frequenza | Impostazioni della portante e della modulazione |
 
-![Editor della sorgente sinusoidale e anteprima della forma d'onda](../images/simulation/source-settings.png)
+![Editor della sorgente sinusoidale e anteprima della forma d'onda](../Images/simulation/source-settings.png)
 
 L'anteprima riflette le impostazioni numeriche della forma d'onda. Usarla per individuare eventuali offset, picchi o temporizzazioni inattesi prima dell'esecuzione. Impostazioni non valide impediscono l'avvio. L'icona di una sorgente cambia in base alla sua forma d'onda e una sorgente di corrente conserva la freccia di direzione.
 

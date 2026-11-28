@@ -23,7 +23,7 @@ El punto de operación encuentra una solución estacionaria de CC. Los condensad
 
 Use **Data** para consultar las tensiones de nodo y las corrientes de rama. La tensión se mide con respecto a tierra 0. El signo de la corriente sigue el orden de terminales declarado por el dispositivo; una corriente negativa de alimentación puede significar simplemente que está suministrando potencia. El [tutorial de CC](../SPICE-Tutorial-02/) explica paso a paso la tensión, la corriente y la potencia.
 
-![Resultados escalares de tensión y corriente de una ejecución reciente del punto de operación del divisor](../images/simulation/simulation-data.png)
+![Resultados escalares de tensión y corriente de una ejecución reciente del punto de operación del divisor](../Images/simulation/simulation-data.png)
 
 ## Transitorio: comportamiento a lo largo del tiempo
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Ajuste las frecuencias inicial y final, y el número de puntos por década. Un b
 
 Ajuste la **amplitud de CA** y la fase de la fuente por separado de los ajustes de su forma de onda transitoria. Una amplitud de CA de **1 V** con una fase de **0°** facilita la interpretación de la transferencia de tensión con una sola entrada. La amplitud de una sinusoide transitoria por sí sola no habilita una señal de excitación de CA. Para una entrada general, calcule la relación compleja `V(out) / V(in)`; la tensión de salida por sí sola no siempre es la ganancia.
 
-![Ajustes del barrido de CA para el filtro RC incluido](../images/simulation/ac-setup.png)
+![Ajustes del barrido de CA para el filtro RC incluido](../Images/simulation/ac-setup.png)
 
 Para un filtro pasa-bajos de primer orden con R = 1 kΩ y C = 1 µF, `fc = 1 / (2πRC) ≈ 159.15 Hz`. A esa frecuencia, un filtro con ganancia unitaria en la banda pasante tiene una ganancia de aproximadamente 0,707, o −3,0103 dB, y una fase de aproximadamente −45°. El [tutorial sobre filtros](../SPICE-Tutorial-05/) muestra la magnitud, los dB y la fase.
 
-![Resultados reales de CA de una ejecución reciente en el navegador del ejemplo RC](../images/simulation/ac-charts.png)
+![Resultados reales de CA de una ejecución reciente en el navegador del ejemplo RC](../Images/simulation/ac-charts.png)
 
 ## Barrido de CC
 {: #dc-sweep}

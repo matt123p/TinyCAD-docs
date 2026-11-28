@@ -33,7 +33,7 @@ TinyCAD 可以保留测试用例条件以及测量/要求定义。只有在希�
 以独立输入源 V1 为参考，频率范围为 1 Hz 至 100 kHz，温度为 27°C。
 理想电源没有噪声；R1 会产生热噪声，并由 C1 滤波。
 
-![计算得到的 RC 输出噪声功率谱密度](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![计算得到的 RC 输出噪声功率谱密度](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 该频带内的输出噪声总量约为 **64.2 nV RMS**。对于从零频率积分到无穷频率的理想 RC 电路，电容的均方噪声为 `kT/C`，在 300.15 K 和 1 µF 下约为 64.4 nV RMS。
 仿真频带有限，因此会产生微小差异。功率谱密度的单位为 V/√Hz；积分时先对密度平方并乘以频带宽度，再开平方。它并不是所显示的各个密度样本的算术和。输入折算总量是另一种结果。

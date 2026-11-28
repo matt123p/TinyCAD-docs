@@ -11,7 +11,7 @@ title: 3. Propagation delay and logic hazards
 
 打开 **logic-hazard**。在 X1 内，A 的一路信号直接连接到与门。另一路信号经过反相器后，连接到与门的另一个输入端。布尔表达式为 `A AND NOT A`，在所有信号稳定后其值始终为零。尽管如此，瞬态过程中仍可能出现一个脉冲。
 
-![计算得到的冒险脉冲](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![计算得到的冒险脉冲](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 反相器的延迟为 100 ns，与门的延迟为 10 ns。在输入上升沿处，直通信号变为高电平，而反相信号在反相器响应之前仍保持高电平。在一段很短的时间内，与门的两个输入都为高电平，因此会出现一个正向输出脉冲。在这个刻意简化的模型中，脉冲宽度约为 100 ns。在相反的输入边沿处，两路信号会经过一段与门两个输入都为低电平的时间，因此不会产生同样的正向脉冲。
 

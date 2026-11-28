@@ -10,7 +10,7 @@ layout: default
 所有名称相同的电源符号都视为电气连接。
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="展示如何放置电源符号的视频演示。"

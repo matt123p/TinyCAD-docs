@@ -6,7 +6,7 @@ layout: default
 
 Use **Page Size** to set the sheet dimensions for all sheets.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## What you can change
 

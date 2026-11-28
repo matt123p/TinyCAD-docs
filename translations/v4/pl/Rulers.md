@@ -10,7 +10,7 @@ Linijki zapewniają punkty odniesienia wokół rysunku, ułatwiając rozmieszcza
 {: #placing-and-moving}
 
 {% include video-player.html
-	src="/v4/images/video/Video 9.mp4"
+	src="/v4/Images/video/Video 9.mp4"
 	width=1522
 	height=916
 	caption="Film instruktażowy pokazujący, jak umieszczać i przesuwać linijki."

@@ -14,8 +14,8 @@ flip-flops. Each feeds its inverted output back to D so that it toggles when
 clocked. The first stage receives CLK; later stages are clocked from the
 preceding stage's inverted output. This forms a ripple binary up-counter.
 
-![Four-bit counter test circuit](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Computed divided-clock outputs](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Four-bit counter test circuit](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Computed divided-clock outputs](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 The input period is 1 µs. Reset clears the stages near startup, and the first
 counting edge is near 0.5 µs. Run the saved 18 µs transient. Read each value after

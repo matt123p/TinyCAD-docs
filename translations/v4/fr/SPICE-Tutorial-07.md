@@ -14,7 +14,7 @@ Ouvrez **amp-bias**. Ce schéma reconstruit la topologie de
 attribué à l’origine à Matt Pyne, en 1995. Il utilise des composants de la
 bibliothèque SPICE essentials de TinyCAD et des sources de simulation configurables.
 
-![AMP.DSN reconstruit avec des composants de simulation](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![AMP.DSN reconstruit avec des composants de simulation](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Éléments préservés et modélisés
 {: #what-was-preserved-and-what-was-modelled}

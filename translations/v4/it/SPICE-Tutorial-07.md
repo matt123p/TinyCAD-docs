@@ -14,7 +14,7 @@ Apri **amp-bias**. Questo ricostruisce la topologia di
 attribuito originariamente a Matt Pyne, 1995. Utilizza componenti della libreria
 SPICE essentials di TinyCAD e sorgenti di simulazione configurabili.
 
-![AMP.DSN ricostruito con componenti di simulazione](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![AMP.DSN ricostruito con componenti di simulazione](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Cosa è stato mantenuto e cosa è stato modellato
 {: #what-was-preserved-and-what-was-modelled}

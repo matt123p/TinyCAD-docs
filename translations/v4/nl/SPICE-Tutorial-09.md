@@ -13,7 +13,7 @@ Open **amp-small-signal**. VIN levert een
 sinus van 10 mV piek bij 1 kHz. De transiënt duurt 12 ms, met een maximale stapgrootte van 2 µs.
 Vergelijk IN en OUT en meet vervolgens de laatste vier perioden, van 8 ms tot 12 ms.
 
-![Gemeten golfvormen van de kleinsignaalversterker](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Gemeten golfvormen van de kleinsignaalversterker](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 Het AC-resultaat voorspelt ongeveer 8,92 mV piek op OUT, in tegenfase met de ingang.
 De transiënt levert gedurende het meetvenster ongeveer −8,87 tot +8,99 mV op,
@@ -46,7 +46,7 @@ Open **amp-clipping**. Alleen de amplitude van VIN verandert,
 naar 500 mV piek. Een lineaire extrapolatie zou voor OUT ongeveer 446 mV piek voorspellen,
 in beide richtingen. De berekende golfvorm doet dat niet.
 
-![Berekende asymmetrische uitgang bij groot signaal](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Berekende asymmetrische uitgang bij groot signaal](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 In hetzelfde venster van 8–12 ms loopt de uitgang ongeveer van
 **−0,162 tot +0,389 V**, met **0,2126 V RMS**. Het voedingsverbruik bedraagt ongeveer

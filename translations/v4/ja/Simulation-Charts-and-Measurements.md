@@ -33,7 +33,7 @@ layout: default
 
 R1 = 1 kΩ、C = 1 µF の場合、公称遮断周波数は約159.15 Hzです。**Measurements** には遮断周波数、100 Hzでの利得、理想的な遮断周波数での位相が含まれます。**Requirements** では、遮断周波数が150～170 Hzの範囲内かどうかを確認します。
 
-![RC付属回路図のCircuit Explorer調整コントロール](../images/simulation/explorer-tuning.png)
+![RC付属回路図のCircuit Explorer調整コントロール](../Images/simulation/explorer-tuning.png)
 
 ## 保存した回路を変更せずに調整する
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ RC付属例では、1 kΩ、2.2 kΩ、4.7 kΩ、6.8 kΩ、10 kΩを用意して�
 
 **Measurements** で名前を追加し、信号／コンポーネントを選択して設定を展開します。意味のある時間／周波数ウィンドウと、必要なレベルや基準値を設定します。コンポーネント／プローブのバインドにはシートの識別情報とリファレンスが使用されるため、ファイルを再度開いた後も維持できます。
 
-![あらかじめ設定された遮断周波数、利得、位相の測定](../images/simulation/explorer-measurements.png)
+![あらかじめ設定された遮断周波数、利得、位相の測定](../Images/simulation/explorer-measurements.png)
 
 | 測定 | 解釈 |
 | --- | --- |
@@ -91,7 +91,7 @@ RC付属例では、1 kΩ、2.2 kΩ、4.7 kΩ、6.8 kΩ、10 kΩを用意して�
 
 **Requirements** を使うと、名前付き測定値が **at least**、**at most**、または両端を含む **between** の範囲を満たすかテストできます。単位は一致している必要があります。結果は **pass**、**fail**、**unavailable** のいずれかです。値を取得できない測定は、要件を満たしたことにはなりません。
 
-![許容範囲を明示したRC遮断周波数の要件](../images/simulation/explorer-requirements.png)
+![許容範囲を明示したRC遮断周波数の要件](../Images/simulation/explorer-requirements.png)
 
 利用可能な測定を選択すると、測定の根拠と、適用可能な回路図上のハイライトを確認できます。エクスポートする結果には、測定の定義、ウィンドウ、しきい値を含めてください。プローブ間の双方向ハイライトは、すべての種類の信号やモデルに完全対応しているわけではありません。
 
@@ -100,7 +100,7 @@ DC回路図オーバーレイには、最新の完了済み動作点取得デー
 ## Analysis lab
 {: #analysis-lab}
 
-![Circuit ExplorerのAnalysis labワークフロー](../images/simulation/analysis-lab.png)
+![Circuit ExplorerのAnalysis labワークフロー](../Images/simulation/analysis-lab.png)
 
 ### 周波数特性とアンプの応答
 {: #frequency-and-amplifier-response}

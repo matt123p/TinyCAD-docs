@@ -12,8 +12,8 @@ title: 5. Counters and divided clocks
 打开 **logic-counter**。X1 包含四个 D
 触发器。每个触发器都将反相输出反馈到 D，因此在时钟触发时会翻转。第一级接收 CLK；后续各级由前一级的反相输出作为时钟驱动。这构成了一个脉动二进制加计数器。
 
-![四位计数器测试电路](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![计算得到的分频时钟输出](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![四位计数器测试电路](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![计算得到的分频时钟输出](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 输入周期为 1 µs。复位会在启动附近清除各级状态，第一个计数沿出现在约 0.5 µs 处。运行已保存的 18 µs 瞬态仿真。待脉动过程稳定后读取各个值，例如在 0.8 µs、1.8 µs、2.8 µs 等时刻读取。
 

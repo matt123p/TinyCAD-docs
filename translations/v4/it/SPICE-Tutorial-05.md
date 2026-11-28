@@ -30,7 +30,7 @@ Verifica della configurazione AC, lettura della frequenza di taglio e passaggio 
 ### Circuito e risultati di riferimento
 {: #circuit-and-reference-results}
 
-![Risposta in modulo e fase calcolata](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Risposta in modulo e fase calcolata](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Interpretare il risultato complesso
 {: #interpret-the-complex-result}

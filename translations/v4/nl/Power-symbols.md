@@ -10,7 +10,7 @@ Voedingssymbolen geven verbindingen aan met benoemde voedingsnetten, zoals `GND`
 Alle voedingssymbolen met dezelfde naam worden beschouwd als elektrisch verbonden.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Video-uitleg over het plaatsen van voedingssymbolen."

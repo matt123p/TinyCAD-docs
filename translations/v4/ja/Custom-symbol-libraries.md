@@ -36,7 +36,7 @@ TinyCADの旧バージョンv3で作成されたライブラリも読み込め�
 1. Google Driveで`.tclib`ファイルを右クリックします。
 2. **アプリで開く -> TinyCAD** を選択します。
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 使用できるようにしたい**すべての**ライブラリについて、これを繰り返します。
 
@@ -49,22 +49,22 @@ TinyCADの旧バージョンv3で作成されたライブラリも読み込め�
 1. **マイライブラリ**を開きます。
 2. **マイライブラリ**の横にある**更新**をクリックします。
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 更新後、ライブラリが一覧表示されます:
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 ライブラリを展開すると、その中を参照できます:
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### 新しいライブラリの作成
 {: #creating-a-new-library}
 
 メニュー項目の**新しいカスタムライブラリ**を使用します:
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### ライブラリの編集
 {: #edit-a-library}
@@ -79,7 +79,7 @@ TinyCADの旧バージョンv3で作成されたライブラリも読み込め�
 
 ライブラリのシンボルを使用するには、まず **My Libraries** のライブラリ一覧にそのライブラリを追加する必要があります。
 
-![My Libraries のサイドパネル](/v4/images/media/image9.png)
+![My Libraries のサイドパネル](/v4/Images/media/image9.png)
 
 この一覧にライブラリを追加するには、**Add** をクリックします。ファイル選択ダイアログが表示されます。`.tclib` 拡張子のライブラリファイルを選択してください。
 
@@ -90,7 +90,7 @@ TinyCADの旧バージョンv3で作成されたライブラリも読み込め�
 
 ライブラリ編集ダイアログでライブラリを選択し、**Edit** をクリックします。ライブラリのサムネイルが表示された新しいウィンドウが開きます。
 
-![シンボルのサムネイルを表示したライブラリエディター](/v4/images/media/image10.png)
+![シンボルのサムネイルを表示したライブラリエディター](/v4/Images/media/image10.png)
 
 ライブラリ編集ウィンドウでは、次の操作ができます。
 

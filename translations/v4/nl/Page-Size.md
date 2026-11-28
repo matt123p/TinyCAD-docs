@@ -6,7 +6,7 @@ layout: default
 
 Gebruik **Paginaformaat** om de afmetingen van het blad voor alle bladen in te stellen.
 
-<img src="/v4/images/media/image4.png" alt="The page size dialog" />
+<img src="/v4/Images/media/image4.png" alt="The page size dialog" />
 
 ## Wat u kunt wijzigen
 {: #what-you-can-change}

@@ -67,9 +67,9 @@ Ustawianie przedziału pomiarowego 160–200 ms i porównywanie napięcia średn
 ### Układ i wyniki referencyjne
 {: #circuit-and-reference-results}
 
-![Prostownik jednopołówkowy i kondensator zbiornikowy](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Prostownik jednopołówkowy i kondensator zbiornikowy](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Obliczony przebieg rozruchowy i tętnienia w stanie ustalonym](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Obliczony przebieg rozruchowy i tętnienia w stanie ustalonym](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Eksperymenty pokazujące kompromisy
 {: #experiments-that-reveal-the-trade-offs}

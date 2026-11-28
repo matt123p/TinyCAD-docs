@@ -35,7 +35,7 @@ La liste est dynamique et se met automatiquement à jour pendant que vous modifi
 
 Si un autre panneau est ouvert parce qu'un élément est sélectionné, effacez d'abord la sélection.
 
-![Vue Netlist sous le schéma du diviseur, avec la ligne OUT mise en évidence](../images/netlist-editor/netlist-overview.png)
+![Vue Netlist sous le schéma du diviseur, avec la ligne OUT mise en évidence](../Images/netlist-editor/netlist-overview.png)
 
 Dans cet exemple de diviseur fourni, la ligne `OUT` relie `R1.2` à `R2.1`.
 Le survol de cette ligne met en évidence la connexion dans le dessin.
@@ -92,7 +92,7 @@ Un type de réseau est un ensemble réutilisable de styles de dessin. Attribuez 
 
 Ouvrez le dessin `divider` fourni, depuis **Open Example** → **SPICE tutorial**, puis zoomez sur le circuit. Dans le panneau inférieur, passez de **Symbols** à **Netlist**. L'étiquette **OUT** identifie le réseau entre les broches **R1.2** et **R2.1**. Au départ, il utilise le type `default` et une épaisseur de fil normale.
 
-![Diviseur avant la mise en forme, montrant le fin fil OUT bleu entre R1 et R2](../images/netlist-editor/netlist-wire-before.png)
+![Diviseur avant la mise en forme, montrant le fin fil OUT bleu entre R1 et R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### Créer le style de fil
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ Ouvrez le dessin `divider` fourni, depuis **Open Example** → **SPICE tutorial*
 3. Dans la même ligne, cliquez sur la cellule **Wire colour**. Cochez **Override colour**, puis saisissez `007F5F` dans le champ **Hex** pour obtenir du vert. L'aperçu montre le fil avec les deux réglages appliqués.
 4. Cliquez sur **OK** dans le sélecteur de couleurs. Vérifiez l'échantillon vert et la valeur d'épaisseur sur la ligne `control`, puis cliquez sur **OK** dans **Netlist Types** pour enregistrer le type.
 
-![Sélecteur de couleur de fil pour control, avec Override colour coché et le fil vert visible dans l'aperçu](../images/netlist-editor/netlist-wire-colour.png)
+![Sélecteur de couleur de fil pour control, avec Override colour coché et le fil vert visible dans l'aperçu](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Netlist Types montrant l'échantillon vert Wire colour et Wire thickness réglé sur 4 sur la ligne control](../images/netlist-editor/netlist-wire-type.png)
+![Netlist Types montrant l'échantillon vert Wire colour et Wire thickness réglé sur 4 sur la ligne control](../Images/netlist-editor/netlist-wire-type.png)
 
 ### Appliquer le style à OUT
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ Ouvrez le dessin `divider` fourni, depuis **Open Example** → **SPICE tutorial*
 2. Ouvrez la liste **Type** de la ligne mise en évidence et choisissez `control`.
 3. Cliquez sur une zone vide du schéma pour effacer la sélection. Le fil entre **R1.2** et **R2.1** est maintenant vert et plus épais. Choisissez `default` dans la liste **Type** pour rétablir le style de fil normal.
 
-![Fil OUT sélectionné dans le schéma et sa ligne Netlist mise en évidence, avec control sélectionné](../images/netlist-editor/netlist-wire-assignment.png)
+![Fil OUT sélectionné dans le schéma et sa ligne Netlist mise en évidence, avec control sélectionné](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Diviseur après la mise en forme, montrant le fil OUT épaissi et vert entre R1 et R2](../images/netlist-editor/netlist-wire-after.png)
+![Diviseur après la mise en forme, montrant le fil OUT épaissi et vert entre R1 et R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Utilisez **Save As** pour conserver votre copie modifiée de l'exemple.
 
 ### Suivre la démonstration
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Passez à Netlist, créez un style de fil vert, puis cliquez sur le fil OUT pour trouver sa ligne et lui appliquer le style." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Passez à Netlist, créez un style de fil vert, puis cliquez sur le fil OUT pour trouver sa ligne et lui appliquer le style." %}
 
 ## Fonctions disponibles dans Netlist Types
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ Pour les ajouter :
 3. Enregistrez les attributs.
 4. Cliquez sur `OK` dans la boîte de dialogue principale.
 
-![Éditeur d'attributs avec les entrées purpose et notes pour le type control](../images/netlist-editor/netlist-attributes.png)
+![Éditeur d'attributs avec les entrées purpose et notes pour le type control](../Images/netlist-editor/netlist-attributes.png)
 
 Ces exemples d'entrées décrivent l'objectif du type et ajoutent une note de câblage. Elles appartiennent au type et peuvent être partagées par tous les réseaux qui lui sont attribués.
 

@@ -21,7 +21,7 @@ TinyCADは、電気的な接続を伴わないグラフィック要素を描画�
 コンテキストメニューで「多角形を閉じる（Close Polygon）」を選択すると、これを多角形に変換できます。多角形に変換した後は、塗りつぶしを変更できます。
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="多角形の描画と編集方法を紹介する動画。"

@@ -14,7 +14,7 @@ directement à une porte AND. Une autre passe par un inverseur avant d’atteind
 l’autre entrée de la porte AND. L’expression booléenne est `A AND NOT A`, qui vaut toujours zéro
 une fois les transitoires terminés. Néanmoins, le transitoire peut contenir une impulsion.
 
-![Impulsions d’aléa calculées](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Impulsions d’aléa calculées](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 L’inverseur a un délai de 100 ns et la porte AND un délai de 10 ns. Lors d’un front montant
 d’entrée, le chemin direct passe à l’état haut tandis que le chemin inversé reste à l’état haut

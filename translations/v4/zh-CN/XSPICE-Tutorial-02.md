@@ -11,8 +11,8 @@ title: 2. Gates and truth tables
 
 打开 **logic-nand**。X1 包含 ADC 桥接器、一个双输入 XSPICE NAND 门和一个 DAC 输出桥接器。独立的脉冲源以不同速率驱动 A 和 B。运行 8 µs 瞬态分析并显示 A、B 和 Y。
 
-![NAND 测试电路](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![计算得到的 NAND 波形](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![NAND 测试电路](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![计算得到的 NAND 波形](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 布尔函数为 `Y = NOT(A AND B)`：
 

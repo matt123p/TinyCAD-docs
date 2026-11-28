@@ -23,7 +23,7 @@ Analiza punktu pracy wyznacza ustalone rozwiązanie DC. Idealne kondensatory są
 
 Użyj **Data**, aby wyświetlić napięcia węzłowe i prądy gałęzi. Napięcie jest mierzone względem masy 0. Znak prądu wynika z zadeklarowanej kolejności wyprowadzeń elementu; ujemny prąd zasilania może po prostu oznaczać, że źródło oddaje moc. [Samouczek DC](../SPICE-Tutorial-02/) omawia napięcie, prąd i moc.
 
-![Skalarne wyniki napięcia i prądu z nowego uruchomienia analizy punktu pracy dzielnika](../images/simulation/simulation-data.png)
+![Skalarne wyniki napięcia i prądu z nowego uruchomienia analizy punktu pracy dzielnika](../Images/simulation/simulation-data.png)
 
 ## Transient: zachowanie w czasie
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Ustaw częstotliwości początkową i końcową oraz liczbę punktów na dekadę
 
 Ustaw **AC amplitude** i fazę źródła niezależnie od ustawień jego przebiegu przejściowego. Amplituda AC równa **1 V** i faza **0°** ułatwiają interpretację transmitancji napięciowej z jednym wejściem. Sama amplituda sinusoidy przejściowej nie włącza pobudzenia AC. Dla ogólnego sygnału wejściowego oblicz zespolony stosunek `V(out) / V(in)`; samo napięcie wyjściowe nie zawsze jest wzmocnieniem.
 
-![Ustawienia przemiatania AC dla dołączonego filtru RC](../images/simulation/ac-setup.png)
+![Ustawienia przemiatania AC dla dołączonego filtru RC](../Images/simulation/ac-setup.png)
 
 Dla filtru dolnoprzepustowego pierwszego rzędu, gdzie R = 1 kΩ i C = 1 µF, `fc = 1 / (2πRC) ≈ 159.15 Hz`. Przy tej częstotliwości wzmocnienie filtru o jednostkowym wzmocnieniu w paśmie przepustowym wynosi około 0,707, czyli −3,0103 dB, a faza około −45°. [Samouczek dotyczący filtrów](../SPICE-Tutorial-05/) przedstawia moduł, wartość w dB i fazę.
 
-![Rzeczywiste wyniki AC z nowego uruchomienia przykładu RC w przeglądarce](../images/simulation/ac-charts.png)
+![Rzeczywiste wyniki AC z nowego uruchomienia przykładu RC w przeglądarce](../Images/simulation/ac-charts.png)
 
 ## Przemiatanie DC
 {: #dc-sweep}

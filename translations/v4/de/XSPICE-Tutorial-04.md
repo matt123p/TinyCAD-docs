@@ -13,8 +13,8 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Beispie
 Anregungssignale für D, CLK und RESET. In X1 speisen Brücken ein XSPICE-D-Flipflop;
 Q und NQ werden zur Darstellung wieder in analoge Ausgänge umgewandelt.
 
-![D-Flipflop-Testschaltung](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Berechneter Takt, Daten, Reset und Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![D-Flipflop-Testschaltung](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Berechneter Takt, Daten, Reset und Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Führen Sie die Transientenanalyse über 8 µs aus. Bei jeder steigenden Taktflanke übernimmt Q den Wert von D und hält
 diesen Zustand zwischen den Flanken. NQ ist nach dem Abklingen der Laufzeit sein Komplement. Die

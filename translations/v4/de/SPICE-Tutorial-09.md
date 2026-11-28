@@ -13,7 +13,7 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Open Ex
 Sinusspannung mit 10 mV Spitzenwert und 1 kHz. Die Transientenanalyse dauert 12 ms bei einer maximalen Schrittweite von 2 µs.
 Vergleichen Sie IN und OUT und messen Sie anschließend die letzten vier Perioden, von 8 ms bis 12 ms.
 
-![Gemessene Wellenformen des Kleinsignalverstärkers](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Gemessene Wellenformen des Kleinsignalverstärkers](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 Das AC-Ergebnis sagt am Ausgang einen Spitzenwert von etwa 8.92 mV voraus, invertiert gegenüber dem Eingang.
 Die Transientenanalyse ergibt im Messfenster ungefähr −8.87 bis +8.99 mV,
@@ -45,7 +45,7 @@ einen geratenen Nullwert ersetzt werden.
 Öffnen Sie **amp-clipping**. Nur die Amplitude von VIN ändert sich,
 auf einen Spitzenwert von 500 mV. Eine lineare Extrapolation würde am Ausgang in beiden Richtungen einen Spitzenwert von etwa 446 mV vorhersagen. Die berechnete Wellenform zeigt das nicht.
 
-![Berechnete asymmetrische Großsignal-Ausgangswellenform](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Berechnete asymmetrische Großsignal-Ausgangswellenform](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 Im selben Zeitfenster von 8–12 ms liegt der Ausgang ungefähr zwischen
 **−0.162 und +0.389 V**, bei einem **Effektivwert von 0.2126 V**. Die Versorgungsaufnahme beträgt ungefähr

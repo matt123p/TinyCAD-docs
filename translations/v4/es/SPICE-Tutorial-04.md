@@ -26,9 +26,9 @@ Ajuste del paso de tiempo máximo y medición de OUT a 1 ms y de la constante de
 ### Circuito y resultados de referencia
 {: #circuit-and-reference-results}
 
-![Circuito de carga RC](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![Circuito de carga RC](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Curva calculada de carga del condensador](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Curva calculada de carga del condensador](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Por qué la salida sigue una curva en lugar de dar un salto
 {: #why-the-output-curves-rather-than-jumps}

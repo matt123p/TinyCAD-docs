@@ -14,7 +14,7 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const app=path.resolve(process.argv[2]||path.join(root,'../TinyCADv4'));
 const require=createRequire(path.join(app,'package.json'));
 const {chromium,expect}=require('@playwright/test');
-const output=path.join(root,'docs/v4/images/simulation');
+const output=path.join(root,'docs/v4/Images/simulation');
 const videos=path.join(root,'docs/v4/videos/simulation');
 const temporary=await fs.mkdtemp(path.join(tmpdir(),'tinycad-manual-spice-'));
 await fs.mkdir(output,{recursive:true});await fs.mkdir(videos,{recursive:true});
@@ -150,7 +150,7 @@ try{
   await pause(800);
  }
  await capture('netlist-editor',true,async({page,step})=>{
-  const directory=path.join(root,'docs/v4/images/netlist-editor');await fs.mkdir(directory,{recursive:true});
+  const directory=path.join(root,'docs/v4/Images/netlist-editor');await fs.mkdir(directory,{recursive:true});
   const shots=[];
   async function shot(name,element=page,clip){
    await page.evaluate(()=>document.querySelectorAll('#manual-caption, #manual-pointer, #manual-click').forEach(el=>el.style.visibility='hidden'));

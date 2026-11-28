@@ -15,8 +15,8 @@ passes through the XSPICE buffer and DAC bridge, then drives a physical SPICE
 nominal duty cycle is about 25%. Finite input edges make the precise
 threshold-defined duty cycle slightly different.
 
-![Mixed digital and analogue filter circuit](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![Computed PWM and filtered output](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Mixed digital and analogue filter circuit](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![Computed PWM and filtered output](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Run the 5 ms transient. Plot A, Y and FILTERED. The digital path preserves the
 pulse function; the RC network averages it while retaining some ripple.
@@ -41,7 +41,7 @@ or a device model when load current and output-stage losses matter.
 Open **logic-unknown**. Its PWL input is held at
 0 V, then 2 V, then 5 V. Run 3 µs and inspect the middle plateau.
 
-![Computed analogue representation of an undefined digital state](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Computed analogue representation of an undefined digital state](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 The ADC bridge's low and high thresholds are 1 V and 3 V. The 2 V plateau lies
 between them, so the event-driven input is undefined. That unknown propagates

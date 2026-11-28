@@ -15,8 +15,8 @@ reloj. La primera etapa recibe CLK; las etapas posteriores reciben como reloj la
 salida invertida de la etapa anterior. Esto forma un contador binario ascendente
 en cascada.
 
-![Circuito de prueba de contador de cuatro bits](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Salidas de reloj dividido calculadas](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Circuito de prueba de contador de cuatro bits](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Salidas de reloj dividido calculadas](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 El período de entrada es de 1 µs. El reinicio pone a cero las etapas cerca del
 inicio, y el primer flanco de conteo se produce cerca de 0.5 µs. Ejecute el análisis

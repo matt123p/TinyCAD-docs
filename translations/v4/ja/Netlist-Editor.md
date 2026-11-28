@@ -35,7 +35,7 @@ layout: default
 
 選択中の項目が原因で別のパネルが開いている場合は、まず選択を解除してください。
 
-![分圧回路の下に表示されたネットリストビュー。OUT行が強調表示されています](../images/netlist-editor/netlist-overview.png)
+![分圧回路の下に表示されたネットリストビュー。OUT行が強調表示されています](../Images/netlist-editor/netlist-overview.png)
 
 同梱の分圧回路の例では、`OUT`行が`R1.2`と`R2.1`を接続しています。
 この行にマウスカーソルを合わせると、図面内の接続が強調表示されます。
@@ -92,7 +92,7 @@ TinyCADが該当する項目のあるシートに移動します。
 
 付属の `divider` 図面を **Open Example** → **SPICE tutorial** から開き、回路を拡大表示します。下部パネルで **Symbols** から **Netlist** に切り替えます。**OUT** ラベルは、ピン **R1.2** と **R2.1** の間のネットを示します。最初は `default` タイプで、ワイヤの太さは標準です。
 
-![スタイル設定前の分圧回路。R1とR2の間に細い青色のOUTワイヤが表示されています](../images/netlist-editor/netlist-wire-before.png)
+![スタイル設定前の分圧回路。R1とR2の間に細い青色のOUTワイヤが表示されています](../Images/netlist-editor/netlist-wire-before.png)
 
 ### ワイヤスタイルを作成する
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ TinyCADが該当する項目のあるシートに移動します。
 3. 同じ行の **Wire colour**（ワイヤの色）セルをクリックします。**Override colour**（色を上書き）をオンにし、緑色にするには `007F5F` を **Hex** 欄に入力します。プレビューには両方の設定を反映したワイヤが表示されます。
 4. カラーピッカーで**OK**をクリックします。`control`行の緑色の色見本と太さの値を確認し、**Netlist Types**で**OK**をクリックしてタイプを保存します。
 
-![色の上書きにチェックが入り、プレビューに緑色のワイヤが表示されたカラーピッカー](../images/netlist-editor/netlist-wire-colour.png)
+![色の上書きにチェックが入り、プレビューに緑色のワイヤが表示されたカラーピッカー](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Netlist Typesで、control行のWire colourに緑色の色見本、Wire thicknessに4が表示されています](../images/netlist-editor/netlist-wire-type.png)
+![Netlist Typesで、control行のWire colourに緑色の色見本、Wire thicknessに4が表示されています](../Images/netlist-editor/netlist-wire-type.png)
 
 ### OUTにスタイルを適用する
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ TinyCADが該当する項目のあるシートに移動します。
 2. 強調表示された行の**Type**リストを開き、`control`を選択します。
 3. 回路図の何もない場所をクリックして選択を解除します。**R1.2** と **R2.1** の間のワイヤが緑色になり、太くなります。標準のワイヤスタイルに戻すには、`default` を **Type** リストで選択します。
 
-![回路図で選択されたOUTワイヤと、controlが選択された状態で強調表示されているNetlist行](../images/netlist-editor/netlist-wire-assignment.png)
+![回路図で選択されたOUTワイヤと、controlが選択された状態で強調表示されているNetlist行](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![スタイル設定後の分圧回路。R1とR2の間のOUTワイヤが太い緑色で表示されています](../images/netlist-editor/netlist-wire-after.png)
+![スタイル設定後の分圧回路。R1とR2の間のOUTワイヤが太い緑色で表示されています](../Images/netlist-editor/netlist-wire-after.png)
 
 編集した例を保存するには、**Save As**を使用します。
 
 ### 操作の流れを見る
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Netlistに切り替え、緑色のワイヤスタイルを作成してから、OUTワイヤをクリックして該当行を見つけ、スタイルを適用します。" %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Netlistに切り替え、緑色のワイヤスタイルを作成してから、OUTワイヤをクリックして該当行を見つけ、スタイルを適用します。" %}
 
 ## Netlist Typesでできること
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ TinyCADが該当する項目のあるシートに移動します。
 3. 属性を保存します。
 4. メインダイアログで`OK`をクリックします。
 
-![controlタイプの用途とメモの項目が入力された属性エディター](../images/netlist-editor/netlist-attributes.png)
+![controlタイプの用途とメモの項目が入力された属性エディター](../Images/netlist-editor/netlist-attributes.png)
 
 これらの入力例では、タイプの用途を説明し、配線に関するメモを追加しています。これらはタイプに属し、そのタイプが割り当てられたすべてのネットで共有できます。
 

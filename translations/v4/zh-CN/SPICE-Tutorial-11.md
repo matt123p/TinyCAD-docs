@@ -75,7 +75,7 @@ SPICE essentials 库提供了常见器件的即用配置示例。通用晶体管
 4. 检查 `in`、`out` 和 `v1#branch`。预期结果分别为 **5 V**、**2.5 V** 和 **−2.5 mA**。电源电流的定义方向是流入正端，因此此处供电的电源电流为负值。
 5. 在电路工作表上将 R2 改为 `2k`，然后重新运行。预期 OUT 变为约 **3.333 V**。保留的旧采集记录仍然描述之前的电路；更改数值不会改写其结果。
 
-![TinyCAD 的 Simulation 工作表，显示 RC AC 分析和截止结果](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![TinyCAD 的 Simulation 工作表，显示 RC AC 分析和截止结果](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 此应用程序截图显示了另一个内嵌示例 **rc-ac** 的 **Setup** 视图。其 1 kΩ/1 µF 滤波器的截止频率约为 **159.15 Hz**。打开该示例，可将频域实验与分压器的单个直流工作点进行比较。
 
@@ -120,7 +120,7 @@ TinyCAD 支持嵌入模型文本，但不支持任意 ngspice 命令脚本或外
 
 在 Desktop 上打开 **XSPICE and digital tutorial → logic-buffer**。其 X1 模型包含一个模拟转数字桥接器、一个事件驱动缓冲器和一个数字转模拟桥接器。普通电源驱动模拟输入；桥接器使逻辑状态能够以电压形式显示在 TinyCAD 的图表中。
 
-![内嵌 XSPICE 缓冲器计算得到的输入和输出](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![内嵌 XSPICE 缓冲器计算得到的输入和输出](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 运行已保存的瞬态仿真。预期会看到周期为 1 µs 的 0–5 V 脉冲，输出跃迁延迟约 20 ns，且边沿有限。放大图表以检查延迟。此图绘制的是该示例中求解器实际返回的结果。
 

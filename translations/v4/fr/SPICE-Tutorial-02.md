@@ -67,7 +67,7 @@ n’est pas disponible, il est signalé comme indisponible ; il ne faut pas l’
 Ouvrez **dc-sweep**. Le **balayage continu (DC sweep)** enregistré utilise V1,
 avec une valeur de départ de 0 V, une valeur d’arrêt de 10 V et un incrément de 0,5 V. Lancez la simulation et tracez OUT.
 
-![Courbe de transfert continu calculée](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Courbe de transfert continu calculée](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 L’axe horizontal représente la valeur de la source balayée, et non le temps. Les valeurs attendues sont
 0 V, 2,5 V et 5 V pour des tensions d’alimentation de 0 V, 5 V et 10 V. La pente est de 0,5 V/V.

@@ -48,7 +48,7 @@ Zmiana offsetu, amplitudy szczytowej i częstotliwości sinusoidy, a następnie 
 ### Obwód i wyniki odniesienia
 {: #circuit-and-reference-results}
 
-![Przykładowe zmierzone przebiegi](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Przykładowe zmierzone przebiegi](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplituda, offset i parametry czasowe
 {: #amplitude-offset-and-timing}

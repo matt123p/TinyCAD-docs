@@ -13,8 +13,8 @@ Otwórz **logic-nand**. X1 zawiera mostki ADC,
 dwuwejściową bramkę NAND XSPICE oraz wyjściowy mostek DAC. Niezależne źródła impulsów pobudzają
 wejścia A i B z różną częstotliwością. Uruchom analizę stanów nieustalonych o czasie 8 µs i wyświetl A, B oraz Y.
 
-![Układ testowy NAND](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Obliczone przebiegi NAND](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![Układ testowy NAND](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Obliczone przebiegi NAND](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 Funkcja boolowska to `Y = NOT(A AND B)`:
 

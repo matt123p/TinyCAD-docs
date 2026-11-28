@@ -26,7 +26,7 @@ Vérification de la configuration AC, lecture de la fréquence de coupure et bas
 ### Circuit et résultats de référence
 {: #circuit-and-reference-results}
 
-![Réponse en module et en phase calculée](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![Réponse en module et en phase calculée](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## Interpréter le résultat complexe
 {: #interpret-the-complex-result}

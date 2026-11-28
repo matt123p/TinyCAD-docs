@@ -11,7 +11,7 @@ Przykłady z tego rozdziału są dołączone do TinyCAD. Wybierz **Otwórz przyk
 
 Otwórz **logic-hazard**. Wewnątrz X1 jeden sygnał A trafia bezpośrednio do bramki AND. Druga kopia przechodzi przez inwerter, zanim dotrze do drugiego wejścia bramki AND. Wyrażenie boolowskie to `A AND NOT A`, które po ustaleniu się wszystkich stanów zawsze ma wartość zero. Mimo to w stanie przejściowym może pojawić się impuls.
 
-![Obliczone impulsy hazardowe](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Obliczone impulsy hazardowe](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 Opóźnienie inwertera wynosi 100 ns, a bramki AND — 10 ns. Przy narastającym zboczu sygnału wejściowego sygnał w ścieżce bezpośredniej przyjmuje stan wysoki, podczas gdy sygnał odwrócony pozostaje w stanie wysokim do chwili zareagowania inwertera. Przez krótki czas oba wejścia bramki AND są w stanie wysokim, więc na wyjściu pojawia się dodatni impuls. W tym celowo uproszczonym modelu ma on szerokość około 100 ns. Przy przeciwnym zboczu wejściowym obie ścieżki przechodzą przez okres, w którym oba wejścia bramki AND są w stanie niskim, dlatego taki sam dodatni impuls nie powstaje.
 

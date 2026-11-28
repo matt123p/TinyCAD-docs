@@ -45,7 +45,7 @@ title: "Start here: how to use these tutorials"
 
 工具栏上脉冲形状的图标悬停文本为 **Simulation**。课程中提到 **Simulation → Show charts** 或 **Simulation → SPICE components** 时，请打开该图标的菜单。**Simulation 工作表**是图纸中的一个独立选项卡，包含实验的设置和结果视图。
 
-![包含第一个分压器电路及其仿真图表面板的 TinyCAD](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![包含第一个分压器电路及其仿真图表面板的 TinyCAD](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 此应用程序截图展示了打开后的分压器，电路下方是工作表选项卡，右侧是图表面板。主要起始位置包括电路、Simulation 工作表和 **Run**。
 

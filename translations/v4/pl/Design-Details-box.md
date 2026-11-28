@@ -9,7 +9,7 @@ informacje. Wartości te można edytować za pomocą polecenia **Szczegóły pro
 
 Ramka Szczegółów projektu może pojawić się w lewym dolnym rogu rysunku:
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Edytowanie szczegółów projektu
 {: #edit-design-details}
@@ -21,7 +21,7 @@ Ramka Szczegółów projektu może pojawić się w lewym dolnym rogu rysunku:
 
 Możesz je edytować w menu ustawień za pomocą polecenia **Szczegóły projektu**:
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 Po zapisaniu projektu te informacje zostaną zapisane razem z nim.
 
@@ -41,11 +41,11 @@ na rysunku.
 Można włączać i wyłączać ramkę oraz konfigurować linie pomocnicze projektu (litery/cyfry
 wzdłuż krawędzi strony):
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 Linie pomocnicze projektu wyglądają następująco:
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Uwagi
 {: #notes}

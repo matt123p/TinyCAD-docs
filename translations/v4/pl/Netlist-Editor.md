@@ -35,7 +35,7 @@ Lista jest aktualizowana na bieżąco podczas edycji schematu.
 
 Jeśli otwarty jest inny panel, ponieważ coś jest zaznaczone, najpierw usuń zaznaczenie.
 
-![Widok listy połączeń poniżej schematu dzielnika, z wyróżnionym wierszem OUT](../images/netlist-editor/netlist-overview.png)
+![Widok listy połączeń poniżej schematu dzielnika, z wyróżnionym wierszem OUT](../Images/netlist-editor/netlist-overview.png)
 
 W tym przykładowym schemacie dzielnika wiersz `OUT` łączy `R1.2` z `R2.1`.
 Umieszczenie wskaźnika myszy nad tym wierszem wyróżnia połączenie na rysunku.
@@ -92,7 +92,7 @@ Typ sieci to zestaw stylów rysowania, którego można używać ponownie. Przypi
 
 Otwórz dołączony rysunek `divider` za pomocą **Open Example** → **SPICE tutorial** i powiększ widok obwodu. W dolnym panelu przełącz z **Symbols** na **Netlist**. Etykieta **OUT** wskazuje sieć między wyprowadzeniami **R1.2** i **R2.1**. Początkowo ma ona typ `default` i standardową grubość przewodu.
 
-![Dzielnik przed zmianą stylu, z cienkim niebieskim przewodem OUT między R1 i R2](../images/netlist-editor/netlist-wire-before.png)
+![Dzielnik przed zmianą stylu, z cienkim niebieskim przewodem OUT między R1 i R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### Tworzenie stylu przewodu
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ Otwórz dołączony rysunek `divider` za pomocą **Open Example** → **SPICE tu
 3. W tym samym wierszu kliknij komórkę **Wire colour**. Zaznacz **Override colour** i wpisz `007F5F` w polu **Hex**, aby ustawić kolor zielony. Podgląd pokaże przewód z zastosowanymi oboma ustawieniami.
 4. Kliknij **OK** w oknie wyboru koloru. Sprawdź zieloną próbkę koloru i wartość grubości w wierszu `control`, a następnie kliknij **OK** w oknie **Netlist Types**, aby zapisać typ.
 
-![Okno wyboru koloru przewodu dla control, z zaznaczoną opcją Override colour i zielonym przewodem widocznym w podglądzie](../images/netlist-editor/netlist-wire-colour.png)
+![Okno wyboru koloru przewodu dla control, z zaznaczoną opcją Override colour i zielonym przewodem widocznym w podglądzie](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Okno Netlist Types z zieloną próbką Wire colour i wartością Wire thickness równą 4 w wierszu control](../images/netlist-editor/netlist-wire-type.png)
+![Okno Netlist Types z zieloną próbką Wire colour i wartością Wire thickness równą 4 w wierszu control](../Images/netlist-editor/netlist-wire-type.png)
 
 ### Zastosowanie stylu do OUT
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ Otwórz dołączony rysunek `divider` za pomocą **Open Example** → **SPICE tu
 2. Otwórz listę **Type** w wyróżnionym wierszu i wybierz `control`.
 3. Kliknij pusty obszar schematu, aby usunąć zaznaczenie. Przewód między **R1.2** i **R2.1** jest teraz zielony i grubszy. Wybierz `default` z listy **Type**, aby przywrócić standardowy styl przewodu.
 
-![Zaznaczony przewód OUT na schemacie i wyróżniony odpowiadający mu wiersz Netlist z wybranym control](../images/netlist-editor/netlist-wire-assignment.png)
+![Zaznaczony przewód OUT na schemacie i wyróżniony odpowiadający mu wiersz Netlist z wybranym control](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Dzielnik po zmianie stylu, z grubszym zielonym przewodem OUT między R1 i R2](../images/netlist-editor/netlist-wire-after.png)
+![Dzielnik po zmianie stylu, z grubszym zielonym przewodem OUT między R1 i R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Użyj polecenia **Save As**, aby zachować edytowaną kopię przykładu.
 
 ### Obejrzyj prezentację
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Przełącz na Netlist, utwórz zielony styl przewodu, a następnie kliknij przewód OUT, aby znaleźć jego wiersz i zastosować styl." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Przełącz na Netlist, utwórz zielony styl przewodu, a następnie kliknij przewód OUT, aby znaleźć jego wiersz i zastosować styl." %}
 
 ## Co można zrobić w oknie Netlist Types
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ Aby je dodać:
 3. Zapisz atrybuty.
 4. Kliknij `OK` w głównym oknie dialogowym.
 
-![Edytor atrybutów z wpisami purpose i notes dla typu control](../images/netlist-editor/netlist-attributes.png)
+![Edytor atrybutów z wpisami purpose i notes dla typu control](../Images/netlist-editor/netlist-attributes.png)
 
 Te przykładowe wpisy opisują przeznaczenie typu i dodają uwagę dotyczącą okablowania. Są przypisane do typu i mogą być współdzielone przez każdą przypisaną do niego sieć.
 

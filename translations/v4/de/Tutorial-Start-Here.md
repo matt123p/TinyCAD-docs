@@ -82,7 +82,7 @@ Lektion **Simulation → Diagramme anzeigen** oder **Simulation → SPICE-Kompon
 das Menü dieses Symbols. Das **Simulationsblatt** ist eine separate Registerkarte innerhalb der Zeichnung;
 es enthält die Konfiguration und Ergebnisansichten des Experiments.
 
-![TinyCAD mit dem ersten divider-Schaltkreis und seinem Simulationsdiagrammbereich](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD mit dem ersten divider-Schaltkreis und seinem Simulationsdiagrammbereich](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Dieser Screenshot der Anwendung zeigt den geöffneten divider mit den Blattregisterkarten
 unter der Schaltung und dem Diagrammbereich rechts. Die wichtigsten Ausgangspunkte

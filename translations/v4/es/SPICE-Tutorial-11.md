@@ -123,7 +123,7 @@ red; no crea una tensión de alimentación. Conecta una fuente real a esa red.
    aproximadamente **3.333 V**. Una adquisición anterior conservada sigue describiendo
    el circuito previo; cambiar un valor no modifica sus resultados.
 
-![Hoja Simulation de TinyCAD con el análisis de CA de RC y el resultado de frecuencia de corte](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![Hoja Simulation de TinyCAD con el análisis de CA de RC y el resultado de frecuencia de corte](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 Esta captura de pantalla de la aplicación muestra la vista **Setup** de **rc-ac**, otro
 Ejemplo incrustado. Su filtro de 1 kΩ/1 µF tiene una frecuencia de corte cercana a **159.15 Hz**. Ábrelo
@@ -207,7 +207,7 @@ contiene un puente de analógico a digital, un búfer basado en eventos y un
 puente de digital a analógico. La fuente ordinaria impulsa la entrada analógica;
 los puentes hacen que los estados lógicos estén disponibles como tensiones en los gráficos de TinyCAD.
 
-![Entrada y salida calculadas del búfer XSPICE incrustado](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Entrada y salida calculadas del búfer XSPICE incrustado](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 Ejecuta el análisis transitorio guardado. Se esperan pulsos de 0–5 V con un período de 1 µs y una transición
 de salida retrasada aproximadamente 20 ns, con flancos finitos. Acerca la vista para inspeccionar

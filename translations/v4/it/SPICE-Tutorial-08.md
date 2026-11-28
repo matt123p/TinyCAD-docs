@@ -17,7 +17,7 @@ non dimostra che l’hardware originale funzioni in modo accurato alle frequenze
 Seleziona **Voltage gain** (guadagno di tensione), la traccia derivata salvata OUT/IN. Visualizza il modulo in dB
 e la fase. Nei tuoi appunti, distingui le tensioni di nodo dal guadagno adimensionale.
 
-![Guadagno e fase dell’amplificatore calcolati](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Guadagno e fase dell’amplificatore calcolati](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Interpreta il risultato prima di spiegarlo
 {: #read-the-result-before-explaining-it}

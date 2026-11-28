@@ -13,7 +13,7 @@ const require=createRequire(path.join(app,'package.json'));
 const {Parcel}=require('@parcel/core'),{FSCache}=require('@parcel/cache'),parcelFS=require('@parcel/fs');
 const {chromium,_electron,expect}=require('@playwright/test');
 const temporary=await fs.mkdtemp(path.join(tmpdir(),'tinycad-ai-manual-'));
-const output=path.join(root,'docs/v4/images/ai-assistant');await fs.mkdir(output,{recursive:true});
+const output=path.join(root,'docs/v4/Images/ai-assistant');await fs.mkdir(output,{recursive:true});
 const captures=[];const errors=[];let browser,desktop;
 async function build(system,entry){
  const directory=path.join(temporary,system),cache=path.join(temporary,'cache-'+system);

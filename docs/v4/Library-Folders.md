@@ -23,7 +23,7 @@ Library folders are only available in the desktop app.
 
 Browser-based modes still show My Libraries where supported, but they do not expose folder creation, folder grouping, or folder drag-and-drop.
 
-![Desktop My Libraries showing expanded Circuit components, an empty Sensors and modules folder, and Unfiled libraries.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![Desktop My Libraries showing expanded Circuit components, an empty Sensors and modules folder, and Unfiled libraries.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### What You Can Do
 
@@ -45,7 +45,7 @@ Libraries that are not assigned to a folder appear in the Unfiled section.
 4. Enter a name for the new folder, such as `Project libraries`.
 5. Choose **Add**.
 
-![Create folder dialog with Project libraries entered and the Add button ready to confirm.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Create folder dialog with Project libraries entered and the Add button ready to confirm.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 The new folder appears in the library list and can be selected immediately.
 
@@ -65,7 +65,7 @@ If you click a library, TinyCAD automatically selects the folder that library be
 
 The selected libraries are added into the selected folder.
 
-![Project libraries selected in My Libraries, with an empty drop area and the Add-library button in the header.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![Project libraries selected in My Libraries, with an empty drop area and the Add-library button in the header.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 If you do not select a custom folder, libraries are added to Unfiled.
 
@@ -77,7 +77,7 @@ You can also drop a library onto Unfiled to remove it from a custom folder.
 
 If a folder is empty, TinyCAD shows a drop target so you can move libraries into it.
 
-![Sensor interfaces moved from Unfiled into Sensors and modules, with the selected folder’s reorder, rename and remove controls visible.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Sensor interfaces moved from Unfiled into Sensors and modules, with the selected folder’s reorder, rename and remove controls visible.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Reorder Folders
 
@@ -96,7 +96,7 @@ The folder action buttons are shown when a folder is hovered or selected.
 - Select **Rename folder** (the pencil icon) to rename the folder. Enter the new name and choose **Rename**.
 - Select **Remove folder** (the bin icon) to remove the folder. Confirm with **Delete**.
 
-![Rename folder dialog changing Sensors and modules to Sensors and displays.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Rename folder dialog changing Sensors and modules to Sensors and displays.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 When a folder is deleted, any libraries inside it are moved to Unfiled. The library files themselves are not removed from TinyCAD.
 

@@ -9,7 +9,7 @@ bijbehorende gegevens. U bewerkt deze waarden met de opdracht **Ontwerpgegevens 
 
 Het vak met ontwerpgegevens kan linksonder in de tekening worden weergegeven:
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Ontwerpgegevens bewerken
 {: #edit-design-details}
@@ -21,7 +21,7 @@ Het vak met ontwerpgegevens kan linksonder in de tekening worden weergegeven:
 
 Bewerk de gegevens via het instellingenmenu met **Ontwerpgegevens (Design Details)**:
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 Wanneer het ontwerp wordt opgeslagen, worden deze gegevens samen met het ontwerp opgeslagen.
 
@@ -41,11 +41,11 @@ op de tekening wordt weergegeven.
 U kunt het vak in- of uitschakelen en de ontwerphulplijnen configureren (letters/cijfers
 langs de paginarand):
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 Ontwerphulplijnen worden als volgt weergegeven:
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Opmerkingen
 {: #notes}

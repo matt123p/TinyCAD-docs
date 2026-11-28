@@ -11,8 +11,8 @@ title: 4. D flip-flops, clocks and reset
 
 打开 **logic-dff**。该示例为 D、CLK 和 RESET 分别提供模拟激励。在 X1 内部，桥接器将信号馈入 XSPICE D 触发器；Q 和 NQ 则转换回模拟输出，以便绘图。
 
-![D 触发器测试电路](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![计算得到的时钟、数据、复位和 Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![D 触发器测试电路](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![计算得到的时钟、数据、复位和 Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 运行 8 µs 瞬态分析。在每个时钟上升沿，Q 捕获 D 的值，并在两个上升沿之间保持该状态。传播过程稳定后，NQ 是 Q 的反相值。第一个时钟上升沿出现在约 0.5 µs 处。此时 D 已为高电平，因此经过模型的时钟到输出延迟后，Q 变为高电平。在这个正边沿触发示例中，时钟下降沿不会捕获新数据。
 

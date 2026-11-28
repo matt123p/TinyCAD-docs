@@ -13,8 +13,8 @@ Otwórz **logic-dff**. Zawiera osobne analogowe
 sygnały pobudzające dla D, CLK i RESET. Wewnątrz X1 mostki doprowadzają sygnały do przerzutnika D XSPICE;
 Q i NQ są przekształcane z powrotem na wyjścia analogowe do wykreślenia.
 
-![Układ testowy przerzutnika D](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Obliczone przebiegi zegara, danych, resetu i Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Układ testowy przerzutnika D](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Obliczone przebiegi zegara, danych, resetu i Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Uruchom analizę stanów nieustalonych o czasie 8 µs. Przy każdym narastającym zboczu zegara Q przejmuje wartość D, a następnie utrzymuje
 ją między zboczami. NQ jest jego dopełnieniem po ustaleniu się stanu po propagacji. Pierwsze narastające zbocze zegara występuje w pobliżu 0,5 µs. D jest już w stanie wysokim, więc Q przechodzi w stan wysoki

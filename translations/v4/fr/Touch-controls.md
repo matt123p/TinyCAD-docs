@@ -54,7 +54,7 @@ en bas du dessin.
 
 4. Touchez **Masquer la loupe (Hide Loupe)** pour revenir au toucher direct.
 
-![Loupe tactile montrant une zone de connexion agrandie, un réticule et les commandes Cliquer, Faire glisser et Menu.](../images/touch-loupe.png)
+![Loupe tactile montrant une zone de connexion agrandie, un réticule et les commandes Cliquer, Faire glisser et Menu.](../Images/touch-loupe.png)
 
 Par exemple, pour tracer un fil, choisissez **Fil (Wire)**, orientez le réticule vers la broche de départ, puis touchez
 **Cliquer (Click)**. Faites glisser votre doigt pour orienter le réticule vers le point suivant, puis touchez de nouveau **Cliquer (Click)**.

@@ -32,8 +32,8 @@ Abra **logic-buffer**. Ejecute el análisis transitorio guardado de 8 µs
 y grafique A e Y. A es una forma de onda de 0–5 V con un período de 1 µs. Y la sigue tras un
 pequeño retardo de propagación y con flancos de salida finitos.
 
-![Circuito de prueba del búfer XSPICE](/v4/images/simulation-tutorials/xspice/logic-buffer-circuit.png)
-![Entrada y salida calculadas del búfer](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![Circuito de prueba del búfer XSPICE](/v4/Images/simulation-tutorials/xspice/logic-buffer-circuit.png)
+![Entrada y salida calculadas del búfer](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 X1 es un subcircuito incrustado con tres etapas internas explícitas:
 

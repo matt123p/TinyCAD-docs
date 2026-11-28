@@ -11,8 +11,8 @@ Gli esempi di questo capitolo sono inclusi in TinyCAD. Scegli **Apri esempio (Op
 
 Apri **logic-counter**. X1 contiene quattro flip-flop D. Ciascuno riporta la propria uscita invertita all'ingresso D, in modo da commutare quando riceve il clock. Il primo stadio riceve CLK; gli stadi successivi sono pilotati dall'uscita invertita dello stadio precedente. Si ottiene così un contatore binario asincrono crescente.
 
-![Circuito di prova del contatore a quattro bit](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Uscite del clock diviso calcolate](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Circuito di prova del contatore a quattro bit](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Uscite del clock diviso calcolate](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 Il periodo di ingresso è di 1 µs. Il reset azzera gli stadi poco dopo l'avvio e il primo fronte di conteggio si verifica intorno a 0,5 µs. Esegui la simulazione transitoria salvata di 18 µs. Leggi ciascun valore dopo che le transizioni asincrone si sono assestate, ad esempio a 0,8 µs, 1,8 µs, 2,8 µs e così via.
 

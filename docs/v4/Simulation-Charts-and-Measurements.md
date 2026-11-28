@@ -30,7 +30,7 @@ Download [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), open it thro
 
 With R1 = 1 kΩ and C = 1 µF, the nominal corner is about 159.15 Hz. **Measurements** includes cutoff, gain at 100 Hz and phase at the ideal corner; **Requirements** checks cutoff against 150–170 Hz.
 
-![Circuit Explorer tuning controls in the RC companion drawing](../images/simulation/explorer-tuning.png)
+![Circuit Explorer tuning controls in the RC companion drawing](../Images/simulation/explorer-tuning.png)
 
 ## Tune without changing the saved circuit
 
@@ -56,7 +56,7 @@ Sweep definitions, values, units, run status and captured metrics are saved in `
 
 In **Measurements**, add a name, select a signal/component and expand its settings. Set a meaningful time/frequency window and any required levels or references. Component/probe bindings use sheet identity plus reference so they can survive reopening.
 
-![Prepared cutoff, gain and phase measurements](../images/simulation/explorer-measurements.png)
+![Prepared cutoff, gain and phase measurements](../Images/simulation/explorer-measurements.png)
 
 | Measurement | Interpretation |
 | --- | --- |
@@ -84,7 +84,7 @@ For cutoff, use an explicit linear reference gain or **peak**. A unity reference
 
 Use **Requirements** to test a named measurement against **at least**, **at most**, or an inclusive **between** range. Units must match. Outcomes are **pass**, **fail** or **unavailable**; an unavailable metric is not a passing requirement.
 
-![The RC cutoff requirement with an explicit acceptable range](../images/simulation/explorer-requirements.png)
+![The RC cutoff requirement with an explicit acceptable range](../Images/simulation/explorer-requirements.png)
 
 Select an available measurement to inspect its evidence and applicable schematic highlighting. Keep measurement definitions, windows and thresholds with exported results. General two-way probe highlighting is not complete for every type of signal or model.
 
@@ -92,7 +92,7 @@ The DC schematic overlay needs a fresh, completed operating-point acquisition. V
 
 ## Analysis lab
 
-![Analysis lab workflows in Circuit Explorer](../images/simulation/analysis-lab.png)
+![Analysis lab workflows in Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Frequency and amplifier response
 

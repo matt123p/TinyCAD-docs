@@ -39,7 +39,7 @@ Sinus-Offset, Spitzenamplitude und Frequenz ändern und anschließend die transi
 ### Schaltung und Referenzergebnisse
 {: #circuit-and-reference-results}
 
-![Gemessene Wellenformbeispiele](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![Gemessene Wellenformbeispiele](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## Amplitude, Offset und Zeitverhalten
 {: #amplitude-offset-and-timing}

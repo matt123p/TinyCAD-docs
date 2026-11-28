@@ -13,7 +13,7 @@ Apri **logic-hazard**. All'interno di X1, una copia di A va
 direttamente a una porta AND. Un'altra passa attraverso un invertitore prima di raggiungere l'altro ingresso della porta AND. L'espressione booleana è `A AND NOT A`, che è sempre zero
 una volta esauriti i transitori. Tuttavia, il transitorio può contenere un impulso.
 
-![Impulsi di hazard calcolati](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Impulsi di hazard calcolati](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 L'invertitore ha un ritardo di 100 ns e la porta AND ha un ritardo di 10 ns. In corrispondenza di un fronte di salita dell'ingresso, il percorso diretto diventa alto mentre il percorso invertito rimane alto
 finché l'invertitore non reagisce. Per un breve intervallo entrambi gli ingressi della porta AND sono alti,

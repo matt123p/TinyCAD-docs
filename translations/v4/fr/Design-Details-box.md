@@ -8,7 +8,7 @@ Chaque dessin stocke des métadonnées du document, telles que le titre, l’aut
 
 L’encadré des détails du dessin peut apparaître en bas à gauche du dessin :
 
-<img src="/v4/images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
+<img src="/v4/Images/media/image15.png" alt="Design details box displayed on the schematic page with title and document metadata fields" style="width: 4.65625in; height: 2.20833in;" />
 
 ## Modifier les détails du dessin
 {: #edit-design-details}
@@ -20,7 +20,7 @@ L’encadré des détails du dessin peut apparaître en bas à gauche du dessin 
 
 Vous pouvez les modifier dans le menu des paramètres à l’aide de **Détails du dessin (Design Details)** :
 
-<img src="/v4/images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
+<img src="/v4/Images/media/image16.png" alt="Menu showing the Design Details command used to edit document metadata" />
 
 Lorsque le dessin est enregistré, ces détails le sont également.
 
@@ -38,11 +38,11 @@ L’option **Afficher l’encadré des détails** détermine si le panneau des d
 
 Vous pouvez afficher/masquer l’encadré et configurer les repères de dessin (lettres/chiffres autour du bord de la page) :
 
-<img src="/v4/images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
+<img src="/v4/Images/media/image17.png" alt="Design settings panel with options for the details box and page guide markers" style="width: 3.29167in; height: 4.21875in;" />
 
 Les repères de dessin apparaissent comme suit :
 
-<img src="/v4/images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
+<img src="/v4/Images/media/image18.png" alt="Schematic page showing border guide markers around the sheet" style="width: 6.26806in; height: 4.44028in;" />
 
 ## Remarques
 {: #notes}

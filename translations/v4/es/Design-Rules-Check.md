@@ -19,7 +19,7 @@ Procure que no haya errores de diseño para aumentar la confianza en la correcci
 4. Seleccione **Aceptar (OK)** para ejecutar la comprobación.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Vídeo explicativo que muestra cómo ejecutar y utilizar el comprobador de reglas de diseño."

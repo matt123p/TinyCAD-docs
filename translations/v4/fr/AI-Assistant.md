@@ -30,7 +30,7 @@ L'assistant consulte d'abord les [bibliothèques fournies](../Bundled-Libraries/
 
 Pour les composants réutilisables, commencez par [créer ou ouvrir une bibliothèque personnalisée pour la modifier](../Custom-symbol-libraries/), puis ouvrez Chat dans cette fenêtre de bibliothèque. Pour un circuit, gardez active la fenêtre de dessin souhaitée. Indiquez à l'assistant la feuille, les références des composants ou le bloc fonctionnel concernés. La récupération et le placement de symboles par l'IA prennent actuellement en charge les **symboles à unité unique** ; utilisez l'éditeur de symboles habituel pour les composants multi-unités que l'assistant ne peut pas importer.
 
-{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="Créer un symbole à partir d'une fiche technique dans TinyCAD Desktop. Les attentes dues au traitement par l'IA sont affichées à une vitesse multipliée par 12 et indiquées à l'écran ; les interactions et les résultats sont affichés à vitesse normale." %}
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/Images/ai-assistant/chat-open-desktop.png" caption="Créer un symbole à partir d'une fiche technique dans TinyCAD Desktop. Les attentes dues au traitement par l'IA sont affichées à une vitesse multipliée par 12 et indiquées à l'écran ; les interactions et les résultats sont affichés à vitesse normale." %}
 
 ## Configurer une connexion
 {: #set-up-a-connection}
@@ -42,7 +42,7 @@ Pour les composants réutilisables, commencez par [créer ou ouvrir une biblioth
 2. Cliquez sur **Cliquez ici pour vous connecter et utiliser l'IA** (Click here to Sign in to use AI), ou sur l'engrenage **Paramètres de l'IA** (AI settings) dans l'en-tête du panneau.
 3. À l'étape **Étape 1 — Choisir un fournisseur** (Step 1 — Choose provider), sélectionnez un fournisseur, puis cliquez sur **Suivant** (Next).
 
-![Paramètres de l'IA affichant l'étape Fournisseur](../images/ai-assistant/setup-provider.png)
+![Paramètres de l'IA affichant l'étape Fournisseur](../Images/ai-assistant/setup-provider.png)
 
 Vous pouvez connecter un seul fournisseur à la fois.
 
@@ -70,7 +70,7 @@ Dans TinyCAD Desktop, choisissez **ChatGPT**, puis **Se connecter avec ChatGPT**
 
 Si un compte est mémorisé, l'écran propose **Continuer en tant que …** (Continue as …) ou **Se connecter avec un autre compte** (Sign in with a different account). TinyCAD ne conserve qu'un compte à la fois. Après la connexion, **Forfait ChatGPT utilisé** (Using ChatGPT plan) et **Gérer l'utilisation** (Manage usage) apparaissent au-dessus de la zone de message. Le message affiché lors de la première utilisation explique que les requêtes utilisent le quota de votre forfait ou les crédits disponibles.
 
-![Paramètres de l'IA Desktop proposant Se connecter avec ChatGPT ou Utiliser une clé API](../images/ai-assistant/setup-chatgpt-desktop.png)
+![Paramètres de l'IA Desktop proposant Se connecter avec ChatGPT ou Utiliser une clé API](../Images/ai-assistant/setup-chatgpt-desktop.png)
 
 La connexion à ChatGPT nécessite un compte payant admissible ; les limites du compte, de l'espace de travail et de l'application continuent de s'appliquer. En cas de refus d'une requête, le système ne bascule pas silencieusement vers la facturation par clé API. Consultez la [documentation d'OpenAI sur la connexion avec ChatGPT](https://developers.openai.com/siwc/token-sharing-open-source) concernant la connexion via un forfait de compte.
 
@@ -83,20 +83,20 @@ La connexion à ChatGPT nécessite un compte payant admissible ; les limites du 
 4. Pour **Compatible OpenAI**, saisissez également l'**URL de base de l'API** (API base URL) du service.
 5. Cliquez sur **Suivant** (Next). TinyCAD vérifie la connexion et récupère automatiquement les modèles disponibles.
 
-![Saisie de la clé API ChatGPT avec un champ de clé masqué et des instructions du fournisseur](../images/ai-assistant/setup-api-key.png)
+![Saisie de la clé API ChatGPT avec un champ de clé masqué et des instructions du fournisseur](../Images/ai-assistant/setup-api-key.png)
 
 Si un point de terminaison ne peut pas répertorier les modèles, TinyCAD vous demande un **ID de modèle** (Model ID) à l'étape 2. Saisissez l'identifiant exact du fournisseur et cliquez de nouveau sur **Suivant** ; un bref message de bienvenue permet de le vérifier. Ces vérifications peuvent utiliser le quota du fournisseur. En cas d'échec de la connexion, l'assistant reste à l'étape 2 et affiche l'erreur.
 
 Pour Gemini, créez ou sélectionnez un projet dans Google AI Studio, puis copiez sa clé API dans TinyCAD. La [page des tarifs de l'API Gemini de Google](https://ai.google.dev/gemini-api/docs/pricing) explique quels modèles et usages sont admissibles à l'offre gratuite. Les modèles payants ou un usage plus important peuvent nécessiter une facturation.
 
-![Configuration de Google Gemini avec le lien de clé Google AI Studio](../images/ai-assistant/setup-gemini.png)
+![Configuration de Google Gemini avec le lien de clé Google AI Studio](../Images/ai-assistant/setup-gemini.png)
 
 ### 3. Choisir un modèle et un niveau de réflexion
 {: #pick-a-model-and-thinking-level}
 
 Une fois la connexion établie, choisissez un modèle à l'étape **Étape 3 — Choisir un modèle** (Step 3 — Pick Model), réglez **Réflexion** (Thinking), puis cliquez sur **Terminer** (Finish).
 
-![Sélection du modèle et curseur Réflexion à la dernière étape de la configuration](../images/ai-assistant/setup-model.png)
+![Sélection du modèle et curseur Réflexion à la dernière étape de la configuration](../Images/ai-assistant/setup-model.png)
 
 La liste de modèles illustrée ici est un exemple ; votre liste dépend du fournisseur, du point de terminaison et du compte. ChatGPT affiche les modèles Sol, Luna et Astra pris en charge et renvoyés par votre connexion. Les versions les plus récentes apparaissent en premier ; les anciens choix se trouvent sous **Plus de modèles** (More models), et jusqu'à six choix récents sont mémorisés.
 
@@ -113,7 +113,7 @@ Le réglage **Réflexion** va de **Minimale** (Minimal) à **Maximale** (Max), a
 4. Utilisez l'**URL de l'API Ollama** (Ollama API URL), normalement `http://localhost:11434/v1`, puis cliquez sur **Suivant** pour répertorier les modèles installés.
 5. Choisissez un modèle et un niveau de réflexion, puis cliquez sur **Terminer**.
 
-![Configuration d'Ollama affichant l'URL de l'API locale et des indications sur l'origine du navigateur](../images/ai-assistant/setup-ollama.png)
+![Configuration d'Ollama affichant l'URL de l'API locale et des indications sur l'origine du navigateur](../Images/ai-assistant/setup-ollama.png)
 
 La connexion Ollama accepte les URL localhost/de boucle locale. Pour un serveur distant, choisissez **Compatible OpenAI**. Fournissez à un modèle local un contexte suffisant pour la conversation et les outils TinyCAD ; consultez la [configuration du contexte d'Ollama](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size).
 
@@ -124,7 +124,7 @@ Les requêtes envoyées à Ollama local vont directement au serveur local. Pour 
 
 Saisissez une demande dans la zone de message et cliquez sur **Envoyer** (Send), ou appuyez sur **Entrée** (Enter). Utilisez **Maj+Entrée** (Shift+Enter) pour passer à la ligne. Commencez par une tâche bien délimitée, examinez le résultat, puis demandez la modification suivante.
 
-![Panneau de clavardage connecté avec un exemple de demande prêt à être envoyé](../images/ai-assistant/chat-ready.png)
+![Panneau de clavardage connecté avec un exemple de demande prêt à être envoyé](../Images/ai-assistant/chat-ready.png)
 
 Précisez la feuille cible, les références, les valeurs et les connexions. « Relie le haut de R2 à OUT sur la feuille Control » est plus facile à vérifier que « répare le fil ». Indiquez ce qui doit rester inchangé lors de l'extension d'un circuit existant.
 
@@ -212,7 +212,7 @@ Pour modifier le dessin, demandez à l'assistant de joindre le modèle après av
 
 L'engrenage **Paramètres de l'IA** (AI settings) affiche le fournisseur et la méthode de connexion actuels, ainsi que les réglages de modèle/réflexion et **Enregistrer** (Save). Pour une connexion par clé, il propose **Effacer la clé API** (Clear API key) ; pour un compte ChatGPT, **Se déconnecter** (Sign out) ; pour Ollama local, **Déconnecter Ollama** (Disconnect Ollama). Déconnectez-vous d'abord pour configurer un autre fournisseur. **Annuler** (Cancel) conserve la connexion existante et les paramètres enregistrés.
 
-![Paramètres de l'IA pour une connexion existante par clé API](../images/ai-assistant/connection-settings.png)
+![Paramètres de l'IA pour une connexion existante par clé API](../Images/ai-assistant/connection-settings.png)
 
 Les clés API et l'historique des conversations restent dans la mémoire de l'application ; les clés ne sont pas enregistrées avec les préférences ni les dessins. Vous devez saisir de nouveau une clé API après un rechargement ou un redémarrage. Les préférences non secrètes relatives au fournisseur, au point de terminaison, au modèle et à la réflexion peuvent être mémorisées. L'autorisation du compte ChatGPT est gérée séparément par l'environnement d'exécution local et peut persister après les redémarrages ; Desktop utilise le chiffrement sécurisé du système d'exploitation lorsqu'il est disponible.
 

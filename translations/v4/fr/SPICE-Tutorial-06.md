@@ -62,9 +62,9 @@ Définir une fenêtre de mesure de 160 à 200 ms et comparer la tension moyenne 
 ### Circuit et résultats de référence
 {: #circuit-and-reference-results}
 
-![Redresseur mono-alternance et condensateur réservoir](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![Redresseur mono-alternance et condensateur réservoir](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![Ondulation au démarrage et en régime établi calculée](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![Ondulation au démarrage et en régime établi calculée](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## Expériences révélant les compromis
 {: #experiments-that-reveal-the-trade-offs}

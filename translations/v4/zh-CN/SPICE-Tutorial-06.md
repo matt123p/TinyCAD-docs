@@ -60,9 +60,9 @@ title: 6. Diodes, rectification and ripple
 ### 电路与参考结果
 {: #circuit-and-reference-results}
 
-![半波整流器和储能电容](/v4/images/simulation-tutorials/spice/rectifier-circuit.png)
+![半波整流器和储能电容](/v4/Images/simulation-tutorials/spice/rectifier-circuit.png)
 
-![计算得到的启动过程和稳态纹波](/v4/images/simulation-tutorials/spice/rectifier-results.png)
+![计算得到的启动过程和稳态纹波](/v4/Images/simulation-tutorials/spice/rectifier-results.png)
 
 ## 展示权衡关系的实验
 {: #experiments-that-reveal-the-trade-offs}

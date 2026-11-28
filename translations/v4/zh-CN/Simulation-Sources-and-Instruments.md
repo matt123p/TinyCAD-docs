@@ -21,7 +21,7 @@ layout: default
 | 指数波 | 形状渐变 | 电平、延迟和时间常数 |
 | FM | 频率调制 | 载波和调制设置 |
 
-![正弦信号源编辑器和波形预览](../images/simulation/source-settings.png)
+![正弦信号源编辑器和波形预览](../Images/simulation/source-settings.png)
 
 预览会反映数值波形设置。运行前可用它检查是否存在意外的偏置、峰值或定时。设置无效会导致无法启动。信号源图标会随波形变化，电流信号源会保留其方向箭头。
 

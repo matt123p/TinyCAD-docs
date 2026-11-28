@@ -45,7 +45,7 @@ Usare [Librerie di simboli personalizzate ](../Custom-symbol-libraries/) per cre
 Il video seguente mostra come trovare e inserire un simbolo. Per ulteriori informazioni su come esplorare e gestire il selettore, vedere [Usare le librerie di simboli ](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Video dimostrativo che mostra come trovare e inserire un simbolo."
@@ -58,7 +58,7 @@ Il video seguente mostra come trovare e inserire un simbolo. Per ulteriori infor
 
 Durante l’inserimento di un simbolo, impostarne l’orientamento usando i pulsanti di rotazione e capovolgimento sulla barra degli strumenti.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Modificare e spostare il testo dei simboli
@@ -71,7 +71,7 @@ Dopo l’inserimento, è possibile spostare l’intero simbolo trascinandolo.
 È possibile modificare il testo facendo clic su di esso.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Video dimostrativo che mostra come modificare e riposizionare il testo di un simbolo."

@@ -35,7 +35,7 @@ Die Liste ist aktuell und wird während der Bearbeitung des Schaltplans automati
 
 Wenn ein anderes Bedienfeld geöffnet ist, weil etwas ausgewählt wurde, heben Sie zuerst die Auswahl auf.
 
-![Netzlistenansicht unter dem Teilerschaltplan, mit hervorgehobener OUT-Zeile](../images/netlist-editor/netlist-overview.png)
+![Netzlistenansicht unter dem Teilerschaltplan, mit hervorgehobener OUT-Zeile](../Images/netlist-editor/netlist-overview.png)
 
 In diesem mitgelieferten Teilerbeispiel verbindet die Zeile `OUT` `R1.2` mit `R2.1`.
 Wenn Sie den Mauszeiger über diese Zeile bewegen, wird die Verbindung in der Zeichnung hervorgehoben.
@@ -92,7 +92,7 @@ Ein Netztyp ist eine wiederverwendbare Sammlung von Zeichnungsstilen. Weisen Sie
 
 Öffnen Sie die mitgelieferte Zeichnung `divider` über **Open Example** → **SPICE tutorial** und vergrößern Sie die Schaltung. Wechseln Sie im unteren Bereich von **Symbols** zu **Netlist**. Die Beschriftung **OUT** kennzeichnet das Netz zwischen den Pins **R1.2** und **R2.1**. Es verwendet zunächst den Typ `default` und die normale Drahtstärke.
 
-![Teiler vor der Gestaltung, mit dem dünnen blauen OUT-Draht zwischen R1 und R2](../images/netlist-editor/netlist-wire-before.png)
+![Teiler vor der Gestaltung, mit dem dünnen blauen OUT-Draht zwischen R1 und R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### Den Drahtstil erstellen
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ Ein Netztyp ist eine wiederverwendbare Sammlung von Zeichnungsstilen. Weisen Sie
 3. Klicken Sie in derselben Zeile auf die Zelle **Drahtfarbe (Wire colour)**. Aktivieren Sie **Farbe überschreiben (Override colour)** und geben Sie den Wert `007F5F` im Feld **Hex** ein, um Grün zu wählen. Die Vorschau zeigt den Draht mit beiden Einstellungen.
 4. Klicken Sie im Farbauswahlfeld auf **OK**. Überprüfen Sie das grüne Farbfeld und den Dickenwert in der Zeile `control` und klicken Sie dann in **Netlist Types** auf **OK**, um den Typ zu speichern.
 
-![Farbauswahl für den Draht, mit aktivierter Option Override colour und grünem Draht in der Vorschau](../images/netlist-editor/netlist-wire-colour.png)
+![Farbauswahl für den Draht, mit aktivierter Option Override colour und grünem Draht in der Vorschau](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Netlist Types mit grünem Farbfeld für Wire colour und Wire thickness auf 4 in der Zeile control](../images/netlist-editor/netlist-wire-type.png)
+![Netlist Types mit grünem Farbfeld für Wire colour und Wire thickness auf 4 in der Zeile control](../Images/netlist-editor/netlist-wire-type.png)
 
 ### Den Stil auf OUT anwenden
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ Ein Netztyp ist eine wiederverwendbare Sammlung von Zeichnungsstilen. Weisen Sie
 2. Öffnen Sie die Liste **Type** in der hervorgehobenen Zeile und wählen Sie `control`.
 3. Klicken Sie auf eine freie Stelle im Schaltplan, um die Auswahl aufzuheben. Der Draht zwischen **R1.2** und **R2.1** ist jetzt grün und dicker. Wählen Sie `default` in der Liste **Typ (Type)**, um den normalen Drahtstil wiederherzustellen.
 
-![Ausgewählter OUT-Draht im Schaltplan und die hervorgehobene Zeile in Netlist mit ausgewähltem control](../images/netlist-editor/netlist-wire-assignment.png)
+![Ausgewählter OUT-Draht im Schaltplan und die hervorgehobene Zeile in Netlist mit ausgewähltem control](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Teiler nach der Gestaltung, mit dem dickeren grünen OUT-Draht zwischen R1 und R2](../images/netlist-editor/netlist-wire-after.png)
+![Teiler nach der Gestaltung, mit dem dickeren grünen OUT-Draht zwischen R1 und R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Verwenden Sie **Save As**, um Ihre bearbeitete Kopie des Beispiels zu speichern.
 
 ### Folgen Sie der Anleitung
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Wechseln Sie zu Netlist, erstellen Sie einen grünen Drahtstil und klicken Sie dann auf den OUT-Draht, um seine Zeile zu finden und den Stil anzuwenden." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Wechseln Sie zu Netlist, erstellen Sie einen grünen Drahtstil und klicken Sie dann auf den OUT-Draht, um seine Zeile zu finden und den Stil anzuwenden." %}
 
 ## Was Sie in Netlist Types tun können
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ So fügen Sie sie hinzu:
 3. Speichern Sie die Attribute.
 4. Klicken Sie im Hauptdialogfeld auf `OK`.
 
-![Attributeditor mit Einträgen für Zweck und Notizen für den Typ control](../images/netlist-editor/netlist-attributes.png)
+![Attributeditor mit Einträgen für Zweck und Notizen für den Typ control](../Images/netlist-editor/netlist-attributes.png)
 
 Diese Beispieleinträge beschreiben den Zweck des Typs und fügen einen Verdrahtungshinweis hinzu. Sie gehören zum Typ und können von jedem Netz verwendet werden, dem dieser Typ zugewiesen ist.
 

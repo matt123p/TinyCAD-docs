@@ -26,7 +26,7 @@ Bibliotheekmappen zijn alleen beschikbaar in de desktop-app.
 
 In browsergebaseerde modi wordt Mijn bibliotheken nog steeds weergegeven waar dit wordt ondersteund, maar kunt u geen mappen maken of bibliotheken in mappen indelen en ze niet via slepen en neerzetten verplaatsen.
 
-![Desktopversie van Mijn bibliotheken met de uitgevouwen map Circuitcomponenten, een lege map Sensoren en modules en bibliotheken zonder map.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![Desktopversie van Mijn bibliotheken met de uitgevouwen map Circuitcomponenten, een lege map Sensoren en modules en bibliotheken zonder map.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### Wat u kunt doen
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ Bibliotheken die niet aan een map zijn toegewezen, verschijnen in de sectie Zond
 4. Voer een naam in voor de nieuwe map, bijvoorbeeld `Project libraries`.
 5. Kies **Toevoegen**.
 
-![Dialoogvenster Map maken, met Projectbibliotheken ingevoerd en de knop Toevoegen klaar om te bevestigen.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Dialoogvenster Map maken, met Projectbibliotheken ingevoerd en de knop Toevoegen klaar om te bevestigen.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 De nieuwe map verschijnt in de bibliothekenlijst en kan meteen worden geselecteerd.
 
@@ -72,7 +72,7 @@ Als u op een bibliotheek klikt, selecteert TinyCAD automatisch de map waartoe di
 
 De geselecteerde bibliotheken worden aan de geselecteerde map toegevoegd.
 
-![Projectbibliotheken geselecteerd in Mijn bibliotheken, met een leeg neerzetgebied en de knop om bibliotheken toe te voegen in de kop.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![Projectbibliotheken geselecteerd in Mijn bibliotheken, met een leeg neerzetgebied en de knop om bibliotheken toe te voegen in de kop.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Als u geen aangepaste map selecteert, worden bibliotheken toegevoegd aan Zonder map.
 
@@ -85,7 +85,7 @@ U kunt een bibliotheek ook op Zonder map neerzetten om deze uit een aangepaste m
 
 Als een map leeg is, geeft TinyCAD een neerzetdoel weer, zodat u er bibliotheken naartoe kunt verplaatsen.
 
-![Sensorinterfaces verplaatst van Zonder map naar Sensoren en modules, met de bedieningselementen voor de volgorde, hernoemen en verwijderen van de geselecteerde map zichtbaar.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Sensorinterfaces verplaatst van Zonder map naar Sensoren en modules, met de bedieningselementen voor de volgorde, hernoemen en verwijderen van de geselecteerde map zichtbaar.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### De volgorde van mappen wijzigen
 {: #reorder-folders}
@@ -106,7 +106,7 @@ De knoppen voor mapacties worden weergegeven wanneer u de aanwijzer op een map p
 - Selecteer **Map hernoemen** (het potloodpictogram) om de map te hernoemen. Voer de nieuwe naam in en kies **Hernoemen**.
 - Selecteer **Map verwijderen** (het prullenbakpictogram) om de map te verwijderen. Bevestig met **Verwijderen**.
 
-![Dialoogvenster Map hernoemen waarin Sensoren en modules wordt gewijzigd in Sensoren en displays.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Dialoogvenster Map hernoemen waarin Sensoren en modules wordt gewijzigd in Sensoren en displays.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 Wanneer een map wordt verwijderd, worden de bibliotheken erin verplaatst naar Zonder map. De bibliotheekbestanden zelf worden niet uit TinyCAD verwijderd.
 

@@ -26,7 +26,7 @@ title: "5. AC analysis: gain, phase and an RC filter"
 ### 电路和参考结果
 {: #circuit-and-reference-results}
 
-![计算出的幅频和相频响应](/v4/images/simulation-tutorials/spice/rc-ac-results.png)
+![计算出的幅频和相频响应](/v4/Images/simulation-tutorials/spice/rc-ac-results.png)
 
 ## 解读复数结果
 {: #interpret-the-complex-result}

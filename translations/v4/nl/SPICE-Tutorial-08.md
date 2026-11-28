@@ -17,7 +17,7 @@ het toont niet aan dat de oorspronkelijke hardware zich bij RF nauwkeurig gedraa
 Selecteer **Spanningsversterking (Voltage gain)**, de opgeslagen afgeleide trace OUT/IN. Bekijk de magnitude in dB
 en de fase. Houd knooppuntspanningen en dimensieloze versterking in uw aantekeningen van elkaar gescheiden.
 
-![Berekende versterking en fase van de versterker](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Berekende versterking en fase van de versterker](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Interpreteer het resultaat voordat u het verklaart
 {: #read-the-result-before-explaining-it}

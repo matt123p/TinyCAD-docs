@@ -59,7 +59,7 @@ Apertura dell'esempio incorporato, verifica dei valori in CC, modifica di R2 ed 
 ### Circuito e risultati di riferimento
 {: #circuit-and-reference-results}
 
-![Circuito del partitore di tensione ricavato dal disegno salvato](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Circuito del partitore di tensione ricavato dal disegno salvato](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Prevedere il risultato
 {: #predict-the-answer}
@@ -68,7 +68,7 @@ La corrente è `I = 5 / (1000 + 1000) = 2.5 mA`. Il resistore inferiore ha quind
 `VOUT = I × 1000 = 2.5 V`. Con R2 modificato a 2 kΩ, l'equazione del partitore dà
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Risultati calcolati del punto di funzionamento](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Risultati calcolati del punto di funzionamento](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 La corrente della sorgente è −2.5 mA. Non si tratta di un errore di cablaggio: SPICE definisce la corrente della sorgente
 come entrante nel suo terminale positivo. In base a questa convenzione, una sorgente che eroga energia ha

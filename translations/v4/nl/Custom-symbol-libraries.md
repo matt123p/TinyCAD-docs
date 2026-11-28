@@ -36,7 +36,7 @@ Als u al bibliotheken hebt gemaakt met TinyCAD voor desktop, geeft u TinyCAD web
 1. Klik in Google Drive met de rechtermuisknop op het bestand `.tclib`.
 2. Kies **Openen met -> TinyCAD**.
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 Herhaal dit voor **elke** bibliotheek die u beschikbaar wilt maken.
 
@@ -49,22 +49,22 @@ Ga terug naar uw tekensessie:
 1. Open **Mijn bibliotheken**.
 2. Klik naast **Mijn bibliotheken** op **Vernieuwen**.
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 Na het vernieuwen worden de bibliotheken weergegeven:
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 U kunt bibliotheken doorzoeken door ze uit te vouwen:
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### Een nieuwe bibliotheek maken
 {: #creating-a-new-library}
 
 Gebruik het menu-item **Nieuwe aangepaste bibliotheek**:
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### Een bibliotheek bewerken
 {: #edit-a-library}
@@ -79,7 +79,7 @@ Bewerk een bestaande bibliotheek door deze in TinyCAD web te openen via de knop 
 
 Voordat u symbolen uit een bibliotheek kunt gebruiken, moet de bibliotheek aan de lijst met bibliotheken onder **Mijn bibliotheken** zijn toegevoegd.
 
-![Zijpaneel van Mijn bibliotheken](/v4/images/media/image9.png)
+![Zijpaneel van Mijn bibliotheken](/v4/Images/media/image9.png)
 
 Klik op **Toevoegen** om een bibliotheek aan deze lijst toe te voegen. Er verschijnt een dialoogvenster voor bestandsselectie. Selecteer een bibliotheekbestand met de extensie `.tclib`.
 
@@ -90,7 +90,7 @@ Klik op het bewerkingspictogram van de bibliotheek om het bibliotheekvenster te 
 
 Gebruik het dialoogvenster voor bibliotheekbewerking om de bibliotheek te selecteren en klik op **Bewerken**. Er wordt een nieuw venster geopend met miniaturen van de bibliotheek.
 
-![Bibliotheekeditor met miniaturen van symbolen](/v4/images/media/image10.png)
+![Bibliotheekeditor met miniaturen van symbolen](/v4/Images/media/image10.png)
 
 Gebruik het bibliotheekbewerkingsvenster om:
 

@@ -10,7 +10,7 @@ Los símbolos de alimentación indican la conexión a redes de alimentación con
 Todos los símbolos de alimentación con el mismo nombre se consideran conectados eléctricamente.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Vídeo explicativo que muestra cómo colocar símbolos de alimentación."

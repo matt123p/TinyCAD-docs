@@ -33,7 +33,7 @@ Download [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), open het via
 
 Bij R1 = 1 kΩ en C = 1 µF is de nominale hoekfrequentie ongeveer 159,15 Hz. **Metingen** bevat de afsnijfrequentie, versterking bij 100 Hz en fase bij de ideale hoekfrequentie; **Vereisten** controleert of de afsnijfrequentie tussen 150 en 170 Hz ligt.
 
-![Afstemknoppen van Circuit Explorer in de bijbehorende RC-tekening](../images/simulation/explorer-tuning.png)
+![Afstemknoppen van Circuit Explorer in de bijbehorende RC-tekening](../Images/simulation/explorer-tuning.png)
 
 ## Afstemmen zonder het opgeslagen circuit te wijzigen
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Sweepdefinities, waarden, eenheden, runstatus en vastgelegde meetgrootheden word
 
 Voeg onder **Metingen** een naam toe, selecteer een signaal/component en vouw de instellingen uit. Stel een zinvol tijd-/frequentievenster in en geef eventueel vereiste niveaus of referenties op. Koppelingen aan componenten/probes gebruiken de identiteit van het blad plus de referentie, zodat ze behouden kunnen blijven wanneer u het bestand opnieuw opent.
 
-![Voorbereide metingen voor afsnijfrequentie, versterking en fase](../images/simulation/explorer-measurements.png)
+![Voorbereide metingen voor afsnijfrequentie, versterking en fase](../Images/simulation/explorer-measurements.png)
 
 | Meting | Interpretatie |
 | --- | --- |
@@ -91,7 +91,7 @@ Gebruik voor de afsnijfrequentie een expliciete lineaire referentieversterking o
 
 Gebruik **Vereisten** om een benoemde meting te toetsen aan **minimaal**, **maximaal** of een inclusief bereik **tussen**. Eenheden moeten overeenkomen. De uitkomsten zijn **geslaagd**, **mislukt** of **niet beschikbaar**; een niet-beschikbare meetgrootheid betekent niet dat aan de vereiste is voldaan.
 
-![De RC-afsnijfrequentievereiste met een expliciet acceptabel bereik](../images/simulation/explorer-requirements.png)
+![De RC-afsnijfrequentievereiste met een expliciet acceptabel bereik](../Images/simulation/explorer-requirements.png)
 
 Selecteer een beschikbare meting om de onderbouwing en eventuele relevante markering in het schema te bekijken. Bewaar meetdefinities, vensters en drempels bij geëxporteerde resultaten. Algemene wederzijdse markering tussen probes is niet volledig beschikbaar voor elk type signaal of model.
 
@@ -100,7 +100,7 @@ Voor de DC-schematische overlay is een nieuwe, voltooide werkpuntacquisitie vere
 ## Analysis lab
 {: #analysis-lab}
 
-![Werkstromen van Analysis lab in Circuit Explorer](../images/simulation/analysis-lab.png)
+![Werkstromen van Analysis lab in Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Frequentie- en versterkerrespons
 {: #frequency-and-amplifier-response}

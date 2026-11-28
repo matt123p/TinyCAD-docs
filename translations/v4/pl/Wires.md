@@ -33,7 +33,7 @@ W TinyCAD v4.0.11 użyj selektora obok polecenia Wire, aby wybrać sposób rysow
 
 Wybór trybu aktywuje narzędzie Wire i zachowuje bieżący podgląd przewodu. Tryb można zmienić przed umieszczeniem następnego segmentu. Przyciąganie do siatki jest osobnym ustawieniem. Aby automatycznie poprowadzić połączenie między dwoma punktami, użyj sąsiedniego narzędzia [Przewód punkt-punkt](#auto-routing).
 
-![Selektor na pasku narzędzi Wire z opcjami 90°, 45° i Dowolny.](../images/wire-routing-modes.png)
+![Selektor na pasku narzędzi Wire z opcjami 90°, 45° i Dowolny.](../Images/wire-routing-modes.png)
 
 ## Umieszczanie przewodów
 {: #placing-wires}
@@ -47,7 +47,7 @@ Wybór trybu aktywuje narzędzie Wire i zachowuje bieżący podgląd przewodu. T
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Film instruktażowy pokazujący, jak umieszczać przewody."
@@ -85,16 +85,16 @@ Rezystor i dioda LED znajdują się na siatce, a połączenie między nimi jest 
 
 Najpierw wybierz Przewód punkt-punkt i wskaż prawe wyprowadzenie R1.
 
-![1. R1 i D1 są rozłączone. Czerwone kółko oznacza wyprowadzenie początkowe R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. R1 i D1 są rozłączone. Czerwone kółko oznacza wyprowadzenie początkowe R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Następnie wskaż górne wyprowadzenie D1. Podgląd pokazuje trasę i jej narożnik, zanim
 ją zatwierdzisz.
 
-![2. Wyświetl podgląd automatycznej trasy do D1. Czerwone kółko oznacza wyprowadzenie docelowe.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Wyświetl podgląd automatycznej trasy do D1. Czerwone kółko oznacza wyprowadzenie docelowe.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Na koniec kliknij lub dotknij wyprowadzenia D1. TinyCAD umieści wszystkie segmenty w jednej operacji.
 
-![3. Zatwierdź punkt docelowy, aby umieścić całe połączenie wraz z narożnikiem.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Zatwierdź punkt docelowy, aby umieścić całe połączenie wraz z narożnikiem.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 Na ekranie dotykowym możesz bezpośrednio dotknąć obu końców. W przypadku małych lub ciasno rozmieszczonych
 wyprowadzeń użyj [lupy](../Touch-controls/#precise-placement-with-the-loupe): wyceluj

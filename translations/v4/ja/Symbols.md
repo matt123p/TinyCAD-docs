@@ -45,7 +45,7 @@ layout: default
 以下の動画では、シンボルの検索と配置方法を説明しています。選択欄の閲覧と管理について詳しくは、[シンボルライブラリの使用](../Using-Symbol-Libraries/)を参照してください。
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="シンボルの検索と配置方法を紹介する動画です。"
@@ -58,7 +58,7 @@ layout: default
 
 シンボルの配置中に、ツールバーの回転ボタンと反転ボタンを使って向きを設定します。
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## シンボルのテキストの編集と移動
@@ -71,7 +71,7 @@ layout: default
 テキストをクリックすると編集できます。
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="シンボルのテキストの編集と位置変更方法を紹介する動画です。"

@@ -13,7 +13,7 @@ Open **amp-small-signal**. VIN supplies a
 10 mV peak, 1 kHz sine. The transient lasts 12 ms with a 2 µs maximum step.
 Compare IN and OUT, then measure the final four cycles, from 8 ms to 12 ms.
 
-![Measured small-signal amplifier waveforms](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Measured small-signal amplifier waveforms](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 The AC result predicts about 8.92 mV peak at OUT, inverted relative to the input.
 The transient gives approximately −8.87 to +8.99 mV over the measurement window,
@@ -44,7 +44,7 @@ Open **amp-clipping**. Only VIN amplitude changes,
 to 500 mV peak. A linear extrapolation would predict about 446 mV peak at OUT
 in both directions. The computed waveform does not do that.
 
-![Computed asymmetrical large-signal output](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Computed asymmetrical large-signal output](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 In the same 8–12 ms window the reference output spans approximately
 **−0.162 to +0.389 V**, with **0.2126 V RMS**. Supply consumption is approximately

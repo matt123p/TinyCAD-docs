@@ -54,7 +54,7 @@ Pola tekstowe Markdown są dostępne w [TinyCAD v4.0.11](../Changelog/#v4011).
 3. Kliknij w innym miejscu, aby zobaczyć sformatowaną uwagę bez znaczników Markdown. Zmień rozmiar
    pola, jeśli jego zawartość jest przycięta.
 
-![Uwaga Markdown wyrenderowana w SVG, zawierająca nagłówek, listę komponentów, listę zadań i blok kodu.](../images/markdown-preview.png)
+![Uwaga Markdown wyrenderowana w SVG, zawierająca nagłówek, listę komponentów, listę zadań i blok kodu.](../Images/markdown-preview.png)
 
 ### Edytowalne źródło Markdown
 {: #editable-markdown-source}
@@ -69,7 +69,7 @@ Wybrana rodzina i wielkość czcionki oraz ustawienia pogrubienia i kursywy twor
 Nagłówki są skalowane względem tego rozmiaru; kod również używa wybranej rodziny czcionki. Cofanie,
 kopiowanie i wklejanie oraz zapisywanie zachowują źródło Markdown.
 
-![Edycja tej samej uwagi z widocznymi znacznikami nagłówka, pogrubienia, listy, listy zadań i bloku kodu.](../images/markdown-source-editor.png)
+![Edycja tej samej uwagi z widocznymi znacznikami nagłówka, pogrubienia, listy, listy zadań i bloku kodu.](../Images/markdown-source-editor.png)
 
 ### Obsługiwane formatowanie
 {: #supported-formatting}

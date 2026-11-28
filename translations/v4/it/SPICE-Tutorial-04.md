@@ -26,9 +26,9 @@ Riduzione del passo temporale massimo e misurazione di OUT a 1 ms e della costan
 ### Circuito e risultati di riferimento
 {: #circuit-and-reference-results}
 
-![Circuito di carica RC](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![Circuito di carica RC](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Curva calcolata di carica del condensatore](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Curva calcolata di carica del condensatore](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Perché l'uscita varia gradualmente invece di fare salti
 {: #why-the-output-curves-rather-than-jumps}

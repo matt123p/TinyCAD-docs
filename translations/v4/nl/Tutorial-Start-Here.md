@@ -46,7 +46,7 @@ Kies na het openen van een voorbeeld **Uitleg** in de titelbalk van de browser, 
 
 Het pictogram in de werkbalk dat op een puls lijkt, heeft de zweeftekst **Simulation**. Open het menu van dat pictogram telkens wanneer een les **Simulation → Grafieken weergeven** of **Simulation → SPICE-componenten** vermeldt. Het **Simulation-blad** is een afzonderlijk tabblad in de tekening; het bevat de instellingen en resultatenweergaven van het experiment.
 
-![TinyCAD met het eerste divider-circuit en het simulatiegrafiekenvenster](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD met het eerste divider-circuit en het simulatiegrafiekenvenster](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Deze schermafbeelding van de toepassing toont de geopende divider, met de bladtabbladen onder de schakeling en het grafiekenvenster rechts. De belangrijkste beginpunten zijn de schakeling, het Simulation-blad en **Run**.
 

@@ -43,14 +43,14 @@ SPICEは、接続されたコンポーネントとその数学モデルで記述
 ### 回路と参照結果
 {: #circuit-and-reference-results}
 
-![保存された図面からレンダリングされた分圧回路](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![保存された図面からレンダリングされた分圧回路](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## 答えを予測する
 {: #predict-the-answer}
 
 電流は`I = 5 / (1000 + 1000) = 2.5 mA`です。したがって、下側の抵抗器には`VOUT = I × 1000 = 2.5 V`が生じます。R2を2 kΩに変更すると、分圧の式から`VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`が得られます。
 
-![計算された動作点の結果](/v4/images/simulation-tutorials/spice/divider-results.png)
+![計算された動作点の結果](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 電源電流は−2.5 mAです。これは配線ミスではありません。SPICEでは、電流は電源の正端子に流れ込む向きを正と定義します。この規約では、エネルギーを供給する電源の電流は負になります。第2章では、この符号を使って電力を正しく計算します。
 

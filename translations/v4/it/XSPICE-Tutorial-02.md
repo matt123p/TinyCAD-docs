@@ -11,8 +11,8 @@ Gli esempi di questo capitolo sono inclusi in TinyCAD. Scegli **Apri esempio (Op
 
 Apri **logic-nand**. X1 contiene ponti ADC, una porta NAND XSPICE a due ingressi e un ponte di uscita DAC. Sorgenti di impulsi indipendenti applicano segnali ad A e B a frequenze diverse. Esegui l'analisi transitoria di 8 µs e visualizza A, B e Y.
 
-![Circuito di prova NAND](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Forme d'onda NAND calcolate](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![Circuito di prova NAND](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Forme d'onda NAND calcolate](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 La funzione booleana è `Y = NOT(A AND B)`:
 

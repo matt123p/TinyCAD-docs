@@ -35,7 +35,7 @@ De lijst is live en wordt automatisch bijgewerkt terwijl u het schema bewerkt.
 
 Als er een ander paneel is geopend omdat er iets is geselecteerd, maakt u eerst de selectie ongedaan.
 
-![Netlist-weergave onder het delerschema, met de rij OUT gemarkeerd](../images/netlist-editor/netlist-overview.png)
+![Netlist-weergave onder het delerschema, met de rij OUT gemarkeerd](../Images/netlist-editor/netlist-overview.png)
 
 In dit meegeleverde delervoorbeeld verbindt de rij `OUT` `R1.2` met `R2.1`.
 Als u de muisaanwijzer boven die rij houdt, wordt de verbinding in de tekening gemarkeerd.
@@ -92,7 +92,7 @@ Een nettype is een herbruikbare verzameling tekenstijlen. Wijs hetzelfde type aa
 
 Open de meegeleverde tekening `divider` via **Open Example** → **SPICE tutorial** en zoom in op de schakeling. Schakel in het onderste paneel over van **Symbols** naar **Netlist**. Het label **OUT** identificeert het net tussen pinnen **R1.2** en **R2.1**. Het net gebruikt aanvankelijk het type `default` en heeft de normale draaddikte.
 
-![Deler vóór het opmaken, met de dunne blauwe OUT-draad tussen R1 en R2](../images/netlist-editor/netlist-wire-before.png)
+![Deler vóór het opmaken, met de dunne blauwe OUT-draad tussen R1 en R2](../Images/netlist-editor/netlist-wire-before.png)
 
 ### De draadstijl maken
 {: #create-the-wire-style}
@@ -102,9 +102,9 @@ Open de meegeleverde tekening `divider` via **Open Example** → **SPICE tutoria
 3. Klik in dezelfde rij op de cel **Wire colour**. Vink **Override colour** aan en voer voor groen `007F5F` in het veld **Hex** in. In het voorbeeld ziet u de draad met beide instellingen.
 4. Klik op **OK** in de kleurenkiezer. Controleer het groene kleurstaal en de diktewaarde op de rij `control` en klik vervolgens op **OK** in **Netlist Types** om het type op te slaan.
 
-![Kleurenkiezer voor de draad, met Override colour aangevinkt en de groene draad zichtbaar in het voorbeeld](../images/netlist-editor/netlist-wire-colour.png)
+![Kleurenkiezer voor de draad, met Override colour aangevinkt en de groene draad zichtbaar in het voorbeeld](../Images/netlist-editor/netlist-wire-colour.png)
 
-![Netlist Types met het groene kleurstaal voor Wire colour en een Wire thickness van 4 op de rij control](../images/netlist-editor/netlist-wire-type.png)
+![Netlist Types met het groene kleurstaal voor Wire colour en een Wire thickness van 4 op de rij control](../Images/netlist-editor/netlist-wire-type.png)
 
 ### De stijl op OUT toepassen
 {: #apply-the-style-to-out}
@@ -113,16 +113,16 @@ Open de meegeleverde tekening `divider` via **Open Example** → **SPICE tutoria
 2. Open de lijst **Type** op de gemarkeerde rij en kies `control`.
 3. Klik op een leeg gebied van het schema om de selectie ongedaan te maken. De draad tussen **R1.2** en **R2.1** is nu groen en dikker. Kies `default` in de lijst **Type** om de normale draadstijl te herstellen.
 
-![Geselecteerde OUT-draad in het schema en de gemarkeerde Netlist-rij met control geselecteerd](../images/netlist-editor/netlist-wire-assignment.png)
+![Geselecteerde OUT-draad in het schema en de gemarkeerde Netlist-rij met control geselecteerd](../Images/netlist-editor/netlist-wire-assignment.png)
 
-![Deler na het opmaken, met de dikkere groene OUT-draad tussen R1 en R2](../images/netlist-editor/netlist-wire-after.png)
+![Deler na het opmaken, met de dikkere groene OUT-draad tussen R1 en R2](../Images/netlist-editor/netlist-wire-after.png)
 
 Gebruik **Save As** om uw bewerkte kopie van het voorbeeld te bewaren.
 
 ### De uitlegvideo bekijken
 {: #watch-the-walkthrough}
 
-{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/images/netlist-editor/netlist-walkthrough-start.png" caption="Schakel over naar Netlist, maak een groene draadstijl en klik vervolgens op de OUT-draad om de bijbehorende rij te vinden en de stijl toe te passen." %}
+{% include video-player.html src="/v4/videos/netlist-editor/netlist-editor.webm" type="video/webm" poster="/v4/Images/netlist-editor/netlist-walkthrough-start.png" caption="Schakel over naar Netlist, maak een groene draadstijl en klik vervolgens op de OUT-draad om de bijbehorende rij te vinden en de stijl toe te passen." %}
 
 ## Wat u kunt doen in Netlist Types
 {: #what-you-can-do-in-netlist-types}
@@ -172,7 +172,7 @@ Zo voegt u ze toe:
 3. Sla de kenmerken op.
 4. Klik op `OK` in het hoofdvenster.
 
-![Kenmerkeditor met items voor doel en notities voor het type control](../images/netlist-editor/netlist-attributes.png)
+![Kenmerkeditor met items voor doel en notities voor het type control](../Images/netlist-editor/netlist-attributes.png)
 
 Deze voorbeelditems beschrijven het doel van het type en voegen een bedradingsnotitie toe. Ze horen bij het type en kunnen worden gedeeld door elk net dat eraan is toegewezen.
 

@@ -20,7 +20,7 @@ Vous pouvez générer la nomenclature en sélectionnant l’option correspondant
 ensuite la télécharger au format CSV. Lorsque vous avez terminé, sélectionnez « Close ».
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Vidéo explicative montrant comment générer une nomenclature."

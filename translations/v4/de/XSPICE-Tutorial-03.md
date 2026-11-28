@@ -13,7 +13,7 @@ Die Beispiele in diesem Kapitel sind in TinyCAD enthalten. Wählen Sie **Beispie
 direkt zu einem UND-Gatter. Eine andere wird durch einen Inverter geleitet, bevor sie den
 anderen UND-Eingang erreicht. Der boolesche Ausdruck lautet `A AND NOT A`, der nach dem Einschwingen immer null ist. Dennoch kann der transiente Verlauf einen Impuls enthalten.
 
-![Berechnete Gefahrenimpulse](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Berechnete Gefahrenimpulse](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 Der Inverter hat eine Verzögerung von 100 ns und das UND-Gatter eine Verzögerung von 10 ns. Bei einer steigenden Flanke am Eingang wird der direkte Pfad high, während der invertierte Pfad high bleibt,
 bis der Inverter reagiert. Für ein kurzes Intervall sind beide UND-Eingänge high,

@@ -21,7 +21,7 @@ Wählen Sie **Simulation → SPICE → Quelle einfügen**. Der Editor wird vor d
 | Exponentiell | Einen geformten Übergang | Pegel, Verzögerungen und Zeitkonstanten |
 | FM | Frequenzmodulation | Träger- und Modulationseinstellungen |
 
-![Editor der Sinusquelle und Kurvenformvorschau](../images/simulation/source-settings.png)
+![Editor der Sinusquelle und Kurvenformvorschau](../Images/simulation/source-settings.png)
 
 Die Vorschau bildet die numerischen Kurvenformeinstellungen ab. Verwenden Sie sie, um einen unerwarteten Offset, Spitzenwert oder Zeitverlauf vor dem Start zu erkennen. Ungültige Einstellungen verhindern den Start. Das Symbol einer Quelle ändert sich je nach Kurvenform; eine Stromquelle behält ihren Richtungspfeil bei.
 

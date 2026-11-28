@@ -109,7 +109,7 @@ SPICE essentials ライブラリーには、一般的なデバイスの設定済
 5. 回路シートで R2 を `2k` に変更して、再度実行します。OUT はおよそ **3.333 V** になるはずです。
    以前に保持された取得データは、以前の回路を示すままです。値を変更しても、その結果が書き換わることはありません。
 
-![RC AC 解析と遮断周波数の結果を示す TinyCAD の Simulation シート](/v4/images/simulation-tutorials/spice/tinycad-ac-setup.png)
+![RC AC 解析と遮断周波数の結果を示す TinyCAD の Simulation シート](/v4/Images/simulation-tutorials/spice/tinycad-ac-setup.png)
 
 このアプリケーションのスクリーンショットは、埋め込み例 **rc-ac** の **Setup** ビューを示しています。
 この 1 kΩ/1 µF フィルターの遮断周波数は約 **159.15 Hz** です。これを開いて、分圧器の単一 DC 動作点と
@@ -191,7 +191,7 @@ TinyCAD がサポートするのは、埋め込みモデルテキストであり
 デジタルからアナログへのブリッジが含まれています。通常の電源がアナログ入力を駆動し、
 ブリッジによってロジック状態を TinyCAD のチャート上の電圧として確認できます。
 
-![埋め込み XSPICE バッファーの計算された入力と出力](/v4/images/simulation-tutorials/xspice/logic-buffer-results.png)
+![埋め込み XSPICE バッファーの計算された入力と出力](/v4/Images/simulation-tutorials/xspice/logic-buffer-results.png)
 
 保存された過渡解析を実行します。0～5 V、周期 1 µs のパルスと、有限の立ち上がり／立ち下がり時間を持つ、
 約 20 ns 遅延した出力遷移が得られるはずです。遅延を確認するには拡大表示します。

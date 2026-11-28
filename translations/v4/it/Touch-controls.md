@@ -44,7 +44,7 @@ La lente d'ingrandimento ingrandisce l'area attorno a un mirino, così il dito n
 
 4. Tocca **Nascondi lente d'ingrandimento (Hide Loupe)** per tornare al touch diretto.
 
-![Lente d'ingrandimento touch che mostra un'area di connessione ingrandita, un mirino e i comandi Fai clic, Trascina e Menu.](../images/touch-loupe.png)
+![Lente d'ingrandimento touch che mostra un'area di connessione ingrandita, un mirino e i comandi Fai clic, Trascina e Menu.](../Images/touch-loupe.png)
 
 Ad esempio, per disegnare un filo, scegli **Filo (Wire)**, punta il pin iniziale e tocca **Fai clic (Click)**. Fai scorrere il dito per puntare il punto successivo e tocca di nuovo **Fai clic (Click)**. Usa **Menu** per accedere ai comandi contestuali dello strumento quando vuoi terminare o annullare.
 

@@ -46,7 +46,7 @@ TinyCADの**Measurements**コントロールでは、モデルが対応してい
 
 **dc-sweep**を開きます。保存済みの**DC sweep**では、V1を使用し、開始値は0 V、終了値は10 V、増分は0.5 Vです。実行してOUTをプロットします。
 
-![計算されたDC伝達曲線](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![計算されたDC伝達曲線](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 横軸はスイープする電源の値であり、時間ではありません。電源値が0 V、5 V、10 Vのとき、予想される値はそれぞれ0 V、2.5 V、5 Vです。傾きは0.5 V/Vです。このテストは、時間変化する刺激を追加する前に、バイアス回路やセンサーインターフェースを確認するのに役立ちます。
 

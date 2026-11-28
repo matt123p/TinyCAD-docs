@@ -29,7 +29,7 @@ opzioni indipendenti:
 
 I punti della griglia potrebbero non essere visualizzati se lo zoom è troppo ridotto per mostrarli chiaramente.
 
-![Finestra di dialogo Impostazioni con caselle di controllo separate Mostra la griglia e Allinea alla griglia.](../images/grid-settings.png)
+![Finestra di dialogo Impostazioni con caselle di controllo separate Mostra la griglia e Allinea alla griglia.](../Images/grid-settings.png)
 
 Quando sono selezionati degli oggetti, con l'allineamento attivo i tasti freccia li spostano secondo la spaziatura della griglia. Con l'allineamento disattivato, si spostano a piccoli passi senza essere
 riportati alla griglia. Tieni premuto **Ctrl** per spostamenti a piccoli passi, indipendentemente dall'impostazione di allineamento.

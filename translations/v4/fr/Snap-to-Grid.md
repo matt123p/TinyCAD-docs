@@ -28,7 +28,7 @@ options indépendantes :
 
 Les points de la grille peuvent être masqués lorsque le zoom est trop faible pour qu’ils s’affichent clairement.
 
-![Boîte de dialogue Paramètres avec les cases à cocher distinctes Show the grid et Snap to grid.](../images/grid-settings.png)
+![Boîte de dialogue Paramètres avec les cases à cocher distinctes Show the grid et Snap to grid.](../Images/grid-settings.png)
 
 Lorsque des objets sont sélectionnés, les touches fléchées les déplacent selon l’espacement de la grille si l’alignement est activé. Si l’alignement est désactivé, ils se déplacent par petits incréments sans être ramenés sur la grille. Maintenez **Ctrl** pour effectuer de petits déplacements, quel que soit le réglage de l’alignement. Si aucun objet n’est sélectionné, les touches fléchées font défiler la vue.
 

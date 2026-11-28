@@ -13,7 +13,7 @@ const require=createRequire(path.join(appRoot,'package.json'));
 const {_electron,expect}=require('@playwright/test');
 const temporary=await fs.mkdtemp(path.join(tmpdir(),'tinycad-manual-folders-'));
 const profile=path.join(temporary,'profile');
-const output=path.join(root,'docs/v4/images/library-folders');
+const output=path.join(root,'docs/v4/Images/library-folders');
 await fs.mkdir(profile,{recursive:true});await fs.mkdir(output,{recursive:true});
 const libraries=[];
 for(const [source,name,folderId] of [

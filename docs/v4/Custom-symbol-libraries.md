@@ -42,7 +42,7 @@ access to each one:
 1. In Google Drive, right-click the `.tclib` file.
 2. Choose **Open with -> TinyCAD**.
 
-<img src="/v4/images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
+<img src="/v4/Images/media2/image1.png" alt="Google Drive context menu showing Open with TinyCAD for a library file" style="width: 6.26806in; height: 4.54514in;" />
 
 Repeat this for **every** library you want available.
 
@@ -57,21 +57,21 @@ Back in your drawing session:
 1. Open **My Libraries**.
 2. Click **Refresh** next to **My Libraries**.
 
-<img src="/v4/images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
+<img src="/v4/Images/media2/image2.png" alt="My Libraries panel with the Refresh button used to reload available libraries" />
 
 After refresh, libraries are listed:
 
-<img src="/v4/images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
+<img src="/v4/Images/media2/image4.png" alt="My Libraries panel listing available custom symbol libraries"  />
 
 You can browse libraries by expanding them:
 
-<img src="/v4/images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
+<img src="/v4/Images/media2/image3.png" alt="Library browser showing symbol search results and a preview button"  />
 
 #### Creating a new library
 
 Use the menu item **New Custom Library**:
 
-<img src="/v4/images/media2/image5.png" alt="Menu with the New Custom Library command"/>
+<img src="/v4/Images/media2/image5.png" alt="Menu with the New Custom Library command"/>
 
 #### Edit a library
 
@@ -84,7 +84,7 @@ Edit an existing library by opening it in TinyCAD web via **Edit** button on the
 Before any symbols can be used from a library, the library must be added to the
 list of libraries under **My Libraries**.
 
-![Side panel of My Libraries](/v4/images/media/image9.png)
+![Side panel of My Libraries](/v4/Images/media/image9.png)
 
 To add a library to this list, click **Add**. A file selection dialogue will
 appear. Select a library file with the `.tclib` extension.
@@ -98,7 +98,7 @@ only removes it from the list.
 Use the library edit dialogue to select the library and click **Edit**. A new
 window opens with a thumbnail view of the library.
 
-![Library editor showing symbol thumbnails](/v4/images/media/image10.png)
+![Library editor showing symbol thumbnails](/v4/Images/media/image10.png)
 
 Use the library editing window to:
 

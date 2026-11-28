@@ -23,7 +23,7 @@ You can convert this to a polygon by selecting "Close Polygon" in the context
 menu. Once converted to a polygon you can change the fill.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Video walkthrough showing how to draw and edit a polygon."

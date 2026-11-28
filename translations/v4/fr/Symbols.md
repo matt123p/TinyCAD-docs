@@ -45,7 +45,7 @@ Vous pouvez dessiner un nouveau symbole ou adapter une copie d’un symbole exis
 La vidéo ci-dessous montre comment trouver et placer un symbole. Pour en savoir plus sur la navigation dans le sélecteur et sa gestion, consultez [Utiliser les bibliothèques de symboles (Using Symbol Libraries)](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Présentation vidéo montrant comment trouver et placer un symbole."
@@ -58,7 +58,7 @@ La vidéo ci-dessous montre comment trouver et placer un symbole. Pour en savoir
 
 Lors du placement d’un symbole, définissez son orientation à l’aide des boutons de rotation et de retournement de la barre d’outils.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Modifier et déplacer le texte des symboles
@@ -71,7 +71,7 @@ Vous pouvez également déplacer indépendamment les champs de texte du symbole 
 Vous pouvez modifier le texte en cliquant dessus.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Présentation vidéo montrant comment modifier et repositionner le texte d’un symbole."

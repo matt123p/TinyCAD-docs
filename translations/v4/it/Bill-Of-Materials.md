@@ -20,7 +20,7 @@ Puoi generare la distinta componenti selezionando l'opzione nel menu. Puoi
 quindi scaricarla come file CSV. Al termine, seleziona «Chiudi» (Close).
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Video tutorial che mostra come generare una distinta componenti."

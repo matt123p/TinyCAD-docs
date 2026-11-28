@@ -13,8 +13,8 @@ Otwórz **logic-counter**. X1 zawiera cztery
 przerzutniki D. Każdy z nich ma swoje zanegowane wyjście podłączone z powrotem do wejścia D, dzięki czemu przełącza stan po podaniu
 sygnału zegarowego. Pierwszy stopień otrzymuje sygnał CLK, a kolejne stopnie są taktowane z zanegowanego wyjścia poprzedniego stopnia. Tworzy to asynchroniczny licznik binarny w górę.
 
-![Układ testowy licznika czterobitowego](/v4/images/simulation-tutorials/xspice/logic-counter-circuit.png)
-![Obliczone przebiegi zegarów dzielonych](/v4/images/simulation-tutorials/xspice/logic-counter-results.png)
+![Układ testowy licznika czterobitowego](/v4/Images/simulation-tutorials/xspice/logic-counter-circuit.png)
+![Obliczone przebiegi zegarów dzielonych](/v4/Images/simulation-tutorials/xspice/logic-counter-results.png)
 
 Okres sygnału wejściowego wynosi 1 µs. Reset zeruje stopnie w pobliżu początku symulacji, a pierwsze zbocze zliczające pojawia się w pobliżu 0,5 µs. Uruchom zapisaną analizę przejściową trwającą 18 µs. Odczytuj każdą wartość po ustabilizowaniu się stanów przejściowych, na przykład przy 0,8 µs, 1,8 µs, 2,8 µs i tak dalej.
 

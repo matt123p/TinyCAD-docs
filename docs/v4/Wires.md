@@ -31,7 +31,7 @@ In TinyCAD v4.0.11, use the selector beside Wire to choose how new segments are 
 
 Choosing a mode activates Wire and keeps any active wire preview. You can change modes before placing the next segment. Grid snapping remains a separate setting. For automatic routing between two connection points, use the neighbouring [Point-to-Point Wire tool](#auto-routing).
 
-![Wire toolbar selector showing the 90°, 45° and Free choices.](../images/wire-routing-modes.png)
+![Wire toolbar selector showing the 90°, 45° and Free choices.](../Images/wire-routing-modes.png)
 
 ## Placing wires
 {: #placing-wires}
@@ -44,7 +44,7 @@ Choosing a mode activates Wire and keeps any active wire preview. You can change
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Video walkthrough showing how to place wires."
@@ -81,16 +81,16 @@ The resistor and LED are on the grid, with the connection between them left open
 
 First, select Point-to-Point Wire and choose R1's right-hand pin.
 
-![1. Start with R1 and D1 disconnected. The red circle marks the starting pin on R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. Start with R1 and D1 disconnected. The red circle marks the starting pin on R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Next, point at D1's top pin. The preview shows the route and its corner before
 you commit it.
 
-![2. Preview the automatic route to D1. The red circle marks the destination pin.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Preview the automatic route to D1. The red circle marks the destination pin.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Finally, click or tap D1's pin. TinyCAD places all the segments in one operation.
 
-![3. Confirm the destination to place the complete connection, including its corner.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Confirm the destination to place the complete connection, including its corner.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 On a touchscreen, you can tap the two endpoints directly. For small or crowded
 pins, use the [loupe](../Touch-controls/#precise-placement-with-the-loupe): aim

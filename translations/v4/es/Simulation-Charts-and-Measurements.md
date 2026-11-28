@@ -33,7 +33,7 @@ Descargue [RC low-pass.dzn](../examples/simulation/rc-low-pass.dzn), ábralo med
 
 Con R1 = 1 kΩ y C = 1 µF, la frecuencia de corte nominal es de unos 159.15 Hz. **Mediciones** incluye la frecuencia de corte, la ganancia a 100 Hz y la fase en la frecuencia de corte ideal; **Requisitos** comprueba que la frecuencia de corte esté entre 150–170 Hz.
 
-![Controles de ajuste de Circuit Explorer en el esquema RC complementario](../images/simulation/explorer-tuning.png)
+![Controles de ajuste de Circuit Explorer en el esquema RC complementario](../Images/simulation/explorer-tuning.png)
 
 ## Ajustar sin modificar el circuito guardado
 {: #tune-without-changing-the-saved-circuit}
@@ -62,7 +62,7 @@ Las definiciones de barrido, los valores, las unidades, el estado de ejecución 
 
 En **Mediciones**, añada un nombre, seleccione una señal/componente y despliegue su configuración. Establezca una ventana de tiempo/frecuencia significativa y los niveles o referencias necesarios. Los enlaces a componentes/sondas utilizan la identidad de la hoja y la referencia, por lo que pueden mantenerse al volver a abrir el archivo.
 
-![Mediciones preparadas de frecuencia de corte, ganancia y fase](../images/simulation/explorer-measurements.png)
+![Mediciones preparadas de frecuencia de corte, ganancia y fase](../Images/simulation/explorer-measurements.png)
 
 | Medición | Interpretación |
 | --- | --- |
@@ -91,7 +91,7 @@ Para la frecuencia de corte, use una ganancia de referencia lineal explícita o 
 
 Use **Requisitos** para comprobar una medición con nombre frente a **como mínimo**, **como máximo** o un intervalo inclusivo **entre**. Las unidades deben coincidir. Los resultados son **aprobado**, **fallido** o **no disponible**; una métrica no disponible no equivale a un requisito aprobado.
 
-![El requisito de frecuencia de corte RC con un intervalo aceptable explícito](../images/simulation/explorer-requirements.png)
+![El requisito de frecuencia de corte RC con un intervalo aceptable explícito](../Images/simulation/explorer-requirements.png)
 
 Seleccione una medición disponible para inspeccionar sus datos justificativos y el resaltado aplicable en el esquema. Conserve las definiciones de medición, las ventanas y los umbrales junto con los resultados exportados. El resaltado bidireccional general de sondas no está completo para todos los tipos de señales o modelos.
 
@@ -100,7 +100,7 @@ La superposición del esquema de CC requiere una adquisición reciente y complet
 ## Laboratorio de análisis
 {: #analysis-lab}
 
-![Flujos de trabajo del laboratorio de análisis en Circuit Explorer](../images/simulation/analysis-lab.png)
+![Flujos de trabajo del laboratorio de análisis en Circuit Explorer](../Images/simulation/analysis-lab.png)
 
 ### Respuesta en frecuencia y de amplificadores
 {: #frequency-and-amplifier-response}

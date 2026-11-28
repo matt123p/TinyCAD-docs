@@ -14,7 +14,7 @@ layout: default
 
 下面是一个要绘制的简单电路：
 
-<img src="/v4/images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
+<img src="/v4/Images/media/image1.png" alt="Simple battery, resistor, and LED circuit used in the tutorial" style="width: 2.13542in; height: 1.13542in;" />
 
 <p>
 	<a href="/v4/examples/First%20Drawing.dsn" class="btn btn-primary" download>
@@ -27,7 +27,7 @@ layout: default
 {: #video-walkthrough}
 
 {% include video-player.html
-	src="/v4/images/video/Video 2.mp4"
+	src="/v4/Images/video/Video 2.mp4"
 	width=1618
 	height=922
 	caption="演示如何编辑和重新定位符号文字的视频。"
@@ -47,15 +47,15 @@ layout: default
 
 使用工具栏上的旋转/翻转控件来调整符号方向：
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 如果操作有误，请使用撤销/重做：
 
-<img src="/v4/images/media/image6.png" alt="Undo and Redo toolbar buttons" />
+<img src="/v4/Images/media/image6.png" alt="Undo and Redo toolbar buttons" />
 
 你的图纸应类似于：
 
-<img src="/v4/images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
+<img src="/v4/Images/media/image7.png" alt="Battery, resistor, and LED symbols placed on the drawing before wiring" style="width: 3.76042in; height: 2.52083in;" />
 
 ## 连接电路
 {: #wiring-up-a-circuit}
@@ -70,7 +70,7 @@ layout: default
 
 连接完成后，图纸应类似于：
 
-<img src="/v4/images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
+<img src="/v4/Images/media/image8.png" alt="Example circuit after the battery, resistor, and LED have been wired together" style="width: 3.40625in; height: 2.38542in;" />
 
 ## 为图纸添加标注
 {: #annotating-the-drawing}
@@ -99,7 +99,7 @@ layout: default
 
 要保存图纸，请使用工具栏上的“另存为”或“保存”按钮：
 
-<img src="/v4/images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
+<img src="/v4/Images/media/image2.png" alt="The toolbar buttons for Save and Save As"  />
 
 
 ### 浏览器 Google
@@ -111,7 +111,7 @@ layout: default
 2. 将其重命名为 `First Drawing.dsn`。
 3. 按 Enter。
 
-<img src="/v4/images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
+<img src="/v4/Images/media/image13.png" alt="Editable drawing title field used to rename the current design" style="width: 4.15625in; height: 0.92708in;" />
 
 使用 **Save（保存）** 图标保存到 Google Drive。
 
@@ -121,7 +121,7 @@ layout: default
 2. 找到该图纸。
 3. 右键单击并选择 **Open with -> TinyCAD（打开方式 -> TinyCAD）**。
 
-<img src="/v4/images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
+<img src="/v4/Images/media/image14.png" alt="Google Drive context menu showing Open with TinyCAD for a drawing file" style="width: 5.09138in; height: 3.90625in;" />
 
 你也可以在 Google Drive 中重命名和删除 TinyCAD 设计。
 

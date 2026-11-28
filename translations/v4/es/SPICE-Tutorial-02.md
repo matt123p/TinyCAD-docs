@@ -67,7 +67,7 @@ se indica que no está disponible; no debe interpretarse como un consumo nulo.
 Abra **dc-sweep**. El **Barrido de CC** guardado usa V1,
 con un valor inicial de 0 V, un valor final de 10 V y un incremento de 0,5 V. Ejecute la simulación y grafique OUT.
 
-![Curva de transferencia de CC calculada](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![Curva de transferencia de CC calculada](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 El eje horizontal corresponde al valor de la fuente barrida, no al tiempo. Los valores esperados son
 0 V, 2,5 V y 5 V para valores de la fuente de 0 V, 5 V y 10 V. La pendiente es de 0,5 V/V.

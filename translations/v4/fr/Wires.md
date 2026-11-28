@@ -32,7 +32,7 @@ Dans TinyCAD v4.0.11, utilisez le sélecteur à côté de Wire pour choisir comm
 
 Le choix d’un mode active Wire et conserve tout aperçu de fil en cours. Vous pouvez changer de mode avant de placer le segment suivant. L’alignement sur la grille reste un réglage distinct. Pour un routage automatique entre deux points de connexion, utilisez l’outil voisin [Fil point à point](#auto-routing).
 
-![Sélecteur de la barre d’outils des fils affichant les choix 90°, 45° et Libre.](../images/wire-routing-modes.png)
+![Sélecteur de la barre d’outils des fils affichant les choix 90°, 45° et Libre.](../Images/wire-routing-modes.png)
 
 ## Placer des fils
 {: #placing-wires}
@@ -46,7 +46,7 @@ Le choix d’un mode active Wire et conserve tout aperçu de fil en cours. Vous 
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Tutoriel vidéo montrant comment placer des fils."
@@ -84,16 +84,16 @@ La résistance et la LED sont alignées sur la grille, mais la connexion entre e
 
 Commencez par sélectionner Fil point à point et choisir la broche de droite de R1.
 
-![1. R1 et D1 sont déconnectés. Le cercle rouge indique la broche de départ sur R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. R1 et D1 sont déconnectés. Le cercle rouge indique la broche de départ sur R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Ensuite, pointez vers la broche supérieure de D1. L’aperçu montre le routage et son coin avant
 que vous ne le validiez.
 
-![2. Aperçu du routage automatique vers D1. Le cercle rouge indique la broche de destination.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Aperçu du routage automatique vers D1. Le cercle rouge indique la broche de destination.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Enfin, cliquez ou touchez la broche de D1. TinyCAD place tous les segments en une seule opération.
 
-![3. Confirmez la destination pour placer la connexion complète, y compris son coin.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Confirmez la destination pour placer la connexion complète, y compris son coin.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 Sur un écran tactile, vous pouvez toucher directement les deux extrémités. Pour les broches petites ou rapprochées,
 utilisez la [loupe](../Touch-controls/#precise-placement-with-the-loupe) : pointez

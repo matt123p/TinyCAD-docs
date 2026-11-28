@@ -31,7 +31,7 @@ Gebruik in TinyCAD v4.0.11 de keuzelijst naast Wire om te kiezen hoe nieuwe segm
 
 Als u een modus kiest, wordt Wire geactiveerd en blijft een eventueel actieve draadvoorbeeldweergave behouden. U kunt de modus wijzigen voordat u het volgende segment plaatst. Rasteruitlijning is een afzonderlijke instelling. Gebruik de aangrenzende [Point-to-Point Wire-tool](#auto-routing) voor automatische routering tussen twee aansluitpunten.
 
-![Werkbalkkeuzelijst voor draden met de keuzes 90°, 45° en Vrij.](../images/wire-routing-modes.png)
+![Werkbalkkeuzelijst voor draden met de keuzes 90°, 45° en Vrij.](../Images/wire-routing-modes.png)
 
 ## Draden plaatsen
 {: #placing-wires}
@@ -45,7 +45,7 @@ Als u een modus kiest, wordt Wire geactiveerd en blijft een eventueel actieve dr
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Videohandleiding waarin wordt getoond hoe u draden plaatst."
@@ -76,15 +76,15 @@ De weerstand en LED staan op het raster, met een open verbinding ertussen.
 
 Selecteer eerst Point-to-Point Wire en kies de rechterpin van R1.
 
-![1. Begin met losgekoppelde R1 en D1. De rode cirkel markeert de startpin op R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. Begin met losgekoppelde R1 en D1. De rode cirkel markeert de startpin op R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Richt vervolgens op de bovenste pin van D1. De voorbeeldweergave toont de route en de hoek voordat u deze bevestigt.
 
-![2. Bekijk een voorbeeld van de automatische route naar D1. De rode cirkel markeert de bestemmingspin.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Bekijk een voorbeeld van de automatische route naar D1. De rode cirkel markeert de bestemmingspin.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Klik of tik ten slotte op de pin van D1. TinyCAD plaatst alle segmenten in één bewerking.
 
-![3. Bevestig de bestemming om de volledige verbinding, inclusief de hoek, te plaatsen.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Bevestig de bestemming om de volledige verbinding, inclusief de hoek, te plaatsen.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 Op een touchscreen kunt u rechtstreeks op de twee eindpunten tikken. Gebruik bij kleine of dicht opeenstaande pinnen het [vergrootglas](../Touch-controls/#precise-placement-with-the-loupe): richt op elk eindpunt en druk op **Klikken**. U hoeft niet langs de route te slepen of op de hoeken te tikken. Controleer de voltooide verbinding en pas de segmenten zo nodig aan.
 

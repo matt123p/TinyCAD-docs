@@ -17,7 +17,7 @@ title: 8. Measuring amplifier gain and bandwidth
 选择已保存的 OUT/IN 派生曲线 **电压增益（Voltage gain）**。查看幅值（dB）
 和相位。请在记录中区分节点电压和无量纲增益。
 
-![计算得到的放大器增益和相位](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![计算得到的放大器增益和相位](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## 先读结果，再解释原因
 {: #read-the-result-before-explaining-it}

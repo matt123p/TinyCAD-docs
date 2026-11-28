@@ -13,7 +13,7 @@ Open **Standard → SPICE essentials** in het zijpaneel, of gebruik **Simulation
 
 Plaats een symbool, selecteer het in de tekening en open **SPICE** in het onderste paneel **Symbol**. **Bundled** toont het gekoppelde model en de bron ervan. Gewone symboolvelden zoals **Value**, **Wiper** en **Initial Voltage** blijven de TinyCAD Basic-modellen aansturen die deze velden gebruiken. Stel bijvoorbeeld **Value** van een weerstand in op `10k` om 10 kΩ te simuleren met het standaardmodel **Ideal resistor**.
 
-![Op het SPICE-tabblad van het geplaatste symbool is Bundled geselecteerd en staat een koppeling naar het TinyCAD Basic-model voor een gele LED.](/v4/images/simulation/bundled-spice-properties.png)
+![Op het SPICE-tabblad van het geplaatste symbool is Bundled geselecteerd en staat een koppeling naar het TinyCAD Basic-model voor een gele LED.](/v4/Images/simulation/bundled-spice-properties.png)
 
 Als u dit in een volledige schakeling wilt uitproberen, kiest u **Open Example → SPICE tutorial → divider** en selecteert u een van de weerstanden. Het tabblad **SPICE** toont de koppeling **Ideal resistor**. Wijzig de weerstandswaarde en voer de Operating Point-instelling van het voorbeeld opnieuw uit. Het bewaarde resultaat geeft de schakeling van vóór uw wijziging weer.
 
@@ -25,13 +25,13 @@ Als u dit in een volledige schakeling wilt uitproberen, kiest u **Open Example �
 3. Selecteer een rij. De details onder de tabel tonen de modelbeschrijving, bron, aansluitvolgorde en eventuele instelbare parameters. Vouw **View SPICE definition** uit om de instantie-template en eventuele modelkaarten of subcircuits te bekijken die het gebruikt. Selecteer de bronkoppeling voor de oorspronkelijke definitie of het upstream-archief en de bestandsnaam van het bestand daarin.
 4. Controleer de pinaansluiting en stel eventuele parameteroverschrijvingen in. Kies **Select SPICE model**. In een tekening wijzigt dit de geselecteerde plaatsing en kan deze wijziging ongedaan worden gemaakt.
 
-![Dialoogvenster Find SPICE model voor een gele LED. Het geselecteerde circsim-model toont de bron en de geverifieerde pinnummers voor anode en kathode.](/v4/images/simulation/bundled-spice-picker.png)
+![Dialoogvenster Find SPICE model voor een gele LED. Het geselecteerde circsim-model toont de bron en de geverifieerde pinnummers voor anode en kathode.](/v4/Images/simulation/bundled-spice-picker.png)
 
 **SPICE essentials-symbolen** tonen alleen modellen met geverifieerde aansluitingen voor de pinindeling van dat symbool. Sommige symbolen hebben alleen het Basic-standaardmodel. Een gele LED biedt bijvoorbeeld het Basic-model en het circsim-model voor een gele LED. Een standaard-NPN-transistor kan het generieke model gebruiken of een alternatief, zoals `2N3904_OJ` van OpenJellyBean, waarbij collector, basis en emitter al zijn toegewezen aan respectievelijk pin 3, 1 en 2.
 
 **Andere symbolen**, waaronder oudere plaatsingen zonder bibliotheekidentiteit, kunnen de volledige catalogus voor hun editie doorzoeken. Controleer de voorgestelde overeenkomsten en selecteer voor elke modelaansluiting een afzonderlijke fysieke pin. Neem voedingspinnen op, ook als ze verborgen zijn in het schema. Gebruik de geverifieerde pinindeling van het symbool en de aansluitvolgorde van het model. Laat fysieke pinnen die het model niet gebruikt buiten de toewijzing. Een tijdelijk symbool met een verkeerd aantal of een verkeerde functie van de pinnen moet worden gecorrigeerd voordat het apparaat ermee kan worden weergegeven.
 
-![Handmatige pinaansluiting voor een 741-symbool in een aangepaste bibliotheek, waarbij de vijf circsim LM741-aansluitingen zijn toegewezen aan fysieke pinnen 3, 2, 6, 7 en 4.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Handmatige pinaansluiting voor een 741-symbool in een aangepaste bibliotheek, waarbij de vijf circsim LM741-aansluitingen zijn toegewezen aan fysieke pinnen 3, 2, 6, 7 en 4.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 In het voorbeeld wordt het circsim-model `LM741` gekoppeld aan een 741-symbool met pinnen 3 (niet-inverterende ingang), 2 (inverterende ingang), 6 (uitgang), 7 (positieve voeding) en 4 (negatieve voeding). Het model laat de offset-null-pinnen buiten beschouwing. Voor een symbool uit een bibliotheek met meerdere onderdelen biedt TinyCAD de pinnummers die gedeeld worden door de onderdelen die de template zullen gebruiken. Kies een compleet pakketmodel als uw symbool en simulatie het volledige pakket nodig hebben.
 

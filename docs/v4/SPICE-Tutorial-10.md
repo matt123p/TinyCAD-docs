@@ -39,7 +39,7 @@ Open **rc-noise**. It requests output noise at OUT,
 referred to independent input source V1, from 1 Hz to 100 kHz at 27°C.
 The ideal source is noiseless; R1 contributes thermal noise filtered by C1.
 
-![Computed RC output-noise spectral density](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Computed RC output-noise spectral density](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 The output-noise total is approximately **64.2 nV RMS** over that band. For an
 ideal RC circuit integrated from zero to infinite frequency, the capacitor's

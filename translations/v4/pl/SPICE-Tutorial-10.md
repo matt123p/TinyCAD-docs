@@ -40,7 +40,7 @@ Otwórz **rc-noise**. Przykład wyznacza szum wyjściowy w punkcie OUT,
 odniesiony do niezależnego źródła wejściowego V1, w zakresie od 1 Hz do 100 kHz przy 27°C.
 Idealne źródło nie generuje szumu; R1 wnosi szum cieplny filtrowany przez C1.
 
-![Widmowa gęstość szumu wyjściowego obwodu RC](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Widmowa gęstość szumu wyjściowego obwodu RC](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 Całkowity szum wyjściowy w tym paśmie wynosi w przybliżeniu **64.2 nV RMS**. Dla
 idealnego obwodu RC, całkowanego od zera do nieskończonej częstotliwości, średni kwadrat szumu kondensatora wynosi `kT/C`, co daje około 64.4 nV RMS przy 300.15 K i 1 µF.

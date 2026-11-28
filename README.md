@@ -85,7 +85,7 @@ canonicals. These account actions are separate from the site build.
 | `docs/_data/navigation.yml` | Manual navigation |
 | `docs/_layouts/`, `docs/_includes/` | Shared Jekyll templates |
 | `docs/assets/` | Shared styles and browser scripts |
-| `docs/v4/images/`, `docs/v4/examples/` | Shared v4 media and example drawings |
+| `docs/v4/Images/`, `docs/v4/examples/` | Shared v4 media and example drawings |
 | `translations/v4/<language>/` | Saved translated Markdown and interface labels |
 | `translations/v4/manifest.json` | Translation cache fingerprints |
 | `scripts/` | Translation, preparation, search, and validation tools |
@@ -250,7 +250,7 @@ The script serves the local application on loopback, uses fresh browser profiles
 opens the real bundled resources and runs the bundled WebAssembly solver. It
 asserts completed acquisitions and divider values. Only the explicit fixture's
 file chooser is supplied by the harness; circuit and result data are not mocked.
-Screenshots are in `docs/v4/images/simulation/`; MP4 recordings and capture
+Screenshots are in `docs/v4/Images/simulation/`; MP4 recordings and capture
 evidence are in `docs/v4/videos/simulation/`. Captions are narration overlays
 and are hidden in the screenshots. Every individual click, selection, edit and
 drag is followed by at least 4.2 seconds; the script verifies a minimum four-second
@@ -296,7 +296,7 @@ xvfb-run -a node scripts/capture-library-folders.mjs ../TinyCADv4
 
 An optional third argument selects a separate directory containing the built
 `index-electron.html`. Five images and a capture manifest are written under
-`docs/v4/images/library-folders/`. Folder creation, drag/drop assignment and
+`docs/v4/Images/library-folders/`. Folder creation, drag/drop assignment and
 renaming are checked through the real UI and temporary desktop configuration;
 personal settings and original library files are not changed.
 
@@ -307,7 +307,7 @@ node scripts/capture-spice-manual.mjs ../TinyCADv4 --only netlist-editor
 ```
 
 The script writes screenshots and a capture manifest under
-`docs/v4/images/netlist-editor/`. Playwright records the walkthrough and
+`docs/v4/Images/netlist-editor/`. Playwright records the walkthrough and
 FFmpeg encodes it as WebM (VP9). The video and its action log are written under
 `docs/v4/videos/netlist-editor/`. The walkthrough starts with the divider
 already open and zoomed in. It switches to the Netlist view, creates a green

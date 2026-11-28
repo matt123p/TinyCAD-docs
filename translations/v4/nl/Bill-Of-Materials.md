@@ -20,7 +20,7 @@ U kunt de stuklijst genereren door de optie in het menu te selecteren. U kunt de
 downloaden als CSV-bestand. Selecteer wanneer u klaar bent "Sluiten" (Close).
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Videohandleiding waarin wordt getoond hoe u een stuklijst genereert."

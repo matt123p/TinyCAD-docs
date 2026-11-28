@@ -18,7 +18,7 @@ La herramienta crea una lista de todas las piezas utilizadas en el diseño actua
 Puede generar la lista de materiales seleccionando la opción correspondiente en el menú. Después, puede descargarla como archivo CSV. Cuando haya terminado, seleccione «Close» (Cerrar).
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Vídeo demostrativo que muestra cómo generar una lista de materiales."

@@ -20,7 +20,7 @@ layout: default
 4. 选择 **确定** 以运行检查。
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="演示如何运行和使用设计规则检查器的视频教程。"

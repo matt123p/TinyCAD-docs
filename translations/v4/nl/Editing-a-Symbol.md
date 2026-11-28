@@ -43,7 +43,7 @@ Als u symbolen wilt doorzoeken en plaatsen in plaats van bewerken, raadpleeg dan
 U kunt vervolgens de afbeeldingen, pennen en symboolattributen wijzigen.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Videohandleiding waarin wordt getoond hoe u een bibliotheek bewerkt."
@@ -78,7 +78,7 @@ Stel voor elke pen het volgende in:
 Plaats de pennen zorgvuldig op het raster, zodat bedrading in het schema eenvoudig is.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Videohandleiding waarin wordt getoond hoe u pennen toevoegt."

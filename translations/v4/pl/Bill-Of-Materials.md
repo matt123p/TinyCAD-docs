@@ -20,7 +20,7 @@ Zestawienie materiałowe można wygenerować, wybierając odpowiednią opcję z 
 pobrać je jako plik CSV. Po zakończeniu wybierz „Zamknij” (Close).
 
 {% include video-player.html
-	src="/v4/images/video/Video 11.mp4"
+	src="/v4/Images/video/Video 11.mp4"
 	width=1294
 	height=952
 	caption="Film instruktażowy pokazujący, jak wygenerować zestawienie materiałowe."

@@ -13,8 +13,8 @@ Open **logic-dff**. Dit voorbeeld bevat afzonderlijke analoge
 stimuli voor D, CLK en RESET. Binnen X1 voeren bruggen signalen naar een XSPICE-D-flipflop;
 Q en NQ worden terug omgezet naar analoge uitgangen om ze weer te geven.
 
-![Testcircuit voor D-flipflop](/v4/images/simulation-tutorials/xspice/logic-dff-circuit.png)
-![Berekende klok, data, reset en Q](/v4/images/simulation-tutorials/xspice/logic-dff-results.png)
+![Testcircuit voor D-flipflop](/v4/Images/simulation-tutorials/xspice/logic-dff-circuit.png)
+![Berekende klok, data, reset en Q](/v4/Images/simulation-tutorials/xspice/logic-dff-results.png)
 
 Voer de transiënte analyse van 8 µs uit. Bij elke stijgende klokflank neemt Q de waarde van D over en behoudt die toestand
 tussen de flanken. NQ is de inverse daarvan zodra de propagatie is uitgestabiliseerd. De

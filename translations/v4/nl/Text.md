@@ -54,7 +54,7 @@ Markdown-tekstvakken zijn beschikbaar in [TinyCAD v4.0.11](../Changelog/#v4011).
 3. Klik ergens anders om de opgemaakte notitie zonder Markdown-markeringen te zien. Maak
    het vak groter als de inhoud wordt afgesneden.
 
-![Met SVG weergegeven Markdown-notitie met een kop, componentenlijst, takenlijst en codeblok.](../images/markdown-preview.png)
+![Met SVG weergegeven Markdown-notitie met een kop, componentenlijst, takenlijst en codeblok.](../Images/markdown-preview.png)
 
 ### Bewerkbare Markdown-bron
 {: #editable-markdown-source}
@@ -69,7 +69,7 @@ De gekozen lettertypefamilie, grootte en instellingen voor vet en cursief vormen
 Koppen worden ten opzichte van die grootte geschaald; code gebruikt ook de gekozen lettertypefamilie. Ongedaan maken,
 kopiëren/plakken en opslaan behouden de Markdown-bron.
 
-![Dezelfde notitie bewerken met zichtbare markeringen voor koppen, vet, lijsten, takenlijsten en codeblokken.](../images/markdown-source-editor.png)
+![Dezelfde notitie bewerken met zichtbare markeringen voor koppen, vet, lijsten, takenlijsten en codeblokken.](../Images/markdown-source-editor.png)
 
 ### Ondersteunde opmaak
 {: #supported-formatting}

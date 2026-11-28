@@ -39,7 +39,7 @@ title: 3. Choosing and configuring signal generators
 ### 电路和参考结果
 {: #circuit-and-reference-results}
 
-![测得的波形示例](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![测得的波形示例](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## 幅度、偏置和时序
 {: #amplitude-offset-and-timing}

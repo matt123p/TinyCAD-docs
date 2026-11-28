@@ -11,7 +11,7 @@ title: 3. Propagation delay and logic hazards
 
 **logic-hazard** を開きます。X1 内では、A の一方のコピーがそのまま AND ゲートに入力されます。もう一方はインバーターを通ってから、もう一方の AND 入力に到達します。ブール式は `A AND NOT A` で、すべてが安定した後は常にゼロです。それでも、過渡状態にはパルスが含まれることがあります。
 
-![計算されたハザードパルス](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![計算されたハザードパルス](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 インバーターの遅延は 100 ns、AND ゲートの遅延は 10 ns です。入力の立ち上がりエッジでは、インバーターが応答するまで反転経路が High のまま、直接経路が High になります。短い時間、AND の両入力が High になるため、出力に正のパルスが現れます。この意図的に単純化したモデルでは、パルス幅は約 100 ns です。反対側の入力エッジでは、両方の AND 入力が Low になる期間を経由するため、同じ正のパルスは発生しません。
 

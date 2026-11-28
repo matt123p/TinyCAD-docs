@@ -15,8 +15,8 @@ SPICE físico de 1 kΩ/1 µF. El nivel alto dura 25 µs en un período de 100 µ
 el ciclo de trabajo nominal es de aproximadamente el 25 %. Los flancos de entrada finitos hacen que el ciclo de trabajo
 preciso, definido por umbral, sea ligeramente distinto.
 
-![Circuito de filtro digital y analógico mixto](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![PWM calculada y salida filtrada](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Circuito de filtro digital y analógico mixto](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![PWM calculada y salida filtrada](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Ejecute el análisis transitorio de 5 ms. Trace A, Y y FILTERED. La ruta digital conserva la
 función de pulso; la red RC calcula su promedio, conservando parte del rizado.
@@ -42,7 +42,7 @@ o un modelo del dispositivo cuando sean importantes la corriente de carga y las 
 Abra **logic-unknown**. Su entrada PWL se mantiene en
 0 V, luego en 2 V y después en 5 V. Ejecute 3 µs e inspeccione la meseta intermedia.
 
-![Representación analógica calculada de un estado digital indefinido](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Representación analógica calculada de un estado digital indefinido](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 Los umbrales bajo y alto del puente ADC son 1 V y 3 V. La meseta de 2 V queda
 entre ellos, por lo que la entrada controlada por eventos queda indefinida. Ese estado desconocido se propaga

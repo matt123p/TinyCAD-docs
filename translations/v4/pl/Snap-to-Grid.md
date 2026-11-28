@@ -29,7 +29,7 @@ niezależne opcje:
 
 Kropki siatki mogą być ukrywane, gdy powiększenie jest zbyt małe, aby wyświetlać je wyraźnie.
 
-![Okno dialogowe Settings z osobnymi polami wyboru Show the grid i Snap to grid.](../images/grid-settings.png)
+![Okno dialogowe Settings z osobnymi polami wyboru Show the grid i Snap to grid.](../Images/grid-settings.png)
 
 Gdy obiekty są zaznaczone, klawisze strzałek przesuwają je o odstęp siatki, jeśli przyciąganie
 jest włączone. Gdy przyciąganie jest wyłączone, obiekty przesuwają się małymi krokami, bez

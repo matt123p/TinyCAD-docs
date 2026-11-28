@@ -21,7 +21,7 @@ Wybierz **Simulation → SPICE → Insert Source**. Przed umieszczeniem otworzy 
 | Wykładniczy | Kształtowanego przejścia | Poziomy, opóźnienia i stałe czasowe |
 | FM | Modulacji częstotliwości | Ustawienia nośnej i modulacji |
 
-![Edytor źródła sinusoidalnego i podgląd przebiegu](../images/simulation/source-settings.png)
+![Edytor źródła sinusoidalnego i podgląd przebiegu](../Images/simulation/source-settings.png)
 
 Podgląd odzwierciedla numeryczne ustawienia przebiegu. Użyj go, aby przed uruchomieniem wychwycić nieoczekiwane przesunięcie, wartość szczytową lub parametry czasowe. Nieprawidłowe ustawienia uniemożliwiają uruchomienie. Ikona źródła zmienia się zależnie od jego przebiegu, a źródło prądowe zachowuje strzałkę kierunku.
 

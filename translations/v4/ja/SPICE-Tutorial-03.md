@@ -40,7 +40,7 @@ Circuit シート上で信号源の本体を選択すると、設定画面が開
 ### 回路と基準結果
 {: #circuit-and-reference-results}
 
-![波形の測定例](/v4/images/simulation-tutorials/spice/source-waveforms.png)
+![波形の測定例](/v4/Images/simulation-tutorials/spice/source-waveforms.png)
 
 ## 振幅、オフセット、タイミング
 {: #amplitude-offset-and-timing}

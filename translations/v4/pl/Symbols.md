@@ -45,7 +45,7 @@ Możesz narysować nowy symbol lub dostosować kopię odpowiedniego istniejąceg
 Poniższy film pokazuje, jak znaleźć i umieścić symbol. Więcej informacji o przeglądaniu selektora i zarządzaniu nim znajdziesz w sekcji [Korzystanie z bibliotek symboli](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Film instruktażowy pokazujący, jak znaleźć i umieścić symbol."
@@ -58,7 +58,7 @@ Poniższy film pokazuje, jak znaleźć i umieścić symbol. Więcej informacji o
 
 Podczas umieszczania symbolu ustaw jego orientację za pomocą przycisków obracania i odbijania na pasku narzędzi.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Edytowanie i przesuwanie tekstu symbolu
@@ -71,7 +71,7 @@ Możesz również niezależnie przesuwać pola tekstowe symbolu (na przykład wa
 Możesz edytować tekst, klikając go.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Film instruktażowy pokazujący, jak edytować i zmieniać położenie tekstu symbolu."

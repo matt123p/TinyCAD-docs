@@ -16,8 +16,8 @@ physique SPICE de 1 kΩ/1 µF. Le plateau haut dure 25 µs sur une période de
 non instantanés font légèrement varier le rapport cyclique précis défini par
 le seuil.
 
-![Circuit de filtre mixte numérique et analogique](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![Signal PWM calculé et sortie filtrée](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Circuit de filtre mixte numérique et analogique](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![Signal PWM calculé et sortie filtrée](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Lancez l’analyse transitoire de 5 ms. Tracez A, Y et FILTERED. Le chemin
 numérique préserve la fonction impulsionnelle ; le réseau RC en fait la moyenne
@@ -50,7 +50,7 @@ Ouvrez **logic-unknown**. Son entrée PWL est maintenue à
 0 V, puis à 2 V, puis à 5 V. Lancez une simulation de 3 µs et examinez le plateau
 intermédiaire.
 
-![Représentation analogique calculée d’un état numérique indéfini](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Représentation analogique calculée d’un état numérique indéfini](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 Les seuils bas et haut du pont CAN sont de 1 V et 3 V. Le plateau de 2 V se
 trouve entre les deux : l’entrée événementielle est donc indéfinie. Cet état

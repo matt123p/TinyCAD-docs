@@ -14,7 +14,7 @@ directly to an AND gate. Another passes through an inverter before reaching the
 other AND input. The Boolean expression is `A AND NOT A`, which is always zero
 after everything settles. Nevertheless, the transient can contain a pulse.
 
-![Computed hazard pulses](/v4/images/simulation-tutorials/xspice/logic-hazard-results.png)
+![Computed hazard pulses](/v4/Images/simulation-tutorials/xspice/logic-hazard-results.png)
 
 The inverter has a 100 ns delay and the AND gate has a 10 ns delay. At an input
 rising edge, the direct path becomes high while the inverted path remains high

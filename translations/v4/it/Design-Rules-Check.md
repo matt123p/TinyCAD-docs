@@ -22,7 +22,7 @@ Punta a non avere errori di progettazione per aumentare la fiducia nella corrett
 4. Seleziona **OK** per eseguire la verifica.
 
 {% include video-player.html
-	src="/v4/images/video/Video 8.mp4"
+	src="/v4/Images/video/Video 8.mp4"
 	width=1622
 	height=952
 	caption="Video dimostrativo che mostra come eseguire e usare il verificatore delle regole di progettazione."

@@ -13,8 +13,8 @@ Open **logic-nand**. X1 contains ADC bridges, a
 two-input XSPICE NAND and a DAC output bridge. Independent pulse sources exercise
 A and B at different rates. Run the 8 µs transient and display A, B and Y.
 
-![NAND test circuit](/v4/images/simulation-tutorials/xspice/logic-nand-circuit.png)
-![Computed NAND waveforms](/v4/images/simulation-tutorials/xspice/logic-nand-results.png)
+![NAND test circuit](/v4/Images/simulation-tutorials/xspice/logic-nand-circuit.png)
+![Computed NAND waveforms](/v4/Images/simulation-tutorials/xspice/logic-nand-results.png)
 
 The Boolean function is `Y = NOT(A AND B)`:
 

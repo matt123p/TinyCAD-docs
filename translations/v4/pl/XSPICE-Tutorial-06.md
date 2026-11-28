@@ -12,8 +12,8 @@ Przykłady z tego rozdziału są dołączone do TinyCAD. Wybierz **Open Example 
 Otwórz **logic-filter**. Ciąg impulsów 0–5 V o częstotliwości 10 kHz
 przechodzi przez bufor XSPICE i mostek DAC, a następnie steruje fizycznym filtrem dolnoprzepustowym SPICE 1 kΩ/1 µF. Poziom wysoki trwa 25 µs w okresie 100 µs, więc nominalny współczynnik wypełnienia wynosi około 25%. Niezerowe czasy narastania i opadania na wejściu sprawiają, że dokładny współczynnik wypełnienia wyznaczony progami jest nieco inny.
 
-![Obwód mieszanego filtrowania sygnałów cyfrowych i analogowych](/v4/images/simulation-tutorials/xspice/logic-filter-circuit.png)
-![Obliczony przebieg PWM i sygnał po filtracji](/v4/images/simulation-tutorials/xspice/logic-filter-results.png)
+![Obwód mieszanego filtrowania sygnałów cyfrowych i analogowych](/v4/Images/simulation-tutorials/xspice/logic-filter-circuit.png)
+![Obliczony przebieg PWM i sygnał po filtracji](/v4/Images/simulation-tutorials/xspice/logic-filter-results.png)
 
 Uruchom analizę stanów nieustalonych trwającą 5 ms. Narysuj przebiegi A, Y i FILTERED. Tor cyfrowy zachowuje funkcję impulsową; sieć RC uśrednia sygnał, pozostawiając pewne tętnienia.
 Średnia długookresowa zbliża się do `5 V × 0.25 ≈ 1.25 V`. Ponieważ τ = 1 ms, rozruch trwa kilka milisekund.
@@ -30,7 +30,7 @@ To przydatny model do zrozumienia konwersji PWM na napięcie. Nie jest to komple
 
 Otwórz **logic-unknown**. Sygnał wejściowy PWL ma kolejno poziomy 0 V, 2 V i 5 V. Uruchom symulację na 3 µs i sprawdź środkowy poziom.
 
-![Obliczona analogowa reprezentacja nieokreślonego stanu cyfrowego](/v4/images/simulation-tutorials/xspice/logic-unknown-results.png)
+![Obliczona analogowa reprezentacja nieokreślonego stanu cyfrowego](/v4/Images/simulation-tutorials/xspice/logic-unknown-results.png)
 
 Progi niski i wysoki mostka ADC wynoszą odpowiednio 1 V i 3 V. Poziom 2 V znajduje się między nimi, więc wejście sterowane zdarzeniami ma stan nieokreślony. Stan nieokreślony propaguje się przez bufor. Mostek DAC odwzorowuje go na **2.5 V**, ponieważ jego parametr `out_undef` jawnie określa ten poziom wyświetlania.
 

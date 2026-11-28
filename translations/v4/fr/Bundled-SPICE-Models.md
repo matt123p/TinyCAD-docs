@@ -13,7 +13,7 @@ Ouvrez **Standard → Éléments SPICE essentiels** dans le panneau latéral, ou
 
 Placez un symbole, sélectionnez-le dans le dessin et ouvrez **SPICE** dans le panneau inférieur **Symbole**. **Intégré** affiche le modèle associé et sa source. Les champs de symbole ordinaires, tels que **Valeur**, **Curseur** et **Tension initiale**, contrôlent toujours les modèles TinyCAD Basic qui utilisent ces champs. Par exemple, définissez la **Valeur** d’une résistance sur `10k` pour simuler 10 kΩ avec son modèle par défaut **Résistance idéale**.
 
-![L’onglet SPICE du symbole placé affiche Intégré sélectionné et renvoie au modèle TinyCAD Basic de DEL jaune.](/v4/images/simulation/bundled-spice-properties.png)
+![L’onglet SPICE du symbole placé affiche Intégré sélectionné et renvoie au modèle TinyCAD Basic de DEL jaune.](/v4/Images/simulation/bundled-spice-properties.png)
 
 Pour essayer cela dans un circuit complet, choisissez **Ouvrir un exemple → Didacticiel SPICE → diviseur**, puis sélectionnez l’une des résistances. Son onglet **SPICE** affiche le lien **Résistance idéale**. Modifiez la valeur de la résistance, puis relancez la configuration de point de fonctionnement de l’exemple. Le résultat conservé représente le circuit avant votre modification.
 
@@ -25,13 +25,13 @@ Pour essayer cela dans un circuit complet, choisissez **Ouvrir un exemple → Di
 3. Sélectionnez une ligne. Les détails sous le tableau affichent la description du modèle, sa source, l’ordre des bornes et les paramètres réglables éventuels. Développez **Afficher la définition SPICE** pour voir le modèle d’instance ainsi que les cartes de modèle ou sous-circuits utilisés. Sélectionnez le lien de la source pour consulter la définition originale ou l’archive en amont et le nom du fichier qu’elle contient.
 4. Vérifiez le mappage des broches et définissez les éventuelles substitutions de paramètres. Choisissez **Sélectionner le modèle SPICE**. Dans un dessin, cette opération modifie le placement sélectionné et peut être annulée.
 
-![Boîte de dialogue Rechercher un modèle SPICE pour une DEL jaune. Le modèle circsim sélectionné affiche sa source ainsi que les numéros de broches vérifiés de l’anode et de la cathode.](/v4/images/simulation/bundled-spice-picker.png)
+![Boîte de dialogue Rechercher un modèle SPICE pour une DEL jaune. Le modèle circsim sélectionné affiche sa source ainsi que les numéros de broches vérifiés de l’anode et de la cathode.](/v4/Images/simulation/bundled-spice-picker.png)
 
 Les **symboles SPICE essentiels** ne répertorient que les modèles dont le mappage a été vérifié pour la configuration des broches du symbole. Certains symboles n’ont que le modèle Basic par défaut. Par exemple, une DEL jaune propose son modèle Basic et le modèle circsim de DEL jaune. Un transistor NPN standard peut utiliser le modèle générique ou une variante telle que `2N3904_OJ` d’OpenJellyBean, avec le collecteur, la base et l’émetteur déjà mappés respectivement aux broches 3, 1 et 2.
 
 Les **autres symboles**, y compris les anciens placements sans identité de bibliothèque, peuvent parcourir le catalogue complet de leur édition. Examinez les correspondances suggérées et sélectionnez une broche physique distincte pour chaque borne du modèle. Incluez les broches d’alimentation, même lorsqu’elles sont masquées sur le schéma. Utilisez le brochage de boîtier vérifié du symbole et l’ordre des bornes du modèle. Laissez hors du mappage les broches physiques omises par le modèle. Un symbole temporaire dont le nombre ou la fonction des broches est incorrect doit être corrigé avant de pouvoir représenter le composant.
 
-![Mappage manuel des broches pour un symbole 741 dans une bibliothèque personnalisée, avec les cinq bornes du circsim LM741 attribuées aux broches physiques 3, 2, 6, 7 et 4.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Mappage manuel des broches pour un symbole 741 dans une bibliothèque personnalisée, avec les cinq bornes du circsim LM741 attribuées aux broches physiques 3, 2, 6, 7 et 4.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 L’exemple mappe le modèle circsim `LM741` à un symbole 741 à l’aide des broches 3 (entrée non-inverseuse), 2 (entrée inverseuse), 6 (sortie), 7 (alimentation positive) et 4 (alimentation négative). Le modèle omet les broches de réglage du décalage. Pour un symbole de bibliothèque à plusieurs sections, TinyCAD propose les numéros de broches communs aux sections qui utiliseront le modèle. Choisissez un modèle de boîtier complet lorsque votre symbole et votre simulation nécessitent le boîtier complet.
 

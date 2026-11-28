@@ -81,7 +81,7 @@ L'icona a forma di impulso nella barra degli strumenti mostra il testo al passag
 il menu di quell'icona. La **Simulation sheet** è una scheda separata all'interno del disegno;
 contiene la configurazione dell'esperimento e le viste dei risultati.
 
-![TinyCAD con il primo circuito divider e il relativo pannello dei grafici di simulazione](/v4/images/simulation-tutorials/spice/tinycad-first-run.png)
+![TinyCAD con il primo circuito divider e il relativo pannello dei grafici di simulazione](/v4/Images/simulation-tutorials/spice/tinycad-first-run.png)
 
 Questa schermata dell'applicazione mostra il divider dopo l'apertura, con le schede dei fogli
 sotto il circuito e il pannello dei grafici a destra. I punti di partenza principali

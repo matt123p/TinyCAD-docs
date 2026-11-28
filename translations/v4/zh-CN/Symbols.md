@@ -45,7 +45,7 @@ layout: default
 下方视频演示了如何查找和放置符号。有关浏览和管理选择器的更多信息，请参阅[使用符号库](../Using-Symbol-Libraries/)。
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="查找和放置符号的视频演示。"
@@ -58,7 +58,7 @@ layout: default
 
 放置符号时，使用工具栏上的旋转和翻转按钮设置方向。
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## 编辑和移动符号文本
@@ -71,7 +71,7 @@ layout: default
 单击文本即可编辑。
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="编辑和重新定位符号文本的视频演示。"

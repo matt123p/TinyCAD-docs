@@ -13,7 +13,7 @@ TinyCAD 随附一个离线 SPICE 模型目录。使用捆绑模型通过 ngspice
 
 放置一个符号，在图纸中选中它，然后打开底部 **Symbol** 面板中的 **SPICE**。**Bundled** 会显示关联的模型及其来源。对于使用这些字段的 TinyCAD Basic 模型，**Value**、**Wiper** 和 **Initial Voltage** 等普通符号字段仍然有效。例如，将电阻的 **Value** 设为 `10k`，即可使用默认的 **Ideal resistor** 模型仿真 10 kΩ 电阻。
 
-![已放置符号的 SPICE 选项卡显示已选中 Bundled，并链接到 TinyCAD Basic yellow LED 模型。](/v4/images/simulation/bundled-spice-properties.png)
+![已放置符号的 SPICE 选项卡显示已选中 Bundled，并链接到 TinyCAD Basic yellow LED 模型。](/v4/Images/simulation/bundled-spice-properties.png)
 
 若要在完整电路中尝试此操作，请选择 **Open Example → SPICE tutorial → divider**，然后选中其中一个电阻。其 **SPICE** 选项卡会显示 **Ideal resistor** 链接。更改电阻值，然后再次运行该示例的 Operating Point 设置。保留的结果反映的是编辑前的电路。
 
@@ -25,13 +25,13 @@ TinyCAD 随附一个离线 SPICE 模型目录。使用捆绑模型通过 ngspice
 3. 选择一行。表格下方的详细信息会显示模型描述、来源、端子顺序以及可调参数。展开 **View SPICE definition** 可查看实例模板及其使用的模型卡或子电路。选择来源链接可查看原始定义，或上游存档和成员文件名。
 4. 检查引脚映射并设置参数覆盖值。选择 **Select SPICE model**。在图纸中，此操作会更改当前选中的放置实例，并且可以撤销。
 
-![黄色 LED 的 Find SPICE model 对话框。选中的 circsim 模型显示了其来源以及已验证的阳极和阴极引脚编号。](/v4/images/simulation/bundled-spice-picker.png)
+![黄色 LED 的 Find SPICE model 对话框。选中的 circsim 模型显示了其来源以及已验证的阳极和阴极引脚编号。](/v4/Images/simulation/bundled-spice-picker.png)
 
 **SPICE essentials symbols** 仅列出与该符号引脚布局映射经过验证的模型。有些符号只有 Basic 默认模型。例如，黄色 LED 提供其 Basic 模型和 circsim yellow LED 模型。标准 NPN 晶体管可使用通用模型，也可使用替代模型，例如 OpenJellyBean 的 `2N3904_OJ`；集电极、基极和发射极已分别映射到引脚 3、1 和 2。
 
 **其他符号**（包括缺少库标识的旧放置实例）可以浏览其版本的完整目录。检查建议匹配项，并为每个模型端子选择一个不同的物理引脚。即使电源引脚在原理图中隐藏，也要将其包括在内。请使用符号经过验证的封装引脚排列和模型端子顺序。未被模型包含的物理引脚不要纳入映射。引脚数量或功能不正确的临时符号必须先修正，才能用于表示该器件。
 
-![自定义库中 741 符号的手动引脚映射，五个 circsim LM741 端子已分配到物理引脚 3、2、6、7 和 4。](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![自定义库中 741 符号的手动引脚映射，五个 circsim LM741 端子已分配到物理引脚 3、2、6、7 和 4。](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 此示例将 circsim `LM741` 模型映射到一个 741 符号，使用引脚 3（同相输入）、2（反相输入）、6（输出）、7（正电源）和 4（负电源）。该模型不包含失调调零引脚。对于多单元库符号，TinyCAD 会提供将使用此模板的各单元共用的引脚编号。如果符号和仿真都需要完整封装，请选择完整封装模型。
 

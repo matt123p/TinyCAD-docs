@@ -24,7 +24,7 @@ Puede convertirlo en un polígono seleccionando «Cerrar polígono» (Close Poly
 Una vez convertido en polígono, puede cambiar el relleno.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Videotutorial que muestra cómo dibujar y editar un polígono."

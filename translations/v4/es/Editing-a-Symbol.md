@@ -43,7 +43,7 @@ Si buscas cómo explorar y colocar símbolos en lugar de editarlos, consulta [Us
 A continuación, puedes modificar los gráficos, los pines y los atributos del símbolo.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Recorrido en vídeo que muestra cómo editar una biblioteca."
@@ -78,7 +78,7 @@ Para cada pin, establece:
 Coloca los pines cuidadosamente sobre la cuadrícula para facilitar el cableado en el esquema.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Recorrido en vídeo que muestra cómo añadir pines."

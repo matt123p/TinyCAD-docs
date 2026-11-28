@@ -50,7 +50,7 @@ Markdown 文本框从 [TinyCAD v4.0.11](../Changelog/#v4011) 起提供。
 2. 在框内单击并输入 Markdown。输入时即可看到格式效果。
 3. 单击其他位置，即可查看不带 Markdown 标记的格式化备注。如果内容被截断，请调整文本框大小。
 
-![使用 SVG 渲染的 Markdown 备注，其中包含标题、元件列表、任务列表和代码块。](../images/markdown-preview.png)
+![使用 SVG 渲染的 Markdown 备注，其中包含标题、元件列表、任务列表和代码块。](../Images/markdown-preview.png)
 
 ### 可编辑的 Markdown 源文本
 {: #editable-markdown-source}
@@ -64,7 +64,7 @@ Markdown 文本框从 [TinyCAD v4.0.11](../Changelog/#v4011) 起提供。
 标题会相对于该字号缩放；代码也使用所选字体系列。撤销、
 复制/粘贴和保存操作都会保留 Markdown 源文本。
 
-![编辑同一备注时，可见标题、粗体、列表、任务列表和代码围栏标记。](../images/markdown-source-editor.png)
+![编辑同一备注时，可见标题、粗体、列表、任务列表和代码围栏标记。](../Images/markdown-source-editor.png)
 
 ### 支持的格式
 {: #supported-formatting}

@@ -26,7 +26,7 @@ Bibliotheksordner sind nur in der Desktop-App verfügbar.
 
 Browserbasierte Modi zeigen, sofern unterstützt, weiterhin „Meine Bibliotheken“ an, bieten jedoch keine Möglichkeit, Ordner zu erstellen oder Bibliotheken in Ordnern zu gruppieren oder per Drag-and-drop zu verschieben.
 
-![Desktopansicht von „Meine Bibliotheken“ mit dem aufgeklappten Ordner „Schaltungskomponenten“, einem leeren Ordner „Sensoren und Module“ und nicht zugeordneten Bibliotheken.](../images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
+![Desktopansicht von „Meine Bibliotheken“ mit dem aufgeklappten Ordner „Schaltungskomponenten“, einem leeren Ordner „Sensoren und Module“ und nicht zugeordneten Bibliotheken.](../Images/library-folders/folders-overview.png){: width="460" style="max-width: 100%;"}
 
 #### Verfügbare Aktionen
 {: #what-you-can-do}
@@ -50,7 +50,7 @@ Bibliotheken, die keinem Ordner zugeordnet sind, werden im Abschnitt „Nicht zu
 4. Geben Sie einen Namen für den neuen Ordner ein, z. B. `Project libraries`.
 5. Wählen Sie **Hinzufügen**.
 
-![Dialogfeld „Ordner erstellen“ mit der Eingabe „Projektbibliotheken“ und der Schaltfläche „Hinzufügen“, bereit zum Bestätigen.](../images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
+![Dialogfeld „Ordner erstellen“ mit der Eingabe „Projektbibliotheken“ und der Schaltfläche „Hinzufügen“, bereit zum Bestätigen.](../Images/library-folders/folder-create.png){: width="600" style="max-width: 100%;"}
 
 Der neue Ordner wird in der Bibliotheksliste angezeigt und kann sofort ausgewählt werden.
 
@@ -72,7 +72,7 @@ Wenn Sie auf eine Bibliothek klicken, wählt TinyCAD automatisch den Ordner aus,
 
 Die ausgewählten Bibliotheken werden dem ausgewählten Ordner hinzugefügt.
 
-![In „Meine Bibliotheken“ ausgewählte Projektbibliotheken mit einem leeren Ablagebereich und der Schaltfläche zum Hinzufügen von Bibliotheken in der Kopfzeile.](../images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
+![In „Meine Bibliotheken“ ausgewählte Projektbibliotheken mit einem leeren Ablagebereich und der Schaltfläche zum Hinzufügen von Bibliotheken in der Kopfzeile.](../Images/library-folders/folder-selected.png){: width="460" style="max-width: 100%;"}
 
 Wenn Sie keinen eigenen Ordner auswählen, werden Bibliotheken unter „Nicht zugeordnet“ hinzugefügt.
 
@@ -85,7 +85,7 @@ Sie können eine Bibliothek auch auf „Nicht zugeordnet“ ziehen, um sie aus e
 
 Ist ein Ordner leer, zeigt TinyCAD ein Ablageziel an, auf das Sie Bibliotheken verschieben können.
 
-![Die Schnittstellen für Sensoren wurden aus „Nicht zugeordnet“ in „Sensoren und Module“ verschoben. Die Steuerelemente zum Neuordnen, Umbenennen und Entfernen des ausgewählten Ordners sind sichtbar.](../images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
+![Die Schnittstellen für Sensoren wurden aus „Nicht zugeordnet“ in „Sensoren und Module“ verschoben. Die Steuerelemente zum Neuordnen, Umbenennen und Entfernen des ausgewählten Ordners sind sichtbar.](../Images/library-folders/folder-organise.png){: width="460" style="max-width: 100%;"}
 
 #### Ordner neu anordnen
 {: #reorder-folders}
@@ -106,7 +106,7 @@ Die Schaltflächen für Ordneraktionen werden angezeigt, wenn Sie mit dem Mausze
 - Wählen Sie **Ordner umbenennen** (das Stiftsymbol), um den Ordner umzubenennen. Geben Sie den neuen Namen ein und wählen Sie **Umbenennen**.
 - Wählen Sie **Ordner entfernen** (das Papierkorbsymbol), um den Ordner zu entfernen. Bestätigen Sie mit **Löschen**.
 
-![Dialogfeld „Ordner umbenennen“, in dem „Sensoren und Module“ in „Sensoren und Anzeigen“ geändert wird.](../images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
+![Dialogfeld „Ordner umbenennen“, in dem „Sensoren und Module“ in „Sensoren und Anzeigen“ geändert wird.](../Images/library-folders/folder-rename.png){: width="600" style="max-width: 100%;"}
 
 Beim Löschen eines Ordners werden alle darin enthaltenen Bibliotheken nach „Nicht zugeordnet“ verschoben. Die Bibliotheksdateien selbst werden nicht aus TinyCAD entfernt.
 

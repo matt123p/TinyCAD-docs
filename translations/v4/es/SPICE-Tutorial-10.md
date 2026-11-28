@@ -41,7 +41,7 @@ Abra **rc-noise**. Este solicita el ruido de salida en OUT,
 referido a la fuente de entrada independiente V1, de 1 Hz a 100 kHz a 27 °C.
 La fuente ideal no genera ruido; R1 contribuye ruido térmico filtrado por C1.
 
-![Densidad espectral de ruido de salida RC calculada](/v4/images/simulation-tutorials/spice/rc-noise-results.png)
+![Densidad espectral de ruido de salida RC calculada](/v4/Images/simulation-tutorials/spice/rc-noise-results.png)
 
 El ruido total de salida es aproximadamente **64.2 nV RMS** en esa banda. Para un
 circuito RC ideal integrado desde cero hasta una frecuencia infinita, el ruido cuadrático medio del condensador es `kT/C`, lo que da unos 64.4 nV RMS a 300.15 K y 1 µF.

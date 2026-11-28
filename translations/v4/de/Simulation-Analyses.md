@@ -23,7 +23,7 @@ Die Arbeitspunktanalyse ermittelt eine stationäre DC-Lösung. Ideale Kondensato
 
 Verwenden Sie **Daten** für Knotenspannungen und Zweigströme. Die Spannung bezieht sich auf Masse 0. Die Stromrichtung folgt der festgelegten Reihenfolge der Anschlüsse des Bauteils; ein negativer Versorgungsstrom kann einfach bedeuten, dass die Versorgung Leistung abgibt. Das [DC-Tutorial](../SPICE-Tutorial-02/) erläutert Spannung, Strom und Leistung.
 
-![Skalare Spannungs- und Stromergebnisse des aktuellen Arbeitspunktlaufs des Spannungsteilers](../images/simulation/simulation-data.png)
+![Skalare Spannungs- und Stromergebnisse des aktuellen Arbeitspunktlaufs des Spannungsteilers](../Images/simulation/simulation-data.png)
 
 ## Transient: Verhalten über die Zeit
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Legen Sie Start- und Endfrequenz sowie die Anzahl der Punkte pro Dekade fest. Ei
 
 Legen Sie **AC-Amplitude** und Phase der Quelle getrennt von den Einstellungen ihrer transienten Wellenform fest. Eine AC-Amplitude von **1 V** bei einer Phase von **0°** erleichtert die Interpretation einer Spannungsübertragungsfunktion mit einem Eingang. Eine transiente Sinusamplitude allein aktiviert keine AC-Anregung. Bei einem allgemeinen Eingang berechnen Sie das komplexe Verhältnis `V(out) / V(in)`; die Ausgangsspannung allein ist nicht immer die Verstärkung.
 
-![AC-Durchlaufeinstellungen für den mitgelieferten RC-Filter](../images/simulation/ac-setup.png)
+![AC-Durchlaufeinstellungen für den mitgelieferten RC-Filter](../Images/simulation/ac-setup.png)
 
 Für einen Tiefpass erster Ordnung mit R = 1 kΩ und C = 1 µF gilt `fc = 1 / (2πRC) ≈ 159.15 Hz`. Bei dieser Frequenz hat ein Filter mit Durchlassverstärkung eins eine Verstärkung von etwa 0,707 beziehungsweise −3,0103 dB und eine Phase von etwa −45°. Das [Filter-Tutorial](../SPICE-Tutorial-05/) zeigt Betrag, dB und Phase.
 
-![Tatsächliche AC-Ergebnisse eines aktuellen Browserlaufs des RC-Beispiels](../images/simulation/ac-charts.png)
+![Tatsächliche AC-Ergebnisse eines aktuellen Browserlaufs des RC-Beispiels](../Images/simulation/ac-charts.png)
 
 ## DC-Durchlauf
 {: #dc-sweep}

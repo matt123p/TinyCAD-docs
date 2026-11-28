@@ -13,7 +13,7 @@ Otwórz **amp-small-signal**. VIN dostarcza
 sinusoidę o amplitudzie szczytowej 10 mV i częstotliwości 1 kHz. Analiza przejściowa trwa 12 ms, a maksymalny krok wynosi 2 µs.
 Porównaj IN i OUT, a następnie zmierz ostatnie cztery okresy, od 8 ms do 12 ms.
 
-![Zmierzony przebieg wzmacniacza małosygnałowego](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Zmierzony przebieg wzmacniacza małosygnałowego](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 Wynik analizy AC przewiduje na OUT amplitudę szczytową około 8,92 mV, z odwróceniem fazy względem wejścia.
 Analiza przejściowa daje w oknie pomiarowym wartości od około −8,87 do +8,99 mV,
@@ -45,7 +45,7 @@ Otwórz **amp-clipping**. Zmieniono tylko amplitudę VIN,
 do 500 mV wartości szczytowej. Liniowa ekstrapolacja przewidywałaby na OUT amplitudę szczytową około 446 mV
 w obu kierunkach. Obliczony przebieg nie jest taki.
 
-![Obliczony asymetryczny sygnał wyjściowy o dużej amplitudzie](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Obliczony asymetryczny sygnał wyjściowy o dużej amplitudzie](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 W tym samym oknie 8–12 ms napięcie wyjściowe zmienia się w przybliżeniu od
 **−0,162 do +0,389 V**, a jego wartość skuteczna wynosi **0,2126 V RMS**. Pobór mocy z zasilania wynosi w przybliżeniu

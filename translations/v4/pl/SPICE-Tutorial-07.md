@@ -13,7 +13,7 @@ Otwórz **amp-bias**. Odtwarza on topologię
 `D:\Projects\TinyCAD\examples\AMP.DSN`, zatytułowaną **Transistor Amplifier**
 i przypisaną w oryginale Mattowi Pyne'owi (1995). Wykorzystuje elementy z biblioteki TinyCAD SPICE essentials oraz konfigurowalne źródła symulacyjne.
 
-![Odtworzony AMP.DSN z elementami symulacyjnymi](/v4/images/simulation-tutorials/spice/amp-bias-circuit.png)
+![Odtworzony AMP.DSN z elementami symulacyjnymi](/v4/Images/simulation-tutorials/spice/amp-bias-circuit.png)
 
 ## Co zachowano, a co zamodelowano
 {: #what-was-preserved-and-what-was-modelled}

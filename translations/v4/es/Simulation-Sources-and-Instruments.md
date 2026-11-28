@@ -21,7 +21,7 @@ Elija **Simulation → SPICE → Insert Source**. El editor se abre antes de col
 | Exponential | Una transición conformada | Niveles, retardos y constantes de tiempo |
 | FM | Modulación de frecuencia | Ajustes de portadora y modulación |
 
-![El editor de fuente senoidal y la vista previa de la forma de onda](../images/simulation/source-settings.png)
+![El editor de fuente senoidal y la vista previa de la forma de onda](../Images/simulation/source-settings.png)
 
 La vista previa refleja los ajustes numéricos de la forma de onda. Úsela para detectar desplazamientos, picos o temporizaciones inesperados antes de ejecutar la simulación. Los ajustes no válidos impiden el inicio. El icono de una fuente cambia según su forma de onda, y una fuente de corriente conserva su flecha de dirección.
 

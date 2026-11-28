@@ -30,7 +30,7 @@ Asystent najpierw przeszukuje [dołączone biblioteki](../Bundled-Libraries/), a
 
 W przypadku części wielokrotnego użytku najpierw [utwórz lub otwórz bibliotekę niestandardową do edycji](../Custom-symbol-libraries/), a następnie otwórz Chat w oknie tej biblioteki. W przypadku układu pozostaw aktywne docelowe okno rysunku. Powiedz asystentowi, o który arkusz, oznaczenia elementów lub blok funkcjonalny chodzi. Bieżące pobieranie i umieszczanie symboli przez AI obsługuje **symbole jednokrotne**; w przypadku części wielosekcyjnych, których asystent nie może zaimportować, użyj zwykłego edytora symboli.
 
-{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/images/ai-assistant/chat-open-desktop.png" caption="Utwórz symbol na podstawie karty katalogowej w TinyCAD Desktop. Oczekiwanie na przetwarzanie AI jest przedstawiane z prędkością 12× i oznaczone na ekranie; interakcje i wyniki są przedstawiane z normalną prędkością." %}
+{% include video-player.html src="/v4/videos/ai-assistant/ai-assistant-demo.mp4" poster="/v4/Images/ai-assistant/chat-open-desktop.png" caption="Utwórz symbol na podstawie karty katalogowej w TinyCAD Desktop. Oczekiwanie na przetwarzanie AI jest przedstawiane z prędkością 12× i oznaczone na ekranie; interakcje i wyniki są przedstawiane z normalną prędkością." %}
 
 ## Konfiguracja połączenia
 {: #set-up-a-connection}
@@ -42,7 +42,7 @@ W przypadku części wielokrotnego użytku najpierw [utwórz lub otwórz bibliot
 2. Kliknij **Click here to Sign in to use AI** lub ikonę koła zębatego **AI settings** w nagłówku panelu.
 3. W kroku **Step 1 — Choose provider** wybierz dostawcę, a następnie kliknij **Next**.
 
-![Ustawienia AI z widocznym krokiem wyboru dostawcy](../images/ai-assistant/setup-provider.png)
+![Ustawienia AI z widocznym krokiem wyboru dostawcy](../Images/ai-assistant/setup-provider.png)
 
 Jednocześnie możesz połączyć się z jednym dostawcą.
 
@@ -70,7 +70,7 @@ W TinyCAD Desktop wybierz **ChatGPT**, a następnie **Sign In with ChatGPT** w k
 
 Jeśli zapamiętano konto, ekran wyświetli opcję **Continue as …** lub **Sign in with a different account**. TinyCAD przechowuje jednocześnie jedno konto. Po połączeniu nad polem wiadomości pojawią się opcje **Using ChatGPT plan** i **Manage usage**. Informacja wyświetlana przy pierwszym użyciu wyjaśnia, że zapytania wykorzystują limit planu lub dostępne środki.
 
-![Ustawienia AI w wersji Desktop z opcją Sign In with ChatGPT lub Use API Key](../images/ai-assistant/setup-chatgpt-desktop.png)
+![Ustawienia AI w wersji Desktop z opcją Sign In with ChatGPT lub Use API Key](../Images/ai-assistant/setup-chatgpt-desktop.png)
 
 Logowanie do ChatGPT wymaga kwalifikującego się płatnego konta; nadal obowiązują limity konta, obszaru roboczego i aplikacji. W razie odrzucenia zapytania nie następuje po cichu przełączenie na rozliczenia kluczem API. Informacje o połączeniu z planem konta znajdziesz w dokumentacji OpenAI [Sign in with ChatGPT](https://developers.openai.com/siwc/token-sharing-open-source).
 
@@ -83,20 +83,20 @@ Logowanie do ChatGPT wymaga kwalifikującego się płatnego konta; nadal obowią
 4. W przypadku **OpenAI compatible** wprowadź również **API base URL** usługi.
 5. Kliknij **Next**. TinyCAD sprawdzi połączenie i automatycznie pobierze dostępne modele.
 
-![Pole wprowadzania klucza API ChatGPT z zamaskowanym kluczem i instrukcjami dostawcy](../images/ai-assistant/setup-api-key.png)
+![Pole wprowadzania klucza API ChatGPT z zamaskowanym kluczem i instrukcjami dostawcy](../Images/ai-assistant/setup-api-key.png)
 
 Jeśli punkt końcowy nie potrafi wyświetlić listy modeli, w kroku 2 TinyCAD poprosi o **Model ID**. Wprowadź dokładny identyfikator dostawcy i ponownie kliknij **Next**; krótkie powitanie sprawdzi połączenie. Te testy mogą wykorzystywać limit dostawcy. Jeśli połączenie się nie powiedzie, pozostaniesz w kroku 2 i zostanie wyświetlony błąd.
 
 W przypadku Gemini utwórz lub wybierz projekt w Google AI Studio i skopiuj jego klucz API do TinyCAD. Na stronie Google [Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing) wyjaśniono, które modele i sposoby korzystania kwalifikują się do bezpłatnego poziomu. Płatne modele lub większe użycie mogą wymagać włączenia rozliczeń.
 
-![Konfiguracja Google Gemini z odnośnikiem do klucza Google AI Studio](../images/ai-assistant/setup-gemini.png)
+![Konfiguracja Google Gemini z odnośnikiem do klucza Google AI Studio](../Images/ai-assistant/setup-gemini.png)
 
 ### 3. Wybierz model i poziom rozumowania
 {: #pick-a-model-and-thinking-level}
 
 Po pomyślnym połączeniu wybierz model w kroku **Step 3 — Pick Model**, dostosuj opcję **Thinking**, a następnie kliknij **Finish**.
 
-![Wybór modelu i suwak Thinking w ostatnim kroku konfiguracji](../images/ai-assistant/setup-model.png)
+![Wybór modelu i suwak Thinking w ostatnim kroku konfiguracji](../Images/ai-assistant/setup-model.png)
 
 Lista modeli na ilustracji jest przykładowa; dostępne modele zależą od dostawcy, punktu końcowego i konta. ChatGPT wyświetla obsługiwane modele Sol, Luna i Astra zwrócone przez używane połączenie. Najnowsze wersje są wyświetlane jako pierwsze, starsze znajdują się w sekcji **More models**, a do sześciu ostatnio używanych modeli jest zapamiętywanych.
 
@@ -113,7 +113,7 @@ Opcja **Thinking** obejmuje poziomy od **Minimal** do **Max** i domyślnie jest 
 4. Użyj **Ollama API URL**, zwykle `http://localhost:11434/v1`, a następnie kliknij **Next**, aby wyświetlić listę zainstalowanych modeli.
 5. Wybierz model i poziom rozumowania, a następnie kliknij **Finish**.
 
-![Konfiguracja Ollama z lokalnym adresem URL API i wskazówkami dotyczącymi źródła przeglądarki](../images/ai-assistant/setup-ollama.png)
+![Konfiguracja Ollama z lokalnym adresem URL API i wskazówkami dotyczącymi źródła przeglądarki](../Images/ai-assistant/setup-ollama.png)
 
 Połączenie Ollama akceptuje adresy URL localhost/loopback. W przypadku zdalnego serwera wybierz **OpenAI compatible**. Zapewnij lokalnemu modelowi wystarczający kontekst do obsługi rozmowy i narzędzi TinyCAD; zobacz [konfigurację kontekstu Ollama](https://docs.ollama.com/api/openai-compatibility#setting-the-local-context-size).
 
@@ -124,7 +124,7 @@ Połączenie Ollama akceptuje adresy URL localhost/loopback. W przypadku zdalneg
 
 Wpisz polecenie w polu wiadomości i kliknij **Send** lub naciśnij **Enter**. Użyj **Shift+Enter**, aby rozpocząć nowy wiersz. Zacznij od ograniczonego zadania, sprawdź wynik, a następnie poproś o kolejną zmianę.
 
-![Połączony panel czatu z przykładowym poleceniem gotowym do wysłania](../images/ai-assistant/chat-ready.png)
+![Połączony panel czatu z przykładowym poleceniem gotowym do wysłania](../Images/ai-assistant/chat-ready.png)
 
 Precyzyjnie określ arkusz docelowy, oznaczenia elementów, wartości i połączenia. „Połącz górne wyprowadzenie R2 z OUT na arkuszu Control” łatwiej sprawdzić niż „napraw przewód”. Rozszerzając istniejący układ, powiedz, co ma pozostać bez zmian.
 
@@ -212,7 +212,7 @@ Aby zmienić rysunek, poproś asystenta o dołączenie modelu po sprawdzeniu prz
 
 Ikona koła zębatego **AI settings** pokazuje bieżącego dostawcę i metodę połączenia, a także elementy sterujące modelem/rozumowaniem i opcję **Save**. W przypadku połączenia kluczem dostępna jest opcja **Clear API key**; dla konta ChatGPT — **Sign out**; dla lokalnego Ollama — **Disconnect Ollama**. Odłącz bieżące połączenie przed skonfigurowaniem innego dostawcy. Opcja **Cancel** zachowuje istniejące połączenie i zapisane ustawienia.
 
-![Ustawienia AI dla istniejącego połączenia kluczem API](../images/ai-assistant/connection-settings.png)
+![Ustawienia AI dla istniejącego połączenia kluczem API](../Images/ai-assistant/connection-settings.png)
 
 Klucze API i historia rozmowy pozostają w pamięci aplikacji; klucze nie są zapisywane wraz z preferencjami ani rysunkami. Po ponownym załadowaniu lub uruchomieniu aplikacji trzeba ponownie wprowadzić klucz API. Niejawne dane dostawcy, punkt końcowy, model i preferencje rozumowania mogą być zapamiętywane. Autoryzacja konta ChatGPT jest zarządzana oddzielnie przez lokalne środowisko uruchomieniowe i może przetrwać ponowne uruchomienie; wersja Desktop używa bezpiecznego szyfrowania systemu operacyjnego, jeśli jest dostępne.
 

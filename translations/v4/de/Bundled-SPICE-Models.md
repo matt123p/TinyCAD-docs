@@ -13,7 +13,7 @@ TinyCAD enthält einen Offline-Katalog mit SPICE-Modellen. Verwenden Sie ein mit
 
 Platzieren Sie ein Symbol, wählen Sie es in der Zeichnung aus und öffnen Sie **SPICE** im unteren **Symbol**-Bereich. **Mitgeliefert** zeigt das verknüpfte Modell und dessen Quelle an. Gewöhnliche Symbolfelder wie **Wert**, **Schleifer** und **Anfangsspannung** steuern weiterhin TinyCAD Basic-Modelle, die diese Felder verwenden. Stellen Sie beispielsweise den **Wert** eines Widerstands auf `10k` ein, um mit dessen Standardmodell **Idealer Widerstand** 10 kΩ zu simulieren.
 
-![Der SPICE-Tab des platzierten Symbols zeigt die Auswahl „Mitgeliefert“ und verweist auf das TinyCAD Basic-Modell einer gelben LED.](/v4/images/simulation/bundled-spice-properties.png)
+![Der SPICE-Tab des platzierten Symbols zeigt die Auswahl „Mitgeliefert“ und verweist auf das TinyCAD Basic-Modell einer gelben LED.](/v4/Images/simulation/bundled-spice-properties.png)
 
 Um dies in einer vollständigen Schaltung auszuprobieren, wählen Sie **Beispiel öffnen → SPICE-Lernprogramm → Spannungsteiler** und wählen Sie einen der Widerstände aus. Im **SPICE**-Tab wird der Link **Idealer Widerstand** angezeigt. Ändern Sie den Widerstandswert und führen Sie anschließend erneut die Arbeitspunkteinstellung des Beispiels aus. Das gespeicherte Ergebnis stellt die Schaltung vor Ihrer Änderung dar.
 
@@ -25,13 +25,13 @@ Um dies in einer vollständigen Schaltung auszuprobieren, wählen Sie **Beispiel
 3. Wählen Sie eine Zeile aus. Die Details unterhalb der Tabelle zeigen die Modellbeschreibung, die Quelle, die Anschlussreihenfolge und alle einstellbaren Parameter. Klappen Sie **SPICE-Definition anzeigen** auf, um die Instanzvorlage und die verwendeten Modellkarten oder Subschaltungen anzuzeigen. Wählen Sie den Quellenlink, um die ursprüngliche Definition oder das vorgeschaltete Archiv und den Dateinamen des Eintrags aufzurufen.
 4. Prüfen Sie die Pin-Zuordnung und legen Sie etwaige Parameterüberschreibungen fest. Wählen Sie **SPICE-Modell auswählen**. In einer Zeichnung wird dadurch das ausgewählte platzierte Symbol geändert; die Änderung kann rückgängig gemacht werden.
 
-![Dialogfeld „SPICE-Modell suchen“ für eine gelbe LED. Das ausgewählte circsim-Modell zeigt seine Quelle sowie die geprüften Anoden- und Kathoden-Pinnummern.](/v4/images/simulation/bundled-spice-picker.png)
+![Dialogfeld „SPICE-Modell suchen“ für eine gelbe LED. Das ausgewählte circsim-Modell zeigt seine Quelle sowie die geprüften Anoden- und Kathoden-Pinnummern.](/v4/Images/simulation/bundled-spice-picker.png)
 
 **SPICE-Grundlagensymbole** führen nur Modelle auf, deren Zuordnungen für das Pin-Layout des jeweiligen Symbols geprüft wurden. Manche Symbole bieten nur das Basic-Standardmodell. Eine gelbe LED bietet beispielsweise ihr Basic-Modell und die gelbe LED von circsim. Für einen Standard-NPN-Transistor kann das generische Modell oder eine Alternative wie `2N3904_OJ` von OpenJellyBean verwendet werden; Kollektor, Basis und Emitter sind dabei bereits den Pins 3, 1 und 2 zugeordnet.
 
 **Andere Symbole**, einschließlich älterer Platzierungen ohne Bibliotheksidentität, können den vollständigen Katalog für ihre jeweilige Edition durchsuchen. Prüfen Sie die vorgeschlagenen Treffer und ordnen Sie jedem Modellanschluss einen eigenen physischen Pin zu. Berücksichtigen Sie auch Versorgungspins, selbst wenn sie im Schaltplan verborgen sind. Verwenden Sie den geprüften Pinout des Symbols und die Anschlussreihenfolge des Modells. Lassen Sie physische Pins, die das Modell nicht aufführt, außerhalb der Zuordnung. Ein temporäres Symbol mit einer falschen Anzahl oder Funktion von Pins muss korrigiert werden, bevor es das Bauteil darstellen kann.
 
-![Manuelle Pin-Zuordnung für ein 741-Symbol in einer benutzerdefinierten Bibliothek. Die fünf circsim-LM741-Anschlüsse sind den physischen Pins 3, 2, 6, 7 und 4 zugewiesen.](/v4/images/simulation/bundled-spice-pin-mapping.png)
+![Manuelle Pin-Zuordnung für ein 741-Symbol in einer benutzerdefinierten Bibliothek. Die fünf circsim-LM741-Anschlüsse sind den physischen Pins 3, 2, 6, 7 und 4 zugewiesen.](/v4/Images/simulation/bundled-spice-pin-mapping.png)
 
 Das Beispiel ordnet das circsim-Modell `LM741` einem 741-Symbol über die Pins 3 (nichtinvertierend), 2 (invertierend), 6 (Ausgang), 7 (positive Versorgung) und 4 (negative Versorgung) zu. Das Modell lässt die Offset-Null-Pins aus. Bei einem Bibliothekssymbol mit mehreren Teilen bietet TinyCAD die Pin-Nummern an, die von den Teilen gemeinsam genutzt werden, für die die Vorlage verwendet wird. Wählen Sie ein vollständiges Gehäusemodell, wenn Ihr Symbol und Ihre Simulation das gesamte Gehäuse benötigen.
 

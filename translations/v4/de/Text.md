@@ -54,7 +54,7 @@ Markdown-Textfelder sind ab [TinyCAD v4.0.11](../Changelog/#v4011) verfügbar.
 3. Klicken Sie an eine andere Stelle, um die formatierte Notiz ohne Markdown-Zeichen zu sehen. Ändern Sie die Größe
    des Feldes, falls der Inhalt abgeschnitten wird.
 
-![Als SVG gerenderte Markdown-Notiz mit einer Überschrift, einer Komponentenliste, einer Aufgabenliste und einem Codeblock.](../images/markdown-preview.png)
+![Als SVG gerenderte Markdown-Notiz mit einer Überschrift, einer Komponentenliste, einer Aufgabenliste und einem Codeblock.](../Images/markdown-preview.png)
 
 ### Bearbeitbare Markdown-Quelle
 {: #editable-markdown-source}
@@ -69,7 +69,7 @@ Die ausgewählte Schriftfamilie, Schriftgröße sowie die Einstellungen für Fet
 Überschriften werden relativ zu dieser Größe skaliert; für Code wird ebenfalls die ausgewählte Schriftfamilie verwendet. Rückgängigmachen,
 Kopieren/Einfügen und Speichern erhalten die Markdown-Quelle.
 
-![Bearbeitung derselben Notiz mit sichtbaren Markierungen für Überschrift, Fettdruck, Liste, Aufgabenliste und Codeblock.](../images/markdown-source-editor.png)
+![Bearbeitung derselben Notiz mit sichtbaren Markierungen für Überschrift, Fettdruck, Liste, Aufgabenliste und Codeblock.](../Images/markdown-source-editor.png)
 
 ### Unterstützte Formatierungen
 {: #supported-formatting}

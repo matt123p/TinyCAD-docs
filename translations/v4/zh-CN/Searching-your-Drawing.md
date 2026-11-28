@@ -7,7 +7,7 @@ layout: default
 使用底部面板中的 **搜索 (Search)** 查找绘图中的文本：
 
 {% include video-player.html
-	src="/v4/images/video/Video 3.mp4"
+	src="/v4/Images/video/Video 3.mp4"
 	width=1330
 	height=888
 	caption="演示如何搜索绘图的视频教程。"

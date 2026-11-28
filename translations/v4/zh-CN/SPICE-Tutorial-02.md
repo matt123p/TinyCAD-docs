@@ -62,7 +62,7 @@ R2 改为 2 kΩ 后，R1 两端的电压为 1.667 V，而 R2 两端为 3.333 V�
 打开 **dc-sweep**。已保存的 **直流扫描（DC sweep）** 使用 V1，
 起始值为 0 V，终止值为 10 V，增量为 0.5 V。运行仿真并绘制 OUT。
 
-![计算得到的直流传输曲线](/v4/images/simulation-tutorials/spice/dc-sweep-results.png)
+![计算得到的直流传输曲线](/v4/Images/simulation-tutorials/spice/dc-sweep-results.png)
 
 横轴表示扫描的电源值，而不是时间。当电源值分别为 0 V、5 V 和 10 V 时，
 预期输出值为 0 V、2.5 V 和 5 V。斜率为 0.5 V/V。

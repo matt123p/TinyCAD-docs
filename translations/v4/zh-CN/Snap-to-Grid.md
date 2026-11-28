@@ -24,7 +24,7 @@ layout: default
 
 缩小得过多、无法清晰显示网格点时，网格点可能会被隐藏。
 
-![包含单独的“Show the grid”和“Snap to grid”复选框的“Settings”对话框。](../images/grid-settings.png)
+![包含单独的“Show the grid”和“Snap to grid”复选框的“Settings”对话框。](../Images/grid-settings.png)
 
 选中对象后，启用吸附时，方向键会按网格间距移动对象。禁用吸附时，对象会以较小步长移动，不会被取整并重新对齐到网格。无论吸附设置如何，按住 **Ctrl** 都可进行小步移动。未选中对象时，方向键会平移视图。
 

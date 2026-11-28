@@ -58,7 +58,7 @@ Het ingesloten voorbeeld openen, de DC-waarden controleren, R2 wijzigen en een n
 ### Circuit en referentieresultaten
 {: #circuit-and-reference-results}
 
-![Spanningsdelercircuit weergegeven op basis van de opgeslagen tekening](/v4/images/simulation-tutorials/spice/divider-circuit.png)
+![Spanningsdelercircuit weergegeven op basis van de opgeslagen tekening](/v4/Images/simulation-tutorials/spice/divider-circuit.png)
 
 ## Voorspel het antwoord
 {: #predict-the-answer}
@@ -67,7 +67,7 @@ De stroom is `I = 5 / (1000 + 1000) = 2.5 mA`. De onderste weerstand heeft daaro
 een spanning van `VOUT = I × 1000 = 2.5 V`. Als R2 wordt gewijzigd in 2 kΩ, geeft de spanningsdelervergelijking
 `VOUT = 5 × 2000 / (1000 + 2000) = 3.333 V`.
 
-![Berekende werkpuntresultaten](/v4/images/simulation-tutorials/spice/divider-results.png)
+![Berekende werkpuntresultaten](/v4/Images/simulation-tutorials/spice/divider-results.png)
 
 De bronstroom is −2,5 mA. Dit is geen bedradingsfout: SPICE definieert de bronstroom
 als de stroom die de positieve klem binnenkomt. Een bron die energie levert, heeft volgens

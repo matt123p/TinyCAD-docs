@@ -24,9 +24,9 @@ Refining the maximum timestep and measuring OUT at 1 ms and the RC time constant
 
 ### Circuit and reference results
 
-![RC charging circuit](/v4/images/simulation-tutorials/spice/rc-step-circuit.png)
+![RC charging circuit](/v4/Images/simulation-tutorials/spice/rc-step-circuit.png)
 
-![Computed capacitor charging curve](/v4/images/simulation-tutorials/spice/rc-step-results.png)
+![Computed capacitor charging curve](/v4/Images/simulation-tutorials/spice/rc-step-results.png)
 
 ## Why the output curves rather than jumps
 

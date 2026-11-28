@@ -17,7 +17,7 @@ it does not establish that the original hardware behaves accurately at RF.
 Select **Voltage gain**, the saved OUT/IN derived trace. View magnitude in dB
 and phase. Keep node voltages and dimensionless gain distinct in your notes.
 
-![Computed amplifier gain and phase](/v4/images/simulation-tutorials/spice/amp-ac-results.png)
+![Computed amplifier gain and phase](/v4/Images/simulation-tutorials/spice/amp-ac-results.png)
 
 ## Read the result before explaining it
 

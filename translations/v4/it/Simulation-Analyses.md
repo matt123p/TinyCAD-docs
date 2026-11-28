@@ -23,7 +23,7 @@ Il punto di funzionamento determina una soluzione stazionaria in CC. I condensat
 
 Usa **Data** per visualizzare le tensioni di nodo e le correnti di ramo. La tensione è riferita alla massa 0. Il segno della corrente dipende dall'ordine dei terminali dichiarato per il dispositivo; una corrente negativa dell'alimentatore può semplicemente indicare che sta erogando potenza. Il [tutorial sulla CC](../SPICE-Tutorial-02/) illustra tensione, corrente e potenza.
 
-![Risultati scalari di tensione e corrente della recente esecuzione del punto di funzionamento del partitore](../images/simulation/simulation-data.png)
+![Risultati scalari di tensione e corrente della recente esecuzione del punto di funzionamento del partitore](../Images/simulation/simulation-data.png)
 
 ## Transitorio: comportamento nel tempo
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Imposta le frequenze iniziale e finale e i punti per decade. Una scansione logar
 
 Imposta **AC amplitude** e la fase della sorgente separatamente dalle impostazioni della forma d'onda transitoria. Un'ampiezza AC di **1 V** con fase **0°** semplifica l'interpretazione del trasferimento di tensione con un singolo ingresso. La sola ampiezza della sinusoide transitoria non abilita un'eccitazione AC. Per un ingresso generico, calcola il rapporto complesso `V(out) / V(in)`; la sola tensione d'uscita non è sempre il guadagno.
 
-![Impostazioni della scansione AC per il filtro RC incluso](../images/simulation/ac-setup.png)
+![Impostazioni della scansione AC per il filtro RC incluso](../Images/simulation/ac-setup.png)
 
 Per un filtro passa-basso del primo ordine con R = 1 kΩ e C = 1 µF, `fc = 1 / (2πRC) ≈ 159.15 Hz`. A tale frequenza, un filtro con banda passante unitaria ha un guadagno di circa 0,707, ovvero −3,0103 dB, e una fase di circa −45°. Il [tutorial sui filtri](../SPICE-Tutorial-05/) mostra il modulo, i dB e la fase.
 
-![Risultati AC effettivi da una nuova esecuzione nel browser dell'esempio RC](../images/simulation/ac-charts.png)
+![Risultati AC effettivi da una nuova esecuzione nel browser dell'esempio RC](../Images/simulation/ac-charts.png)
 
 ## Scansione CC
 {: #dc-sweep}

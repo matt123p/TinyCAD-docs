@@ -13,7 +13,7 @@ Ouvrez **amp-small-signal**. VIN fournit une sinusoïde de
 10 mV crête à 1 kHz. Le transitoire dure 12 ms, avec un pas maximal de 2 µs.
 Comparez IN et OUT, puis mesurez les quatre dernières périodes, de 8 ms à 12 ms.
 
-![Formes d’onde mesurées de l’amplificateur petit signal](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Formes d’onde mesurées de l’amplificateur petit signal](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 Le résultat AC prévoit environ 8,92 mV crête en OUT, inversés par rapport à l’entrée.
 Le transitoire donne approximativement −8,87 à +8,99 mV sur la fenêtre de mesure,
@@ -45,7 +45,7 @@ Ouvrez **amp-clipping**. Seule l’amplitude de VIN change,
 passant à 500 mV crête. Une extrapolation linéaire prévoirait environ 446 mV crête en OUT
 dans les deux directions. La forme d’onde calculée ne présente pas ce résultat.
 
-![Sortie calculée asymétrique en grand signal](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Sortie calculée asymétrique en grand signal](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 Dans la même fenêtre de 8 à 12 ms, la sortie s’étend approximativement de
 **−0,162 à +0,389 V**, avec une valeur **RMS de 0,2126 V**. La consommation de l’alimentation est d’environ

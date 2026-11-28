@@ -24,7 +24,7 @@ Je kunt dit omzetten in een veelhoek door "Veelhoek sluiten" (Close Polygon) te 
 Nadat dit is omgezet in een veelhoek, kun je de vulling wijzigen.
 
 {% include video-player.html
-	src="/v4/images/video/Video 7.mp4"
+	src="/v4/Images/video/Video 7.mp4"
 	width=1620
 	height=924
 	caption="Videohandleiding waarin wordt getoond hoe je een veelhoek tekent en bewerkt."

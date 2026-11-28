@@ -43,7 +43,7 @@ Wenn Sie statt der Bearbeitung nach dem Durchsuchen und Platzieren von Symbolen 
 Anschließend können Sie die Grafiken, Pins und Symbolattribute ändern.
 
 {% include video-player.html
-	src="/v4/images/video/Video 12.mp4"
+	src="/v4/Images/video/Video 12.mp4"
 	width=1532
 	height=978
 	caption="Videoanleitung zum Bearbeiten einer Bibliothek."
@@ -78,7 +78,7 @@ Legen Sie für jeden Pin Folgendes fest:
 Platzieren Sie Pins sorgfältig am Raster, damit die Verdrahtung im Schaltplan einfach ist.
 
 {% include video-player.html
-	src="/v4/images/video/Video 13.mp4"
+	src="/v4/Images/video/Video 13.mp4"
 	width=1532
 	height=978
 	caption="Videoanleitung zum Hinzufügen von Pins."

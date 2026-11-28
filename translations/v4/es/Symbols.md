@@ -45,7 +45,7 @@ Puede dibujar un símbolo nuevo o adaptar una copia de otro existente que result
 El vídeo siguiente muestra cómo buscar y colocar un símbolo. Para obtener más información sobre cómo examinar y gestionar el selector, consulte [Usar bibliotecas de símbolos](../Using-Symbol-Libraries/).
 
 {% include video-player.html
-	src="/v4/images/video/Video 6.mp4"
+	src="/v4/Images/video/Video 6.mp4"
 	width=1280
 	height=822
 	caption="Vídeo explicativo que muestra cómo buscar y colocar un símbolo."
@@ -58,7 +58,7 @@ El vídeo siguiente muestra cómo buscar y colocar un símbolo. Para obtener má
 
 Al colocar un símbolo, defina su orientación con los botones de rotación y volteo de la barra de herramientas.
 
-<img src="/v4/images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
+<img src="/v4/Images/media/image5.png" alt="Rotate and flip controls used to change symbol orientation" />
 
 
 ## Editar y mover el texto de los símbolos
@@ -71,7 +71,7 @@ También puede mover por separado los campos de texto del símbolo (por ejemplo,
 Puede editar el texto haciendo clic en él.
 
 {% include video-player.html
-	src="/v4/images/video/Video 1.mp4"
+	src="/v4/Images/video/Video 1.mp4"
 	width=284
 	height=248
 	caption="Vídeo explicativo que muestra cómo editar y reubicar el texto de un símbolo."

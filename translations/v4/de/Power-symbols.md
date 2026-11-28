@@ -10,7 +10,7 @@ Versorgungssymbole kennzeichnen Verbindungen zu benannten Versorgungsnetzen wie 
 Alle Versorgungssymbole mit demselben Namen gelten als elektrisch verbunden.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Videoanleitung zum Platzieren von Versorgungssymbolen."

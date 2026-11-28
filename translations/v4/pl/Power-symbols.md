@@ -10,7 +10,7 @@ Symbole zasilania wskazują połączenie z nazwanymi sieciami zasilania, takimi 
 Wszystkie symbole zasilania o tej samej nazwie są uznawane za połączone elektrycznie.
 
 {% include video-player.html
-	src="/v4/images/video/Video 5.mp4"
+	src="/v4/Images/video/Video 5.mp4"
 	width=1596
 	height=700
 	caption="Film instruktażowy pokazujący, jak umieszczać symbole zasilania."

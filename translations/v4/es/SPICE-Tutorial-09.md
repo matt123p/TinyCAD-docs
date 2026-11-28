@@ -13,7 +13,7 @@ Abra **amp-small-signal**. VIN proporciona una
 senoide de 10 mV de pico y 1 kHz. El análisis transitorio dura 12 ms, con un paso máximo de 2 µs.
 Compare IN y OUT y, a continuación, mida los cuatro ciclos finales, de 8 ms a 12 ms.
 
-![Formas de onda medidas del amplificador de pequeña señal](/v4/images/simulation-tutorials/spice/amp-small-signal-results.png)
+![Formas de onda medidas del amplificador de pequeña señal](/v4/Images/simulation-tutorials/spice/amp-small-signal-results.png)
 
 El resultado de CA predice aproximadamente 8,92 mV de pico en OUT, invertidos con respecto a la entrada.
 El análisis transitorio da aproximadamente de −8,87 a +8,99 mV durante la ventana de medición,
@@ -45,7 +45,7 @@ Abra **amp-clipping**. Solo cambia la amplitud de VIN,
 a 500 mV de pico. Una extrapolación lineal predeciría aproximadamente 446 mV de pico en OUT
 en ambas direcciones. La forma de onda calculada no se comporta así.
 
-![Salida calculada asimétrica de gran señal](/v4/images/simulation-tutorials/spice/amp-clipping-results.png)
+![Salida calculada asimétrica de gran señal](/v4/Images/simulation-tutorials/spice/amp-clipping-results.png)
 
 En la misma ventana de 8–12 ms, la salida de referencia abarca aproximadamente
 de **−0,162 a +0,389 V**, con **0,2126 V RMS**. El consumo de la fuente es aproximadamente

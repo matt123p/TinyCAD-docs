@@ -23,7 +23,7 @@ Le point de fonctionnement détermine une solution continue en régime établi. 
 
 Utilisez **Data** (Données) pour consulter les tensions de nœud et les courants de branche. La tension est relative à la masse 0. Le signe du courant suit l’ordre des bornes déclaré par le composant ; un courant d’alimentation négatif peut simplement signifier que la source fournit de la puissance. Le [tutoriel sur le continu](../SPICE-Tutorial-02/) présente les tensions, les courants et la puissance.
 
-![Résultats scalaires de tension et de courant de l’exécution récente du point de fonctionnement du diviseur](../images/simulation/simulation-data.png)
+![Résultats scalaires de tension et de courant de l’exécution récente du point de fonctionnement du diviseur](../Images/simulation/simulation-data.png)
 
 ## Transitoire : comportement dans le temps
 {: #transient-behaviour-over-time}
@@ -45,11 +45,11 @@ Définissez les fréquences de début et de fin ainsi que le nombre de points pa
 
 Définissez l’**AC amplitude** (amplitude AC) et la phase de la source séparément des paramètres de sa forme d’onde transitoire. Une amplitude AC de **1 V** avec une phase de **0°** facilite l’interprétation du transfert en tension à entrée unique. Une amplitude sinusoïdale transitoire ne suffit pas à activer une excitation AC. Pour une entrée générale, calculez le rapport complexe `V(out) / V(in)` ; la tension de sortie seule ne représente pas toujours le gain.
 
-![Paramètres du balayage AC pour le filtre RC fourni](../images/simulation/ac-setup.png)
+![Paramètres du balayage AC pour le filtre RC fourni](../Images/simulation/ac-setup.png)
 
 Pour un filtre passe-bas du premier ordre avec R = 1 kΩ et C = 1 µF, `fc = 1 / (2πRC) ≈ 159.15 Hz`. À cette fréquence, un filtre à bande passante unitaire a un gain d’environ 0,707, soit −3,0103 dB, et une phase d’environ −45°. Le [tutoriel sur les filtres](../SPICE-Tutorial-05/) présente le module, le gain en dB et la phase.
 
-![Résultats AC réels d’une exécution récente dans le navigateur de l’exemple RC](../images/simulation/ac-charts.png)
+![Résultats AC réels d’une exécution récente dans le navigateur de l’exemple RC](../Images/simulation/ac-charts.png)
 
 ## Balayage continu
 {: #dc-sweep}

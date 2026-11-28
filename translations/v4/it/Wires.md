@@ -32,7 +32,7 @@ In TinyCAD v4.0.11, usa il selettore accanto a Wire per scegliere come disegnare
 
 La scelta di una modalità attiva Wire e mantiene l’eventuale anteprima del filo attiva. Puoi cambiare modalità prima di posizionare il segmento successivo. Lo snap alla griglia rimane un’impostazione separata. Per l’instradamento automatico tra due punti di connessione, usa il [strumento Filo da punto a punto](#auto-routing) adiacente.
 
-![Selettore della barra degli strumenti per i fili, con le opzioni 90°, 45° e Libera.](../images/wire-routing-modes.png)
+![Selettore della barra degli strumenti per i fili, con le opzioni 90°, 45° e Libera.](../Images/wire-routing-modes.png)
 
 ## Posizionamento dei fili
 {: #placing-wires}
@@ -46,7 +46,7 @@ La scelta di una modalità attiva Wire e mantiene l’eventuale anteprima del fi
 
 
 {% include video-player.html
-	src="/v4/images/video/Video 4.mp4"
+	src="/v4/Images/video/Video 4.mp4"
 	width=1602
 	height=696
 	caption="Video dimostrativo che mostra come posizionare i fili."
@@ -84,16 +84,16 @@ La resistenza e il LED sono sulla griglia, con il collegamento tra loro lasciato
 
 Per prima cosa, seleziona Filo da punto a punto e scegli il pin destro di R1.
 
-![1. Inizia con R1 e D1 scollegati. Il cerchio rosso indica il pin iniziale su R1.](../images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
+![1. Inizia con R1 e D1 scollegati. Il cerchio rosso indica il pin iniziale su R1.](../Images/wire-auto-route-start.png){: width="435" style="max-width: 50%;"}
 
 Poi, punta al pin superiore di D1. L’anteprima mostra il percorso e il relativo angolo prima
 di confermarlo.
 
-![2. Visualizza l’anteprima del percorso automatico verso D1. Il cerchio rosso indica il pin di destinazione.](../images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
+![2. Visualizza l’anteprima del percorso automatico verso D1. Il cerchio rosso indica il pin di destinazione.](../Images/wire-auto-route.png){: width="435" style="max-width: 50%;"}
 
 Infine, fai clic o tocca il pin di D1. TinyCAD posiziona tutti i segmenti in un’unica operazione.
 
-![3. Conferma la destinazione per posizionare il collegamento completo, incluso l’angolo.](../images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
+![3. Conferma la destinazione per posizionare il collegamento completo, incluso l’angolo.](../Images/wire-auto-route-complete.png){: width="435" style="max-width: 50%;"}
 
 Su un touchscreen, puoi toccare direttamente i due estremi. Per pin piccoli o ravvicinati,
 usa la [lente d’ingrandimento](../Touch-controls/#precise-placement-with-the-loupe): punta
