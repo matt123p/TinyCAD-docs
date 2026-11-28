@@ -6,9 +6,6 @@ layout: default
 
 Using keyboard shortcuts instead of toolbar clicks speeds up drawing.
 
-**Note:** These differ from TinyCAD v3's shortcuts because browser applications do
-not expose F-keys in the same way.
-
 | Key | Action |
 |---|---|
 | `Esc` | Cancel the current placement or drawing action; otherwise clear the selection |

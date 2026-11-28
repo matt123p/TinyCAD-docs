@@ -4,7 +4,7 @@ layout: default
 # Sortie VHDL
 {: #vhdl-output}
 
-La sortie VHDL dans TinyCAD v4 fonctionne comme dans la version 3. TinyCAD utilise la connectivité de votre schéma, les définitions des broches des symboles et les symboles orientés VHDL pour générer une description VHDL de la conception.
+TinyCAD utilise la connectivité de votre schéma, les définitions des broches des symboles et les symboles orientés VHDL pour générer une description VHDL de la conception.
 
 L’exportation VHDL est disponible dans l’application de bureau. La version navigateur ne crée actuellement pas de fichiers VHDL.
 

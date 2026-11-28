@@ -4,9 +4,6 @@ layout: default
 # TinyCAD - 参考資料
 {: #tinycad---reference}
 
-このセクションは、旧オンラインマニュアルから現在移行されている
-参考資料の入口です。
-
 ## ページ
 {: #pages}
 

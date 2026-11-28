@@ -4,8 +4,6 @@ layout: default
 # Verifica delle regole di progettazione
 {: #design-rules-check}
 
-In v4, **Verifica delle regole di progettazione (Design Rules Check) funziona come in v3**.
-
 Usa la Verifica delle regole di progettazione per individuare problemi gravi di
 connettività nello schema prima di generare output come netlist o VHDL.
 

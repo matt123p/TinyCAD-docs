@@ -4,8 +4,6 @@ layout: default
 
 # Design Rules Check
 
-In v4, **Design Rules Check works the same way as in v3**.
-
 Use Design Rules Check to find gross schematic connectivity problems before
 generating outputs such as netlists or VHDL.
 

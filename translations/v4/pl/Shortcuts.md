@@ -6,9 +6,6 @@ layout: default
 
 Korzystanie ze skrótów klawiaturowych zamiast klikania przycisków paska narzędzi przyspiesza rysowanie.
 
-**Uwaga:** Skróty te różnią się od skrótów w TinyCAD v3, ponieważ aplikacje przeglądarkowe
-nie udostępniają klawiszy funkcyjnych F w ten sam sposób.
-
 | Klawisz | Działanie |
 |---|---|
 | `Esc` | Anuluj bieżące umieszczanie lub rysowanie; jeśli nie jest ono wykonywane, wyczyść zaznaczenie |

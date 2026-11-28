@@ -4,8 +4,6 @@ layout: default
 # TinyCAD - 参考资料
 {: #tinycad---reference}
 
-本节是当前从旧版在线手册迁移过来的参考资料的入口。
-
 ## 页面
 {: #pages}
 

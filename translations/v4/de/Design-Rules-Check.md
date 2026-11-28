@@ -4,8 +4,6 @@ layout: default
 # Entwurfsregelprüfung
 {: #design-rules-check}
 
-In v4 funktioniert die **Entwurfsregelprüfung (Design Rules Check) genauso wie in v3**.
-
 Verwenden Sie die Entwurfsregelprüfung, um schwerwiegende Probleme mit der Schaltplanverbindung zu finden, bevor Sie Ausgaben wie Netzlisten oder VHDL erzeugen.
 
 Sie prüft Verdrahtungen und Kombinationen von Pin-Typen auf häufige elektrische Fehler (zum

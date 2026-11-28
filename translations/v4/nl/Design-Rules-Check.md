@@ -4,8 +4,6 @@ layout: default
 # Ontwerpregels controleren
 {: #design-rules-check}
 
-In v4 werkt **Ontwerpregels controleren (Design Rules Check) hetzelfde als in v3**.
-
 Gebruik Ontwerpregels controleren om grote problemen met de schematische connectiviteit op te sporen voordat u uitvoer genereert, zoals netlists of VHDL.
 
 De functie controleert bedrading en combinaties van pintypen op veelvoorkomende elektrische fouten (bijvoorbeeld conflicterende uitgangen die met elkaar zijn verbonden). Dit garandeert **niet** dat de schakeling functioneel correct is.

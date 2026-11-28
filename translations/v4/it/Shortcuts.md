@@ -6,8 +6,6 @@ layout: default
 
 Usare le scorciatoie da tastiera invece di fare clic sulla barra degli strumenti velocizza il disegno.
 
-**Nota:** sono diverse dalle scorciatoie di TinyCAD v3 perché le applicazioni web non gestiscono i tasti funzione allo stesso modo.
-
 | Tasto | Azione |
 |---|---|
 | `Esc` | Annulla il posizionamento o l’azione di disegno in corso; altrimenti deseleziona |

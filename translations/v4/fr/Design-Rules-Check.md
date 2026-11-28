@@ -4,8 +4,6 @@ layout: default
 # Vérification des règles de conception
 {: #design-rules-check}
 
-Dans la version 4, **la vérification des règles de conception fonctionne comme dans la version 3**.
-
 Utilisez la vérification des règles de conception pour détecter les problèmes majeurs de connectivité du schéma avant
 de générer des sorties telles que des listes de connexions ou du VHDL.
 

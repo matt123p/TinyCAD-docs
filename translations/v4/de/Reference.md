@@ -4,9 +4,6 @@ layout: default
 # TinyCAD – Referenz
 {: #tinycad---reference}
 
-Dieser Abschnitt ist der Einstiegspunkt für Referenzmaterial, das derzeit aus dem
-alten Onlinehandbuch übernommen wird.
-
 ## Seiten
 {: #pages}
 

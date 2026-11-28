@@ -6,9 +6,6 @@ layout: default
 
 L’utilisation des raccourcis clavier plutôt que des clics dans la barre d’outils accélère le dessin.
 
-**Remarque :** ces raccourcis diffèrent de ceux de TinyCAD v3, car les applications
-web n’exposent pas les touches F de la même manière.
-
 | Touche | Action |
 |---|---|
 | `Esc` | Annuler le placement ou l’action de dessin en cours ; sinon, désélectionner |

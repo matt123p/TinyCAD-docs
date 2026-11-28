@@ -79,9 +79,9 @@ This page summarizes key differences between TinyCAD web and desktop.
 			</tr>
 			<tr>
 				<th scope="row">Bundled equipment/model libraries and example browser</th>
-				<td>Yes</td>
-				<td>Yes</td>
-				<td>No</td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--yes"><span aria-hidden="true">&#10003;</span> Yes</span></td>
+				<td class="feature-status-cell"><span class="feature-pill feature-pill--no"><span aria-hidden="true">&#10005;</span> No</span></td>
 				<td>See <a href="../Bundled-Libraries/">bundled libraries</a> and <a href="../Bundled-Examples/">examples</a>.</td>
 			</tr>
 			<tr>

@@ -6,8 +6,6 @@ layout: default
 
 Tekenen gaat sneller met sneltoetsen dan met klikken op de werkbalk.
 
-**Opmerking:** Deze sneltoetsen verschillen van die van TinyCAD v3, omdat browsertoepassingen F-toetsen niet op dezelfde manier beschikbaar stellen.
-
 | Toets | Actie |
 |---|---|
 | `Esc` | Annuleert de huidige plaatsings- of tekenactie; maakt anders de selectie ongedaan |

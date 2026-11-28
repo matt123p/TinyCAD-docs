@@ -4,8 +4,6 @@ layout: default
 # Comprobación de reglas de diseño
 {: #design-rules-check}
 
-En v4, **la comprobación de reglas de diseño funciona igual que en v3**.
-
 Use la comprobación de reglas de diseño para encontrar problemas graves de conectividad en el esquema antes de generar resultados como listas de conexiones o VHDL.
 
 Comprueba el cableado y las combinaciones de tipos de pin para detectar errores eléctricos comunes (por ejemplo, salidas en conflicto conectadas entre sí). **No** garantiza que el circuito funcione correctamente.

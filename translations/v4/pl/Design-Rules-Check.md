@@ -4,8 +4,6 @@ layout: default
 # Kontrola reguł projektowych
 {: #design-rules-check}
 
-W wersji v4 **Kontrola reguł projektowych działa tak samo jak w v3**.
-
 Użyj funkcji Kontrola reguł projektowych, aby wykryć poważne problemy z połączeniami na schemacie przed wygenerowaniem plików wyjściowych, takich jak listy sieci lub VHDL.
 
 Sprawdza ona połączenia przewodami i kombinacje typów wyprowadzeń pod kątem typowych błędów elektrycznych (na przykład połączenia ze sobą wyjść o sprzecznych typach). **Nie** gwarantuje poprawności działania układu.

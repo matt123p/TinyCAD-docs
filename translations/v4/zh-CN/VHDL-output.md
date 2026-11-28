@@ -4,7 +4,7 @@ layout: default
 # VHDL 输出
 {: #vhdl-output}
 
-TinyCAD v4 中的 VHDL 输出方式与 v3 相同。TinyCAD 使用原理图连通关系、符号引脚定义和面向 VHDL 的符号来生成设计的 VHDL 描述。
+TinyCAD 使用原理图连通关系、符号引脚定义和面向 VHDL 的符号来生成设计的 VHDL 描述。
 
 桌面应用支持 VHDL 导出。浏览器版本目前无法创建 VHDL 文件。
 

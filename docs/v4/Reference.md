@@ -4,9 +4,6 @@ layout: default
 
 # TinyCAD - Reference
 
-This section is the entry point for reference material currently migrated from
-the legacy online manual.
-
 ## Pages
 
 {% assign current_version = page.url | split: '/' | slice: 1, 1 | first -%}

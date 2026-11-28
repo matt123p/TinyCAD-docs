@@ -6,9 +6,6 @@ layout: default
 
 El uso de atajos de teclado en lugar de hacer clic en la barra de herramientas agiliza el dibujo.
 
-**Nota:** Estos atajos difieren de los de TinyCAD v3 porque las aplicaciones web
-no exponen las teclas F de la misma manera.
-
 | Tecla | Acción |
 |---|---|
 | `Esc` | Cancelar la acción de colocación o dibujo actual; si no, quitar la selección |

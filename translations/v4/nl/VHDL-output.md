@@ -4,7 +4,7 @@ layout: default
 # VHDL-uitvoer
 {: #vhdl-output}
 
-VHDL-uitvoer in TinyCAD v4 werkt hetzelfde als in v3. TinyCAD gebruikt de connectiviteit van uw schema, de pindefinities van symbolen en VHDL-gerichte symbolen om een VHDL-beschrijving van het ontwerp te genereren.
+TinyCAD gebruikt de connectiviteit van uw schema, de pindefinities van symbolen en VHDL-gerichte symbolen om een VHDL-beschrijving van het ontwerp te genereren.
 
 VHDL-export is beschikbaar in de desktopapp. De browserversie maakt momenteel geen VHDL-bestanden.
 

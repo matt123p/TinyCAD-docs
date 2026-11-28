@@ -4,7 +4,7 @@ layout: default
 # VHDL-Ausgabe
 {: #vhdl-output}
 
-Die VHDL-Ausgabe in TinyCAD v4 funktioniert genauso wie in v3. TinyCAD verwendet die Konnektivität Ihres Schaltplans, die Symbol-Pindefinitionen und VHDL-orientierte Symbole, um eine VHDL-Beschreibung des Designs zu erzeugen.
+TinyCAD verwendet die Konnektivität Ihres Schaltplans, die Symbol-Pindefinitionen und VHDL-orientierte Symbole, um eine VHDL-Beschreibung des Designs zu erzeugen.
 
 Der VHDL-Export ist in der Desktop-App verfügbar. Die Browserversion erstellt derzeit keine VHDL-Dateien.
 

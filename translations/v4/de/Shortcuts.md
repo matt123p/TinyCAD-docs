@@ -6,9 +6,6 @@ layout: default
 
 Mit Tastenkombinationen statt Symbolleistenklicks können Sie schneller zeichnen.
 
-**Hinweis:** Diese unterscheiden sich von den Tastenkombinationen in TinyCAD v3, da Browseranwendungen
-F-Tasten nicht auf dieselbe Weise bereitstellen.
-
 | Taste | Aktion |
 |---|---|
 | `Esc` | Aktuelle Platzierungs- oder Zeichenaktion abbrechen; andernfalls die Auswahl aufheben |
